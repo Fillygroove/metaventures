@@ -10,50 +10,61 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	</head>
 	<body>
-		<div class="w3-bar w3-black">
-			<a href="../index.html" class="w3-bar-item w3-button w3-mobile w3-blue">Home</a>
-			<div class="w3-dropdown-hover w3-mobile">
-				<button class="w3-button">The Comics &#9662;</button>
-				<div class="w3-dropdown-content w3-bar-block w3-blue">
-					<a href="index.html?c=1" class="w3-bar-item w3-button w3-mobile">Aeroventures 1</a>
-					<a href="index.html?c=2" class="w3-bar-item w3-button w3-mobile">Aeroventures 2</a>
-					<a href="index.html?c=3" class="w3-bar-item w3-button w3-mobile">Aeroventures 3</a>
-					<a href="index.html?c=4" class="w3-bar-item w3-button w3-mobile">Aeroventures 4</a>
-					<a href="index.html?c=5" class="w3-bar-item w3-button w3-mobile">Aeroventures 5</a>
-					<a href="index.html?c=6" class="w3-bar-item w3-button w3-mobile">Aeroventures 6</a>
-					<a href="index.html?c=7" class="w3-bar-item w3-button w3-mobile">Aeroventures 7</a>
-					<a href="index.html?c=8" class="w3-bar-item w3-button w3-mobile">Aeroventures 8</a>
-					<a href="index.html?c=9" class="w3-bar-item w3-button w3-mobile">Aeroventures 9</a>
-					<a href="index.html?c=10" class="w3-bar-item w3-button w3-mobile">Aeroventures 10</a>
-					<a href="index.html?c=11" class="w3-bar-item w3-button w3-mobile">Aeroventures 11</a>
-					<a href="index.html?c=12-1" class="w3-bar-item w3-button w3-mobile">Aeroventures 12, Part 1</a>
-					<a href="index.html?c=10.5" class="w3-bar-item w3-button w3-mobile">Aeroventures 10.5</a>
-					<a href="index.html?c=h" class="w3-bar-item w3-button w3-mobile">Aeroventures Halloween Edition</a>
-				</div>
+		<div class="av-thin">
+			<div class="aeroventures-title">
+				<a href="../index.html" id="aeroventures-title">Aeroventures!</a>
 			</div>
+			<div class="w3-bar aero-dblue">
+				<div class="w3-dropdown-hover w3-mobile aero-blue">
+					<button class="w3-button">The Legacy Comics &#9662;</button>
+					<div class="w3-dropdown-content w3-bar-block aero-blue">
+						<a href="index.html?c=1" class="w3-bar-item w3-button w3-mobile">Aeroventures 1</a>
+						<a href="index.html?c=2" class="w3-bar-item w3-button w3-mobile">Aeroventures 2</a>
+						<a href="index.html?c=3" class="w3-bar-item w3-button w3-mobile">Aeroventures 3</a>
+						<a href="index.html?c=4" class="w3-bar-item w3-button w3-mobile">Aeroventures 4</a>
+						<a href="index.html?c=5" class="w3-bar-item w3-button w3-mobile">Aeroventures 5</a>
+					</div>
+				</div>
+				<div class="w3-dropdown-hover w3-mobile pon-pink">
+					<button class="w3-button">The Modern Comics &#9662;</button>
+					<div class="w3-dropdown-content w3-bar-block pon-pink">
+						<a href="index.html?c=6" class="w3-bar-item w3-button w3-mobile">Aeroventures 6</a>
+						<a href="index.html?c=7" class="w3-bar-item w3-button w3-mobile">Aeroventures 7</a>
+						<a href="index.html?c=8" class="w3-bar-item w3-button w3-mobile">Aeroventures 8</a>
+						<a href="index.html?c=9" class="w3-bar-item w3-button w3-mobile">Aeroventures 9</a>
+						<a href="index.html?c=10" class="w3-bar-item w3-button w3-mobile">Aeroventures 10</a>
+						<a href="index.html?c=10.5" class="w3-bar-item w3-button w3-mobile">Aeroventures 10.5</a>
+						<a href="index.html?c=h" class="w3-bar-item w3-button w3-mobile">Aeroventures Halloween Edition</a>
+						<a href="index.html?c=11" class="w3-bar-item w3-button w3-mobile">Aeroventures 11</a>
+						<a href="index.html?c=12-1" class="w3-bar-item w3-button w3-mobile">Aeroventures 12, Part 1</a>
+					</div>
+				</div>
+				<a href="" class="w3-bar-item w3-button w3-mobile nyork-green">Discord Invite</a>
+				<a href="../wiki/index.html" class="w3-bar-item w3-button w3-mobile aero-blue">Wiki</a>
+			</div>
+			
+			<div class="slideshow-container">
+				
+				<script src="scripts/panelsetup.js"></script> 
+
+				<script>
+					let comic = new URLSearchParams(window.location.search);
+					comic = comic.get('c')
+					if (comic == null) comic = "12-1";
+					generatePanels(comic);
+				</script>
+				
+				<a class="prev" onclick="plusSlides(-1)">&#9664;</a>
+				<a class="next" onclick="plusSlides(1)">&#9654;</a>
+				
+			</div>
+			
+			<!--div style="text-align:center">
+				<label>Panel number:</label>
+				<input type="text" id="panel" name="panel" onkeypress="return isNumber(event)">
+			</div-->
+
+			<script src="scripts/pagesetup.js"></script> 
 		</div>
-		
-		<div class="slideshow-container">
-			
-			<script src="scripts/panelsetup.js"></script> 
-
-			<script>
-				let comic = new URLSearchParams(window.location.search);
-				generatePanels(comic.get('c'));
-			</script>
-			
-			<a class="prev" onclick="plusSlides(-1)">&#9664;</a>
-			<a class="next" onclick="plusSlides(1)">&#9654;</a>
-			
-		</div>
-		
-		<br>
-
-		<div style="text-align:center">
-			<label>Panel number:</label>
-			<input type="text" id="panel" name="panel" onkeypress="return isNumber(event)">
-		</div> 
-
-		<script src="scripts/pagesetup.js"></script> 
 	</body>
 </html>
