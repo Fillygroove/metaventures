@@ -1,13 +1,13 @@
 let slideIndex = 1;
 showSlides(slideIndex);
-
+/*
 document.getElementById("panel").addEventListener("keyup", function(event) {
 	event.preventDefault();
 	let slideValue = document.getElementById("panel").value;
 	if (event.key === "Enter") {
 		currentSlide(slideValue);
 	}
-});
+});*/
 
 // Next/previous controls
 function plusSlides(n) {
@@ -26,7 +26,7 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    let slides = document.getElementsByClassName("mySlides");
+    let slides = document.getElementsByClassName("slides");
 
     if (n > slides.length) {
         slideIndex = 1
