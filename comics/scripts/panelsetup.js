@@ -35,6 +35,7 @@ function generatePanels(comic) {
 			break;
 		case "h":
 			length = 84;
+			dir = './panels/H/H';
 			break;
 		case "11":
 			length = 106;
