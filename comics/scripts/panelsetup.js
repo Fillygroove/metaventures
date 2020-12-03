@@ -47,7 +47,7 @@ function generatePanels(comic) {
 	}
 	for (let i = 1; i < length + 1; i++) {
 		document.write(
-		`<div class="mySlides fade">` +
+		`<div class="slides fade">` +
 		`	<div class="numbertext">${i} / ${length}</div>` + 
 		`	<img src="${dir}_${i}.jpg" style="width:100%">` +
 		`</div>`
