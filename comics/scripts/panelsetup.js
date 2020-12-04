@@ -7,52 +7,52 @@ function generatePanels(comic) {
 		case "1":
 			length = 4;
 			title = 'The Pilot';
-			description = 'Aero goes to fight his first enemy and nemesis, Archie.';
+			description = '<a href="../wiki/index.html?p=aero" class="n">Aero</a> goes to fight his first enemy and nemesis, <a href="../wiki/index.html?p=archie" class="n">Archie</a></a>.';
 			break;
 		case "2":
 			length = 4;
-			title = 'Dr. Lacus\' Electric Boogaloo';
-			description = 'Aero goes to fight mad Lacus and his annoying pylons.';
+			title = 'Dr. Lakys\' Electric Boogaloo';
+			description = '<a href="../wiki/index.html?p=aero" class="n">Aero</a> goes to fight mad <a href="../wiki/index.html?p=lakys" class="n">Lakys</a> and his annoying pylons.';
 			break;
 		case "3":
 			length = 6;
 			title = 'Nutsradamnus Rumbel';
-			description = 'Aero attempts to slay the Notorious Gold Golem Nutsradamnus in its long horribly worded battle.';
+			description = '<a href="../wiki/index.html?p=aero" class="n">Aero</a> attempts to slay the Notorious Gold Golem <a href="../wiki/index.html?p=nutstradamnus" class="n">Nutstradamnus</a> in its long horribly worded battle.';
 			break;
 		case "4":
 			length = 3;
-			title = 'Archie STRYKSE BAK!1!';
-			description = 'Archie strikes back at our Hero with his OWN Meme.';
+			title = 'ARCHIE STRYKSE BAK!1!';
+			description = '<a href="../wiki/index.html?p=archie" class="n">Archie</a> strikes back at our Hero with his OWN Meme.';
 			break;
 		case "5":
 			length = 9;
 			title = 'RoYEEEAL Shimmy Shammy';
-			description = 'Aero enters the Arena where he has to best Gladiator Champion Royale to escape.';
+			description = '<a href="../wiki/index.html?p=aero" class="n">Aero</a> enters the Arena where he has to best Gladiator Champion <a href="../wiki/index.html?p=royale" class="n">Royale</a> to escape.';
 			break;
 		case "6":
 			length = 22;
 			title = 'Future Fails';
-			description = 'Aero comes back from the dead in the future and tries to get revenge on Archie.';
+			description = '<a href="../wiki/index.html?p=aero" class="n">Aero</a> comes back from the dead in the future and tries to get revenge on <a href="../wiki/index.html?p=archie" class="n">Archie</a>.';
 			break;
 		case "7":
 			length = 35;
 			title = 'In The Shadow of the Perpatrator';
-			description = 'Aero and Lacus are forced to team up after a giant Perpahedron Satellite is about to hit earth.';
+			description = '<a href="../wiki/index.html?p=aero" class="n">Aero</a> and <a href="../wiki/index.html?p=lakys" class="n">Lakys</a> are forced to team up after a giant <a href="../wiki/index.html?p=perpahedron" class="n">Perpahedron</a> Satellite is about to hit <a href="../wiki/index.html?p=ert" class="y">Ert</a>.';
 			break;
 		case "8":
 			length = 36;
 			title = 'Tropical Trouble';
-			description = 'In this rather short eposode: Aero, Lacus, and Archie get stuck on an island after their plane blows up. watch as they struggle to survive. hah. idiots.';
+			description = 'In this rather short eposode: <a href="../wiki/index.html?p=aero" class="n">Aero</a>, <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>, and <a href="../wiki/index.html?p=archie" class="n">Archie</a> get stuck on an island after their plane blows up. watch as they struggle to survive. hah. idiots.';
 			break;
 		case "9":
 			length = 34;
 			title = 'Group Lunatics 100';
-			description = 'With the Tower of Gladii out of money, Aero, Lacus, Arkpeofet, and Aposteel go to get wacky jobs to pay for the abandoned tower.';
+			description = 'With the Tower of Gladii out of money, <a href="../wiki/index.html?p=aero" class="n">Aero</a>, <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>, <a href="../wiki/index.html?p=archie" class="n">Archie</a>, and <a href="../wiki/index.html?p=aposteel" class="n">Aposteel</a> go to get wacky jobs to pay for the abandoned tower.';
 			break;
 		case "10":
 			length = 73;
 			title = 'Flat Line';
-			description = 'Aero goes to the hospital after an incident and finds out that it isnt as it seems. porkchops included.';
+			description = '<a href="../wiki/index.html?p=aero" class="n">Aero</a> goes to the hospital after an incident and finds out that it isnt as it seems. porkchops included.';
 			break;
 		case "10.5":
 			length = 53;
@@ -62,18 +62,18 @@ function generatePanels(comic) {
 		case "h":
 			length = 84;
 			title = 'Halloween Edition';
-			description = 'Aero and the gang go to a halloween party, but whos gonna attack them now?  Find out in this wierdly long adventure! SPOOKE!';
+			description = '<a href="../wiki/index.html?p=aero" class="n">Aero</a> and the gang go to a halloween party, but whos gonna attack them now?  Find out in this wierdly long adventure! SPOOKE!';
 			dir = './panels/H/H';
 			break;
 		case "11":
 			length = 106;
 			title = 'Code Red';
-			description = 'Something terribly wrong has happened in Dr. Lacus\'s lab. Can the Aeroventures Crew stop this new menace?';
+			description = 'Something terribly wrong has happened in Dr. <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>\'s lab. Can the Aeroventures Crew stop this new menace?';
 			break;
 		case "12-1":
 			length = 110;
 			title = 'Nutty Business, Part 1';
-			description = 'Aero and friends meet an unexpected foe.';
+			description = '<a href="../wiki/index.html?p=aero" class="n">Aero</a> and friends meet an unexpected foe.';
 			dir = './panels/12-1/12';
 			break;
 		case "dk":
@@ -98,3 +98,8 @@ function generatePanels(comic) {
 		<h4 class = "description">${description}</h4>
 	`);
 }
+
+let comic = new URLSearchParams(window.location.search);
+comic = comic.get('c')
+if (comic == null) comic = "12-1";
+generatePanels(comic);
