@@ -44,6 +44,9 @@ function generatePanels(comic) {
 			length = 110;
 			dir = './panels/12-1/12';
 			break;
+		case "dk":
+			length = 25;
+			break;
 	}
 	for (let i = 1; i < length + 1; i++) {
 		document.write(
