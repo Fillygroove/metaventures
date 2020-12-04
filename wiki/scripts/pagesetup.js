@@ -75,7 +75,7 @@ function generatePage(page) {
 					<tr>
 						<th scope="row" style="max-width:11em;">
 							<div style="display:inline-block; padding:0.1em 0;line-height:1.2em;">
-								Named by
+								Named origin
 							</div>
 						</th>
 						<td>
