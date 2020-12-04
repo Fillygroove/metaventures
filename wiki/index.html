@@ -1,58 +1,176 @@
-<!DOCTYPE html>
-<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-<meta content="utf-8" http-equiv="encoding">
-<html>
-	<head>
-		<title>Aeroventures!</title>
-		<link rel="icon" type="image/png" href="../favicon.png">
-		<link rel="stylesheet" href="../index.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700">
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	</head>
-	<body>
-		<div class="av-thin">
-			<div class="aeroventures-title">
-				<a href="../index.html" id="aeroventures-title">Aeroventu</a><a href="../comics/index.html?c=dk" id="aeroventures-title">r</a><a href="../index.html" id="aeroventures-title">es!</a>
-			</div>
-			<div class="w3-bar aero-dblue">
-				<div class="w3-dropdown-hover w3-mobile aero-blue">
-					<button class="w3-button">The Legacy Comics &#9662;</button>
-					<div class="w3-dropdown-content w3-bar-block aero-blue">
-						<a href="../comics/index.html?c=1" class="w3-bar-item w3-button w3-mobile">Aeroventures 1</a>
-						<a href="../comics/index.html?c=2" class="w3-bar-item w3-button w3-mobile">Aeroventures 2</a>
-						<a href="../comics/index.html?c=3" class="w3-bar-item w3-button w3-mobile">Aeroventures 3</a>
-						<a href="../comics/index.html?c=4" class="w3-bar-item w3-button w3-mobile">Aeroventures 4</a>
-						<a href="../comics/index.html?c=5" class="w3-bar-item w3-button w3-mobile">Aeroventures 5</a>
-					</div>
-				</div>
-				<div class="w3-dropdown-hover w3-mobile pon-pink">
-					<button class="w3-button">The Modern Comics &#9662;</button>
-					<div class="w3-dropdown-content w3-bar-block pon-pink">
-						<a href="../comics/index.html?c=6" class="w3-bar-item w3-button w3-mobile">Aeroventures 6</a>
-						<a href="../comics/index.html?c=7" class="w3-bar-item w3-button w3-mobile">Aeroventures 7</a>
-						<a href="../comics/index.html?c=8" class="w3-bar-item w3-button w3-mobile">Aeroventures 8</a>
-						<a href="../comics/index.html?c=9" class="w3-bar-item w3-button w3-mobile">Aeroventures 9</a>
-						<a href="../comics/index.html?c=10" class="w3-bar-item w3-button w3-mobile">Aeroventures 10</a>
-						<a href="../comics/index.html?c=10.5" class="w3-bar-item w3-button w3-mobile">Aeroventures 10.5</a>
-						<a href="../comics/index.html?c=h" class="w3-bar-item w3-button w3-mobile">Aeroventures Halloween Edition</a>
-						<a href="../comics/index.html?c=11" class="w3-bar-item w3-button w3-mobile">Aeroventures 11</a>
-						<a href="../comics/index.html?c=12-1" class="w3-bar-item w3-button w3-mobile">Aeroventures 12, Part 1</a>
-					</div>
-				</div>
-				<a href="https://discord.gg/xxRvYERs48" class="w3-bar-item w3-button w3-mobile nyork-green">Discord Invite</a>
-				<a href="index.html?p=main" class="w3-bar-item w3-button w3-mobile aero-blue">Wiki</a>
-			</div>
+function generatePage(page) {
+	switch (page) {
+		case "main":
+			document.write(`
+			<h1 style="font-family: Ubuntu;">The Wiki</h1>
 			
-			<script src="scripts/pagesetup.js"></script> 
+			<hr>
 
-			<script>
-				let page = new URLSearchParams(window.location.search);
-				page = page.get('p')
-				if (page == null) page = "main";
-				generatePage(page);
-			</script>
-			<!-- WIKI BEGINNING -->
-			<!-- WIKI ENDING -->
-		</div>
-	</body>
-</html>
+			<p>Welcome to the official Aeroventures Wiki! Here, you can find pages about everything in the Aeroventures world so far.</p>
+			
+			<h2>Characters</h2>
+			<p>
+				<a href="index.html?p=aero" class="n">Aero</a></br>
+				<a href="index.html?p=archie" class="n">Archie</a></br>
+				<a href="index.html?p=lacus" class="n">Lacus</a></br>
+				<a href="index.html?p=aposteel" class="n">Aposteel</a></br>
+			</p>
+			
+			<h2>Planets</h2>
+			<p>
+				<a href="index.html?p=grene" class="n">Grene</a></br>
+				<a href="index.html?p=doug" class="n">Doug</a></br>
+				<a href="index.html?p=pilf" class="y">Pilf</a></br>
+				<a href="index.html?p=ert" class="n">Ert</a></br>
+				<a href="index.html?p=george" class="n">George</a></br>
+				<a href="index.html?p=dough" class="n">Dough</a></br>
+				<a href="index.html?p=mac" class="n">Mac</a></br>
+				<a href="index.html?p=aeiou" class="n">Aeiou</a></br>
+				<a href="index.html?p=the" class="n">The</a></br>
+				<a href="index.html?p=cea" class="n">Cea</a></br>
+			</p>
+			
+			</br>
+			</br>
+			`);
+			break;
+		case "pilf":
+			document.write(`
+			<h1 style="font-family: Ubuntu;">Pilf</h1>
+			
+			<hr>
+			
+			<table class="infobox" style="width:22em">
+				<caption>Pilf</caption>
+				<tbody>
+					<tr>
+						<td colspan="2" style="text-align:center">
+							<img alt="pilf.jpg" src="./images/pilf.png" width="330" height="330">
+							<div>
+								<a>Pictured in natural color, illustration made by Gramiatar.</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th colspan="2" style="">Designations</th>
+					</tr>
+					<tr>
+						<th scope="row" style="max-width:11em;">
+							<div style="display:inline-block; padding:0.1em 0;line-height:1.2em;">
+								Known Sattelites
+							</div>
+						</th>
+						<td>
+							<div class="plainlist">
+								<ul>
+									<li>
+										<span class="nowrap">
+											Piffol Rings
+										</span>
+									</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" style="max-width:11em;">
+							<div style="display:inline-block; padding:0.1em 0;line-height:1.2em;">
+								Named origin
+							</div>
+						</th>
+						<td>
+							<div class="plainlist">
+								<ul>
+									<li>
+										<span class="nowrap">
+											Unknown (See <a href="index.html?p=ert" class="n">Flip</a>)
+										</span>
+									</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" style="max-width:11em;">
+							<div style="display:inline-block; padding:0.1em 0;line-height:1.2em;">
+								Classification
+							</div>
+						</th>
+						<td>
+							<div class="plainlist">
+								<ul>
+									<li>
+										<span class="nowrap">
+											Cuboid Terrestrial Planet
+										</span>
+									</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" style="max-width:11em;">
+							<div style="display:inline-block; padding:0.1em 0;line-height:1.2em;">
+								Life
+							</div>
+						</th>
+						<td>
+							<div class="plainlist">
+								<ul>
+									<li>
+										<span class="nowrap">
+											Cheese Flies
+										</span>
+									</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+			<p>Pilf is the fourth planet from the <a href="index.html?p=cold_sun" class="n">Hot Sun</a>. It is the seventh largest in size, after <a href="index.html?p=ert" class="n">Ert</a> and before <a href="index.html?p=doug" class="n">Doug</a>, and is also the seventh most massive planet, after <a href="index.html?p=ert" class="n">Ert</a> and before <a href="index.html?p=george" class="n">George</a>.</p>
+
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+			`);
+			break;
+		default: 
+			document.write(`
+				<h1 style="font-family: Ubuntu;">Oops, a tasty 404!</h1>
+				
+				<hr>
+
+				<p>This page doesn't seem to exist, sadly... Maybe it was destroyed by World of Pain...</p>
+
+				</br>
+				</br>
+			`);
+	}
+}
