@@ -40,9 +40,19 @@
 					</div>
 				</div>
 				<a href="" class="w3-bar-item w3-button w3-mobile nyork-green">Discord Invite</a>
-				<a href="index.html" class="w3-bar-item w3-button w3-mobile aero-blue">Wiki</a>
+				<a href="index.html?p=main" class="w3-bar-item w3-button w3-mobile aero-blue">Wiki</a>
 			</div>
 			
+			<script src="scripts/pagesetup.js"></script> 
+
+			<script>
+				let page = new URLSearchParams(window.location.search);
+				page = page.get('p')
+				if (page == null) page = "pilf";
+				generatePage(page);
+			</script>
+			<!-- WIKI BEGINNING -->
+			<!-- WIKI ENDING -->
 		</div>
 	</body>
 </html>
