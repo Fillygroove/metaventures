@@ -47,22 +47,10 @@
 				
 				<script src="scripts/panelsetup.js"></script> 
 
-				<script>
-					let comic = new URLSearchParams(window.location.search);
-					comic = comic.get('c')
-					if (comic == null) comic = "12-1";
-					generatePanels(comic);
-				</script>
-				
 				<a class="prev" onclick="plusSlides(-1)">&#9664;</a>
 				<a class="next" onclick="plusSlides(1)">&#9654;</a>
 				
 			</div>
-			
-			<!--div style="text-align:center">
-				<label>Panel number:</label>
-				<input type="text" id="panel" name="panel" onkeypress="return isNumber(event)">
-			</div-->
 
 			<script src="scripts/pagesetup.js"></script> 
 		</div>
