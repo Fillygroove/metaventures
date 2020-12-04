@@ -56,7 +56,7 @@ function generatePanels(comic) {
 			break;
 		case "10.5":
 			length = 53;
-			description = 'Over The Rainbow';
+			title = 'Over The Rainbow';
 			description = 'We tune in to our favorite cartoon characters in tough pickle.';
 			break;
 		case "h":
