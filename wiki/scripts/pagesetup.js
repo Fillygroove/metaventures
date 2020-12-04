@@ -58,7 +58,7 @@ function generatePage(page) {
 			
 			<hr>
 
-			<p>Welcome to the official Aeroventures Wiki! Here, you can find pages about everything in the Aeroventures world so far.</p>
+			<p>Welcome to the official Aeroventures Wiki! Here, you can find pages about everything in the Aeroventures world so far. Reminder that the Wiki is still a huge work in progress, so expect pages to be empty.</p>
 			
 			<h2>Characters</h2>
 			<p>
@@ -266,7 +266,7 @@ function generatePage(page) {
 					info: ['Cdfqrszt']
 				}, {
 					name: 'Name Origin',
-					info: ['Named by the Alphabet Business Concern after concerns over The']
+					info: ['Named by the Alphabet Business Concern after concerns over <a href="index.html?p=the" class="y">The</a>.']
 				}, {
 					name: 'Classification',
 					info: ['Gas Giant']
@@ -323,7 +323,7 @@ function generatePage(page) {
 				name: 'Oops, a tasty 404!'
 			});
 			document.write(`
-				<p>This page doesn't seem to exist, sadly... Maybe it was destroyed by World of Pain...</p>
+				<p>This page doesn't seem to exist, sadly... Maybe it was destroyed by <a href="index.html?p=wop" class="y">World of Pain</a>...</p>
 
 				</br>
 				</br>
