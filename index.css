@@ -1,171 +1,182 @@
 * {
-	box-sizing:border-box;
-	font-family: Ubuntu;
+    box-sizing: border-box;
+    font-family: Ubuntu;
     background-color: #333333;
 }
 
 .slideshow-container {
-  max-width: 500px;
-  position: relative;
-  margin: auto;
-  background-color: #555555;
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    background-color: #555555;
 }
 
 .slides {
-  display: none;
-  margin-top: 30px;
+    display: none;
+    margin-top: 30px;
 }
 
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  background-color: rgba(0,0,0,0.1);
-  color: #FFFFFF;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
-/* Position the "next button" to the right */
 .av-thin {
-	width: 90%;
-	color: #ffffff;
-	background-color: #555555;
+    width: 90%;
+    color: #ffffff;
+    background-color: #555555;
     position: relative;
-	margin: 0 auto!important;
-	height: 100%;
+    margin: 0 auto !important;
+    height: 100%;
 }
 
 p, h1, h2 {
-	color: #ffffff;
-	background-color: #555555;
-	padding-left: 80px;
-	font-family: Ubuntu;
+    color: #ffffff;
+    background-color: #555555;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-family: Ubuntu;
+    word-wrap: break-word;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .description {
-	text-align: center;
-	font-family: Ubuntu;
-	background-color: #555555;
-	color: #ffffff;
+    text-align: center;
+    font-family: Ubuntu;
+    background-color: #555555;
+    color: #ffffff;
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .aeroventures-title {
-  text-align: center;
-  font-size: 40px;
+    text-align: center;
+    font-size: 40px;
 }
 
 .comic-title {
-  text-align: center;
-  font-size: 30px;
-  background-color: #555555;
+    text-align: center;
+    font-size: 30px;
+    background-color: #555555;
 }
 
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  background-color: rgba(0,0,0,0.1);
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .aero-blue {
-	color: #fff!important;
-	background-color: #46BCE3!important;
+    color: #fff !important;
+    background-color: #46BCE3 !important;
 }
 
 .aero-dblue {
-	color: #fff!important;
-	background-color: #3794B3!important;
+    color: #fff !important;
+    background-color: #3794B3 !important;
 }
 
 .pon-pink {
-	color: #fff!important;
-	background-color: #ED7CB1!important;
+    color: #fff !important;
+    background-color: #ED7CB1 !important;
 }
 
 .nyork-green {
-	color: #fff!important;
-	background-color: #7bec37!important;
+    color: #fff !important;
+    background-color: #7bec37 !important;
 }
 
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: 1}
-  to {opacity: 1}
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-  from {opacity: 1}
-  to {opacity: 1}
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 #menu {
-  position: fixed;
-  right: 0;
-  top: 50%;
-  width: 8em;
-  margin-top: -2.5em;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 8em;
+    margin-top: -2.5em;
 }
 
 .infobox {
-	border: 1px solid #ffffff;
-	border-spacing: 3px;
-	background-color: #555555;
-	color: white;
-	margin: 0.5em 0 0.5em 1em;
-	padding: 0.2em;
-	float: right;
-	clear: right;
-	font-size: 88%;
-	line-height: 1.5em;
-	left: 150px;
+    border: 1px solid #ffffff;
+    border-spacing: 3px;
+    background-color: #555555;
+    color: white;
+    margin: 0.5em 0 0.5em 1em;
+    padding: 0.2em;
+    float: right;
+    clear: right;
+    font-size: 88%;
+    line-height: 1.5em;
+    left: 150px;
 }
 
 .infobox caption {
-	border: 1px solid #ffffff;
-	border-spacing: 3px;
-	font-size: 125%;
-	font-weight: bold;
-	padding: 0.2em;
-	text-align: center;
+    border: 1px solid #ffffff;
+    border-spacing: 3px;
+    font-size: 125%;
+    font-weight: bold;
+    padding: 0.2em;
+    text-align: center;
 }
 
 .infobox img, td {
-	background-color: #555555;
+    background-color: #555555;
 }
 
 .n {
-	color: #ff0000;
+    color: #ff0000;
 }
 
 .y {
-	color: #6EC7E7;
+    color: #6EC7E7;
 }
 
 ul {
