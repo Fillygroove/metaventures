@@ -55,14 +55,16 @@ function pageTemplate(page) {
 		`);
 	}
 	
-	for (let i = 0; i < page.categories.length; i++) {
-		document.write(`
-			<h2>${page.categories[i].name}</h2>
-		`);
-		for (let j = 0; j < page.categories[i].info.length; j++) {
+	if (page.categories != undefined) {
+		for (let i = 0; i < page.categories.length; i++) {
 			document.write(`
-			<p>${page.categories[i].info[j]}</p>
+				<h2>${page.categories[i].name}</h2>
 			`);
+			for (let j = 0; j < page.categories[i].info.length; j++) {
+				document.write(`
+				<p>${page.categories[i].info[j]}</p>
+				`);
+			}
 		}
 	}
 }
