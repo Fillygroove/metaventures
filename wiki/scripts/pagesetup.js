@@ -44,48 +44,61 @@ function pageTemplate(page) {
 			`);
 		}
 		document.write(`
-			</tbody>
-		</table>
+				</tbody>
+			</table>
 		`);
+	}
+			
+	for (let i = 0; i < page.introText.length; i++) {
+		document.write(`
+		<p>${page.introText[i]}</p>
+		`);
+	}
+	
+	for (let i = 0; i < page.categories.length; i++) {
+		document.write(`
+			<h2>${page.categories[i].name}</h2>
+		`);
+		for (let j = 0; j < page.categories[i].info.length; j++) {
+			document.write(`
+			<p>${page.categories[i].info[j]}</p>
+			`);
+		}
 	}
 }
 
 function generatePage(page) {
 	switch (page) {
 		case "main":
-			document.write(`
-			<h1 style="font-family: Ubuntu;">The Wiki</h1>
-			
-			<hr>
 
-			<p>Welcome to the official Aeroventures Wiki! Here, you can find pages about everything in the Aeroventures world so far. Reminder that the Wiki is still a huge work in progress, so expect pages to be empty.</p>
-			
-			<h2>Characters</h2>
-			<p>
-				<a href="index.html?p=aero" class="n">Aero</a></br>
-				<a href="index.html?p=archie" class="n">Archie</a></br>
-				<a href="index.html?p=lakys" class="n">Lakys</a></br>
-				<a href="index.html?p=aposteel" class="n">Aposteel</a></br>
-			</p>
-			
-			<h2>Planets</h2>
-			<p>
-				<a href="index.html?p=grene" class="y">Grene</a></br>
-				<a href="index.html?p=doug" class="y">Doug</a></br>
-				<a href="index.html?p=pilf" class="y">Pilf</a></br>
-				<a href="index.html?p=ert" class="y">Ert</a></br>
-				<a href="index.html?p=george" class="y">George</a></br>
-				<a href="index.html?p=dough" class="y">Dough</a></br>
-				<a href="index.html?p=mac" class="y">Mac</a></br>
-				<a href="index.html?p=wop" class="y">World of Pain</a></br>
-				<a href="index.html?p=aeiou" class="y">Aeiou</a></br>
-				<a href="index.html?p=the" class="y">The</a></br>
-				<a href="index.html?p=cea" class="y">Cea</a></br>
-			</p>
-			
-			</br>
-			</br>
-			`);
+			pageTemplate({
+				name: 'The Wiki',
+				introText: ['Welcome to the official Aeroventures Wiki! Here, you can find pages about everything in the Aeroventures world so far. Reminder that the Wiki is still a huge work in progress, so expect pages to be empty.'],
+				categories: [{
+					name: 'Characters',
+					info: [
+						'<a href="index.html?p=aero" class="n">Aero</a>', 
+						'<a href="index.html?p=archie" class="n">Archie</a>', 
+						'<a href="index.html?p=lakys" class="n">Lakys</a>', 
+						'<a href="index.html?p=aposteel" class="n">Aposteel</a>'
+					]
+				}, {
+					name: 'Planets',
+					info: [
+						'<a href="index.html?p=grene" class="y">Grene</a>',
+						'<a href="index.html?p=doug" class="y">Doug</a>',
+						'<a href="index.html?p=pilf" class="y">Pilf</a>',
+						'<a href="index.html?p=ert" class="y">Ert</a>',
+						'<a href="index.html?p=george" class="y">George</a>',
+						'<a href="index.html?p=dough" class="y">Dough</a>',
+						'<a href="index.html?p=mac" class="y">Mac</a>',
+						'<a href="index.html?p=wop" class="y">World of Pain</a>',
+						'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
+						'<a href="index.html?p=the" class="y">The</a>',
+						'<a href="index.html?p=cea" class="y">Cea</a>'
+					]
+				}]
+			});
 			break;
 		case "grene":
 			pageTemplate({
@@ -238,6 +251,23 @@ function generatePage(page) {
 				}, {
 					name: 'Life',
 					info: ['Confirmed but Unknown']
+				}],
+				introText: [
+					'Mac is the seventh planet from the <a href="index.html?p=hotsun" class="n">Hot Sun</a>, in between <a href="index.html?p=dough" class="y">Dough</a> and <a href="index.html?p=aeiou" class="y">Aeiou</a>. It is the largest planet in the system. It is a gas giant, with a radius that is a third of the size of the Hot Sun, and has a prime vertical that is a fourth of the size of the Hot Sun. Due to its size, it is visible from <a href="index.html?p=ert" class="y">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
+					'Mac is mostly composed of Hydrogen, being in the form of gas and plasma, with a good amount of Iodine and Neon, along with a small amount of other materials and elements. Due to Mac\'s rotation, the planet has a huge bulge on the horizon, experiencing a day once every 3.5 hours. Mac orbit lies inside of an asteroid belt.',
+					'The term for describing something related to Mac is Donian.'
+				],
+				categories: [{
+					name: 'Characteristics',
+					info: [
+						'Mac is a gas giant, primarily composed of Hydrogen, Iodine, and Neon in a gaseous form, and Hydrogen in the form of Plasma due to the heat generated from its fast spin. Mac has strands of elements, due to its fast spin seperating them. Most of the gaseous hydrogen is placed at the poles, and the plasmatic hydrogen is mostly placed near the equator, although some parts are seperated at different areas. Mac features a large plasma storm that swirls, moving in the opposite direction of the planet, creating enough energy to sustain the plasma.',
+						'Near the poles is a gigantic rod that goes through the entirety of the planet, small enough to not be seen from a distance but big enough to hold a civilization. No such civilization has been found, however. Said pole has been theorized to be made out of Titanium and Iron, in the form of steel cables around a tube, with a shell of titanium. It is also theorized that <a href="index.html?p=aeiou" class="y">Aeiou</a>\'s satellite, Cdfqrszt, also is made from the same material.'
+					]
+				}, {
+					name: 'Interactions With World of Pain',
+					info: [
+						'Mac\s satellite is <a href="index.html?p=wop" class="y">World of Pain</a>, which has a history with the planet. Originally, World of Pain was a minor object close to the Hot Sun, with it\s own miniature satellite, which has been named World of Pain JR. After being ejected from the inner parts of the system by a solar flare, World of Pain JR had falled into the gasses of Mac, leading to World of Pain destroying all of Mac\'s old satellites, creating an asteroid belt. Once a year, World of Pain attempts to punch Mac, which either leads in World of Pain either sinking in the gas, or being shocked by plasma storms.</br></br>'
+					]
 				}]
 			});
 			break;
