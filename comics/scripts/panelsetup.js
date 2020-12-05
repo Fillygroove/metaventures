@@ -82,28 +82,47 @@ function generatePanels(comic) {
 			title = 'Domakav Rap';
 			break;
 	}
-	document.write(
-		`<div class="comic-title">${title}</div>`
-	);
+	
+	let slideshow = document.getElementsByClassName('slideshow-container')[0];
+	
+	let slideTitle = document.createElement('div');
+	slideTitle.className = 'comic-title';
+	slideTitle.innerHTML = title;
+	slideshow.append(slideTitle);
+
 	for (let i = 1; i < length + 1; i++) {
+		let slides = document.createElement('div');
+		slides.className = 'slides fade';
+		
+		let number = document.createElement('div');
+		number.className = 'numbertext';
+		number.innerHTML = `${i} / ${length}`;
+		
+		let panels = document.createElement('img');
+		panels.src = `${dir}_${i}.jpg`;
+		panels.style = "width: 100%";
+
+		
+		slides.append(number);
+		
 		if (comic == 7 && i == 10) {
-			document.write(`
-				<div class="slides fade">
-				<div class="numbertext">${i} / ${length}</div>
-				<a href="../wiki/index.html?p=dino"><img src="${dir}_${i}.jpg" style="width:100%"></a>
-				</div>
-			`);
-		} else document.write(`
-			<div class="slides fade">
-			<div class="numbertext">${i} / ${length}</div>
-			<img src="${dir}_${i}.jpg" style="width:100%">
-			</div>
-		`);
+			let panelLink = document.createElement('a');
+			panelLink.href = "../wiki/index.html?p=dino";
+			
+			panelLink.append(panels);
+			slides.append(panelLink);
+		} else slides.append(panels);
+				
+		slideshow.append(slides);
 	}
-	document.write(`
-		<hr>
-		<h4 class = "description">${description}</h4>
-	`);
+	let line = document.createElement('hr');
+	let desc = document.createElement('h4');
+	
+	desc.className = 'description';
+	desc.innerHTML = description;
+	
+	slideshow.append(line);
+	slideshow.append(desc);
 }
 
 let comic = new URLSearchParams(window.location.search);
