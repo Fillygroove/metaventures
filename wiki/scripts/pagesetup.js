@@ -1,80 +1,126 @@
 function pageTemplate(page) {
-	document.write(`
-		<h1 style="font-family: Ubuntu;">${page.name}</h1>
-		
-		<hr>
-	`);
+	let article = document.getElementsByClassName('av-thin')[0];
+	
+	let name = document.createElement('h1');
+	name.style = "font-family: Ubuntu;";
+	name.innerHTML = page.name;
+	
+	let topLineBreak = document.createElement('hr');
+	
+	article.append(name, topLineBreak);
+
 	if (page.navbox !== undefined) {
-		document.write(`
-		<table class="infobox" style="width:22em">
-			<caption>${page.name}</caption>
-			<tbody>
-				<tr>
-					<td colspan="2" style="text-align:center">
-						<img class="pixel" alt="${page.file}" src="./images/${page.file}" width="${page.dims[0]}" height="${page.dims[1]}">
-						<div>
-							<a>${page.caption}</a>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<th colspan="2" style="">${page.heading}</th>
-				</tr>
-		`);
+		let navbox = document.createElement('table');
+		navbox.className = "infobox";
+		navbox.style = "width: 22em";
+		
+		let caption = document.createElement('caption');
+		caption.innerHTML = page.name;
+				
+		let navbody = document.createElement('tbody');
+		
+		let imagetr = document.createElement('tr');
+		let imagetd = document.createElement('td');
+		let imgnav = document.createElement('img');
+		let capdiv = document.createElement('div');
+		let capa = document.createElement('a');
+		
+		imagetd.colSpan = '2';
+		imagetd.style = "text-align: center";
+		
+		imgnav.className = "pixel";
+		imgnav.alt = page.file;
+		imgnav.src = `./images/${page.file}`;
+		imgnav.width = page.dims[0];
+		imgnav.height = page.dims[1];
+		
+		capa.innerHTML = page.caption;
+		
+		capdiv.append(capa);
+		
+		imagetd.append(imgnav, capdiv);
+		
+		imagetr.append(imagetd);
+		
+		let headingtr = document.createElement('tr');
+		let headingth = document.createElement('th');
+		
+		headingth.colSpan = "2"
+		headingth.innerHTML = page.heading;
+		
+		headingtr.append(headingth);
+		
+		navbody.append(imagetr, headingtr);
+		
 		for (let i = 0; i < page.navbox.length; i++) {
-			document.write(`
-				<tr>
-					<th scope="row" style="max-width:11em;">
-						<div style="display:inline-block; padding:0.1em 0;line-height:1.2em;">
-							${page.navbox[i].name}
-						</div>
-					</th>
-					<td>
-						<div class="plainlist">
-							<ul>
-								<li>
-									<span class="nowrap">
-										${page.navbox[i].info.toString().replaceAll(",","</br>")}
-									</span>
-								</li>
-							</ul>
-						</div>
-					</td>
-				</tr>
-			`);
+			let navboxtr = document.createElement('tr');
+			
+			let navboxth = document.createElement('th');
+			navboxth.scope = "row";
+			navboxth.style = "max-width: 11em;";
+			
+			let navleftdiv = document.createElement('div');
+			navleftdiv.style = "display: inline-block; padding: 0.1em 0; line-height: 1.2em;";
+			navleftdiv.innerHTML = page.navbox[i].name;
+			
+			navboxth.append(navleftdiv);
+
+			let navboxtd = document.createElement('td');
+
+			let navrightdiv = document.createElement('div');
+			navrightdiv.className = "plainlist";
+
+			let navrightul = document.createElement('ul');
+			let navrightli = document.createElement('li');
+			let navrightspan = document.createElement('span');
+			
+			navrightspan.className = "nowrap";
+			navrightspan.innerHTML = page.navbox[i].info.toString().replaceAll(",","</br>");
+
+			navrightli.append(navrightspan);
+			navrightul.append(navrightli);
+			navrightdiv.append(navrightul);
+			navboxtd.append(navrightdiv);
+
+			navboxtr.append(navboxth, navboxtd);
+						
+			navbody.append(navboxtr);
 		}
-		document.write(`
-				</tbody>
-			</table>
-		`);
+		
+		navbox.append(caption, navbody);
+		
+		article.append(navbox);
 	}
 	
 	if (page.introText != undefined) {
 		for (let i = 0; i < page.introText.length; i++) {
-			document.write(`
-			<p>${page.introText[i]}</p>
-			`);
+			let introText = document.createElement('p');
+			introText.innerHTML = page.introText[i];
+			
+			article.append(introText);
 		}
 	}
 	
 	if (page.categories != undefined) {
 		for (let i = 0; i < page.categories.length; i++) {
-			document.write(`
-				<h2>${page.categories[i].name}</h2>
-				<hr>
-			`);
+			let category = document.createElement('h2');
+			let lineBreak = document.createElement('hr');
+			
+			category.innerHTML = page.categories[i].name;
+			
+			article.append(category, lineBreak);
 			for (let j = 0; j < page.categories[i].info.length; j++) {
-				document.write(`
-					<p>${page.categories[i].info[j]}</p>
-				`);
+				let info = document.createElement('p');
+				info.innerHTML = page.categories[i].info[j];
+				
+				article.append(info);
 			}
 		}
 	}
 	
-	document.write(`
-		</br>
-		</br>
-	`);
+	let break1 = document.createElement('br');
+	let break2 = document.createElement('br');
+	article.append(break1, break2);
 }
 
 function generatePage(page) {
@@ -123,7 +169,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=taiberaque" class="y">Taiberaque</a>']
+					info: ['<a href="index.html?p=taiberaque" class="y">Taiberaque (Binary System)</a>']
 				}, {
 					name: 'Satellites',
 					info: [
@@ -136,7 +182,8 @@ function generatePage(page) {
 						'<a href="index.html?p=mac" class="y">Mac</a>',
 						'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
 						'<a href="index.html?p=the" class="y">The</a>',
-						'<a href="index.html?p=cea" class="y">Cea</a>'
+						'<a href="index.html?p=cea" class="y">Cea</a>',
+						'<a href="index.html?p=taiberaque" class="y">Taiberaque (Binary System)</a>'
 					]
 				}, {
 					name: 'Name Origin',
@@ -242,7 +289,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>', '<a href="index.html?p=george" class="y">George</a>']
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>', '<a href="index.html?p=george" class="y">George (Binary System)</a>']
 				}, {
 					name: 'Satellites',
 					info: ['<a href="index.html?p=george" class="y">George (Binary System)</a>', '<a href="index.html?p=george" class="n">Perpahedron (Artificial)</a>']
@@ -267,7 +314,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>', '<a href="index.html?p=ert" class="y">Ert</a>']
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>', '<a href="index.html?p=ert" class="y">Ert (Binary System)</a>']
 				}, {
 					name: 'Satellites',
 					info: ['<a href="index.html?p=ert" class="y">Ert (Binary System)</a>', 'Damocles']
@@ -346,7 +393,7 @@ function generatePage(page) {
 				}, {
 					name: 'Interactions With World of Pain',
 					info: [
-						'Mac\s satellite is <a href="index.html?p=wop" class="y">World of Pain</a>, which has a history with the planet. Originally, World of Pain was a minor object close to the Hot Sun, with it\s own miniature satellite, which has been named World of Pain JR. After being ejected from the inner parts of the system by a solar flare, World of Pain JR had falled into the gasses of Mac, leading to World of Pain destroying all of Mac\'s old satellites, creating an asteroid belt. Once a year, World of Pain attempts to punch Mac, which either leads in World of Pain either sinking in the gas, or being shocked by plasma storms.'
+						'Mac\'s satellite is <a href="index.html?p=wop" class="y">World of Pain</a>, which has a history with the planet. Originally, World of Pain was a minor object close to the Hot Sun, with it\s own miniature satellite, which has been named World of Pain JR. After being ejected from the inner parts of the system by a solar flare, World of Pain JR had falled into the gasses of Mac, leading to World of Pain destroying all of Mac\'s old satellites, creating an asteroid belt. Once a year, World of Pain attempts to punch Mac, which either leads in World of Pain either sinking in the gas, or being shocked by plasma storms.'
 					]
 				}]
 			});
@@ -456,7 +503,7 @@ function generatePage(page) {
 				name: 'Cold Sun',
 				file: 'coldsun.png',
 				dims: ['330', '330'],
-				caption: 'Pictured in false color due to <a href="index.html?p=ert" class="y">Ert</a>\'s atmosphere, illustration made by Gramiatar.',
+				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -499,13 +546,14 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun (Binary System)</a>']
 				}, {
 					name: 'Satellites',
 					info: [
 						'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
 						'<a href="index.html?p=flip" class="n">Flip</a>',
-						'<a href="index.html?p=gigantrax" class="n">Gigantrax</a>'
+						'<a href="index.html?p=gigantrax" class="n">Gigantrax</a>',
+						'<a href="index.html?p=hotsun" class="y">Hot Sun (Binary System)</a>'
 					]
 				}, {
 					name: 'Name Origin',
@@ -533,7 +581,7 @@ function generatePage(page) {
 		case "dino":
 			let scream = [];
 			for (let i = 0; i < 5000; i++) scream.push('A');
-			scream = scream.toString().replaceAll(',','');
+			scream = scream.toString().replaceAll(',', '');
 			pageTemplate({
 				name: 'How to stop satellite. by Dinosaurs',
 				introText: [`${scream}`]
