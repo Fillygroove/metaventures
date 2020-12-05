@@ -55,6 +55,10 @@ p, h1, h2 {
     word-wrap: break-word;
 }
 
+h3 {
+	background-color: #555555;
+}
+
 a {
     text-decoration: none;
 }
