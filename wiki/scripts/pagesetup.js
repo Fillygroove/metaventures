@@ -363,7 +363,7 @@ function generatePage(page) {
 					name: 'Life',
 					info: [
 						'<h3>Cheese Flies</h3>',
-						'Cheese Flies are flying animals that are confirmed to exist on Pilf. They are large arthropods, with a wingspan of 2 feet, and a body length of 4 feet. Cheese Flies only consume Cheese Moss, which nourishes their body enough to keep on living.'
+						'Cheese Flies are flying animals that are confirmed to exist on Pilf. They are large arthropods, with a wingspan of 2 feet, and a body length of 4 feet. Cheese Flies only consume Cheese Moss, which nourishes their body enough to keep on living.',
 						'<h3>Cheese Moss</h3>',
 						'Cheese Moss is a moss like plant, which grows on the purple material on Pilf, close by to the corrosive liquid, seemingly using the liquid as a food source. Once every 4 days, the Cheese Moss produces a hard transparent substance with queso inside of it, which has been colloquially called Bone Cheese by scientists. The purpose of the bone cheese is unknown.'
 					]
