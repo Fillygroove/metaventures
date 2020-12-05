@@ -258,7 +258,7 @@ function generatePage(page) {
 				name: 'Doug',
 				file: 'doug.png',
 				dims: ['330', '330'],
-				caption: 'Pictured in natural color, illustration made by Gramiatar.',
+				caption: 'Pictured in natural color due to everyone forgetting about it, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -275,11 +275,47 @@ function generatePage(page) {
 				}, {
 					name: 'Life',
 					info: ['Worms (Unconfirmed)']
+				}],
+				introText: [
+					'Doug is the second planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=grene" class="y">Grēne</a> and before <a href="index.html?p=pilf" class="y">Pilf</a>. Doug can be seen in the night skies of <a href="index.html?p=ert" class="y">Ert</a> during the evenings, although it is hard to see due to it not having much of a reflective surface. As such, Doug is often forgotten and even hated due to its status as a planet. Doug is about a one hundreth the size of the Hot Sun.',
+					'Doug, like Grēne, is made up of a silicon-based material, but has a crust with a material that is able to corrode, and has been corriding for millions of years, due to Grēne\'s atmostphere.',
+					'The term for describing something related to Doug is Forgettable.'
+				],
+				categories: [{
+					name: 'Characteristics',
+					info: [
+						'Doug is a terrestrial planet that is made up of a silicon-based material, along with an unknown material that is able to corrode, along with appearing to have some form of weathering. Doug\'s surface is littered with craters, along with flat plane-like areas that have been theorized to have been formed by volcanic activity on the planet. Volcanic activity has not been observed. Doug has a brown surface, due to it being blasted by Grēne\'s atmosphere. The surface itself has a varied surface, with darker sections being the newest and with lighter sections being the darkest. This fact is why craters are dark in color. Near the south pole of Doug lies a crater that is light in color. This spot has not been given a label, due to it only being observed once.',
+						'Doug has a very thin atmosphere. It\'s not enough to cause a visible sky. Said atmosphere is theorized to have come from Grēne\'s atmosphere, along with the trapping of other gasses.'
+					]
+				}, {
+					name: 'Interactions With Grēne',
+					info: [
+						'Doug orbits closely to the expelled atmosphere of Grēne, which, over millions of years, has turned it to the brown shade we know it as today.'
+					]
+				}, {
+					name: 'Satellites',
+					info: [
+						'<img src="images/h.png" alt="h.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
+						'<h3>H</h3>',
+						'Doug has one confirmed satellite, which has been named H. H is a natural satellite, shaped like a cube. It is the only object in the system with a cuboid shape, along with <a href="index.html?p=pilf" class="y">Pilf</a>. H itself contains a similar makeup to Doug, with the same type of rocks and the same holes, with the only difference being size and shape. It is unknown if the naming of H was to make Doug and H match up with <a href="index.html?p=dough" class="y">Dough</a> so that people could remember Doug.'
+					]
+				}, {
+					name: 'Life',
+					info: [
+						'Theoretically, Doug could have life on it. While unconfirmed as of now, Doug could have gigantic lengthy creatures on it that seem to be a larger variant of <a href="index.html?p=george" class="y">George</a>\'s worms. Said worms could have created the holes on Doug as a place to call home. This theory also applies to H.'
+					]
+				}, {
+					name: 'Culture',
+					info: [
+						'Doug is widely regarded to be the worst planet in the Hot Sun system. This is due to it appearing to be just a rock, although there is much more than that. It is widely hated due to the opinion on scientists. A quote, which has been debated by critics, is down below.',
+						'"Doug, are you KIDDING ME? Why can\'t this damn planet make VOLCANOES already! I want to see some action, not a dead dirtball of a planet! I don\'t even want to call it a planet, it\'s just a rock. It has absolutely no value to my research."',
+						' - <a href="index.html?p=lakys" class="n">Dr. Lakys</a>'
+					]
 				}]
 			});
 			break;
 		case "pilf":
-			pageTemplate({
+			pageTemplate({ // First!
 				name: 'Pilf',
 				file: 'pilf.png',
 				dims: ['330', '330'],
