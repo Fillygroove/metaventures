@@ -360,17 +360,13 @@ function generatePage(page) {
 			});
 			break;
 		case "dino":
-			pageTemplate({
-				name: 'How to stop satellite. by Dinosaurs',
-			});
 			let scream = [];
 			for (let i = 0; i < 5000; i++) scream.push('A');
 			scream = scream.toString().replaceAll(',','');
-			document.write(`
-				<p>${scream}</p>
-				</br>
-				</br>
-			`);
+			pageTemplate({
+				name: 'How to stop satellite. by Dinosaurs',
+				introText: [`${scream}`]
+			});
 			break;
 		default: 
 			pageTemplate({
