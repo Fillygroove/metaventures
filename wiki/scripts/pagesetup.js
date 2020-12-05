@@ -92,9 +92,10 @@ function generatePage(page) {
 						'<a href="index.html?p=aposteel" class="n">Aposteel</a>'
 					]
 				}, {
-					name: 'Planets',
+					name: 'Celestial Objects',
 					info: [
-						'<a href="index.html?p=grene" class="y">Grene</a>',
+						'<a href="index.html?p=hotsun" class="y">Hot Sun</a>',
+						'<a href="index.html?p=grene" class="y">Grēne</a>',
 						'<a href="index.html?p=doug" class="y">Doug</a>',
 						'<a href="index.html?p=pilf" class="y">Pilf</a>',
 						'<a href="index.html?p=ert" class="y">Ert</a>',
@@ -104,7 +105,53 @@ function generatePage(page) {
 						'<a href="index.html?p=wop" class="y">World of Pain</a>',
 						'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
 						'<a href="index.html?p=the" class="y">The</a>',
+						'<a href="index.html?p=cea" class="y">Cea</a>',
+						'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
+						'<a href="index.html?p=flip" class="n">Flip</a>'
+					]
+				}]
+			});
+			break;
+		case "hotsun":
+			pageTemplate({
+				name: 'Hot Sun',
+				file: 'hotsun.png',
+				dims: ['330', '330'],
+				caption: 'Pictured in false color due to <a href="index.html?p=ert" class="y">Ert</a>\'s atmosphere, illustration made by Gramiatar.',
+				heading: 'Designations',
+				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=coldsun" class="y">Cold Sun</a>']
+				}, {
+					name: 'Satellites',
+					info: [
+						'<a href="index.html?p=grene" class="y">Grēne</a>',
+						'<a href="index.html?p=doug" class="y">Doug</a>',
+						'<a href="index.html?p=pilf" class="y">Pilf</a>',
+						'<a href="index.html?p=ert" class="y">Ert</a>',
+						'<a href="index.html?p=george" class="y">George</a>',
+						'<a href="index.html?p=dough" class="y">Dough</a>',
+						'<a href="index.html?p=mac" class="y">Mac</a>',
+						'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
+						'<a href="index.html?p=the" class="y">The</a>',
 						'<a href="index.html?p=cea" class="y">Cea</a>'
+					]
+				}, {
+					name: 'Name Origin',
+					info: ['It\'s hot.']
+				}, {
+					name: 'Classification',
+					info: ['K-Type Star']
+				}, {
+					name: 'Life',
+					info: ['None']
+				}],
+				introText: [
+				],
+				categories: [{
+					name: 'Characteristics',
+					info: [
+						'Sample text.',
 					]
 				}]
 			});
@@ -118,7 +165,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
 				}, {
 					name: 'Satellites',
 					info: ['None']
@@ -143,7 +190,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
 				}, {
 					name: 'Satellites',
 					info: ['H']
@@ -168,7 +215,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
 				}, {
 					name: 'Satellites',
 					info: ['Piffol Rings']
@@ -193,7 +240,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>', '<a href="index.html?p=george" class="y">George</a>']
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>', '<a href="index.html?p=george" class="y">George</a>']
 				}, {
 					name: 'Satellites',
 					info: ['<a href="index.html?p=george" class="y">George (Binary System)</a>', '<a href="index.html?p=george" class="n">Perpahedron (Artificial)</a>']
@@ -218,7 +265,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>', '<a href="index.html?p=ert" class="y">Ert</a>']
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>', '<a href="index.html?p=ert" class="y">Ert</a>']
 				}, {
 					name: 'Satellites',
 					info: ['<a href="index.html?p=ert" class="y">Ert (Binary System)</a>', 'Damocles']
@@ -243,7 +290,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
 				}, {
 					name: 'Satellites',
 					info: ['Dot', 'Tod', 'Otd']
@@ -268,7 +315,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
 				}, {
 					name: 'Satellites',
 					info: ['<a href="index.html?p=wop" class="y">World of Pain</a>']
@@ -283,7 +330,7 @@ function generatePage(page) {
 					info: ['Confirmed but Unknown']
 				}],
 				introText: [
-					'Mac is the seventh planet from the <a href="index.html?p=hotsun" class="n">Hot Sun</a>, in between <a href="index.html?p=dough" class="y">Dough</a> and <a href="index.html?p=aeiou" class="y">Aeiou</a>. It is the largest planet in the system. It is a gas giant, with a radius that is a third of the size of the Hot Sun, and has a prime vertical that is a fourth of the size of the Hot Sun. Due to its size, it is visible from <a href="index.html?p=ert" class="y">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
+					'Mac is the seventh planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, in between <a href="index.html?p=dough" class="y">Dough</a> and <a href="index.html?p=aeiou" class="y">Aeiou</a>. It is the largest planet in the system. It is a gas giant, with a radius that is a third of the size of the Hot Sun, and has a prime vertical that is a fourth of the size of the Hot Sun. Due to its size, it is visible from <a href="index.html?p=ert" class="y">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
 					'Mac is mostly composed of Hydrogen, being in the form of gas and plasma, with a good amount of Iodine and Neon, along with a small amount of other materials and elements. Due to Mac\'s rotation, the planet has a huge bulge on the horizon, experiencing a day once every 3.5 hours. Mac orbit lies inside of an asteroid belt.',
 					'The term for describing something related to Mac is Donian.'
 				],
@@ -310,7 +357,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=mac" class="n">Mac</a>']
+					info: ['<a href="index.html?p=mac" class="y">Mac</a>']
 				}, {
 					name: 'Satellites',
 					info: ['None']
@@ -335,7 +382,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
 				}, {
 					name: 'Satellites',
 					info: ['Cdfqrszt']
@@ -360,7 +407,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
 				}, {
 					name: 'Satellites',
 					info: ['Unknown']
@@ -385,7 +432,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
 				}, {
 					name: 'Satellites',
 					info: ['Numerous Mines (52 confirmed)']
@@ -398,6 +445,41 @@ function generatePage(page) {
 				}, {
 					name: 'Life',
 					info: ['Unknown']
+				}]
+			});
+			break;
+		case "coldsun":
+			pageTemplate({
+				name: 'Cold Sun',
+				file: 'coldsun.png',
+				dims: ['330', '330'],
+				caption: 'Pictured in false color due to <a href="index.html?p=ert" class="y">Ert</a>\'s atmosphere, illustration made by Gramiatar.',
+				heading: 'Designations',
+				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
+				}, {
+					name: 'Satellites',
+					info: [
+						'<a href="index.html?p=flip" class="n">Flip</a>'
+					]
+				}, {
+					name: 'Name Origin',
+					info: ['It\'s cold.']
+				}, {
+					name: 'Classification',
+					info: ['Star']
+				}, {
+					name: 'Life',
+					info: ['None']
+				}],
+				introText: [
+				],
+				categories: [{
+					name: 'Characteristics',
+					info: [
+						'Sample text.',
+					]
 				}]
 			});
 			break;
