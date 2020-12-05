@@ -117,6 +117,9 @@ function generatePage(page) {
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+				}, {
 					name: 'Satellites',
 					info: ['None']
 				}, {
@@ -139,6 +142,9 @@ function generatePage(page) {
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+				}, {
 					name: 'Satellites',
 					info: ['H']
 				}, {
@@ -161,6 +167,9 @@ function generatePage(page) {
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+				}, {
 					name: 'Satellites',
 					info: ['Piffol Rings']
 				}, {
@@ -183,6 +192,9 @@ function generatePage(page) {
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>', '<a href="index.html?p=george" class="y">George</a>']
+				}, {
 					name: 'Satellites',
 					info: ['<a href="index.html?p=george" class="y">George (Binary System)</a>', '<a href="index.html?p=george" class="n">Perpahedron (Artificial)</a>']
 				}, {
@@ -205,6 +217,9 @@ function generatePage(page) {
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>', '<a href="index.html?p=ert" class="n">Ert</a>']
+				}, {
 					name: 'Satellites',
 					info: ['<a href="index.html?p=ert" class="y">Ert (Binary System)</a>', 'Damocles']
 				}, {
@@ -227,6 +242,9 @@ function generatePage(page) {
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+				}, {
 					name: 'Satellites',
 					info: ['Dot', 'Tod', 'Otd']
 				}, {
@@ -249,6 +267,9 @@ function generatePage(page) {
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+				}, {
 					name: 'Satellites',
 					info: ['<a href="index.html?p=wop" class="y">World of Pain</a>']
 				}, {
@@ -288,6 +309,9 @@ function generatePage(page) {
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=mac" class="n">Mac</a>']
+				}, {
 					name: 'Satellites',
 					info: ['None']
 				}, {
@@ -310,6 +334,9 @@ function generatePage(page) {
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+				}, {
 					name: 'Satellites',
 					info: ['Cdfqrszt']
 				}, {
@@ -332,6 +359,9 @@ function generatePage(page) {
 				caption: 'A mockup of what The could look like, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+				}, {
 					name: 'Satellites',
 					info: ['Unknown']
 				}, {
@@ -354,6 +384,9 @@ function generatePage(page) {
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>']
+				}, {
 					name: 'Satellites',
 					info: ['Numerous Mines (52 confirmed)']
 				}, {
