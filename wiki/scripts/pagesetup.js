@@ -70,6 +70,11 @@ function pageTemplate(page) {
 			}
 		}
 	}
+	
+	document.write(`
+		</br>
+		</br>
+	`);
 }
 
 function generatePage(page) {
@@ -271,7 +276,7 @@ function generatePage(page) {
 				}, {
 					name: 'Interactions With World of Pain',
 					info: [
-						'Mac\s satellite is <a href="index.html?p=wop" class="y">World of Pain</a>, which has a history with the planet. Originally, World of Pain was a minor object close to the Hot Sun, with it\s own miniature satellite, which has been named World of Pain JR. After being ejected from the inner parts of the system by a solar flare, World of Pain JR had falled into the gasses of Mac, leading to World of Pain destroying all of Mac\'s old satellites, creating an asteroid belt. Once a year, World of Pain attempts to punch Mac, which either leads in World of Pain either sinking in the gas, or being shocked by plasma storms.</br></br>'
+						'Mac\s satellite is <a href="index.html?p=wop" class="y">World of Pain</a>, which has a history with the planet. Originally, World of Pain was a minor object close to the Hot Sun, with it\s own miniature satellite, which has been named World of Pain JR. After being ejected from the inner parts of the system by a solar flare, World of Pain JR had falled into the gasses of Mac, leading to World of Pain destroying all of Mac\'s old satellites, creating an asteroid belt. Once a year, World of Pain attempts to punch Mac, which either leads in World of Pain either sinking in the gas, or being shocked by plasma storms.'
 					]
 				}]
 			});
@@ -379,9 +384,6 @@ function generatePage(page) {
 			});
 			document.write(`
 				<p>This page doesn't seem to exist, sadly... Maybe it was destroyed by <a href="index.html?p=wop" class="y">World of Pain</a>...</p>
-
-				</br>
-				</br>
 			`);
 			break;
 	}
