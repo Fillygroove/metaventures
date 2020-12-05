@@ -65,7 +65,7 @@ function pageTemplate(page) {
 			`);
 			for (let j = 0; j < page.categories[i].info.length; j++) {
 				document.write(`
-				<p>${page.categories[i].info[j]}</p>
+					<p>${page.categories[i].info[j]}</p>
 				`);
 			}
 		}
@@ -80,7 +80,6 @@ function pageTemplate(page) {
 function generatePage(page) {
 	switch (page) {
 		case "main":
-
 			pageTemplate({
 				name: 'The Wiki',
 				introText: ['Welcome to the official Aeroventures Wiki! Here, you can find pages about everything in the Aeroventures world so far. Reminder that the Wiki is still a huge work in progress, so expect pages to be empty.'],
@@ -380,11 +379,9 @@ function generatePage(page) {
 			break;
 		default: 
 			pageTemplate({
-				name: 'Oops, a tasty 404!'
+				name: 'Oops, a tasty 404!',
+				introText: ['This page doesn\'t seem to exist, sadly... Maybe it was destroyed by <a href="index.html?p=wop" class="y">World of Pain</a>...']
 			});
-			document.write(`
-				<p>This page doesn't seem to exist, sadly... Maybe it was destroyed by <a href="index.html?p=wop" class="y">World of Pain</a>...</p>
-			`);
 			break;
 	}
 }
