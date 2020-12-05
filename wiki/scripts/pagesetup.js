@@ -48,11 +48,13 @@ function pageTemplate(page) {
 			</table>
 		`);
 	}
-			
-	for (let i = 0; i < page.introText.length; i++) {
-		document.write(`
-		<p>${page.introText[i]}</p>
-		`);
+	
+	if (page.introText != undefined) {
+		for (let i = 0; i < page.introText.length; i++) {
+			document.write(`
+			<p>${page.introText[i]}</p>
+			`);
+		}
 	}
 	
 	if (page.categories != undefined) {
