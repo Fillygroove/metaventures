@@ -218,7 +218,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>', '<a href="index.html?p=ert" class="n">Ert</a>']
+					info: ['<a href="index.html?p=hotsun" class="n">Hot Sun</a>', '<a href="index.html?p=ert" class="y">Ert</a>']
 				}, {
 					name: 'Satellites',
 					info: ['<a href="index.html?p=ert" class="y">Ert (Binary System)</a>', 'Damocles']
