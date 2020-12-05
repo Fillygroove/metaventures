@@ -89,7 +89,7 @@ function generatePage(page) {
 			break;
 		case "grene":
 			pageTemplate({
-				name: 'Grenē',
+				name: 'Grēne',
 				file: 'grene.png',
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
