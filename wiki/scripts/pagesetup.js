@@ -123,7 +123,7 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=coldsun" class="y">Cold Sun</a>']
+					info: ['<a href="index.html?p=taiberaque" class="y">Taiberaque</a>']
 				}, {
 					name: 'Satellites',
 					info: [
