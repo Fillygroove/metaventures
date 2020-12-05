@@ -338,7 +338,8 @@ function generatePage(page) {
 					name: 'Characteristics',
 					info: [
 						'Mac is a gas giant, primarily composed of Hydrogen, Helium, Iodine, and Neon in a gaseous form, and Hydrogen in the form of Plasma due to the heat generated from its fast spin. Mac has strands of elements, due to its fast spin seperating them. Most of the gaseous hydrogen is placed at the poles, and the plasmatic hydrogen is mostly placed near the equator, although some parts are seperated at different areas. Mac features a large plasma storm that swirls, moving in the opposite direction of the planet, creating enough energy to sustain the plasma.',
-						'Near the poles is a gigantic rod that goes through the entirety of the planet, small enough to not be seen from a distance but big enough to hold a civilization. No such civilization has been found, however. Said pole has been theorized to be made out of Titanium and Iron, in the form of steel cables around a tube, with a shell of titanium. It is also theorized that <a href="index.html?p=aeiou" class="y">Aeiou</a>\'s satellite, Cdfqrszt, also is made from the same material.'
+						'Near the poles is a gigantic rod that goes through the entirety of the planet, small enough to not be seen from a distance but big enough to hold a civilization. No such civilization has been found, however. Said pole has been theorized to be made out of Titanium and Iron, in the form of steel cables around a tube, with a shell of titanium. It is also theorized that <a href="index.html?p=aeiou" class="y">Aeiou</a>\'s satellite, Cdfqrszt, also is made from the same material.',
+						'Mac, due to the copious amounts amounts of Neon, glows a deep orange.'
 					]
 				}, {
 					name: 'Interactions With World of Pain',
