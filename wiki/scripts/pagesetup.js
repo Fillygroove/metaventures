@@ -11,7 +11,7 @@ function pageTemplate(page) {
 			<tbody>
 				<tr>
 					<td colspan="2" style="text-align:center">
-						<img alt="${page.file}" src="./images/${page.file}" width="${page.dims[0]}" height="${page.dims[1]}">
+						<img class="pixel" alt="${page.file}" src="./images/${page.file}" width="${page.dims[0]}" height="${page.dims[1]}">
 						<div>
 							<a>${page.caption}</a>
 						</div>
