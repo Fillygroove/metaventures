@@ -109,7 +109,7 @@ function generatePage(page) {
 						'<a href="index.html?p=taiberaque" class="y">Taiberaque</a>',
 						'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
 						'<a href="index.html?p=flip" class="n">Flip</a>',
-						'<a href="index.html?p=heideph" class="n">Heideph</a>'
+						'<a href="index.html?p=gigantrax" class="n">Gigantrax</a>'
 					]
 				}]
 			});
@@ -388,7 +388,7 @@ function generatePage(page) {
 					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
 				}, {
 					name: 'Satellites',
-					info: ['Cdfqrszt']
+					info: ['Cdfqrszt', 'Heideph']
 				}, {
 					name: 'Name Origin',
 					info: ['Named by the Alphabet Business Concern after concerns over <a href="index.html?p=the" class="y">The</a>.']
@@ -505,7 +505,7 @@ function generatePage(page) {
 					info: [
 						'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
 						'<a href="index.html?p=flip" class="n">Flip</a>',
-						'<a href="index.html?p=heideph" class="n">Heideph</a>'
+						'<a href="index.html?p=gigantrax" class="n">Gigantrax</a>'
 					]
 				}, {
 					name: 'Name Origin',
