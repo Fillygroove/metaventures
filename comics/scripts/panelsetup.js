@@ -121,8 +121,7 @@ function generatePanels(comic) {
 	desc.className = 'description';
 	desc.innerHTML = description;
 	
-	slideshow.append(line);
-	slideshow.append(desc);
+	slideshow.append(line, desc);
 }
 
 let comic = new URLSearchParams(window.location.search);
