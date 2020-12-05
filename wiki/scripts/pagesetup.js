@@ -278,13 +278,13 @@ function generatePage(page) {
 				}],
 				introText: [
 					'Doug is the second planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=grene" class="y">Grēne</a> and before <a href="index.html?p=pilf" class="y">Pilf</a>. Doug can be seen in the night skies of <a href="index.html?p=ert" class="y">Ert</a> during the evenings, although it is hard to see due to it not having much of a reflective surface. As such, Doug is often forgotten and even hated due to its status as a planet. Doug is about a one hundreth the size of the Hot Sun.',
-					'Doug, like Grēne, is made up of a silicon-based material, but has a crust with a material that is able to corrode, and has been corriding for millions of years, due to Grēne\'s atmostphere.',
+					'Doug, like Grēne, is made up of a silicon-based material, but has a crust with a material that is able to corrode, and has been corriding for millions of years, due to Grēne\'s atmosphere.',
 					'The term for describing something related to Doug is Forgettable.'
 				],
 				categories: [{
 					name: 'Characteristics',
 					info: [
-						'Doug is a terrestrial planet that is made up of a silicon-based material, along with an unknown material that is able to corrode, along with appearing to have some form of weathering. Doug\'s surface is littered with craters, along with flat plane-like areas that have been theorized to have been formed by volcanic activity on the planet. Volcanic activity has not been observed. Doug has a brown surface, due to it being blasted by Grēne\'s atmosphere. The surface itself has a varied surface, with darker sections being the newest and with lighter sections being the darkest. This fact is why craters are dark in color. Near the south pole of Doug lies a crater that is light in color. This spot has not been given a label, due to it only being observed once.',
+						'Doug is a terrestrial planet that is made up of a silicon-based material, along with an unknown material that is able to corrode, along with appearing to have some form of weathering. Doug\'s surface is littered with craters, along with flat plane-like areas that have been theorized to have been formed by volcanic activity on the planet. Volcanic activity has not been observed. Doug has a brown surface, due to it being blasted by Grēne\'s atmosphere. The surface itself has a varied surface, with darker sections being the newest and with lighter sections being the oldest. This fact is why craters are dark in color. Near the south pole of Doug lies a crater that is light in color. This spot has not been given a label, due to it only being observed once.',
 						'Doug has a very thin atmosphere. It\'s not enough to cause a visible sky. Said atmosphere is theorized to have come from Grēne\'s atmosphere, along with the trapping of other gasses.'
 					]
 				}, {
@@ -382,7 +382,7 @@ function generatePage(page) {
 					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>', '<a href="index.html?p=george" class="y">George (Binary System)</a>']
 				}, {
 					name: 'Satellites',
-					info: ['<a href="index.html?p=george" class="y">George (Binary System)</a>', '<a href="index.html?p=george" class="n">Perpahedron (Artificial)</a>']
+					info: ['<a href="index.html?p=george" class="y">George (Binary System)</a>', '<a href="index.html?p=perpahedron" class="n">Perpahedron (Artificial)</a>']
 				}, {
 					name: 'Name Origin',
 					info: ['Unknown']
@@ -392,6 +392,33 @@ function generatePage(page) {
 				}, {
 					name: 'Life',
 					info: ['Reegs', 'Polygons', 'And More']
+				}],
+				introText: [
+					'Ert is the fourth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, sharing this position with <a href="index.html?p=george" class="y">George</a>, after <a href="index.html?p=pilf" class="y">Pilf</a> and before <a href="index.html?p=dough" class="y">Dough</a>. Ert is notable, being one of the only two planets in a binary system, sharing this feature with George. Ert is also the planet with the most lifeforms, and also the most inteligent lifeforms. Ert is the planet that is the most advanced technology, including televisions, giant tungsten cubes, and the <a href="index.html?p=perpahedron" class="n">Perpahedron</a>. Ert is a seventieth of the size of the Hot Sun.',
+					'Ert\'s surface consists of silicon-based rocks with a multitude of different materials, organic and metallic. It is theorized that Ert has a core of molten rock. Ert\'s surface also contains water.',
+					'The term for describing something related to Ert is Ertian.'
+				],
+				categories: [{
+					name: 'Characteristics',
+					info: [
+						'Ert is a Terrestrial planet that is made up of a silicon-based material, along with a large amount of water. The water is able to contain life. The surface itself contains a numerous amount of life, such as Reegs and Polygons. '
+					]
+				}, {
+					name: 'Satellites',
+					info: [
+						'<h3>George</h3>',
+						'',
+						'<h3>Perpahedron</h3>',
+						''
+					]
+				}, {
+					name: 'Life',
+					info: [
+						'<h3>Reegs</h3>',
+						'Reegs are creatures that are most commonly blue. They feature two legs, two eyes, and sometimes a nose which can be used for attack, defense, as utilities, and more. Examples of notable Reegs are <a href="index.html?p=aero" class="y">Aero</a>, <a href="index.html?p=lakys" class="y">Lakys</a>, <a href="index.html?p=archie" class="y">Archie</a>, <a href="index.html?p=aposteel" class="y">Aposteel</a>, and <a href="index.html?p=royale" class="y">Royale</a>',
+						'<h3>Polygons</h3>',
+						'Polygons are simple geometric creatures infused with <a href="index.html?p=nagic" class="n">Nagic</a>. They feature stick legs and huge eyes. An example of a notable Polygon is <a href="index.html?p=pon" class="n">Pon</a>.'
+					]
 				}]
 			});
 			break;
