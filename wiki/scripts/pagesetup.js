@@ -106,8 +106,10 @@ function generatePage(page) {
 						'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
 						'<a href="index.html?p=the" class="y">The</a>',
 						'<a href="index.html?p=cea" class="y">Cea</a>',
+						'<a href="index.html?p=taiberaque" class="y">Taiberaque</a>',
 						'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
-						'<a href="index.html?p=flip" class="n">Flip</a>'
+						'<a href="index.html?p=flip" class="y">Flip</a>',
+						'<a href="index.html?p=upp" class="y">Unnamed Perspective Planet</a>'
 					]
 				}]
 			});
@@ -144,7 +146,7 @@ function generatePage(page) {
 					info: ['K-Type Star']
 				}, {
 					name: 'Life',
-					info: ['None']
+					info: ['Losers']
 				}],
 				introText: [
 				],
@@ -458,23 +460,67 @@ function generatePage(page) {
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
+					info: ['<a href="index.html?p=taiberaque" class="y">Taiberaque</a>']
 				}, {
 					name: 'Satellites',
 					info: [
-						'<a href="index.html?p=flip" class="n">Flip</a>'
+						'None.'
 					]
 				}, {
 					name: 'Name Origin',
 					info: ['It\'s cold.']
 				}, {
 					name: 'Classification',
-					info: ['Star']
+					info: ['Planet']
 				}, {
 					name: 'Life',
-					info: ['None']
+					info: [
+						'<a href="index.html?p=nyork" class="y">Nyork</a>\'s Species',
+						'<a href="index.html?p=royale" class="y">Royale</a>',
+						'<a href="index.html?p=larry" class="y">Larry</a>'
+					]
 				}],
 				introText: [
+				],
+				categories: [{
+					name: 'Characteristics',
+					info: [
+						'Sample text.',
+					]
+				}]
+			});
+			break;
+		case "taiberaque":
+			pageTemplate({
+				name: 'Taiberaque',
+				file: 'taiberaque.png',
+				dims: ['330', '330'],
+				caption: 'Pictured in false color due to <a href="index.html?p=ert" class="y">Ert</a>\'s atmosphere, illustration made by Gramiatar.',
+				heading: 'Designations',
+				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
+				}, {
+					name: 'Satellites',
+					info: [
+						'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
+						'<a href="index.html?p=flip" class="y">Flip</a>',
+						'<a href="index.html?p=upp" class="y">Unnamed Perspective Planet</a>'
+					]
+				}, {
+					name: 'Name Origin',
+					info: ['An amalgamation of all the names suggested.']
+				}, {
+					name: 'Classification',
+					info: ['White Dwarf']
+				}, {
+					name: 'Life',
+					info: [
+						'Winners?'
+					]
+				}],
+				introText: [
+					'Text.'
 				],
 				categories: [{
 					name: 'Characteristics',
