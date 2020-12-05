@@ -387,6 +387,6 @@ function generatePage(page) {
 }
 
 let page = new URLSearchParams(window.location.search);
-page = page.get('p')
+page = page.get('p');
 if (page == null) page = "main";
 generatePage(page);
