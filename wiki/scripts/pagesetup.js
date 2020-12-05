@@ -109,7 +109,7 @@ function generatePage(page) {
 						'<a href="index.html?p=taiberaque" class="y">Taiberaque</a>',
 						'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
 						'<a href="index.html?p=flip" class="n">Flip</a>',
-						'<a href="index.html?p=upp" class="n">Unnamed Perspective Planet</a>'
+						'<a href="index.html?p=heideph" class="n">Heideph</a>'
 					]
 				}]
 			});
@@ -505,7 +505,7 @@ function generatePage(page) {
 					info: [
 						'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
 						'<a href="index.html?p=flip" class="n">Flip</a>',
-						'<a href="index.html?p=upp" class="n">Unnamed Perspective Planet</a>'
+						'<a href="index.html?p=heideph" class="n">Heideph</a>'
 					]
 				}, {
 					name: 'Name Origin',
