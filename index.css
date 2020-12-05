@@ -182,3 +182,7 @@ a {
 ul {
     list-style-type: none;
 }
+
+.pixel {
+	image-rendering: crisp-edges;
+}
