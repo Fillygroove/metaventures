@@ -11,7 +11,7 @@ function pageTemplate(page) {
 			<tbody>
 				<tr>
 					<td colspan="2" style="text-align:center">
-						<img alt="${page.file}" src="./images/${page.file}" width="330" height="330">
+						<img alt="${page.file}" src="./images/${page.file}" width="${page.dims[0]}" height="${page.dims[1]}">
 						<div>
 							<a>${page.caption}</a>
 						</div>
@@ -91,6 +91,7 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'Grēne',
 				file: 'grene.png',
+				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
@@ -112,6 +113,7 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'Doug',
 				file: 'doug.png',
+				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
@@ -133,6 +135,7 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'Pilf',
 				file: 'pilf.png',
+				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
@@ -154,6 +157,7 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'Ert',
 				file: 'ert.png',
+				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
@@ -175,6 +179,7 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'George',
 				file: 'george.png',
+				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
@@ -196,6 +201,7 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'Dough',
 				file: 'dough.png',
+				dims: ['330', '280.75'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
@@ -217,6 +223,7 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'Mac',
 				file: 'mac.png',
+				dims: ['330', '237.5'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
@@ -238,6 +245,7 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'World of Pain',
 				file: 'wop.png',
+				dims: ['330', '287.57'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
@@ -259,6 +267,7 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'Aeiou',
 				file: 'aeiou.png',
+				dims: ['330', '293.79'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
@@ -280,6 +289,7 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'The',
 				file: 'the.png',
+				dims: ['330', '339.08'],
 				caption: 'A mockup of what The could look like, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
@@ -301,6 +311,7 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'Cea',
 				file: 'cea.png',
+				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
