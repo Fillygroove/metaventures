@@ -86,7 +86,14 @@ function generatePanels(comic) {
 		`<div class="comic-title">${title}</div>`
 	);
 	for (let i = 1; i < length + 1; i++) {
-		document.write(`
+		if (comic == 7 && i == 10) {
+			document.write(`
+				<div class="slides fade">
+				<div class="numbertext">${i} / ${length}</div>
+				<a href="../wiki/index.html?p=dino"><img src="${dir}_${i}.jpg" style="width:100%"></a>
+				</div>
+			`);
+		} else document.write(`
 			<div class="slides fade">
 			<div class="numbertext">${i} / ${length}</div>
 			<img src="${dir}_${i}.jpg" style="width:100%">
