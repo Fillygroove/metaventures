@@ -86,6 +86,11 @@ function generatePanels(comic) {
 			description = 'The finale for broventures has come, and i can tell you its been an amazing journey. Even after the 5 movies and 127 brands of clothes based on this series, i cant help but still love how it came out. Thanks to all of your increasing support i was finally able to make a sufficient ending to the series that touched our hearts as children, and now to the next generation. Do i have any regrets about closing off this wonderful series for good? No, it was a perfect run that i dont think even Einstein couldve finished off better. I may be shedding a tear right now about letting this series go, but i know it would be forever perfect in our minds, and in this archive. Thank you all who have stuck with me on this ride, we\'ve worked tirelessly on these broventures. I dont know what will happen next, but i\'m glad i was able to be part of this epoch in history.';
 			title = 'Broventures';
 			break;
+		case "nine":
+			length = 12;
+			description = '"Nineventures" contains every ninth panel from every aeroventure to make some.. tangible kind of story. More panels are sure to be added after more comics are made.';
+			title = 'Nineventures';
+			break;
 	}
 
 	let avThin = document.getElementsByClassName('av-thin')[0];
@@ -106,7 +111,7 @@ function generatePanels(comic) {
 
 	for (let i = 1; i < length + 1; i++) {
 		let slides = document.createElement('div');
-		slides.className = 'slides fade';
+		slides.className = 'slides';
 		
 		let number = document.createElement('div');
 		number.className = 'numbertext';
@@ -118,13 +123,19 @@ function generatePanels(comic) {
 
 		slides.append(number);
 		
-		if (comic == "7" && i == 10) {
+		if (comic == "7" && i == 10) { // Dinosaurs wiki page
 			let panelLink = document.createElement('a');
 			panelLink.href = "../wiki/index.html?p=dino";
 			
 			panelLink.append(panels);
 			slides.append(panelLink);
-		} else if (comic == "11" && i == 8) {
+		} else if (comic == "9" && i == 9) { // Nineventures
+			let panelLink = document.createElement('a');
+			panelLink.href = "index.html?c=nine";
+			
+			panelLink.append(panels);
+			slides.append(panelLink);
+		} else if (comic == "11" && i == 8) { // Code Red explanation loop
 			let panelLink = document.createElement('a');
 			panelLink.onclick = () => {
 				currentSlide(3);
@@ -132,14 +143,58 @@ function generatePanels(comic) {
 			
 			panelLink.append(panels);
 			slides.append(panelLink);
-		} else if (comic == "11" && i == 44) {
+		} else if (comic == "11" && i == 44) { // Broventures
 			let panelLink = document.createElement('a');
 			panelLink.href = "index.html?c=brooo";
 			
 			panelLink.append(panels);
 			slides.append(panelLink);
 		} else slides.append(panels);
-				
+		
+		if (comic == "nine") {
+			let caption = document.createElement('div');
+			caption.style = 'text-align: center; background-color: #555555;'
+			switch (i) {
+				case 1:
+					caption.innerHTML = 'Aero looks upon a memory of a deceased Archie, someone who\'s been rumored to be coming back in recent times...'
+					break;
+				case 2:
+					caption.innerHTML = 'Aero seeks his old rival, but newfound partner, Archie. Had he forgotten that he must be present in order for a mafia war to take place? He hastily scurries around the room in an attempt to find his lost partner.'
+					break;
+				case 3:
+					caption.innerHTML = 'His old enemy, Lakys remarks on Aero\'s persistence. Lakys sees the focus of a true reeg in Aero. Perhaps both of them share a similair goal..?'
+					break;
+				case 4:
+					caption.innerHTML = 'Lakys suddenly grows suspicious as he seems to remember the enviroment both of them are currently standing on with their own two stubs! The Island of No Escape? A memory shakes and wriggles in Lakys\'s brain, attempting to find clarification before...'
+					break;
+				case 5:
+					caption.innerHTML = '..Mcfrownies? This was odd, had he been transported to somewhere else via some anomalous object, some.. kind of witchery? Lakys\' sees a sweat drop from his face as the familiar cashier in the back welcomes him to enjoy one of their burgers, something the resturant is praised for. Lakys sighs; Might as well.'
+					break;
+				case 6:
+					caption.innerHTML = 'But it was not! Once the Cashier has stated the resturants menu, Lakys immediately recognizes the monotone voice of his short-time ally, Aero! Lakys is at a lost for words! How did Aero do this??'
+					break;
+				case 7:
+					caption.innerHTML = 'Some familiar fellows seem quick to abscond the area, which has the aura of a fight looming. Looming hard! Trivy gives one last word of wisdom before fleeing the premises! What will happen next??'
+					break;
+				case 8:
+					caption.innerHTML = 'As lakys gets battle-ready, boot on, duck placed, and armed to the stub, he cant help but notice Aero\'s lack of common decency.'
+					break;
+				case 9:
+					caption.innerHTML = 'THE NINTH PANEL OF "NINEVENTURES" HAS BEEN REMOVED</br>FURTHER INVESTIGATIONS HAVE BEEN TERMINATED UNDER ORDER GAMMA-52OXY</br>THE FOLLOWING FILM SHALL CONTINUE AS INTENDED.'
+					break;
+				case 10:
+					caption.innerHTML = '"Whatever." Lakys says, turning on his machine that he was SURE would work to make the Lacii army he\'s always dreamed of! Hopefully it\'ll work again, as Aero seems to be ready to battle.'
+					break;
+				case 11:
+					caption.innerHTML = 'Aero was somewhat late to the prepare of war. He scrambles on the desk of a nearby resturant in order to obtain some sort of energy that not even regular Reegs should use! Meanwhile, some familiar faces farm XP from a bear person. Perhaps Aero should do the same...?'
+					break;
+				case 12:
+					caption.innerHTML = 'As Lakys looks on to what Aero\'s ignoring, Lacus questions everyone\'s safety...'
+					break;
+			}
+			slides.append(caption);
+		}
+		
 		slideshow.append(slides);
 	}
 
