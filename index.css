@@ -57,6 +57,10 @@ p, h1, h2 {
 
 h3 {
 	background-color: #555555;
+	font-family: Ubuntu!important;
+	line-height: 1em;
+	margin: 0;
+	padding-bottom: -10em;
 }
 
 a {
