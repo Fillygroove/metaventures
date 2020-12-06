@@ -83,7 +83,7 @@ function generatePanels(comic) {
 			break;
 		case "brooo":
 			length = 4;
-			description = 'The finale for broventures has come, and i can tell you its been an amazing journey. Even after the 5 movies and 127 brands of clothes based on this series, i cant help but still love how it came out. Thanks to all of your increasing support i was finally able to make a sufficient ending to the series that touched our hearts as children, and now to the next generation. Do i have any regrets about closing off this wonderful series for good? No, it was a perfect run that i dont think even Einstein couldve finished off better. I may be shedding a tear right now about letting this series go, but i know it would be forever perfect in our minds, and in this archive. Thank you all who have stuck with me on this ride, we\'ve worked tirelessly on these broventures. I dont know what will happen next, but i\'m glad i was able to be part of this epoch in history.';
+			description = 'We are proud to present the comic that we put all of our passion into. For years we toil on this masterpiece and now it\'s finally out: BROVENTURES!';
 			title = 'Broventures';
 			break;
 		case "nine":
@@ -101,13 +101,6 @@ function generatePanels(comic) {
 	slideTitle.className = 'comic-title';
 	slideTitle.innerHTML = title;
 	avThin.append(slideTitle);
-
-	if (comic == "brooo") {
-		let broDesc = document.createElement('h5');
-		broDesc.style = 'font-family: Ubuntu; text-align: center; background-color: #555555';
-		broDesc.innerHTML = 'We are proud to present the comic that we put all of our passion into. For years we toil on this masterpiece and now it\'s finally out: BROVENTURES!';
-		avThin.append(broDesc);
-	}
 
 	for (let i = 1; i < length + 1; i++) {
 		let slides = document.createElement('div');
@@ -192,6 +185,11 @@ function generatePanels(comic) {
 					caption.innerHTML = 'As Lakys looks on to what Aero\'s ignoring, Lacus questions everyone\'s safety...'
 					break;
 			}
+			slides.append(caption);
+		} else if (comic == "brooo" && i == 4) {
+			let caption = document.createElement('div');
+			caption.style = 'text-align: center; background-color: #555555;'
+			caption.innerHTML = 'The finale for broventures has come, and i can tell you its been an amazing journey. Even after the 5 movies and 127 brands of clothes based on this series, i cant help but still love how it came out. Thanks to all of your increasing support i was finally able to make a sufficient ending to the series that touched our hearts as children, and now to the next generation. Do i have any regrets about closing off this wonderful series for good? No, it was a perfect run that i dont think even Einstein couldve finished off better. I may be shedding a tear right now about letting this series go, but i know it would be forever perfect in our minds, and in this archive. Thank you all who have stuck with me on this ride, we\'ve worked tirelessly on these broventures. I dont know what will happen next, but i\'m glad i was able to be part of this epoch in history.';
 			slides.append(caption);
 		}
 		
