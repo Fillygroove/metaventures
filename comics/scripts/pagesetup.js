@@ -1,25 +1,174 @@
-let slideIndex = 1;
-showSlides(slideIndex);
-/*
-document.getElementById("panel").addEventListener("keyup", function(event) {
-	event.preventDefault();
-	let slideValue = document.getElementById("panel").value;
-	if (event.key === "Enter") {
-		currentSlide(slideValue);
+function generatePanels(comic) {
+	let dir = `./panels/${comic}/${comic}`;
+	let length;
+	let title;
+	let description = 'Original unfiltered content.';
+	switch (comic) { // Done in order of release
+		case "1":
+			length = 4;
+			title = 'The Pilot';
+			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> goes to fight his first enemy and nemesis, <a href="../wiki/index.html?p=archie" class="n">Archie</a></a>.';
+			break;
+		case "2":
+			length = 4;
+			title = 'Dr. Lakys\' Electric Boogaloo';
+			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> goes to fight mad <a href="../wiki/index.html?p=lakys" class="n">Lakys</a> and his annoying pylons.';
+			break;
+		case "3":
+			length = 6;
+			title = 'Nutsradamnus Rumbel';
+			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> attempts to slay the Notorious Gold Golem <a href="../wiki/index.html?p=nutstradamnus" class="n">Nutstradamnus</a> in its long horribly worded battle.';
+			break;
+		case "4":
+			length = 3;
+			title = 'ARCHIE STRYKSE BAK!1!';
+			description = '<a href="../wiki/index.html?p=archie" class="n">Archie</a> strikes back at our Hero with his OWN Meme.';
+			break;
+		case "5":
+			length = 9;
+			title = 'RoYEEEAL Shimmy Shammy';
+			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> enters the Arena where he has to best Gladiator Champion <a href="../wiki/index.html?p=royale" class="n">Royale</a> to escape.';
+			break;
+		case "6":
+			length = 22;
+			title = 'Future Fails';
+			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> comes back from the dead in the future and tries to get revenge on <a href="../wiki/index.html?p=archie" class="n">Archie</a>.';
+			break;
+		case "7":
+			length = 35;
+			title = 'In The Shadow of the Perpatrator';
+			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and <a href="../wiki/index.html?p=lakys" class="n">Lakys</a> are forced to team up after a giant <a href="../wiki/index.html?p=perpahedron" class="n">Perpahedron</a> Satellite is about to hit <a href="../wiki/index.html?p=ert" class="y">Ert</a>.';
+			break;
+		case "8":
+			length = 36;
+			title = 'Tropical Trouble';
+			description = 'In this rather short eposode: <a href="../wiki/index.html?p=aero" class="y">Aero</a>, <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>, and <a href="../wiki/index.html?p=archie" class="n">Archie</a> get stuck on an island after their plane blows up. watch as they struggle to survive. hah. idiots.';
+			break;
+		case "9":
+			length = 34;
+			title = 'Group Lunatics 100';
+			description = 'With the Tower of Gladii out of money, <a href="../wiki/index.html?p=aero" class="y">Aero</a>, <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>, <a href="../wiki/index.html?p=archie" class="n">Archie</a>, and <a href="../wiki/index.html?p=aposteel" class="n">Aposteel</a> go to get wacky jobs to pay for the abandoned tower.';
+			break;
+		case "10":
+			length = 73;
+			title = 'Flat Line';
+			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> goes to the hospital after an incident and finds out that it isnt as it seems. porkchops included.';
+			break;
+		case "10.5":
+			length = 53;
+			title = 'Over The Rainbow';
+			description = 'We tune in to our favorite cartoon characters in tough pickle.';
+			break;
+		case "h":
+			length = 84;
+			title = 'Halloween Edition';
+			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and the gang go to a halloween party, but whos gonna attack them now?  Find out in this wierdly long adventure! SPOOKE!';
+			dir = './panels/H/H';
+			break;
+		case "11":
+			length = 106;
+			title = 'Code Red';
+			description = 'Something terribly wrong has happened in Dr. <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>\'s lab. Can the Aeroventures Crew stop this new menace?';
+			break;
+		case "12-1":
+			length = 110;
+			title = 'Nutty Business, Part 1';
+			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and friends meet an unexpected foe.';
+			dir = './panels/12-1/12';
+			break;
+		case "dk":
+			length = 25;
+			description = 'You asked for this.';
+			title = 'Domakav Rap';
+			break;
+		case "brooo":
+			length = 4;
+			description = 'The finale for broventures has come, and i can tell you its been an amazing journey. Even after the 5 movies and 127 brands of clothes based on this series, i cant help but still love how it came out. Thanks to all of your increasing support i was finally able to make a sufficient ending to the series that touched our hearts as children, and now to the next generation. Do i have any regrets about closing off this wonderful series for good? No, it was a perfect run that i dont think even Einstein couldve finished off better. I may be shedding a tear right now about letting this series go, but i know it would be forever perfect in our minds, and in this archive. Thank you all who have stuck with me on this ride, we\'ve worked tirelessly on these broventures. I dont know what will happen next, but i\'m glad i was able to be part of this epoch in history.';
+			title = 'Broventures';
+			break;
 	}
-});*/
 
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+	let avThin = document.getElementsByClassName('av-thin')[0];
+	let slideshow = document.createElement('div');
+	slideshow.className = 'slideshow-container';
+	
+	let slideTitle = document.createElement('div');
+	slideTitle.className = 'comic-title';
+	slideTitle.innerHTML = title;
+	avThin.append(slideTitle);
+
+	if (comic == "brooo") {
+		let broDesc = document.createElement('h5');
+		broDesc.style = 'font-family: Ubuntu; text-align: center; background-color: #555555';
+		broDesc.innerHTML = 'We are proud to present the comic that we put all of our passion into. For years we toil on this masterpiece and now it\'s finally out: BROVENTURES!';
+		avThin.append(broDesc);
+	}
+
+	for (let i = 1; i < length + 1; i++) {
+		let slides = document.createElement('div');
+		slides.className = 'slides fade';
+		
+		let number = document.createElement('div');
+		number.className = 'numbertext';
+		number.innerHTML = `${i} / ${length}`;
+		
+		let panels = document.createElement('img');
+		panels.src = `${dir}_${i}.jpg`;
+		panels.style = "width: 100%";
+
+		slides.append(number);
+		
+		if (comic == "7" && i == 10) {
+			let panelLink = document.createElement('a');
+			panelLink.href = "../wiki/index.html?p=dino";
+			
+			panelLink.append(panels);
+			slides.append(panelLink);
+		} else if (comic == "11" && i == 44) {
+			let panelLink = document.createElement('a');
+			panelLink.href = "index.html?c=brooo";
+			
+			panelLink.append(panels);
+			slides.append(panelLink);
+		} else slides.append(panels);
+				
+		slideshow.append(slides);
+	}
+
+	let line = document.createElement('hr');
+	let prevButton = document.createElement('a');
+	let nextButton = document.createElement('a');
+	prevButton.className = 'prev';
+	nextButton.className = 'next';
+	prevButton.innerHTML = '&#9664;';
+	nextButton.innerHTML = '&#9654;';
+	prevButton.type = 'button';
+	nextButton.type = 'button';
+	prevButton.onclick = () => {
+		showSlides(slideIndex -= 1);
+	};
+	nextButton.onclick = () => {
+		showSlides(slideIndex += 1);
+	};
+	
+	slideshow.append(line, prevButton, nextButton);
+
+	let desc = document.createElement('h4');
+	
+	desc.className = 'description';
+	desc.innerHTML = description;
+
+	avThin.append(slideshow, desc);
 }
 
-function isNumber(evt) {
-	let keyCode = evt.key;
-	if (keyCode > -1 && keyCode < 10) return true;
-	return false;
-}    
-// Thumbnail image controls
+let comic = new URLSearchParams(window.location.search);
+comic = comic.get('c')
+if (comic == null) comic = "12-1";
+generatePanels(comic);
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
 function currentSlide(n) {
 	if (n < 1) return;
 	showSlides(slideIndex = n);
