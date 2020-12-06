@@ -27,10 +27,10 @@ function pageTemplate(page) {
 		
 		imagetd.colSpan = '2';
 		imagetd.style = "text-align: center";
-		
-		imgnav.className = "pixel";
+
+		imgnav.className = page.file[1];
 		imgnav.alt = page.file;
-		imgnav.src = `./images/${page.file}`;
+		imgnav.src = `./images/${page.file[0]}`;
 		imgnav.width = page.dims[0];
 		imgnav.height = page.dims[1];
 		
@@ -75,7 +75,7 @@ function pageTemplate(page) {
 			let navrightspan = document.createElement('span');
 			
 			navrightspan.className = "nowrap";
-			navrightspan.innerHTML = page.navbox[i].info.toString().replaceAll(",","</br>");
+			navrightspan.innerHTML = page.navbox[i].info.toString().replaceAll(",","</br>").replaceAll("[[", ",");
 
 			navrightli.append(navrightspan);
 			navrightul.append(navrightli);
@@ -132,7 +132,7 @@ function generatePage(page) {
 				categories: [{
 					name: 'Characters',
 					info: [
-						'<a href="index.html?p=aero" class="n">Aero</a>', 
+						'<a href="index.html?p=aero" class="y">Aero</a>', 
 						'<a href="index.html?p=archie" class="n">Archie</a>', 
 						'<a href="index.html?p=lakys" class="n">Lakys</a>', 
 						'<a href="index.html?p=aposteel" class="n">Aposteel</a>'
@@ -160,10 +160,80 @@ function generatePage(page) {
 				}]
 			});
 			break;
+		case "aero":
+			pageTemplate({
+				name: 'Aero D. Venture',
+				file: ['aero.png', ''],
+				dims: ['330', '330'],
+				caption: 'Picture taken by Aero by accident, illustration made by Text Wall.',
+				heading: 'Designations',
+				navbox: [{
+					name: 'Species',
+					info: ['Reeg']
+				}, {
+					name: 'Lives in',
+					info: ['<a href="index.html?p=ert" class="y">Ert</a>[[ in Yolktown.']
+				}, {
+					name: 'Character Status',
+					info: ['Alive (Formerly dead)']
+				}, {
+					name: 'Character Type',
+					info: ['Protagonist']
+				}, {
+					name: 'Series',
+					info: ['Aeroventures']
+				}],
+				introText: [
+					'Aero D. Venture, commonly known as Aero, is the title character for Aeroventures. Since 2017, Aero has been causing chaos unintentionally all over <a href="index.html?p=ert" class="y">Ert</a>, primarily in Yolktown. Despite this, many of his adversaries, such as <a href="index.html?p=royale" class="n">Royale</a> and <a href="index.html?p=larry-av" class="n">Larry</a>, have caused considerably more damage than he ever could. That\'s why he has <a href="index.html?p=lakys" class="n">Lakys</a>, <a href="index.html?p=archie" class="n">Archie</a>, and <a href="index.html?p=aposteel" class="n">Aposteel</a>, officially called The Aeroventures Crew, by his side.',
+					'In Aeroventures, Aero is seen as the main protagonist, and one of the main 4 protagonists, the others being Lakys, Archie, and, most recently, Aposteel. All four of them unintentionally cause chaos wherever they are.',
+					'Aero has a numerous amount of clones, mostly created by Royale during <a href="../comics/index.html?c=10" class="c">Aeroventures 10</a>. Said clones have the same name first name, although their middle name is a bit different, and their last name is always different. An example of an Aero clone is Aero D. Struction. Most Aero Clones feature Aero\'s old look, when he was high on <a href="index.html?p=aposteel" class="n">Nagic</a>.'
+				],
+				categories: [{
+					name: 'Character Design',
+					info: [
+						'<h3>Modern Appearance</h3>',
+						'Aero is a reeg that has a blue skin tone, like most reegs. Also like most reegs, Aero has a spherical shaped body with two legs at the bottom that have the ability to stretch and fold in on themselves. Aero has a lance nose, which could be used for offensive purposes but is never used due to his laziness. Aero is exactly 2 feet tall in height.',
+						'<img src="images/old_aero.png" alt="old_aero.png" width="100" height="124.52" class="pixel" style="float: right; background-color: #555555;"></img>',
+						'<h3>Legacy Appearance</h3>',
+						'In the past, Aero used to be more deformed, due to being under the influence of Nagic. His lance was a lot bigger, and was usually placed to the side of his head, along with his eyes being bigger, and his head being seperated into a new section of his body. This form of Aero is referred to as Old Aero. Old Aero is usually referred to as a different person, and acts differently as well.'
+					]
+				}, {
+					name: 'In The Comics',
+					info: [
+						'<h3>Aeroventures 1</h3>',
+						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 1</a>,',
+						'<h3>Aeroventures 2</h3>',
+						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 2</a>,',
+						'<h3>Aeroventures 3</h3>',
+						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 3</a>,',
+						'<h3>Aeroventures 4</h3>',
+						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 4</a>,',
+						'<h3>Aeroventures 5</h3>',
+						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 5</a>,',
+						'<h3>Aeroventures 6</h3>',
+						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 6</a>,',
+						'<h3>Aeroventures 7</h3>',
+						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 7</a>,',
+						'<h3>Aeroventures 8</h3>',
+						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 8</a>,',
+						'<h3>Aeroventures 9</h3>',
+						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 9</a>,',
+						'<h3>Aeroventures 10</h3>',
+						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 10</a>,',
+						'<h3>Aeroventures Halloween Edition</h3>',
+						'In <a href="../comics/index.html?c=1" class="c">Aeroventures Halloween Edition</a>,',
+						'<h3>Aeroventures 11</h3>',
+						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 11</a>,',
+						'<h3>Aeroventures 12</h3>',
+						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 12</a>,',
+					]
+				}]
+			});
+			break;
 		case "hotsun":
 			pageTemplate({
 				name: 'Hot Sun',
-				file: 'hot_sun.png',
+				file: ['hot_sun.png', 'pixel'],
 				dims: ['330', '330'],
 				caption: 'Pictured in false color due to <a href="index.html?p=ert" class="y">Ert</a>\'s atmosphere, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -208,7 +278,7 @@ function generatePage(page) {
 		case "grene":
 			pageTemplate({
 				name: 'Grēne',
-				file: 'grene.png',
+				file: ['grene.png', 'pixel'],
 				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -256,7 +326,7 @@ function generatePage(page) {
 		case "doug":
 			pageTemplate({
 				name: 'Doug',
-				file: 'doug.png',
+				file: ['doug.png', 'pixel'],
 				dims: ['330', '330'],
 				caption: 'Pictured in natural color due to everyone forgetting about it, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -318,7 +388,7 @@ function generatePage(page) {
 		case "pilf":
 			pageTemplate({ // First!
 				name: 'Pilf',
-				file: 'pilf.png',
+				file: ['pilf.png', 'pixel'],
 				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -373,7 +443,7 @@ function generatePage(page) {
 		case "ert":
 			pageTemplate({
 				name: 'Ert',
-				file: 'ert.png',
+				file: ['ert.png', 'pixel'],
 				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -419,14 +489,14 @@ function generatePage(page) {
 						'George is Ert’s twin. George and Ert rotate around each other, and are tidally locked with one another. George has more land than Ert, and harbors more life. It also harbors Ozark, the entity that inspired the Dint Can’s mascot.',
 						'<img src="images/perpahedron.png" alt="perpahedron.png" width="300" height="300" class="pixel" style="float: right; background-color: #555555;"></img>',
 						'<h3>Perpahedron</h3>',
-						'The Perpahedron is an artificial satellite, constructed by Daktor and a group of scientists. The purpose of The Perpahedron is unknown, although suggestions for its purpose include being a gigantic multitool, a space mansion, and an overcomplicated mayonnaise jar. The Perpahedron has a large amount of tools, such as thrusters, speakers, and a giant tungsten cube attached by a nylon string.'
+						'The Perpahedron is an artificial satellite, constructed by <a href="index.html?p=daktor" class="n">Daktor</a> and a group of scientists. The purpose of The Perpahedron is unknown, although suggestions for its purpose include being a gigantic multitool, a space mansion, and an overcomplicated mayonnaise jar. The Perpahedron has a large amount of tools, such as thrusters, speakers, and a giant tungsten cube attached by a nylon string.'
 					]
 				}, {
 					name: 'Life',
 					info: [
 						'Ert consists of an uncountable variety of life in many different phylums, but we counted those that only matter. Of course there are much more than listed below, but we just don’t feel like explaining what’s already obvious to most visitors. Do it yourself if you’re so worried about the state of every single mushroom. To summarize - plants, animals, fungi, and giant protists are present all over.',
 						'<h3>Reegs</h3>',
-						'Reegs are creatures that are most commonly blue. They feature two legs, two eyes, and sometimes a nose which can be used for attack, defense, as utilities, and more. Examples of notable reegs are <a href="index.html?p=aero" class="n">Aero</a>, <a href="index.html?p=lakys" class="n">Lakys</a>, <a href="index.html?p=archie" class="n">Archie</a>, <a href="index.html?p=aposteel" class="n">Aposteel</a>, and <a href="index.html?p=royale" class="n">Royale</a>. Reegs are a prominant sentient species capable of many (and not so bright) things. They share their dominance to the Polygons.',
+						'Reegs are creatures that are most commonly blue. They feature two legs, two eyes, and sometimes a nose which can be used for attack, defense, as utilities, and more. Examples of notable reegs are <a href="index.html?p=aero" class="y">Aero</a>, <a href="index.html?p=lakys" class="n">Lakys</a>, <a href="index.html?p=archie" class="n">Archie</a>, <a href="index.html?p=aposteel" class="n">Aposteel</a>, and <a href="index.html?p=royale" class="n">Royale</a>. Reegs are a prominant sentient species capable of many (and not so bright) things. They share their dominance to the Polygons.',
 						'<h3>Polygons</h3>',
 						'Polygons are simple geometric creatures infused with <a href="index.html?p=nagic" class="n">Nagic</a>. They feature stick legs and large eyes. They come in many colors, shapes, and sizes. Their society is built on the type of regular polygon, such as a square or octagon. Examples of notable polygons are <a href="index.html?p=pon" class="n">Pon</a>, <a href="index.html?p=larry-pv" class="n">Larry</a>, <a href="index.html?p=beth" class="n">Beth</a>, and <a href="index.html?p=vinny" class="n">Vinny</a> (although in technicality Pon, Vinny, and Beth are artificial creations). Like reegs, Polygons are prominent and capable of doing many (and much more brighter) things.',
 						'<h3>Spirons</h3>',
@@ -440,7 +510,7 @@ function generatePage(page) {
 		case "george":
 			pageTemplate({
 				name: 'George',
-				file: 'george.png',
+				file: ['george.png', 'pixel'],
 				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -465,7 +535,7 @@ function generatePage(page) {
 		case "dough":
 			pageTemplate({
 				name: 'Dough',
-				file: 'dough.png',
+				file: ['dough.png', 'pixel'],
 				dims: ['330', '280.75'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -490,7 +560,7 @@ function generatePage(page) {
 		case "mac":
 			pageTemplate({
 				name: 'Mac',
-				file: 'mac.png',
+				file: ['mac.png', 'pixel'],
 				dims: ['330', '237.5'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -534,7 +604,7 @@ function generatePage(page) {
 		case "wop":
 			pageTemplate({
 				name: 'World of Pain',
-				file: 'wop.png',
+				file: ['wop.png', 'pixel'],
 				dims: ['330', '287.57'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -559,7 +629,7 @@ function generatePage(page) {
 		case "aeiou":
 			pageTemplate({
 				name: 'Aeiou',
-				file: 'aeiou.png',
+				file: ['aeiou.png', 'pixel'],
 				dims: ['330', '293.79'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -584,7 +654,7 @@ function generatePage(page) {
 		case "the":
 			pageTemplate({
 				name: 'The',
-				file: 'the.png',
+				file: ['the.png', 'pixel'],
 				dims: ['330', '339.08'],
 				caption: 'A mockup of what The could look like, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -609,7 +679,7 @@ function generatePage(page) {
 		case "cea":
 			pageTemplate({
 				name: 'Cea',
-				file: 'cea.png',
+				file: ['cea.png', 'pixel'],
 				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -634,7 +704,7 @@ function generatePage(page) {
 		case "coldsun":
 			pageTemplate({
 				name: 'Cold Sun',
-				file: 'cold_sun.png',
+				file: ['cold_sun.png', 'pixel'],
 				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -673,7 +743,7 @@ function generatePage(page) {
 		case "taiberaque":
 			pageTemplate({
 				name: 'Taiberaque',
-				file: 'taiberaque.png',
+				file: ['taiberaque.png', 'pixel'],
 				dims: ['330', '330'],
 				caption: 'Pictured in false color due to <a href="index.html?p=ert" class="y">Ert</a>\'s atmosphere, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -712,9 +782,8 @@ function generatePage(page) {
 			});
 			break;
 		case "dino":
-			let scream = [];
-			for (let i = 0; i < 5000; i++) scream.push('A');
-			scream = scream.toString().replaceAll(',', '');
+			let scream = '';
+			for (let i = 0; i < 5000; i++) scream += 'A';
 			pageTemplate({
 				name: 'How to stop satellite. by Dinosaurs',
 				introText: [`${scream}`]
