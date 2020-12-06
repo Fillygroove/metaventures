@@ -124,6 +124,14 @@ function generatePanels(comic) {
 			
 			panelLink.append(panels);
 			slides.append(panelLink);
+		} else if (comic == "11" && i == 8) {
+			let panelLink = document.createElement('a');
+			panelLink.onclick = () => {
+				currentSlide(3);
+			};
+			
+			panelLink.append(panels);
+			slides.append(panelLink);
 		} else if (comic == "11" && i == 44) {
 			let panelLink = document.createElement('a');
 			panelLink.href = "index.html?c=brooo";
