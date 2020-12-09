@@ -2,7 +2,7 @@ function generatePanels(comic) {
 	let dir = `./panels/${comic}/${comic}`;
 	let length;
 	let title;
-	let description = 'Original unfiltered content.';
+	let description;
 	switch (comic) { // Done in order of release
 		case "1":
 			length = 4;
@@ -16,7 +16,7 @@ function generatePanels(comic) {
 			break;
 		case "3":
 			length = 6;
-			title = 'Nutsradamnus Rumbel';
+			title = 'Nutstradamnus Rumbel';
 			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> attempts to slay the Notorious Gold Golem <a href="../wiki/index.html?p=nutstradamnus" class="n">Nutstradamnus</a> in its long horribly worded battle.';
 			break;
 		case "4":
