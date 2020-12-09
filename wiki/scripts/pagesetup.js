@@ -232,7 +232,7 @@ function generatePage(page) {
 			break;
 		case "hotsun":
 			pageTemplate({
-				name: 'Hot Sun',
+				name: 'Ommadawn',
 				file: ['hot_sun.png', 'pixel'],
 				dims: ['330', '330'],
 				caption: 'Pictured in false color due to <a href="index.html?p=ert" class="y">Ert</a>\'s atmosphere, illustration made by Gramiatar.',
@@ -347,38 +347,53 @@ function generatePage(page) {
 					info: ['Worms (Unconfirmed)']
 				}],
 				introText: [
-					'Doug is the second planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=grene" class="y">Grēne</a> and before <a href="index.html?p=pilf" class="y">Pilf</a>. Doug can be seen in the night skies of <a href="index.html?p=ert" class="y">Ert</a> during the evenings, although it is hard to see due to it not having much of a reflective surface. As such, Doug is often forgotten and even hated due to its status as a planet. Doug is about a one hundreth the size of the Hot Sun.',
-					'Doug, like Grēne, is made up of a silicon-based material, but has a crust with a material that is able to corrode, and has been corriding for millions of years, due to Grēne\'s atmosphere.',
+					'Doug is the second planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=grene" class="y">Grēne</a> and before <a href="index.html?p=pilf" class="y">Pilf</a>. Doug can be seen in the night skies of <a href="index.html?p=ert" class="y">Ert</a> during the evenings, although it is hard to see due to it not having much of a reflective surface. As such, Doug is often forgotten and even hated due to its status as a planet.',
 					'The term for describing something related to Doug is Forgettable.'
 				],
 				categories: [{
 					name: 'Characteristics',
 					info: [
-						'Doug is a terrestrial planet that is made up of a silicon-based material, along with an unknown material that is able to corrode, along with appearing to have some form of weathering. Doug\'s surface is littered with craters, along with flat plane-like areas that have been theorized to have been formed by volcanic activity on the planet. Volcanic activity has not been observed. Doug has a brown surface, due to it being blasted by Grēne\'s atmosphere. The surface itself has a varied surface, with darker sections being the newest and with lighter sections being the oldest. This fact is why craters are dark in color. Near the south pole of Doug lies a crater that is light in color. This spot has not been given a label, due to it only being observed once.',
-						'Doug has a very thin atmosphere. It\'s not enough to cause a visible sky. Said atmosphere is theorized to have come from Grēne\'s atmosphere, along with the trapping of other gasses.'
+						'<h3>Appearance</h3>',
+						'Doug, like all worlds in the inner system, is a terrestrial planet. It is a deep brown and yellow rocky body covered in large dark craters and volcanic planita. Doug is about one hundredth the size of the Hot Sun. It has a small axial tilt of about 0.05 radians and rotates once every 20 days in the opposite direction from all other worlds.',
+						'<h3>Geography</h3>',
+						'Doug\'s most notable features are its diverse patches of yellows, tans, and browns. It features a few massive craters that scar the surface with dark patches. Its surface is an entirely solid landscape full of jagged mountains, ridges, plains, and craters from ancient collisions.',
+						'Doug\'s surface color is thought to be formed from Grēne\'s ejected atmosphere, reacting with exposed regolith and turning it brown. The varied colors on Doug can be used to find out the age of the surface, darker sections being the newest and with lighter sections being the oldest.',
+						'The largest craters of Doug span hundreds of kilometers, and are often accompanied by flat featureless plains of newer rock, suggesting at one point these vast sections were molten presumably by impacts or from volcanism.',
+						'Near the south pole of Doug lies a crater that is light in color. This spot has not been given a label, due to it only being observed once.',
+						'<h3>"Atmosphere" and Climate</h3>',
+						'Doug has a very thin atmosphere, although it\'s not enough to cause a visible sky. Said atmosphere is theorized to have come from Grēne\'s atmosphere, along with the trapping of other gasses.',
+						'<h3>Magnetic Field</h3>',
+						'Doug lacks a proper magnetosphere, which means it can\'t block solar radiation from bombarding its surface. Wear sunscreen.',
+						'<h3>Internal Structure</h3>',
+						'Doug\'s surface suggests that there was some form of volcanic activity, but there are no current observations of it. Its lack of a magnetic field, atmosphere, and the presence of craters deptics Doug as an inactive geologic body. Its interior is thought to be solid with little warmth left inside.',
+						'Doug may also contain large cavernous remains of volcanic activity, and the disputed worms that could have created these.'
 					]
 				}, {
-					name: 'Interactions With Grēne',
+					name: 'Planetary Interactions',
 					info: [
-						'Doug orbits closely to the expelled atmosphere of Grēne, which, over millions of years, has turned it to the brown shade we know it as today.'
+						'Doug\'s orbit is often dragged around a lot by the other nearby planets, most noteworthy is Pilf and the Ert and <a href="index.html?p=george" class="y">George</a> system. Grēne may have an impact depending on when it aligns itself with the other planets. Despite this, its orbit remains stable.',
+						'<h3>Interactions With Grēne</h3>',
+						'Doug orbits closely to the expelled atmosphere of Grēne, which, over millions of years, has turned it to the brown shade we know it as today.',
+						'<h3>Interactions With Ert</h3>',
+						'Doug indirectly interacted with the cultures on Ert, so technically it made one.'
 					]
 				}, {
 					name: 'Satellites',
 					info: [
 						'<img src="images/h.png" alt="h.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
 						'<h3>H</h3>',
-						'Doug has one confirmed satellite, which has been named H. H is a natural satellite, shaped like a cube. It is the only object in the system with a cuboid shape, along with <a href="index.html?p=pilf" class="y">Pilf</a>. H itself contains a similar makeup to Doug, with the same type of rocks and the same holes, with the only difference being size and shape. It is unknown if the naming of H was to make Doug and H match up with <a href="index.html?p=dough" class="y">Dough</a> so that people could remember Doug.'
+						'Doug has one confirmed satellite, which has been named H. H is a natural satellite, shaped like a cube. It is the only object in the system with a cuboid shape, along with Pilf. H itself contains a similar makeup to Doug, with the same type of rocks and similar craters, with the only difference being size and shape. It is unknown if the naming of H was to make Doug and H match up with Dough so that people could remember Doug.'
 					]
 				}, {
 					name: 'Life',
 					info: [
 						'<h3>Worms</h3>',
-						'Theoretically, Doug could have life on it. While unconfirmed as of now, Doug could have gigantic lengthy creatures on it that seem to be a larger variant of <a href="index.html?p=george" class="y">George</a>\'s worms. Said worms could have created the holes on Doug as a place to call home. This theory also applies to H.'
+						'Theoretically, Doug could have life on it. While unconfirmed as of now, Doug could have gigantic lengthy creatures on it that seem to be a larger variant of George\'s worms. Said worms could have created the holes on Doug as a place to call home. This theory also applies to H.'
 					]
 				}, {
 					name: 'Culture',
 					info: [
-						'Doug is widely regarded to be the worst planet in the Hot Sun system. This is due to it appearing to be just a rock, although there is much more than that. It is widely hated due to the opinion on scientists. A quote, which has been debated by critics, is down below.',
+						'Doug is widely regarded to be the least favored planet in the Hot Sun system. This is due to it appearing to be just a rock, although there is much more than that. It is widely hated due to the opinion on scientists. A quote, which has been debated by critics, is down below.',
 						'"Doug, are you KIDDING ME? Why can\'t this damn planet make VOLCANOES already! I want to see some action, not a dead dirtball of a planet! I don\'t even want to call it a planet, it\'s just a rock. It has absolutely no value to my research."',
 						' - <a href="index.html?p=lakys" class="n">Dr. Lakys</a>'
 					]
@@ -464,43 +479,49 @@ function generatePage(page) {
 					info: ['Reegs', 'Polygons', 'And More']
 				}],
 				introText: [
-					'Ert is the fourth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, sharing this position with <a href="index.html?p=george" class="y">George</a>, after <a href="index.html?p=pilf" class="y">Pilf</a> and before <a href="index.html?p=dough" class="y">Dough</a>. Ert is notable, being one of the only two planets in a binary system, sharing this feature with George. Ert is also the planet with the second most diversity of life, behind George, and also has some of the most "intelligent" inhabitants. Ert’s sentient life boasts technology such as televisions, giant tungsten cubes, and the Perpahedron, but it is by no means able to take advantage of the planets around it, despite lifeforms being able to live on other planets. Ert is about one seventieth of the size of the Hot Sun.',
+					'Ert is the fourth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, sharing this position with <a href="index.html?p=george" class="y">George</a>, after <a href="index.html?p=pilf" class="y">Pilf</a> and before <a href="index.html?p=dough" class="y">Dough</a>. Ert is notable, being one of the only two planets in a binary system, sharing this feature with George. Ert is also the planet with the second most diversity of life, behind George, and also has some of the most "intelligent" inhabitants. Ert\'s sentient life boasts technology such as televisions, giant tungsten cubes, and the Perpahedron, but it is by no means able to take advantage of the planets around it, despite lifeforms being able to live on other planets. Ert is about one seventieth of the size of the Hot Sun.',
 					'The term for describing something related to Ert is Ertian.'
 				],
 				categories: [{
 					name: 'Characteristics',
 					info: [
-						'Ert is a Terrestrial planet that is made up of a silicon-based material, covered in oceans of water. A day on Ert lasts exactly 1 Ert day, and a year on Ert lasts exactly Ert 1 year. How useful is that? Very useful, according to scientists, probably smoking bread. Yes, smoking bread is possible on Ert.','<h3>Appearance</h3>',
-						'Ert is a terrestrial planet covered in vast oceans of water. It features several continents and a breathable atmosphere. It is roughly spherical in shape. Colors consist of various blues and greens, a signature look akin to its smaller twin George. Some whites and browns are present as well. Ert also has an atmosphere visible as a bluish glow tightly wrapped around its body visible when illuminated. Ert’s tilt is around 0.5451523 radians (31.234928 degrees). Despite MANY claims that Ert’s shape should be a torus, it is in fact a sphere (but a slightly squashed).',
-						'<h3>Chemistry</h3>',
-						'Ert contains a breathable atmosphere, likely containing oxygen and nitrogen, along with other trace elements. The surface on Ert is silicon-based, and Ert’s oceans are made mostly of water and some concentration of salt. Ert also features a water cycle, which involves water evaporating, having a disco party in the clouds, and then falling asleep, heading back towards the ground. Obviously that isn’t exactly how it goes but it’s close enough. Most of the chemical processes on Ert is a direct consequence of being absolutely infested with life, of which dictates a lot of why it is so interesting to begin with. Life on there is so interesting that a slice of live TV show can last 30 seasons just from the main character eating cake.',
+						'Ert is a Terrestrial planet that is made up of a silicon-based material, covered in oceans of water. A day on Ert lasts exactly 1 Ert day, and a year on Ert lasts exactly Ert 1 year. How useful is that? Very useful, according to scientists, probably smoking bread. Yes, smoking bread is possible on Ert.',
+						'<h3>Appearance</h3>',
+						'Ert is a terrestrial planet covered in vast oceans of water. It features several continents and a bluish atmosphere. It is roughly spherical in shape. Colors consist of various blues and greens, a signature look akin to its smaller twin George. Some whites and browns are present as well. Ert also has an atmosphere visible as a bluish glow tightly wrapped around its body visible when illuminated. Ert\'s tilt is around 0.5451523 radians (31.234928 degrees). Despite MANY claims that Ert\'s shape should be a torus, it is in fact a sphere (but a slightly squashed).',
+						'<h3>Geography</h3>',
+						'Ert has distinct land masses suspended by large oceans. About 76% of its surface is covered in oceans with varying depths on average of 1.5 kilometers deep. The remaining 24% land depicts a diverse landscape of mountains, plains, and deserts to name a few. There are four major continents on Ert: Northland, Southland, Eastland, and Weastland. Only the first two listed are depicted in the comics of Aeroventures and Polyventures, and little is mentioned of the others.',
+						'<h3>Atmosphere and Climate</h3>',
+						'Ert\'s temperature is cooler than George by a few degrees. Its tilt causes seasonal shifts throughout its orbit around the Hot Sun. The highest recorded temperature on Ert 316.15 degrees kelvin, and the coldest is 177.15 degrees kelvin. Some claims were made of temperatures capable of melting rock, but that was debunked after careful reevaluation of the study being made on a volcano.',
+						'Ert has a breathable atmosphere consisting of nitrogen and oxygen. There are trace amounts of carbon dioxide and a variable amount of water vapor. There\'s also a miniscule amount of Nagic in the form of aerosols.',
+						'Ert\'s atmosphere is capable of a water cycle, which involves water evaporating, having a disco party in the clouds, and then falling asleep, heading back towards the ground. Obviously that isn\'t exactly how it goes but it\'s close enough.',
 						'<h3>Internal Structure</h3>',
-						'Ert has signs of volcanism on its surface, suggesting an active interior and a molten core. Its surface is differentiated by many large land masses, which is likely an indicator of plate tectonics. Ert is the fourth densest planet in the Hot Sun system, preceding George, <a href="index.html?p=grene" class="y">Grēne</a>, and <a href="index.html?p=the" class="y">The</a>.',
+						'Ert has volcanism on its surface, suggesting an active interior and a molten core. Its surface is differentiated by many large land masses, which is likely an indicator of plate tectonics. Ert is the fourth densest planet in the Hot Sun system, preceding George, <a href="index.html?p=grene" class="y">Grēne</a>, and <a href="index.html?p=the" class="y">The</a>.',
+						'Ert\'s interior is differentiated by density - lighter material on its surface and denser metallic materials towards its core. The heat inside is generated by high pressures and decay of radioactive elements.',
+						'The core of Ert is said to be rich in Yolktonium, a sought after metal for forging some of the strongest materials in the world. In <a href="../comics/index.html?c=12-1" class="c">Aeroventures 12, Part 1</a>, <a href="index.html?p=nutstradamnus" class="n">Nutstradamnus</a> attempts to drill towards the core in order to obtain it.',
 						'<h3>Magnetic Field</h3>',
-						'Ert has a robust magnetic field caused by interactions with George. It is strong enough to deflect solar radiation and thus protecting the two worlds. Despite its strength it is nowhere near as strong as the fields on Mac, Aeiou, and The.',
-						'<h3>Climate</h3>',
-						'Ert’s temperature is cooler than George by a few degrees. Its tilt causes seasonal shifts throughout its orbit around the Hot Sun. The highest recorded temperature on Ert 316.15 degrees kelvin, and the coldest is 177.15 degrees kelvin. Ert’s relatively mild temperature is beneficial to its inhabitants.'
+						'Ert has a robust magnetic field strengthened by interactions with George. It is strong enough to deflect solar radiation and thus protecting the two worlds. Despite its strength it is nowhere near as strong as the fields on <a href="index.html?p=mac" class="y">Mac</a>, The, and <a href="index.html?p=aeiou" class="y">Aeiou</a>. Strangely, its “north” magnetic pole lays exactly on the same path as the Island of No Escape.',
+						'Ert\'s interaction with solar radiation allows the formation of auras, which is seen as a ring on the north and south magnetic poles, which to clarify is on the equator.'
 					]
 				}, {
 					name: 'Satellites',
 					info: [
 						'<h3>George</h3>',
 						'<img src="images/george.png" alt="george.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
-						'George is Ert’s twin. George and Ert rotate around each other, and are tidally locked with one another. George has more land than Ert, and harbors more life. It also harbors Ozark, the entity that inspired the Dint Can’s mascot.',
+						'George is Ert\'s twin. George and Ert rotate around each other, and are tidally locked with one another. George has more land relative to Ert, and harbors surprisingly more life. It also harbors Ozark, the entity that inspired the Dint Can\'s mascot.',
 						'<img src="images/perpahedron.png" alt="perpahedron.png" width="300" height="300" class="pixel" style="float: right; background-color: #555555;"></img>',
 						'<h3>Perpahedron</h3>',
-						'The Perpahedron is an artificial satellite, constructed by <a href="index.html?p=daktor" class="n">Daktor</a> and a group of scientists. The purpose of The Perpahedron is unknown, although suggestions for its purpose include being a gigantic multitool, a space mansion, and an overcomplicated mayonnaise jar. The Perpahedron has a large amount of tools, such as thrusters, speakers, and a giant tungsten cube attached by a nylon string.'
+						'The Perpahedron is an artificial satellite, constructed by Daktor and a group of scientists. The purpose of The Perpahedron is unknown, although suggestions for its purpose include being a gigantic multitool, a space mansion, and an overcomplicated mayonnaise jar. The Perpahedron has a large amount of tools, such as thrusters, speakers, and a giant tungsten cube attached by a nylon string.'
 					]
 				}, {
 					name: 'Life',
 					info: [
-						'Ert consists of an uncountable variety of life in many different phylums, but we counted those that only matter. Of course there are much more than listed below, but we just don’t feel like explaining what’s already obvious to most visitors. Do it yourself if you’re so worried about the state of every single mushroom. To summarize - plants, animals, fungi, and giant protists are present all over.',
+						'Ert consists of an uncountable variety of life in many different phylums, but we counted those that only matter. Of course there are much more than listed below, but we just don\'t feel like explaining what\'s already obvious to most visitors. Do it yourself if you\'re so worried about the state of every single mushroom. To summarize - plants, animals, fungi, and giant protists are present all over. ',
 						'<h3>Reegs</h3>',
-						'Reegs are creatures that are most commonly blue. They feature two legs, two eyes, and sometimes a nose which can be used for attack, defense, as utilities, and more. Examples of notable reegs are <a href="index.html?p=aero" class="y">Aero</a>, <a href="index.html?p=lakys" class="n">Lakys</a>, <a href="index.html?p=archie" class="n">Archie</a>, <a href="index.html?p=aposteel" class="n">Aposteel</a>, and <a href="index.html?p=royale" class="n">Royale</a>. Reegs are a prominant sentient species capable of many (and not so bright) things. They share their dominance to the Polygons.',
+						'Reegs are creatures that are most commonly blue. They feature two legs, two eyes, and sometimes a nose which can be used for attack, defense, as utilities, and more. Examples of notable reegs are <a href="index.html?p=aero" class="y">Aero</a>, <a href="index.html?p=lakys" class="n">Lakys</a>, <a href="index.html?p=archie" class="n">Archie</a>, <a href="index.html?p=aposteel" class="n">Aposteel</a>, and <a href="index.html?p=the" class="n">Royale</a>. Reegs are a prominent sentient species capable of many (and not so bright) things. They share their dominance to the Polygons.',
 						'<h3>Polygons</h3>',
-						'Polygons are simple geometric creatures infused with <a href="index.html?p=nagic" class="n">Nagic</a>. They feature stick legs and large eyes. They come in many colors, shapes, and sizes. Their society is built on the type of regular polygon, such as a square or octagon. Examples of notable polygons are <a href="index.html?p=pon" class="n">Pon</a>, <a href="index.html?p=larry-pv" class="n">Larry</a>, <a href="index.html?p=beth" class="n">Beth</a>, and <a href="index.html?p=vinny" class="n">Vinny</a> (although in technicality Pon, Vinny, and Beth are artificial creations). Like reegs, Polygons are prominent and capable of doing many (and much more brighter) things.',
+						'Polygons are simple geometric creatures infused with Nagic. They feature stick legs and large eyes. They come in many colors, shapes, and sizes. Their society is built on the type of regular polygon, such as a square or octagon. Examples of notable polygons are <a href="index.html?p=pon" class="n">Pon</a>, <a href="index.html?p=larry-pv" class="n">Larry</a>, <a href="index.html?p=beth" class="n">Beth</a> and <a href="index.html?p=vinny" class="n">Vinny</a> (although in technicality Pon, Vinny, and Beth are artificial creations). Like reegs, Polygons are prominent and capable of doing many (and much more brighter) things.',
 						'<h3>Spirons</h3>',
-						'Spirons are subterranean spider-like inhabitants featuring coiled appendages and four eyes. They inhabit most of the interior of Ert’s crust, appearing only very recently in history. Examples of notable spirons are <a href="index.html?p=coylstone" class="n">Coyl Stone</a>, Boomerang, The Great Helix, and Wallflower.',
+						'Spirons are subterranean spider-like inhabitants featuring coiled appendages and four eyes. They inhabit most of the interior of Ert\'s crust, appearing only very recently in history. Examples of notable spirons are <a href="index.html?p=coylstone" class="n">Coyl Stone</a>, Boomerang, The Great Helix, and Wallflower.',
 						'<h3>Florodites</h3>',
 						'Florodites are plant-like hybrids that live in small detached islands living together in tribes. They have the unique property of photosynthesising. Other than that they are unfortunately shoved aside by bigger factions.'
 					]
