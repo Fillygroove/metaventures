@@ -1,20 +1,23 @@
 function makePage(page) {	
-	let comicDir, wikiDir, titleDir;
+	let comicDir, wikiDir, titleDir, pageName;
 	switch (page) {
 		case 'main':
 			comicDir = './comics/';
 			wikiDir = './wiki/';
 			titleDir = './';
+			pageName = 'Main';
 			break;
 		case 'comic':
 			comicDir = './';
 			wikiDir = '../wiki/';
 			titleDir = '../';
+			pageName = 'Comics';
 			break;
 		case 'wiki':
 			comicDir = '../comics/';
 			wikiDir = './';
 			titleDir = '../';
+			pageName = 'Wiki';
 			break;
 	}
 
@@ -22,11 +25,11 @@ function makePage(page) {
 	metaCharset.charset = "utf-8";
 	
 	let metaName = document.createElement('meta');
-	metaName.content = "Aeroventures is a comic series that follows the adventures of Aero, Archie, Lakys, Aposteel, where they travel around and just cause general chaos, whether intentional or not!";
+	metaName.content = "Metaventures is the name of a collective of ideas; Aeroventures, Polyventures, and more!";
 	metaName.name = "description";
 	
 	let metaTitle = document.createElement('title');
-	metaTitle.innerHTML = 'Aeroventures!';
+	metaTitle.innerHTML = `${pageName} - Metaventures`;
 	
 	let metaFavicon = document.createElement('link');
 	metaFavicon.rel = 'icon';
@@ -54,9 +57,9 @@ function makePage(page) {
 	let mainAVTitle = document.createElement('div');
 	mainAVTitle.className = 'aeroventures-title';
 	if (page == "wiki") {
-		mainAVTitle.innerHTML = `<a href="${titleDir}index.html" id="aeroventures-title">Aeroventu</a><a href="../comics/index.html?c=dk" id="aeroventures-title">r</a><a href="${titleDir}index.html" id="aeroventures-title">es!</a>`;
+		mainAVTitle.innerHTML = `<a href="${titleDir}index.html" id="aeroventures-title">Metaventu</a><a href="../comics/index.html?c=dk" id="aeroventures-title">r</a><a href="${titleDir}index.html" id="aeroventures-title">es!</a>`;
 	} else {
-		mainAVTitle.innerHTML = `<a href="${titleDir}index.html" id="aeroventures-title">Aeroventures!</a>`;
+		mainAVTitle.innerHTML = `<a href="${titleDir}index.html" id="aeroventures-title">Metaventures!</a>`;
 	}
 	
 	mainAVThin.append(mainAVTitle);
@@ -126,12 +129,12 @@ function makePage(page) {
 		case 'main':
 			let mainH1 = document.createElement('h1');
 			mainH1.style = "font-family: Ubuntu;";
-			mainH1.innerHTML = "Aeroventures!";
+			mainH1.innerHTML = "Metaventures!";
 			
 			let lineBreak = document.createElement('hr');
 			
 			let mainParagraph = document.createElement('p');
-			mainParagraph.innerHTML = 'Aeroventures is a comic series that follows the adventures of Aero, Archie, Lakys, Aposteel, where they travel around and just cause general chaos, whether intentional or not.';
+			mainParagraph.innerHTML = 'Welcome to the Metaventures website! Metaventures is the name for a collective of comics and ideas, with a story art throughout througout space and time.';
 			
 			let mainBreak1 = document.createElement('br');
 			let mainBreak2 = document.createElement('br');
