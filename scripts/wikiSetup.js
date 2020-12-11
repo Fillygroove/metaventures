@@ -146,15 +146,14 @@ function generatePage(page) {
 						'<a href="index.html?p=pilf" class="y">Pilf</a>',
 						'<a href="index.html?p=ert" class="y">Ert</a>',
 						'<a href="index.html?p=george" class="y">George</a>',
-						'<a href="index.html?p=dough" class="y">Dough</a>',
+						'<a href="index.html?p=cea" class="y">Cea</a>',
+						'<a href="index.html?p=ternary" class="n">The Ternary (Tod, Otd, Dot)</a>',
 						'<a href="index.html?p=mac" class="y">Mac</a>',
 						'<a href="index.html?p=wop" class="y">World of Pain</a>',
 						'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
 						'<a href="index.html?p=the" class="y">The</a>',
-						'<a href="index.html?p=cea" class="y">Cea</a>',
 						'<a href="index.html?p=taiberaque" class="y">Taiberaque</a>',
 						'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
-						'<a href="index.html?p=flip" class="n">Flip</a>',
 						'<a href="index.html?p=gigantrax" class="n">Gigantrax</a>'
 					]
 				}]
@@ -248,7 +247,7 @@ function generatePage(page) {
 						'<a href="index.html?p=pilf" class="y">Pilf</a>',
 						'<a href="index.html?p=ert" class="y">Ert</a>',
 						'<a href="index.html?p=george" class="y">George</a>',
-						'<a href="index.html?p=dough" class="y">Dough</a>',
+						'<a href="index.html?p=ternary" class="n">The Ternary</a>',
 						'<a href="index.html?p=mac" class="y">Mac</a>',
 						'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
 						'<a href="index.html?p=the" class="y">The</a>',
@@ -382,7 +381,7 @@ function generatePage(page) {
 					info: [
 						'<img src="images/h.png" alt="h.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
 						'<h3>H</h3>',
-						'Doug has one confirmed satellite, which has been named H. H is a natural satellite, shaped like a cube. It is the only object in the system with a cuboid shape, along with Pilf. H itself contains a similar makeup to Doug, with the same type of rocks and similar craters, with the only difference being size and shape. It is unknown if the naming of H was to make Doug and H match up with Dough so that people could remember Doug.'
+						'Doug has one confirmed satellite, which has been named H. H is a natural satellite, shaped like a cube. It is the only object in the system with a cuboid shape, along with Pilf. H itself contains a similar makeup to Doug, with the same type of rocks and similar craters, with the only difference being size and shape. It is unknown if the naming of H was to make Doug and H match up with one of <a href="index.html?p=mac" class="y">Mac</a>\'s satellites, Dough, so that people could remember Doug.'
 					]
 				}, {
 					name: 'Life',
@@ -415,7 +414,7 @@ function generatePage(page) {
 					info: ['Piffol Rings']
 				}, {
 					name: 'Name Origin',
-					info: ['Unknown (See <a href="index.html?p=flip" class="n">Flip</a>)']
+					info: ['Unknown']
 				}, {
 					name: 'Classification',
 					info: ['Cuboid Terrestrial']
@@ -479,7 +478,7 @@ function generatePage(page) {
 					info: ['Reegs', 'Polygons', 'And More']
 				}],
 				introText: [
-					'Ert is the fourth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, sharing this position with <a href="index.html?p=george" class="y">George</a>, after <a href="index.html?p=pilf" class="y">Pilf</a> and before <a href="index.html?p=dough" class="y">Dough</a>. Ert is notable, being one of the only two planets in a binary system, sharing this feature with George. Ert is also the planet with the second most diversity of life, behind George, and also has some of the most "intelligent" inhabitants. Ert\'s sentient life boasts technology such as televisions, giant tungsten cubes, and the Perpahedron, but it is by no means able to take advantage of the planets around it, despite lifeforms being able to live on other planets. Ert is about one seventieth of the size of the Hot Sun.',
+					'Ert is the fourth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, sharing this position with <a href="index.html?p=george" class="y">George</a>, after <a href="index.html?p=pilf" class="y">Pilf</a> and before <a href="index.html?p=cea" class="y">Cea</a>. Ert is notable, being one of the only two planets in a binary system, sharing this feature with George. Ert is also the planet with the second most diversity of life, behind George, and also has some of the most "intelligent" inhabitants. Ert\'s sentient life boasts technology such as televisions, giant tungsten cubes, and the Perpahedron, but it is by no means able to take advantage of the planets around it, despite lifeforms being able to live on other planets. Ert is about one seventieth of the size of the Hot Sun.',
 					'The term for describing something related to Ert is Ertian.'
 				],
 				categories: [{
@@ -553,31 +552,6 @@ function generatePage(page) {
 				}]
 			});
 			break;
-		case "dough":
-			pageTemplate({
-				name: 'Dough',
-				file: ['dough.png', 'pixel'],
-				dims: ['330', '280.75'],
-				caption: 'Pictured in natural color, illustration made by Gramiatar.',
-				heading: 'Designations',
-				navbox: [{
-					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
-				}, {
-					name: 'Satellites',
-					info: ['Dot', 'Tod', 'Otd']
-				}, {
-					name: 'Name Origin',
-					info: ['Unknown']
-				}, {
-					name: 'Classification',
-					info: ['Torus Terrestrial']
-				}, {
-					name: 'Life',
-					info: ['Bacteria']
-				}]
-			});
-			break;
 		case "mac":
 			pageTemplate({
 				name: 'Mac',
@@ -602,7 +576,7 @@ function generatePage(page) {
 					info: ['Confirmed but Unknown']
 				}],
 				introText: [
-					'Mac is the sixth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, in between <a href="index.html?p=dough" class="y">Dough</a> and <a href="index.html?p=aeiou" class="y">Aeiou</a>. It is the largest planet in the system. It is a gas giant, with a diameter that is a sixth and a half of the size of the Hot Sun, and has a prime vertical that is a sixth and three fourths of the size of the Hot Sun. Due to its size, it is visible from <a href="index.html?p=ert" class="y">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
+					'Mac is the sixth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, in between <a href="index.html?p=cea" class="y">Cea</a> and <a href="index.html?p=aeiou" class="y">Aeiou</a>. It is the largest planet in the system. It is a gas giant, with a diameter that is a sixth and a half of the size of the Hot Sun, and has a prime vertical that is a sixth and three fourths of the size of the Hot Sun. Due to its size, it is visible from <a href="index.html?p=ert" class="y">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
 					'Mac is mostly composed of Hydrogen, being in the form of gas and plasma, and Helium, with a good amount of Iodine and Neon, along with a small amount of other materials and elements. Due to Mac\'s rotation, the planet has a huge bulge on the horizon, experiencing a day once every 3.5 hours. Mac orbit lies inside of an asteroid belt.',
 					'The term for describing something related to Mac is Donian.'
 				],
@@ -775,7 +749,6 @@ function generatePage(page) {
 					name: 'Satellites',
 					info: [
 						'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
-						'<a href="index.html?p=flip" class="n">Flip</a>',
 						'<a href="index.html?p=gigantrax" class="n">Gigantrax</a>',
 						'<a href="index.html?p=hotsun" class="y">Hot Sun (Binary System)</a>'
 					]
