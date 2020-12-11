@@ -128,7 +128,7 @@ function generatePage(page) {
 		case "main":
 			pageTemplate({
 				name: 'The Wiki',
-				introText: ['Welcome to the official Aeroventures Wiki! Here, you can find pages about everything in the Aeroventures world so far. Reminder that the Wiki is still a huge work in progress, so expect pages to be empty.'],
+				introText: ['Welcome to the official Metaventures Wiki! Here, you can find pages about everything in the Metaventures world so far. Reminder that the Wiki is still a huge work in progress, so expect pages to be empty.'],
 				categories: [{
 					name: 'Characters',
 					info: [
