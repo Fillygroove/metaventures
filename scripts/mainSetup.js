@@ -1,9 +1,4 @@
-function makePage(page) {
-	let mainBody = document.getElementsByTagName('body')[0];
-	
-	let mainAVThin = document.createElement('div');
-	mainAVThin.className = 'av-thin';
-	
+function makePage(page) {	
 	let comicDir, wikiDir, titleDir;
 	switch (page) {
 		case 'main':
@@ -22,6 +17,39 @@ function makePage(page) {
 			titleDir = '../';
 			break;
 	}
+
+	let metaCharset = document.createElement('meta');
+	metaCharset.charset = "utf-8";
+	
+	let metaName = document.createElement('meta');
+	metaName.content = "Aeroventures is a comic series that follows the adventures of Aero, Archie, Lakys, Aposteel, where they travel around and just cause general chaos, whether intentional or not!";
+	metaName.name = "description";
+	
+	let metaTitle = document.createElement('title');
+	metaTitle.innerHTML = 'Aeroventures!';
+	
+	let metaFavicon = document.createElement('link');
+	metaFavicon.rel = 'icon';
+	metaFavicon.type = 'image/png';
+	metaFavicon.href = `${titleDir}favicon.png`;
+	
+	let metaFont = document.createElement('link');
+	metaFont.rel = "stylesheet";
+	metaFont.href = "https://fonts.googleapis.com/css?family=Ubuntu:400,700";
+	
+	let metaCss = document.createElement('link');
+	metaCss.rel = "stylesheet";
+	metaCss.href = `${titleDir}index.css`;
+	
+	document.head.append(metaCharset, metaName, metaTitle, metaFavicon, metaFont, metaCss);
+
+	// MAIN
+	
+	let mainBody = document.getElementsByTagName('body')[0];
+	
+	let mainAVThin = document.createElement('div');
+	mainAVThin.className = 'av-thin';
+
 	
 	let mainAVTitle = document.createElement('div');
 	mainAVTitle.className = 'aeroventures-title';
@@ -110,15 +138,10 @@ function makePage(page) {
 			
 			mainAVThin.append(mainH1, lineBreak, mainParagraph, mainBreak1, mainBreak2);
 			break;
-		case 'comic':
-			let comicLoader = document.createElement('script');
-			comicLoader.src = "../scripts/comicSetup.js";
-			mainAVThin.append(comicLoader);
-			break;
-		case 'wiki':
-			let wikiLoader = document.createElement('script');
-			wikiLoader.src = "../scripts/wikiSetup.js";
-			mainAVThin.append(wikiLoader);
+		default:
+			scriptLoader = document.createElement('script');
+			scriptLoader.src = `../scripts/${page}Setup.js`;
+			mainAVThin.append(scriptLoader);
 			break;
 	}
 	
