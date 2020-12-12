@@ -45,15 +45,12 @@ function makePage(page) {
 	metaCss.href = `${titleDir}index.css`;
 	
 	document.head.append(metaCharset, metaName, metaTitle, metaFavicon, metaFont, metaCss);
-
-	// MAIN
 	
 	let mainBody = document.getElementsByTagName('body')[0];
 	
 	let mainAVThin = document.createElement('div');
 	mainAVThin.className = 'av-thin';
 
-	
 	let mainAVTitle = document.createElement('div');
 	mainAVTitle.className = 'aeroventures-title';
 	if (page == "wiki") {
@@ -126,7 +123,6 @@ function makePage(page) {
 	mainAVThin.append(dropdownDiv);
 	
 	scriptLoader = document.createElement('script');
-	console.log((page == 'main' ? '' : '.') + `./scripts/${page}Setup.js`);
 	scriptLoader.src = (page == 'main' ? '' : '.') + `./scripts/${page}Setup.js`;
 	mainAVThin.append(scriptLoader);
 	
