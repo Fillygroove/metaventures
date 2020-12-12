@@ -144,8 +144,7 @@ function generatePage(page) {
 						'<a href="index.html?p=grene" class="y">Grēne</a>',
 						'<a href="index.html?p=doug" class="y">Doug</a>',
 						'<a href="index.html?p=pilf" class="y">Pilf</a>',
-						'<a href="index.html?p=ert" class="y">Ert</a>',
-						'<a href="index.html?p=george" class="y">George</a>',
+						'<a href="index.html?p=ert" class="y">Ert</a> / <a href="index.html?p=george" class="y">George</a>',
 						'<a href="index.html?p=cea" class="y">Cea</a>',
 						'<a href="index.html?p=ternary" class="y">The Ternary (Tod, Otd, Dot)</a>',
 						'<a href="index.html?p=mac" class="y">Mac</a>',
@@ -246,13 +245,13 @@ function generatePage(page) {
 						'<a href="index.html?p=grene" class="y">Grēne</a>',
 						'<a href="index.html?p=doug" class="y">Doug</a>',
 						'<a href="index.html?p=pilf" class="y">Pilf</a>',
-						'<a href="index.html?p=ert" class="y">Ert</a>',
-						'<a href="index.html?p=george" class="y">George</a>',
+						'<a href="index.html?p=ert" class="y">Ert</a> / <a href="index.html?p=george" class="y">George</a>',
+						'<a href="index.html?p=cea" class="y">Cea</a>',
 						'<a href="index.html?p=ternary" class="y">The Ternary</a>',
 						'<a href="index.html?p=mac" class="y">Mac</a>',
 						'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
 						'<a href="index.html?p=the" class="y">The</a>',
-						'<a href="index.html?p=cea" class="y">Cea</a>',
+						'<a href="index.html?p=purple" class="y">Pürpl</a>',
 						'<a href="index.html?p=taiberaque" class="y">Taiberaque (Binary System)</a>'
 					]
 				}, {
@@ -308,7 +307,7 @@ function generatePage(page) {
 					info: [
 						'Grēne is a Chthonian planet that mainly consists of a silicon-based material, along with a multitude of undiscovered elements, although aluminum is confirmed due to probes being sent there and promptly being melted by how hot the planet is. Most attempts of uncovering more elements only makes us more sure that aluminum is present on Grēne. Grēne is tidally locked to the Hot Sun, meaning that one side of the planet always faces it. Due to solar winds hitting the atmosphere, the atmosphere is physically stripped from the planet, causing a trail that affects Doug, and maybe even <a href="index.html?p=pilf" class="y">Pilf</a>.',
 						'Due to the circulation in the atmosphere, there are strands of an unknown material that glows a bright blue. From far away, this causes the planet to appear as if it were the color green.',
-						'Pictured on the bottom of the provided image is a storm, which has been colloquially called the Great Blue Spot.'
+						'Pictured on the bottom of the provided image is a storm, which has been colloquially called the Great Pants Color Spot.'
 					]
 				}, {
 					name: 'Interactions With the Hot Sun',
@@ -608,7 +607,7 @@ function generatePage(page) {
 					info: ['The Trio of Broom']
 				}],
 				introText: [
-					'The Ternary is the name for a collective of three dwarf planets, named Dot, Otd, and Tod. It is located between <a href="index.html?p=cea" class="y">Cea</a> and <a href="index.html?p=mac" class="y">Mac</a>.'
+					'The Ternary is the name for a collective of three dwarf planets, named Dot, Otd, and Tod. They are located between <a href="index.html?p=cea" class="y">Cea</a> and <a href="index.html?p=mac" class="y">Mac</a>.'
 				],
 				categories: [{
 					name: 'sample',
@@ -942,10 +941,36 @@ function generatePage(page) {
 				introText: [`${scream}`]
 			});
 			break;
-		default: 
+		default:
+			let quoteNumber = Math.floor(Math.random() * 7);
+			console.log(quoteNumber);
+			let quote;
+			switch (quoteNumber) {
+				case 0:
+					quote = 'Maybe it was destroyed by <a href="index.html?p=wop" class="y">World of Pain</a>...';
+					break;
+				case 1:
+					quote = 'Maybe it\'s in the <a href="index.html?p=taiberaque" class="y">Taiberaque</a> system...';
+					break;
+				case 2:
+					quote = 'Maybe it got abducted by space clowns...';
+					break;
+				case 3:
+					quote = 'Maybe <a href="index.html?p=aero" class="y">Aero</a> stole it\'s intestines...';
+					break;
+				case 4: // Made by Pixel Origin
+					quote = 'Likely left to attend <a href="index.html?p=aero" class="y">Aero</a>\'s funeral...';
+					break;
+				case 5: // Made by PS3_33
+					quote = 'Perhaps it\'s one of <a href="index.html?p=the" class="y">These</a> greatest mysteries...';
+					break;
+				case 6: // Made by PS3_33
+					quote = 'Maybe <a href="index.html?p=aeiou" class="y">Aeiou</a> made it explode because of its awesomeness...';
+					break;
+			}
 			pageTemplate({
 				name: 'Oops, a tasty 404!',
-				introText: ['This page doesn\'t seem to exist, sadly... Maybe it was destroyed by <a href="index.html?p=wop" class="y">World of Pain</a>...']
+				introText: ['This page doesn\'t seem to exist, sadly... ' + quote]
 			});
 			break;
 	}
