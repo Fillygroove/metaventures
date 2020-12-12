@@ -147,11 +147,12 @@ function generatePage(page) {
 						'<a href="index.html?p=ert" class="y">Ert</a>',
 						'<a href="index.html?p=george" class="y">George</a>',
 						'<a href="index.html?p=cea" class="y">Cea</a>',
-						'<a href="index.html?p=ternary" class="n">The Ternary (Tod, Otd, Dot)</a>',
+						'<a href="index.html?p=ternary" class="y">The Ternary (Tod, Otd, Dot)</a>',
 						'<a href="index.html?p=mac" class="y">Mac</a>',
 						'<a href="index.html?p=wop" class="y">World of Pain</a>',
 						'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
 						'<a href="index.html?p=the" class="y">The</a>',
+						'<a href="index.html?p=purpl" class="y">Pürpl</a>',
 						'<a href="index.html?p=taiberaque" class="y">Taiberaque</a>',
 						'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
 						'<a href="index.html?p=gigantrax" class="n">Gigantrax</a>'
@@ -247,7 +248,7 @@ function generatePage(page) {
 						'<a href="index.html?p=pilf" class="y">Pilf</a>',
 						'<a href="index.html?p=ert" class="y">Ert</a>',
 						'<a href="index.html?p=george" class="y">George</a>',
-						'<a href="index.html?p=ternary" class="n">The Ternary</a>',
+						'<a href="index.html?p=ternary" class="y">The Ternary</a>',
 						'<a href="index.html?p=mac" class="y">Mac</a>',
 						'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
 						'<a href="index.html?p=the" class="y">The</a>',
@@ -549,6 +550,71 @@ function generatePage(page) {
 				}, {
 					name: 'Life',
 					info: ['Cows', 'Ozark', 'Plushrooms', 'And More']
+				}],
+				introText: [
+					'George is the fourth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, sharing this position with <a href="index.html?p=ert" class="y">Ert</a>, after <a href="index.html?p=pilf" class="y">Pilf</a> and before <a href="index.html?p=cea" class="y">Cea</a>.'
+				]
+			});
+			break;
+		case "cea":
+			pageTemplate({
+				name: 'Cea',
+				file: ['cea.png', 'pixel'],
+				dims: ['330', '330'],
+				caption: 'Pictured in natural color, illustration made by Gramiatar.',
+				heading: 'Designations',
+				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
+				}, {
+					name: 'Satellites',
+					info: ['Numerous Mines (52 confirmed)']
+				}, {
+					name: 'Name Origin',
+					info: ['Unknown']
+				}, {
+					name: 'Classification',
+					info: ['Ocean']
+				}, {
+					name: 'Life',
+					info: ['Unknown']
+				}],
+				introText: [
+					'Cea is the fifth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=ert" class="y">Ert</a> and <a href="index.html?p=george" class="y">George</a> and before <a href="index.html?p=ternary" class="y">The Ternary</a>.'
+				]
+			});
+			break;
+		case "ternary":
+			pageTemplate({
+				name: 'The Ternary',
+				file: ['ternary.png'],
+				dims: ['330', '330'],
+				caption: 'Depicted from far away, illustration made by Gramiatar.',
+				heading: 'Designations',
+				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>, Each Other']
+				}, {
+					name: 'Satellites',
+					info: ['Each Other']
+				}, {
+					name: 'Name Origin',
+					info: ['Unknown']
+				}, {
+					name: 'Classification',
+					info: ['Dwarf Planets']
+				}, {
+					name: 'Life',
+					info: ['The Trio of Broom']
+				}],
+				introText: [
+					'The Ternary is the name for a collective of three dwarf planets, named Dot, Otd, and Tod. It is located between <a href="index.html?p=cea" class="y">Cea</a> and <a href="index.html?p=mac" class="y">Mac</a>.'
+				],
+				categories: [{
+					name: 'sample',
+					info: [
+						'text'
+					]
 				}]
 			});
 			break;
@@ -564,7 +630,7 @@ function generatePage(page) {
 					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
 				}, {
 					name: 'Satellites',
-					info: ['<a href="index.html?p=wop" class="y">World of Pain</a>']
+					info: ['<a href="index.html?p=wop" class="y">World of Pain</a>, Dough']
 				}, {
 					name: 'Name Origin',
 					info: ['Unknown']
@@ -576,7 +642,7 @@ function generatePage(page) {
 					info: ['Confirmed but Unknown']
 				}],
 				introText: [
-					'Mac is the sixth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, in between <a href="index.html?p=cea" class="y">Cea</a> and <a href="index.html?p=aeiou" class="y">Aeiou</a>. It is the largest planet in the system. It is a gas giant, with a diameter that is a sixth and a half of the size of the Hot Sun, and has a prime vertical that is a sixth and three fourths of the size of the Hot Sun. Due to its size, it is visible from <a href="index.html?p=ert" class="y">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
+					'Mac is the sixth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=ternary" class="y">The Ternary</a> and before <a href="index.html?p=aeiou" class="y">Aeiou</a>. It is the largest planet in the system. It is a gas giant, with a diameter that is a sixth and a half of the size of the Hot Sun, and has a prime vertical that is a sixth and three fourths of the size of the Hot Sun. Due to its size, it is visible from <a href="index.html?p=ert" class="y">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
 					'Mac is mostly composed of Hydrogen, being in the form of gas and plasma, and Helium, with a good amount of Iodine and Neon, along with a small amount of other materials and elements. Due to Mac\'s rotation, the planet has a huge bulge on the horizon, experiencing a day once every 3.5 hours. Mac orbit lies inside of an asteroid belt.',
 					'The term for describing something related to Mac is Donian.'
 				],
@@ -588,9 +654,20 @@ function generatePage(page) {
 						'Mac, due to the copious amounts amounts of Neon, glows a deep orange.'
 					]
 				}, {
-					name: 'Interactions With World of Pain',
+					name: 'Satellites',
 					info: [
 						'<img src="images/wop.png" alt="wop.png" width="100" height="87.14" class="pixel" style="float: right; background-color: #555555;"></img>',
+						'<h3>World of Pain</h3>',
+						'text',
+						'text',
+						'<img src="images/dough.png" alt="dough.png" width="100" height="85.07" class="pixel" style="float: right; background-color: #555555;"></img>',
+						'<h3>Dough</h3>',
+						'text',
+						'text'
+					]
+				}, {
+					name: 'Interactions With World of Pain',
+					info: [
 						'Mac\'s satellite is <a href="index.html?p=wop" class="y">World of Pain</a>, which has a history with the planet. Originally, World of Pain was a minor object close to the Hot Sun, with it\s own miniature satellite, which has been named World of Pain JR. After being ejected from the inner parts of the system by a solar flare, World of Pain JR had falled into the gasses of Mac, leading to World of Pain destroying all of Mac\'s old satellites, creating an asteroid belt. Once a year, World of Pain attempts to punch Mac, which either leads in World of Pain either sinking in the gas, or being shocked by plasma storms.'
 					]
 				}]
@@ -643,6 +720,16 @@ function generatePage(page) {
 				}, {
 					name: 'Life',
 					info: ['None']
+				}],
+				introText: [
+					'Aeiou is the seventh planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=mac" class="y">Mac</a> and before <a href="index.html?p=the" class="y">The</a>.',
+					'The term for referring to something related to Aeiou is Aeiouian.'
+				],
+				categories: [{
+					name: 'Characteristics',
+					info: [
+						'Sample text.',
+					]
 				}]
 			});
 			break;
@@ -650,8 +737,8 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'The',
 				file: ['the.png', 'pixel'],
-				dims: ['330', '339.08'],
-				caption: 'A mockup of what The could look like, illustration made by Gramiatar.',
+				dims: ['330', '334.31'],
+				caption: 'An image of The, taken through intense conditions, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -664,36 +751,42 @@ function generatePage(page) {
 					info: ['Named by an unknown organization after the Alphabet Business Concern attempted to name it Article.']
 				}, {
 					name: 'Classification',
-					info: ['Unknown']
+					info: ['Trans Aeiouian']
 				}, {
 					name: 'Life',
 					info: ['Unknown']
-				}]
+				}],
+				introText: [
+					'The is the eighth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, located between <a href="index.html?p=aeiou" class="y">Aeiou</a> and <a href="index.html?p=purpl" class="y">Pürpl</a>.'
+				]
 			});
 			break;
-		case "cea":
+		case "purpl":
 			pageTemplate({
-				name: 'Cea',
-				file: ['cea.png', 'pixel'],
-				dims: ['330', '330'],
-				caption: 'Pictured in natural color, illustration made by Gramiatar.',
+				name: 'Pürpl',
+				file: ['purpl.png', 'pixel'],
+				dims: ['330', '70.48'],
+				caption: 'A mockup of what Pürpl could look like, illustration made by Epicbattler3.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
 					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
 				}, {
 					name: 'Satellites',
-					info: ['Numerous Mines (52 confirmed)']
+					info: ['Unknown']
 				}, {
 					name: 'Name Origin',
 					info: ['Unknown']
 				}, {
 					name: 'Classification',
-					info: ['Ocean']
+					info: ['Trans Aeiouian']
 				}, {
 					name: 'Life',
 					info: ['Unknown']
-				}]
+				}],
+				introText: [
+					'Pürpl is the ninth and last planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, located after <a href="index.html?p=the" class="y">The</a>.'
+				]
 			});
 			break;
 		case "coldsun":

@@ -91,6 +91,11 @@ function generatePanels(comic) {
 			description = '"Nineventures" contains every ninth panel from every aeroventure to make some.. tangible kind of story. More panels are sure to be added after more comics are made.';
 			title = 'Nineventures';
 			break;
+		case "trigger":
+			length = 1;
+			description = 'bro you just posted cringe';
+			title = 'Trigger Fish';
+			break;
 	}
 
 	let avThin = document.getElementsByClassName('av-thin')[0];
@@ -119,6 +124,12 @@ function generatePanels(comic) {
 		if (comic == "7" && i == 10) { // Dinosaurs wiki page
 			let panelLink = document.createElement('a');
 			panelLink.href = "../wiki/index.html?p=dino";
+			
+			panelLink.append(panels);
+			slides.append(panelLink);
+		} else if (comic == "8" && i == 7) { // Trigger Fish
+			let panelLink = document.createElement('a');
+			panelLink.href = "index.html?c=trigger";
 			
 			panelLink.append(panels);
 			slides.append(panelLink);
