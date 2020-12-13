@@ -197,10 +197,13 @@ function pageTemplate(page) {
 						name: 'Antagonists',
 						info: [
 							'<a href="index.html?p=coylstone" class="n">Coyl Stone</a>',
+							'<a href="index.html?p=keeper" class="n">The Keeper</a>',
 							'<a href="index.html?p=larry-av" class="n">Larry</a>',
 							'<a href="index.html?p=nutstradamnus" class="n">Nutstradamnus</a>',
 							'<a href="index.html?p=oldaero" class="n">Old Aero</a>',
+							'<a href="index.html?p=ozark" class="n">Ozark</a>',
 							'<a href="index.html?p=royale" class="n">Royale</a>',
+							'<a href="index.html?p=clowns" class="n">The Space Clowns</a>',
 							'<a href="index.html?p=warmaccine" class="n">War Maccine</a>'
 						]
 					}, {
