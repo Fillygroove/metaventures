@@ -196,16 +196,19 @@ function pageTemplate(page) {
 					}, {
 						name: 'Antagonists',
 						info: [
-							'<a href="index.html?p=royale" class="n">Royale</a>',
+							'<a href="index.html?p=coylstone" class="n">Coyl Stone</a>',
 							'<a href="index.html?p=larry-av" class="n">Larry</a>',
 							'<a href="index.html?p=nutstradamnus" class="n">Nutstradamnus</a>',
-							'<a href="index.html?p=coylstone" class="n">Coyl Stone</a>'
+							'<a href="index.html?p=oldaero" class="n">Old Aero</a>',
+							'<a href="index.html?p=royale" class="n">Royale</a>',
+							'<a href="index.html?p=warmaccine" class="n">War Maccine</a>'
 						]
 					}, {
 						name: 'Minor Characters',
 						info: [
-							'<a href="index.html?p=shockpose" class="n">Shockpose</a>',
-							'<a href="index.html?p=fender" class="n">Fender</a>'
+							'<a href="index.html?p=darpynpals" class="n">Darpy & Pals</a> (<small>Darpy, Occols, Trivy</small>)',
+							'<a href="index.html?p=fender" class="n">Fender</a>',
+							'<a href="index.html?p=shockpose" class="n">Shockpose</a>'
 						]
 					}]
 				}, {
@@ -221,12 +224,14 @@ function pageTemplate(page) {
 					}, {
 						name: 'Antagonists',
 						info: [
-							'???'
+							'To Be Revealed'
 						]
 					}, {
 						name: 'Minor Characters',
 						info: [
-							'???'
+							'<a href="index.html?p=gordon" class="n">Gordon</a>',
+							'<a href="index.html?p=larrymom" class="n">Larry\'s Mom</a>',
+							'<a href="index.html?p=spencer" class="n">Spencer</a>'
 						]
 					}]
 				}]
