@@ -155,7 +155,7 @@ function pageTemplate(page) {
 					let innerTableData = document.createElement('td');
 					
 					let innerTableDiv = document.createElement('div');
-					innerTableDiv.style = "text-align: left;";
+					innerTableDiv.style = "text-align: left; padding-left: 8px;";
 					
 					innerTableDiv.innerHTML = table.categories[i].info[j].info.toString().replaceAll(',', ' &bull; ');
 					
