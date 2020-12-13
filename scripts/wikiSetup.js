@@ -8,6 +8,70 @@ function pageTemplate(page) {
 	let topLineBreak = document.createElement('hr');
 	
 	article.append(name, topLineBreak);
+		
+	if (page.warning !== undefined) {
+		function createWarning(warning) {
+			let warningTable = document.createElement('table');
+			
+			warningTable.className = 'navbox';
+			warningTable.style = 'width: 50%;';
+			
+			let warningCaption = document.createElement('caption');
+			warningCaption.innerHTML = warning.caption;
+			
+			let warningBody = document.createElement('tbody');
+			warningBody.style = 'float: center;';
+			
+			let warningData = document.createElement('td');
+			let warningDiv = document.createElement('div');
+			let warningIMG = document.createElement('img');
+			
+			warningIMG.alt = warning.image.file;
+			warningIMG.src = `./images/${warning.image.file}`;
+			warningIMG.width = warning.image.dims[0];
+			warningIMG.height = warning.image.dims[1];
+			warningIMG.style = "float: left;"
+			
+			warningP = document.createElement('p');
+			warningP.innerHTML = warning.wormbs;
+			
+			warningDiv.append(warningIMG, warningP);
+			
+			warningData.append(warningDiv);
+			
+			warningBody.append(warningData);
+			
+			warningTable.append(warningCaption, warningBody);
+			
+			return warningTable;
+		}
+		
+		if (page.warning.includes('stub')) {
+			let warning = createWarning({
+				caption: 'This page is incomplete!',
+				image: {
+					file: 'stub.png',
+					dims: [80, 80]
+				},
+				wormbs: 'Please be patient as Lakys finishes the War Maccine.'
+			});
+		
+			article.append(warning);
+		}
+		
+		if (page.warning.includes('quality')) {
+			let warning = createWarning({
+				caption: 'Bro, this is quality',
+				image: {
+					file: 'bro.png',
+					dims: [80, 80]
+				},
+				wormbs: 'You\'re looking at a high quality page. Please behold its beauty!'
+			});
+		
+			article.append(warning);
+		}
+	}
 
 	if (page.navbox !== undefined) {
 		let navbox = document.createElement('table');
@@ -208,6 +272,7 @@ function pageTemplate(page) {
 						name: 'Minor Characters',
 						info: [
 							'<a href="index.html?p=darpynpals" class="n">Darpy & Pals</a> (<small>Darpy, Occols, Trivy</small>)',
+							'<a href="index.html?p=diepic" class="n">Diepic</a>',
 							'<a href="index.html?p=fender" class="n">Fender</a>',
 							'<a href="index.html?p=shockpose" class="n">Shockpose</a>'
 						]
@@ -305,6 +370,7 @@ function generatePage(page) {
 			break;
 		case "aero":
 			pageTemplate({
+				warning: 'stub',
 				name: 'Aero D. Venture',
 				file: ['aero.png', ''],
 				dims: ['330', '330'],
@@ -376,6 +442,7 @@ function generatePage(page) {
 			break;
 		case "hotsun":
 			pageTemplate({
+				warning: 'stub',
 				name: 'Ommadawn',
 				file: ['hot_sun.png', 'pixel'],
 				dims: ['330', '330'],
@@ -422,6 +489,7 @@ function generatePage(page) {
 			break;
 		case "grene":
 			pageTemplate({
+				warning: 'quality',
 				name: 'Grēne',
 				file: ['grene.png', 'pixel'],
 				dims: ['330', '330'],
@@ -471,6 +539,7 @@ function generatePage(page) {
 			break;
 		case "doug":
 			pageTemplate({
+				warning: 'quality',
 				name: 'Doug',
 				file: ['doug.png', 'pixel'],
 				dims: ['330', '330'],
@@ -549,6 +618,7 @@ function generatePage(page) {
 			break;
 		case "pilf":
 			pageTemplate({ // First!
+				warning: 'quality',
 				name: 'Pilf',
 				file: ['pilf.png', 'pixel'],
 				dims: ['330', '330'],
@@ -605,6 +675,7 @@ function generatePage(page) {
 			break;
 		case "ert":
 			pageTemplate({
+				warning: 'quality',
 				name: 'Ert',
 				file: ['ert.png', 'pixel'],
 				dims: ['330', '330'],
@@ -679,6 +750,7 @@ function generatePage(page) {
 			break;
 		case "george":
 			pageTemplate({
+				warning: 'stub',
 				name: 'George',
 				file: ['george.png', 'pixel'],
 				dims: ['330', '330'],
@@ -708,6 +780,7 @@ function generatePage(page) {
 			break;
 		case "cea":
 			pageTemplate({
+				warning: 'stub',
 				name: 'Cea',
 				file: ['cea.png', 'pixel'],
 				dims: ['330', '330'],
@@ -737,6 +810,7 @@ function generatePage(page) {
 			break;
 		case "ternary":
 			pageTemplate({
+				warning: 'stub',
 				name: 'The Ternary',
 				file: ['ternary.png'],
 				dims: ['330', '330'],
@@ -828,6 +902,7 @@ function generatePage(page) {
 			break;
 		case "wop":
 			pageTemplate({
+				warning: 'stub',
 				name: 'World of Pain',
 				file: ['wop.png', 'pixel'],
 				dims: ['330', '287.57'],
@@ -854,6 +929,7 @@ function generatePage(page) {
 			break;
 		case "aeiou":
 			pageTemplate({
+				warning: 'stub',
 				name: 'Aeiou',
 				file: ['aeiou.png', 'pixel'],
 				dims: ['330', '293.79'],
@@ -890,6 +966,7 @@ function generatePage(page) {
 			break;
 		case "the":
 			pageTemplate({
+				warning: 'stub',
 				name: 'The',
 				file: ['the.png', 'pixel'],
 				dims: ['330', '334.31'],
@@ -919,6 +996,7 @@ function generatePage(page) {
 			break;
 		case "coldsun":
 			pageTemplate({
+				warning: 'stub',
 				name: 'Cold Sun',
 				file: ['cold_sun.png', 'pixel'],
 				dims: ['330', '330'],
@@ -959,6 +1037,7 @@ function generatePage(page) {
 			break;
 		case "taiberaque":
 			pageTemplate({
+				warning: 'stub',
 				name: 'Taiberaque',
 				file: ['taiberaque.png', 'pixel'],
 				dims: ['330', '330'],
