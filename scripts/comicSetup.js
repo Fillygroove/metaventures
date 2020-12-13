@@ -223,7 +223,30 @@ function generatePanels(comic) {
 		showSlides(slideIndex += 1);
 	};
 	
-	slideshow.append(line, prevButton, nextButton);
+
+	let slideText = document.createElement('div');
+	slideText.style = 'text-align: center; background-color: #555555; padding-top: 1em;';
+	
+	slideLabel = document.createElement('label');
+	slideLabel.style = 'background-color: #555555;';
+	slideLabel.innerHTML = 'Panel number: ';
+		
+	slideInput = document.createElement('input');
+	slideInput.type = 'text';
+	slideInput.id = 'panel';
+	slideInput.name = 'panel';
+	slideInput.style = "color: white;";
+	slideInput.addEventListener("keyup", function(event) {
+		event.preventDefault();
+		console.log(event.key);
+		if (event.key === 'Enter') {
+			verify(slideInput.value);
+		}
+	});
+
+	slideText.append(slideLabel, slideInput);
+
+	slideshow.append(slideText, line, prevButton, nextButton);
 
 	let desc = document.createElement('h4');
 	
@@ -242,7 +265,6 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function currentSlide(n) {
-	if (n < 1) return;
 	showSlides(slideIndex = n);
 }
 
@@ -262,4 +284,14 @@ function showSlides(n) {
     }
 
     slides[slideIndex - 1].style.display = "block";
+} 
+
+function verify(slide) {
+    let slides = document.getElementsByClassName("slides");
+
+    if (!isNaN(slide)) {
+		if (slide < slides.length && slide > 0) {
+			currentSlide(slide);
+		}
+	}
 }
