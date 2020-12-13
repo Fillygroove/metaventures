@@ -258,13 +258,13 @@ function pageTemplate(page) {
 						info: [
 							'<a href="index.html?p=ternary" class="y">The Ternary</a> (<small>Dot &bull; Otd &bull; Tod</small>)',
 							'<a href="index.html?p=mac" class="y">Mac</a> (<small><a href="index.html?p=wop" class="y">World of Pain</a> &bull; Dough</small>)',
+							'<a href="index.html?p=xystload" class="n">Xystload</a>',
 							'<a href="index.html?p=aeiou" class="y">Aeiou</a> (<small>Cdfqrszt &bull;  Heideph</small>)'
 						]
 					}, {
 						name: 'Trans-Aeiouian',
 						info: [
-							'<a href="index.html?p=the" class="y">The</a>',
-							'<a href="index.html?p=purpl" class="y">Pürpl</a>'
+							'<a href="index.html?p=the" class="y">The</a>'
 						]
 					}]
 				}, {
@@ -393,9 +393,9 @@ function generatePage(page) {
 						'<a href="index.html?p=cea" class="y">Cea</a>',
 						'<a href="index.html?p=ternary" class="y">The Ternary</a>',
 						'<a href="index.html?p=mac" class="y">Mac</a>',
+						'<a href="index.html?p=xystload" class="y">Xystload</a>',
 						'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
 						'<a href="index.html?p=the" class="y">The</a>',
-						'<a href="index.html?p=purple" class="y">Pürpl</a>',
 						'<a href="index.html?p=taiberaque" class="y">Taiberaque (Binary System)</a>'
 					]
 				}, {
@@ -875,7 +875,7 @@ function generatePage(page) {
 					info: ['None']
 				}],
 				introText: [
-					'Aeiou is the seventh planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=mac" class="y">Mac</a> and before <a href="index.html?p=the" class="y">The</a>.',
+					'Aeiou is the seventh planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=mac" class="y">Mac</a> and before <a href="index.html?p=xystload" class="n">Xystload</a>.',
 					'The term for referring to something related to Aeiou is Aeiouian.'
 				],
 				categories: [{
@@ -911,36 +911,7 @@ function generatePage(page) {
 					info: ['Unknown']
 				}],
 				introText: [
-					'The is the eighth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, located between <a href="index.html?p=aeiou" class="y">Aeiou</a> and <a href="index.html?p=purpl" class="y">Pürpl</a>.'
-				],
-				endnav: 'planet'
-			});
-			break;
-		case "purpl":
-			pageTemplate({
-				name: 'Pürpl',
-				file: ['purpl.png', 'pixel'],
-				dims: ['330', '70.48'],
-				caption: 'A mockup of what Pürpl could look like, illustration made by Epicbattler3.',
-				heading: 'Designations',
-				navbox: [{
-					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
-				}, {
-					name: 'Satellites',
-					info: ['Unknown']
-				}, {
-					name: 'Name Origin',
-					info: ['Unknown']
-				}, {
-					name: 'Classification',
-					info: ['Trans Aeiouian']
-				}, {
-					name: 'Life',
-					info: ['Unknown']
-				}],
-				introText: [
-					'Pürpl is the ninth and final planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, located after <a href="index.html?p=the" class="y">The</a>.'
+					'The is the eighth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=xystload" class="n">Xystload</a>.'
 				],
 				endnav: 'planet'
 			});
@@ -1011,7 +982,7 @@ function generatePage(page) {
 				}, {
 					name: 'Life',
 					info: [
-						'Winners?'
+						'Winners..?'
 					]
 				}],
 				introText: [
