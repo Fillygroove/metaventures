@@ -178,10 +178,8 @@ function pageTemplate(page) {
 			return endTable;
 		}
 		
-		let nav;
-		
 		if (page.endnav.includes('chars')) {
-			nav = createNav({
+			let nav = createNav({
 				heading: 'Characters',
 				categories: [{
 					category: 'Aeroventures',
@@ -243,7 +241,7 @@ function pageTemplate(page) {
 			article.append(nav);
 		}
 		if (page.endnav.includes('planet')) {
-			nav = createNav({
+			let nav = createNav({
 				heading: 'The Bisolar System',
 				categories: [{
 					category: '<a href="index.html?p=hotsun" class="y">Ommadawn</a> System',
