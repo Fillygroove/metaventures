@@ -20,7 +20,6 @@ function pageTemplate(page) {
 			warningCaption.innerHTML = warning.caption;
 			
 			let warningBody = document.createElement('tbody');
-			warningBody.style = 'float: center;';
 			
 			let warningData = document.createElement('td');
 			let warningDiv = document.createElement('div');
@@ -43,11 +42,11 @@ function pageTemplate(page) {
 			
 			warningTable.append(warningCaption, warningBody);
 			
-			return warningTable;
+			article.append(warningTable);
 		}
 		
 		if (page.warning.includes('stub')) {
-			let warning = createWarning({
+			createWarning({
 				caption: 'This page is incomplete!',
 				image: {
 					file: 'stub.png',
@@ -55,12 +54,10 @@ function pageTemplate(page) {
 				},
 				wormbs: 'Please be patient as Lakys finishes the War Maccine.'
 			});
-		
-			article.append(warning);
 		}
 		
 		if (page.warning.includes('quality')) {
-			let warning = createWarning({
+			createWarning({
 				caption: 'Bro, this is quality',
 				image: {
 					file: 'bro.png',
@@ -68,8 +65,6 @@ function pageTemplate(page) {
 				},
 				wormbs: 'You\'re looking at a high quality page. Please behold its beauty!'
 			});
-		
-			article.append(warning);
 		}
 	}
 
@@ -239,11 +234,11 @@ function pageTemplate(page) {
 			
 			endTable.append(caption, tableBody);
 			
-			return endTable;
+			article.append(endTable);
 		}
 		
 		if (page.endnav.includes('chars')) {
-			let nav = createNav({
+			createNav({
 				heading: 'Characters',
 				categories: [{
 					category: 'Aeroventures',
@@ -302,11 +297,9 @@ function pageTemplate(page) {
 					}]
 				}]
 			});
-			
-			article.append(nav);
 		}
 		if (page.endnav.includes('planet')) {
-			let nav = createNav({
+			createNav({
 				heading: 'The Bisolar System',
 				categories: [{
 					category: '<a href="index.html?p=hotsun" class="y">Ommadawn</a> System',
@@ -349,8 +342,6 @@ function pageTemplate(page) {
 					}]
 				}]
 			});
-			
-			article.append(nav);
 		}
 	}
 	let break1 = document.createElement('br');
