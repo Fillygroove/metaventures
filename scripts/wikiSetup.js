@@ -141,10 +141,10 @@ function pageTemplate(page) {
 										<td>
 											<div style="text-align: left;">
 												<a href="index.html?p=grene" class="y">Grēne</a> &bull;
-												<a href="index.html?p=doug" class="y">Doug</a> &bull;
+												<a href="index.html?p=doug" class="y">Doug</a> (<small>H</small>) &bull;
 												<a href="index.html?p=pilf" class="y">Pilf</a> &bull;
-												The Reeg System (<small><a href="index.html?p=ert" class="y">Ert</a> &bull; <a href="index.html?p=george" class="y">George</a></small>) &bull;
-												<a href="index.html?p=cea" class="y">Cea</a>
+												The Water Cycle (<small><a href="index.html?p=ert" class="y">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedron</a></small>) &bull; <a href="index.html?p=george" class="y">George</a> (<small>Damocles</small>)</small>) &bull;
+												<a href="index.html?p=cea" class="y">Cea</a> (<small>52 Confirmed Mines</small>)
 											</div>
 										</td>
 									</tr>
@@ -155,8 +155,8 @@ function pageTemplate(page) {
 										<td>
 											<div style="text-align: left;">
 												<a href="index.html?p=ternary" class="y">The Ternary</a> (<small>Dot &bull; Otd &bull; Tod</small>) &bull;
-												<a href="index.html?p=mac" class="y">Mac</a> (<small><a href="index.html?p=wop" class="y">World of Pain</a></small>) &bull;
-												<a href="index.html?p=aeiou" class="y">Aeiou</a>
+												<a href="index.html?p=mac" class="y">Mac</a> (<small><a href="index.html?p=wop" class="y">World of Pain</a> &bull; Dough</small>) &bull;
+												<a href="index.html?p=aeiou" class="y">Aeiou</a> (<small>Cdfqrszt &bull;  Heideph</small>)
 											</div>
 										</td>
 									</tr>
@@ -199,7 +199,7 @@ function pageTemplate(page) {
 										</th>
 										<td>
 											<div style="text-align: left;">
-												<a href="index.html?p=flip" class="n">Flip</a> (debated existence)
+												???
 											</div>
 										</td>
 									</tr>
@@ -891,7 +891,7 @@ function generatePage(page) {
 					info: ['Unknown']
 				}],
 				introText: [
-					'Pürpl is the ninth and last planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, located after <a href="index.html?p=the" class="y">The</a>.'
+					'Pürpl is the ninth and final planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, located after <a href="index.html?p=the" class="y">The</a>.'
 				],
 				endnav: 'planet'
 			});
