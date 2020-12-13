@@ -118,6 +118,101 @@ function pageTemplate(page) {
 		}
 	}
 	
+	if (page.endnav != undefined) {
+		let endTable = document.createElement('table');
+		endTable.className = 'navbox';
+		endTable.style = "width: 95%;";
+
+		if (page.endnav == 'planet') {
+			endTable.innerHTML = `
+				<caption>The Bisolar System</caption>
+				<tbody>
+					<tr>
+						<th scope="row" style="padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%;">
+							<a href="index.html?p=hotsun" class="y">Ommadawn</a> System
+						</th>
+						<td>
+							<table>
+								<tbody>
+									<tr>
+										<th scope="row" style="padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%; white-space: nowrap;">
+											Inner Planets
+										</th>
+										<td>
+											<div style="text-align: left;">
+												<a href="index.html?p=grene" class="y">Grēne</a> &bull;
+												<a href="index.html?p=doug" class="y">Doug</a> &bull;
+												<a href="index.html?p=pilf" class="y">Pilf</a> &bull;
+												The Reeg System (<small><a href="index.html?p=ert" class="y">Ert</a> &bull; <a href="index.html?p=george" class="y">George</a></small>) &bull;
+												<a href="index.html?p=cea" class="y">Cea</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" style="padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%; white-space: nowrap;">
+											Outer Planets
+										</th>
+										<td>
+											<div style="text-align: left;">
+												<a href="index.html?p=ternary" class="y">The Ternary</a> (<small>Dot &bull; Otd &bull; Tod</small>) &bull;
+												<a href="index.html?p=mac" class="y">Mac</a> (<small><a href="index.html?p=wop" class="y">World of Pain</a></small>) &bull;
+												<a href="index.html?p=aeiou" class="y">Aeiou</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" style="padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%; white-space: nowrap;">
+											Trans-Aeiouian
+										</th>
+										<td>
+											<div style="text-align: left;">
+												<a href="index.html?p=the" class="y">The</a> &bull;
+												<a href="index.html?p=purpl" class="y">Pürpl</a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" style="padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%;">
+							<a href="index.html?p=taiberaque" class="y">Taiberaque</a> System
+						</th>
+						<td>
+							<table>
+								<tbody>
+									<tr>
+										<th scope="row" style="padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%; white-space: nowrap">
+											Inner Planets
+										</th>
+										<td>
+											<div style="text-align: left;">
+												<a href="index.html?p=coldsun" class="y">Cold Sun</a> &bull;
+												<a href="index.html?p=gigantrax" class="n">Gigantrax</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" style="padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%; white-space: nowrap">
+											Outer Planets
+										</th>
+										<td>
+											<div style="text-align: left;">
+												<a href="index.html?p=flip" class="n">Flip</a> (debated existence)
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+				</tbody>
+			`;
+		}
+
+		article.append(endTable);
+	}
 	let break1 = document.createElement('br');
 	let break2 = document.createElement('br');
 	article.append(break1, break2);
@@ -271,7 +366,8 @@ function generatePage(page) {
 					info: [
 						'Sample text.',
 					]
-				}]
+				}],
+				endnav: 'planet'
 			});
 			break;
 		case "grene":
@@ -319,7 +415,8 @@ function generatePage(page) {
 					info: [
 						'Doug orbits closely to the expelled atmosphere of Grēne, which, over millions of years, has turned it to the brown shade we know it as today.'
 					]
-				}]
+				}],
+				endnav: 'planet'
 			});
 			break;
 		case "doug":
@@ -396,7 +493,8 @@ function generatePage(page) {
 						'"Doug, are you KIDDING ME? Why can\'t this damn planet make VOLCANOES already! I want to see some action, not a dead dirtball of a planet! I don\'t even want to call it a planet, it\'s just a rock. It has absolutely no value to my research."',
 						' - <a href="index.html?p=lakys" class="n">Dr. Lakys</a>'
 					]
-				}]
+				}],
+				endnav: 'planet'
 			});
 			break;
 		case "pilf":
@@ -451,7 +549,8 @@ function generatePage(page) {
 						'<h3>Cheese Moss</h3>',
 						'Cheese Moss is a moss like plant, which grows on the purple material on Pilf, close by to the corrosive liquid, seemingly using the liquid as a food source. Once every 4 days, the Cheese Moss produces a hard transparent substance with queso inside of it, which has been colloquially called Bone Cheese by scientists. The purpose of the bone cheese is unknown.'
 					]
-				}]
+				}],
+				endnav: 'planet'
 			});
 			break;
 		case "ert":
@@ -524,7 +623,8 @@ function generatePage(page) {
 						'<h3>Florodites</h3>',
 						'Florodites are plant-like hybrids that live in small detached islands living together in tribes. They have the unique property of photosynthesising. Other than that they are unfortunately shoved aside by bigger factions.'
 					]
-				}]
+				}],
+				endnav: 'planet'
 			});
 			break;
 		case "george":
@@ -552,7 +652,8 @@ function generatePage(page) {
 				}],
 				introText: [
 					'George is the fourth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, sharing this position with <a href="index.html?p=ert" class="y">Ert</a>, after <a href="index.html?p=pilf" class="y">Pilf</a> and before <a href="index.html?p=cea" class="y">Cea</a>.'
-				]
+				],
+				endnav: 'planet'
 			});
 			break;
 		case "cea":
@@ -580,7 +681,8 @@ function generatePage(page) {
 				}],
 				introText: [
 					'Cea is the fifth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=ert" class="y">Ert</a> and <a href="index.html?p=george" class="y">George</a> and before <a href="index.html?p=ternary" class="y">The Ternary</a>.'
-				]
+				],
+				endnav: 'planet'
 			});
 			break;
 		case "ternary":
@@ -614,7 +716,8 @@ function generatePage(page) {
 					info: [
 						'text'
 					]
-				}]
+				}],
+				endnav: 'planet'
 			});
 			break;
 		case "mac":
@@ -669,7 +772,8 @@ function generatePage(page) {
 					info: [
 						'Mac\'s satellite is <a href="index.html?p=wop" class="y">World of Pain</a>, which has a history with the planet. Originally, World of Pain was a minor object close to the Hot Sun, with it\s own miniature satellite, which has been named World of Pain JR. After being ejected from the inner parts of the system by a solar flare, World of Pain JR had falled into the gasses of Mac, leading to World of Pain destroying all of Mac\'s old satellites, creating an asteroid belt. Once a year, World of Pain attempts to punch Mac, which either leads in World of Pain either sinking in the gas, or being shocked by plasma storms.'
 					]
-				}]
+				}],
+				endnav: 'planet'
 			});
 			break;
 		case "wop":
@@ -694,7 +798,8 @@ function generatePage(page) {
 				}, {
 					name: 'Life',
 					info: ['None']
-				}]
+				}],
+				endnav: 'planet'
 			});
 			break;
 		case "aeiou":
@@ -729,7 +834,8 @@ function generatePage(page) {
 					info: [
 						'Sample text.',
 					]
-				}]
+				}],
+				endnav: 'planet'
 			});
 			break;
 		case "the":
@@ -757,7 +863,8 @@ function generatePage(page) {
 				}],
 				introText: [
 					'The is the eighth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, located between <a href="index.html?p=aeiou" class="y">Aeiou</a> and <a href="index.html?p=purpl" class="y">Pürpl</a>.'
-				]
+				],
+				endnav: 'planet'
 			});
 			break;
 		case "purpl":
@@ -785,7 +892,8 @@ function generatePage(page) {
 				}],
 				introText: [
 					'Pürpl is the ninth and last planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, located after <a href="index.html?p=the" class="y">The</a>.'
-				]
+				],
+				endnav: 'planet'
 			});
 			break;
 		case "coldsun":
@@ -824,7 +932,8 @@ function generatePage(page) {
 					info: [
 						'Sample text.',
 					]
-				}]
+				}],
+				endnav: 'planet'
 			});
 			break;
 		case "taiberaque":
@@ -864,7 +973,8 @@ function generatePage(page) {
 					info: [
 						'Sample text.',
 					]
-				}]
+				}],
+				endnav: 'planet'
 			});
 			break;
 		case "tackpenguin":
