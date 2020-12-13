@@ -155,16 +155,18 @@ a {
 .navbox {
 	border: 1px solid #ffffff;
 	border-spacing: 3px;
+	box-sizing: border-box;
 	background-color: #555555;
 	color: white;
 	margin: 1em auto 0;
-	padding: 0.2em;
+	padding: 1px;
 	float: center;
 	clear: both;
 	font-size: 88%;
 	line-height: 1.5em;
 	left: 150px;
 	width: 95%;
+	text-align: center;
 }
 
 .navbox caption {
