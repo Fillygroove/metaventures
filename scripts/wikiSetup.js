@@ -119,99 +119,168 @@ function pageTemplate(page) {
 	}
 	
 	if (page.endnav != undefined) {
-		let endTable = document.createElement('table');
-		endTable.className = 'navbox';
-		endTable.style = "width: 95%;";
-
-		if (page.endnav == 'planet') {
-			endTable.innerHTML = `
-				<caption>The Bisolar System</caption>
-				<tbody>
-					<tr>
-						<th scope="row" style="padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%;">
-							<a href="index.html?p=hotsun" class="y">Ommadawn</a> System
-						</th>
-						<td>
-							<table>
-								<tbody>
-									<tr>
-										<th scope="row" style="padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%; white-space: nowrap;">
-											Inner Planets
-										</th>
-										<td>
-											<div style="text-align: left;">
-												<a href="index.html?p=grene" class="y">Grēne</a> &bull;
-												<a href="index.html?p=doug" class="y">Doug</a> (<small>H</small>) &bull;
-												<a href="index.html?p=pilf" class="y">Pilf</a> &bull;
-												The Water Cycle (<small><a href="index.html?p=ert" class="y">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedron</a></small>) &bull; <a href="index.html?p=george" class="y">George</a> (<small>Damocles</small>)</small>) &bull;
-												<a href="index.html?p=cea" class="y">Cea</a> (<small>52 Confirmed Mines</small>)
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row" style="padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%; white-space: nowrap;">
-											Outer Planets
-										</th>
-										<td>
-											<div style="text-align: left;">
-												<a href="index.html?p=ternary" class="y">The Ternary</a> (<small>Dot &bull; Otd &bull; Tod</small>) &bull;
-												<a href="index.html?p=mac" class="y">Mac</a> (<small><a href="index.html?p=wop" class="y">World of Pain</a> &bull; Dough</small>) &bull;
-												<a href="index.html?p=aeiou" class="y">Aeiou</a> (<small>Cdfqrszt &bull;  Heideph</small>)
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row" style="padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%; white-space: nowrap;">
-											Trans-Aeiouian
-										</th>
-										<td>
-											<div style="text-align: left;">
-												<a href="index.html?p=the" class="y">The</a> &bull;
-												<a href="index.html?p=purpl" class="y">Pürpl</a>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row" style="padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%;">
-							<a href="index.html?p=taiberaque" class="y">Taiberaque</a> System
-						</th>
-						<td>
-							<table>
-								<tbody>
-									<tr>
-										<th scope="row" style="padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%; white-space: nowrap">
-											Inner Planets
-										</th>
-										<td>
-											<div style="text-align: left;">
-												<a href="index.html?p=coldsun" class="y">Cold Sun</a> &bull;
-												<a href="index.html?p=gigantrax" class="n">Gigantrax</a>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row" style="padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%; white-space: nowrap">
-											Outer Planets
-										</th>
-										<td>
-											<div style="text-align: left;">
-												???
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</td>
-					</tr>
-				</tbody>
-			`;
+		function createNav(table) {
+			let endTable = document.createElement('table');
+			endTable.className = 'navbox';
+			endTable.style = "width: 95%;";
+			
+			let caption = document.createElement('caption');
+			caption.innerHTML = table.heading;
+			
+			let tableBody = document.createElement('tbody');
+			
+			for (let i = 0; i < table.categories.length; i++) {
+				let tableRow = document.createElement('tr');
+				
+				let tableHeader = document.createElement('th');
+				tableHeader.scope = "row";
+				tableHeader.style = "padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%;"
+				tableHeader.innerHTML = table.categories[i].category;
+				
+				let tableData = document.createElement('td');
+				let innerTable = document.createElement('table');
+				
+				tableData.append(innerTable);
+				
+				let innerTableBody = document.createElement('tbody');
+				
+				for (let j = 0; j < table.categories[i].info.length; j++) {
+					let innerTableRow = document.createElement('tr');
+					
+					let innerTableHeader = document.createElement('th');
+					innerTableHeader.scope = "row";
+					innerTableHeader.style = "padding:0.25em 1em; line-height:1.5em; text-align:center; width: 1%; white-space: nowrap;";
+					innerTableHeader.innerHTML = table.categories[i].info[j].name;
+					
+					let innerTableData = document.createElement('td');
+					
+					let innerTableDiv = document.createElement('div');
+					innerTableDiv.style = "text-align: left;";
+					
+					innerTableDiv.innerHTML = table.categories[i].info[j].info.toString().replaceAll(',', ' &bull; ');
+					
+					innerTableData.append(innerTableDiv);
+					
+					innerTableRow.append(innerTableHeader, innerTableData);
+					
+					innerTableBody.append(innerTableRow);
+				}
+				
+				innerTable.append(innerTableBody);
+				
+				tableRow.append(tableHeader, tableData);
+				
+				tableBody.append(tableRow);
+			}
+			
+			endTable.append(caption, tableBody);
+			
+			return endTable;
 		}
-
-		article.append(endTable);
+		
+		let nav;
+		
+		if (page.endnav.includes('chars')) {
+			nav = createNav({
+				heading: 'Characters',
+				categories: [{
+					category: 'Aeroventures',
+					info: [{
+						name: 'Protagonists',
+						info: [
+							'<a href="index.html?p=aero" class="y">Aero</a>',
+							'<a href="index.html?p=lakys" class="n">Lakys</a>',
+							'<a href="index.html?p=archie" class="n">Archie</a>',
+							'<a href="index.html?p=aposteel" class="n">Aposteel</a>'
+						]
+					}, {
+						name: 'Antagonists',
+						info: [
+							'<a href="index.html?p=royale" class="n">Royale</a>',
+							'<a href="index.html?p=larry-av" class="n">Larry</a>',
+							'<a href="index.html?p=nutstradamnus" class="n">Nutstradamnus</a>',
+							'<a href="index.html?p=coylstone" class="n">Coyl Stone</a>'
+						]
+					}, {
+						name: 'Minor Characters',
+						info: [
+							'<a href="index.html?p=shockpose" class="n">Shockpose</a>',
+							'<a href="index.html?p=fender" class="n">Fender</a>'
+						]
+					}]
+				}, {
+					category: 'Polyventures',
+					info: [{
+						name: 'Protagonists',
+						info: [
+							'<a href="index.html?p=pon" class="n">Pon</a>', 
+							'<a href="index.html?p=larry-pv" class="n">Larry</a>', 
+							'<a href="index.html?p=beth" class="n">Beth</a>',
+							'<a href="index.html?p=vinny" class="n">Vinny</a>'
+						]
+					}, {
+						name: 'Antagonists',
+						info: [
+							'???'
+						]
+					}, {
+						name: 'Minor Characters',
+						info: [
+							'???'
+						]
+					}]
+				}]
+			});
+			
+			article.append(nav);
+		}
+		if (page.endnav.includes('planet')) {
+			nav = createNav({
+				heading: 'The Bisolar System',
+				categories: [{
+					category: '<a href="index.html?p=hotsun" class="y">Ommadawn</a> System',
+					info: [{
+						name: 'Inner Planets',
+						info: [
+							'<a href="index.html?p=grene" class="y">Grēne</a>',
+							'<a href="index.html?p=doug" class="y">Doug</a> (<small>H</small>)',
+							'<a href="index.html?p=pilf" class="y">Pilf</a>',
+							'The Water Cycle (<small><a href="index.html?p=ert" class="y">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedron</a></small>) &bull; <a href="index.html?p=george" class="y">George</a> (<small>Damocles</small>)</small>)',
+							'<a href="index.html?p=cea" class="y">Cea</a> (<small>52 Confirmed Mines</small>)',
+						]
+					}, {
+						name: 'Outer Planets',
+						info: [
+							'<a href="index.html?p=ternary" class="y">The Ternary</a> (<small>Dot &bull; Otd &bull; Tod</small>)',
+							'<a href="index.html?p=mac" class="y">Mac</a> (<small><a href="index.html?p=wop" class="y">World of Pain</a> &bull; Dough</small>)',
+							'<a href="index.html?p=aeiou" class="y">Aeiou</a> (<small>Cdfqrszt &bull;  Heideph</small>)'
+						]
+					}, {
+						name: 'Trans-Aeiouian',
+						info: [
+							'<a href="index.html?p=the" class="y">The</a>',
+							'<a href="index.html?p=purpl" class="y">Pürpl</a>'
+						]
+					}]
+				}, {
+					category: '<a href="index.html?p=taiberaque" class="y">Taiberaque</a> System',
+					info: [{
+						name: 'Inner Planets',
+						info: [
+							'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
+							'<a href="index.html?p=gigantrax" class="n">Gigantrax</a>'
+						]
+					}, {
+						name: 'Outer Planets',
+						info: [
+							'???'
+						]
+					}]
+				}]
+			});
+			
+			article.append(nav);
+		}
 	}
 	let break1 = document.createElement('br');
 	let break2 = document.createElement('br');
@@ -224,34 +293,8 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'The Wiki',
 				introText: ['Welcome to the official Metaventures Wiki! Here, you can find pages about everything in the Metaventures world so far. Reminder that the Wiki is still a huge work in progress, so expect pages to be empty.'],
-				categories: [{
-					name: 'Characters',
-					info: [
-						'<a href="index.html?p=aero" class="y">Aero</a>', 
-						'<a href="index.html?p=archie" class="n">Archie</a>', 
-						'<a href="index.html?p=lakys" class="n">Lakys</a>', 
-						'<a href="index.html?p=aposteel" class="n">Aposteel</a>'
-					]
-				}, {
-					name: 'Celestial Objects',
-					info: [
-						'<a href="index.html?p=hotsun" class="y">Hot Sun</a>',
-						'<a href="index.html?p=grene" class="y">Grēne</a>',
-						'<a href="index.html?p=doug" class="y">Doug</a>',
-						'<a href="index.html?p=pilf" class="y">Pilf</a>',
-						'<a href="index.html?p=ert" class="y">Ert</a> / <a href="index.html?p=george" class="y">George</a>',
-						'<a href="index.html?p=cea" class="y">Cea</a>',
-						'<a href="index.html?p=ternary" class="y">The Ternary (Tod, Otd, Dot)</a>',
-						'<a href="index.html?p=mac" class="y">Mac</a>',
-						'<a href="index.html?p=wop" class="y">World of Pain</a>',
-						'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
-						'<a href="index.html?p=the" class="y">The</a>',
-						'<a href="index.html?p=purpl" class="y">Pürpl</a>',
-						'<a href="index.html?p=taiberaque" class="y">Taiberaque</a>',
-						'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
-						'<a href="index.html?p=gigantrax" class="n">Gigantrax</a>'
-					]
-				}]
+				categories: [],
+				endnav: 'chars planet'
 			});
 			break;
 		case "aero":
@@ -321,7 +364,8 @@ function generatePage(page) {
 						'<h3>Aeroventures 12</h3>',
 						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 12</a>,',
 					]
-				}]
+				}],
+				endnav: 'chars'
 			});
 			break;
 		case "hotsun":
@@ -1080,7 +1124,8 @@ function generatePage(page) {
 			}
 			pageTemplate({
 				name: 'Oops, a tasty 404!',
-				introText: ['This page doesn\'t seem to exist, sadly... ' + quote]
+				introText: ['This page doesn\'t seem to exist, sadly... ' + quote],
+				endnav: 'chars planet'
 			});
 			break;
 	}
