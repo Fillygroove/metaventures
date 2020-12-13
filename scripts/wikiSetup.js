@@ -104,7 +104,7 @@ function pageTemplate(page) {
 		let headingtr = document.createElement('tr');
 		let headingth = document.createElement('th');
 		
-		headingth.colSpan = "2"
+		headingth.colSpan = "2";
 		headingth.innerHTML = page.heading;
 		
 		headingtr.append(headingth);
@@ -134,7 +134,7 @@ function pageTemplate(page) {
 			let navrightspan = document.createElement('span');
 			
 			navrightspan.className = "nowrap";
-			navrightspan.innerHTML = page.navbox[i].info.toString().replaceAll(",","</br>").replaceAll("[[", ",");
+			navrightspan.innerHTML = page.navbox[i].info.toString().replaceAll(",", "</br>").replaceAll("[[", ",");
 
 			navrightli.append(navrightspan);
 			navrightul.append(navrightli);
