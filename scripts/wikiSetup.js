@@ -189,8 +189,8 @@ function pageTemplate(page) {
 						name: 'Protagonists',
 						info: [
 							'<a href="index.html?p=aero" class="y">Aero</a>',
-							'<a href="index.html?p=lakys" class="n">Lakys</a>',
 							'<a href="index.html?p=archie" class="n">Archie</a>',
+							'<a href="index.html?p=lakys" class="n">Lakys</a>',
 							'<a href="index.html?p=aposteel" class="n">Aposteel</a>'
 						]
 					}, {
