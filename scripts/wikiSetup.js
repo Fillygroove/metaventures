@@ -876,7 +876,7 @@ function generatePage(page) {
 					info: ['None']
 				}],
 				introText: [
-					'Aeiou is the seventh planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=mac" class="y">Mac</a> and before <a href="index.html?p=xystload" class="n">Xystload</a>.',
+					'Aeiou is the seventh planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=xystload" class="n">Xystload</a> and before <a href="index.html?p=the" class="y">The</a>.',
 					'The term for referring to something related to Aeiou is Aeiouian.'
 				],
 				categories: [{
