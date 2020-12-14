@@ -238,7 +238,6 @@ function generatePanels(comic) {
 	slideInput.style = "color: white;";
 	slideInput.addEventListener("keyup", function(event) {
 		event.preventDefault();
-		console.log(event.key);
 		if (event.key === 'Enter') {
 			verify(slideInput.value);
 		}
@@ -290,7 +289,7 @@ function verify(slide) {
     let slides = document.getElementsByClassName("slides");
 
     if (!isNaN(slide)) {
-		if (slide < slides.length && slide > 0) {
+		if (slide < slides.length + 1 && slide > 0) {
 			currentSlide(slide);
 		}
 	}
