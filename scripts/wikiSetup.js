@@ -329,7 +329,7 @@ function pageTemplate(page) {
 						info: [
 							'<a href="index.html?p=ternary" class="y">The Ternary</a> (<small>Dot &bull; Otd &bull; Tod</small>)',
 							'<a href="index.html?p=mac" class="y">Mac</a> (<small><a href="index.html?p=wop" class="y">World of Pain</a> &bull; Dough</small>)',
-							'<a href="index.html?p=berry" class="n">Berry</a>',
+							'<a href="index.html?p=berry" class="y">Berry</a>',
 							'<a href="index.html?p=aeiou" class="y">Aeiou</a> (<small>Cdfqrszt &bull;  Heideph</small>)'
 						]
 					}, {
@@ -981,7 +981,7 @@ function generatePage(page) {
 					info: ['None']
 				}],
 				introText: [
-					'Aeiou is the eigth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=berry" class="n">Berry</a> and before <a href="index.html?p=the" class="y">The</a>.',
+					'Aeiou is the eigth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=berry" class="y">Berry</a> and before <a href="index.html?p=the" class="y">The</a>.',
 					'The term for referring to something related to Aeiou is Aeiouian.'
 				],
 				categories: [{
@@ -1018,7 +1018,7 @@ function generatePage(page) {
 					info: ['Unknown']
 				}],
 				introText: [
-					'The is the ninth and last planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=berry" class="n">Berry</a>.'
+					'The is the ninth and last planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=berry" class="y">Berry</a>.'
 				],
 				endnav: 'planet'
 			});
