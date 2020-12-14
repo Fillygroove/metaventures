@@ -78,23 +78,23 @@ function generatePanels(comic) {
 			break;
 		case "dk":
 			length = 25;
-			description = 'You asked for this.';
 			title = 'Domakav Rap';
+			description = 'You asked for this.';
 			break;
 		case "brooo":
 			length = 4;
-			description = 'We are proud to present the comic that we put all of our passion into. For years we toil on this masterpiece and now it\'s finally out: BROVENTURES!';
 			title = 'Broventures';
+			description = 'We are proud to present the comic that we put all of our passion into. For years we toil on this masterpiece and now it\'s finally out: BROVENTURES!';
 			break;
 		case "nine":
 			length = 12;
-			description = '"Nineventures" contains every ninth panel from every aeroventure to make some.. tangible kind of story. More panels are sure to be added after more comics are made.';
 			title = 'Nineventures';
+			description = '"Nineventures" contains every ninth panel from every aeroventure to make some.. tangible kind of story. More panels are sure to be added after more comics are made.';
 			break;
 		case "trigger":
 			length = 1;
-			description = 'bro you just posted cringe';
 			title = 'Trigger Fish';
+			description = 'bro you just posted cringe';
 			break;
 	}
 
@@ -221,8 +221,7 @@ function generatePanels(comic) {
 	};
 	nextButton.onclick = () => {
 		showSlides(slideIndex += 1);
-	};
-	
+	};	
 
 	let slideText = document.createElement('div');
 	slideText.style = 'text-align: center; background-color: #555555; padding-top: 1em;';
