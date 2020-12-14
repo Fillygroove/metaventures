@@ -133,12 +133,6 @@ function generatePanels(comic) {
 			
 			panelLink.append(panels);
 			slides.append(panelLink);
-		} else if (comic == "9" && i == 9) { // Nineventures
-			let panelLink = document.createElement('a');
-			panelLink.href = "index.html?c=nine";
-			
-			panelLink.append(panels);
-			slides.append(panelLink);
 		} else if (comic == "11" && i == 8) { // Code Red explanation loop
 			let panelLink = document.createElement('a');
 			panelLink.onclick = () => {
@@ -286,6 +280,11 @@ function showSlides(n) {
 
 function verify(slide) {
     let slides = document.getElementsByClassName("slides");
+
+	if (comic == '9' && slide == '999') {
+		window.location.href = 'index.html?c=nine';
+		return;
+	}
 
     if (!isNaN(slide)) {
 		if (slide < slides.length + 1 && slide > 0) {
