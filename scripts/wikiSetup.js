@@ -66,6 +66,17 @@ function pageTemplate(page) {
 				wormbs: 'You\'re looking at a high quality page. Please behold its beauty!'
 			});
 		}
+		
+		if (page.warning.includes('forbidden')) {
+			createWarning({
+				caption: 'You\'re looking at forbidden knowledge.',
+				image: {
+					file: 'the.png',
+					dims: [80, 80]
+				},
+				wormbs: 'This information isn\'t accessable now.'
+			});
+		}
 	}
 
 	if (page.navbox != undefined) {
@@ -1132,6 +1143,15 @@ function generatePage(page) {
 						'are you mario?'
 					]
 				}]
+			});
+			break;
+		case "nine":
+			pageTemplate({
+				warning: 'forbidden',
+				name: 'No.',
+				introText: [
+					'You\'re not ready.'
+				]
 			});
 			break;
 		case "dino":
