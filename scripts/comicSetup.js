@@ -281,10 +281,7 @@ function showSlides(n) {
 function verify(slide) {
     let slides = document.getElementsByClassName("slides");
 
-	if (comic == '9' && slide == '999') {
-		window.location.href = 'index.html?c=nine';
-		return;
-	}
+	if (comic == '9' && slide == '999') window.location.href = 'index.html?c=nine';
 
     if (!isNaN(slide)) {
 		if (slide < slides.length + 1 && slide > 0) {
