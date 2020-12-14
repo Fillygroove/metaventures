@@ -239,7 +239,7 @@ function generatePanels(comic) {
 	slideInput.addEventListener("keyup", function(event) {
 		event.preventDefault();
 		if (event.key === 'Enter') {
-			verify(slideInput.value);
+			verify(Number(slideInput.value));
 		}
 	});
 
@@ -271,11 +271,11 @@ function showSlides(n) {
     let slides = document.getElementsByClassName("slides");
 
     if (n > slides.length) {
-        slideIndex = 1
+        slideIndex = 1;
     }
 
     if (n < 1) {
-        slideIndex = slides.length
+        slideIndex = slides.length;
     }
 
     for (let i = 0; i < slides.length; i++) {
@@ -283,7 +283,7 @@ function showSlides(n) {
     }
 
     slides[slideIndex - 1].style.display = "block";
-} 
+}
 
 function verify(slide) {
     let slides = document.getElementsByClassName("slides");
