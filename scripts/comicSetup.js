@@ -101,6 +101,10 @@ function generatePanels(comic) {
 			title = 'Panel Number';
 			description = 'Panel Number';
 			break;
+		case "corrupt":
+			length = 5;
+			description = 'what have you done';
+			break;
 	}
 
 	let avThin = document.getElementsByClassName('av-thin')[0];
@@ -285,14 +289,33 @@ function showSlides(n) {
 function verify(slide) {
 	let slides = document.getElementsByClassName("slides");
 
-	if (comic == '9' && slide == '999') window.location.href = 'index.html?c=nine';
-	if (comic == 'nine' && slideIndex == 9 && (slide == '9' || slide == 'nine')) window.location.href = '../wiki/index.html?p=nine';
-	if (slide == 'Panel Number') window.location.href = 'index.html?c=pn';
-
+	if (comic == '9' && slide == '999') { // Nineventures Easter Egg
+		window.location.href = 'index.html?c=nine';
+	} else if (comic == 'nine' && slideIndex == 9 && (slide == '9' || slide == 'nine')) { // Metanineventures Easter Egg
+		window.location.href = '../wiki/index.html?p=nine';
+	} else if (slide == 'Panel Number') {  // Panel Number Easter Egg
+		window.location.href = 'index.html?c=pn';
+	} else if (!isNaN(slide) && Math.floor(slide) != slide) { // Panel Corruption Easter Egg
+		if (comic == '10.5' || comic == 'trigger') {
+			document.getElementsByClassName("description")[0].innerHTML = 'Failed the corruption, please try again later.';
+			return;
+		}		if (comic == 'pn') {
+			document.getElementsByClassName("description")[0].innerHTML = 'Come back another time for another secret.';
+			return;
+		}
+		if (comic == '9') {
+			document.getElementsByClassName("description")[0].innerHTML = 'Come back another time for another secret.';
+		} else document.getElementsByClassName("description")[0].innerHTML = 'Well... What did you think was going to happen when you put in a decimal value?';
+		document.getElementsByClassName("slides")[slideIndex - 1].childNodes[1].src = `./panels/corrupt/corrupt_${comic}.jpg`;
+		document.getElementsByClassName("slides")[slideIndex - 1].childNodes[1].visibility = 'visible';
+		if (comic == 'nine') {
+			document.getElementsByClassName("slides")[slideIndex - 1].childNodes[2].innerHTML = 'Aero is gone.';
+		}
+	}
 	slide = Number(slide);
 
 	if (!isNaN(slide)) {
-		if (slide < slides.length + 1 && slide > 0) {
+		if (slide < slides.length + 1 && slide > 0 && Math.floor(slide) == slide) {
 			currentSlide(slide);
 		}
 	}
