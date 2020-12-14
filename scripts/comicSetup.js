@@ -96,6 +96,11 @@ function generatePanels(comic) {
 			title = 'Trigger Fish';
 			description = 'bro you just posted cringe';
 			break;
+		case "pn":
+			length = 1;
+			title = 'Panel Number';
+			description = 'Panel Number';
+			break;
 	}
 
 	let avThin = document.getElementsByClassName('av-thin')[0];
@@ -222,7 +227,7 @@ function generatePanels(comic) {
 	
 	slideLabel = document.createElement('label');
 	slideLabel.style = 'background-color: #555555;';
-	slideLabel.innerHTML = 'Panel number: ';
+	slideLabel.innerHTML = 'Panel Number: ';
 		
 	slideInput = document.createElement('input');
 	slideInput.type = 'text';
@@ -230,9 +235,8 @@ function generatePanels(comic) {
 	slideInput.name = 'panel';
 	slideInput.style = "color: white;";
 	slideInput.addEventListener("keyup", function(event) {
-		event.preventDefault();
 		if (event.key === 'Enter') {
-			verify(Number(slideInput.value));
+			verify(slideInput.value);
 		}
 	});
 
@@ -282,6 +286,9 @@ function verify(slide) {
 	let slides = document.getElementsByClassName("slides");
 
 	if (comic == '9' && slide == '999') window.location.href = 'index.html?c=nine';
+	if (slide == 'Panel Number') window.location.href = 'index.html?c=pn';
+
+	slide = Number(slide);
 
 	if (!isNaN(slide)) {
 		if (slide < slides.length + 1 && slide > 0) {
