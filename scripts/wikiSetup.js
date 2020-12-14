@@ -329,7 +329,7 @@ function pageTemplate(page) {
 						info: [
 							'<a href="index.html?p=ternary" class="y">The Ternary</a> (<small>Dot &bull; Otd &bull; Tod</small>)',
 							'<a href="index.html?p=mac" class="y">Mac</a> (<small><a href="index.html?p=wop" class="y">World of Pain</a> &bull; Dough</small>)',
-							'<a href="index.html?p=xystload" class="n">Xystload</a>',
+							'<a href="index.html?p=berry" class="n">Berry</a>',
 							'<a href="index.html?p=aeiou" class="y">Aeiou</a> (<small>Cdfqrszt &bull;  Heideph</small>)'
 						]
 					}, {
@@ -465,7 +465,7 @@ function generatePage(page) {
 						'<a href="index.html?p=cea" class="y">Cea</a>',
 						'<a href="index.html?p=ternary" class="y">The Ternary</a>',
 						'<a href="index.html?p=mac" class="y">Mac</a>',
-						'<a href="index.html?p=xystload" class="y">Xystload</a>',
+						'<a href="index.html?p=berry" class="y">Berry</a>',
 						'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
 						'<a href="index.html?p=the" class="y">The</a>',
 						'<a href="index.html?p=taiberaque" class="y">Taiberaque (Binary System)</a>'
@@ -929,6 +929,33 @@ function generatePage(page) {
 				endnav: 'planet'
 			});
 			break;
+		case "berry":
+			pageTemplate({
+				warning: 'stub',
+				name: 'Berry',
+				file: ['berry.png', 'pixel'],
+				dims: ['330', '300'],
+				caption: 'Pictured in natural color, illustration made by Gramiatar.',
+				heading: 'Designations',
+				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hot_sun" class="y">Hot Sun</a>']
+				}, {
+					name: 'Satellites',
+					info: ['None']
+				}, {
+					name: 'Name Origin',
+					info: ['Unknown']
+				}, {
+					name: 'Classification',
+					info: ['Terrestrial Object']
+				}, {
+					name: 'Life',
+					info: ['None']
+				}],
+				endnav: 'planet'
+			});
+			break;
 		case "aeiou":
 			pageTemplate({
 				warning: 'stub',
@@ -954,7 +981,7 @@ function generatePage(page) {
 					info: ['None']
 				}],
 				introText: [
-					'Aeiou is the seventh planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=xystload" class="n">Xystload</a> and before <a href="index.html?p=the" class="y">The</a>.',
+					'Aeiou is the eigth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=berry" class="n">Berry</a> and before <a href="index.html?p=the" class="y">The</a>.',
 					'The term for referring to something related to Aeiou is Aeiouian.'
 				],
 				categories: [{
@@ -991,7 +1018,7 @@ function generatePage(page) {
 					info: ['Unknown']
 				}],
 				introText: [
-					'The is the eighth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=xystload" class="n">Xystload</a>.'
+					'The is the ninth and last planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=berry" class="n">Berry</a>.'
 				],
 				endnav: 'planet'
 			});
