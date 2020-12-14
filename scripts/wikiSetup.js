@@ -9,12 +9,12 @@ function pageTemplate(page) {
 	
 	article.append(name, topLineBreak);
 		
-	if (page.warning !== undefined) {
+	if (page.warning != undefined) {
 		function createWarning(warning) {
 			let warningTable = document.createElement('table');
 			
-			warningTable.className = 'navbox';
-			warningTable.style = 'width: 50%;';
+			warningTable.className = "navbox";
+			warningTable.style = "width: 50%;";
 			
 			let warningCaption = document.createElement('caption');
 			warningCaption.innerHTML = warning.caption;
@@ -68,7 +68,7 @@ function pageTemplate(page) {
 		}
 	}
 
-	if (page.navbox !== undefined) {
+	if (page.navbox != undefined) {
 		let navbox = document.createElement('table');
 		navbox.className = "infobox";
 		navbox.style = "width: 22em";
@@ -84,7 +84,7 @@ function pageTemplate(page) {
 		let capdiv = document.createElement('div');
 		let capa = document.createElement('a');
 		
-		imagetd.colSpan = '2';
+		imagetd.colSpan = "2";
 		imagetd.style = "text-align: center";
 
 		imgnav.className = page.file[1];
@@ -180,7 +180,7 @@ function pageTemplate(page) {
 	if (page.endnav != undefined) {
 		function createNav(table) {
 			let endTable = document.createElement('table');
-			endTable.className = 'navbox';
+			endTable.className = "navbox";
 			endTable.style = "width: 95%;";
 			
 			let caption = document.createElement('caption');
@@ -298,6 +298,7 @@ function pageTemplate(page) {
 				}]
 			});
 		}
+		
 		if (page.endnav.includes('planet')) {
 			createNav({
 				heading: 'The Bisolar System',
@@ -310,7 +311,7 @@ function pageTemplate(page) {
 							'<a href="index.html?p=doug" class="y">Doug</a> (<small>H</small>)',
 							'<a href="index.html?p=pilf" class="y">Pilf</a>',
 							'The Water Cycle (<small><a href="index.html?p=ert" class="y">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedron</a></small>) &bull; <a href="index.html?p=george" class="y">George</a> (<small>Damocles</small>)</small>)',
-							'<a href="index.html?p=cea" class="y">Cea</a> (<small>52 Confirmed Mines</small>)',
+							'<a href="index.html?p=cea" class="y">Cea</a> (<small>52 Confirmed Mines</small>)'
 						]
 					}, {
 						name: 'Outer Planets',
@@ -426,7 +427,7 @@ function generatePage(page) {
 						'<h3>Aeroventures 11</h3>',
 						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 11</a>,',
 						'<h3>Aeroventures 12</h3>',
-						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 12</a>,',
+						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 12</a>,'
 					]
 				}],
 				endnav: 'chars'
@@ -481,7 +482,6 @@ function generatePage(page) {
 			break;
 		case "grene":
 			pageTemplate({
-				warning: 'quality',
 				name: 'Grēne',
 				file: ['grene.png', 'pixel'],
 				dims: ['330', '330'],
@@ -610,7 +610,6 @@ function generatePage(page) {
 			break;
 		case "pilf":
 			pageTemplate({ // First!
-				warning: 'quality',
 				name: 'Pilf',
 				file: ['pilf.png', 'pixel'],
 				dims: ['330', '330'],
@@ -950,7 +949,7 @@ function generatePage(page) {
 				categories: [{
 					name: 'Characteristics',
 					info: [
-						'Sample text.',
+						'Sample text.'
 					]
 				}],
 				endnav: 'planet'
@@ -1021,7 +1020,7 @@ function generatePage(page) {
 				categories: [{
 					name: 'Characteristics',
 					info: [
-						'Sample text.',
+						'Sample text.'
 					]
 				}],
 				endnav: 'planet'
@@ -1063,7 +1062,7 @@ function generatePage(page) {
 				categories: [{
 					name: 'Characteristics',
 					info: [
-						'Sample text.',
+						'Sample text.'
 					]
 				}],
 				endnav: 'planet'
@@ -1094,43 +1093,43 @@ function generatePage(page) {
 				categories: [{
 					name: 'da secrit',
 					info: [
-						'yuor mom.',
+						'yuor mom.'
 					]
 				}, {
 					name: 'aero d venture is dumb',
 					info: [
-						'i saw him fall down the stares yesterday. idoit.',
+						'i saw him fall down the stares yesterday. idoit.'
 					]
 				}, {
 					name: 'gonna    ?',
 					info: [
-						'bbrn loading ass cannon',
+						'bbrn loading ass cannon'
 					]
 				}, {
 					name: 'stop',
 					info: [
-						'look away, are u a doug?????',
+						'look away, are u a doug?????'
 					]
 				}, {
 					name: 'read the navbox again',
 					info: [
-						'lokkk',
+						'lokkk'
 					]
 				}, {
 					name: 'did yuo know?',
 					info: [
-						'the dinosaur page has exactly 5000 A\'s. i was there, it is true.',
+						'the dinosaur page has exactly 5000 A\'s. i was there, it is true.'
 					]
 				}, {
 					name: '           ',
 					info: [
-						'i don trust birds. the have hollow bones. what secrets do they keep???',
+						'i don trust birds. the have hollow bones. what secrets do they keep???'
 					]
 				}, {
 					name: 'smwc',
 					info: [
 						'wait;;',
-						'are you mario?',
+						'are you mario?'
 					]
 				}]
 			});
