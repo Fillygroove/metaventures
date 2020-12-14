@@ -286,6 +286,7 @@ function verify(slide) {
 	let slides = document.getElementsByClassName("slides");
 
 	if (comic == '9' && slide == '999') window.location.href = 'index.html?c=nine';
+	if (comic == 'nine' && slideIndex == 9 && (slide == '9' || slide == 'nine')) window.location.href = '../wiki/index.html?p=nine';
 	if (slide == 'Panel Number') window.location.href = 'index.html?c=pn';
 
 	slide = Number(slide);
