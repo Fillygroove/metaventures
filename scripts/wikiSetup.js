@@ -965,7 +965,7 @@ function generatePage(page) {
 				warning: 'stub',
 				name: 'Aeiou',
 				file: ['aeiou.png', 'pixel'],
-				dims: ['330', '293.79'],
+				dims: ['330', '316.86'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
