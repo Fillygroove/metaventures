@@ -118,6 +118,7 @@ function generatePanels(comic) {
 
 	for (let i = 1; i < length + 1; i++) {
 		let slides = document.createElement('div');
+		slides.style = 'background-color: #555555;';
 		slides.className = 'slides';
 		
 		let number = document.createElement('div');
@@ -126,8 +127,8 @@ function generatePanels(comic) {
 		
 		let panels = document.createElement('img');
 		panels.src = `${dir}_${i}.jpg`;
-		panels.style = "width: 100%";
-
+		panels.style = "max-width: 33.35em; max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto;";
+ 
 		slides.append(number);
 		
 		if (comic == "7" && i == 10) { // Dinosaurs wiki page
@@ -224,29 +225,29 @@ function generatePanels(comic) {
 	};
 	nextButton.onclick = () => {
 		showSlides(slideIndex += 1);
-	};	
+	};
 
 	let slideText = document.createElement('div');
-	slideText.style = 'text-align: center; background-color: #555555; padding-top: 1em;';
+	slideText.style = 'text-align: center; background-color: #555555; height: 3em;';
 	
 	slideLabel = document.createElement('label');
-	slideLabel.style = 'background-color: #555555;';
+	slideLabel.style = 'background-color: #555555; line-height: 4.5em;';
 	slideLabel.innerHTML = 'Panel Number: ';
 		
 	slideInput = document.createElement('input');
 	slideInput.type = 'text';
 	slideInput.id = 'panel';
 	slideInput.name = 'panel';
-	slideInput.style = "color: white;";
+	slideInput.style = 'color: white; width: 9em; text-align: center;';
 	slideInput.addEventListener("keyup", function(event) {
 		if (event.key === 'Enter') {
 			verify(slideInput.value);
 		}
 	});
 
-	slideText.append(slideLabel, slideInput);
+	slideText.append(prevButton, nextButton, slideLabel, slideInput);
 
-	slideshow.append(slideText, line, prevButton, nextButton);
+	slideshow.append(slideText, line);
 
 	let desc = document.createElement('h4');
 	
@@ -299,7 +300,8 @@ function verify(slide) {
 		if (comic == '10.5' || comic == 'trigger') {
 			document.getElementsByClassName("description")[0].innerHTML = 'Failed the corruption, please try again later.';
 			return;
-		}		if (comic == 'pn') {
+		}
+		if (comic == 'pn') {
 			document.getElementsByClassName("description")[0].innerHTML = 'Come back another time for another secret.';
 			return;
 		}
@@ -320,3 +322,8 @@ function verify(slide) {
 		}
 	}
 }
+
+window.addEventListener("keydown", function(event) {
+	if (event.key == "ArrowLeft") showSlides(slideIndex -= 1);
+	if (event.key == "ArrowRight") showSlides(slideIndex += 1);
+});
