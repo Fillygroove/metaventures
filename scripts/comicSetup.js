@@ -127,7 +127,7 @@ function generatePanels(comic) {
 		
 		let panels = document.createElement('img');
 		panels.src = `${dir}_${i}.jpg`;
-		panels.style = "max-width: 33.35em; max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto;";
+		panels.style = "max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%)";
  
 		slides.append(number);
 		
