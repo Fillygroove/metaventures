@@ -870,7 +870,7 @@ function generatePage(page) {
 					info: ['Confirmed but Unknown']
 				}],
 				introText: [
-					'Mac is the sixth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=ternary" class="y">The Ternary</a> and before <a href="index.html?p=aeiou" class="y">Aeiou</a>. It is the largest planet in the system. It is a gas giant, with a diameter that is a sixth and a half of the size of the Hot Sun, and has a prime vertical that is a sixth and three fourths of the size of the Hot Sun. Due to its size, it is visible from <a href="index.html?p=ert" class="y">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
+					'Mac is the sixth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=ternary" class="y">The Ternary</a> and before <a href="index.html?p=berry" class="y">Berry</a>. It is the largest planet in the system. It is a gas giant, with a diameter that is a sixth and a half of the size of the Hot Sun, and has a prime vertical that is a sixth and three fourths of the size of the Hot Sun. Due to its size, it is visible from <a href="index.html?p=ert" class="y">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
 					'Mac is mostly composed of Hydrogen, being in the form of gas and plasma, and Helium, with a good amount of Iodine and Neon, along with a small amount of other materials and elements. Due to Mac\'s rotation, the planet has a huge bulge on the horizon, experiencing a day once every 3.5 hours. Mac orbit lies inside of an asteroid belt.',
 					'The term for describing something related to Mac is Donian.'
 				],
@@ -953,6 +953,10 @@ function generatePage(page) {
 					name: 'Life',
 					info: ['None']
 				}],
+				introText: [
+					'Berry is the seventh planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=mac" class="y">Mac</a> and before <a href="index.html?p=aeiou" class="y">Aeiou</a>.',
+					'The term for referring to something related to Berry is Blyuian.'
+				],
 				endnav: 'planet'
 			});
 			break;
@@ -984,12 +988,6 @@ function generatePage(page) {
 					'Aeiou is the eigth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=berry" class="y">Berry</a> and before <a href="index.html?p=the" class="y">The</a>.',
 					'The term for referring to something related to Aeiou is Aeiouian.'
 				],
-				categories: [{
-					name: 'Characteristics',
-					info: [
-						'Sample text.'
-					]
-				}],
 				endnav: 'planet'
 			});
 			break;
