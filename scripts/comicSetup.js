@@ -127,7 +127,7 @@ function generatePanels(comic) {
 		
 		let panels = document.createElement('img');
 		panels.src = `${dir}_${i}.jpg`;
-		panels.style = "max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%)";
+		panels.style = "max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%);";
  
 		slides.append(number);
 		
@@ -145,6 +145,7 @@ function generatePanels(comic) {
 			slides.append(panelLink);
 		} else if (comic == "11" && i == 8) { // Code Red explanation loop
 			let panelLink = document.createElement('a');
+			panelLink.style = "cursor: pointer;";
 			panelLink.onclick = () => {
 				currentSlide(3);
 			};
