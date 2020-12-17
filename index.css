@@ -66,6 +66,13 @@ h3 {
 	margin: 0;
 }
 
+h4 {
+	background-color: #555555;
+	font-family: Ubuntu !important;
+	line-height: 0.9em;
+	margin: 0;
+}
+
 a {
 	text-decoration: none;
 }
