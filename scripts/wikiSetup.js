@@ -356,10 +356,6 @@ function pageTemplate(page) {
 			});
 		}
 	}
-	
-	let break1 = document.createElement('br');
-	let break2 = document.createElement('br');
-	article.append(break1, break2);
 }
 
 function generatePage(page) {
