@@ -142,12 +142,16 @@ function pageTemplate(page) {
 
 			let navrightul = document.createElement('ul');
 			let navrightli = document.createElement('li');
-			let navrightspan = document.createElement('span');
 			
-			navrightspan.className = "nowrap";
-			navrightspan.innerHTML = page.navbox[i].info.toString().replaceAll(",", "</br>").replaceAll("[[", ",");
-
-			navrightli.append(navrightspan);
+			for (let j = 0; j < page.navbox[i].info.length; j++) {
+				let navrightspan = document.createElement('span');
+				
+				navrightspan.innerHTML = page.navbox[i].info[j];
+				
+				if (j != page.navbox[i].info.length - 1) navrightspan.innerHTML += '</br>';
+				
+				navrightli.append(navrightspan);
+			}
 			navrightul.append(navrightli);
 			navrightdiv.append(navrightul);
 			navboxtd.append(navrightdiv);
@@ -227,7 +231,14 @@ function pageTemplate(page) {
 					let innerTableDiv = document.createElement('div');
 					innerTableDiv.style = "text-align: left; padding-left: 8px;";
 					
-					innerTableDiv.innerHTML = table.categories[i].info[j].info.toString().replaceAll(',', ' &bull; ');
+					for (let k = 0; k < table.categories[i].info[j].info.length; k++) {
+						let innerTableSpan = document.createElement('span');
+						innerTableSpan.innerHTML = table.categories[i].info[j].info[k];
+						
+						if (k != table.categories[i].info[j].info.length - 1) innerTableSpan.innerHTML += ' &bull; ';
+						
+						innerTableDiv.append(innerTableSpan);
+					}
 					
 					innerTableData.append(innerTableDiv);
 					
@@ -277,7 +288,7 @@ function pageTemplate(page) {
 					}, {
 						name: 'Minor Characters',
 						info: [
-							'<a href="index.html?p=darpynpals" class="n">Darpy & Pals</a> (<small>Darpy, Occols, Trivy</small>)',
+							'<a href="index.html?p=darpynpals" class="n">Darpy & Pals</a> (<small>Darpy &bull; Occols &bull; Trivy</small>)',
 							'<a href="index.html?p=diepic" class="n">Diepic</a>',
 							'<a href="index.html?p=fender" class="n">Fender</a>',
 							'<a href="index.html?p=shockpose" class="n">Shockpose</a>'
@@ -314,28 +325,37 @@ function pageTemplate(page) {
 			createNav({
 				heading: 'The Bisolar System',
 				categories: [{
-					category: '<a href="index.html?p=hotsun" class="y">Ommadawn</a> System',
+					category: '<a href="index.html?p=hotsun" class="y"><img src="images/hot_sun.png" width="30" height="30">Ommadawn</a> System',
 					info: [{
 						name: 'Inner Planets',
 						info: [
-							'<a href="index.html?p=grene" class="y">Grēne</a>',
-							'<a href="index.html?p=doug" class="y">Doug</a> (<small>H</small>)',
-							'<a href="index.html?p=pilf" class="y">Pilf</a>',
-							'The Water Cycle (<small><a href="index.html?p=ert" class="y">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedron</a></small>) &bull; <a href="index.html?p=george" class="y">George</a> (<small>Damocles</small>)</small>)',
-							'<a href="index.html?p=cea" class="y">Cea</a> (<small>52 Confirmed Mines</small>)'
+							'<a href="index.html?p=grene" class="y"><img src="images/grene.png" width="25" height="25"></img>Grēne</a>',
+							'<a href="index.html?p=doug" class="y"><img src="images/doug.png" width="25" height="25">Doug</a> (<small><img src="images/h.png" width="20" height="20">H</small>)',
+							'<a href="index.html?p=pilf" class="y"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>',
+							'The Water Cycle (<small><a href="index.html?p=ert" class="y"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedron</a></small>) &bull; <a href="index.html?p=george" class="y"><img src="images/george.png" width="20" height="20">George</a> (<small><small><img src="images/damocles.png" width="20" height="20">Damocles</small>)</small>)',
+							'<a href="index.html?p=cea" class="y"><img src="images/cea.png" width="25" height="25">Cea</a>'
+						]
+					}, {
+						name: 'List of Pasta',
+						info: [
+							'<a href="index.html?p=ternary" class="y">The Ternary</a> (<small>Dot &bull; Otd &bull; Tod</small>)',
+							'Manc-Ave',
+							'Schmidt Succ',
+							'Cere',
+							'No',
+							'Blu',
+							'L',
+							'Two Names',
+							'Not',
+							'Cot',
 						]
 					}, {
 						name: 'Outer Planets',
 						info: [
-							'<a href="index.html?p=ternary" class="y">The Ternary</a> (<small>Dot &bull; Otd &bull; Tod</small>)',
-							'<a href="index.html?p=mac" class="y">Mac</a> (<small><a href="index.html?p=wop" class="y">World of Pain</a> &bull; Dough</small>)',
-							'<a href="index.html?p=berry" class="y">Berry</a>',
-							'<a href="index.html?p=aeiou" class="y">Aeiou</a> (<small>Cdfqrszt &bull;  Heideph</small>)'
-						]
-					}, {
-						name: 'Trans-Aeiouian',
-						info: [
-							'<a href="index.html?p=the" class="y">The</a>'
+							'<a href="index.html?p=mac" class="y"><img src="images/mac.png" width="35" height="25">Mac</a> (<small><a href="index.html?p=wop" class="y"><img src="images/wop.png" width="23" height="20">World of Pain</a> &bull; <img src="images/dough.png" width="24" height="20">Dough</small>)',
+							'<a href="index.html?p=berry" class="y"><img src="images/berry_ringless.png" width="25" height="25">Berry</a>',
+							'<a href="index.html?p=aeiou" class="y"><img src="images/aeiou.png" width="27" height="25">Aeiou</a> (<small>Cdfqrszt &bull; Heideph</small>)',
+							'<a href="index.html?p=the" class="y"><img src="images/the.png" width="25" height="25">The</a>'
 						]
 					}]
 				}, {
@@ -343,7 +363,7 @@ function pageTemplate(page) {
 					info: [{
 						name: 'Inner Planets',
 						info: [
-							'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
+							'<a href="index.html?p=coldsun" class="y"><img src="images/cold_sun.png" width="25" height="25">Cold Sun</a>',
 							'<a href="index.html?p=gigantrax" class="n">Gigantrax</a>'
 						]
 					}, {
@@ -381,7 +401,7 @@ function generatePage(page) {
 					info: ['Reeg']
 				}, {
 					name: 'Lives in',
-					info: ['<a href="index.html?p=ert" class="y">Ert</a>[[ in Yolktown.']
+					info: ['<a href="index.html?p=ert" class="y">Ert</a>, in Yolktown.']
 				}, {
 					name: 'Character Status',
 					info: ['Alive (Formerly dead)']
@@ -929,8 +949,8 @@ function generatePage(page) {
 			pageTemplate({
 				warning: 'stub',
 				name: 'Berry',
-				file: ['berry.png', 'pixel'],
-				dims: ['330', '300'],
+				file: ['berry_ringless.png', 'pixel'],
+				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
