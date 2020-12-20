@@ -57,7 +57,7 @@ h2 {
 	padding-left: 80px;
 	padding-right: 80px;
 	font-family: Ubuntu;
-	word-wrap: break-word;
+	overflow-wrap: anywhere;
 }
 
 h3 {
