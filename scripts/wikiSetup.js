@@ -332,7 +332,7 @@ function pageTemplate(page) {
 							'<a href="index.html?p=grene" class="y"><img src="images/grene.png" width="25" height="25"></img>Grēne</a>',
 							'<a href="index.html?p=doug" class="y"><img src="images/doug.png" width="25" height="25">Doug</a> (<small><img src="images/h.png" width="20" height="20">H</small>)',
 							'<a href="index.html?p=pilf" class="y"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>',
-							'The Water Cycle (<small><a href="index.html?p=ert" class="y"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedron</a></small>) &bull; <a href="index.html?p=george" class="y"><img src="images/george.png" width="20" height="20">George</a> (<small><small><img src="images/damocles.png" width="20" height="20">Damocles</small>)</small>)',
+							'The Water Cycle (<small><a href="index.html?p=ert" class="y"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedron</a></small>) &bull; <a href="index.html?p=george" class="y"><img src="images/george.png" width="20" height="20">George</a> (<small><img src="images/damocles.png" width="20" height="20">Damocles</small>)</small>)',
 							'<a href="index.html?p=cea" class="y"><img src="images/cea.png" width="25" height="25">Cea</a>'
 						]
 					}, {
