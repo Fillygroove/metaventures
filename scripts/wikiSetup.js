@@ -1218,10 +1218,10 @@ function generatePage(page) {
 				}, {
 					name: 'did yuo know?',
 					info: [
-						'the dinosaur page has exactly 5000 A\'s. i was there, it is true.'
+						'the dinosaur page has a countably infinite amount of A\'s. i was there, it is true.'
 					]
 				}, {
-					name: '           ',
+					name: 'bird rant',
 					info: [
 						'i don trust birds. the have hollow bones. what secrets do they keep???'
 					]
