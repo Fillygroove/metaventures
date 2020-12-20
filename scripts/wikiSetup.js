@@ -336,7 +336,7 @@ function pageTemplate(page) {
 							'<a href="index.html?p=cea" class="y"><img src="images/cea.png" width="25" height="25">Cea</a>'
 						]
 					}, {
-						name: 'List of Pasta',
+						name: 'Macaroni Belt',
 						info: [
 							'<a href="index.html?p=ternary" class="y">The Ternary</a> (<small>Dot &bull; Otd &bull; Tod</small>)',
 							'Manc-Ave',
@@ -1245,15 +1245,20 @@ function generatePage(page) {
 			break;
 		case "dino":
 			let scream = '';
-			for (let i = 0; i < 5000; i++) scream += 'A';
+			for (let i = 0; i < 2000; i++) scream += 'A';
 			pageTemplate({
 				name: 'How to stop satellite. by Dinosaurs',
-				introText: [`${scream}`]
+				introText: [
+					`${scream}`
+				]
 			});
+			window.onscroll = () => {
+				let screamString = document.getElementsByTagName('p')[0];
+				screamString.innerHTML += scream;
+			}
 			break;
 		default:
 			let quoteNumber = Math.floor(Math.random() * 7);
-			console.log(quoteNumber);
 			let quote;
 			switch (quoteNumber) {
 				case 0:
