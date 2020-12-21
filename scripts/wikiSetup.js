@@ -327,31 +327,19 @@ function pageTemplate(page) {
 				categories: [{
 					category: '<a href="index.html?p=hotsun" class="y"><img src="images/hot_sun.png" width="30" height="30">Ommadawn</a> System',
 					info: [{
-						name: 'Inner Planets',
+						name: 'Inner System',
 						info: [
 							'<a href="index.html?p=grene" class="y"><img src="images/grene.png" width="25" height="25"></img>Grēne</a>',
 							'<a href="index.html?p=doug" class="y"><img src="images/doug.png" width="25" height="25">Doug</a> (<small><img src="images/h.png" width="20" height="20">H</small>)',
 							'<a href="index.html?p=pilf" class="y"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>',
-							'The Water Cycle (<small><a href="index.html?p=ert" class="y"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedron</a></small>) &bull; <a href="index.html?p=george" class="y"><img src="images/george.png" width="20" height="20">Georg</a><a href="images/george_real.png" class="y">e</a> (<small><img src="images/damocles.png" width="20" height="20">Damocles</small>)</small>)',
+							'<a href="index.html?p=ert" class="y"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedron</a></small>)',
+							'<a href="index.html?p=george" class="y"><img src="images/george.png" width="20" height="20">Georg</a><a href="images/george_real.png" class="y">e</a> (<small><img src="images/damocles.png" width="20" height="20">Damocles</small>)',
 							'<a href="index.html?p=cea" class="y"><img src="images/cea.png" width="25" height="25">Cea</a>'
 						]
 					}, {
-						name: 'Macaroni Belt',
+						name: 'Outer System',
 						info: [
-							'<a href="index.html?p=ternary" class="y">The Ternary</a> (<small>Dot &bull; Otd &bull; Tod</small>)',
-							'Manc-Ave',
-							'Schmidt Succ',
-							'Cere',
-							'No',
-							'Blu',
-							'L',
-							'Two Names',
-							'Not',
-							'Cot',
-						]
-					}, {
-						name: 'Outer Planets',
-						info: [
+							'<a href="index.html?p=macaroni" class="n">Macaroni Belt</a>',
 							'<a href="index.html?p=mac" class="y"><img src="images/mac.png" width="35" height="25">Mac</a> (<small><a href="index.html?p=wop" class="y"><img src="images/wop.png" width="23" height="20">World of Pain</a> &bull; <img src="images/dough.png" width="24" height="20">Dough</small>)',
 							'<a href="index.html?p=berry" class="y"><img src="images/berry_ringless.png" width="25" height="25">Berry</a>',
 							'<a href="index.html?p=aeiou" class="y"><img src="images/aeiou.png" width="27" height="25">Aeiou</a> (<small>Cdfqrszt &bull; Heideph</small>)',
@@ -361,15 +349,32 @@ function pageTemplate(page) {
 				}, {
 					category: '<a href="index.html?p=taiberaque" class="y">Taiberaque</a> System',
 					info: [{
-						name: 'Inner Planets',
+						name: 'Inner System',
 						info: [
-							'<a href="index.html?p=coldsun" class="y"><img src="images/cold_sun.png" width="25" height="25">Cold Sun</a>',
-							'<a href="index.html?p=gigantrax" class="n">Gigantrax</a>'
+							'<a href="index.html?p=coldsun" class="y"><img src="images/cold_sun.png" width="25" height="25">Cold Sun</a>'
 						]
 					}, {
-						name: 'Outer Planets',
+						name: 'Outer System',
 						info: [
-							'???'
+							'<a href="index.html?p=gigantrax" class="n">Gigantrax</a>'
+						]
+					}]
+				}, {
+					category: 'Misc',
+					info: [{
+						name: '<a href="index.html?p=dwarf" class="y">Dwarf Planets</a>',
+						info: [
+							'<a href="index.html?p=dwarf#ternary" class="y">BCM-1-2-3 (The Ternary)</a>',
+							'<a href="index.html?p=dwarf#sphynx" class="y">BOT-1 (Sphynx)</a>',
+							'<a href="index.html?p=dwarf#blyu" class="y">BCG-1 (Blyu)</a>',
+							'<a href="index.html?p=dwarf#ayduno" class="y">BCG-2 (Ayduno)</a>',
+							'<a href="index.html?p=dwarf#objobj" class="y">BCG-3 (Object/Object)</a>'
+						]
+					}, {
+						name: 'Objects',
+						info: [
+							'BOT-2 (Gram\'s Comet)',
+							'BAT-1 (Kol\'s Mini Nebula)', // Ball of Christmas Lights
 						]
 					}]
 				}]
@@ -479,7 +484,6 @@ function generatePage(page) {
 						'<a href="index.html?p=pilf" class="y">Pilf</a>',
 						'<a href="index.html?p=ert" class="y">Ert</a> / <a href="index.html?p=george" class="y">George</a>',
 						'<a href="index.html?p=cea" class="y">Cea</a>',
-						'<a href="index.html?p=ternary" class="y">The Ternary</a>',
 						'<a href="index.html?p=mac" class="y">Mac</a>',
 						'<a href="index.html?p=berry" class="y">Berry</a>',
 						'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
@@ -821,44 +825,8 @@ function generatePage(page) {
 					info: ['Unknown']
 				}],
 				introText: [
-					'Cea is the fifth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=ert" class="y">Ert</a> and <a href="index.html?p=george" class="y">George</a> and before <a href="index.html?p=ternary" class="y">The Ternary</a>.'
+					'Cea is the fifth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=ert" class="y">Ert</a> and <a href="index.html?p=george" class="y">George</a> and before <a href="index.html?p=mac" class="y">Mac</a>.'
 				],
-				endnav: 'planet'
-			});
-			break;
-		case "ternary":
-			pageTemplate({
-				warning: 'stub',
-				name: 'The Ternary',
-				file: ['ternary.png'],
-				dims: ['330', '330'],
-				caption: 'Depicted from far away, illustration made by Gramiatar.',
-				heading: 'Designations',
-				navbox: [{
-					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>, Each Other']
-				}, {
-					name: 'Satellites',
-					info: ['Each Other']
-				}, {
-					name: 'Name Origin',
-					info: ['Unknown']
-				}, {
-					name: 'Classification',
-					info: ['Dwarf Planets']
-				}, {
-					name: 'Life',
-					info: ['The Trio of Broom']
-				}],
-				introText: [
-					'The Ternary is the name for a collective of three dwarf planets, named Dot, Otd, and Tod. They are located between <a href="index.html?p=cea" class="y">Cea</a> and <a href="index.html?p=mac" class="y">Mac</a>.'
-				],
-				categories: [{
-					name: 'sample',
-					info: [
-						'text'
-					]
-				}],
 				endnav: 'planet'
 			});
 			break;
@@ -886,7 +854,7 @@ function generatePage(page) {
 					info: ['Confirmed but Unknown']
 				}],
 				introText: [
-					'Mac is the sixth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=ternary" class="y">The Ternary</a> and before <a href="index.html?p=berry" class="y">Berry</a>. It is the largest planet in the system. It is a gas giant, with a diameter that is a sixth and a half of the size of the Hot Sun, and has a prime vertical that is a sixth and three fourths of the size of the Hot Sun. Due to its size, it is visible from <a href="index.html?p=ert" class="y">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
+					'Mac is the sixth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=cea" class="y">Cea</a> and before <a href="index.html?p=berry" class="y">Berry</a>. It is the largest planet in the system. It is a gas giant, with a diameter that is a sixth and a half of the size of the Hot Sun, and has a prime vertical that is a sixth and three fourths of the size of the Hot Sun. Due to its size, it is visible from <a href="index.html?p=ert" class="y">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
 					'Mac is mostly composed of Hydrogen, being in the form of gas and plasma, and Helium, with a good amount of Iodine and Neon, along with a small amount of other materials and elements. Due to Mac\'s rotation, the planet has a huge bulge on the horizon, experiencing a day once every 3.5 hours. Mac orbit lies inside of an asteroid belt.',
 					'The term for describing something related to Mac is Donian.'
 				],
@@ -1163,6 +1131,31 @@ function generatePage(page) {
 					name: 'Characteristics',
 					info: [
 						'Sample text.'
+					]
+				}],
+				endnav: 'planet'
+			});
+			break;
+		case "dwarf":
+			pageTemplate({
+				warning: 'stub',
+				name: 'Dwarf Planets',
+				introText: [
+					'Dwarf Planets are smol lol'
+				],
+				categories: [{
+					name: 'List of Dwarf Planets',
+					info: [
+						'<h3 id="ternary">BCM-1-2-3 (The Ternary)</h3>',
+						'The Ternary is a system of 3 small dwarf planets, each one labeled as BCM, followed by the order of discovery.',
+						'<h3 id="sphynx">BOT-1 (Sphynx)</h3>',
+						'Sphynx is a dwarf planet that orbits the center of mass of the Ommadawn and Taiberaque systems.',
+						'<h3 id="blyu">BCG-1 (Blyu)</h3>',
+						'Blyu is a dwarf planet reminiscent of a gas giant that is located between the Cold Sun and Gigantrax.',
+						'<h3 id="ayduno">BCG-2 (Ayduno)</h3>',
+						'Ayduno is a dwarf planet that is located between the Cold Sun and Gigantrax. It rotates retrograde to its orbit, and has rings that move around its equator like a hula hoop.',
+						'<h3 id="objobj">BCG-3 (Object/Object)</h3>',
+						'Object/Object is a dwarf planet that is located between the Cold Sun and Gigantrax. It appears to be two miniature gas giants, connected to each other. Whether or not these planets are seperate or not is unknown.'
 					]
 				}],
 				endnav: 'planet'
