@@ -36,15 +36,11 @@ function makePage(page) {
 	metaFavicon.type = 'image/png';
 	metaFavicon.href = `${titleDir}favicon.png`;
 	
-	let metaFont = document.createElement('link');
-	metaFont.rel = "stylesheet";
-	metaFont.href = "https://fonts.googleapis.com/css?family=Ubuntu:400,700";
-	
 	let metaCss = document.createElement('link');
 	metaCss.rel = "stylesheet";
 	metaCss.href = `${titleDir}index.css`;
 	
-	document.head.append(metaCharset, metaName, metaTitle, metaFavicon, metaFont, metaCss);
+	document.head.append(metaCharset, metaName, metaTitle, metaFavicon, metaCss);
 	
 	let mainBody = document.getElementsByTagName('body')[0];
 	
