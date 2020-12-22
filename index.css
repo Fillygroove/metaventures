@@ -1,3 +1,8 @@
+@font-face {
+	font-family: Ubuntu;
+	src: url(ubuntu.woff2);
+}
+
 * {
 	box-sizing: border-box;
 	font-family: Ubuntu;
@@ -327,7 +332,7 @@ code,
 kbd,
 pre,
 samp {
-	font-family: monospace, monospace;
+	font-family: Ubuntu;
 	font-size: 1em
 }
 
@@ -427,7 +432,7 @@ textarea {
 /* End extract */
 html,
 body {
-	font-family: Verdana, sans-serif;
+	font-family: Ubuntu;
 	font-size: 15px;
 	line-height: 1.5;
 	height: 100%;
