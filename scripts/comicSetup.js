@@ -101,9 +101,10 @@ function generatePanels(comic) {
 			title = 'Panel Number';
 			description = 'Panel Number';
 			break;
-		case "corrupt":
-			length = 5;
-			description = 'what have you done';
+		case "choose-av":
+			length = 14;
+			title = 'Choose your comic!';
+			description = 'Original Unfiltered Content';
 			break;
 	}
 
@@ -127,78 +128,103 @@ function generatePanels(comic) {
 		
 		let panels = document.createElement('img');
 		panels.src = `${dir}_${i}.jpg`;
-		panels.style = "max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%);";
+		panels.style = 'max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%);';
  
 		slides.append(number);
 		
-		if (comic == "7" && i == 10) { // Dinosaurs wiki page
+		if (comic == '7' && i == 10) { // Dinosaurs wiki page
 			let panelLink = document.createElement('a');
-			panelLink.href = "../wiki/index.html?p=dino";
+			panelLink.href = '../wiki/index.html?p=dino';
 			
 			panelLink.append(panels);
 			slides.append(panelLink);
-		} else if (comic == "8" && i == 7) { // Trigger Fish
+		} else if (comic == '8' && i == 7) { // Trigger Fish
 			let panelLink = document.createElement('a');
-			panelLink.href = "index.html?c=trigger";
+			panelLink.href = 'index.html?c=trigger';
 			
 			panelLink.append(panels);
 			slides.append(panelLink);
-		} else if (comic == "11" && i == 8) { // Code Red explanation loop
+		} else if (comic == '11' && i == 8) { // Code Red explanation loop
 			let panelLink = document.createElement('a');
-			panelLink.style = "cursor: pointer;";
+			panelLink.style = 'cursor: pointer;';
 			panelLink.onclick = () => {
 				currentSlide(3);
 			};
 			
 			panelLink.append(panels);
 			slides.append(panelLink);
-		} else if (comic == "11" && i == 44) { // Broventures
+		} else if (comic == '11' && i == 44) { // Broventures
 			let panelLink = document.createElement('a');
-			panelLink.href = "index.html?c=brooo";
+			panelLink.href = 'index.html?c=brooo';
+			
+			panelLink.append(panels);
+			slides.append(panelLink);
+		} else if (comic == 'choose-av') {
+			let episode;
+			switch (i) {
+				case 11:
+					episode = '10.5';
+					break;
+				case 12:
+					episode = 'h';
+					break;
+				case 13:
+					episode = '11';
+					break;
+				case 14:
+					episode = '12';
+					break;
+				default: 
+					episode = String(i);
+					break;
+			}
+			
+			let panelLink = document.createElement('a');
+			panelLink.href = `index.html?c=${episode}`;
 			
 			panelLink.append(panels);
 			slides.append(panelLink);
 		} else slides.append(panels);
 		
-		if (comic == "nine") {
+		if (comic == 'nine') {
 			let caption = document.createElement('div');
-			caption.style = 'text-align: center; background-color: #555555;'
+			caption.style = 'text-align: center; background-color: #555555;';
 			switch (i) {
 				case 1:
-					caption.innerHTML = 'Aero looks upon a memory of a deceased Archie, someone who\'s been rumored to be coming back in recent times...'
+					caption.innerHTML = 'Aero looks upon a memory of a deceased Archie, someone who\'s been rumored to be coming back in recent times...';
 					break;
 				case 2:
-					caption.innerHTML = 'Aero seeks his old rival, but newfound partner, Archie. Had he forgotten that he must be present in order for a mafia war to take place? He hastily scurries around the room in an attempt to find his lost partner.'
+					caption.innerHTML = 'Aero seeks his old rival, but newfound partner, Archie. Had he forgotten that he must be present in order for a mafia war to take place? He hastily scurries around the room in an attempt to find his lost partner.';
 					break;
 				case 3:
-					caption.innerHTML = 'His old enemy, Lakys remarks on Aero\'s persistence. Lakys sees the focus of a true reeg in Aero. Perhaps both of them share a similair goal..?'
+					caption.innerHTML = 'His old enemy, Lakys remarks on Aero\'s persistence. Lakys sees the focus of a true reeg in Aero. Perhaps both of them share a similair goal..?';
 					break;
 				case 4:
-					caption.innerHTML = 'Lakys suddenly grows suspicious as he seems to remember the enviroment both of them are currently standing on with their own two stubs! The Island of No Escape? A memory shakes and wriggles in Lakys\'s brain, attempting to find clarification before...'
+					caption.innerHTML = 'Lakys suddenly grows suspicious as he seems to remember the enviroment both of them are currently standing on with their own two stubs! The Island of No Escape? A memory shakes and wriggles in Lakys\'s brain, attempting to find clarification before...';
 					break;
 				case 5:
-					caption.innerHTML = '..Mcfrownies? This was odd, had he been transported to somewhere else via some anomalous object, some.. kind of witchery? Lakys\' sees a sweat drop from his face as the familiar cashier in the back welcomes him to enjoy one of their burgers, something the resturant is praised for. Lakys sighs; Might as well.'
+					caption.innerHTML = '..Mcfrownies? This was odd, had he been transported to somewhere else via some anomalous object, some.. kind of witchery? Lakys\' sees a sweat drop from his face as the familiar cashier in the back welcomes him to enjoy one of their burgers, something the resturant is praised for. Lakys sighs; Might as well.';
 					break;
 				case 6:
-					caption.innerHTML = 'But it was not! Once the Cashier has stated the resturants menu, Lakys immediately recognizes the monotone voice of his short-time ally, Aero! Lakys is at a lost for words! How did Aero do this??'
+					caption.innerHTML = 'But it was not! Once the Cashier has stated the resturants menu, Lakys immediately recognizes the monotone voice of his short-time ally, Aero! Lakys is at a lost for words! How did Aero do this??';
 					break;
 				case 7:
-					caption.innerHTML = 'Some familiar fellows seem quick to abscond the area, which has the aura of a fight looming. Looming hard! Trivy gives one last word of wisdom before fleeing the premises! What will happen next??'
+					caption.innerHTML = 'Some familiar fellows seem quick to abscond the area, which has the aura of a fight looming. Looming hard! Trivy gives one last word of wisdom before fleeing the premises! What will happen next??';
 					break;
 				case 8:
-					caption.innerHTML = 'As lakys gets battle-ready, boot on, duck placed, and armed to the stub, he cant help but notice Aero\'s lack of common decency.'
+					caption.innerHTML = 'As lakys gets battle-ready, boot on, duck placed, and armed to the stub, he cant help but notice Aero\'s lack of common decency.';
 					break;
 				case 9:
-					caption.innerHTML = 'THE NINTH PANEL OF "NINEVENTURES" HAS BEEN REMOVED</br>FURTHER INVESTIGATIONS HAVE BEEN TERMINATED UNDER ORDER GAMMA-52OXY</br>THE FOLLOWING FILM SHALL CONTINUE AS INTENDED.'
+					caption.innerHTML = 'THE NINTH PANEL OF "NINEVENTURES" HAS BEEN REMOVED</br>FURTHER INVESTIGATIONS HAVE BEEN TERMINATED UNDER ORDER GAMMA-52OXY</br>THE FOLLOWING FILM SHALL CONTINUE AS INTENDED.';
 					break;
 				case 10:
-					caption.innerHTML = '"Whatever." Lakys says, turning on his machine that he was SURE would work to make the Lacii army he\'s always dreamed of! Hopefully it\'ll work again, as Aero seems to be ready to battle.'
+					caption.innerHTML = '"Whatever." Lakys says, turning on his machine that he was SURE would work to make the Lacii army he\'s always dreamed of! Hopefully it\'ll work again, as Aero seems to be ready to battle.';
 					break;
 				case 11:
-					caption.innerHTML = 'Aero was somewhat late to the prepare of war. He scrambles on the desk of a nearby resturant in order to obtain some sort of energy that not even regular Reegs should use! Meanwhile, some familiar faces farm XP from a bear person. Perhaps Aero should do the same...?'
+					caption.innerHTML = 'Aero was somewhat late to the prepare of war. He scrambles on the desk of a nearby resturant in order to obtain some sort of energy that not even regular Reegs should use! Meanwhile, some familiar faces farm XP from a bear person. Perhaps Aero should do the same...?';
 					break;
 				case 12:
-					caption.innerHTML = 'As Lakys looks on to what Aero\'s ignoring, Lacus questions everyone\'s safety...'
+					caption.innerHTML = 'As Lakys looks on to what Aero\'s ignoring, Lacus questions everyone\'s safety...';
 					break;
 			}
 			slides.append(caption);
@@ -206,6 +232,54 @@ function generatePanels(comic) {
 			let caption = document.createElement('div');
 			caption.style = 'text-align: center; background-color: #555555;'
 			caption.innerHTML = 'The finale for broventures has come, and i can tell you its been an amazing journey. Even after the 5 movies and 127 brands of clothes based on this series, i cant help but still love how it came out. Thanks to all of your increasing support i was finally able to make a sufficient ending to the series that touched our hearts as children, and now to the next generation. Do i have any regrets about closing off this wonderful series for good? No, it was a perfect run that i dont think even Einstein couldve finished off better. I may be shedding a tear right now about letting this series go, but i know it would be forever perfect in our minds, and in this archive. Thank you all who have stuck with me on this ride, we\'ve worked tirelessly on these broventures. I dont know what will happen next, but i\'m glad i was able to be part of this epoch in history.';
+			slides.append(caption);
+		} else if (comic == 'choose-av') {
+			let caption = document.createElement('div');
+			caption.style = 'text-align: center; background-color: #555555;';
+			switch (i) {
+				case 1:
+					caption.innerHTML = 'Aeroventures 1: The Pilot';
+					break;
+				case 2:
+					caption.innerHTML = 'Aeroventures 2: Dr. Lakys\' Electric Boogaloo';
+					break;
+				case 3:
+					caption.innerHTML = 'Aeroventures 3: Nutstradamnus Rumbel';
+					break;
+				case 4:
+					caption.innerHTML = 'Aeroventures 4: <a href="../wiki/index.html?p=shrine">ARCHIE STRYKSE BAK!1!</a>';
+					break;
+				case 5:
+					caption.innerHTML = 'Aeroventures 5: RoYEEEAL Shimmy Shammy';
+					break;
+				case 6:
+					caption.innerHTML = 'Aeroventures 6: Future Fails';
+					break;
+				case 7:
+					caption.innerHTML = 'Aeroventures 7: In The Shadow of the Perpatrator';
+					break;
+				case 8:
+					caption.innerHTML = 'Aeroventures 8: Tropical Trouble';
+					break;
+				case 9:
+					caption.innerHTML = 'Aeroventures 9: Group Lunatics 100';
+					break;
+				case 10:
+					caption.innerHTML = 'Aeroventures 10: Flat Line';
+					break;
+				case 11:
+					caption.innerHTML = 'Aeroventures 10.5: Over The Rainbow';
+					break;
+				case 12:
+					caption.innerHTML = 'Aeroventures: Halloween Edition';
+					break;
+				case 13:
+					caption.innerHTML = 'Aeroventures 11: Code Red';
+					break;
+				case 14:
+					caption.innerHTML = 'Aeroventures 12: Nutty Business';
+					break;
+			}
 			slides.append(caption);
 		}
 		
@@ -229,10 +303,10 @@ function generatePanels(comic) {
 	};
 
 	let slideText = document.createElement('div');
-	slideText.style = 'text-align: center; background-color: #555555; height: 3em;';
+	slideText.style = 'text-align: center; background-color: #555555; height: 2em;';
 	
 	slideLabel = document.createElement('label');
-	slideLabel.style = 'background-color: #555555; line-height: 4.5em;';
+	slideLabel.style = 'background-color: #555555; line-height: 3.5em;';
 	slideLabel.innerHTML = 'Panel Number: ';
 		
 	slideInput = document.createElement('input');
@@ -240,7 +314,7 @@ function generatePanels(comic) {
 	slideInput.id = 'panel';
 	slideInput.name = 'panel';
 	slideInput.style = 'color: white; width: 9em; text-align: center;';
-	slideInput.addEventListener("keyup", function(event) {
+	slideInput.addEventListener('keyup', function(event) {
 		if (event.key === 'Enter') {
 			verify(slideInput.value);
 		}
@@ -260,7 +334,7 @@ function generatePanels(comic) {
 
 let comic = new URLSearchParams(window.location.search);
 comic = comic.get('c')
-if (comic == null) comic = "12-1";
+if (comic == null) comic = '12-1';
 generatePanels(comic);
 
 let slideIndex = 1;
@@ -271,7 +345,7 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-	let slides = document.getElementsByClassName("slides");
+	let slides = document.getElementsByClassName('slides');
 
 	if (n > slides.length) {
 		slideIndex = 1;
@@ -282,14 +356,14 @@ function showSlides(n) {
 	}
 
 	for (let i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
+		slides[i].style.display = 'none';
 	}
 
-	slides[slideIndex - 1].style.display = "block";
+	slides[slideIndex - 1].style.display = 'block';
 }
 
 function verify(slide) {
-	let slides = document.getElementsByClassName("slides");
+	let slides = document.getElementsByClassName('slides');
 
 	if (comic == '9' && slide == '999') { // Nineventures Easter Egg
 		window.location.href = 'index.html?c=nine';
@@ -299,20 +373,18 @@ function verify(slide) {
 		window.location.href = 'index.html?c=pn';
 	} else if (!isNaN(slide) && Math.floor(slide) != slide) { // Panel Corruption Easter Egg
 		if (comic == '10.5' || comic == 'trigger') {
-			document.getElementsByClassName("description")[0].innerHTML = 'Failed the corruption, please try again later.';
+			document.getElementsByClassName('description')[0].innerHTML = 'Failed the corruption, please try again later.';
 			return;
 		}
 		if (comic == 'pn') {
-			document.getElementsByClassName("description")[0].innerHTML = 'Come back another time for another secret.';
+			document.getElementsByClassName('description')[0].innerHTML = 'Come back another time for another secret.';
 			return;
 		}
-		if (comic == '9') {
-			document.getElementsByClassName("description")[0].innerHTML = 'Come back another time for another secret.';
-		} else document.getElementsByClassName("description")[0].innerHTML = 'Well... What did you think was going to happen when you put in a decimal value?';
-		document.getElementsByClassName("slides")[slideIndex - 1].childNodes[1].src = `./panels/corrupt/corrupt_${comic}.jpg`;
-		document.getElementsByClassName("slides")[slideIndex - 1].childNodes[1].visibility = 'visible';
+		document.getElementsByClassName('description')[0].innerHTML = 'Well... What did you think was going to happen when you put in a decimal value?';
+		document.getElementsByClassName('slides')[slideIndex - 1].childNodes[1].src = `./panels/corrupt/corrupt_${comic}.jpg`;
+		document.getElementsByClassName('slides')[slideIndex - 1].childNodes[1].visibility = 'visible';
 		if (comic == 'nine') {
-			document.getElementsByClassName("slides")[slideIndex - 1].childNodes[2].innerHTML = 'Aero is gone.';
+			document.getElementsByClassName('slides')[slideIndex - 1].childNodes[2].innerHTML = 'Aero is gone.';
 		}
 	}
 	slide = Number(slide);
@@ -324,7 +396,7 @@ function verify(slide) {
 	}
 }
 
-window.addEventListener("keydown", function(event) {
-	if (event.key == "ArrowLeft") showSlides(slideIndex -= 1);
-	if (event.key == "ArrowRight") showSlides(slideIndex += 1);
+window.addEventListener('keydown', function(event) {
+	if (event.key == 'ArrowLeft') showSlides(slideIndex -= 1);
+	if (event.key == 'ArrowRight') showSlides(slideIndex += 1);
 });
