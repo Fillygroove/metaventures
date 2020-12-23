@@ -1250,6 +1250,14 @@ function generatePage(page) {
 				screamString.innerHTML += scream;
 			}
 			break;
+		case "directions":
+			let dirs = [];
+			for (let i = 0; i < 100; i++) dirs.push(`Step ${i + 1}.) Turn Left`);
+			pageTemplate({
+				name: 'The Vault Map',
+				introText: dirs
+			});
+			break;
 		default:
 			let quoteNumber = Math.floor(Math.random() * 7);
 			let quote;
