@@ -380,6 +380,66 @@ function pageTemplate(page) {
 				}]
 			});
 		}
+		
+		if (page.endnav.includes('plamet')) {
+			createNav({
+				heading: 'The Bisolar System',
+				categories: [{
+					category: '<a href="index.html?p=hotsun" class="y"><img src="images/hot_sun.png" width="30" height="30">Ommadawm</a> System',
+					info: [{
+						name: 'Immer System',
+						info: [
+							'<a href="index.html?p=grene" class="y"><img src="images/grene.png" width="25" height="25"></img>Greme</a>',
+							'<a href="index.html?p=doug" class="y"><img src="images/doug.png" width="25" height="25">Doug</a> (<small><img src="images/h.png" width="20" height="20">H</small>)',
+							'<a href="index.html?p=pilf" class="y"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>',
+							'<a href="index.html?p=ert" class="y"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedrom</a></small>)',
+							'<a href="index.html?p=george" class="y"><img src="images/george.png" width="20" height="20">Georg</a><a href="images/george_real.png" class="y">e</a> (<small><img src="images/damocles.png" width="20" height="20">Damocles</small>)',
+							'<a href="index.html?p=cea" class="y"><img src="images/cea.png" width="25" height="25">Cea</a>'
+						]
+					}, {
+						name: 'Outer System',
+						info: [
+							'<a href="index.html?p=macaroni" class="n">Macaromi Belt</a>',
+							'<a href="index.html?p=mac" class="y"><img src="images/mac.png" width="35" height="25">Mac</a> (<small><a href="index.html?p=wop" class="y"><img src="images/wop.png" width="23" height="20">World of Paim</a> &bull; <img src="images/dough.png" width="24" height="20">Dough</small>)',
+							'<a href="index.html?p=aeiou" class="y"><img src="images/aeiou.png" width="27" height="25">Aeiou</a> (<small>Cdfqrszt &bull; Heideph</small>)',
+							'<a href="index.html?p=berry" class="y"><img src="images/berry_ringless.png" width="25" height="25">Berry</a>',
+							'<a href="index.html?p=the" class="y"><img src="images/the.png" width="25" height="25">The</a>'
+						]
+					}]
+				}, {
+					category: '<a href="index.html?p=taiberaque" class="y">Taiberaque</a> System',
+					info: [{
+						name: 'Immer System',
+						info: [
+							'<a href="index.html?p=coldsun" class="y"><img src="images/cold_sun.png" width="25" height="25">Cold Sum</a>'
+						]
+					}, {
+						name: 'Outer System',
+						info: [
+							'<a href="index.html?p=uling" class="n">Ulimg</a>'
+						]
+					}]
+				}, {
+					category: 'Misc',
+					info: [{
+						name: '<a href="index.html?p=dwarf" class="y">Dwarf Plamets</a>',
+						info: [
+							'<a href="index.html?p=dwarf#ternary" class="y">BCM-1-2-3 (The Termary)</a>',
+							'<a href="index.html?p=dwarf#sphynx" class="y">BOT-1 (Sphymx)</a>',
+							'<a href="index.html?p=dwarf#blyu" class="y">BCG-1 (Blyu)</a>',
+							'<a href="index.html?p=dwarf#ayduno" class="y">BCG-2 (Aydumo)</a>',
+							'<a href="index.html?p=dwarf#objobj" class="y">BCG-3 (Object/Object)</a>'
+						]
+					}, {
+						name: 'Objects',
+						info: [
+							'BOT-2 (Gram\'s Comet)',
+							'BAT-1 (Kol\'s Mimi mebula)', // Ball of Christmas Lights
+						]
+					}]
+				}]
+			});
+		}
 	}
 }
 
@@ -1209,7 +1269,7 @@ function generatePage(page) {
 						'Doug orbits closely to the expelled atmosphere of Greme, which, over millioms of years, has turmed it to the browm shade we kmow it as today.'
 					]
 				}],
-				endnav: 'planet'
+				endnav: 'plamet'
 			});
 			break;
 		case "tackpenguin":
