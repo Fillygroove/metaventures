@@ -22,11 +22,11 @@ function makePage(page) {
 	}
 
 	let metaCharset = document.createElement('meta');
-	metaCharset.charset = "utf-8";
+	metaCharset.charset = 'utf-8';
 	
 	let metaName = document.createElement('meta');
-	metaName.content = "Metaventures is the name of a collective of ideas; Aeroventures, Polyventures, and more!";
-	metaName.name = "description";
+	metaName.content = 'Metaventures is the name of a collective of ideas; Aeroventures, Polyventures, and more!';
+	metaName.name = 'description';
 	
 	let metaTitle = document.createElement('title');
 	metaTitle.innerHTML = `${pageName} - Metaventures`;
@@ -37,7 +37,7 @@ function makePage(page) {
 	metaFavicon.href = `${titleDir}favicon.png`;
 	
 	let metaCss = document.createElement('link');
-	metaCss.rel = "stylesheet";
+	metaCss.rel = 'stylesheet';
 	metaCss.href = `${titleDir}index.css`;
 	
 	document.head.append(metaCharset, metaName, metaTitle, metaFavicon, metaCss);
@@ -49,72 +49,28 @@ function makePage(page) {
 
 	let mainAVTitle = document.createElement('div');
 	mainAVTitle.className = 'aeroventures-title';
-	if (page == "wiki") {
-		mainAVTitle.innerHTML = `<a href="${titleDir}index.html" id="aeroventures-title">Metaventu</a><a href="../comics/index.html?c=dk" id="aeroventures-title">r</a><a href="${titleDir}index.html" id="aeroventures-title">es!</a>`;
+	if (page == 'wiki') {
+		mainAVTitle.innerHTML = `<a href='${titleDir}index.html' id='aeroventures-title'>Metaventu</a><a href='../comics/index.html?c=dk' id='aeroventures-title'>r</a><a href='${titleDir}index.html' id='aeroventures-title'>es!</a>`;
 	} else {
-		mainAVTitle.innerHTML = `<a href="${titleDir}index.html" id="aeroventures-title">Metaventures!</a>`;
+		mainAVTitle.innerHTML = `<a href='${titleDir}index.html' id='aeroventures-title'>Metaventures!</a>`;
 	}
 	
 	mainAVThin.append(mainAVTitle);
-		
+	
 	let dropdownDiv = document.createElement('div');
 	dropdownDiv.className = 'w3-bar aero-dblue';
 	
-	let comicsDropdown = document.createElement('div');
-	comicsDropdown.className = "w3-dropdown-hover w3-mobile aero-blue"
-	comicsDropdown.href = "./wiki/index.html?p=main";
-	
-	let comicsButton = document.createElement('button');
-	comicsButton.className = "w3-button";
-	comicsButton.innerHTML = "The Comics &#9662;";
-	
-	let comicList = document.createElement('div');
-	comicList.className = "w3-dropdown-content w3-card-4 aero-blue";
-	
-	for (let i = 1; i < 15; i++) {
-		let comic = document.createElement('a');
-		comic.className = "w3-bar-item w3-border w3-button w3-mobile";
-		let comicLink, comicTitle;
-		switch (i) {
-			case 11:
-				comicLink = "10.5";
-				comicTitle = "10.5";
-				break;
-			case 12:
-				comicLink = "h";
-				comicTitle = "Halloween Edition";
-				break;
-			case 13:
-				comicLink = "11";
-				comicTitle = "11";
-				break;
-			case 14:
-				comicLink = "12-1";
-				comicTitle = "12, Part 1";
-				break;
-			default:
-				comicLink = `${i}`;
-				comicTitle = `${i}`;
-				break;
-		}
-		comic.href = `${comicDir}index.html?c=${comicLink}`;
-		comic.innerHTML = `Aeroventures ${comicTitle}`;
-		comicList.append(comic);
+	function makeButton(html, color, link) {
+		let dropdown = document.createElement('a');
+		dropdown.className = `w3-bar-item w3-button w3-mobile ${color}`;
+		dropdown.href = link;
+		dropdown.innerHTML = html;
+		dropdownDiv.append(dropdown);
 	}
-	
-	comicsDropdown.append(comicsButton, comicList);
-	
-	let wikiTab = document.createElement('a');
-	wikiTab.className = "w3-bar-item w3-button w3-mobile pon-pink";
-	wikiTab.href = `${wikiDir}index.html?p=main`;
-	wikiTab.innerHTML = "The Wiki";
-	
-	let discord = document.createElement('a');
-	discord.className = "w3-bar-item w3-button w3-mobile nyork-green";
-	discord.href = "https://discord.gg/xxRvYERs48";
-	discord.innerHTML = "The Discord";
 
-	dropdownDiv.append(comicsDropdown, wikiTab, discord);
+	makeButton('The Comics', 'aero-blue', `${comicDir}index.html?c=choose-av`);
+	makeButton('The Wiki', 'pon-pink', `${wikiDir}index.html?p=main`);
+	makeButton('The Discord', 'nyork-green', 'https://discord.gg/xxRvYERs48');
 
 	mainAVThin.append(dropdownDiv);
 	
