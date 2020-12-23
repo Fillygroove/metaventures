@@ -1285,6 +1285,16 @@ function generatePage(page) {
 				]
 			});
 			break;
+		case "shrine":
+			pageTemplate({
+				name: 'Aposteel\'s Shrine',
+				introText: [
+					'<i style = "background-color: #555555; padding-left: 2em;">"yo"</i></br><i style = "background-color: #555555; padding-left: 2.5em;"> - Panzer, our savior!</i>',
+					'<img src="images/shrine.jpg" alt="shrine.jpg" width="250" height="250" class="pixel" style="float: right; background-color: #555555;"></img>',
+					'by apo don\'t STEEL'
+				]
+			});
+			break;
 		case "dino":
 			let scream = '';
 			for (let i = 0; i < 2000; i++) scream += 'A';
