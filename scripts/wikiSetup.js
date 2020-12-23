@@ -1162,6 +1162,8 @@ function generatePage(page) {
 			});
 			break;
 		case "greme":
+			document.getElementsByClassName('aeroventures-title')[0].innerHTML = '<a href="../index.html" id="aeroventures-title">Metave<a href="index.html?p=m" id="aeroventures-title">m</a>tu</a><a href="../comics/index.html?c=dk" id="aeroventures-title">r</a><a href="../index.html" id="aeroventures-title">es!</a>';
+			
 			pageTemplate({
 				name: '<a href="index.html?p=grene">Greme</a>',
 				file: ['greme.png', 'pixel'],
@@ -1315,6 +1317,17 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'The Vault Map',
 				introText: dirs
+			});
+			break;
+		case "m":
+			let mstring = ''
+			for (let i = 0; i < 5000; i++) mstring += 'm';
+			pageTemplate({
+				name: 'List of M',
+				introText: [
+					mstring,
+					'tasty'
+				]
 			});
 			break;
 /*		case "debug":
