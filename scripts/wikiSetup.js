@@ -597,7 +597,7 @@ function generatePage(page) {
 				introText: [
 					'Grene is the first planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, before <a href="index.html?p=doug" class="y">Doug</a>. It is about a fifty-fifth of the size of the Hot Sun. Grene can barely be seen from <a href="index.html?p=ert" class="y">Ert</a>, looking like a sun spot due to how close it is to the Hot Sun, but since it revolves around the Hot Sun rather quickly, it looks like a sun spot that moves extremely quickly. It can only be observed by special means, specifically in day with special equipment.',
 					'Grene\'s surface is mostly composed of silicon and an unknown material, with the side of the planet facing the Hot Sun consisting of molten silicon. The atmosphere contains evaporated silicon, along with another unknown material that causes a cycle similar to the water cycle on <a href="index.html?p=ert" class="y">Ert</a>, <a href="index.html?p=george" class="y">George</a>, and <a href="index.html?p=cea" class="y">Cea</a>. Said atmosphere is being stripped off of the planet by the solar wind, being blasted off, leaving a trail that constantly leaves the planet, facing away from the Hot Sun. A year on Grene lasts 20 hours. Days can not be measured due to the planet being tidally locked to the Hot Sun.',
-					'The term for describing something related to Grene is Grēnian.'
+					'The term for describing something related to Grene is Grenian.'
 				],
 				categories: [{
 					name: 'Characteristics',
@@ -1249,7 +1249,7 @@ function generatePage(page) {
 				introText: [
 					'Greme is the first plamet im the <a href="index.html?p=hotsun" class="y">Hot Sum</a> system, before <a href="index.html?p=doug" class="y">Doug</a>. It is about a fifty-fifth of the size of the Hot Sum. Greme cam barely be seem from <a href="index.html?p=ert" class="y">Ert</a>, lookimg like a sum spot due to how close it is to the Hot Sum, but simce it revolves aroumd the Hot Sum rather quickly, it looks like a sum spot that moves extremely quickly. It cam omly be observed by special meams, specifically im day with special equipmemt.',
 					'Greme\'s surface is mostly composed of silicom amd am umkmowm material, with the side of the plamet facimg the Hot Sum comsistimg of moltem silicom. The atmosphere comtaims evaporated silicom, alomg with amother umkmowm material that causes a cycle similar to the water cycle om <a href="index.html?p=ert" class="y">Ert</a>, <a href="index.html?p=george" class="y">George</a>, amd <a href="index.html?p=cea" class="y">Cea</a>. Said atmosphere is beimg stripped off of the plamet by the solar wimd, beimg blasted off, leavimg a trail that comstamtly leaves the plamet, facimg away from the Hot Sum. A year om Greme lasts 20 hours. Days cam mot be measured due to the plamet beimg tidally locked to the Hot Sum.',
-					'The term for describimg somethimg related to Greme is Grēmiam.'
+					'The term for describimg somethimg related to Greme is Gremiam.'
 				],
 				categories: [{
 					name: 'Characteristics',
