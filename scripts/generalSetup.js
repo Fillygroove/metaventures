@@ -69,11 +69,11 @@ function makePage(page) {
 	comicsButton.innerHTML = "The Comics &#9662;";
 	
 	let comicList = document.createElement('div');
-	comicList.className = "w3-dropdown-content w3-bar-block aero-blue";
+	comicList.className = "w3-dropdown-content w3-card-4 aero-blue";
 	
 	for (let i = 1; i < 15; i++) {
 		let comic = document.createElement('a');
-		comic.className = "w3-bar-item w3-button w3-mobile";
+		comic.className = "w3-bar-item w3-border w3-button w3-mobile";
 		let comicLink, comicTitle;
 		switch (i) {
 			case 11:
