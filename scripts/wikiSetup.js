@@ -329,7 +329,7 @@ function pageTemplate(page) {
 					info: [{
 						name: 'Inner System',
 						info: [
-							'<a href="index.html?p=grene" class="y"><img src="images/grene.png" width="25" height="25"></img>Grēne</a>',
+							'<a href="index.html?p=grene" class="y"><img src="images/grene.png" width="25" height="25"></img>Grene</a>',
 							'<a href="index.html?p=doug" class="y"><img src="images/doug.png" width="25" height="25">Doug</a> (<small><img src="images/h.png" width="20" height="20">H</small>)',
 							'<a href="index.html?p=pilf" class="y"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>',
 							'<a href="index.html?p=ert" class="y"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedron</a></small>)',
@@ -341,8 +341,8 @@ function pageTemplate(page) {
 						info: [
 							'<a href="index.html?p=macaroni" class="n">Macaroni Belt</a>',
 							'<a href="index.html?p=mac" class="y"><img src="images/mac.png" width="35" height="25">Mac</a> (<small><a href="index.html?p=wop" class="y"><img src="images/wop.png" width="23" height="20">World of Pain</a> &bull; <img src="images/dough.png" width="24" height="20">Dough</small>)',
-							'<a href="index.html?p=berry" class="y"><img src="images/berry_ringless.png" width="25" height="25">Berry</a>',
 							'<a href="index.html?p=aeiou" class="y"><img src="images/aeiou.png" width="27" height="25">Aeiou</a> (<small>Cdfqrszt &bull; Heideph</small>)',
+							'<a href="index.html?p=berry" class="y"><img src="images/berry_ringless.png" width="25" height="25">Berry</a>',
 							'<a href="index.html?p=the" class="y"><img src="images/the.png" width="25" height="25">The</a>'
 						]
 					}]
@@ -356,7 +356,7 @@ function pageTemplate(page) {
 					}, {
 						name: 'Outer System',
 						info: [
-							'<a href="index.html?p=gigantrax" class="n">Gigantrax</a>'
+							'<a href="index.html?p=uling" class="n">Uling</a>'
 						]
 					}]
 				}, {
@@ -479,7 +479,7 @@ function generatePage(page) {
 				}, {
 					name: 'Satellites',
 					info: [
-						'<a href="index.html?p=grene" class="y">Grēne</a>',
+						'<a href="index.html?p=grene" class="y">Grene</a>',
 						'<a href="index.html?p=doug" class="y">Doug</a>',
 						'<a href="index.html?p=pilf" class="y">Pilf</a>',
 						'<a href="index.html?p=ert" class="y">Ert</a> / <a href="index.html?p=george" class="y">George</a>',
@@ -513,7 +513,7 @@ function generatePage(page) {
 			break;
 		case "grene":
 			pageTemplate({
-				name: 'Grēne',
+				name: '<a href="index.html?p=greme">Grene</a>',
 				file: ['grene.png', 'pixel'],
 				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
@@ -535,26 +535,26 @@ function generatePage(page) {
 					info: ['None']
 				}],
 				introText: [
-					'Grēne is the first planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, before <a href="index.html?p=doug" class="y">Doug</a>. It is about a fifty-fifth of the size of the Hot Sun. Grēne can barely be seen from <a href="index.html?p=ert" class="y">Ert</a>, looking like a sun spot due to how close it is to the Hot Sun, but since it revolves around the Hot Sun rather quickly, it looks like a sun spot that moves extremely quickly. It can only be observed by special means, specifically in day with special equipment.',
-					'Grēne\'s surface is mostly composed of silicon and an unknown material, with the side of the planet facing the Hot Sun consisting of molten silicon. The atmosphere contains evaporated silicon, along with another unknown material that causes a cycle similar to the water cycle on <a href="index.html?p=ert" class="y">Ert</a>, <a href="index.html?p=george" class="y">George</a>, and <a href="index.html?p=cea" class="y">Cea</a>. Said atmosphere is being stripped off of the planet by the solar wind, being blasted off, leaving a trail that constantly leaves the planet, facing away from the Hot Sun. A year on Grēne lasts 20 hours. Days can not be measured due to the planet being tidally locked to the Hot Sun.',
-					'The term for describing something related to Grēne is Grēnian.'
+					'Grene is the first planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, before <a href="index.html?p=doug" class="y">Doug</a>. It is about a fifty-fifth of the size of the Hot Sun. Grene can barely be seen from <a href="index.html?p=ert" class="y">Ert</a>, looking like a sun spot due to how close it is to the Hot Sun, but since it revolves around the Hot Sun rather quickly, it looks like a sun spot that moves extremely quickly. It can only be observed by special means, specifically in day with special equipment.',
+					'Grene\'s surface is mostly composed of silicon and an unknown material, with the side of the planet facing the Hot Sun consisting of molten silicon. The atmosphere contains evaporated silicon, along with another unknown material that causes a cycle similar to the water cycle on <a href="index.html?p=ert" class="y">Ert</a>, <a href="index.html?p=george" class="y">George</a>, and <a href="index.html?p=cea" class="y">Cea</a>. Said atmosphere is being stripped off of the planet by the solar wind, being blasted off, leaving a trail that constantly leaves the planet, facing away from the Hot Sun. A year on Grene lasts 20 hours. Days can not be measured due to the planet being tidally locked to the Hot Sun.',
+					'The term for describing something related to Grene is Grēnian.'
 				],
 				categories: [{
 					name: 'Characteristics',
 					info: [
-						'Grēne is a Chthonian planet that mainly consists of a silicon-based material, along with a multitude of undiscovered elements, although aluminum is confirmed due to probes being sent there and promptly being melted by how hot the planet is. Most attempts of uncovering more elements only makes us more sure that aluminum is present on Grēne. Grēne is tidally locked to the Hot Sun, meaning that one side of the planet always faces it. Due to solar winds hitting the atmosphere, the atmosphere is physically stripped from the planet, causing a trail that affects Doug, and maybe even <a href="index.html?p=pilf" class="y">Pilf</a>.',
+						'Grene is a Chthonian planet that mainly consists of a silicon-based material, along with a multitude of undiscovered elements, although aluminum is confirmed due to probes being sent there and promptly being melted by how hot the planet is. Most attempts of uncovering more elements only makes us more sure that aluminum is present on Grene. Grene is tidally locked to the Hot Sun, meaning that one side of the planet always faces it. Due to solar winds hitting the atmosphere, the atmosphere is physically stripped from the planet, causing a trail that affects Doug, and maybe even <a href="index.html?p=pilf" class="y">Pilf</a>.',
 						'Due to the circulation in the atmosphere, there are strands of an unknown material that glows a bright blue. From far away, this causes the planet to appear as if it were the color green.',
 						'Pictured on the bottom of the provided image is a storm, which has been colloquially called the Great Pants Color Spot.'
 					]
 				}, {
 					name: 'Interactions With the Hot Sun',
 					info: [
-						'Grēne orbits around the Hot Sun very closely, causing it to be tidally locked and causing the silicon-based material on Grēne to melt, and even evaporate into its ever diminishing atmosphere. It is theorized that the evaporated silicon material travels along the visible blue currents on the planet, and raining back down on the other side. Due to the molten silicon, the solid rock on the side facing away from the Hot Sun travels back to the hot side of the planet.'
+						'Grene orbits around the Hot Sun very closely, causing it to be tidally locked and causing the silicon-based material on Grene to melt, and even evaporate into its ever diminishing atmosphere. It is theorized that the evaporated silicon material travels along the visible blue currents on the planet, and raining back down on the other side. Due to the molten silicon, the solid rock on the side facing away from the Hot Sun travels back to the hot side of the planet.'
 					]
 				}, {
 					name: 'Interactions With Doug',
 					info: [
-						'Doug orbits closely to the expelled atmosphere of Grēne, which, over millions of years, has turned it to the brown shade we know it as today.'
+						'Doug orbits closely to the expelled atmosphere of Grene, which, over millions of years, has turned it to the brown shade we know it as today.'
 					]
 				}],
 				endnav: 'planet'
@@ -585,7 +585,7 @@ function generatePage(page) {
 					info: ['Worms (Unconfirmed)']
 				}],
 				introText: [
-					'Doug is the second planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=grene" class="y">Grēne</a> and before <a href="index.html?p=pilf" class="y">Pilf</a>. Doug can be seen in the night skies of <a href="index.html?p=ert" class="y">Ert</a> during the evenings, although it is hard to see due to it not having much of a reflective surface. As such, Doug is often forgotten and even hated due to its status as a planet.',
+					'Doug is the second planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=grene" class="y">Grene</a> and before <a href="index.html?p=pilf" class="y">Pilf</a>. Doug can be seen in the night skies of <a href="index.html?p=ert" class="y">Ert</a> during the evenings, although it is hard to see due to it not having much of a reflective surface. As such, Doug is often forgotten and even hated due to its status as a planet.',
 					'The term for describing something related to Doug is Forgettable.'
 				],
 				categories: [{
@@ -595,11 +595,11 @@ function generatePage(page) {
 						'Doug, like all worlds in the inner system, is a terrestrial planet. It is a deep brown and yellow rocky body covered in large dark craters and volcanic planita. Doug is about one hundredth the size of the Hot Sun. It has a small axial tilt of about 0.05 radians and rotates once every 20 days in the opposite direction from all other worlds.',
 						'<h3>Geography</h3>',
 						'Doug\'s most notable features are its diverse patches of yellows, tans, and browns. It features a few massive craters that scar the surface with dark patches. Its surface is an entirely solid landscape full of jagged mountains, ridges, plains, and craters from ancient collisions.',
-						'Doug\'s surface color is thought to be formed from Grēne\'s ejected atmosphere, reacting with exposed regolith and turning it brown. The varied colors on Doug can be used to find out the age of the surface, darker sections being the newest and with lighter sections being the oldest.',
+						'Doug\'s surface color is thought to be formed from Grene\'s ejected atmosphere, reacting with exposed regolith and turning it brown. The varied colors on Doug can be used to find out the age of the surface, darker sections being the newest and with lighter sections being the oldest.',
 						'The largest craters of Doug span hundreds of kilometers, and are often accompanied by flat featureless plains of newer rock, suggesting at one point these vast sections were molten presumably by impacts or from volcanism.',
 						'Near the south pole of Doug lies a crater that is light in color. This spot has not been given a label, due to it only being observed once.',
 						'<h3>"Atmosphere" and Climate</h3>',
-						'Doug has a very thin atmosphere, although it\'s not enough to cause a visible sky. Said atmosphere is theorized to have come from Grēne\'s atmosphere, along with the trapping of other gasses.',
+						'Doug has a very thin atmosphere, although it\'s not enough to cause a visible sky. Said atmosphere is theorized to have come from Grene\'s atmosphere, along with the trapping of other gasses.',
 						'<h3>Magnetic Field</h3>',
 						'Doug lacks a proper magnetosphere, which means it can\'t block solar radiation from bombarding its surface. Wear sunscreen.',
 						'<h3>Internal Structure</h3>',
@@ -609,9 +609,9 @@ function generatePage(page) {
 				}, {
 					name: 'Planetary Interactions',
 					info: [
-						'Doug\'s orbit is often dragged around a lot by the other nearby planets, most noteworthy is Pilf and the Ert and <a href="index.html?p=george" class="y">George</a> system. Grēne may have an impact depending on when it aligns itself with the other planets. Despite this, its orbit remains stable.',
-						'<h3>Interactions With Grēne</h3>',
-						'Doug orbits closely to the expelled atmosphere of Grēne, which, over millions of years, has turned it to the brown shade we know it as today.',
+						'Doug\'s orbit is often dragged around a lot by the other nearby planets, most noteworthy is Pilf and the Ert and <a href="index.html?p=george" class="y">George</a> system. Grene may have an impact depending on when it aligns itself with the other planets. Despite this, its orbit remains stable.',
+						'<h3>Interactions With Grene</h3>',
+						'Doug orbits closely to the expelled atmosphere of Grene, which, over millions of years, has turned it to the brown shade we know it as today.',
 						'<h3>Interactions With Ert</h3>',
 						'Doug indirectly interacted with the cultures on Ert, so technically it made one.'
 					]
@@ -736,7 +736,7 @@ function generatePage(page) {
 						'Ert has a breathable atmosphere consisting of nitrogen and oxygen. There are trace amounts of carbon dioxide and a variable amount of water vapor. There\'s also a miniscule amount of Nagic in the form of aerosols.',
 						'Ert\'s atmosphere is capable of a water cycle, which involves water evaporating, having a disco party in the clouds, and then falling asleep, heading back towards the ground. Obviously that isn\'t exactly how it goes but it\'s close enough.',
 						'<h3>Internal Structure</h3>',
-						'Ert has volcanism on its surface, suggesting an active interior and a molten core. Its surface is differentiated by many large land masses, which is likely an indicator of plate tectonics. Ert is the fourth densest planet in the Hot Sun system, preceding George, <a href="index.html?p=grene" class="y">Grēne</a>, and <a href="index.html?p=the" class="y">The</a>.',
+						'Ert has volcanism on its surface, suggesting an active interior and a molten core. Its surface is differentiated by many large land masses, which is likely an indicator of plate tectonics. Ert is the fourth densest planet in the Hot Sun system, preceding George, <a href="index.html?p=grene" class="y">Grene</a>, and <a href="index.html?p=the" class="y">The</a>.',
 						'Ert\'s interior is differentiated by density - lighter material on its surface and denser metallic materials towards its core. The heat inside is generated by high pressures and decay of radioactive elements.',
 						'The core of Ert is said to be rich in Yolktonium, a sought after metal for forging some of the strongest materials in the world. In <a href="../comics/index.html?c=12-1" class="c">Aeroventures 12, Part 1</a>, <a href="index.html?p=nutstradamnus" class="n">Nutstradamnus</a> attempts to drill towards the core in order to obtain it.',
 						'<h3>Magnetic Field</h3>',
@@ -854,7 +854,7 @@ function generatePage(page) {
 					info: ['Confirmed but Unknown']
 				}],
 				introText: [
-					'Mac is the sixth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=cea" class="y">Cea</a> and before <a href="index.html?p=berry" class="y">Berry</a>. It is the largest planet in the system. It is a gas giant, with a diameter that is a sixth and a half of the size of the Hot Sun, and has a prime vertical that is a sixth and three fourths of the size of the Hot Sun. Due to its size, it is visible from <a href="index.html?p=ert" class="y">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
+					'Mac is the sixth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=cea" class="y">Cea</a> and before <a href="index.html?p=aeiou" class="y">Aeiou</a>. It is the largest planet in the system. It is a gas giant, with a diameter that is a sixth and a half of the size of the Hot Sun, and has a prime vertical that is a sixth and three fourths of the size of the Hot Sun. Due to its size, it is visible from <a href="index.html?p=ert" class="y">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
 					'Mac is mostly composed of Hydrogen, being in the form of gas and plasma, and Helium, with a good amount of Iodine and Neon, along with a small amount of other materials and elements. Due to Mac\'s rotation, the planet has a huge bulge on the horizon, experiencing a day once every 3.5 hours. Mac orbit lies inside of an asteroid belt.',
 					'The term for describing something related to Mac is Donian.'
 				],
@@ -913,37 +913,6 @@ function generatePage(page) {
 				endnav: 'planet'
 			});
 			break;
-		case "berry":
-			pageTemplate({
-				warning: 'stub',
-				name: 'Berry',
-				file: ['berry_ringless.png', 'pixel'],
-				dims: ['330', '330'],
-				caption: 'Pictured in natural color, illustration made by Gramiatar.',
-				heading: 'Designations',
-				navbox: [{
-					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
-				}, {
-					name: 'Satellites',
-					info: ['None']
-				}, {
-					name: 'Name Origin',
-					info: ['Unknown']
-				}, {
-					name: 'Classification',
-					info: ['Terrestrial Object']
-				}, {
-					name: 'Life',
-					info: ['None']
-				}],
-				introText: [
-					'Berry is the seventh planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=mac" class="y">Mac</a> and before <a href="index.html?p=aeiou" class="y">Aeiou</a>.',
-					'The term for referring to something related to Berry is Blyuian.'
-				],
-				endnav: 'planet'
-			});
-			break;
 		case "aeiou":
 			pageTemplate({
 				warning: 'stub',
@@ -969,8 +938,39 @@ function generatePage(page) {
 					info: ['None']
 				}],
 				introText: [
-					'Aeiou is the eigth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=berry" class="y">Berry</a> and before <a href="index.html?p=the" class="y">The</a>.',
+					'Aeiou is the seventh planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=mac" class="y">Mac</a> and before <a href="index.html?p=berry" class="y">Berry</a>.',
 					'The term for referring to something related to Aeiou is Aeiouian.'
+				],
+				endnav: 'planet'
+			});
+			break;
+		case "berry":
+			pageTemplate({
+				warning: 'stub',
+				name: 'Berry',
+				file: ['berry_ringless.png', 'pixel'],
+				dims: ['330', '330'],
+				caption: 'Pictured in natural color, illustration made by Gramiatar.',
+				heading: 'Designations',
+				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
+				}, {
+					name: 'Satellites',
+					info: ['None']
+				}, {
+					name: 'Name Origin',
+					info: ['Unknown']
+				}, {
+					name: 'Classification',
+					info: ['Terrestrial Object']
+				}, {
+					name: 'Life',
+					info: ['None']
+				}],
+				introText: [
+					'Berry is the eigth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=aeiou" class="y">Aeiou</a> and before <a href="index.html?p=the" class="y">The</a>.',
+					'The term for referring to something related to Berry is Blyuian.'
 				],
 				endnav: 'planet'
 			});
@@ -1141,7 +1141,7 @@ function generatePage(page) {
 				warning: 'stub',
 				name: 'Dwarf Planets',
 				introText: [
-					'Dwarf Planets are smol lol'
+					'A Dwarf Planet is an object in space that does not fit the criteria of a planet, and, as such, is not important enough '
 				],
 				categories: [{
 					name: 'List of Dwarf Planets',
@@ -1153,9 +1153,58 @@ function generatePage(page) {
 						'<h3 id="blyu">BCG-1 (Blyu)</h3>',
 						'Blyu is a dwarf planet reminiscent of a gas giant that is located between the Cold Sun and Gigantrax.',
 						'<h3 id="ayduno">BCG-2 (Ayduno)</h3>',
-						'Ayduno is a dwarf planet that is located between the Cold Sun and Gigantrax. It rotates retrograde to its orbit, and has rings that move around its equator like a hula hoop.',
+						'Ayduno is a dwarf planet that is located between the Cold Sun and Gigantrax. Ayduno is a terrestrial world, with a makeup similar to <a href="index.html?p=george" class="y">George</a>, with a lot of land and little to no water. Ayduno\'s tilt is very shallow. The prescence of a magnetic field is unknown, although if it did have one, it would be weak. Ayduno features 3 rings, although they aren\'t the typical rings. These rings move around the planet in a circular motion, and the center ring periodically crashes into the planet every couple of hours, mostly on the equator.',
 						'<h3 id="objobj">BCG-3 (Object/Object)</h3>',
 						'Object/Object is a dwarf planet that is located between the Cold Sun and Gigantrax. It appears to be two miniature gas giants, connected to each other. Whether or not these planets are seperate or not is unknown.'
+					]
+				}],
+				endnav: 'planet'
+			});
+			break;
+		case "greme":
+			pageTemplate({
+				name: '<a href="index.html?p=grene">Greme</a>',
+				file: ['greme.png', 'pixel'],
+				dims: ['330', '330'],
+				caption: 'Pictured im matural color, illustratiom made by Gramiatar.',
+				heading: 'Desigmatioms',
+				navbox: [{
+					name: 'Orbits',
+					info: ['<a href="index.html?p=hotsun" class="y">Hot Sum</a>']
+				}, {
+					name: 'Satellites',
+					info: ['mome']
+				}, {
+					name: 'mame Origim',
+					info: ['Umkmowm']
+				}, {
+					name: 'Classificatiom',
+					info: ['Chthomiam']
+				}, {
+					name: 'Life',
+					info: ['mome']
+				}],
+				introText: [
+					'Greme is the first plamet im the <a href="index.html?p=hotsun" class="y">Hot Sum</a> system, before <a href="index.html?p=doug" class="y">Doug</a>. It is about a fifty-fifth of the size of the Hot Sum. Greme cam barely be seem from <a href="index.html?p=ert" class="y">Ert</a>, lookimg like a sum spot due to how close it is to the Hot Sum, but simce it revolves aroumd the Hot Sum rather quickly, it looks like a sum spot that moves extremely quickly. It cam omly be observed by special meams, specifically im day with special equipmemt.',
+					'Greme\'s surface is mostly composed of silicom amd am umkmowm material, with the side of the plamet facimg the Hot Sum comsistimg of moltem silicom. The atmosphere comtaims evaporated silicom, alomg with amother umkmowm material that causes a cycle similar to the water cycle om <a href="index.html?p=ert" class="y">Ert</a>, <a href="index.html?p=george" class="y">George</a>, amd <a href="index.html?p=cea" class="y">Cea</a>. Said atmosphere is beimg stripped off of the plamet by the solar wimd, beimg blasted off, leavimg a trail that comstamtly leaves the plamet, facimg away from the Hot Sum. A year om Greme lasts 20 hours. Days cam mot be measured due to the plamet beimg tidally locked to the Hot Sum.',
+					'The term for describimg somethimg related to Greme is Grēmiam.'
+				],
+				categories: [{
+					name: 'Characteristics',
+					info: [
+						'Greme is a Chthomiam plamet that maimly comsists of a silicom-based material, alomg with a multitude of umdiscovered elememts, although alumimum is comfirmed due to probes beimg semt there amd promptly beimg melted by how hot the plamet is. Most attempts of umcoverimg more elememts omly makes us more sure that alumimum is presemt om Greme. Greme is tidally locked to the Hot Sum, meamimg that ome side of the plamet always faces it. Due to solar wimds hittimg the atmosphere, the atmosphere is physically stripped from the plamet, causimg a trail that affects Doug, amd maybe evem <a href="index.html?p=pilf" class="y">Pilf</a>.',
+						'Due to the circulatiom im the atmosphere, there are stramds of am umkmowm material that glows a bright blue. From far away, this causes the plamet to appear as if it were the color greem.',
+						'Pictured om the bottom of the provided image is a storm, which has beem colloquially called the Great Pamts Color Spot.'
+					]
+				}, {
+					name: 'Imteractioms With the Hot Sum',
+					info: [
+						'Greme orbits aroumd the Hot Sum very closely, causimg it to be tidally locked amd causimg the silicom-based material om Greme to melt, amd evem evaporate imto its ever dimimishimg atmosphere. It is theorized that the evaporated silicom material travels alomg the visible blue curremts om the plamet, amd raimimg back dowm om the other side. Due to the moltem silicom, the solid rock om the side facimg away from the Hot Sum travels back to the hot side of the plamet.'
+					]
+				}, {
+					name: 'Imteractioms With Doug',
+					info: [
+						'Doug orbits closely to the expelled atmosphere of Greme, which, over millioms of years, has turmed it to the browm shade we kmow it as today.'
 					]
 				}],
 				endnav: 'planet'
@@ -1258,6 +1307,12 @@ function generatePage(page) {
 				introText: dirs
 			});
 			break;
+/*		case "debug":
+			pageTemplate({
+				name: 'DEBUG',
+				introText: ['<span class="rainbow">WAAAAAAAAAAAAAAA</span>']
+			});
+			break;*/
 		default:
 			let quoteNumber = Math.floor(Math.random() * 7);
 			let quote;
