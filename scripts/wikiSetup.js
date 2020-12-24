@@ -366,9 +366,9 @@ function pageTemplate(page) {
 						info: [
 							'<a href="index.html?p=dwarf#ternary" class="y">BCM-1-2-3 (The Ternary)</a>',
 							'<a href="index.html?p=dwarf#sphynx" class="y">BOT-1 (Sphynx)</a>',
-							'<a href="index.html?p=dwarf#blyu" class="y">BCG-1 (Blyu)</a>',
-							'<a href="index.html?p=dwarf#ayduno" class="y">BCG-2 (Ayduno)</a>',
-							'<a href="index.html?p=dwarf#objobj" class="y">BCG-3 (Object/Object)</a>'
+							'<a href="index.html?p=dwarf#blyu" class="y">BCU-1 (Blyu)</a>',
+							'<a href="index.html?p=dwarf#ayduno" class="y">BCU-2 (Ayduno)</a>',
+							'<a href="index.html?p=dwarf#objobj" class="y">BCU-3 (Object/Object)</a>'
 						]
 					}, {
 						name: 'Objects',
@@ -426,9 +426,9 @@ function pageTemplate(page) {
 						info: [
 							'<a href="index.html?p=dwarf#ternary" class="y">BCM-1-2-3 (The Termary)</a>',
 							'<a href="index.html?p=dwarf#sphynx" class="y">BOT-1 (Sphymx)</a>',
-							'<a href="index.html?p=dwarf#blyu" class="y">BCG-1 (Blyu)</a>',
-							'<a href="index.html?p=dwarf#ayduno" class="y">BCG-2 (Aydumo)</a>',
-							'<a href="index.html?p=dwarf#objobj" class="y">BCG-3 (Object/Object)</a>'
+							'<a href="index.html?p=dwarf#blyu" class="y">BCU-1 (Blyu)</a>',
+							'<a href="index.html?p=dwarf#ayduno" class="y">BCU-2 (Aydumo)</a>',
+							'<a href="index.html?p=dwarf#objobj" class="y">BCU-3 (Object/Object)</a>'
 						]
 					}, {
 						name: 'Objects',
@@ -544,7 +544,8 @@ function generatePage(page) {
 						'<a href="index.html?p=grene" class="y">Grene</a>',
 						'<a href="index.html?p=doug" class="y">Doug</a>',
 						'<a href="index.html?p=cea" class="y">Cea</a>',
-						'<a href="index.html?p=ert" class="y">Ert</a> / <a href="index.html?p=george" class="y">George</a>',
+						'<a href="index.html?p=ert" class="y">Ert</a>',
+						'<a href="index.html?p=george" class="y">George</a>',
 						'<a href="index.html?p=pilf" class="y">Pilf</a>',
 						'<a href="index.html?p=mac" class="y">Mac</a>',
 						'<a href="index.html?p=berry" class="y">Berry</a>',
@@ -1171,7 +1172,7 @@ function generatePage(page) {
 					name: 'Satellites',
 					info: [
 						'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
-						'<a href="index.html?p=gigantrax" class="n">Gigantrax</a>',
+						'<a href="index.html?p=uling" class="n">Uling</a>',
 						'<a href="index.html?p=hotsun" class="y">Hot Sun (Binary System)</a>'
 					]
 				}, {
@@ -1212,12 +1213,12 @@ function generatePage(page) {
 						'The Ternary is a system of 3 small dwarf planets, each one labeled as BCM, followed by the order of discovery.',
 						'<h3 id="sphynx">BOT-1 (Sphynx)</h3>',
 						'Sphynx is a dwarf planet that orbits the center of mass of the Ommadawn and Taiberaque systems.',
-						'<h3 id="blyu">BCG-1 (Blyu)</h3>',
-						'Blyu is a dwarf planet reminiscent of a gas giant that is located between the Cold Sun and Gigantrax.',
-						'<h3 id="ayduno">BCG-2 (Ayduno)</h3>',
-						'Ayduno is a dwarf planet that is located between the Cold Sun and Gigantrax. Ayduno is a terrestrial world, with a makeup similar to <a href="index.html?p=george" class="y">George</a>, with a lot of land and little to no water. Ayduno\'s tilt is very shallow. The prescence of a magnetic field is unknown, although if it did have one, it would be weak. Ayduno features 3 rings, although they aren\'t the typical rings. These rings move around the planet in a circular motion, and the center ring periodically crashes into the planet every couple of hours, mostly on the equator.',
-						'<h3 id="objobj">BCG-3 (Object/Object)</h3>',
-						'Object/Object is a dwarf planet that is located between the Cold Sun and Gigantrax. It appears to be two miniature gas giants, connected to each other. Whether or not these planets are seperate or not is unknown.'
+						'<h3 id="blyu">BCU-1 (Blyu)</h3>',
+						'Blyu is a dwarf planet reminiscent of a gas giant that is located between the Cold Sun and Uling.',
+						'<h3 id="ayduno">BCU-2 (Ayduno)</h3>',
+						'Ayduno is a dwarf planet that is located between the Cold Sun and Uling. Ayduno is a terrestrial world, with a makeup similar to <a href="index.html?p=george" class="y">George</a>, with a lot of land and little to no water. Ayduno\'s tilt is very shallow. The prescence of a magnetic field is unknown, although if it did have one, it would be weak. Ayduno features 3 rings, although they aren\'t the typical rings. These rings move around the planet in a circular motion, and the center ring periodically crashes into the planet every couple of hours, mostly on the equator.',
+						'<h3 id="objobj">BCU-3 (Object/Object)</h3>',
+						'Object/Object is a dwarf planet that is located between the Cold Sun and Uling. It appears to be two miniature gas giants, connected to each other. Whether or not these planets are seperate or not is unknown.'
 					]
 				}],
 				endnav: 'planet'
@@ -1447,13 +1448,13 @@ function generatePage(page) {
 				}, {
 					name: 'PS3_33',
 					info: [
-						'Created BCG-1 (Blyu) and BCG-3 (Object/Object).',
+						'Created BCU-1 (Blyu) and BCU-3 (Object/Object).',
 						'Added randomized quotes to the 404 pages.'
 					]
 				}, {
 					name: 'KoleOBlack',
 					info: [
-						'Created BCG-2 (Ayduno) and BBT-1 (Kol\'s Mini Nebula).'
+						'Created BCU-2 (Ayduno) and BBT-1 (Kol\'s Mini Nebula).'
 					]
 				}, {
 					name: 'And You!',

@@ -68,7 +68,7 @@ function makePage(page) {
 	mainAVThin.append(dropdownDiv);
 	
 	scriptLoader = document.createElement('script');
-	scriptLoader.src = (page == 'main' ? '' : '.') + `./scripts/${page}Setup.js`;
+	scriptLoader.src = `${titleDir}scripts/${page}Setup.js`;
 	mainAVThin.append(scriptLoader);
 	
 	mainBody.append(mainAVThin);
