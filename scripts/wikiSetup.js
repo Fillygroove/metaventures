@@ -1359,7 +1359,7 @@ function generatePage(page) {
 			break;
 		case "dino":
 			let scream = '';
-			for (let i = 0; i < 5000; i++) scream += 'A';
+			for (let i = 0; i < 50000; i++) scream += 'A';
 			pageTemplate({
 				name: 'How to stop satellite. by Dinosaurs',
 				introText: [
