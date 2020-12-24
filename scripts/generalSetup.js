@@ -20,13 +20,6 @@ function makePage(page) {
 			pageName = 'Wiki';
 			break;
 	}
-
-	let metaCharset = document.createElement('meta');
-	metaCharset.charset = 'utf-8';
-	
-	let metaName = document.createElement('meta');
-	metaName.content = 'Metaventures is the name of a collective of ideas; Aeroventures, Polyventures, and more!';
-	metaName.name = 'description';
 	
 	let metaTitle = document.createElement('title');
 	metaTitle.innerHTML = `${pageName} - Metaventures`;
@@ -40,7 +33,7 @@ function makePage(page) {
 	metaCss.rel = 'stylesheet';
 	metaCss.href = `${titleDir}index.css`;
 	
-	document.head.append(metaCharset, metaName, metaTitle, metaFavicon, metaCss);
+	document.head.append(metaTitle, metaFavicon, metaCss);
 	
 	let mainBody = document.getElementsByTagName('body')[0];
 	
