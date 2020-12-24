@@ -374,7 +374,7 @@ function pageTemplate(page) {
 						name: 'Objects',
 						info: [
 							'BOT-2 (Gram\'s Comet)',
-							'BAT-1 (Kol\'s Mini Nebula)', // Ball of Christmas Lights
+							'BBT-1 (Kol\'s Mini Nebula)', // Ball of Christmas Lights
 						]
 					}]
 				}]
@@ -434,7 +434,7 @@ function pageTemplate(page) {
 						name: 'Objects',
 						info: [
 							'BOT-2 (Gram\'s Comet)',
-							'BAT-1 (Kol\'s Mimi mebula)', // Ball of Christmas Lights
+							'BBT-1 (Kol\'s Mimi mebula)', // Ball of Christmas Lights
 						]
 					}]
 				}]
@@ -448,7 +448,9 @@ function generatePage(page) {
 		case "main":
 			pageTemplate({
 				name: 'The Wiki',
-				introText: ['Welcome to the official Metaventures Wiki! Here, you can find pages about everything in the Metaventures world so far. Reminder that the Wiki is still a huge work in progress, so expect pages to be empty.'],
+				introText: [
+					'Welcome to the official Metaventures Wiki! Here, you can find pages about everything in the Metaventures world so far. Reminder that the Wiki is still a huge work in progress, so expect pages to be empty.'
+				],
 				categories: [],
 				endnav: 'chars planet'
 			});
@@ -1398,6 +1400,70 @@ function generatePage(page) {
 				introText: ['<span class="rainbow">WAAAAAAAAAAAAAAA</span>']
 			});
 			break;*/
+		case "credits":
+			pageTemplate({
+				name: 'Credits',
+				introText: [
+					'This page is for the people who have contributed to the project in any way. Thank you!',
+				],
+				categories: [{
+					name: 'Text Wall',
+					info: [
+						'Original creator of all things Aeroventures.',
+						'Created all of the comics, with some help in the newer comics.',
+						'Created the icons in the comics section.',
+						'Created the image of Aero used on the wiki.'
+					]
+				}, {
+					name: 'Gramiatar',
+					info: [
+						'Created Grene, Doug, Cea, Ert, George, Pilf, Mac, The, the Macaroni Belt, and provided all of the pixel art on the Wiki.',
+						'Helped out with the comics a lot, along with the creation of some OST!'
+					]
+				}, {
+					name: 'Pixel Origin',
+					info: [
+						'Helped out with the comics and OST!',
+						'Added randomized quotes to the 404 pages.'
+					]
+				}, {
+					name: 'SnapKrakPop',
+					info: [
+						'Helped out with the art!'
+					]
+				}, {
+					name: 'Clarise',
+					info: [
+						'Creator of this very website! Hi!',
+						'Helped out with the comics a bit.',
+						'Created the original concept of Aeiou (Gram made it into full idea) and The Perpahedron, along with some other minor suggestions in the solar system.',
+						'Helped out with the OST.'
+					]
+				}, {
+					name: 'EpicBattler3',
+					info: [
+						'Created Berry, along with original concept art.'
+					]
+				}, {
+					name: 'PS3_33',
+					info: [
+						'Created BCG-1 (Blyu) and BCG-3 (Object/Object).',
+						'Added randomized quotes to the 404 pages.'
+					]
+				}, {
+					name: 'KoleOBlack',
+					info: [
+						'Created BCG-2 (Ayduno) and BBT-1 (Kol\'s Mini Nebula).'
+					]
+				}, {
+					name: 'And You!',
+					info: [
+						'It\'s cliche, I know, but you being here, reading the comics, and exploring the world... It means a lot to the whole crew, so thank you.',
+						'<3'
+					]
+				}]
+			});
+			break;
 		default:
 			let quoteNumber = Math.floor(Math.random() * 7);
 			let quote;

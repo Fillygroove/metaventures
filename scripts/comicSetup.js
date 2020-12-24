@@ -1,9 +1,16 @@
 function generatePanels(comic) {
-	let dir = `./panels/${comic}/${comic}`;
+	let dir = `./panels/aeroventures/${comic}/${comic}`;
+	let extension = 'jpg';
 	let length;
 	let title;
 	let description;
 	switch (comic) { // Done in order of release
+		case "choose-av":
+			length = 14;
+			title = 'Choose your comic!';
+			description = 'Original Unfiltered Content';
+			extension = 'png';
+			break;
 		case "1":
 			length = 4;
 			title = 'The Pilot';
@@ -63,7 +70,7 @@ function generatePanels(comic) {
 			length = 84;
 			title = 'Halloween Edition';
 			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and the gang go to a halloween party, but whos gonna attack them now?  Find out in this wierdly long adventure! SPOOKE!';
-			dir = './panels/H/H';
+			dir = './panels/aeroventures/H/H';
 			break;
 		case "11":
 			length = 106;
@@ -79,37 +86,37 @@ function generatePanels(comic) {
 			length = 110;
 			title = 'Nutty Business, Part 1';
 			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and friends meet an unexpected foe.';
-			dir = './panels/12/12-1/12';
+			dir = './panels/aeroventures/12/12-1/12';
 			break;
 		case "dk":
 			length = 25;
 			title = 'Domakav Rap';
 			description = 'You asked for this.';
+			dir = './panels/eggs/dk/dk';
 			break;
 		case "brooo":
 			length = 4;
 			title = 'Broventures';
 			description = 'We are proud to present the comic that we put all of our passion into. For years we toil on this masterpiece and now it\'s finally out: BROVENTURES!';
+			dir = './panels/eggs/brooo/brooo';
 			break;
 		case "nine":
 			length = 12;
 			title = 'Nineventures';
 			description = '"Nineventures" contains every ninth panel from every aeroventure to make some.. tangible kind of story. More panels are sure to be added after more comics are made.';
+			dir = './panels/eggs/nine/nine';
 			break;
 		case "trigger":
 			length = 1;
 			title = 'Trigger Fish';
 			description = 'bro you just posted cringe';
+			dir = './panels/eggs/trigger/trigger';
 			break;
 		case "pn":
 			length = 1;
 			title = 'Panel Number';
 			description = 'Panel Number';
-			break;
-		case "choose-av":
-			length = 14;
-			title = 'Choose your comic!';
-			description = 'Original Unfiltered Content';
+			dir = './panels/eggs/pn/pn';
 			break;
 		default:
 			window.location = 'index.html?c=choose-av';
@@ -135,8 +142,8 @@ function generatePanels(comic) {
 		number.innerHTML = `${i} / ${length}`;
 		
 		let panels = document.createElement('img');
-		panels.src = `${dir}_${i}.jpg`;
-		panels.style = 'max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%);';
+		panels.src = `${dir}_${i}.${extension}`;
+		panels.style = 'max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: #555555;';
  
 		slides.append(number);
 		
@@ -162,7 +169,7 @@ function generatePanels(comic) {
 			panelLink.append(panels);
 			slides.append(panelLink);
 		} else if (comic == 'choose-av') {
-			let episode;
+			let episode = String(i);
 			switch (i) {
 				case 11:
 					episode = '10.5';
@@ -175,9 +182,6 @@ function generatePanels(comic) {
 					break;
 				case 14:
 					episode = '12';
-					break;
-				default: 
-					episode = String(i);
 					break;
 			}
 			
