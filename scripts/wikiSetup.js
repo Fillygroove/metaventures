@@ -331,10 +331,10 @@ function pageTemplate(page) {
 						info: [
 							'<a href="index.html?p=grene" class="y"><img src="images/grene.png" width="25" height="25"></img>Grene</a>',
 							'<a href="index.html?p=doug" class="y"><img src="images/doug.png" width="25" height="25">Doug</a> (<small><img src="images/h.png" width="20" height="20">H</small>)',
-							'<a href="index.html?p=pilf" class="y"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>',
+							'<a href="index.html?p=cea" class="y"><img src="images/cea.png" width="25" height="25">Cea</a>',
 							'<a href="index.html?p=ert" class="y"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedron</a></small>)',
 							'<a href="index.html?p=george" class="y"><img src="images/george.png" width="20" height="20">Georg</a><a href="images/george_real.png" class="y">e</a> (<small><img src="images/damocles.png" width="20" height="20">Damocles</small>)',
-							'<a href="index.html?p=cea" class="y"><img src="images/cea.png" width="25" height="25">Cea</a>'
+							'<a href="index.html?p=pilf" class="y"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>'
 						]
 					}, {
 						name: 'Outer System',
@@ -645,7 +645,7 @@ function generatePage(page) {
 					info: ['Worms (Unconfirmed)']
 				}],
 				introText: [
-					'Doug is the second planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=grene" class="y">Grene</a> and before <a href="index.html?p=pilf" class="y">Pilf</a>. Doug can be seen in the night skies of <a href="index.html?p=ert" class="y">Ert</a> during the evenings, although it is hard to see due to it not having much of a reflective surface. As such, Doug is often forgotten and even hated due to its status as a planet.',
+					'Doug is the second planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=grene" class="y">Grene</a> and before <a href="index.html?p=cea" class="y">Cea</a>. Doug can be seen in the night skies of <a href="index.html?p=ert" class="y">Ert</a> during the evenings, although it is hard to see due to it not having much of a reflective surface. As such, Doug is often forgotten and even hated due to its status as a planet.',
 					'The term for describing something related to Doug is Forgettable.'
 				],
 				categories: [{
@@ -699,10 +699,11 @@ function generatePage(page) {
 				endnav: 'planet'
 			});
 			break;
-		case "pilf":
-			pageTemplate({ // First!
-				name: 'Pilf',
-				file: ['pilf.png', 'pixel'],
+		case "cea":
+			pageTemplate({
+				warning: 'stub',
+				name: 'Cea',
+				file: ['cea.png', 'pixel'],
 				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -711,47 +712,20 @@ function generatePage(page) {
 					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
 				}, {
 					name: 'Satellites',
-					info: ['Piffol Rings']
+					info: ['Numerous Mines (52 confirmed)']
 				}, {
 					name: 'Name Origin',
 					info: ['Unknown']
 				}, {
 					name: 'Classification',
-					info: ['Cuboid Terrestrial']
+					info: ['Ocean']
 				}, {
 					name: 'Life',
-					info: ['Cheese Flies', 'Cheese Moss']
+					info: ['Unknown']
 				}],
 				introText: [
-					'Pilf is the third planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=doug" class="y">Doug</a> and before <a href="index.html?p=ert" class="y">Ert</a> and <a href="index.html?p=george" class="y">George</a>. Pilf\'s most iconic feature is its weird shape, being that of a sharp cube, as opposed to the traditionally smooth shape of other planets. Pilf can be seen on Ert at the early hours of night, due to its relative closeness and vibrant colors, appearing as a dot in the sky. With binoculars, the full planet can be seen, however. The distance from the center of a side to the edge of a face is a seventy-fifth of the diameter of the Hot Sun.',
-					'<img src="images/pilf_ringless.png" alt="pilf_ringless.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
-					'Pilf is made out of a silicon-based material, although it has been observed to be less dense than most other planets. The purple color on Pilf\'s surface is theorized to be partially organic. There are also oceans on Pilf.',
-					'The term for describing something related to Pilf is Piian.'
+					'Cea is the third planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=doug" class="y">Doug</a> and before <a href="index.html?p=ert" class="y">Ert</a> and <a href="index.html?p=george" class="y">George</a>.'
 				],
-				categories: [{
-					name: 'Characteristics',
-					info: [
-						'Pilf is a Cuboid Terrestrial planet that is made up of a silicon-based material, although it is less dense than usual. The planet also could have partially organic material that makes up its purple color. On each face, there is a pool of liquid, that has been confirmed to be highly corrosive. Prior attempts to extract the liquid have lead to each probe disintegrating due to the liquid. Life is theorized to exist in the liquid, in the form of highly resistant bacteria, although this is unconfirmed. Each side seems to have its own life, with the only universal thing between each side is that they\'re covered in moss that tastes like cheese, and flies that consume the cheese.',
-						'<img src="images/pilf_atmosphere.png" alt="pilf_atmosphere.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
-						'Despite the planet\'s cuboid shape, the atmosphere takes on the shape of its gravity, which is still spherical. The atmosphere bulges around each face, leaving the corners exposed to the near vacuum of space. The atmosphere has a greenish tint, similar to the bodies of liquid on each face. To the right is a diagram, explaining the atmosphere in greater detail.',
-						'Pilf shares its cuboid shape with <a href="index.html?p=doug" class="y">Doug</a>\'s only satellite, H.'
-					]
-				}, {
-					name: 'Satellites',
-					info: [
-						'<img src="images/piffol_rings.png" alt="piffol_rings.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
-						'<h3>Piffol Rings</h3>',
-						'Pilf\'s only satellites are the Piffol Rings, a collection of ring like objects that surround the planet at a 30 degree angle. Pilf is one of the only two planets with a ring system, the other one being <a href="index.html?p=aeiou" class="y">Aeiou</a>. Each Piffol Ring is made up of a bunch of tightly packed globuals of liquids, that seem to have the same consistancy of custard. Each ring has a different shade of color, ranging from a light orange to a deep purple, all of which are usually very saturated. There are seven confirmed rings, each one named after flavors of cheese. The reason why the ring system is named the Piffol Rings is that Piffol is a corruption of the word Piffle, which means nonsense.'
-					]
-				}, {
-					name: 'Life',
-					info: [
-						'<h3>Cheese Flies</h3>',
-						'Cheese Flies are flying animals that are confirmed to exist on Pilf. They are large arthropods, with a wingspan of 2 feet, and a body length of 4 feet. Cheese Flies only consume Cheese Moss, which nourishes their body enough to keep on living.',
-						'<h3>Cheese Moss</h3>',
-						'Cheese Moss is a moss like plant, which grows on the purple material on Pilf, close by to the corrosive liquid, seemingly using the liquid as a food source. Once every 4 days, the Cheese Moss produces a hard transparent substance with queso inside of it, which has been colloquially called Bone Cheese by scientists. The purpose of the bone cheese is unknown.'
-					]
-				}],
 				endnav: 'planet'
 			});
 			break;
@@ -780,7 +754,7 @@ function generatePage(page) {
 					info: ['Reegs', 'Polygons', 'And More']
 				}],
 				introText: [
-					'Ert is the fourth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, sharing this position with <a href="index.html?p=george" class="y">George</a>, after <a href="index.html?p=pilf" class="y">Pilf</a> and before <a href="index.html?p=cea" class="y">Cea</a>. Ert is notable, being one of the only two planets in a binary system, sharing this feature with George. Ert is also the planet with the second most diversity of life, behind George, and also has some of the most "intelligent" inhabitants. Ert\'s sentient life boasts technology such as televisions, giant tungsten cubes, and the Perpahedron, but it is by no means able to take advantage of the planets around it, despite lifeforms being able to live on other planets. Ert is about one seventieth of the size of the Hot Sun.',
+					'Ert is the fourth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, sharing this position with <a href="index.html?p=george" class="y">George</a>, after <a href="index.html?p=cea" class="y">Cea</a> and before <a href="index.html?p=pilf" class="y">Pilf</a>. Ert is notable, being one of the only two planets in a binary system, sharing this feature with George. Ert is also the planet with the second most diversity of life, behind George, and also has some of the most "intelligent" inhabitants. Ert\'s sentient life boasts technology such as televisions, giant tungsten cubes, and the Perpahedron, but it is by no means able to take advantage of the planets around it, despite lifeforms being able to live on other planets. Ert is about one seventieth of the size of the Hot Sun.',
 					'The term for describing something related to Ert is Ertian.'
 				],
 				categories: [{
@@ -855,16 +829,15 @@ function generatePage(page) {
 					info: ['Cows', 'Ozark', 'Plushrooms', 'And More']
 				}],
 				introText: [
-					'George is the fourth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, sharing this position with <a href="index.html?p=ert" class="y">Ert</a>, after <a href="index.html?p=pilf" class="y">Pilf</a> and before <a href="index.html?p=cea" class="y">Cea</a>.'
+					'George is the fourth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, sharing this position with <a href="index.html?p=ert" class="y">Ert</a>, after <a href="index.html?p=cea" class="y">Cea</a> and before <a href="index.html?p=pilf" class="y">Pilf</a>.'
 				],
 				endnav: 'planet'
 			});
 			break;
-		case "cea":
-			pageTemplate({
-				warning: 'stub',
-				name: 'Cea',
-				file: ['cea.png', 'pixel'],
+		case "pilf":
+			pageTemplate({ // First!
+				name: 'Pilf',
+				file: ['pilf.png', 'pixel'],
 				dims: ['330', '330'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
@@ -873,20 +846,47 @@ function generatePage(page) {
 					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
 				}, {
 					name: 'Satellites',
-					info: ['Numerous Mines (52 confirmed)']
+					info: ['Piffol Rings']
 				}, {
 					name: 'Name Origin',
 					info: ['Unknown']
 				}, {
 					name: 'Classification',
-					info: ['Ocean']
+					info: ['Cuboid Terrestrial']
 				}, {
 					name: 'Life',
-					info: ['Unknown']
+					info: ['Cheese Flies', 'Cheese Moss']
 				}],
 				introText: [
-					'Cea is the fifth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=ert" class="y">Ert</a> and <a href="index.html?p=george" class="y">George</a> and before <a href="index.html?p=mac" class="y">Mac</a>.'
+					'Pilf is the third planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=ert" class="y">Ert</a> and <a href="index.html?p=george" class="y">George</a> and before <a href="index.html?p=mac" class="y">Mac</a>. Pilf\'s most iconic feature is its weird shape, being that of a sharp cube, as opposed to the traditionally smooth shape of other planets. Pilf can be seen on Ert at the early hours of night, due to its relative closeness and vibrant colors, appearing as a dot in the sky. With binoculars, the full planet can be seen, however. The distance from the center of a side to the edge of a face is a seventy-fifth of the diameter of the Hot Sun.',
+					'<img src="images/pilf_ringless.png" alt="pilf_ringless.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
+					'Pilf is made out of a silicon-based material, although it has been observed to be less dense than most other planets. The purple color on Pilf\'s surface is theorized to be partially organic. There are also oceans on Pilf.',
+					'The term for describing something related to Pilf is Piian.'
 				],
+				categories: [{
+					name: 'Characteristics',
+					info: [
+						'Pilf is a Cuboid Terrestrial planet that is made up of a silicon-based material, although it is less dense than usual. The planet also could have partially organic material that makes up its purple color. On each face, there is a pool of liquid, that has been confirmed to be highly corrosive. Prior attempts to extract the liquid have lead to each probe disintegrating due to the liquid. Life is theorized to exist in the liquid, in the form of highly resistant bacteria, although this is unconfirmed. Each side seems to have its own life, with the only universal thing between each side is that they\'re covered in moss that tastes like cheese, and flies that consume the cheese.',
+						'<img src="images/pilf_atmosphere.png" alt="pilf_atmosphere.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
+						'Despite the planet\'s cuboid shape, the atmosphere takes on the shape of its gravity, which is still spherical. The atmosphere bulges around each face, leaving the corners exposed to the near vacuum of space. The atmosphere has a greenish tint, similar to the bodies of liquid on each face. To the right is a diagram, explaining the atmosphere in greater detail.',
+						'Pilf shares its cuboid shape with <a href="index.html?p=doug" class="y">Doug</a>\'s only satellite, H.'
+					]
+				}, {
+					name: 'Satellites',
+					info: [
+						'<img src="images/piffol_rings.png" alt="piffol_rings.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
+						'<h3>Piffol Rings</h3>',
+						'Pilf\'s only satellites are the Piffol Rings, a collection of ring like objects that surround the planet at a 30 degree angle. Pilf is one of the only two planets with a ring system, the other one being <a href="index.html?p=aeiou" class="y">Aeiou</a>. Each Piffol Ring is made up of a bunch of tightly packed globuals of liquids, that seem to have the same consistancy of custard. Each ring has a different shade of color, ranging from a light orange to a deep purple, all of which are usually very saturated. There are seven confirmed rings, each one named after flavors of cheese. The reason why the ring system is named the Piffol Rings is that Piffol is a corruption of the word Piffle, which means nonsense.'
+					]
+				}, {
+					name: 'Life',
+					info: [
+						'<h3>Cheese Flies</h3>',
+						'Cheese Flies are flying animals that are confirmed to exist on Pilf. They are large arthropods, with a wingspan of 2 feet, and a body length of 4 feet. Cheese Flies only consume Cheese Moss, which nourishes their body enough to keep on living.',
+						'<h3>Cheese Moss</h3>',
+						'Cheese Moss is a moss like plant, which grows on the purple material on Pilf, close by to the corrosive liquid, seemingly using the liquid as a food source. Once every 4 days, the Cheese Moss produces a hard transparent substance with queso inside of it, which has been colloquially called Bone Cheese by scientists. The purpose of the bone cheese is unknown.'
+					]
+				}],
 				endnav: 'planet'
 			});
 			break;
