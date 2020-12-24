@@ -870,7 +870,7 @@ function generatePage(page) {
 					name: 'Characteristics',
 					info: [
 						'Pilf is a Cuboid Terrestrial planet that is made up of a silicon-based material, although it is less dense than usual. The planet also could have partially organic material that makes up its purple color. On each face, there is a pool of liquid, that has been confirmed to be highly corrosive. Prior attempts to extract the liquid have lead to each probe disintegrating due to the liquid. Life is theorized to exist in the liquid, in the form of highly resistant bacteria, although this is unconfirmed. Each side seems to have its own life, with the only universal thing between each side is that they\'re covered in moss that tastes like cheese, and flies that consume the cheese.',
-						'<img src="images/pilf_atmosphere.png" alt="pilf_atmosphere.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
+						'<a href="index.html?p=pilfception"><img src="images/pilf_atmosphere.png" alt="pilf_atmosphere.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img></a>',
 						'Despite the planet\'s cuboid shape, the atmosphere takes on the shape of its gravity, which is still spherical. The atmosphere bulges around each face, leaving the corners exposed to the near vacuum of space. The atmosphere has a greenish tint, similar to the bodies of liquid on each face. To the right is a diagram, explaining the atmosphere in greater detail.',
 						'Pilf shares its cuboid shape with <a href="index.html?p=doug" class="y">Doug</a>\'s only satellite, H.'
 					]
@@ -1362,6 +1362,16 @@ function generatePage(page) {
 				]
 			});
 			break;
+		case "pilfception":
+			pageTemplate({
+				name: 'PILFCEPTION!!!!',
+				introText: [
+					'<img src="images/pilfception.png" alt="pilfception.png" width="657" height="344" class="pixel" style="float: right; background-color: #555555;"></img>',
+					'<img src="images/oldpilf.png" alt="oldpilf.png" width="64" height="145" class="pixel" style="float: left; background-color: #555555;"></img>',
+					'Hidden Pii :O'
+				]
+			});
+			break;
 		case "dino":
 			let scream = '';
 			for (let i = 0; i < 50000; i++) scream += 'A';
@@ -1419,7 +1429,9 @@ function generatePage(page) {
 					name: 'Gramiatar',
 					info: [
 						'Created Grene, Doug, Cea, Ert, George, Pilf, Mac, The, the Macaroni Belt, and provided all of the pixel art on the Wiki.',
-						'Helped out with the comics a lot, along with the creation of some OST!'
+						'Helped out with the worldbuilding inside and beyond this world.',
+						'Helped out with the comics a lot, along with the creation of most of the OST!',
+						'Helped out with storyboarding, along with Text Wall, in the creation of the comics.'
 					]
 				}, {
 					name: 'Pixel Origin',
