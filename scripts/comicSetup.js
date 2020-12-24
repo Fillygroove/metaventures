@@ -288,7 +288,7 @@ function generatePanels(comic) {
 					caption.innerHTML = 'Aeroventures 12, Part 1';
 					break;
 				case 2:
-					caption.innerHTML = 'Aeroventures 12, Part 2 (Coming soon!)';
+					caption.innerHTML = 'Aeroventures 12, Part 2 (Coming soon! (for real this time))';
 					break;
 			}
 			slides.append(caption);
