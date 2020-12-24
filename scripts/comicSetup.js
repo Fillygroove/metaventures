@@ -70,11 +70,16 @@ function generatePanels(comic) {
 			title = 'Code Red';
 			description = 'Something terribly wrong has happened in Dr. <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>\'s lab. Can the Aeroventures Crew stop this new menace?';
 			break;
+		case "12":
+			length = 2;
+			title = 'Nutty Business';
+			description = 'A large two part Aeroventure where the Aeroventures crew meet up with Nutstradamnus once more...';
+			break;
 		case "12-1":
 			length = 110;
 			title = 'Nutty Business, Part 1';
 			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and friends meet an unexpected foe.';
-			dir = './panels/12-1/12';
+			dir = './panels/12/12-1/12';
 			break;
 		case "dk":
 			length = 25;
@@ -106,6 +111,9 @@ function generatePanels(comic) {
 			title = 'Choose your comic!';
 			description = 'Original Unfiltered Content';
 			break;
+		default:
+			window.location = 'index.html?c=choose-av';
+			break;
 	}
 
 	let avThin = document.getElementsByClassName('av-thin')[0];
@@ -132,30 +140,24 @@ function generatePanels(comic) {
  
 		slides.append(number);
 		
-		if (comic == '7' && i == 10) { // Dinosaurs wiki page
+		function appendPanel(link) {
 			let panelLink = document.createElement('a');
-			panelLink.href = '../wiki/index.html?p=dino';
-			
+			panelLink.href = link;
+						
 			panelLink.append(panels);
 			slides.append(panelLink);
-		} else if (comic == '8' && i == 7) { // Trigger Fish
-			let panelLink = document.createElement('a');
-			panelLink.href = 'index.html?c=trigger';
-			
-			panelLink.append(panels);
-			slides.append(panelLink);
-		} else if (comic == '11' && i == 8) { // Code Red explanation loop
+		}
+		
+		if (comic == '7' && i == 10) appendPanel('../wiki/index.html?p=dino'); // Dinosaurs wiki page
+		else if (comic == '8' && i == 7) appendPanel('index.html?c=trigger'); // Trigger Fish
+		else if (comic == '11' && i == 44) appendPanel('index.html?c=brooo'); // Broventures
+		else if (comic == '12' && i == 1) appendPanel(`index.html?c=12-${i}`);
+		else if (comic == '11' && i == 8) { // Code Red explanation loop
 			let panelLink = document.createElement('a');
 			panelLink.style = 'cursor: pointer;';
 			panelLink.onclick = () => {
 				currentSlide(3);
 			};
-			
-			panelLink.append(panels);
-			slides.append(panelLink);
-		} else if (comic == '11' && i == 44) { // Broventures
-			let panelLink = document.createElement('a');
-			panelLink.href = 'index.html?c=brooo';
 			
 			panelLink.append(panels);
 			slides.append(panelLink);
@@ -179,12 +181,9 @@ function generatePanels(comic) {
 					break;
 			}
 			
-			let panelLink = document.createElement('a');
-			panelLink.href = `index.html?c=${episode}`;
-			
-			panelLink.append(panels);
-			slides.append(panelLink);
-		} else slides.append(panels);
+			appendPanel(`index.html?c=${episode}`);
+		}
+		else slides.append(panels);
 		
 		if (comic == 'nine') {
 			let caption = document.createElement('div');
@@ -281,6 +280,18 @@ function generatePanels(comic) {
 					break;
 			}
 			slides.append(caption);
+		} else if (comic == '12') {
+			let caption = document.createElement('div');
+			caption.style = 'text-align: center; background-color: #555555;';
+			switch (i) {
+				case 1:
+					caption.innerHTML = 'Aeroventures 12, Part 1';
+					break;
+				case 2:
+					caption.innerHTML = 'Aeroventures 12, Part 2 (Coming soon!)';
+					break;
+			}
+			slides.append(caption);
 		}
 		
 		slideshow.append(slides);
@@ -334,7 +345,6 @@ function generatePanels(comic) {
 
 let comic = new URLSearchParams(window.location.search);
 comic = comic.get('c')
-if (comic == null) comic = '12-1';
 generatePanels(comic);
 
 let slideIndex = 1;
