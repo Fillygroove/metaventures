@@ -1442,7 +1442,7 @@ function generatePage(page) {
 				}, {
 					name: 'SnapKrakPop',
 					info: [
-						'Helped out with the art!'
+						'Helped out with the art and made the favicon!'
 					]
 				}, {
 					name: 'Clarise',
