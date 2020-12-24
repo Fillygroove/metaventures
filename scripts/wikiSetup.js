@@ -541,9 +541,9 @@ function generatePage(page) {
 					info: [
 						'<a href="index.html?p=grene" class="y">Grene</a>',
 						'<a href="index.html?p=doug" class="y">Doug</a>',
-						'<a href="index.html?p=pilf" class="y">Pilf</a>',
-						'<a href="index.html?p=ert" class="y">Ert</a> / <a href="index.html?p=george" class="y">George</a>',
 						'<a href="index.html?p=cea" class="y">Cea</a>',
+						'<a href="index.html?p=ert" class="y">Ert</a> / <a href="index.html?p=george" class="y">George</a>',
+						'<a href="index.html?p=pilf" class="y">Pilf</a>',
 						'<a href="index.html?p=mac" class="y">Mac</a>',
 						'<a href="index.html?p=berry" class="y">Berry</a>',
 						'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
