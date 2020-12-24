@@ -34,9 +34,7 @@ function makePage(page) {
 	metaCss.href = `${titleDir}index.css`;
 	
 	document.head.append(metaTitle, metaFavicon, metaCss);
-	
-	let mainBody = document.getElementsByTagName('body')[0];
-	
+		
 	let mainAVThin = document.createElement('div');
 	mainAVThin.className = 'av-thin';
 
@@ -71,5 +69,5 @@ function makePage(page) {
 	scriptLoader.src = `${titleDir}scripts/${page}Setup.js`;
 	mainAVThin.append(scriptLoader);
 	
-	mainBody.append(mainAVThin);
+	document.getElementsByTagName('body')[0].append(mainAVThin);
 }
