@@ -1,126 +1,134 @@
 function generatePanels(comic) {
-	let dir = `./panels/aeroventures/${comic}/${comic}`;
-	let extension = 'jpg';
-	let length;
-	let title;
-	let description;
+	let comicInfo = {
+		dir: null, 
+		howLong: null, 
+		title: null, 
+		desc: null,
+		extension: 'jpg'
+	};
 	switch (comic) { // Done in order of release
 		case "choose-av":
-			length = 14;
-			title = 'Choose your comic!';
-			description = 'Original Unfiltered Content';
-			extension = 'png';
+			comicInfo.dir = 'av/choose/choose';
+			comicInfo.howLong = 14;
+			comicInfo.title = 'Choose your AV comic!';
+			comicInfo.desc = 'Original Unfiltered Content';
+			comicInfo.extension = 'png';
 			break;
 		case "1":
-			length = 4;
-			title = 'The Pilot';
-			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> goes to fight his first enemy and nemesis, <a href="../wiki/index.html?p=archie" class="n">Archie</a></a>.';
+			comicInfo.howLong = 4;
+			comicInfo.title = 'AV-1: The Pilot';
+			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> goes to fight his first enemy and nemesis, <a href="../wiki/index.html?p=archie" class="n">Archie</a></a>.';
 			break;
 		case "2":
-			length = 4;
-			title = 'Dr. Lakys\' Electric Boogaloo';
-			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> goes to fight mad <a href="../wiki/index.html?p=lakys" class="n">Lakys</a> and his annoying pylons.';
+			comicInfo.howLong = 4;
+			comicInfo.title = 'AV-2: Dr. Lakys\' Electric Boogaloo';
+			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> goes to fight mad <a href="../wiki/index.html?p=lakys" class="n">Lakys</a> and his annoying pylons.';
 			break;
 		case "3":
-			length = 6;
-			title = 'Nutstradamnus Rumbel';
-			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> attempts to slay the Notorious Gold Golem <a href="../wiki/index.html?p=nutstradamnus" class="n">Nutstradamnus</a> in its long horribly worded battle.';
+			comicInfo.howLong = 6;
+			comicInfo.title = 'AV-3: Nutstradamnus Rumbel';
+			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> attempts to slay the Notorious Gold Golem <a href="../wiki/index.html?p=nutstradamnus" class="n">Nutstradamnus</a> in its long horribly worded battle.';
 			break;
 		case "4":
-			length = 3;
-			title = 'ARCHIE STRYKSE BAK!1!';
-			description = '<a href="../wiki/index.html?p=archie" class="n">Archie</a> strikes back at our Hero with his OWN Meme.';
+			comicInfo.howLong = 3;
+			comicInfo.title = 'AV-4: ARCHIE STRYKSE BAK!1!';
+			comicInfo.desc = '<a href="../wiki/index.html?p=archie" class="n">Archie</a> strikes back at our Hero with his OWN Meme.';
 			break;
 		case "5":
-			length = 9;
-			title = 'RoYEEEAL Shimmy Shammy';
-			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> enters the Arena where he has to best Gladiator Champion <a href="../wiki/index.html?p=royale" class="n">Royale</a> to escape.';
+			comicInfo.howLong = 9;
+			comicInfo.title = 'AV-5: RoYEEEAL Shimmy Shammy';
+			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> enters the Arena where he has to best Gladiator Champion <a href="../wiki/index.html?p=royale" class="n">Royale</a> to escape.';
 			break;
 		case "6":
-			length = 22;
-			title = 'Future Fails';
-			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> comes back from the dead in the future and tries to get revenge on <a href="../wiki/index.html?p=archie" class="n">Archie</a>.';
+			comicInfo.howLong = 22;
+			comicInfo.title = 'AV-6: Future Fails';
+			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> comes back from the dead in the future and tries to get revenge on <a href="../wiki/index.html?p=archie" class="n">Archie</a>.';
 			break;
 		case "7":
-			length = 35;
-			title = 'In The Shadow of the Perpatrator';
-			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and <a href="../wiki/index.html?p=lakys" class="n">Lakys</a> are forced to team up after a giant <a href="../wiki/index.html?p=perpahedron" class="n">Perpahedron</a> Satellite is about to hit <a href="../wiki/index.html?p=ert" class="y">Ert</a>.';
+			comicInfo.howLong = 35;
+			comicInfo.title = 'AV-7: In The Shadow of the Perpatrator';
+			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and <a href="../wiki/index.html?p=lakys" class="n">Lakys</a> are forced to team up after a giant <a href="../wiki/index.html?p=perpahedron" class="n">Perpahedron</a> Satellite is about to hit <a href="../wiki/index.html?p=ert" class="y">Ert</a>.';
 			break;
 		case "8":
-			length = 36;
-			title = 'Tropical Trouble';
-			description = 'In this rather short eposode: <a href="../wiki/index.html?p=aero" class="y">Aero</a>, <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>, and <a href="../wiki/index.html?p=archie" class="n">Archie</a> get stuck on an island after their plane blows up. watch as they struggle to survive. hah. idiots.';
+			comicInfo.howLong = 36;
+			comicInfo.title = 'AV-8: Tropical Trouble';
+			comicInfo.desc = 'In this rather short eposode: <a href="../wiki/index.html?p=aero" class="y">Aero</a>, <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>, and <a href="../wiki/index.html?p=archie" class="n">Archie</a> get stuck on an island after their plane blows up. watch as they struggle to survive. hah. idiots.';
 			break;
 		case "9":
-			length = 34;
-			title = 'Group Lunatics 100';
-			description = 'With the Tower of Gladii out of money, <a href="../wiki/index.html?p=aero" class="y">Aero</a>, <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>, <a href="../wiki/index.html?p=archie" class="n">Archie</a>, and <a href="../wiki/index.html?p=aposteel" class="n">Aposteel</a> go to get wacky jobs to pay for the abandoned tower.';
+			comicInfo.howLong = 34;
+			comicInfo.title = 'AV-9: Group Lunatics 100';
+			comicInfo.desc = 'With the Tower of Gladii out of money, <a href="../wiki/index.html?p=aero" class="y">Aero</a>, <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>, <a href="../wiki/index.html?p=archie" class="n">Archie</a>, and <a href="../wiki/index.html?p=aposteel" class="n">Aposteel</a> go to get wacky jobs to pay for the abandoned tower.';
 			break;
 		case "10":
-			length = 73;
-			title = 'Flat Line';
-			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> goes to the hospital after an incident and finds out that it isnt as it seems. porkchops included.';
+			comicInfo.howLong = 73;
+			comicInfo.title = 'AV-10: Flat Line';
+			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> goes to the hospital after an incident and finds out that it isnt as it seems. porkchops included.';
 			break;
 		case "10.5":
-			length = 53;
-			title = 'Over The Rainbow';
-			description = 'We tune in to our favorite cartoon characters in tough pickle.';
+			comicInfo.howLong = 53;
+			comicInfo.title = 'AV-10.5: Over The Rainbow';
+			comicInfo.desc = 'We tune in to our favorite cartoon characters in tough pickle.';
 			break;
 		case "h":
-			length = 84;
-			title = 'Halloween Edition';
-			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and the gang go to a halloween party, but whos gonna attack them now?  Find out in this wierdly long adventure! SPOOKE!';
-			dir = './panels/aeroventures/H/H';
+			comicInfo.howLong = 84;
+			comicInfo.title = 'AV: Halloween Edition';
+			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and the gang go to a halloween party, but whos gonna attack them now?  Find out in this wierdly long adventure! SPOOKE!';
+			comicInfo.dir = 'av/H/H';
 			break;
 		case "11":
-			length = 106;
-			title = 'Code Red';
-			description = 'Something terribly wrong has happened in Dr. <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>\'s lab. Can the Aeroventures Crew stop this new menace?';
+			comicInfo.howLong = 106;
+			comicInfo.title = 'AV-11: Code Red';
+			comicInfo.desc = 'Something terribly wrong has happened in Dr. <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>\'s lab. Can the Aeroventures Crew stop this new menace?';
 			break;
 		case "12":
-			length = 2;
-			title = 'Nutty Business';
-			description = 'A large two part Aeroventure where the Aeroventures crew meet up with Nutstradamnus once more...';
+			comicInfo.howLong = 2;
+			comicInfo.title = 'AV-12: Nutty Business';
+			comicInfo.desc = 'A large two part Aeroventure where the Aeroventures crew meet up with Nutstradamnus once more...';
 			break;
 		case "12-1":
-			length = 110;
-			title = 'Nutty Business, Part 1';
-			description = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and friends meet an unexpected foe.';
-			dir = './panels/aeroventures/12/12-1/12';
+			comicInfo.howLong = 110;
+			comicInfo.title = 'AV-12: Nutty Business, Part 1';
+			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and friends meet an unexpected foe.';
+			comicInfo.dir = 'av/12/12-1/12';
 			break;
 		case "dk":
-			length = 25;
-			title = 'Domakav Rap';
-			description = 'You asked for this.';
-			dir = './panels/eggs/dk/dk';
+			comicInfo.howLong = 25;
+			comicInfo.title = 'AV: Domakav Rap';
+			comicInfo.desc = 'You asked for this.';
+			comicInfo.dir = 'eggs/dk/dk';
 			break;
 		case "brooo":
-			length = 4;
-			title = 'Broventures';
-			description = 'We are proud to present the comic that we put all of our passion into. For years we toil on this masterpiece and now it\'s finally out: BROVENTURES!';
-			dir = './panels/eggs/brooo/brooo';
+			comicInfo.howLong = 4;
+			comicInfo.title = 'Broventures';
+			comicInfo.desc = 'We are proud to present the comic that we put all of our passion into. For years we toil on this masterpiece and now it\'s finally out: BROVENTURES!';
+			comicInfo.dir = 'eggs/brooo/brooo';
 			break;
 		case "nine":
-			length = 12;
-			title = 'Nineventures';
-			description = '"Nineventures" contains every ninth panel from every aeroventure to make some.. tangible kind of story. More panels are sure to be added after more comics are made.';
-			dir = './panels/eggs/nine/nine';
+			comicInfo.howLong = 12;
+			comicInfo.title = 'Nineventures';
+			comicInfo.desc = '"Nineventures" contains every ninth panel from every aeroventure to make some.. tangible kind of story. More panels are sure to be added after more comics are made.';
+			comicInfo.dir = 'eggs/nine/nine';
 			break;
 		case "trigger":
-			length = 1;
-			title = 'Trigger Fish';
-			description = 'bro you just posted cringe';
-			dir = './panels/eggs/trigger/trigger';
+			comicInfo.howLong = 1;
+			comicInfo.title = 'Trigger Fish';
+			comicInfo.desc = 'bro you just posted cringe';
+			comicInfo.dir = 'eggs/trigger/trigger';
 			break;
 		case "pn":
-			length = 1;
-			title = 'Panel Number';
-			description = 'Panel Number';
-			dir = './panels/eggs/pn/pn';
+			comicInfo.howLong = 1;
+			comicInfo.title = 'Panel Number';
+			comicInfo.desc = 'Panel Number';
+			comicInfo.dir = 'eggs/pn/pn';
 			break;
 		default:
 			window.location = 'index.html?c=choose-av';
 			break;
+	}
+
+	if (comicInfo.dir == null) {
+		let folder = comicInfo.title.includes('AV') ? 'av' : '';
+		comicInfo.dir = `${folder}/${comic}/${comic}`;
 	}
 
 	let avThin = document.getElementsByClassName('av-thin')[0];
@@ -129,20 +137,20 @@ function generatePanels(comic) {
 	
 	let slideTitle = document.createElement('div');
 	slideTitle.className = 'comic-title';
-	slideTitle.innerHTML = title;
+	slideTitle.innerHTML = comicInfo.title;
 	avThin.append(slideTitle);
 
-	for (let i = 1; i < length + 1; i++) {
+	for (let i = 1; i < comicInfo.howLong + 1; i++) {
 		let slides = document.createElement('div');
 		slides.style = 'background-color: #555555;';
 		slides.className = 'slides';
 		
 		let number = document.createElement('div');
 		number.className = 'numbertext';
-		number.innerHTML = `${i} / ${length}`;
+		number.innerHTML = `${i} / ${comicInfo.howLong}`;
 		
 		let panels = document.createElement('img');
-		panels.src = `${dir}_${i}.${extension}`;
+		panels.src = `./panels/${comicInfo.dir}_${i}.${comicInfo.extension}`;
 		panels.style = 'max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: #555555;';
  
 		slides.append(number);
@@ -342,7 +350,7 @@ function generatePanels(comic) {
 	let desc = document.createElement('h4');
 	
 	desc.className = 'description';
-	desc.innerHTML = description;
+	desc.innerHTML = comicInfo.desc;
 
 	avThin.append(slideshow, desc);
 }
