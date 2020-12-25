@@ -1197,7 +1197,7 @@ function generatePage(page) {
 			document.getElementsByTagName('html')[0].style = '-moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg);';
 			
 			pageTemplate({
-				name: '<a href="index.html?p=grene">Greme</a>',
+				name: 'Secret: <a href="index.html?p=grene">Greme</a>',
 				file: ['greme.png', 'pixel'],
 				dims: ['330', '330'],
 				caption: 'Pictured im matural color, illustratiom made by Gramiatar.',
@@ -1246,7 +1246,7 @@ function generatePage(page) {
 			break;
 		case "tackpenguin":
 			pageTemplate({
-				name: 'You',
+				name: 'Secret: You',
 				file: ['bro.png'],
 				dims: ['330', '330'],
 				caption: 'bro look away',
@@ -1313,7 +1313,7 @@ function generatePage(page) {
 		case "nine":
 			pageTemplate({
 				warning: 'forbidden',
-				name: 'No.',
+				name: 'Secret: No.',
 				introText: [
 					'You\'re not ready.'
 				]
@@ -1321,7 +1321,7 @@ function generatePage(page) {
 			break;
 		case "shrine":
 			pageTemplate({
-				name: 'Aposteel\'s Shrine',
+				name: 'Secret: Aposteel\'s Shrine',
 				introText: [
 					'<i style = "background-color: #555555; padding-left: 2em;">"yo"</i></br><i style = "background-color: #555555; padding-left: 2.5em;"> - Panzer, our savior!</i>',
 					'<img src="images/shrine.jpg" alt="shrine.jpg" width="250" height="250" class="pixel" style="float: right; background-color: #555555;"></img>',
@@ -1331,7 +1331,7 @@ function generatePage(page) {
 			break;
 		case "pilfception":
 			pageTemplate({
-				name: 'PILFCEPTION!!!!',
+				name: 'Secret: PILFCEPTION!!!!',
 				introText: [
 					'<img src="images/pilfception.png" alt="pilfception.png" width="657" height="344" class="pixel" style="float: right; background-color: #555555;"></img>',
 					'<img src="images/oldpilf.png" alt="oldpilf.png" width="64" height="145" class="pixel" style="float: left; background-color: #555555;"></img>',
@@ -1343,7 +1343,7 @@ function generatePage(page) {
 			let scream = '';
 			for (let i = 0; i < 50000; i++) scream += 'A';
 			pageTemplate({
-				name: 'How to stop satellite. by Dinosaurs',
+				name: 'Secret: How to stop satellite. by Dinosaurs',
 				introText: [
 					`${scream}`
 				]
@@ -1357,7 +1357,7 @@ function generatePage(page) {
 			let dirs = [];
 			for (let i = 0; i < 100; i++) dirs.push(`Step ${i + 1}.) Turn Left`);
 			pageTemplate({
-				name: 'The Vault Map',
+				name: 'Secret: The Vault Map',
 				introText: dirs
 			});
 			break;
@@ -1365,7 +1365,7 @@ function generatePage(page) {
 			let mstring = ''
 			for (let i = 0; i < 5000; i++) mstring += 'm';
 			pageTemplate({
-				name: 'List of M',
+				name: 'Secret: List of M',
 				introText: [
 					mstring,
 					'tasty'
