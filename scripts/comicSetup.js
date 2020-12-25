@@ -8,7 +8,7 @@ function generatePanels(comic) {
 	};
 	switch (comic) { // Done in order of release
 		case "choose-av":
-			comicInfo.dir = 'av/choose/choose';
+			comicInfo.dir = 'av/choose';
 			comicInfo.howLong = 14;
 			comicInfo.title = 'Choose your AV comic!';
 			comicInfo.desc = 'Original Unfiltered Content';
@@ -73,7 +73,6 @@ function generatePanels(comic) {
 			comicInfo.howLong = 84;
 			comicInfo.title = 'AV: Halloween Edition';
 			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and the gang go to a halloween party, but whos gonna attack them now?  Find out in this wierdly long adventure! SPOOKE!';
-			comicInfo.dir = 'av/H/H';
 			break;
 		case "11":
 			comicInfo.howLong = 106;
@@ -89,37 +88,32 @@ function generatePanels(comic) {
 			comicInfo.howLong = 110;
 			comicInfo.title = 'AV-12: Nutty Business, Part 1';
 			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and friends meet an unexpected foe.';
-			comicInfo.dir = 'av/12/12-1/12';
+			comicInfo.dir = 'av/12/12-1';
 			break;
 		case "dk":
 			comicInfo.howLong = 25;
-			comicInfo.title = 'AV: Domakav Rap';
+			comicInfo.title = 'Secret: Domakav Rap';
 			comicInfo.desc = 'You asked for this.';
-			comicInfo.dir = 'eggs/dk/dk';
 			break;
 		case "brooo":
 			comicInfo.howLong = 4;
-			comicInfo.title = 'Broventures';
+			comicInfo.title = 'Secret: Broventures';
 			comicInfo.desc = 'We are proud to present the comic that we put all of our passion into. For years we toil on this masterpiece and now it\'s finally out: BROVENTURES!';
-			comicInfo.dir = 'eggs/brooo/brooo';
 			break;
 		case "nine":
 			comicInfo.howLong = 12;
-			comicInfo.title = 'Nineventures';
+			comicInfo.title = 'Secret: Nineventures';
 			comicInfo.desc = '"Nineventures" contains every ninth panel from every aeroventure to make some.. tangible kind of story. More panels are sure to be added after more comics are made.';
-			comicInfo.dir = 'eggs/nine/nine';
 			break;
 		case "trigger":
 			comicInfo.howLong = 1;
-			comicInfo.title = 'Trigger Fish';
+			comicInfo.title = 'Secret: Trigger Fish';
 			comicInfo.desc = 'bro you just posted cringe';
-			comicInfo.dir = 'eggs/trigger/trigger';
 			break;
 		case "pn":
 			comicInfo.howLong = 1;
-			comicInfo.title = 'Panel Number';
+			comicInfo.title = 'Secret: Panel Number';
 			comicInfo.desc = 'Panel Number';
-			comicInfo.dir = 'eggs/pn/pn';
 			break;
 		default:
 			window.location = 'index.html?c=choose-av';
@@ -127,8 +121,10 @@ function generatePanels(comic) {
 	}
 
 	if (comicInfo.dir == null) {
-		let folder = comicInfo.title.includes('AV') ? 'av' : '';
-		comicInfo.dir = `${folder}/${comic}/${comic}`;
+		let folder;
+		if (comicInfo.title.includes('AV')) folder = 'av';
+		if (comicInfo.title.includes('Secret')) folder = 'secrets';
+		comicInfo.dir = `${folder}/${comic}`;
 	}
 
 	let avThin = document.getElementsByClassName('av-thin')[0];
@@ -150,7 +146,7 @@ function generatePanels(comic) {
 		number.innerHTML = `${i} / ${comicInfo.howLong}`;
 		
 		let panels = document.createElement('img');
-		panels.src = `./panels/${comicInfo.dir}_${i}.${comicInfo.extension}`;
+		panels.src = `./panels/${comicInfo.dir}/${i}.${comicInfo.extension}`;
 		panels.style = 'max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: #555555;';
  
 		slides.append(number);
@@ -394,7 +390,7 @@ function verify(slide) {
 	} else if (slide == 'Panel Number') {  // Panel Number Easter Egg
 		window.location.href = 'index.html?c=pn';
 	} else if (!isNaN(slide) && Math.floor(slide) != slide) { // Panel Corruption Easter Egg
-		if (comic == '10.5' || comic == 'trigger') {
+		if (comic == '10.5' || comic == 'trigger' || comic == 'choose-av') {
 			document.getElementsByClassName('description')[0].innerHTML = 'Failed the corruption, please try again later.';
 			return;
 		}
@@ -403,12 +399,13 @@ function verify(slide) {
 			return;
 		}
 		document.getElementsByClassName('description')[0].innerHTML = 'Well... What did you think was going to happen when you put in a decimal value?';
-		document.getElementsByClassName('slides')[slideIndex - 1].childNodes[1].src = `./panels/eggs/corrupt/corrupt_${comic}.jpg`;
+		document.getElementsByClassName('slides')[slideIndex - 1].childNodes[1].src = `./panels/secrets/corrupt/${comic}.jpg`;
 		document.getElementsByClassName('slides')[slideIndex - 1].childNodes[1].visibility = 'visible';
 		if (comic == 'nine') {
 			document.getElementsByClassName('slides')[slideIndex - 1].childNodes[2].innerHTML = 'Aero is gone.';
 		}
 	}
+	
 	slide = Number(slide);
 
 	if (!isNaN(slide)) {
