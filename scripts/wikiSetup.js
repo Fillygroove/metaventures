@@ -331,7 +331,6 @@ function pageTemplate(page) {
 						info: [
 							'<a href="index.html?p=grene" class="y"><img src="images/grene.png" width="25" height="25"></img>Grene</a>',
 							'<a href="index.html?p=doug" class="y"><img src="images/doug.png" width="25" height="25">Doug</a> (<small><img src="images/h.png" width="20" height="20">H</small>)',
-							'<a href="index.html?p=cea" class="y"><img src="images/cea.png" width="25" height="25">Cea</a>',
 							'<a href="index.html?p=ert" class="y"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedron</a></small>)',
 							'<a href="index.html?p=george" class="y"><img src="images/george.png" width="20" height="20">Georg</a><a href="images/george_real.png" class="y">e</a> (<small><img src="images/damocles.png" width="20" height="20">Damocles</small>)',
 							'<a href="index.html?p=pilf" class="y"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>'
@@ -339,7 +338,6 @@ function pageTemplate(page) {
 					}, {
 						name: 'Outer System',
 						info: [
-							'<a href="index.html?p=macaroni" class="n">Macaroni Belt</a>',
 							'<a href="index.html?p=mac" class="y"><img src="images/mac.png" width="35" height="25">Mac</a> (<small><a href="index.html?p=wop" class="y"><img src="images/wop.png" width="23" height="20">World of Pain</a> &bull; <img src="images/dough.png" width="24" height="20">Dough</small>)',
 							'<a href="index.html?p=aeiou" class="y"><img src="images/aeiou.png" width="27" height="25">Aeiou</a> (<small>Cdfqrszt &bull; Heideph</small>)',
 							'<a href="index.html?p=berry" class="y"><img src="images/berry_ringless.png" width="25" height="25">Berry</a>',
@@ -364,7 +362,7 @@ function pageTemplate(page) {
 					info: [{
 						name: '<a href="index.html?p=dwarf" class="y">Dwarf Planets</a>',
 						info: [
-							'<a href="index.html?p=dwarf#ternary" class="y">BCM-1-2-3 (The Ternary)</a>',
+							'<a href="index.html?p=dwarf#ternary" class="y">BPM-1-2-3 (The Ternary)</a>',
 							'<a href="index.html?p=dwarf#sphynx" class="y">BOT-1 (Sphynx)</a>',
 							'<a href="index.html?p=dwarf#blyu" class="y">BCU-1 (Blyu)</a>',
 							'<a href="index.html?p=dwarf#ayduno" class="y">BCU-2 (Ayduno)</a>',
@@ -373,6 +371,7 @@ function pageTemplate(page) {
 					}, {
 						name: 'Objects',
 						info: [
+							'BPM-4 (Macaroni Belt)',
 							'BOT-2 (Gram\'s Comet)',
 							'BBT-1 (Kol\'s Mini Nebula)', // Ball of Christmas Lights
 						]
@@ -394,7 +393,6 @@ function pageTemplate(page) {
 							'<a href="index.html?p=pilf" class="y"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>',
 							'<a href="index.html?p=ert" class="y"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedrom</a></small>)',
 							'<a href="index.html?p=george" class="y"><img src="images/george.png" width="20" height="20">Georg</a><a href="images/george_real.png" class="y">e</a> (<small><img src="images/damocles.png" width="20" height="20">Damocles</small>)',
-							'<a href="index.html?p=cea" class="y"><img src="images/cea.png" width="25" height="25">Cea</a>'
 						]
 					}, {
 						name: 'Outer System',
@@ -543,7 +541,6 @@ function generatePage(page) {
 					info: [
 						'<a href="index.html?p=grene" class="y">Grene</a>',
 						'<a href="index.html?p=doug" class="y">Doug</a>',
-						'<a href="index.html?p=cea" class="y">Cea</a>',
 						'<a href="index.html?p=ert" class="y">Ert</a>',
 						'<a href="index.html?p=george" class="y">George</a>',
 						'<a href="index.html?p=pilf" class="y">Pilf</a>',
@@ -599,7 +596,7 @@ function generatePage(page) {
 				}],
 				introText: [
 					'Grene is the first planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, before <a href="index.html?p=doug" class="y">Doug</a>. It is about a fifty-fifth of the size of the Hot Sun. Grene can barely be seen from <a href="index.html?p=ert" class="y">Ert</a>, looking like a sun spot due to how close it is to the Hot Sun, but since it revolves around the Hot Sun rather quickly, it looks like a sun spot that moves extremely quickly. It can only be observed by special means, specifically in day with special equipment.',
-					'Grene\'s surface is mostly composed of silicon and an unknown material, with the side of the planet facing the Hot Sun consisting of molten silicon. The atmosphere contains evaporated silicon, along with another unknown material that causes a cycle similar to the water cycle on <a href="index.html?p=ert" class="y">Ert</a>, <a href="index.html?p=george" class="y">George</a>, and <a href="index.html?p=cea" class="y">Cea</a>. Said atmosphere is being stripped off of the planet by the solar wind, being blasted off, leaving a trail that constantly leaves the planet, facing away from the Hot Sun. A year on Grene lasts 20 hours. Days can not be measured due to the planet being tidally locked to the Hot Sun.',
+					'Grene\'s surface is mostly composed of silicon and an unknown material, with the side of the planet facing the Hot Sun consisting of molten silicon. The atmosphere contains evaporated silicon, along with another unknown material that causes a cycle similar to the water cycle on <a href="index.html?p=ert" class="y">Ert</a> and <a href="index.html?p=george" class="y">George</a>. Said atmosphere is being stripped off of the planet by the solar wind, being blasted off, leaving a trail that constantly leaves the planet, facing away from the Hot Sun. A year on Grene lasts 20 hours. Days can not be measured due to the planet being tidally locked to the Hot Sun.',
 					'The term for describing something related to Grene is Grenian.'
 				],
 				categories: [{
@@ -648,7 +645,7 @@ function generatePage(page) {
 					info: ['Worms (Unconfirmed)']
 				}],
 				introText: [
-					'Doug is the second planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=grene" class="y">Grene</a> and before <a href="index.html?p=cea" class="y">Cea</a>. Doug can be seen in the night skies of <a href="index.html?p=ert" class="y">Ert</a> during the evenings, although it is hard to see due to it not having much of a reflective surface. As such, Doug is often forgotten and even hated due to its status as a planet.',
+					'Doug is the second planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=grene" class="y">Grene</a> and before <a href="index.html?p=ert" class="y">Ert</a> and <a href="index.html?p=george" class="y">George</a>. Doug can be seen in the night skies of <a href="index.html?p=ert" class="y">Ert</a> during the evenings, although it is hard to see due to it not having much of a reflective surface. As such, Doug is often forgotten and even hated due to its status as a planet.',
 					'The term for describing something related to Doug is Forgettable.'
 				],
 				categories: [{
@@ -702,36 +699,6 @@ function generatePage(page) {
 				endnav: 'planet'
 			});
 			break;
-		case "cea":
-			pageTemplate({
-				warning: 'stub',
-				name: 'Cea',
-				file: ['cea.png', 'pixel'],
-				dims: ['330', '330'],
-				caption: 'Pictured in natural color, illustration made by Gramiatar.',
-				heading: 'Designations',
-				navbox: [{
-					name: 'Orbits',
-					info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
-				}, {
-					name: 'Satellites',
-					info: ['Numerous Mines (52 confirmed)']
-				}, {
-					name: 'Name Origin',
-					info: ['Unknown']
-				}, {
-					name: 'Classification',
-					info: ['Ocean']
-				}, {
-					name: 'Life',
-					info: ['Unknown']
-				}],
-				introText: [
-					'Cea is the third planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=doug" class="y">Doug</a> and before <a href="index.html?p=ert" class="y">Ert</a> and <a href="index.html?p=george" class="y">George</a>.'
-				],
-				endnav: 'planet'
-			});
-			break;
 		case "ert":
 			pageTemplate({
 				warning: 'quality',
@@ -757,7 +724,7 @@ function generatePage(page) {
 					info: ['Reegs', 'Polygons', 'And More']
 				}],
 				introText: [
-					'Ert is the fourth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, sharing this position with <a href="index.html?p=george" class="y">George</a>, after <a href="index.html?p=cea" class="y">Cea</a> and before <a href="index.html?p=pilf" class="y">Pilf</a>. Ert is notable, being one of the only two planets in a binary system, sharing this feature with George. Ert is also the planet with the second most diversity of life, behind George, and also has some of the most "intelligent" inhabitants. Ert\'s sentient life boasts technology such as televisions, giant tungsten cubes, and the Perpahedron, but it is by no means able to take advantage of the planets around it, despite lifeforms being able to live on other planets. Ert is about one seventieth of the size of the Hot Sun.',
+					'Ert is the fourth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, sharing this position with <a href="index.html?p=george" class="y">George</a>, after <a href="index.html?p=doug" class="y">Doug</a> and before <a href="index.html?p=pilf" class="y">Pilf</a>. Ert is notable, being one of the only two planets in a binary system, sharing this feature with George. Ert is also the planet with the second most diversity of life, behind George, and also has some of the most "intelligent" inhabitants. Ert\'s sentient life boasts technology such as televisions, giant tungsten cubes, and the Perpahedron, but it is by no means able to take advantage of the planets around it, despite lifeforms being able to live on other planets. Ert is about one seventieth of the size of the Hot Sun.',
 					'The term for describing something related to Ert is Ertian.'
 				],
 				categories: [{
@@ -832,7 +799,7 @@ function generatePage(page) {
 					info: ['Cows', 'Ozark', 'Plushrooms', 'And More']
 				}],
 				introText: [
-					'George is the fourth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, sharing this position with <a href="index.html?p=ert" class="y">Ert</a>, after <a href="index.html?p=cea" class="y">Cea</a> and before <a href="index.html?p=pilf" class="y">Pilf</a>.'
+					'George is the fourth planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, sharing this position with <a href="index.html?p=ert" class="y">Ert</a>, after <a href="index.html?p=doug" class="y">Doug</a> and before <a href="index.html?p=pilf" class="y">Pilf</a>.'
 				],
 				endnav: 'planet'
 			});
@@ -917,7 +884,7 @@ function generatePage(page) {
 					info: ['Confirmed but Unknown']
 				}],
 				introText: [
-					'Mac is the sixth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=cea" class="y">Cea</a> and before <a href="index.html?p=aeiou" class="y">Aeiou</a>. It is the largest planet in the system. It is a gas giant, with a diameter that is a sixth and a half of the size of the Hot Sun, and has a prime vertical that is a sixth and three fourths of the size of the Hot Sun. Due to its size, it is visible from <a href="index.html?p=ert" class="y">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
+					'Mac is the sixth planet from the <a href="index.html?p=hotsun" class="y">Hot Sun</a>, after <a href="index.html?p=pilf" class="y">Pilf</a> and before <a href="index.html?p=aeiou" class="y">Aeiou</a>. It is the largest planet in the system. It is a gas giant, with a diameter that is a sixth and a half of the size of the Hot Sun, and has a prime vertical that is a sixth and three fourths of the size of the Hot Sun. Due to its size, it is visible from <a href="index.html?p=ert" class="y">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
 					'Mac is mostly composed of Hydrogen, being in the form of gas and plasma, and Helium, with a good amount of Iodine and Neon, along with a small amount of other materials and elements. Due to Mac\'s rotation, the planet has a huge bulge on the horizon, experiencing a day once every 3.5 hours. Mac orbit lies inside of an asteroid belt.',
 					'The term for describing something related to Mac is Donian.'
 				],
@@ -1253,7 +1220,7 @@ function generatePage(page) {
 				}],
 				introText: [
 					'Greme is the first plamet im the <a href="index.html?p=hotsun" class="y">Hot Sum</a> system, before <a href="index.html?p=doug" class="y">Doug</a>. It is about a fifty-fifth of the size of the Hot Sum. Greme cam barely be seem from <a href="index.html?p=ert" class="y">Ert</a>, lookimg like a sum spot due to how close it is to the Hot Sum, but simce it revolves aroumd the Hot Sum rather quickly, it looks like a sum spot that moves extremely quickly. It cam omly be observed by special meams, specifically im day with special equipmemt.',
-					'Greme\'s surface is mostly composed of silicom amd am umkmowm material, with the side of the plamet facimg the Hot Sum comsistimg of moltem silicom. The atmosphere comtaims evaporated silicom, alomg with amother umkmowm material that causes a cycle similar to the water cycle om <a href="index.html?p=ert" class="y">Ert</a>, <a href="index.html?p=george" class="y">George</a>, amd <a href="index.html?p=cea" class="y">Cea</a>. Said atmosphere is beimg stripped off of the plamet by the solar wimd, beimg blasted off, leavimg a trail that comstamtly leaves the plamet, facimg away from the Hot Sum. A year om Greme lasts 20 hours. Days cam mot be measured due to the plamet beimg tidally locked to the Hot Sum.',
+					'Greme\'s surface is mostly composed of silicom amd am umkmowm material, with the side of the plamet facimg the Hot Sum comsistimg of moltem silicom. The atmosphere comtaims evaporated silicom, alomg with amother umkmowm material that causes a cycle similar to the water cycle om <a href="index.html?p=ert" class="y">Ert</a> amd <a href="index.html?p=george" class="y">George</a>. Said atmosphere is beimg stripped off of the plamet by the solar wimd, beimg blasted off, leavimg a trail that comstamtly leaves the plamet, facimg away from the Hot Sum. A year om Greme lasts 20 hours. Days cam mot be measured due to the plamet beimg tidally locked to the Hot Sum.',
 					'The term for describimg somethimg related to Greme is Gremiam.'
 				],
 				categories: [{
@@ -1428,7 +1395,7 @@ function generatePage(page) {
 				}, {
 					name: 'Gramiatar',
 					info: [
-						'Created Grene, Doug, Cea, Ert, George, Pilf, Mac, The, the Macaroni Belt, and provided all of the pixel art on the Wiki.',
+						'Created Grene, Doug, Ert, George, Pilf, Mac, The, the Macaroni Belt, and provided all of the pixel art on the Wiki.',
 						'Helped out with the worldbuilding inside and beyond this world.',
 						'Helped out with the comics a lot, along with the creation of most of the OST!',
 						'Helped out with storyboarding, along with Text Wall, in the creation of the comics.'
