@@ -395,7 +395,7 @@ function verify(slide) {
 			return;
 		}
 		document.getElementsByClassName('description')[0].innerHTML = 'Well... What did you think was going to happen when you put in a decimal value?';
-		document.getElementsByClassName('slides')[slideIndex - 1].childNodes[1].src = `./panels/corrupt/corrupt_${comic}.jpg`;
+		document.getElementsByClassName('slides')[slideIndex - 1].childNodes[1].src = `./panels/eggs/corrupt/corrupt_${comic}.jpg`;
 		document.getElementsByClassName('slides')[slideIndex - 1].childNodes[1].visibility = 'visible';
 		if (comic == 'nine') {
 			document.getElementsByClassName('slides')[slideIndex - 1].childNodes[2].innerHTML = 'Aero is gone.';
