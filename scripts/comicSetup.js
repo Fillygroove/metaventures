@@ -7,88 +7,87 @@ function generatePanels(comic) {
 		extension: 'jpg'
 	};
 	switch (comic) { // Done in order of release
-		case "choose-av":
-			comicInfo.dir = 'av/choose';
+		case "av-choose":
 			comicInfo.howLong = 14;
 			comicInfo.title = 'Choose your AV comic!';
 			comicInfo.desc = 'Original Unfiltered Content';
 			comicInfo.extension = 'png';
 			break;
-		case "1":
+		case "av-1":
 			comicInfo.howLong = 4;
 			comicInfo.title = 'AV-1: The Pilot';
 			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> goes to fight his first enemy and nemesis, <a href="../wiki/index.html?p=archie" class="n">Archie</a></a>.';
 			break;
-		case "2":
+		case "av-2":
 			comicInfo.howLong = 4;
 			comicInfo.title = 'AV-2: Dr. Lakys\' Electric Boogaloo';
 			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> goes to fight mad <a href="../wiki/index.html?p=lakys" class="n">Lakys</a> and his annoying pylons.';
 			break;
-		case "3":
+		case "av-3":
 			comicInfo.howLong = 6;
 			comicInfo.title = 'AV-3: Nutstradamnus Rumbel';
 			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> attempts to slay the Notorious Gold Golem <a href="../wiki/index.html?p=nutstradamnus" class="n">Nutstradamnus</a> in its long horribly worded battle.';
 			break;
-		case "4":
+		case "av-4":
 			comicInfo.howLong = 3;
 			comicInfo.title = 'AV-4: ARCHIE STRYKSE BAK!1!';
 			comicInfo.desc = '<a href="../wiki/index.html?p=archie" class="n">Archie</a> strikes back at our Hero with his OWN Meme.';
 			break;
-		case "5":
+		case "av-5":
 			comicInfo.howLong = 9;
 			comicInfo.title = 'AV-5: RoYEEEAL Shimmy Shammy';
 			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> enters the Arena where he has to best Gladiator Champion <a href="../wiki/index.html?p=royale" class="n">Royale</a> to escape.';
 			break;
-		case "6":
+		case "av-6":
 			comicInfo.howLong = 22;
 			comicInfo.title = 'AV-6: Future Fails';
 			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> comes back from the dead in the future and tries to get revenge on <a href="../wiki/index.html?p=archie" class="n">Archie</a>.';
 			break;
-		case "7":
+		case "av-7":
 			comicInfo.howLong = 35;
 			comicInfo.title = 'AV-7: In The Shadow of the Perpatrator';
 			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and <a href="../wiki/index.html?p=lakys" class="n">Lakys</a> are forced to team up after a giant <a href="../wiki/index.html?p=perpahedron" class="n">Perpahedron</a> Satellite is about to hit <a href="../wiki/index.html?p=ert" class="y">Ert</a>.';
 			break;
-		case "8":
+		case "av-8":
 			comicInfo.howLong = 36;
 			comicInfo.title = 'AV-8: Tropical Trouble';
 			comicInfo.desc = 'In this rather short eposode: <a href="../wiki/index.html?p=aero" class="y">Aero</a>, <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>, and <a href="../wiki/index.html?p=archie" class="n">Archie</a> get stuck on an island after their plane blows up. watch as they struggle to survive. hah. idiots.';
 			break;
-		case "9":
+		case "av-9":
 			comicInfo.howLong = 34;
 			comicInfo.title = 'AV-9: Group Lunatics 100';
 			comicInfo.desc = 'With the Tower of Gladii out of money, <a href="../wiki/index.html?p=aero" class="y">Aero</a>, <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>, <a href="../wiki/index.html?p=archie" class="n">Archie</a>, and <a href="../wiki/index.html?p=aposteel" class="n">Aposteel</a> go to get wacky jobs to pay for the abandoned tower.';
 			break;
-		case "10":
+		case "av-10":
 			comicInfo.howLong = 73;
 			comicInfo.title = 'AV-10: Flat Line';
 			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> goes to the hospital after an incident and finds out that it isnt as it seems. porkchops included.';
 			break;
-		case "10.5":
+		case "av-10.5":
 			comicInfo.howLong = 53;
 			comicInfo.title = 'AV-10.5: Over The Rainbow';
 			comicInfo.desc = 'We tune in to our favorite cartoon characters in tough pickle.';
 			break;
-		case "h":
+		case "av-h":
 			comicInfo.howLong = 84;
 			comicInfo.title = 'AV: Halloween Edition';
 			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and the gang go to a halloween party, but whos gonna attack them now?  Find out in this wierdly long adventure! SPOOKE!';
 			break;
-		case "11":
+		case "av-11":
 			comicInfo.howLong = 106;
 			comicInfo.title = 'AV-11: Code Red';
 			comicInfo.desc = 'Something terribly wrong has happened in Dr. <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>\'s lab. Can the Aeroventures Crew stop this new menace?';
 			break;
-		case "12":
+		case "av-12":
 			comicInfo.howLong = 2;
 			comicInfo.title = 'AV-12: Nutty Business';
 			comicInfo.desc = 'A large two part Aeroventure where the Aeroventures crew meet up with Nutstradamnus once more...';
 			break;
-		case "12-1":
+		case "av-12-1":
 			comicInfo.howLong = 110;
 			comicInfo.title = 'AV-12: Nutty Business, Part 1';
 			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and friends meet an unexpected foe.';
-			comicInfo.dir = 'av/12/12-1';
+			comicInfo.dir = 'av/av-12/av-12-1';
 			break;
 		case "dk":
 			comicInfo.howLong = 25;
@@ -116,7 +115,7 @@ function generatePanels(comic) {
 			comicInfo.desc = 'Panel Number';
 			break;
 		default:
-			window.location = 'index.html?c=choose-av';
+			window.location = 'index.html?c=av-choose';
 			break;
 	}
 
@@ -162,7 +161,7 @@ function generatePanels(comic) {
 		if (comic == '7' && i == 10) appendPanel('../wiki/index.html?p=dino'); // Dinosaurs wiki page
 		else if (comic == '8' && i == 7) appendPanel('index.html?c=trigger'); // Trigger Fish
 		else if (comic == '11' && i == 44) appendPanel('index.html?c=brooo'); // Broventures
-		else if (comic == '12' && i == 1) appendPanel(`index.html?c=12-${i}`);
+		else if (comic == 'av-12' && i == 1) appendPanel(`index.html?c=av-12-${i}`);
 		else if (comic == '11' && i == 8) { // Code Red explanation loop
 			let panelLink = document.createElement('a');
 			panelLink.style = 'cursor: pointer;';
@@ -172,8 +171,8 @@ function generatePanels(comic) {
 			
 			panelLink.append(panels);
 			slides.append(panelLink);
-		} else if (comic == 'choose-av') {
-			let episode = String(i);
+		} else if (comic == 'av-choose') {
+			let episode = i;
 			switch (i) {
 				case 11:
 					episode = '10.5';
@@ -189,7 +188,7 @@ function generatePanels(comic) {
 					break;
 			}
 			
-			appendPanel(`index.html?c=${episode}`);
+			appendPanel(`index.html?c=av-${episode}`);
 		}
 		else slides.append(panels);
 		
@@ -240,7 +239,7 @@ function generatePanels(comic) {
 			caption.style = 'text-align: center; background-color: #555555;'
 			caption.innerHTML = 'The finale for broventures has come, and i can tell you its been an amazing journey. Even after the 5 movies and 127 brands of clothes based on this series, i cant help but still love how it came out. Thanks to all of your increasing support i was finally able to make a sufficient ending to the series that touched our hearts as children, and now to the next generation. Do i have any regrets about closing off this wonderful series for good? No, it was a perfect run that i dont think even Einstein couldve finished off better. I may be shedding a tear right now about letting this series go, but i know it would be forever perfect in our minds, and in this archive. Thank you all who have stuck with me on this ride, we\'ve worked tirelessly on these broventures. I dont know what will happen next, but i\'m glad i was able to be part of this epoch in history.';
 			slides.append(caption);
-		} else if (comic == 'choose-av') {
+		} else if (comic == 'av-choose') {
 			let caption = document.createElement('div');
 			caption.style = 'text-align: center; background-color: #555555;';
 			switch (i) {
@@ -390,7 +389,7 @@ function verify(slide) {
 	} else if (slide == 'Panel Number') {  // Panel Number Easter Egg
 		window.location.href = 'index.html?c=pn';
 	} else if (!isNaN(slide) && Math.floor(slide) != slide) { // Panel Corruption Easter Egg
-		if (comic == '10.5' || comic == 'trigger' || comic == 'choose-av') {
+		if (comic == '10.5' || comic == 'trigger' || comic == 'av-choose') {
 			document.getElementsByClassName('description')[0].innerHTML = 'Failed the corruption, please try again later.';
 			return;
 		}
