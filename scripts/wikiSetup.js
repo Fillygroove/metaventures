@@ -478,48 +478,13 @@ function generatePage(page) {
 					info: ['Aeroventures']
 				}],
 				introText: [
-					'Aero D. Venture, commonly known as Aero, is the title character for Aeroventures. Since 2017, Aero has been causing chaos unintentionally all over <a href="index.html?p=ert" class="y">Ert</a>, primarily in Yolktown. Despite this, many of his adversaries, such as <a href="index.html?p=royale" class="n">Royale</a> and <a href="index.html?p=larry-av" class="n">Larry</a>, have caused considerably more damage than he ever could. That\'s why he has <a href="index.html?p=lakys" class="n">Lakys</a>, <a href="index.html?p=archie" class="n">Archie</a>, and <a href="index.html?p=aposteel" class="n">Aposteel</a>, officially called The Aeroventures Crew, by his side.',
-					'In Aeroventures, Aero is seen as the main protagonist, and one of the main 4 protagonists, the others being Lakys, Archie, and, most recently, Aposteel. All four of them unintentionally cause chaos wherever they are.',
-					'Aero has a numerous amount of clones, mostly created by Royale during <a href="../comics/index.html?c=10" class="c">Aeroventures 10</a>. Said clones have the same name first name, although their middle name is a bit different, and their last name is always different. An example of an Aero clone is Aero D. Struction. Most Aero Clones feature Aero\'s old look, when he was high on <a href="index.html?p=aposteel" class="n">Nagic</a>.'
+					'Aero D. Venture, is the title character of the Aeroventures comic series. In Aeroventures, Aero is one of the four main protagonists, along with <a href="index.html?p=archie" class="n">Archie</a>, <a href="index.html?p=lakys" class="n">Lakys</a>, and <a href="index.html?p=aposteel" class="n">Aposteel</a>. Within the narrative of Aeroventures, Aero is generally seen as the leader of a crew named after himself, which includes himself and the three other main characters, as they include themselves in different situations.',
+					''
 				],
 				categories: [{
-					name: 'Character Design',
+					name: '',
 					info: [
-						'<h3>Modern Appearance</h3>',
-						'Aero is a reeg that has a blue skin tone, like most reegs. Also like most reegs, Aero has a spherical shaped body with two legs at the bottom that have the ability to stretch and fold in on themselves. Aero has a lance nose, which could be used for offensive purposes but is never used due to his laziness. Aero is exactly 2 feet tall in height.',
-						'<img src="images/old_aero.png" alt="old_aero.png" width="100" height="124.52" class="pixel" style="float: right; background-color: #555555;"></img>',
-						'<h3>Legacy Appearance</h3>',
-						'In the past, Aero used to be more deformed, due to being under the influence of Nagic. His lance was a lot bigger, and was usually placed to the side of his head, along with his eyes being bigger, and his head being seperated into a new section of his body. This form of Aero is referred to as Old Aero. Old Aero is usually referred to as a different person, and acts differently as well.'
-					]
-				}, {
-					name: 'In The Comics',
-					info: [
-						'<h3>Aeroventures 1</h3>',
-						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 1</a>,',
-						'<h3>Aeroventures 2</h3>',
-						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 2</a>,',
-						'<h3>Aeroventures 3</h3>',
-						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 3</a>,',
-						'<h3>Aeroventures 4</h3>',
-						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 4</a>,',
-						'<h3>Aeroventures 5</h3>',
-						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 5</a>,',
-						'<h3>Aeroventures 6</h3>',
-						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 6</a>,',
-						'<h3>Aeroventures 7</h3>',
-						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 7</a>,',
-						'<h3>Aeroventures 8</h3>',
-						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 8</a>,',
-						'<h3>Aeroventures 9</h3>',
-						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 9</a>,',
-						'<h3>Aeroventures 10</h3>',
-						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 10</a>,',
-						'<h3>Aeroventures Halloween Edition</h3>',
-						'In <a href="../comics/index.html?c=1" class="c">Aeroventures Halloween Edition</a>,',
-						'<h3>Aeroventures 11</h3>',
-						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 11</a>,',
-						'<h3>Aeroventures 12</h3>',
-						'In <a href="../comics/index.html?c=1" class="c">Aeroventures 12</a>,'
+						''
 					]
 				}],
 				endnav: 'chars'
