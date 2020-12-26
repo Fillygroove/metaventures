@@ -808,7 +808,7 @@ function generatePage(page) {
 			pageTemplate({ // First!
 				name: 'Pilf',
 				file: ['pilf.png', 'pixel'],
-				dims: ['330', '330'],
+				dims: ['330', '197.21'],
 				caption: 'Pictured in natural color, illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
@@ -829,7 +829,7 @@ function generatePage(page) {
 				}],
 				introText: [
 					'Pilf is the third planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=ert" class="y">Ert</a> and <a href="index.html?p=george" class="y">George</a> and before <a href="index.html?p=mac" class="y">Mac</a>. Pilf\'s most iconic feature is its weird shape, being that of a sharp cube, as opposed to the traditionally smooth shape of other planets. Pilf can be seen on Ert at the early hours of night, due to its relative closeness and vibrant colors, appearing as a dot in the sky. With binoculars, the full planet can be seen, however. The distance from the center of a side to the edge of a face is a seventy-fifth of the diameter of the Hot Sun.',
-					'<img src="images/pilf_ringless.png" alt="pilf_ringless.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
+					'<img src="images/pilf_ringless.png" alt="pilf_ringless.png" width="100" height="92.93" class="pixel" style="float: right; background-color: #555555;"></img>',
 					'Pilf is made out of a silicon-based material, although it has been observed to be less dense than most other planets. The purple color on Pilf\'s surface is theorized to be partially organic. There are also oceans on Pilf.',
 					'The term for describing something related to Pilf is Piian.'
 				],

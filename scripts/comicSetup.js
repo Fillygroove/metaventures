@@ -153,7 +153,7 @@ function generatePanels(comic) {
 		function appendPanel(link) {
 			let panelLink = document.createElement('a');
 			panelLink.href = link;
-						
+			
 			panelLink.append(panels);
 			slides.append(panelLink);
 		}
