@@ -114,7 +114,7 @@ function generatePanels(comic) {
 			break;
 		case "old-planets":
 			comicInfo.howLong = 22;
-			comicInfo.title = 'ARCHIVED - Gallary of the planets';
+			comicInfo.title = 'ARCHIVED - Gallery of the planets';
 			comicInfo.desc = 'The planets have had some old designs; Here they are!';
 			comicInfo.extension = 'png';
 			break;
