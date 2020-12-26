@@ -59,7 +59,7 @@ function makePage(page) {
 		dropdownDiv.append(dropdown);
 	}
 
-	makeButton('The Comics', 'aero-blue', `${comicDir}index.html?c=av-choose`);
+	makeButton('The Comics', 'aero-blue', `${comicDir}index.html?c=choose`);
 	makeButton('The Wiki', 'pon-pink', `${wikiDir}index.html?p=main`);
 	makeButton('The Discord', 'nyork-green', 'https://discord.gg/xxRvYERs48');
 

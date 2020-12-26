@@ -7,6 +7,12 @@ function generatePanels(comic) {
 		extension: 'jpg'
 	};
 	switch (comic) { // Done in order of release
+		case "choose":
+			comicInfo.howLong = 2;
+			comicInfo.title = 'Choose your comic series!';
+			comicInfo.desc = 'Select what you want to see!';
+			comicInfo.extension = 'png';
+			break;
 		case "av-choose":
 			comicInfo.howLong = 14;
 			comicInfo.title = 'Choose your AV comic!';
@@ -79,6 +85,7 @@ function generatePanels(comic) {
 			comicInfo.desc = 'Something terribly wrong has happened in Dr. <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>\'s lab. Can the Aeroventures Crew stop this new menace?';
 			break;
 		case "av-12":
+			comicInfo.extension = 'png';
 			comicInfo.howLong = 2;
 			comicInfo.title = 'AV-12: Nutty Business';
 			comicInfo.desc = 'A large two part Aeroventure where the Aeroventures crew meet up with Nutstradamnus once more...';
@@ -88,6 +95,28 @@ function generatePanels(comic) {
 			comicInfo.title = 'AV-12: Nutty Business, Part 1';
 			comicInfo.desc = '<a href="../wiki/index.html?p=aero" class="y">Aero</a> and friends meet an unexpected foe.';
 			comicInfo.dir = 'av/av-12/av-12-1';
+			break;
+		case "old-choose":
+			comicInfo.howLong = 3;
+			comicInfo.title = 'ARCHIVED CONTENT';
+			comicInfo.desc = 'Go out and things! See what isn\'t real!';
+			comicInfo.extension = 'png';
+			break
+		case "old-av-11":
+			comicInfo.howLong = 18;
+			comicInfo.title = 'ARCHIVED - AV-11: Code Red';
+			comicInfo.desc = 'Something terribly wrong has happened in Dr. <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>\'s lab. Can the Aeroventures Crew stop this new menace?';
+			break;
+		case "old-pv-1":
+			comicInfo.howLong = 31;
+			comicInfo.title = 'ARCHIVED - PV-1: The Pilot';
+			comicInfo.desc = 'An incident happens near the Square Sector, Quadrant 3.';
+			break;
+		case "old-planets":
+			comicInfo.howLong = 22;
+			comicInfo.title = 'ARCHIVED - Gallary of the planets';
+			comicInfo.desc = 'The planets have had some old designs; Here they are!';
+			comicInfo.extension = 'png';
 			break;
 		case "dk":
 			comicInfo.howLong = 25;
@@ -115,15 +144,17 @@ function generatePanels(comic) {
 			comicInfo.desc = 'Panel Number';
 			break;
 		default:
-			window.location = 'index.html?c=av-choose';
+			window.location = 'index.html?c=choose';
 			break;
 	}
 
 	if (comicInfo.dir == null) {
-		let folder;
-		if (comicInfo.title.includes('AV')) folder = 'av';
-		if (comicInfo.title.includes('Secret')) folder = 'secrets';
-		comicInfo.dir = `${folder}/${comic}`;
+		let folder = '';
+		if (comicInfo.title.includes('AV')) folder = 'av/';
+		if (comicInfo.title.includes('PV')) folder = 'pv/';
+		if (comicInfo.title.includes('ARCHIVED')) folder = 'old/';
+		if (comicInfo.title.includes('Secret')) folder = 'secrets/';
+		comicInfo.dir = `${folder}${comic}`;
 	}
 
 	let avThin = document.getElementsByClassName('av-thin')[0];
@@ -147,7 +178,8 @@ function generatePanels(comic) {
 		let panels = document.createElement('img');
 		panels.src = `./panels/${comicInfo.dir}/${i}.${comicInfo.extension}`;
 		panels.style = 'max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: #555555;';
- 
+		if (comic == 'old-planets') panels.className = 'pixel';
+		
 		slides.append(number);
 		
 		function appendPanel(link) {
@@ -171,6 +203,18 @@ function generatePanels(comic) {
 			
 			panelLink.append(panels);
 			slides.append(panelLink);
+		} else if (comic == 'choose') {
+			let episode = i;
+			switch (i) {
+				case 1:
+					episode = 'av-choose';
+					break;
+				case 2:
+					episode = 'old-choose';
+					break;
+			}
+			
+			appendPanel(`index.html?c=${episode}`);
 		} else if (comic == 'av-choose') {
 			let episode = i;
 			switch (i) {
@@ -189,6 +233,21 @@ function generatePanels(comic) {
 			}
 			
 			appendPanel(`index.html?c=av-${episode}`);
+		} else if (comic == 'old-choose') {
+			let episode = i;
+			switch (i) {
+				case 1:
+					episode = 'av-11';
+					break;
+				case 2:
+					episode = 'pv-1';
+					break;
+				case 3:
+					episode = 'planets';
+					break;
+			}
+			
+			appendPanel(`index.html?c=old-${episode}`);
 		}
 		else slides.append(panels);
 		
@@ -239,6 +298,18 @@ function generatePanels(comic) {
 			caption.style = 'text-align: center; background-color: #555555;'
 			caption.innerHTML = 'The finale for broventures has come, and i can tell you its been an amazing journey. Even after the 5 movies and 127 brands of clothes based on this series, i cant help but still love how it came out. Thanks to all of your increasing support i was finally able to make a sufficient ending to the series that touched our hearts as children, and now to the next generation. Do i have any regrets about closing off this wonderful series for good? No, it was a perfect run that i dont think even Einstein couldve finished off better. I may be shedding a tear right now about letting this series go, but i know it would be forever perfect in our minds, and in this archive. Thank you all who have stuck with me on this ride, we\'ve worked tirelessly on these broventures. I dont know what will happen next, but i\'m glad i was able to be part of this epoch in history.';
 			slides.append(caption);
+		} else if (comic == 'choose') {
+			let caption = document.createElement('div');
+			caption.style = 'text-align: center; background-color: #555555;';
+			switch (i) {
+				case 1:
+					caption.innerHTML = 'Aeroventures';
+					break;
+				case 2:
+					caption.innerHTML = 'The Archie-ve';
+					break;
+			}
+			slides.append(caption);
 		} else if (comic == 'av-choose') {
 			let caption = document.createElement('div');
 			caption.style = 'text-align: center; background-color: #555555;';
@@ -287,6 +358,21 @@ function generatePanels(comic) {
 					break;
 			}
 			slides.append(caption);
+		} else if (comic == 'old-choose') {
+			let caption = document.createElement('div');
+			caption.style = 'text-align: center; background-color: #555555;';
+			switch (i) {
+				case 1:
+					caption.innerHTML = 'Aeroventures 11: Code Red';
+					break;
+				case 2:
+					caption.innerHTML = 'Polyventures 1: The Pilot';
+					break;
+				case 3:
+					caption.innerHTML = 'Planets Gallery';
+					break;
+			}
+			slides.append(caption);
 		} else if (comic == '12') {
 			let caption = document.createElement('div');
 			caption.style = 'text-align: center; background-color: #555555;';
@@ -296,6 +382,78 @@ function generatePanels(comic) {
 					break;
 				case 2:
 					caption.innerHTML = 'Aeroventures 12, Part 2 (Coming soon! (for real this time))';
+					break;
+			}
+			slides.append(caption);
+		} else if (comic == 'old-planets') {
+			let caption = document.createElement('div');
+			caption.style = 'text-align: center; background-color: #555555;';
+			switch (i) {
+				case 1:
+					caption.innerHTML = 'The original Grene, before the larger remake...';
+					break;
+				case 2:
+					caption.innerHTML = '...Now with a blown off atmosphere.';
+					break;
+				case 3:
+					caption.innerHTML = 'The original version of Doug.';
+					break;
+				case 4:
+					caption.innerHTML = 'That looks better.';
+					break;
+				case 5:
+					caption.innerHTML = 'A REALLY old version of Ert.';
+					break;
+				case 6:
+					caption.innerHTML = 'A newer version of Ert.';
+					break;
+				case 7:
+					caption.innerHTML = 'The original art for George, with Damocles on the side.';
+					break;
+				case 8:
+					caption.innerHTML = 'The original art for Pii, now called Pilf.';
+					break;
+				case 9:
+					caption.innerHTML = 'A newer version of Pilf...';
+					break;
+				case 10:
+					caption.innerHTML = '...With rings!';
+					break;
+				case 11:
+					caption.innerHTML = 'An even newer version of Pilf, with an older ring placement.';
+					break;
+				case 12:
+					caption.innerHTML = 'Baeg, now named Dough, when it was a planet.';
+					break;
+				case 13:
+					caption.innerHTML = 'The original art for Mac. Has it\'s pole visible.';
+					break;
+				case 14:
+					caption.innerHTML = 'The original art for Aeiou.';
+					break;
+				case 15:
+					caption.innerHTML = 'A sketch of Aeiou, made by Text Wall.';
+					break;
+				case 16:
+					caption.innerHTML = 'A newer version of Aeiou, before its rework.';
+					break;
+				case 17:
+					caption.innerHTML = 'The original art for Berry, then named Xystload, then Purpl.';
+					break;
+				case 18:
+					caption.innerHTML = 'The.';
+					break;
+				case 19:
+					caption.innerHTML = 'The very first version of Cea.';
+					break;
+				case 20:
+					caption.innerHTML = 'The first remake for Cea.';
+					break;
+				case 21:
+					caption.innerHTML = 'Another remake, now more cloudy.';
+					break;
+				case 22:
+					caption.innerHTML = 'Now covered in clouds, before becoming the Cold Sun\'s old form.';
 					break;
 			}
 			slides.append(caption);
