@@ -119,10 +119,10 @@ function generatePanels(comic) {
 			comicInfo.extension = 'png';
 			break;
 		case "old-misc":
-			comicInfo.howLong = 20;
+			comicInfo.howLong = 19;
 			comicInfo.title = 'ARCHIVED - Miscellanea';
 			comicInfo.desc = 'A little place where you can see some random stuff related to the project...';
-			comicInfo.extension = ['png', 'jpg', 'png', 'jpg', 'png', 'jpg', 'jpg', 'jpg', 'jpg', 'jpg', 'jpg', 'jpg', 'png', 'png', 'png', 'gif', 'gif', 'png', 'png', 'png'];
+			comicInfo.extension = ['png', 'jpg', 'png', 'png', 'jpg', 'jpg', 'jpg', 'jpg', 'jpg', 'jpg', 'jpg', 'png', 'png', 'png', 'gif', 'gif', 'png', 'png', 'png'];
 			break;
 		case "dk":
 			comicInfo.howLong = 25;
@@ -488,54 +488,51 @@ function generatePanels(comic) {
 					caption.innerHTML = 'what the fuck';
 					break;
 				case 4:
-					caption.innerHTML = 'Shockpose is an egg, by the way.';
-					break;
-				case 5:
 					caption.innerHTML = 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA';
 					break;
-				case 6:
+				case 5:
 					caption.innerHTML = 'How to draw Royale!';
 					break;
-				case 7:
+				case 6:
 					caption.innerHTML = 'ew';
 					break;
-				case 8:
+				case 7:
 					caption.innerHTML = 'Some characters that could appear later...';
 					break;
-				case 9:
+				case 8:
 					caption.innerHTML = 'Map of Future City that could be used somewhere...';
 					break;
-				case 10:
+				case 9:
 					caption.innerHTML = 'The full extent of Froyale';
 					break;
-				case 11:
+				case 10:
 					caption.innerHTML = 'The FULLER extent of Froyale';
 					break;
-				case 12:
-					caption.innerHTML = 'Some more characters that could appear later...';
+				case 11:
+					caption.innerHTML = 'Some old designs of characters you haven\'t seen yet...';
 					break;
-				case 13:
+				case 12:
 					caption.innerHTML = 'Old sketches by Gram, before he pinned down the style.';
 					break;
-				case 14:
+				case 13:
 					caption.innerHTML = 'An old sketch of Aero, made by Gram, which is... Okay.';
 					break;
-				case 15:
+				case 14:
 					caption.innerHTML = 'bro';
 					break;
-				case 16:
+				case 15:
 					caption.innerHTML = 'An old animation of the machine in AV 11, by Jae/Ropes.';
 					break;
-				case 17:
+				case 16:
 					caption.innerHTML = 'Aero turns into Old Aero, by Jae/Ropes. Terrifying.';
 					break;
-				case 18:
+				case 17:
 					caption.innerHTML = 'WHO ARE THESE PEOPLE';
 					break;
-				case 19:
+				case 18:
 					caption.innerHTML = 'zzzzzzzzzzzz';
 					break;
-				case 20:
+				case 19:
 					caption.innerHTML = 'The Stock Market Crashed & Generic Juice';
 					break;
 			}
