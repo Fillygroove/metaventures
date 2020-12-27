@@ -643,7 +643,7 @@ function generatePage(page) {
 				}, {
 					name: 'Satellites',
 					info: [
-						'<img src="images/h.png" alt="h.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
+						'<img src="images/h.png" alt="h.png" width="100" height="100" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
 						'<h3>H</h3>',
 						'Doug has one confirmed satellite, which has been named H. H is a natural satellite, shaped like a cube. It is the only object in the system with a cuboid shape, along with Pilf. H itself contains a similar makeup to Doug, with the same type of rocks and similar craters, with the only difference being size and shape. It is unknown if the naming of H was to make Doug and H match up with one of <a href="index.html?p=mac" class="y">Mac</a>\'s satellites, Dough, so that people could remember Doug.'
 					]
@@ -716,9 +716,9 @@ function generatePage(page) {
 					name: 'Satellites',
 					info: [
 						'<h3>George</h3>',
-						'<img src="images/george.png" alt="george.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
+						'<img src="images/george.png" alt="george.png" width="100" height="100" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
 						'George is Ert\'s twin. George and Ert rotate around each other, and are tidally locked with one another. George has more land relative to Ert, and harbors surprisingly more life. It also harbors Ozark, the entity that inspired the Dint Can\'s mascot.',
-						'<img src="images/perpahedron.png" alt="perpahedron.png" width="300" height="300" class="pixel" style="float: right; background-color: #555555;"></img>',
+						'<img src="images/perpahedron.png" alt="perpahedron.png" width="300" height="300" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
 						'<h3>Perpahedron</h3>',
 						'The Perpahedron is an artificial satellite, constructed by Daktor and a group of scientists. The purpose of The Perpahedron is unknown, although suggestions for its purpose include being a gigantic multitool, a space mansion, and an overcomplicated mayonnaise jar. The Perpahedron has a large amount of tools, such as thrusters, speakers, and a giant tungsten cube attached by a nylon string.'
 					]
@@ -794,7 +794,7 @@ function generatePage(page) {
 				}],
 				introText: [
 					'Pilf is the third planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=ert" class="y">Ert</a> and <a href="index.html?p=george" class="y">George</a> and before <a href="index.html?p=mac" class="y">Mac</a>. Pilf\'s most iconic feature is its weird shape, being that of a sharp cube, as opposed to the traditionally smooth shape of other planets. Pilf can be seen on Ert at the early hours of night, due to its relative closeness and vibrant colors, appearing as a dot in the sky. With binoculars, the full planet can be seen, however. The distance from the center of a side to the edge of a face is a seventy-fifth of the diameter of the Hot Sun.',
-					'<img src="images/pilf_ringless.png" alt="pilf_ringless.png" width="100" height="92.93" class="pixel" style="float: right; background-color: #555555;"></img>',
+					'<img src="images/pilf_ringless.png" alt="pilf_ringless.png" width="100" height="92.93" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
 					'Pilf is made out of a silicon-based material, although it has been observed to be less dense than most other planets. The purple color on Pilf\'s surface is theorized to be partially organic. There are also oceans on Pilf.',
 					'The term for describing something related to Pilf is Piian.'
 				],
@@ -802,14 +802,14 @@ function generatePage(page) {
 					name: 'Characteristics',
 					info: [
 						'Pilf is a Cuboid Terrestrial planet that is made up of a silicon-based material, although it is less dense than usual. The planet also could have partially organic material that makes up its purple color. On each face, there is a pool of liquid, that has been confirmed to be highly corrosive. Prior attempts to extract the liquid have lead to each probe disintegrating due to the liquid. Life is theorized to exist in the liquid, in the form of highly resistant bacteria, although this is unconfirmed. Each side seems to have its own life, with the only universal thing between each side is that they\'re covered in moss that tastes like cheese, and flies that consume the cheese.',
-						'<a href="index.html?p=pilfception"><img src="images/pilf_atmosphere.png" alt="pilf_atmosphere.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img></a>',
+						'<a href="index.html?p=pilfception"><img src="images/pilf_atmosphere.png" alt="pilf_atmosphere.png" width="100" height="100" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img></a>',
 						'Despite the planet\'s cuboid shape, the atmosphere takes on the shape of its gravity, which is still spherical. The atmosphere bulges around each face, leaving the corners exposed to the near vacuum of space. The atmosphere has a greenish tint, similar to the bodies of liquid on each face. To the right is a diagram, explaining the atmosphere in greater detail.',
 						'Pilf shares its cuboid shape with <a href="index.html?p=doug" class="y">Doug</a>\'s only satellite, H.'
 					]
 				}, {
 					name: 'Satellites',
 					info: [
-						'<img src="images/piffol_rings.png" alt="piffol_rings.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
+						'<img src="images/piffol_rings.png" alt="piffol_rings.png" width="100" height="100" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
 						'<h3>Piffol Rings</h3>',
 						'Pilf\'s only satellites are the Piffol Rings, a collection of ring like objects that surround the planet at a 30 degree angle. Pilf is one of the only two planets with a ring system, the other one being <a href="index.html?p=aeiou" class="y">Aeiou</a>. Each Piffol Ring is made up of a bunch of tightly packed globuals of liquids, that seem to have the same consistancy of custard. Each ring has a different shade of color, ranging from a light orange to a deep purple, all of which are usually very saturated. There are seven confirmed rings, each one named after flavors of cheese. The reason why the ring system is named the Piffol Rings is that Piffol is a corruption of the word Piffle, which means nonsense.'
 					]
@@ -863,11 +863,11 @@ function generatePage(page) {
 				}, {
 					name: 'Satellites',
 					info: [
-						'<img src="images/wop.png" alt="wop.png" width="100" height="87.14" class="pixel" style="float: right; background-color: #555555;"></img>',
+						'<img src="images/wop.png" alt="wop.png" width="100" height="87.14" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
 						'<h3>World of Pain</h3>',
 						'text',
 						'text',
-						'<img src="images/dough.png" alt="dough.png" width="100" height="85.07" class="pixel" style="float: right; background-color: #555555;"></img>',
+						'<img src="images/dough.png" alt="dough.png" width="100" height="85.07" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
 						'<h3>Dough</h3>',
 						'text',
 						'text'
@@ -995,7 +995,7 @@ function generatePage(page) {
 					info: ['Unknown']
 				}],
 				introText: [
-					'<i style = "background-color: #555555; padding-left: 2em;">"The what?"</i></br><i style = "background-color: #555555; padding-left: 2.5em;"> - Everyone</i>',
+					'<i style = "background-color: rgba(0, 0, 0, 0); padding-left: 2em;">"The what?"</i></br><i style = "background-color: rgba(0, 0, 0, 0); padding-left: 2.5em;"> - Everyone</i>',
 					'The is the ninth and last planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=aeiou" class="y">Aeiou</a>. The is a mysterious planet, which has been at the center of many scientific theories and general intrigue. As such, there are few things we know about The, but the information we do have is interesting, and, as such, warrants an article; Not to be confused with Article, These original name. The is exactly one fourty-second of the size of the Hot Sun.',
 					'The name for describing something similar to The is... The... The.'
 				],
@@ -1017,7 +1017,7 @@ function generatePage(page) {
 						'The doesn\'t have a lot of areas where you can\'t see the inside, but the areas we can see inside tell us a lot. First is the cut down the equator, which splits the northern and southern hemispheres to reveal a glowing area, split up into 12 distinct slices on the southern hemisphere, although the number of slices on the northern hemisphere is still unknown, due to the planet moving in a downwards direction from <a href="index.html?p=ert" class="y">Ert</a>\'s perspective. Said slices glow a deep red-ish purple color, with the borders of each piece glowing in a brighter shade of the aforementioned color. It is theorized that the borders are meant to represent piping, although this is unconfirmed.',
 						'The chevron on the top left of the northern hemisphere seems to indicate the existence of a similar material at the flat bases of the hemispheres, if not the same material. The section that lines up with the top row of lights seems to glow with the same intensity as the lights, which suggests that the lights go deeper into The than previously thought.',
 						'Both of These hemispheres have blue sections, which scientists initially thought was a sort of liquid, but then was proven to be in a solid state, due to there appearing to be lines on both sections. The current accepted theory is that the blue surface could be tinted glass. The lines on the surface, however, are still theorized about. Current theories include heavy scratching on the glass, piping under the glass, the tiling pattern of the glass, and a recipe on how to make forbidden juice.',
-						'<img src="images/the_first.png" alt="the_first.png" width="100" height="100" class="pixel" style="float: right; background-color: #555555;"></img>',
+						'<img src="images/the_first.png" alt="the_first.png" width="100" height="100" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
 						'<h3>Magnetic Field</h3>',
 						'To the right is the very first image taken of The, with interferrence from its immense magnetic field. Said magnetic field is around twice as large as the planet, and is so strong that cameras pointing towards it are effected. This effect is so strong, that it even affects images taken of Aeiou.'
 					]
@@ -1288,8 +1288,8 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'Secret: Aposteel\'s Shrine',
 				introText: [
-					'<i style = "background-color: #555555; padding-left: 2em;">"yo"</i></br><i style = "background-color: #555555; padding-left: 2.5em;"> - Panzer, our savior!</i>',
-					'<img src="images/shrine.jpg" alt="shrine.jpg" width="250" height="250" class="pixel" style="float: right; background-color: #555555;"></img>',
+					'<i style = "background-color: rgba(0, 0, 0, 0); padding-left: 2em;">"yo"</i></br><i style = "background-color: rgba(0, 0, 0, 0); padding-left: 2.5em;"> - Panzer, our savior!</i>',
+					'<img src="images/shrine.jpg" alt="shrine.jpg" width="250" height="250" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
 					'by apo don\'t STEEL'
 				]
 			});
@@ -1298,8 +1298,8 @@ function generatePage(page) {
 			pageTemplate({
 				name: 'Secret: PILFCEPTION!!!!',
 				introText: [
-					'<img src="images/pilfception.png" alt="pilfception.png" width="657" height="344" class="pixel" style="float: right; background-color: #555555;"></img>',
-					'<img src="images/oldpilf.png" alt="oldpilf.png" width="64" height="145" class="pixel" style="float: left; background-color: #555555;"></img>',
+					'<img src="images/pilfception.png" alt="pilfception.png" width="657" height="344" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
+					'<img src="images/oldpilf.png" alt="oldpilf.png" width="64" height="145" class="pixel" style="float: left; background-color: rgba(0, 0, 0, 0);"></img>',
 					'Hidden Pii :O'
 				]
 			});
@@ -1374,7 +1374,7 @@ function generatePage(page) {
 				}, {
 					name: 'SnapKrakPop',
 					info: [
-						'Helped out with the art and made the favicon!'
+						'Helped out with the art and made the favicon, along with the background image!'
 					]
 				}, {
 					name: 'Clarise',

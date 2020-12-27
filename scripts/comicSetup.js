@@ -97,7 +97,7 @@ function generatePanels(comic) {
 			comicInfo.dir = 'av/av-12/av-12-1';
 			break;
 		case "old-choose":
-			comicInfo.howLong = 3;
+			comicInfo.howLong = 4;
 			comicInfo.title = 'ARCHIVED CONTENT';
 			comicInfo.desc = 'Go out and things! See what isn\'t real!';
 			comicInfo.extension = 'png';
@@ -117,6 +117,12 @@ function generatePanels(comic) {
 			comicInfo.title = 'ARCHIVED - Gallery of the planets';
 			comicInfo.desc = 'The planets have had some old designs; Here they are!';
 			comicInfo.extension = 'png';
+			break;
+		case "old-misc":
+			comicInfo.howLong = 20;
+			comicInfo.title = 'ARCHIVED - Miscellanea';
+			comicInfo.desc = 'A little place where you can see some random stuff related to the project...';
+			comicInfo.extension = ['png', 'jpg', 'png', 'jpg', 'png', 'jpg', 'jpg', 'jpg', 'jpg', 'jpg', 'jpg', 'jpg', 'png', 'png', 'png', 'gif', 'gif', 'png', 'png', 'png'];
 			break;
 		case "dk":
 			comicInfo.howLong = 25;
@@ -168,7 +174,7 @@ function generatePanels(comic) {
 
 	for (let i = 1; i < comicInfo.howLong + 1; i++) {
 		let slides = document.createElement('div');
-		slides.style = 'background-color: #555555;';
+		slides.style = 'background-color: rgba(0, 0, 0, 0);';
 		slides.className = 'slides';
 		
 		let number = document.createElement('div');
@@ -176,8 +182,13 @@ function generatePanels(comic) {
 		number.innerHTML = `${i} / ${comicInfo.howLong}`;
 		
 		let panels = document.createElement('img');
-		panels.src = `./panels/${comicInfo.dir}/${i}.${comicInfo.extension}`;
-		panels.style = 'max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: #555555;';
+		
+		let extension = typeof comicInfo.extension == 'object' ? comicInfo.extension[i - 1] : comicInfo.extension;
+		
+		console.log(extension);
+		
+		panels.src = `./panels/${comicInfo.dir}/${i}.${extension}`;
+		panels.style = 'max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0);';
 		if (comic == 'old-planets') panels.className = 'pixel';
 		
 		slides.append(number);
@@ -245,6 +256,9 @@ function generatePanels(comic) {
 				case 3:
 					episode = 'planets';
 					break;
+				case 4:
+					episode = 'misc';
+					break;
 			}
 			
 			appendPanel(`index.html?c=old-${episode}`);
@@ -253,7 +267,7 @@ function generatePanels(comic) {
 		
 		if (comic == 'nine') {
 			let caption = document.createElement('div');
-			caption.style = 'text-align: center; background-color: #555555;';
+			caption.style = 'text-align: center; background-color: rgba(0, 0, 0, 0);';
 			switch (i) {
 				case 1:
 					caption.innerHTML = 'Aero looks upon a memory of a deceased Archie, someone who\'s been rumored to be coming back in recent times...';
@@ -295,12 +309,12 @@ function generatePanels(comic) {
 			slides.append(caption);
 		} else if (comic == "brooo" && i == 4) {
 			let caption = document.createElement('div');
-			caption.style = 'text-align: center; background-color: #555555;'
+			caption.style = 'text-align: center; background-color: rgba(0, 0, 0, 0);'
 			caption.innerHTML = 'The finale for broventures has come, and i can tell you its been an amazing journey. Even after the 5 movies and 127 brands of clothes based on this series, i cant help but still love how it came out. Thanks to all of your increasing support i was finally able to make a sufficient ending to the series that touched our hearts as children, and now to the next generation. Do i have any regrets about closing off this wonderful series for good? No, it was a perfect run that i dont think even Einstein couldve finished off better. I may be shedding a tear right now about letting this series go, but i know it would be forever perfect in our minds, and in this archive. Thank you all who have stuck with me on this ride, we\'ve worked tirelessly on these broventures. I dont know what will happen next, but i\'m glad i was able to be part of this epoch in history.';
 			slides.append(caption);
 		} else if (comic == 'choose') {
 			let caption = document.createElement('div');
-			caption.style = 'text-align: center; background-color: #555555;';
+			caption.style = 'text-align: center; background-color: rgba(0, 0, 0, 0);';
 			switch (i) {
 				case 1:
 					caption.innerHTML = 'Aeroventures';
@@ -312,7 +326,7 @@ function generatePanels(comic) {
 			slides.append(caption);
 		} else if (comic == 'av-choose') {
 			let caption = document.createElement('div');
-			caption.style = 'text-align: center; background-color: #555555;';
+			caption.style = 'text-align: center; background-color: rgba(0, 0, 0, 0);';
 			switch (i) {
 				case 1:
 					caption.innerHTML = 'Aeroventures 1: The Pilot';
@@ -360,7 +374,7 @@ function generatePanels(comic) {
 			slides.append(caption);
 		} else if (comic == 'old-choose') {
 			let caption = document.createElement('div');
-			caption.style = 'text-align: center; background-color: #555555;';
+			caption.style = 'text-align: center; background-color: rgba(0, 0, 0, 0);';
 			switch (i) {
 				case 1:
 					caption.innerHTML = 'Aeroventures 11: Code Red';
@@ -371,11 +385,14 @@ function generatePanels(comic) {
 				case 3:
 					caption.innerHTML = 'Planets Gallery';
 					break;
+				case 4:
+					caption.innerHTML = 'Miscellanea';
+					break;
 			}
 			slides.append(caption);
 		} else if (comic == '12') {
 			let caption = document.createElement('div');
-			caption.style = 'text-align: center; background-color: #555555;';
+			caption.style = 'text-align: center; background-color: rgba(0, 0, 0, 0)';
 			switch (i) {
 				case 1:
 					caption.innerHTML = 'Aeroventures 12, Part 1';
@@ -387,7 +404,7 @@ function generatePanels(comic) {
 			slides.append(caption);
 		} else if (comic == 'old-planets') {
 			let caption = document.createElement('div');
-			caption.style = 'text-align: center; background-color: #555555;';
+			caption.style = 'text-align: center; background-color: rgba(0, 0, 0, 0);';
 			switch (i) {
 				case 1:
 					caption.innerHTML = 'The original Grene, before the larger remake...';
@@ -457,6 +474,72 @@ function generatePanels(comic) {
 					break;
 			}
 			slides.append(caption);
+		} else if (comic == 'old-misc') {
+			let caption = document.createElement('div');
+			caption.style = 'text-align: center; background-color: rgba(0, 0, 0, 0)';
+			switch (i) {
+				case 1:
+					caption.innerHTML = 'An edited panel from Aeroventures 12.';
+					break;
+				case 2:
+					caption.innerHTML = 'A cropped Aeroventures 9 panel.';
+					break;
+				case 3:
+					caption.innerHTML = 'what the fuck';
+					break;
+				case 4:
+					caption.innerHTML = 'Shockpose is an egg, by the way.';
+					break;
+				case 5:
+					caption.innerHTML = 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA';
+					break;
+				case 6:
+					caption.innerHTML = 'How to draw Royale!';
+					break;
+				case 7:
+					caption.innerHTML = 'ew';
+					break;
+				case 8:
+					caption.innerHTML = 'Some characters that could appear later...';
+					break;
+				case 9:
+					caption.innerHTML = 'Map of Future City that could be used somewhere...';
+					break;
+				case 10:
+					caption.innerHTML = 'The full extent of Froyale';
+					break;
+				case 11:
+					caption.innerHTML = 'The FULLER extent of Froyale';
+					break;
+				case 12:
+					caption.innerHTML = 'Some more characters that could appear later...';
+					break;
+				case 13:
+					caption.innerHTML = 'Old sketches by Gram, before he pinned down the style.';
+					break;
+				case 14:
+					caption.innerHTML = 'An old sketch of Aero, made by Gram, which is... Okay.';
+					break;
+				case 15:
+					caption.innerHTML = 'bro';
+					break;
+				case 16:
+					caption.innerHTML = 'An old animation of the machine in AV 11, by Jae/Ropes.';
+					break;
+				case 17:
+					caption.innerHTML = 'Aero turns into Old Aero, by Jae/Ropes. Terrifying.';
+					break;
+				case 18:
+					caption.innerHTML = 'WHO ARE THESE PEOPLE';
+					break;
+				case 19:
+					caption.innerHTML = 'zzzzzzzzzzzz';
+					break;
+				case 20:
+					caption.innerHTML = 'The Stock Market Crashed & Generic Juice';
+					break;
+			}
+			slides.append(caption);
 		}
 		
 		slideshow.append(slides);
@@ -479,10 +562,10 @@ function generatePanels(comic) {
 	};
 
 	let slideText = document.createElement('div');
-	slideText.style = 'text-align: center; background-color: #555555; height: 2em;';
+	slideText.style = 'text-align: center; background-color: rgba(0, 0, 0, 0); height: 2em;';
 	
 	slideLabel = document.createElement('label');
-	slideLabel.style = 'background-color: #555555; line-height: 3.5em;';
+	slideLabel.style = 'background-color: rgba(0, 0, 0, 0); line-height: 3.5em;';
 	slideLabel.innerHTML = 'Panel Number: ';
 		
 	slideInput = document.createElement('input');

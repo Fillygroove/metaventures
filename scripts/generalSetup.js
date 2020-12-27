@@ -46,7 +46,7 @@ function makePage(page) {
 		mainAVTitle.innerHTML = `<a href='${titleDir}index.html' id='aeroventures-title'>Metaventures!</a>`;
 	}
 	
-	mainAVThin.append(mainAVTitle);
+	document.body.append(mainAVTitle);
 	
 	let dropdownDiv = document.createElement('div');
 	dropdownDiv.className = 'w3-bar aero-dblue';
