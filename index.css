@@ -77,20 +77,25 @@
 	cursor: pointer;
 	position: absolute;
 	width: auto;
-	padding: 11px;
-	background-color: rgba(0, 0, 0, 0.1);
+	padding: 8px;
+	background-color: rgba(0, 0, 0, 0.4);
 	color: #FFFFFF;
 	font-weight: bold;
 	font-size: 18px;
 	transition: 0.6s ease;
 	user-select: none;
 	float: left;
+	border-radius: 0.6em;
+	border-color: #000000;
+	border-width: 2px;
+	border-style: solid;
+	bottom: 2px;
 }
 
 .next {
 	left: auto;
 	right: 0;
-	border-radius: 3px 0 0 3px;
+	border-radius: 0.6em;
 	float: right;
 }
 
@@ -98,10 +103,9 @@
 	width: 90%;
 	color: #ffffff;
 	background-color: #555555f0;
-	position: relative;
-	margin: 0 auto !important;
-	height: 100%;
+	margin: 0 auto 0 auto !important;
 	border-radius: 0 0 1em 1em;
+	padding-bottom: 4px;
 }
 
 p,
@@ -170,8 +174,12 @@ a {
 	font-size: 12px;
 	padding: 8px 12px;
 	position: absolute;
-	background-color: rgba(0, 0, 0, 0.1);
-	margin-top: -2.9em;
+	background-color: rgba(0, 0, 0, 0.4);
+	margin-top: -3.2em;
+	border-radius: 1em;
+	border-color: #000000;
+	border-width: 2px;
+	border-style: solid;
 }
 
 .aero-blue {
@@ -494,8 +502,7 @@ body {
 	font-size: 15px;
 	line-height: 1.5;
 	height: 100%;
-	display: grid;
-	background-image: linear-gradient(180deg, rgba(51, 51, 51, 1) 10%, rgba(0, 0, 0, 0) 25%), url(bg.png);
+	background-image: url(bg.png);
 	background-size: 10em;
 }
 

@@ -158,7 +158,7 @@ function generatePanels(comic) {
 		let folder = '';
 		if (comicInfo.title.includes('AV')) {
 			folder = 'av/';
-			document.body.style = 'background-image: linear-gradient(180deg, rgba(51, 51, 51, 1) 10%, rgba(0, 0, 0, 0) 25%), url(../bg-av.png)';
+			document.body.style = 'background-image: url(../bg-av.png)';
 		}
 		if (comicInfo.title.includes('PV')) folder = 'pv/';
 		if (comicInfo.title.includes('ARCHIVED')) folder = 'old/';
@@ -182,7 +182,25 @@ function generatePanels(comic) {
 		
 		let number = document.createElement('div');
 		number.className = 'numbertext';
-		number.innerHTML = `${i} / ${comicInfo.howLong}`;
+		if (comic == 'av-choose') {
+			let panelNumerator = i;
+			switch (i) {
+				case 11:
+					panelNumerator = '10.5';
+					break;
+				case 12:
+					panelNumerator = '<a href="../wiki/index.html?p=halloween">Halloween</a>';
+					break;
+				case 13:
+					panelNumerator = '11';
+					break;
+				case 14:
+					panelNumerator = '12';
+					break;
+			}
+			
+			number.innerHTML = `${panelNumerator} / ${12}`;
+		} else number.innerHTML = `${i} / ${comicInfo.howLong}`;
 		
 		let panels = document.createElement('img');
 		
