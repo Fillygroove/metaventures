@@ -156,7 +156,10 @@ function generatePanels(comic) {
 
 	if (comicInfo.dir == null) {
 		let folder = '';
-		if (comicInfo.title.includes('AV')) folder = 'av/';
+		if (comicInfo.title.includes('AV')) {
+			folder = 'av/';
+			document.body.style = 'background-image: linear-gradient(180deg, rgba(51, 51, 51, 1) 10%, rgba(0, 0, 0, 0) 25%), url(../bg-av.png)';
+		}
 		if (comicInfo.title.includes('PV')) folder = 'pv/';
 		if (comicInfo.title.includes('ARCHIVED')) folder = 'old/';
 		if (comicInfo.title.includes('Secret')) folder = 'secrets/';
@@ -184,9 +187,7 @@ function generatePanels(comic) {
 		let panels = document.createElement('img');
 		
 		let extension = typeof comicInfo.extension == 'object' ? comicInfo.extension[i - 1] : comicInfo.extension;
-		
-		console.log(extension);
-		
+				
 		panels.src = `./panels/${comicInfo.dir}/${i}.${extension}`;
 		panels.style = 'max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0);';
 		if (comic == 'old-planets') panels.className = 'pixel';

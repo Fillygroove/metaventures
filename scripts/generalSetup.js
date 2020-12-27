@@ -1,4 +1,4 @@
-function makePage(page) {	
+function makePage(page) {
 	let comicDir, wikiDir, titleDir, pageName;
 	switch (page) {
 		case 'main':
