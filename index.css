@@ -157,9 +157,10 @@ a {
 .aeroventures-title {
 	text-align: center;
 	font-size: 40px;
-	background-color: #333333;
+	background-color: transparent;
 	color: #ffffff;
 	height: 1.6em;
+	text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
 
