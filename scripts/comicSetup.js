@@ -85,10 +85,10 @@ function generatePanels(comic) {
 			comicInfo.desc = 'Something terribly wrong has happened in Dr. <a href="../wiki/index.html?p=lakys" class="n">Lakys</a>\'s lab. Can the Aeroventures Crew stop this new menace?';
 			break;
 		case "av-12":
-			comicInfo.extension = 'png';
 			comicInfo.howLong = 2;
 			comicInfo.title = 'AV-12: Nutty Business';
 			comicInfo.desc = 'A large two part Aeroventure where the Aeroventures crew meet up with Nutstradamnus once more...';
+			comicInfo.extension = 'png';
 			break;
 		case "av-12-1":
 			comicInfo.howLong = 110;
