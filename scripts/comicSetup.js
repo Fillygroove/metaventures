@@ -462,7 +462,7 @@ function generatePanels(comic) {
 					caption.innerHTML = 'Baeg, now named Dough, when it was a planet.';
 					break;
 				case 13:
-					caption.innerHTML = 'The original art for Mac. Has it\'s pole visible.';
+					caption.innerHTML = 'The original art for Mac. Has its pole visible.';
 					break;
 				case 14:
 					caption.innerHTML = 'The original art for Aeiou.';
@@ -639,14 +639,14 @@ function showSlides(n) {
 function verify(slide) {
 	let slides = document.getElementsByClassName('slides');
 
-	if (comic == '9' && slide == '999') { // Nineventures Easter Egg
+	if (comic == 'av-9' && slide == '999') { // Nineventures Easter Egg
 		window.location.href = 'index.html?c=nine';
 	} else if (comic == 'nine' && slideIndex == 9 && (slide == '9' || slide == 'nine')) { // Metanineventures Easter Egg
 		window.location.href = '../wiki/index.html?p=nine';
 	} else if (slide == 'Panel Number') {  // Panel Number Easter Egg
 		window.location.href = 'index.html?c=pn';
 	} else if (!isNaN(slide) && Math.floor(slide) != slide) { // Panel Corruption Easter Egg
-		if (comic == '10.5' || comic == 'trigger' || comic == 'av-choose') {
+		if (comic == 'av-10.5' || comic == 'trigger' || comic == 'av-choose') {
 			document.getElementsByClassName('description')[0].innerHTML = 'Failed the corruption, please try again later.';
 			return;
 		}

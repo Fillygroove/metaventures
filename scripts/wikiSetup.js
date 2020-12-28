@@ -496,7 +496,7 @@ function generatePage(page) {
 				name: 'Ommadawn',
 				file: ['hot_sun.png', 'pixel'],
 				dims: ['330', '330'],
-				caption: 'Pictured in false color due to <a href="index.html?p=ert" class="y">Ert</a>\'s atmosphere, illustration made by Gramiatar.',
+				caption: 'Illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -541,7 +541,7 @@ function generatePage(page) {
 				name: '<a href="index.html?p=greme">Grene</a>',
 				file: ['grene.png', 'pixel'],
 				dims: ['330', '330'],
-				caption: 'Pictured in natural color, illustration made by Gramiatar.',
+				caption: 'Illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -591,7 +591,7 @@ function generatePage(page) {
 				name: 'Doug',
 				file: ['doug.png', 'pixel'],
 				dims: ['330', '330'],
-				caption: 'Pictured in natural color due to everyone forgetting about it, illustration made by Gramiatar.',
+				caption: 'Illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -670,7 +670,7 @@ function generatePage(page) {
 				name: 'Ert',
 				file: ['ert.png', 'pixel'],
 				dims: ['330', '330'],
-				caption: 'Pictured in natural color, illustration made by Gramiatar.',
+				caption: 'Illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -745,7 +745,7 @@ function generatePage(page) {
 				name: 'George',
 				file: ['george.png', 'pixel'],
 				dims: ['330', '330'],
-				caption: 'Pictured in natural color, illustration made by Gramiatar.',
+				caption: 'Illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -774,7 +774,7 @@ function generatePage(page) {
 				name: 'Pilf',
 				file: ['pilf.png', 'pixel'],
 				dims: ['330', '197.21'],
-				caption: 'Pictured in natural color, illustration made by Gramiatar.',
+				caption: 'Illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -830,7 +830,7 @@ function generatePage(page) {
 				name: 'Mac',
 				file: ['mac.png', 'pixel'],
 				dims: ['330', '237.5'],
-				caption: 'Pictured in natural color, illustration made by Gramiatar.',
+				caption: 'Illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -887,7 +887,7 @@ function generatePage(page) {
 				name: 'World of Pain',
 				file: ['wop.png', 'pixel'],
 				dims: ['330', '287.57'],
-				caption: 'Pictured in natural color, illustration made by Gramiatar.',
+				caption: 'Illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -914,7 +914,7 @@ function generatePage(page) {
 				name: 'Aeiou',
 				file: ['aeiou.png', 'pixel'],
 				dims: ['330', '316.86'],
-				caption: 'Pictured in natural color, illustration made by Gramiatar.',
+				caption: 'Illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -945,7 +945,7 @@ function generatePage(page) {
 				name: 'Berry',
 				file: ['berry_ringless.png', 'pixel'],
 				dims: ['330', '330'],
-				caption: 'Pictured in natural color, illustration made by Gramiatar.',
+				caption: 'Illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -976,7 +976,7 @@ function generatePage(page) {
 				name: 'The',
 				file: ['the.png', 'pixel'],
 				dims: ['330', '334.31'],
-				caption: 'An image of The, taken through intense conditions, illustration made by Gramiatar.',
+				caption: 'Illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -1054,7 +1054,7 @@ function generatePage(page) {
 				name: 'Cold Sun',
 				file: ['cold_sun.png', 'pixel'],
 				dims: ['330', '330'],
-				caption: 'Pictured in natural color, illustration made by Gramiatar.',
+				caption: 'Illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -1095,7 +1095,7 @@ function generatePage(page) {
 				name: 'Taiberaque',
 				file: ['taiberaque.png', 'pixel'],
 				dims: ['330', '330'],
-				caption: 'Pictured in false color due to <a href="index.html?p=ert" class="y">Ert</a>\'s atmosphere, illustration made by Gramiatar.',
+				caption: 'Illustration made by Gramiatar.',
 				heading: 'Designations',
 				navbox: [{
 					name: 'Orbits',
@@ -1165,7 +1165,7 @@ function generatePage(page) {
 				name: 'Secret: <a href="index.html?p=grene">Greme</a>',
 				file: ['greme.png', 'pixel'],
 				dims: ['330', '330'],
-				caption: 'Pictured im matural color, illustratiom made by Gramiatar.',
+				caption: 'Illustratiom made by Gramiatar.',
 				heading: 'Desigmatioms',
 				navbox: [{
 					name: 'Orbits',
