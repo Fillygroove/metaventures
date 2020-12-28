@@ -1,3 +1,7 @@
+:root {
+	--transparency: 1;
+}
+
 @font-face {
 	font-family: Ubuntu;
 	src: url(ubuntu.woff2);
@@ -102,7 +106,7 @@
 .av-thin {
 	width: 90%;
 	color: #ffffff;
-	background-color: #555555f0;
+	background-color: rgba(85, 85, 85, var(--transparency));
 	margin: 0 auto 0 auto !important;
 	border-radius: 0 0 1em 1em;
 	padding-bottom: 4px;
@@ -500,7 +504,7 @@ textarea {
 html,
 body {
 	font-family: Ubuntu;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.5;
 	height: 100%;
 	background-image: url(bg.png);
