@@ -207,7 +207,7 @@ function generatePanels(comic) {
 		let extension = typeof comicInfo.extension == 'object' ? comicInfo.extension[i - 1] : comicInfo.extension;
 				
 		panels.src = `./panels/${comicInfo.dir}/${i}.${extension}`;
-		panels.style = 'max-height: 23em; height: 23em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0);';
+		panels.style = 'max-height: 21.5em; height: 21.5em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0);';
 		if (comic == 'old-planets') panels.className = 'pixel';
 		
 		slides.append(number);
@@ -578,10 +578,10 @@ function generatePanels(comic) {
 	};
 
 	let slideText = document.createElement('div');
-	slideText.style = 'text-align: center; background-color: rgba(0, 0, 0, 0); height: 2em;';
+	slideText.style = 'text-align: center; background-color: rgba(0, 0, 0, 0); height: 1.4em;';
 	
 	slideLabel = document.createElement('label');
-	slideLabel.style = 'background-color: rgba(0, 0, 0, 0); line-height: 3.5em;';
+	slideLabel.style = 'background-color: rgba(0, 0, 0, 0); line-height: 2.55em;';
 	slideLabel.innerHTML = 'Panel Number: ';
 		
 	slideInput = document.createElement('input');

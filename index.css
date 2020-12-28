@@ -81,7 +81,7 @@
 	cursor: pointer;
 	position: absolute;
 	width: auto;
-	padding: 8px;
+	padding: 3px;
 	background-color: rgba(0, 0, 0, 0.4);
 	color: #FFFFFF;
 	font-weight: bold;
@@ -93,7 +93,7 @@
 	border-color: #000000;
 	border-width: 2px;
 	border-style: solid;
-	bottom: 2px;
+	bottom: 3.5px;
 }
 
 .next {
