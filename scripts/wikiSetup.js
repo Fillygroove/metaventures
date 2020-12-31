@@ -1382,6 +1382,7 @@ function generatePage(page) {
 					name: 'Pixel Origin',
 					info: [
 						'Helped out with the comics and OST!',
+						'Added art to the Aeroventures and Archie-ve sections in the comics tab.',
 						'Added randomized quotes to the 404 pages.'
 					]
 				}, {
