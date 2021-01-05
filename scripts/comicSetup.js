@@ -220,11 +220,11 @@ function generatePanels(comic) {
 			slides.append(panelLink);
 		}
 		
-		if (comic == '7' && i == 10) appendPanel('../wiki/index.html?p=dino'); // Dinosaurs wiki page
-		else if (comic == '8' && i == 7) appendPanel('index.html?c=trigger'); // Trigger Fish
-		else if (comic == '11' && i == 44) appendPanel('index.html?c=brooo'); // Broventures
+		if (comic == 'av-7' && i == 10) appendPanel('../wiki/index.html?p=dino'); // Dinosaurs wiki page
+		else if (comic == 'av-8' && i == 7) appendPanel('index.html?c=trigger'); // Trigger Fish
+		else if (comic == 'av-11' && i == 44) appendPanel('index.html?c=brooo'); // Broventures
 		else if (comic == 'av-12' && i == 1) appendPanel(`index.html?c=av-12-${i}`);
-		else if (comic == '11' && i == 8) { // Code Red explanation loop
+		else if (comic == 'av-11' && i == 8) { // Code Red explanation loop
 			let panelLink = document.createElement('a');
 			panelLink.style = 'cursor: pointer;';
 			panelLink.onclick = () => {
