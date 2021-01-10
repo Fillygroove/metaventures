@@ -110,6 +110,7 @@
 	margin: 0 auto 0 auto !important;
 	border-radius: 0 0 1em 1em;
 	padding-bottom: 4px;
+	overflow: auto;
 }
 
 p,
