@@ -7,20 +7,20 @@ const pageData = {
 	heading: 'Designations',
 	navbox: [{
 		name: 'Orbits',
-		info: ['<a href="index.html?p=taiberaque" class="y">Taiberaque (Binary System)</a>']
+		info: ['<a href="index.html?p=taiberaque">Taiberaque (Binary System)</a>']
 	}, {
 		name: 'Satellites',
 		info: [
-			'<a href="index.html?p=grene" class="y">Grene</a>',
-			'<a href="index.html?p=doug" class="y">Doug</a>',
-			'<a href="index.html?p=ert" class="y">Ert</a>',
-			'<a href="index.html?p=george" class="y">George</a>',
-			'<a href="index.html?p=pilf" class="y">Pilf</a>',
-			'<a href="index.html?p=mac" class="y">Mac</a>',
-			'<a href="index.html?p=berry" class="y">Berry</a>',
-			'<a href="index.html?p=aeiou" class="y">Aeiou</a>',
-			'<a href="index.html?p=the" class="y">The</a>',
-			'<a href="index.html?p=taiberaque" class="y">Taiberaque (Binary System)</a>'
+			'<a href="index.html?p=grene">Grene</a>',
+			'<a href="index.html?p=doug">Doug</a>',
+			'<a href="index.html?p=ert">Ert</a>',
+			'<a href="index.html?p=george">George</a>',
+			'<a href="index.html?p=pilf">Pilf</a>',
+			'<a href="index.html?p=mac">Mac</a>',
+			'<a href="index.html?p=berry">Berry</a>',
+			'<a href="index.html?p=aeiou">Aeiou</a>',
+			'<a href="index.html?p=the">The</a>',
+			'<a href="index.html?p=taiberaque">Taiberaque (Binary System)</a>'
 		]
 	}, {
 		name: 'Name Origin',

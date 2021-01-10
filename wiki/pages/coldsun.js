@@ -7,7 +7,7 @@ let pageData = {
 	heading: 'Designations',
 	navbox: [{
 		name: 'Orbits',
-		info: ['<a href="index.html?p=taiberaque" class="y">Taiberaque</a>']
+		info: ['<a href="index.html?p=taiberaque">Taiberaque</a>']
 	}, {
 		name: 'Satellites',
 		info: [
@@ -22,9 +22,9 @@ let pageData = {
 	}, {
 		name: 'Life',
 		info: [
-			'<a href="index.html?p=nyork" class="y">Nyork</a>\'s Species',
-			'<a href="index.html?p=royale" class="y">Royale</a>',
-			'<a href="index.html?p=larry" class="y">Larry</a>'
+			'<a href="index.html?p=nyork">Nyork</a>\'s Species',
+			'<a href="index.html?p=royale">Royale</a>',
+			'<a href="index.html?p=larry">Larry</a>'
 		]
 	}],
 	introText: [

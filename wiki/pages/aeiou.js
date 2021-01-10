@@ -7,13 +7,13 @@ let pageData = {
 	heading: 'Designations',
 	navbox: [{
 		name: 'Orbits',
-		info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
+		info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
 	}, {
 		name: 'Satellites',
 		info: ['Cdfqrszt', 'Heideph']
 	}, {
 		name: 'Name Origin',
-		info: ['Named by the Alphabet Business Concern after concerns over <a href="index.html?p=the" class="y">The</a>.']
+		info: ['Named by the Alphabet Business Concern after concerns over <a href="index.html?p=the">The</a>.']
 	}, {
 		name: 'Classification',
 		info: ['Gas Giant']
@@ -22,7 +22,7 @@ let pageData = {
 		info: ['None']
 	}],
 	introText: [
-		'Aeiou is the seventh planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=mac" class="y">Mac</a> and before <a href="index.html?p=berry" class="y">Berry</a>.',
+		'Aeiou is the seventh planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=mac">Mac</a> and before <a href="index.html?p=berry">Berry</a>.',
 		'The term for referring to something related to Aeiou is Aeiouian.'
 	],
 	endnav: 'planet'

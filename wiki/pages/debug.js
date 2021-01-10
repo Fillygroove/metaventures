@@ -1,4 +1,6 @@
 let pageData = {
 	name: 'DEBUG',
-	introText: ['<span class="rainbow">WAAAAAAAAAAAAAAA</span>']
+	introText: [
+		'<span class="rainbow">WAAAAAAAAAAAAAAA</span>'
+	]
 };

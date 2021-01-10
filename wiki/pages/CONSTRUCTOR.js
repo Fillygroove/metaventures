@@ -1,3 +1,5 @@
+let pageList = ['ert', 'the', 'doug', 'pilf', 'greme', 'mac', 'grene', 'credits', 'dwarf', 'hotsun', 'tackpenguin', 'aero', 'george', 'aeiou', 'taiberaque', 'berry', 'coldsun', 'wop', 'shrine', 'halloween', 'main', 'dino', 'directions', 'm', 'nine', 'debug'];
+
 let page;
 
 if (typeof pageData == 'undefined') {
@@ -5,25 +7,25 @@ if (typeof pageData == 'undefined') {
 	let quote;
 	switch (quoteNumber) {
 		case 0:
-			quote = 'Maybe it was destroyed by <a href="index.html?p=wop" class="y">World of Pain</a>...';
+			quote = 'Maybe it was destroyed by <a href="index.html?p=wop">World of Pain</a>...';
 			break;
 		case 1:
-			quote = 'Maybe it\'s in the <a href="index.html?p=taiberaque" class="y">Taiberaque</a> system...';
+			quote = 'Maybe it\'s in the <a href="index.html?p=taiberaque">Taiberaque</a> system...';
 			break;
 		case 2:
 			quote = 'Maybe it got abducted by space clowns...';
 			break;
 		case 3:
-			quote = 'Maybe <a href="index.html?p=aero" class="y">Aero</a> stole it\'s intestines...';
+			quote = 'Maybe <a href="index.html?p=aero">Aero</a> stole it\'s intestines...';
 			break;
 		case 4: // Made by Pixel Origin
-			quote = 'Likely left to attend <a href="index.html?p=aero" class="y">Aero</a>\'s funeral...';
+			quote = 'Likely left to attend <a href="index.html?p=aero">Aero</a>\'s funeral...';
 			break;
 		case 5: // Made by PS3_33
-			quote = 'Perhaps it\'s one of <a href="index.html?p=the" class="y">These</a> greatest mysteries...';
+			quote = 'Perhaps it\'s one of <a href="index.html?p=the">These</a> greatest mysteries...';
 			break;
 		case 6: // Made by PS3_33
-			quote = 'Maybe <a href="index.html?p=aeiou" class="y">Aeiou</a> made it explode because of its awesomeness...';
+			quote = 'Maybe <a href="index.html?p=aeiou">Aeiou</a> made it explode because of its awesomeness...';
 			break;
 	}
 	page = {
@@ -127,7 +129,7 @@ if (page.navbox != undefined) {
 	let imagetd = document.createElement('td');
 	let imgnav = document.createElement('img');
 	let capdiv = document.createElement('div');
-	let capa = document.createElement('a');
+	let capa = document.createElement('span');
 	
 	imagetd.colSpan = "2";
 	imagetd.style = "text-align: center";
@@ -301,31 +303,31 @@ if (page.endnav != undefined) {
 				info: [{
 					name: 'Protagonists',
 					info: [
-						'<a href="index.html?p=aero" class="y">Aero</a>',
-						'<a href="index.html?p=archie" class="n">Archie</a>',
-						'<a href="index.html?p=lakys" class="n">Lakys</a>',
-						'<a href="index.html?p=aposteel" class="n">Aposteel</a>'
+						'<a href="index.html?p=aero">Aero</a>',
+						'<a href="index.html?p=archie">Archie</a>',
+						'<a href="index.html?p=lakys">Lakys</a>',
+						'<a href="index.html?p=aposteel">Aposteel</a>'
 					]
 				}, {
 					name: 'Antagonists',
 					info: [
-						'<a href="index.html?p=coylstone" class="n">Coyl Stone</a>',
-						'<a href="index.html?p=keeper" class="n">The Keeper</a>',
-						'<a href="index.html?p=larry-av" class="n">Larry</a>',
-						'<a href="index.html?p=nutstradamnus" class="n">Nutstradamnus</a>',
-						'<a href="index.html?p=oldaero" class="n">Old Aero</a>',
-						'<a href="index.html?p=ozark" class="n">Ozark</a>',
-						'<a href="index.html?p=royale" class="n">Royale</a>',
-						'<a href="index.html?p=clowns" class="n">The Space Clowns</a>',
-						'<a href="index.html?p=warmaccine" class="n">War Maccine</a>'
+						'<a href="index.html?p=coylstone">Coyl Stone</a>',
+						'<a href="index.html?p=keeper">The Keeper</a>',
+						'<a href="index.html?p=larry-av">Larry</a>',
+						'<a href="index.html?p=nutstradamnus">Nutstradamnus</a>',
+						'<a href="index.html?p=oldaero">Old Aero</a>',
+						'<a href="index.html?p=ozark">Ozark</a>',
+						'<a href="index.html?p=royale">Royale</a>',
+						'<a href="index.html?p=clowns">The Space Clowns</a>',
+						'<a href="index.html?p=warmaccine">War Maccine</a>'
 					]
 				}, {
 					name: 'Minor Characters',
 					info: [
-						'<a href="index.html?p=darpynpals" class="n">Darpy & Pals</a> (<small>Darpy &bull; Occols &bull; Trivy</small>)',
-						'<a href="index.html?p=diepic" class="n">Diepic</a>',
-						'<a href="index.html?p=fender" class="n">Fender</a>',
-						'<a href="index.html?p=shockpose" class="n">Shockpose</a>'
+						'<a href="index.html?p=darpynpals">Darpy & Pals</a> (<small>Darpy &bull; Occols &bull; Trivy</small>)',
+						'<a href="index.html?p=diepic">Diepic</a>',
+						'<a href="index.html?p=fender">Fender</a>',
+						'<a href="index.html?p=shockpose">Shockpose</a>'
 					]
 				}]
 			}, {
@@ -333,10 +335,10 @@ if (page.endnav != undefined) {
 				info: [{
 					name: 'Protagonists',
 					info: [
-						'<a href="index.html?p=pon" class="n">Pon</a>', 
-						'<a href="index.html?p=larry-pv" class="n">Larry</a>', 
-						'<a href="index.html?p=beth" class="n">Beth</a>',
-						'<a href="index.html?p=vinny" class="n">Vinny</a>'
+						'<a href="index.html?p=pon">Pon</a>', 
+						'<a href="index.html?p=larry-pv">Larry</a>', 
+						'<a href="index.html?p=beth">Beth</a>',
+						'<a href="index.html?p=vinny">Vinny</a>'
 					]
 				}, {
 					name: 'Antagonists',
@@ -346,9 +348,9 @@ if (page.endnav != undefined) {
 				}, {
 					name: 'Minor Characters',
 					info: [
-						'<a href="index.html?p=gordon" class="n">Gordon</a>',
-						'<a href="index.html?p=larrymom" class="n">Larry\'s Mom</a>',
-						'<a href="index.html?p=spencer" class="n">Spencer</a>'
+						'<a href="index.html?p=gordon">Gordon</a>',
+						'<a href="index.html?p=larrymom">Larry\'s Mom</a>',
+						'<a href="index.html?p=spencer">Spencer</a>'
 					]
 				}]
 			}]
@@ -359,48 +361,48 @@ if (page.endnav != undefined) {
 		createNav({
 			heading: 'The Bisolar System',
 			categories: [{
-				category: '<a href="index.html?p=hotsun" class="y"><img src="images/hot_sun.png" width="30" height="30">Ommadawn</a> System',
+				category: '<a href="index.html?p=hotsun"><img src="images/hot_sun.png" width="30" height="30">Ommadawn</a> System',
 				info: [{
 					name: 'Inner System',
 					info: [
-						'<a href="index.html?p=grene" class="y"><img src="images/grene.png" width="25" height="25"></img>Grene</a>',
-						'<a href="index.html?p=doug" class="y"><img src="images/doug.png" width="25" height="25">Doug</a> (<small><img src="images/h.png" width="20" height="20">H</small>)',
-						'<a href="index.html?p=ert" class="y"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedron</a></small>)',
-						'<a href="index.html?p=george" class="y"><img src="images/george.png" width="20" height="20">Georg</a><a href="images/george_real.png" class="y">e</a> (<small><img src="images/damocles.png" width="20" height="20">Damocles</small>)',
-						'<a href="index.html?p=pilf" class="y"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>'
+						'<a href="index.html?p=grene"><img src="images/grene.png" width="25" height="25"></img>Grene</a>',
+						'<a href="index.html?p=doug"><img src="images/doug.png" width="25" height="25">Doug</a> (<small><img src="images/h.png" width="20" height="20">H</small>)',
+						'<a href="index.html?p=ert"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron">Perpahedron</a></small>)',
+						'<a href="index.html?p=george"><img src="images/george.png" width="20" height="20">Georg</a><a href="images/george_real.png">e</a> (<small><img src="images/damocles.png" width="20" height="20">Damocles</small>)',
+						'<a href="index.html?p=pilf"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>'
 					]
 				}, {
 					name: 'Outer System',
 					info: [
-						'<a href="index.html?p=mac" class="y"><img src="images/mac.png" width="35" height="25">Mac</a> (<small><a href="index.html?p=wop" class="y"><img src="images/wop.png" width="23" height="20">World of Pain</a> &bull; <img src="images/dough.png" width="24" height="20">Dough</small>)',
-						'<a href="index.html?p=aeiou" class="y"><img src="images/aeiou.png" width="27" height="25">Aeiou</a> (<small>Cdfqrszt &bull; Heideph</small>)',
-						'<a href="index.html?p=berry" class="y"><img src="images/berry_ringless.png" width="25" height="25">Berry</a>',
-						'<a href="index.html?p=the" class="y"><img src="images/the.png" width="25" height="25">The</a>'
+						'<a href="index.html?p=mac"><img src="images/mac.png" width="35" height="25">Mac</a> (<small><a href="index.html?p=wop"><img src="images/wop.png" width="23" height="20">World of Pain</a> &bull; <img src="images/dough.png" width="24" height="20">Dough</small>)',
+						'<a href="index.html?p=aeiou"><img src="images/aeiou.png" width="27" height="25">Aeiou</a> (<small>Cdfqrszt &bull; Heideph</small>)',
+						'<a href="index.html?p=berry"><img src="images/berry_ringless.png" width="25" height="25">Berry</a>',
+						'<a href="index.html?p=the"><img src="images/the.png" width="25" height="25">The</a>'
 					]
 				}]
 			}, {
-				category: '<a href="index.html?p=taiberaque" class="y">Taiberaque</a> System',
+				category: '<a href="index.html?p=taiberaque">Taiberaque</a> System',
 				info: [{
 					name: 'Inner System',
 					info: [
-						'<a href="index.html?p=coldsun" class="y"><img src="images/cold_sun.png" width="25" height="25">Cold Sun</a>'
+						'<a href="index.html?p=coldsun"><img src="images/cold_sun.png" width="25" height="25">Cold Sun</a>'
 					]
 				}, {
 					name: 'Outer System',
 					info: [
-						'<a href="index.html?p=uling" class="n">Uling</a>'
+						'<a href="index.html?p=uling">Uling</a>'
 					]
 				}]
 			}, {
 				category: 'Misc',
 				info: [{
-					name: '<a href="index.html?p=dwarf" class="y">Dwarf Planets</a>',
+					name: '<a href="index.html?p=dwarf">Dwarf Planets</a>',
 					info: [
-						'<a href="index.html?p=dwarf#ternary" class="y">BPM-1-2-3 (The Ternary)</a>',
-						'<a href="index.html?p=dwarf#sphynx" class="y">BOT-1 (Sphynx)</a>',
-						'<a href="index.html?p=dwarf#blyu" class="y">BCU-1 (Blyu)</a>',
-						'<a href="index.html?p=dwarf#ayduno" class="y">BCU-2 (Ayduno)</a>',
-						'<a href="index.html?p=dwarf#objobj" class="y">BCU-3 (Object/Object)</a>'
+						'<a href="index.html?p=dwarf#ternary">BPM-1-2-3 (The Ternary)</a>',
+						'<a href="index.html?p=dwarf#sphynx">BOT-1 (Sphynx)</a>',
+						'<a href="index.html?p=dwarf#blyu">BCU-1 (Blyu)</a>',
+						'<a href="index.html?p=dwarf#ayduno">BCU-2 (Ayduno)</a>',
+						'<a href="index.html?p=dwarf#objobj">BCU-3 (Object/Object)</a>'
 					]
 				}, {
 					name: 'Objects',
@@ -418,49 +420,49 @@ if (page.endnav != undefined) {
 		createNav({
 			heading: 'The Bisolar System',
 			categories: [{
-				category: '<a href="index.html?p=hotsun" class="y"><img src="images/hot_sun.png" width="30" height="30">Ommadawm</a> System',
+				category: '<a href="index.html?p=hotsun"><img src="images/hot_sun.png" width="30" height="30">Ommadawm</a> System',
 				info: [{
 					name: 'Immer System',
 					info: [
-						'<a href="index.html?p=grene" class="y"><img src="images/grene.png" width="25" height="25"></img>Greme</a>',
-						'<a href="index.html?p=doug" class="y"><img src="images/doug.png" width="25" height="25">Doug</a> (<small><img src="images/h.png" width="20" height="20">H</small>)',
-						'<a href="index.html?p=pilf" class="y"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>',
-						'<a href="index.html?p=ert" class="y"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron" class="n">Perpahedrom</a></small>)',
-						'<a href="index.html?p=george" class="y"><img src="images/george.png" width="20" height="20">Georg</a><a href="images/george_real.png" class="y">e</a> (<small><img src="images/damocles.png" width="20" height="20">Damocles</small>)',
+						'<a href="index.html?p=grene"><img src="images/grene.png" width="25" height="25"></img>Greme</a>',
+						'<a href="index.html?p=doug"><img src="images/doug.png" width="25" height="25">Doug</a> (<small><img src="images/h.png" width="20" height="20">H</small>)',
+						'<a href="index.html?p=pilf"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>',
+						'<a href="index.html?p=ert"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron">Perpahedrom</a></small>)',
+						'<a href="index.html?p=george"><img src="images/george.png" width="20" height="20">Georg</a><a href="images/george_real.png">e</a> (<small><img src="images/damocles.png" width="20" height="20">Damocles</small>)',
 					]
 				}, {
 					name: 'Outer System',
 					info: [
-						'<a href="index.html?p=macaroni" class="n">Macaromi Belt</a>',
-						'<a href="index.html?p=mac" class="y"><img src="images/mac.png" width="35" height="25">Mac</a> (<small><a href="index.html?p=wop" class="y"><img src="images/wop.png" width="23" height="20">World of Paim</a> &bull; <img src="images/dough.png" width="24" height="20">Dough</small>)',
-						'<a href="index.html?p=aeiou" class="y"><img src="images/aeiou.png" width="27" height="25">Aeiou</a> (<small>Cdfqrszt &bull; Heideph</small>)',
-						'<a href="index.html?p=berry" class="y"><img src="images/berry_ringless.png" width="25" height="25">Berry</a>',
-						'<a href="index.html?p=the" class="y"><img src="images/the.png" width="25" height="25">The</a>'
+						'<a href="index.html?p=macaroni">Macaromi Belt</a>',
+						'<a href="index.html?p=mac"><img src="images/mac.png" width="35" height="25">Mac</a> (<small><a href="index.html?p=wop"><img src="images/wop.png" width="23" height="20">World of Paim</a> &bull; <img src="images/dough.png" width="24" height="20">Dough</small>)',
+						'<a href="index.html?p=aeiou"><img src="images/aeiou.png" width="27" height="25">Aeiou</a> (<small>Cdfqrszt &bull; Heideph</small>)',
+						'<a href="index.html?p=berry"><img src="images/berry_ringless.png" width="25" height="25">Berry</a>',
+						'<a href="index.html?p=the"><img src="images/the.png" width="25" height="25">The</a>'
 					]
 				}]
 			}, {
-				category: '<a href="index.html?p=taiberaque" class="y">Taiberaque</a> System',
+				category: '<a href="index.html?p=taiberaque">Taiberaque</a> System',
 				info: [{
 					name: 'Immer System',
 					info: [
-						'<a href="index.html?p=coldsun" class="y"><img src="images/cold_sun.png" width="25" height="25">Cold Sum</a>'
+						'<a href="index.html?p=coldsun"><img src="images/cold_sun.png" width="25" height="25">Cold Sum</a>'
 					]
 				}, {
 					name: 'Outer System',
 					info: [
-						'<a href="index.html?p=uling" class="n">Ulimg</a>'
+						'<a href="index.html?p=uling">Ulimg</a>'
 					]
 				}]
 			}, {
 				category: 'Misc',
 				info: [{
-					name: '<a href="index.html?p=dwarf" class="y">Dwarf Plamets</a>',
+					name: '<a href="index.html?p=dwarf">Dwarf Plamets</a>',
 					info: [
-						'<a href="index.html?p=dwarf#ternary" class="y">BCM-1-2-3 (The Termary)</a>',
-						'<a href="index.html?p=dwarf#sphynx" class="y">BOT-1 (Sphymx)</a>',
-						'<a href="index.html?p=dwarf#blyu" class="y">BCU-1 (Blyu)</a>',
-						'<a href="index.html?p=dwarf#ayduno" class="y">BCU-2 (Aydumo)</a>',
-						'<a href="index.html?p=dwarf#objobj" class="y">BCU-3 (Object/Object)</a>'
+						'<a href="index.html?p=dwarf#ternary">BCM-1-2-3 (The Termary)</a>',
+						'<a href="index.html?p=dwarf#sphynx">BOT-1 (Sphymx)</a>',
+						'<a href="index.html?p=dwarf#blyu">BCU-1 (Blyu)</a>',
+						'<a href="index.html?p=dwarf#ayduno">BCU-2 (Aydumo)</a>',
+						'<a href="index.html?p=dwarf#objobj">BCU-3 (Object/Object)</a>'
 					]
 				}, {
 					name: 'Objects',
@@ -471,5 +473,16 @@ if (page.endnav != undefined) {
 				}]
 			}]
 		});
+	}
+}
+
+let pageLinks = document.getElementsByTagName('a');
+
+for (let i = 0; i < pageLinks.length; i++) {
+	let pageLinkName = pageLinks[i].href.substring(pageLinks[i].href.indexOf('=') + 1, pageLinks[i].href.length);
+	if (pageLinkName.includes('#')) pageLinkName = pageLinkName.substring(0, pageLinkName.indexOf('#'));
+	if (pageLinks[i].id == '' && pageLinks[i].className == '') {
+		if (pageList.includes(pageLinkName) || pageLinks[i].href.includes('george_real')) pageLinks[i].className = 'y';
+		else pageLinks[i].className = 'n';
 	}
 }

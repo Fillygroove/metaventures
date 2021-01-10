@@ -7,13 +7,13 @@ let pageData = {
 	heading: 'Designations',
 	navbox: [{
 		name: 'Orbits',
-		info: ['<a href="index.html?p=hotsun" class="y">Hot Sun (Binary System)</a>']
+		info: ['<a href="index.html?p=hotsun">Hot Sun (Binary System)</a>']
 	}, {
 		name: 'Satellites',
 		info: [
-			'<a href="index.html?p=coldsun" class="y">Cold Sun</a>',
-			'<a href="index.html?p=uling" class="n">Uling</a>',
-			'<a href="index.html?p=hotsun" class="y">Hot Sun (Binary System)</a>'
+			'<a href="index.html?p=coldsun">Cold Sun</a>',
+			'<a href="index.html?p=uling">Uling</a>',
+			'<a href="index.html?p=hotsun">Hot Sun (Binary System)</a>'
 		]
 	}, {
 		name: 'Name Origin',

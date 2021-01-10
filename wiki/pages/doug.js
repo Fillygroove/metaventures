@@ -7,7 +7,7 @@ let pageData = {
 	heading: 'Designations',
 	navbox: [{
 		name: 'Orbits',
-		info: ['<a href="index.html?p=hotsun" class="y">Hot Sun</a>']
+		info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
 	}, {
 		name: 'Satellites',
 		info: ['H']
@@ -22,7 +22,7 @@ let pageData = {
 		info: ['Worms (Unconfirmed)']
 	}],
 	introText: [
-		'Doug is the second planet in the <a href="index.html?p=hotsun" class="y">Hot Sun</a> system, after <a href="index.html?p=grene" class="y">Grene</a> and before <a href="index.html?p=ert" class="y">Ert</a> and <a href="index.html?p=george" class="y">George</a>. Doug can be seen in the night skies of <a href="index.html?p=ert" class="y">Ert</a> during the evenings, although it is hard to see due to it not having much of a reflective surface. As such, Doug is often forgotten and even hated due to its status as a planet.',
+		'Doug is the second planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=grene">Grene</a> and before <a href="index.html?p=ert">Ert</a> and <a href="index.html?p=george">George</a>. Doug can be seen in the night skies of <a href="index.html?p=ert">Ert</a> during the evenings, although it is hard to see due to it not having much of a reflective surface. As such, Doug is often forgotten and even hated due to its status as a planet.',
 		'The term for describing something related to Doug is Forgettable.'
 	],
 	categories: [{
@@ -46,7 +46,7 @@ let pageData = {
 	}, {
 		name: 'Planetary Interactions',
 		info: [
-			'Doug\'s orbit is often dragged around a lot by the other nearby planets, most noteworthy is Pilf and the Ert and <a href="index.html?p=george" class="y">George</a> system. Grene may have an impact depending on when it aligns itself with the other planets. Despite this, its orbit remains stable.',
+			'Doug\'s orbit is often dragged around a lot by the other nearby planets, most noteworthy is Pilf and the Ert and <a href="index.html?p=george">George</a> system. Grene may have an impact depending on when it aligns itself with the other planets. Despite this, its orbit remains stable.',
 			'<h3>Interactions With Grene</h3>',
 			'Doug orbits closely to the expelled atmosphere of Grene, which, over millions of years, has turned it to the brown shade we know it as today.',
 			'<h3>Interactions With Ert</h3>',
@@ -57,7 +57,7 @@ let pageData = {
 		info: [
 			'<img src="images/h.png" alt="h.png" width="100" height="100" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
 			'<h3>H</h3>',
-			'Doug has one confirmed satellite, which has been named H. H is a natural satellite, shaped like a cube. It is the only object in the system with a cuboid shape, along with Pilf. H itself contains a similar makeup to Doug, with the same type of rocks and similar craters, with the only difference being size and shape. It is unknown if the naming of H was to make Doug and H match up with one of <a href="index.html?p=mac" class="y">Mac</a>\'s satellites, Dough, so that people could remember Doug.'
+			'Doug has one confirmed satellite, which has been named H. H is a natural satellite, shaped like a cube. It is the only object in the system with a cuboid shape, along with Pilf. H itself contains a similar makeup to Doug, with the same type of rocks and similar craters, with the only difference being size and shape. It is unknown if the naming of H was to make Doug and H match up with one of <a href="index.html?p=mac">Mac</a>\'s satellites, Dough, so that people could remember Doug.'
 		]
 	}, {
 		name: 'Life',
@@ -70,7 +70,7 @@ let pageData = {
 		info: [
 			'Doug is widely regarded to be the least favored planet in the Hot Sun system. This is due to it appearing to be just a rock, although there is much more than that. It is widely hated due to the opinion on scientists. A quote, which has been debated by critics, is down below.',
 			'"Doug, are you KIDDING ME? Why can\'t this damn planet make VOLCANOES already! I want to see some action, not a dead dirtball of a planet! I don\'t even want to call it a planet, it\'s just a rock. It has absolutely no value to my research."',
-			' - <a href="index.html?p=lakys" class="n">Dr. Lakys</a>'
+			' - <a href="index.html?p=lakys">Dr. Lakys</a>'
 		]
 	}],
 	endnav: 'planet'

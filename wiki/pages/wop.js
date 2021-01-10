@@ -7,7 +7,7 @@ let pageData = {
 	heading: 'Designations',
 	navbox: [{
 		name: 'Orbits',
-		info: ['<a href="index.html?p=mac" class="y">Mac</a>']
+		info: ['<a href="index.html?p=mac">Mac</a>']
 	}, {
 		name: 'Satellites',
 		info: ['None']

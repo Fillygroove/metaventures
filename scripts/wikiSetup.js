@@ -4,10 +4,13 @@ if (pageName == null) pageName = "main";
 
 let avThin = document.getElementsByClassName('av-thin')[0];
 
-let pageScript = document.createElement('script');
-pageScript.src = `./pages/${pageName}.js`;
-
-let pageMaker = document.createElement('script');
-pageMaker.src = `./pages/CONSTRUCTOR.js`;
-
-avThin.append(pageScript, pageMaker);
+(async function scriptLoader() {
+	function addScript(script) {
+		let pageScript = document.createElement('script');
+		pageScript.src = script;
+		avThin.append(pageScript);
+	}
+	
+	await addScript(`./pages/${pageName}.js`);
+	await addScript(`./pages/CONSTRUCTOR.js`);
+})();
