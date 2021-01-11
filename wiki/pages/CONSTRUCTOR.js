@@ -368,7 +368,7 @@ if (page.endnav != undefined) {
 						'<a href="index.html?p=grene"><img src="images/grene.png" width="25" height="25"></img>Grene</a>',
 						'<a href="index.html?p=doug"><img src="images/doug.png" width="25" height="25">Doug</a> (<small><img src="images/h.png" width="20" height="20">H</small>)',
 						'<a href="index.html?p=ert"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron">Perpahedron</a></small>)',
-						'<a href="index.html?p=george"><img src="images/george.png" width="20" height="20">Georg</a><a href="images/george_real.png">e</a> (<small><img src="images/damocles.png" width="20" height="20">Damocles</small>)',
+						'<a href="index.html?p=george"><img src="images/george.png" width="20" height="20">Georg</a><a href="images/george_real.png" class="y">e</a> (<small><img src="images/damocles.png" width="20" height="20">Damocles</small>)',
 						'<a href="index.html?p=pilf"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>'
 					]
 				}, {
@@ -482,7 +482,7 @@ for (let i = 0; i < pageLinks.length; i++) {
 	let pageLinkName = pageLinks[i].href.substring(pageLinks[i].href.indexOf('=') + 1, pageLinks[i].href.length);
 	if (pageLinkName.includes('#')) pageLinkName = pageLinkName.substring(0, pageLinkName.indexOf('#'));
 	if (pageLinks[i].id == '' && pageLinks[i].className == '') {
-		if (pageList.includes(pageLinkName) || pageLinks[i].href.includes('george_real')) pageLinks[i].className = 'y';
+		if (pageList.includes(pageLinkName)) pageLinks[i].className = 'y';
 		else pageLinks[i].className = 'n';
 	}
 }
