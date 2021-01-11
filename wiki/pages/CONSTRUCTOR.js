@@ -2,7 +2,9 @@ let pageList = ['ert', 'the', 'doug', 'pilf', 'greme', 'mac', 'grene', 'credits'
 
 let page;
 
-if (typeof pageData == 'undefined') {
+console.log(pageName);
+
+if (typeof pageData == 'undefined' && pageName != 'CONSTRUCTOR') {
 	let quoteNumber = Math.floor(Math.random() * 7);
 	let quote;
 	switch (quoteNumber) {
@@ -32,6 +34,13 @@ if (typeof pageData == 'undefined') {
 		name: 'Oops, a tasty 404!',
 		introText: ['This page doesn\'t seem to exist, sadly... ' + quote],
 		endnav: 'chars planet'
+	};
+} else if (pageName == 'CONSTRUCTOR') {
+	page = {
+		name: 'SECRET: Construction.',
+		introText: [
+			'You think you\'re funny, don\'t you? You\'ve been looking at the source code and found a file called CONSTRUCTOR.js, and decided to look at it on the wiki. Needless to say, I\'m not exactly happy. You better be lucky I noticed this, cause you could\'ve really broken stuff otherwise. Get out of my sight, you <a href="index.html?p=doug">Doug</a>.'
+		]
 	};
 } else page = pageData;
 

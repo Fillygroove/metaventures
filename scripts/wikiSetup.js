@@ -11,6 +11,6 @@ let avThin = document.getElementsByClassName('av-thin')[0];
 		avThin.append(pageScript);
 	}
 	
-	await addScript(`./pages/${pageName}.js`);
+	if (pageName != 'CONSTRUCTOR') await addScript(`./pages/${pageName}.js`);
 	await addScript(`./pages/CONSTRUCTOR.js`);
 })();
