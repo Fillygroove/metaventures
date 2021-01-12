@@ -2,8 +2,6 @@ let pageList = ['ert', 'the', 'doug', 'pilf', 'greme', 'mac', 'grene', 'credits'
 
 let page;
 
-console.log(pageName);
-
 if (typeof pageData == 'undefined' && pageName != 'CONSTRUCTOR') {
 	let quoteNumber = Math.floor(Math.random() * 7);
 	let quote;
