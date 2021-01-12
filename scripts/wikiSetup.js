@@ -4,13 +4,12 @@ if (pageName == null) pageName = "main";
 
 let avThin = document.getElementsByClassName('av-thin')[0];
 
-(async function scriptLoader() {
-	function addScript(script) {
-		let pageScript = document.createElement('script');
-		pageScript.src = script;
-		avThin.append(pageScript);
-	}
+function addScript(script) {
+	let pageScript = document.createElement('script');
+	pageScript.async = false; // Holy shit this is a lifesaver
+	pageScript.src = script;
+	avThin.append(pageScript);
+}
 	
-	if (pageName != 'CONSTRUCTOR') await addScript(`./pages/${pageName}.js`);
-	await addScript(`./pages/CONSTRUCTOR.js`);
-})();
+if (pageName != 'CONSTRUCTOR') addScript(`./pages/${pageName}.js`);
+addScript(`./pages/CONSTRUCTOR.js`);
