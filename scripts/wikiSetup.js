@@ -12,4 +12,4 @@ function addScript(script) {
 }
 	
 if (pageName != 'CONSTRUCTOR') addScript(`./pages/${pageName}.js`);
-addScript(`./pages/CONSTRUCTOR.js`);
+addScript('./pages/CONSTRUCTOR.js');
