@@ -1,5 +1,4 @@
 for (let i = warnings.length - 1; i >= 0; i--) {
-	console.log(warnings);
 	let warning = warnings[i];
 	
 	let warningTable = document.createElement('table');

@@ -4,6 +4,9 @@ if (pageName == null) pageName = "main";
 
 let avThin = document.getElementsByClassName('av-thin')[0];
 
+let warnings = [];
+let endnavs = [];
+
 function addScript(script) {
 	let pageScript = document.createElement('script');
 	pageScript.async = false; // Holy shit this is a lifesaver

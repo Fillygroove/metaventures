@@ -28,11 +28,14 @@ if (typeof pageData == 'undefined' && pageName != 'CONSTRUCTOR') {
 			quote = 'Maybe <a href="index.html?p=aeiou">Aeiou</a> made it explode because of its awesomeness...';
 			break;
 	}
+
 	page = {
 		name: 'Oops, a tasty 404!',
 		introText: ['This page doesn\'t seem to exist, sadly... ' + quote],
 		endnav: 'chars planet'
 	};
+	warnings = [];
+	endnavs = [];
 } else if (pageName == 'CONSTRUCTOR') {
 	page = {
 		name: 'SECRET: Construction.',
@@ -164,9 +167,6 @@ if (page.categories != undefined) {
 		}
 	}
 }
-
-let warnings = [];
-let endnavs = [];
 
 if (page.warning != undefined) {
 	for (let i = 0; i < page.warning.split(' ').length; i++) {
