@@ -1,3 +1,5 @@
+let pageList = ['ert', 'the', 'doug', 'pilf', 'greme', 'mac', 'grene', 'credits', 'dwarf', 'hotsun', 'tackpenguin', 'aero', 'george', 'aeiou', 'taiberaque', 'berry', 'coldsun', 'wop', 'shrine', 'halloween', 'main', 'dino', 'directions', 'm', 'nine', 'debug'];
+
 let pageName = new URLSearchParams(window.location.search);
 pageName = pageName.get('p');
 if (pageName == null) pageName = "main";
@@ -14,5 +16,6 @@ function addScript(script) {
 	avThin.append(pageScript);
 }
 	
-if (pageName != 'CONSTRUCTOR') addScript(`./pages/${pageName}.js`);
+if (!pageList.includes(pageName)) pageName = '404';
+addScript(`./pages/${pageName}.js`);
 addScript('./pages/CONSTRUCTOR.js');
