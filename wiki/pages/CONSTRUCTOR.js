@@ -51,76 +51,6 @@ name.innerHTML = page.name;
 let topLineBreak = document.createElement('hr');
 
 article.append(name, topLineBreak);
-	
-if (page.warning != undefined) {
-	function createWarning(warning) {
-		let warningTable = document.createElement('table');
-		
-		warningTable.className = "navbox";
-		warningTable.style = "width: 50%;";
-		
-		let warningCaption = document.createElement('caption');
-		warningCaption.innerHTML = warning.caption;
-		
-		let warningBody = document.createElement('tbody');
-		
-		let warningData = document.createElement('td');
-		let warningDiv = document.createElement('div');
-		let warningIMG = document.createElement('img');
-		
-		warningIMG.alt = warning.image.file;
-		warningIMG.src = `./images/${warning.image.file}`;
-		warningIMG.width = warning.image.dims[0];
-		warningIMG.height = warning.image.dims[1];
-		warningIMG.style = "float: left;"
-		
-		warningP = document.createElement('p');
-		warningP.innerHTML = warning.wormbs;
-		
-		warningDiv.append(warningIMG, warningP);
-		
-		warningData.append(warningDiv);
-		
-		warningBody.append(warningData);
-		
-		warningTable.append(warningCaption, warningBody);
-		
-		article.append(warningTable);
-	}
-	
-	if (page.warning.includes('stub')) {
-		createWarning({
-			caption: 'This page is incomplete!',
-			image: {
-				file: 'stub.png',
-				dims: [80, 80]
-			},
-			wormbs: 'Please be patient as Lakys finishes the War Maccine.'
-		});
-	}
-	
-	if (page.warning.includes('quality')) {
-		createWarning({
-			caption: 'Bro, this is quality',
-			image: {
-				file: 'bro.png',
-				dims: [80, 80]
-			},
-			wormbs: 'You\'re looking at a high quality page. Please behold its beauty!'
-		});
-	}
-	
-	if (page.warning.includes('forbidden')) {
-		createWarning({
-			caption: 'You\'re looking at forbidden knowledge.',
-			image: {
-				file: 'the_first.png',
-				dims: [80, 80]
-			},
-			wormbs: 'This information isn\'t accessable now.'
-		});
-	}
-}
 
 if (page.navbox != undefined) {
 	let navbox = document.createElement('table');
@@ -235,7 +165,19 @@ if (page.categories != undefined) {
 	}
 }
 
+let warnings = [];
 let endnavs = [];
 
-for (let i = 0; i < page.endnav.split(' ').length; i++) addScript(`./pages/nav_${page.endnav.split(' ')[i]}.js`);
+if (page.warning != undefined) {
+	for (let i = 0; i < page.warning.split(' ').length; i++) {
+		addScript(`./pages/warn_${page.warning.split(' ')[i]}.js`);
+	}
+}
+
+if (page.endnav != undefined) {
+	for (let i = 0; i < page.endnav.split(' ').length; i++) {
+		addScript(`./pages/nav_${page.endnav.split(' ')[i]}.js`);
+	}
+}
+
 addScript('./pages/FINALIZER.js');

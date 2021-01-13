@@ -1,6 +1,42 @@
-for (let i = 0; i < endnavs.length; i++) {
-	console.log(endnavs[i]);
+for (let i = warnings.length - 1; i >= 0; i--) {
+	console.log(warnings);
+	let warning = warnings[i];
 	
+	let warningTable = document.createElement('table');
+	
+	warningTable.className = "navbox";
+	warningTable.style = "width: 50%;";
+	
+	let warningCaption = document.createElement('caption');
+	warningCaption.innerHTML = warning.caption;
+	
+	let warningBody = document.createElement('tbody');
+	
+	let warningData = document.createElement('td');
+	let warningDiv = document.createElement('div');
+	let warningIMG = document.createElement('img');
+	
+	warningIMG.alt = warning.image.file;
+	warningIMG.src = `./images/${warning.image.file}`;
+	warningIMG.width = warning.image.dims[0];
+	warningIMG.height = warning.image.dims[1];
+	warningIMG.style = "float: left;"
+	
+	warningP = document.createElement('p');
+	warningP.innerHTML = warning.wormbs;
+	
+	warningDiv.append(warningIMG, warningP);
+	
+	warningData.append(warningDiv);
+	
+	warningBody.append(warningData);
+	
+	warningTable.append(warningCaption, warningBody);
+	
+	document.getElementsByTagName('hr')[0].insertAdjacentElement('afterend', warningTable);
+}
+
+for (let i = 0; i < endnavs.length; i++) {	
 	let table = endnavs[i];
 	
 	let endTable = document.createElement('table');
