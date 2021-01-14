@@ -1,3 +1,5 @@
+let pageList = ['ert', 'the', 'doug', 'pilf', 'greme', 'mac', 'grene', 'credits', 'dwarf', 'hotsun', 'tackpenguin', 'aero', 'george', 'aeiou', 'taiberaque', 'berry', 'coldsun', 'wop', 'shrine', 'halloween', 'main', 'dino', 'directions', 'm', 'nine', 'debug'];
+
 function makePage(page) {
 	let comicDir, wikiDir, titleDir, pageName;
 	switch (page) {

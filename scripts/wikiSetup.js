@@ -1,5 +1,3 @@
-let pageList = ['ert', 'the', 'doug', 'pilf', 'greme', 'mac', 'grene', 'credits', 'dwarf', 'hotsun', 'tackpenguin', 'aero', 'george', 'aeiou', 'taiberaque', 'berry', 'coldsun', 'wop', 'shrine', 'halloween', 'main', 'dino', 'directions', 'm', 'nine', 'debug'];
-
 let pageName = new URLSearchParams(window.location.search);
 pageName = pageName.get('p');
 if (pageName == null) pageName = "main";
