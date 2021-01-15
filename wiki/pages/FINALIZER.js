@@ -103,13 +103,4 @@ for (let i = 0; i < endnavs.length; i++) {
 	article.append(endTable);
 }
 
-let pageLinks = document.getElementsByTagName('a');
-
-for (let i = 0; i < pageLinks.length; i++) {
-	let pageLinkName = pageLinks[i].href.substring(pageLinks[i].href.indexOf('=') + 1, pageLinks[i].href.length);
-	if (pageLinkName.includes('#')) pageLinkName = pageLinkName.substring(0, pageLinkName.indexOf('#'));
-	if (pageLinks[i].id == '' && pageLinks[i].className == '') {
-		if (pageList.includes(pageLinkName)) pageLinks[i].className = 'y';
-		else pageLinks[i].className = 'n';
-	}
-}
+correctLinks();

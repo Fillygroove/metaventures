@@ -676,13 +676,4 @@ window.addEventListener('keydown', function(event) {
 	if (event.key == 'ArrowRight') showSlides(slideIndex += 1);
 });
 
-let pageLinks = document.getElementsByTagName('a');
-
-for (let i = 0; i < pageLinks.length; i++) {
-	let pageLinkName = pageLinks[i].href.substring(pageLinks[i].href.indexOf('=') + 1, pageLinks[i].href.length);
-	if (pageLinkName.includes('#')) pageLinkName = pageLinkName.substring(0, pageLinkName.indexOf('#'));
-	if (pageLinks[i].id == '' && pageLinks[i].className == '') {
-		if (pageList.includes(pageLinkName)) pageLinks[i].className = 'y';
-		else pageLinks[i].className = 'n';
-	}
-}
+correctLinks();
