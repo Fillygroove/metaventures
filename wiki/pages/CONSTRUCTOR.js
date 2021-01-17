@@ -16,7 +16,7 @@ if (page.navbox != undefined) {
 	navbox.style = "width: 22em";
 	
 	let caption = document.createElement('caption');
-	caption.innerHTML = page.name;
+	caption.innerHTML = page.navbox.name ? page.navbox.name : page.name;
 			
 	let navbody = document.createElement('tbody');
 	
@@ -29,13 +29,14 @@ if (page.navbox != undefined) {
 	imagetd.colSpan = "2";
 	imagetd.style = "text-align: center";
 
-	imgnav.className = page.file[1];
-	imgnav.alt = page.file;
-	imgnav.src = `./images/${page.file[0]}`;
-	imgnav.width = page.dims[0];
-	imgnav.height = page.dims[1];
+	imgnav.className = page.navbox.file[1];
+	imgnav.alt = page.navbox.file[0];
+	imgnav.src = `./images/${page.navbox.file[0]}`;
+	imgnav.style = 'max-width: 300px;';
+//	imgnav.width = page.navbox.dims[0];
+//	imgnav.height = page.navbox.dims[1];
 	
-	capa.innerHTML = page.caption;
+	capa.innerHTML = page.navbox.caption;
 	
 	capdiv.append(capa);
 	
@@ -43,56 +44,64 @@ if (page.navbox != undefined) {
 	
 	imagetr.append(imagetd);
 	
-	let headingtr = document.createElement('tr');
-	let headingth = document.createElement('th');
+	navbody.append(imagetr);
 	
-	headingth.colSpan = "2";
-	headingth.innerHTML = page.heading;
-	
-	headingtr.append(headingth);
-	
-	navbody.append(imagetr, headingtr);
-	
-	for (let i = 0; i < page.navbox.length; i++) {
-		let navboxtr = document.createElement('tr');
+	for (let k = 0; k < page.navbox.info.length; k++) {
 		
-		let navboxth = document.createElement('th');
-		navboxth.scope = "row";
-		navboxth.style = "max-width: 11em;";
-		
-		let navleftdiv = document.createElement('div');
-		navleftdiv.style = "display: inline-block; padding: 0.1em 0; line-height: 1.2em;";
-		navleftdiv.innerHTML = page.navbox[i].name;
-		
-		navboxth.append(navleftdiv);
+		console.log(page.navbox.info[k]);
 
-		let navboxtd = document.createElement('td');
-
-		let navrightdiv = document.createElement('div');
-		navrightdiv.className = "plainlist";
-
-		let navrightul = document.createElement('ul');
-		let navrightli = document.createElement('li');
+		let headingtr = document.createElement('tr');
+		let headingth = document.createElement('th');
 		
-		for (let j = 0; j < page.navbox[i].info.length; j++) {
-			let navrightspan = document.createElement('span');
+		headingth.colSpan = "2";
+		headingth.innerHTML = page.navbox.info[k].heading;
+		
+		headingtr.append(headingth);
+		
+		navbody.append(headingtr);
+		
+		for (let i = 0; i < page.navbox.info[k].info.length; i++) {
+			let navboxtr = document.createElement('tr');
 			
-			navrightspan.innerHTML = page.navbox[i].info[j];
+			let navboxth = document.createElement('th');
+			navboxth.scope = "row";
+			navboxth.style = "max-width: 11em;";
 			
-			if (j != page.navbox[i].info.length - 1) navrightspan.innerHTML += '</br>';
+			let navleftdiv = document.createElement('div');
+			navleftdiv.style = "display: inline-block; padding: 0.1em 0; line-height: 1.2em;";
+			navleftdiv.innerHTML = page.navbox.info[k].info[i].name;
+
+
+			navboxth.append(navleftdiv);
+
+			let navboxtd = document.createElement('td');
+
+			let navrightdiv = document.createElement('div');
+			navrightdiv.className = "plainlist";
+
+			let navrightul = document.createElement('ul');
+			let navrightli = document.createElement('li');
 			
-			navrightli.append(navrightspan);
+			for (let j = 0; j < page.navbox.info[k].info[i].info.length; j++) {
+				let navrightspan = document.createElement('span');
+				
+				navrightspan.innerHTML = page.navbox.info[k].info[i].info[j];
+								
+				if (j != page.navbox.info[k].info[i].info.length - 1) navrightspan.innerHTML += '</br>';
+				
+				navrightli.append(navrightspan);
+			}
+			navrightul.append(navrightli);
+			navrightdiv.append(navrightul);
+			navboxtd.append(navrightdiv);
+
+			navboxtr.append(navboxth, navboxtd);
+						
+			navbody.append(navboxtr);
 		}
-		navrightul.append(navrightli);
-		navrightdiv.append(navrightul);
-		navboxtd.append(navrightdiv);
-
-		navboxtr.append(navboxth, navboxtd);
-					
-		navbody.append(navboxtr);
+		
+		navbox.append(caption, navbody);
 	}
-	
-	navbox.append(caption, navbody);
 	
 	article.append(navbox);
 }

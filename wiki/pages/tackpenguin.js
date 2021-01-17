@@ -1,21 +1,24 @@
 let pageData = {
 	name: 'Secret: You',
-	file: ['bro.png'],
-	dims: ['330', '330'],
-	caption: 'bro look away',
-	heading: 'seriously look away',
-	navbox: [{
-		name: 'can you don\'t',
-		info: [
-			'i will rearrange your',
-			'your joints stop'
-		]
-	}, {
-		name: 'bro',
-		info: [
-			'yes yuo, stop'
-		]
-	}],
+	navbox: {
+		file: ['bro.png'],
+		caption: 'bro look away',
+		info: [{
+			heading: 'seriously look away',
+			info: [{
+				name: 'can you don\'t',
+				info: [
+					'i will rearrange your',
+					'your joints stop'
+				]
+			}, {
+				name: 'bro',
+				info: [
+					'yes yuo, stop'
+				]
+			}]
+		}]
+	},
 	introText: [
 		'listen bro, im gonna tell you a secret. its a big good secret so listen closely. put your ears on and turn on yuor heads.'
 	],

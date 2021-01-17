@@ -1,26 +1,29 @@
 let pageData = {
 	warning: 'quality',
 	name: 'Ert',
-	file: ['ert.png', 'pixel'],
-	dims: ['330', '330'],
-	caption: 'Illustration made by Gramiatar.',
-	heading: 'Designations',
-	navbox: [{
-		name: 'Orbits',
-		info: ['<a href="index.html?p=hotsun">Hot Sun</a>', '<a href="index.html?p=george">George (Binary System)</a>']
-	}, {
-		name: 'Satellites',
-		info: ['<a href="index.html?p=george">George (Binary System)</a>', '<a href="index.html?p=perpahedron">Perpahedron (Artificial)</a>']
-	}, {
-		name: 'Name Origin',
-		info: ['Unknown']
-	}, {
-		name: 'Classification',
-		info: ['Terrestrial']
-	}, {
-		name: 'Life',
-		info: ['Reegs', 'Polygons', 'And More']
-	}],
+	navbox: {
+		file: ['ert.png', 'pixel'],
+		caption: 'Illustration made by Gramiatar.',
+		info: [{
+			heading: 'Designations',
+			info: [{
+				name: 'Orbits',
+				info: ['<a href="index.html?p=hotsun">Hot Sun</a>', '<a href="index.html?p=george">George (Binary System)</a>']
+			}, {
+				name: 'Satellites',
+				info: ['<a href="index.html?p=george">George (Binary System)</a>', '<a href="index.html?p=perpahedron">Perpahedron (Artificial)</a>']
+			}, {
+				name: 'Name Origin',
+				info: ['Unknown']
+			}, {
+				name: 'Classification',
+				info: ['Terrestrial']
+			}, {
+				name: 'Life',
+				info: ['Reegs', 'Polygons', 'And More']
+			}]
+		}]
+	},
 	introText: [
 		'Ert is the fourth planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, sharing this position with <a href="index.html?p=george">George</a>, after <a href="index.html?p=doug">Doug</a> and before <a href="index.html?p=pilf">Pilf</a>. Ert is notable, being one of the only two planets in a binary system, sharing this feature with George. Ert is also the planet with the second most diversity of life, behind George, and also has some of the most "intelligent" inhabitants. Ert\'s sentient life boasts technology such as televisions, giant tungsten cubes, and the Perpahedron, but it is by no means able to take advantage of the planets around it, despite lifeforms being able to live on other planets. Ert is about one seventieth of the size of the Hot Sun.',
 		'The term for describing something related to Ert is Ertian.'

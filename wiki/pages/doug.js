@@ -1,26 +1,29 @@
 let pageData = {
 	warning: 'quality',
 	name: 'Doug',
-	file: ['doug.png', 'pixel'],
-	dims: ['330', '330'],
-	caption: 'Illustration made by Gramiatar.',
-	heading: 'Designations',
-	navbox: [{
-		name: 'Orbits',
-		info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
-	}, {
-		name: 'Satellites',
-		info: ['H']
-	}, {
-		name: 'Name Origin',
-		info: ['Unknown']
-	}, {
-		name: 'Classification',
-		info: ['Terrestrial']
-	}, {
-		name: 'Life',
-		info: ['Worms (Unconfirmed)']
-	}],
+	navbox: {
+		file: ['doug.png', 'pixel'],
+		caption: 'Illustration made by Gramiatar.',
+		info: [{
+			heading: 'Designations',
+			info: [{
+				name: 'Orbits',
+				info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
+			}, {
+				name: 'Satellites',
+				info: ['H']
+			}, {
+				name: 'Name Origin',
+				info: ['Unknown']
+			}, {
+				name: 'Classification',
+				info: ['Terrestrial']
+			}, {
+				name: 'Life',
+				info: ['Worms (Unconfirmed)']
+			}]
+		}]
+	},
 	introText: [
 		'Doug is the second planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=grene">Grene</a> and before <a href="index.html?p=ert">Ert</a> and <a href="index.html?p=george">George</a>. Doug can be seen in the night skies of <a href="index.html?p=ert">Ert</a> during the evenings, although it is hard to see due to it not having much of a reflective surface. As such, Doug is often forgotten and even hated due to its status as a planet.',
 		'The term for describing something related to Doug is Forgettable.'

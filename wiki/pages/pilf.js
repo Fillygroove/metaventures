@@ -1,25 +1,28 @@
 let pageData = { // First!
 	name: 'Pilf',
-	file: ['pilf.png', 'pixel'],
-	dims: ['330', '197.21'],
-	caption: 'Illustration made by Gramiatar.',
-	heading: 'Designations',
-	navbox: [{
-		name: 'Orbits',
-		info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
-	}, {
-		name: 'Satellites',
-		info: ['Piffol Rings']
-	}, {
-		name: 'Name Origin',
-		info: ['Unknown']
-	}, {
-		name: 'Classification',
-		info: ['Cuboid Terrestrial']
-	}, {
-		name: 'Life',
-		info: ['Cheese Flies', 'Cheese Moss']
-	}],
+	navbox: {
+		file: ['pilf.png', 'pixel'],
+		caption: 'Illustration made by Gramiatar.',
+		info: [{
+			heading: 'Designations',
+			info: [{
+				name: 'Orbits',
+				info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
+			}, {
+				name: 'Satellites',
+				info: ['Piffol Rings']
+			}, {
+				name: 'Name Origin',
+				info: ['Unknown']
+			}, {
+				name: 'Classification',
+				info: ['Cuboid Terrestrial']
+			}, {
+				name: 'Life',
+				info: ['Cheese Flies', 'Cheese Moss']
+			}]
+		}]
+	},
 	introText: [
 		'Pilf is the third planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=ert">Ert</a> and <a href="index.html?p=george">George</a> and before <a href="index.html?p=mac">Mac</a>. Pilf\'s most iconic feature is its weird shape, being that of a sharp cube, as opposed to the traditionally smooth shape of other planets. Pilf can be seen on Ert at the early hours of night, due to its relative closeness and vibrant colors, appearing as a dot in the sky. With binoculars, the full planet can be seen, however. The distance from the center of a side to the edge of a face is a seventy-fifth of the diameter of the Hot Sun.',
 		'<img src="images/pilf_ringless.png" alt="pilf_ringless.png" width="100" height="92.93" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',

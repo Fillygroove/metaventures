@@ -1,26 +1,29 @@
 let pageData = {
 	warning: 'stub',
 	name: 'The',
-	file: ['the.png', 'pixel'],
-	dims: ['330', '334.31'],
-	caption: 'Illustration made by Gramiatar.',
-	heading: 'Designations',
-	navbox: [{
-		name: 'Orbits',
-		info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
-	}, {
-		name: 'Satellites',
-		info: ['Unknown']
-	}, {
-		name: 'Name Origin',
-		info: ['Named by an unknown organization after the Alphabet Business Concern attempted to name it Article.']
-	}, {
-		name: 'Classification',
-		info: ['Trans-Aeiouian']
-	}, {
-		name: 'Life',
-		info: ['Unknown']
-	}],
+	navbox: {
+		file: ['the.png', 'pixel'],
+		caption: 'Illustration made by Gramiatar.',
+		info: [{
+			heading: 'Designations',		
+			info: [{
+				name: 'Orbits',
+				info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
+			}, {
+				name: 'Satellites',
+				info: ['Unknown']
+			}, {
+				name: 'Name Origin',
+				info: ['Named by an unknown organization after the Alphabet Business Concern attempted to name it Article.']
+			}, {
+				name: 'Classification',
+				info: ['Trans-Aeiouian']
+			}, {
+				name: 'Life',
+				info: ['Unknown']
+			}]
+		}]
+	},
 	introText: [
 		'<i style = "background-color: rgba(0, 0, 0, 0); padding-left: 2em;">"The what?"</i></br><i style = "background-color: rgba(0, 0, 0, 0); padding-left: 2.5em;"> - Everyone</i>',
 		'The is the ninth and last planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=aeiou">Aeiou</a>. The is a mysterious planet, which has been at the center of many scientific theories and general intrigue. As such, there are few things we know about The, but the information we do have is interesting, and, as such, warrants an article; Not to be confused with Article, These original name. The is exactly one fourty-second of the size of the Hot Sun.',
