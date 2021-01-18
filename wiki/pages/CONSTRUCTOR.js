@@ -32,7 +32,7 @@ if (page.navbox != undefined) {
 	imgnav.className = page.navbox.file[1];
 	imgnav.alt = page.navbox.file[0];
 	imgnav.src = `./images/${page.navbox.file[0]}`;
-	imgnav.style = 'max-width: 300px;';
+	imgnav.style = 'max-width: 300px; width: 300px;';
 //	imgnav.width = page.navbox.dims[0];
 //	imgnav.height = page.navbox.dims[1];
 	
