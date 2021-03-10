@@ -7,16 +7,17 @@ endnavs.push({
 			info: [
 				'<a href="index.html?p=grene"><img src="images/grene.png" width="25" height="25"></img>Grene</a>',
 				'<a href="index.html?p=doug"><img src="images/doug.png" width="25" height="25">Doug</a> (<small><img src="images/h.png" width="20" height="20">H</small>)',
+				'<a href="index.html?p=pilf"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>',
 				'<a href="index.html?p=ert"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron">Perpahedron</a></small>)',
 				'<a href="index.html?p=george"><img src="images/george.png" width="20" height="20">Georg</a><a href="images/george_real.png" class="y">e</a> (<small><img src="images/damocles.png" width="20" height="20">Damocles</small>)',
-				'<a href="index.html?p=pilf"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>'
+				'<a href="index.html?p=baeg"><img src="images/baeg.png" width="25" height="20">Baeg</a>'
 			]
 		}, {
 			name: 'Outer System',
 			info: [
-				'<a href="index.html?p=mac"><img src="images/mac.png" width="35" height="25">Mac</a> (<small><a href="index.html?p=wop"><img src="images/wop.png" width="23" height="20">World of Pain</a> &bull; <img src="images/dough.png" width="24" height="20">Dough</small>)',
+				'<a href="index.html?p=mac"><img src="images/mac.png" width="35" height="25">Mac</a> (<small><a href="index.html?p=wop"><img src="images/wop.png" width="23" height="20">World of Pain</a></small>)',
+				'<a href="index.html?p=hazel">Hazel</a> (<small>Curfew &bull; Purpul &bull; Cea</small>)',
 				'<a href="index.html?p=aeiou"><img src="images/aeiou.png" width="27" height="25">Aeiou</a> (<small>Cdfqrszt &bull; Heideph</small>)',
-				'<a href="index.html?p=berry"><img src="images/berry_ringless.png" width="25" height="25">Berry</a>',
 				'<a href="index.html?p=the"><img src="images/the.png" width="25" height="25">The</a>'
 			]
 		}]

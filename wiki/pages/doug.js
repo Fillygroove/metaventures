@@ -25,7 +25,7 @@ let pageData = {
 		}]
 	},
 	introText: [
-		'Doug is the second planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=grene">Grene</a> and before <a href="index.html?p=ert">Ert</a> and <a href="index.html?p=george">George</a>. Doug can be seen in the night skies of <a href="index.html?p=ert">Ert</a> during the evenings, although it is hard to see due to it not having much of a reflective surface. As such, Doug is often forgotten and even hated due to its status as a planet.',
+		'Doug is the second planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=grene">Grene</a> and before <a href="index.html?p=pilf">Pilf</a>. Doug can be seen in the night skies of <a href="index.html?p=ert">Ert</a> during the evenings, although it is hard to see due to it not having much of a reflective surface. As such, Doug is often forgotten and even hated due to its status as a planet.',
 		'The term for describing something related to Doug is Forgettable.'
 	],
 	categories: [{

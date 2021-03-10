@@ -42,7 +42,7 @@ let pageData = {
 	}, {
 		name: 'EpicBattler3',
 		info: [
-			'Created Berry, along with original concept art.'
+			'Created the original version of Purpul, along with original concept art.'
 		]
 	}, {
 		name: 'PS3_33',

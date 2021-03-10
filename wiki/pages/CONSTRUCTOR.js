@@ -29,18 +29,21 @@ if (page.navbox != undefined) {
 	imagetd.colSpan = "2";
 	imagetd.style = "text-align: center";
 
-	imgnav.className = page.navbox.file[1];
-	imgnav.alt = page.navbox.file[0];
-	imgnav.src = `./images/${page.navbox.file[0]}`;
-	imgnav.style = 'max-width: 300px; width: 300px;';
-//	imgnav.width = page.navbox.dims[0];
-//	imgnav.height = page.navbox.dims[1];
-	
+	if (page.navbox.file) {
+		imgnav.className = page.navbox.file[1];
+		imgnav.alt = page.navbox.file[0];
+		imgnav.src = `./images/${page.navbox.file[0]}`;
+		imgnav.style = 'max-width: 300px; width: 300px;';
+	//	imgnav.width = page.navbox.dims[0];
+	//	imgnav.height = page.navbox.dims[1];
+		imagetd.append(imgnav);
+	}
+		
 	capa.innerHTML = page.navbox.caption;
 	
 	capdiv.append(capa);
 	
-	imagetd.append(imgnav, capdiv);
+	imagetd.append(capdiv);
 	
 	imagetr.append(imagetd);
 	

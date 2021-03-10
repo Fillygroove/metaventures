@@ -26,7 +26,7 @@ let pageData = {
 	introText: [
 		'Grene is the first planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, before <a href="index.html?p=doug">Doug</a>. It is about a fifty-fifth of the size of the Hot Sun. Grene can barely be seen from <a href="index.html?p=ert">Ert</a>, looking like a sun spot due to how close it is to the Hot Sun, but since it revolves around the Hot Sun rather quickly, it looks like a sun spot that moves extremely quickly. It can only be observed by special means, specifically in day with special equipment.',
 		'Grene\'s surface is mostly composed of silicon and an unknown material, with the side of the planet facing the Hot Sun consisting of molten silicon. The atmosphere contains evaporated silicon, along with another unknown material that causes a cycle similar to the water cycle on <a href="index.html?p=ert">Ert</a> and <a href="index.html?p=george">George</a>. Said atmosphere is being stripped off of the planet by the solar wind, being blasted off, leaving a trail that constantly leaves the planet, facing away from the Hot Sun. A year on Grene lasts 20 hours. Days can not be measured due to the planet being tidally locked to the Hot Sun.',
-		'The term for describing something related to Grene is H.'
+		'The term for describing something related to Grene is Grenian.'
 	],
 	categories: [{
 		name: 'Characteristics',

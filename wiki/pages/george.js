@@ -25,7 +25,7 @@ let pageData = {
 		}]
 	},
 	introText: [
-		'George is the fourth planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, sharing this position with <a href="index.html?p=ert">Ert</a>, after <a href="index.html?p=doug">Doug</a> and before <a href="index.html?p=pilf">Pilf</a>.'
+		'George is the fourth planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, sharing this position with <a href="index.html?p=ert">Ert</a>, after <a href="index.html?p=pilf">Pilf</a> and before <a href="index.html?p=baeg">Baeg</a>.'
 	],
 	endnav: 'planet'
 };

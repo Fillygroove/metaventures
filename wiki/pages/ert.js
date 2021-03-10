@@ -25,7 +25,7 @@ let pageData = {
 		}]
 	},
 	introText: [
-		'Ert is the fourth planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, sharing this position with <a href="index.html?p=george">George</a>, after <a href="index.html?p=doug">Doug</a> and before <a href="index.html?p=pilf">Pilf</a>. Ert is notable, being one of the only two planets in a binary system, sharing this feature with George. Ert is also the planet with the second most diversity of life, behind George, and also has some of the most "intelligent" inhabitants. Ert\'s sentient life boasts technology such as televisions, giant tungsten cubes, and the Perpahedron, but it is by no means able to take advantage of the planets around it, despite lifeforms being able to live on other planets. Ert is about one seventieth of the size of the Hot Sun.',
+		'Ert is the fourth planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, sharing this position with <a href="index.html?p=george">George</a>, after <a href="index.html?p=pilf">Pilf</a> and before <a href="index.html?p=baeg">Baeg</a>. Ert is notable, being one of the only two planets in a binary system, sharing this feature with George. Ert is also the planet with the second most diversity of life, behind George, and also has some of the most "intelligent" inhabitants. Ert\'s sentient life boasts technology such as televisions, giant tungsten cubes, and the Perpahedron, but it is by no means able to take advantage of the planets around it, despite lifeforms being able to live on other planets. Ert is about one seventieth of the size of the Hot Sun.',
 		'The term for describing something related to Ert is Ertian.'
 	],
 	categories: [{

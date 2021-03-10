@@ -1,8 +1,8 @@
 let pageData = {
 	warning: 'stub',
-	name: 'Berry',
+	name: 'baeg',
 	navbox: {		
-		file: ['berry_ringless.png', 'pixel'],
+		file: ['baeg.png', 'pixel'],
 		caption: 'Illustration made by Gramiatar.',
 		info: [{
 			heading: 'Designations',
@@ -17,16 +17,15 @@ let pageData = {
 				info: ['Unknown']
 			}, {
 				name: 'Classification',
-				info: ['Terrestrial Object']
+				info: ['Terrestrial']
 			}, {
 				name: 'Life',
 				info: ['None']
-			}],
+			}]
 		}]
 	},
 	introText: [
-		'Berry is the eigth planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=aeiou">Aeiou</a> and before <a href="index.html?p=the">The</a>.',
-		'The term for referring to something related to Berry is Blyuian.'
+		'Baeg is the fifth planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=ert">Ert</a> and <a href="index.html?p=george">George</a> and before <a href="index.html?p=mac">Mac</a>.'
 	],
 	endnav: 'planet'
 };

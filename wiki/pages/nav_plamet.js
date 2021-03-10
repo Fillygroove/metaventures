@@ -16,8 +16,8 @@ endnavs.push({
 			info: [
 				'<a href="index.html?p=macaroni">Macaromi Belt</a>',
 				'<a href="index.html?p=mac"><img src="images/mac.png" width="35" height="25">Mac</a> (<small><a href="index.html?p=wop"><img src="images/wop.png" width="23" height="20">World of Paim</a> &bull; <img src="images/dough.png" width="24" height="20">Dough</small>)',
+				'<a href="index.html?p=hazel">Hazel</a> (<small>Curfew &bull; Purpul &bull; Cea</small>)',
 				'<a href="index.html?p=aeiou"><img src="images/aeiou.png" width="27" height="25">Aeiou</a> (<small>Cdfqrszt &bull; Heideph</small>)',
-				'<a href="index.html?p=berry"><img src="images/berry_ringless.png" width="25" height="25">Berry</a>',
 				'<a href="index.html?p=the"><img src="images/the.png" width="25" height="25">The</a>'
 			]
 		}]
