@@ -1,6 +1,6 @@
 let pageData = {
 	warning: 'stub',
-	name: 'baeg',
+	name: 'Baeg',
 	navbox: {		
 		file: ['baeg.png', 'pixel'],
 		caption: 'Illustration made by Gramiatar.',
