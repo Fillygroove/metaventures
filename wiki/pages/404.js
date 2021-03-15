@@ -11,7 +11,7 @@ switch (quoteNumber) {
 		quote = 'Maybe it got abducted by space clowns...';
 		break;
 	case 3:
-		quote = 'Maybe <a href="index.html?p=aero">Aero</a> stole it\'s intestines...';
+		quote = 'Maybe <a href="index.html?p=aero">Aero</a> stole its intestines...';
 		break;
 	case 4: // Made by Pixel Origin
 		quote = 'Likely left to attend <a href="index.html?p=aero">Aero</a>\'s funeral...';

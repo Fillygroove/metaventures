@@ -33,8 +33,7 @@ addText('All comic images and icons have been lovingly provided by Text Wall, th
 addHead('The Wiki!');
 
 addText('The Wiki section of the website contains a collection of pages that explains the world of the Aeroventures universe. As of now, there isn\'t much, but it\'s getting there.');
-addText('As of now, <a href="./wiki/index.html?p=the" class="y">The</a> is being worked on. After The is finished, drafts for character pages will be worked on.');
-addText('Images provided on the wiki have been created by either Gramiatar and Text Wall. Future thanks will be given on a special page if needed.');
+addText('Never make promises.(\'>\')');
 
 addHead('The Discord!');
 

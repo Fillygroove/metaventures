@@ -6,20 +6,20 @@ endnavs.push({
 			name: 'Protagonists',
 			info: [
 				'<a href="index.html?p=aero">Aero</a>',
-				'<a href="index.html?p=archie">Archie</a>',
+				'<a href="index.html?p=rodney">Rodney</a>',
 				'<a href="index.html?p=lakys">Lakys</a>',
 				'<a href="index.html?p=aposteel">Aposteel</a>'
 			]
 		}, {
 			name: 'Antagonists',
 			info: [
-				'<a href="index.html?p=coylstone">Coyl Stone</a>',
+				'<a href="index.html?p=felix">Felix</a>',
 				'<a href="index.html?p=keeper">The Keeper</a>',
 				'<a href="index.html?p=larry-av">Larry</a>',
 				'<a href="index.html?p=nutstradamnus">Nutstradamnus</a>',
 				'<a href="index.html?p=oldaero">Old Aero</a>',
 				'<a href="index.html?p=ozark">Ozark</a>',
-				'<a href="index.html?p=royale">Royale</a>',
+				'<a href="index.html?p=krieg">Krieg</a>',
 				'<a href="index.html?p=clowns">The Space Clowns</a>',
 				'<a href="index.html?p=warmaccine">War Maccine</a>'
 			]

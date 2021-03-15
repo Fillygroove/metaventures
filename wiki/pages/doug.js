@@ -1,5 +1,5 @@
 let pageData = {
-	warning: 'quality',
+	warning: 'crap',
 	name: 'Doug',
 	navbox: {
 		file: ['doug.png', 'pixel'],
