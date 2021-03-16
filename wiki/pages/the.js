@@ -17,7 +17,7 @@ let pageData = {
 				info: ['Named by an unknown organization after the Alphabet Business Concern attempted to name it Article.']
 			}, {
 				name: 'Classification',
-				info: ['Trans-Aeiouian']
+				info: ['Trans-Hazelian']
 			}, {
 				name: 'Life',
 				info: ['Unknown']
@@ -32,7 +32,7 @@ let pageData = {
 	categories: [{
 		name: 'Characteristics',
 		info: [
-			'The is a Trans-Aeiouian planet, and the only non-dwarf planet in that categorization. The is made up of an unknown material, although the material seems to be a blend of the traditional silicon-based material and synthetic metallic materials. A day on The lasts an unknown amount of time, due to the northern and southern hemispheres spinning in opposite directions. A year on The also lasts for an unknown amount of time, due to its orbit being rotated about 1.57 radians (90 degrees) when compared to other planets, meaning that scientists can\'t use their normal observational tools to find out how long it is. Both of These hemispheres rotate in opposite directions, seemingly rotating in sync.',
+			'The is a Trans-Hazelian planet, and the only non-dwarf planet in that categorization. The is made up of an unknown material, although the material seems to be a blend of the traditional silicon-based material and synthetic metallic materials. A day on The lasts an unknown amount of time, due to the northern and southern hemispheres spinning in opposite directions. A year on The also lasts for an unknown amount of time, due to its orbit being rotated about 1.57 radians (90 degrees) when compared to other planets, meaning that scientists can\'t use their normal observational tools to find out how long it is. Both of These hemispheres rotate in opposite directions, seemingly rotating in sync.',
 			'<h3>Appearance</h3>',
 			'The appears in a roughly spherical shape. The presence of a planetary bulge is unknown, and even if we had clues to figure this out, the situation is complicated even more by the fact that the northern and southern hemispheres are split apart in the same way that vegetables and meat on last night\'s dinner are.',
 			'Both of These hemispheres have differing features, although one similarity is that both hemispheres feature lights where the equator would be. Both hemispheres have exactly 50 lights, seperated by an estimated amount of 0.13 radians. Some scientists suggest that the exact value is 0.1308997 radians (or exactly 7.5 degrees), which seems to be the case, but since we can\'t observe the other side of the planet, the theory is relegated to the equivilant of burnt toast. Both hemispheres have a blue material and feature craters.',

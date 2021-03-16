@@ -22,6 +22,8 @@ let lineBreak = document.createElement('hr');
 
 mainAVThin.append(mainH1, lineBreak);
 
+addText('WARNING - A lot of things are being reworked so most information (and even the comics) isn\'t accurate anymore.');
+
 addText('Welcome to the Metaventures website! Read below for more information!');
 
 addHead('The Comics!');
