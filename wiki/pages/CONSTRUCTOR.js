@@ -1,3 +1,9 @@
+let imageSize = {
+	large: 30,
+	norm: 25,
+	small: 20
+};
+
 let page = pageData;
 
 let article = document.getElementsByClassName('av-thin')[0];

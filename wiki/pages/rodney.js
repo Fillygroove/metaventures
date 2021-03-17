@@ -2,7 +2,7 @@ const pageData = {
 	warning: 'stub',
 	name: 'Rodney Violet',
 	navbox: {
-		file: ['rodney.png', 'pixel'],
+		file: ['rodney_pixel.png', 'pixel'],
 		caption: 'Picture not taken, illustration made by Gramiatar.',
 		info: [{
 			heading: 'Designations',

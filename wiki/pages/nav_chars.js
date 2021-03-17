@@ -6,15 +6,19 @@ endnavs.push({
 			name: 'Protagonists',
 			info: [
 				`<a href="index.html?p=aero">
+					<img src="images/aero_pixel.png" height="${imageSize.norm}"></img>
 					Aero
 				</a>`,
 				`<a href="index.html?p=rodney">
+					<img src="images/rodney_pixel.png" height="${imageSize.norm}"></img>
 					Rodney
 				</a>`,
 				`<a href="index.html?p=lakys">
+					<img src="images/lakys_pixel.png" height="${imageSize.norm}"></img>
 					Lakys
 				</a>`,
 				`<a href="index.html?p=aposteel">
+					<img src="images/aposteel_pixel.png" height="${imageSize.norm}"></img>
 					Aposteel
 				</a>`
 			]

@@ -1,9 +1,3 @@
-let imageSize = {
-	large: 30,
-	norm: 25,
-	small: 20
-};
-
 endnavs.push({
 	heading: 'The Bisolar System',
 	categories: [{
