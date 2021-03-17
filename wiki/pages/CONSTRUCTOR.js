@@ -57,8 +57,6 @@ if (page.navbox != undefined) {
 	
 	for (let k = 0; k < page.navbox.info.length; k++) {
 		
-		console.log(page.navbox.info[k]);
-
 		let headingtr = document.createElement('tr');
 		let headingth = document.createElement('th');
 		
@@ -80,7 +78,6 @@ if (page.navbox != undefined) {
 			navleftdiv.style = "display: inline-block; padding: 0.1em 0; line-height: 1.2em;";
 			navleftdiv.innerHTML = page.navbox.info[k].info[i].name;
 
-
 			navboxth.append(navleftdiv);
 
 			let navboxtd = document.createElement('td');
@@ -95,11 +92,47 @@ if (page.navbox != undefined) {
 				let navrightspan = document.createElement('span');
 				
 				navrightspan.innerHTML = page.navbox.info[k].info[i].info[j];
-								
+				
 				if (j != page.navbox.info[k].info[i].info.length - 1) navrightspan.innerHTML += '</br>';
 				
 				navrightli.append(navrightspan);
 			}
+			
+			if (page.navbox.info[k].info[i].embed == true) {
+				let navrightembed = document.createElement('iframe');
+				
+				navrightembed.width = 200;
+				navrightembed.height = 200;
+				navrightembed.scrolling = "no";
+				navrightembed.frameborder = "no";
+				navrightembed.allow = "autoplay";
+				navrightembed.display = "block";
+				
+				let songLink = '';
+				
+				switch (pageName) {
+					case 'baeg':
+						songLink = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/992974678&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
+						break;
+					case 'ert':
+						songLink = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/994171495&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
+						break;
+					case 'aeiou':
+						songLink = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/994972702&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
+						break;
+					case 'mac':
+						songLink = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1002965515&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
+						break;
+					case 'george':
+						songLink = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1005219457&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
+						break;
+				}
+				
+				navrightembed.src = songLink;
+
+				navrightli.append(navrightembed);
+			}
+			
 			navrightul.append(navrightli);
 			navrightdiv.append(navrightul);
 			navboxtd.append(navrightdiv);

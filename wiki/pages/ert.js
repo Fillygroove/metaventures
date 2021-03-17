@@ -21,6 +21,10 @@ let pageData = {
 			}, {
 				name: 'Life',
 				info: ['Reegs', 'Polygons', 'And More']
+			}, {
+				name: 'Theme',
+				info: ['Janet Odyssey: Ert'],
+				embed: true
 			}]
 		}]
 	},

@@ -22,6 +22,10 @@ let pageData = {
 			}, {
 				name: 'Life',
 				info: ['None']
+			}, {
+				name: 'Theme',
+				info: ['Janet Odyssey: Aeiou'],
+				embed: true
 			}]
 		}]
 	},

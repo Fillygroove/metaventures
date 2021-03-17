@@ -20,6 +20,10 @@ let pageData = {
 			}, {
 				name: 'Life',
 				info: ['Confirmed but Unknown']
+			}, {
+				name: 'Theme',
+				info: ['Janet Odyssey: Mac'],
+				embed: true
 			}]
 		}]
 	},

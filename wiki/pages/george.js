@@ -21,6 +21,10 @@ let pageData = {
 			}, {
 				name: 'Life',
 				info: ['Cows', 'Ozark', 'Plushrooms', 'And More']
+			}, {
+				name: 'Theme',
+				info: ['Janet Odyssey: Ert'],
+				embed: true
 			}]
 		}]
 	},
