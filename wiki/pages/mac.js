@@ -10,7 +10,7 @@ let pageData = {
 				info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
 			}, {
 				name: 'Satellites',
-				info: ['<a href="index.html?p=wop">World of Pain</a>, Dough']
+				info: ['<a href="index.html?p=wop">World of Pain</a>']
 			}, {
 				name: 'Name Origin',
 				info: ['Unknown']
