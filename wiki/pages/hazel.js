@@ -5,7 +5,7 @@ let pageData = {
 		name: 'Hazel',
 		file: ['hazel.png', 'pixel'],
 		symbol: true,
-		caption: 'Placeholder.',
+		caption: 'Illustration made by Gramiatar.',
 		info: [{
 			heading: 'Designations',
 			info: [{
