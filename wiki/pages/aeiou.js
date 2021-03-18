@@ -23,11 +23,12 @@ let pageData = {
 			}, {
 				name: 'Life',
 				info: ['None']
-			}, {
-				name: 'Theme',
-				info: ['Janet Odyssey: Aeiou'],
-				embed: true
 			}]
+		}, {
+			heading: 'Theme',
+			info: [{
+				embed: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/994972702&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
+ 			}]
 		}]
 	},
 	introText: [

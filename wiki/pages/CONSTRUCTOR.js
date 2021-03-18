@@ -25,7 +25,7 @@ if (page.navbox != undefined) {
 	
 	caption.innerHTML = page.navbox.name ? page.navbox.name : page.name;
 	
-	if (page.navbox.symbol !== false) {
+	if (page.navbox.symbol != undefined) {
 		let navsymbol = document.createElement('img');
 		navsymbol.alt = `symbol_${page.navbox}.png`;
 		navsymbol.src = `./images/symbol_${pageName}.png`;
@@ -50,8 +50,7 @@ if (page.navbox != undefined) {
 		imgnav.alt = page.navbox.file[0];
 		imgnav.src = `./images/${page.navbox.file[0]}`;
 		imgnav.style = 'max-width: 300px; width: 300px; vertical-align: unset;';
-	//	imgnav.width = page.navbox.dims[0];
-	//	imgnav.height = page.navbox.dims[1];
+		
 		imagetd.append(imgnav);
 	}
 	
@@ -83,12 +82,14 @@ if (page.navbox != undefined) {
 			let navboxth = document.createElement('th');
 			navboxth.scope = "row";
 			navboxth.style = "max-width: 11em;";
-			
-			let navleftdiv = document.createElement('div');
-			navleftdiv.style = "display: inline-block; padding: 0.1em 0; line-height: 1.2em;";
-			navleftdiv.innerHTML = page.navbox.info[k].info[i].name;
+				
+			if (page.navbox.info[k].info[i].name != undefined) {
+				let navleftdiv = document.createElement('div');
+				navleftdiv.style = "display: inline-block; padding: 0.1em 0; line-height: 1.2em;";
+				navleftdiv.innerHTML = page.navbox.info[k].info[i].name;
 
-			navboxth.append(navleftdiv);
+				navboxth.append(navleftdiv);
+			}
 
 			let navboxtd = document.createElement('td');
 
@@ -98,57 +99,41 @@ if (page.navbox != undefined) {
 			let navrightul = document.createElement('ul');
 			let navrightli = document.createElement('li');
 			
-			for (let j = 0; j < page.navbox.info[k].info[i].info.length; j++) {
-				let navrightspan = document.createElement('span');
-				
-				navrightspan.innerHTML = page.navbox.info[k].info[i].info[j];
-				
-				if (j != page.navbox.info[k].info[i].info.length - 1) navrightspan.innerHTML += '</br>';
-				
-				navrightli.append(navrightspan);
-			}
+			if (page.navbox.info[k].info[i].info != undefined) {
+				for (let j = 0; j < page.navbox.info[k].info[i].info.length; j++) {
+					let navrightspan = document.createElement('span');
+					
+					navrightspan.innerHTML = page.navbox.info[k].info[i].info[j];
+					
+					if (j != page.navbox.info[k].info[i].info.length - 1) navrightspan.innerHTML += '</br>';
+					
+					navrightli.append(navrightspan);
+				}
+			}			
+	
+			navboxtr.append(navboxth);
 			
-			if (page.navbox.info[k].info[i].embed == true) {
+			if (page.navbox.info[k].info[i].embed != undefined) {
+				navboxth.colSpan = "2";
+				
 				let navrightembed = document.createElement('iframe');
 				
-				navrightembed.width = 200;
+				navrightembed.width = 275;
 				navrightembed.height = 200;
 				navrightembed.scrolling = "no";
 				navrightembed.frameborder = "no";
 				navrightembed.allow = "autoplay";
 				navrightembed.display = "block";
+				navrightembed.src = page.navbox.info[k].info[i].embed;
 				
-				let songLink = '';
-				
-				switch (pageName) {
-					case 'baeg':
-						songLink = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/992974678&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
-						break;
-					case 'ert':
-						songLink = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/994171495&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
-						break;
-					case 'aeiou':
-						songLink = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/994972702&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
-						break;
-					case 'mac':
-						songLink = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1002965515&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
-						break;
-					case 'george':
-						songLink = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1005219457&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
-						break;
-				}
-				
-				navrightembed.src = songLink;
-
-				navrightli.append(navrightembed);
+				navboxth.append(navrightembed);
+			} else {				
+				navrightul.append(navrightli);
+				navrightdiv.append(navrightul);
+				navboxtd.append(navrightdiv);
+				navboxtr.append(navboxtd);
 			}
-			
-			navrightul.append(navrightli);
-			navrightdiv.append(navrightul);
-			navboxtd.append(navrightdiv);
 
-			navboxtr.append(navboxth, navboxtd);
-						
 			navbody.append(navboxtr);
 		}
 		
