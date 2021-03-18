@@ -4,6 +4,7 @@ let pageData = {
 	navbox: {
 		name: 'Aeiou',
 		file: ['aeiou.png', 'pixel'],
+		symbol: true,
 		caption: 'Illustration made by Gramiatar.',
 		info: [{
 			heading: 'Designations',
@@ -30,7 +31,7 @@ let pageData = {
 		}]
 	},
 	introText: [
-		'Aeiou is the eighth planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=hazel">Hazel</a> and before <a href="index.html?p=the">The</a>.',
+		'Aeiou is the seventh planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=mac">Mac</a> and before <a href="index.html?p=hazel">Hazel</a>.',
 		'The term for referring to something related to Aeiou is Aeiouian.'
 	],
 	endnav: 'planet'

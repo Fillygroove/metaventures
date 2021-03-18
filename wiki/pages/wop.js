@@ -3,6 +3,7 @@ let pageData = {
 	name: 'World of Pain',
 	navbox: {
 		file: ['wop.png', 'pixel'],
+		symbol: true,
 		caption: 'Illustration made by Gramiatar.',
 		info: [{
 			heading: 'Designations',

@@ -3,7 +3,7 @@ endnavs.push({
 	categories: [{
 		category:
 			`<a href="index.html?p=hotsun">
-				<img src="images/hot_sun.png" height="${imageSize.large}">
+				<img src="images/symbol_hotsun.png" class="pixel" height="${imageSize.large}">
 				Ommadawn
 			</a> System`,
 		info: [{
@@ -11,12 +11,12 @@ endnavs.push({
 			info: [
 				// Grene
 				`<a href="index.html?p=grene">
-					<img src="images/grene.png" height="${imageSize.norm}"></img>
+					<img src="images/symbol_grene.png" class="pixel" height="${imageSize.norm}"></img>
 					Grene
 				</a>`,
 				// Doug
 				`<a href="index.html?p=doug">
-					<img src="images/doug.png" height="${imageSize.norm}">
+					<img src="images/symbol_doug.png" class="pixel" height="${imageSize.norm}">
 					Doug
 				</a>
 				(<small>
@@ -25,12 +25,12 @@ endnavs.push({
 				</small>)`,
 				// Pilf
 				`<a href="index.html?p=pilf">
-					<img src="images/pilf_ringless.png" height="${imageSize.norm}">
+					<img src="images/symbol_pilf.png" class="pixel" height="${imageSize.norm}">
 					Pilf
 				</a>`,
 				// Ert
 				`<a href="index.html?p=ert">
-					<img src="images/ert.png" height="${imageSize.norm}">
+					<img src="images/symbol_ert.png" class="pixel" height="${imageSize.norm}">
 					Ert
 				</a>
 				(<small>
@@ -40,15 +40,15 @@ endnavs.push({
 				</small>)`,
 				// George
 				`<a href="index.html?p=george">
-					<img src="images/george.png" height="${imageSize.norm}">
+					<img src="images/symbol_george.png" class="pixel" height="${imageSize.norm}">
 					Georg</a><a href="images/george_real.png" class="y">e</a>
 				(<small>
-					<img src="images/damocles.png" height="${imageSize.small}">
+					<img src="images/symbol_damocles.png" class="pixel" height="${imageSize.small}">
 					Damocles
 				</small>)`,
 				// Baeg
 				`<a href="index.html?p=baeg">
-					<img src="images/baeg.png" height="${imageSize.norm}">
+					<img src="images/symbol_baeg.png" class="pixel" height="${imageSize.norm}">
 					Baeg
 				</a>`
 			]
@@ -57,31 +57,34 @@ endnavs.push({
 			info: [
 				// Mac
 				`<a href="index.html?p=mac">
-					<img src="images/mac.png" height="25">
+					<img src="images/symbol_mac.png" class="pixel" height="${imageSize.small}">
 					Mac
 				</a>
 				(<small>
 					<a href="index.html?p=wop">
-						<img src="images/wop.png" height="20">
-						World of Pain
-					</a>
+						<img src="images/symbol_wop.png" class="pixel" height="${imageSize.small}">
+						Ciyg (World of Pain)
+					</a> &bull; 
+					<img src="images/symbol_manc-ave.png" class="pixel" height="${imageSize.small}">
+					Manc Ave
 				</small>)`,
-				// Hazel
-				`<a href="index.html?p=hazel">
-					<img src="images/hazel.png" height="${imageSize.norm}">
-					Hazel
-				</a>`,
 				// Aeiou
 				`<a href="index.html?p=aeiou">
-					<img src="images/aeiou.png" height="${imageSize.norm}">
+					<img src="images/symbol_aeiou.png" class="pixel" height="${imageSize.norm}">
 					Aeiou
 				</a>
 				(<small>
+					<img src="images/symbol_cdfqrszt.png" class="pixel" height="${imageSize.small}">
 					Cdfqrszt &bull; Heideph
 				</small>)`,
+				// Hazel
+				`<a href="index.html?p=hazel">
+					<img src="images/symbol_hazel.png" class="pixel" height="${imageSize.norm}">
+					Hazel
+				</a>`,
 				// The
 				`<a href="index.html?p=the">
-					<img src="images/the.png" height="${imageSize.norm}">
+					<img src="images/symbol_the.png" class="pixel" height="${imageSize.norm}">
 					The
 				</a>`
 			]
@@ -89,6 +92,7 @@ endnavs.push({
 	}, {
 		category: 	
 			`<a href="index.html?p=taiberaque">
+				<img src="images/symbol_taiberaque.png" class="pixel" height="${imageSize.large}">
 				Taiberaque
 			</a> System`,
 		info: [{

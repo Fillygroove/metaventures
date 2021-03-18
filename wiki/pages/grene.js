@@ -2,6 +2,7 @@ let pageData = {
 	name: '<a href="index.html?p=greme" class="no_style">Grene</a>',
 	navbox: {		
 		file: ['grene.png', 'pixel'],
+		symbol: true,
 		caption: 'Illustration made by Gramiatar.',
 		info: [{
 			heading: 'Designations',

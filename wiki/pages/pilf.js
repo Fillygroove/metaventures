@@ -2,6 +2,7 @@ let pageData = { // First!
 	name: 'Pilf',
 	navbox: {
 		file: ['pilf.png', 'pixel'],
+		symbol: true,
 		caption: 'Illustration made by Gramiatar.',
 		info: [{
 			heading: 'Designations',

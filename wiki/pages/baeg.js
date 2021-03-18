@@ -3,6 +3,7 @@ let pageData = {
 	name: 'Baeg',
 	navbox: {		
 		file: ['baeg.png', 'pixel'],
+		symbol: true,
 		caption: 'Illustration made by Gramiatar.',
 		info: [{
 			heading: 'Designations',

@@ -22,8 +22,18 @@ if (page.navbox != undefined) {
 	navbox.style = "width: 22em";
 	
 	let caption = document.createElement('caption');
+	
 	caption.innerHTML = page.navbox.name ? page.navbox.name : page.name;
-			
+	
+	if (page.navbox.symbol !== false) {
+		let navsymbol = document.createElement('img');
+		navsymbol.alt = `symbol_${page.navbox}.png`;
+		navsymbol.src = `./images/symbol_${pageName}.png`;
+		navsymbol.style = 'background-color: #333333; padding-left: 7px; height: 20px;';
+		navsymbol.className = 'pixel';
+		caption.append(navsymbol);
+	}
+	
 	let navbody = document.createElement('tbody');
 	
 	let imagetr = document.createElement('tr');
@@ -44,7 +54,7 @@ if (page.navbox != undefined) {
 	//	imgnav.height = page.navbox.dims[1];
 		imagetd.append(imgnav);
 	}
-		
+	
 	capa.innerHTML = page.navbox.caption;
 	
 	capdiv.append(capa);

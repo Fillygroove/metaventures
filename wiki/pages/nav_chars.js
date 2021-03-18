@@ -6,7 +6,7 @@ endnavs.push({
 			name: 'Protagonists',
 			info: [
 				`<a href="index.html?p=aero">
-					<img src="images/aero_pixel.png" height="${imageSize.norm}"></img>
+					<img src="images/aero_pixel.png" height="${imageSize.small}"></img>
 					Aero
 				</a>`,
 				`<a href="index.html?p=rodney">
