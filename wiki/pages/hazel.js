@@ -15,7 +15,7 @@ let pageData = {
 				info: ['Curfew', 'Purpul', 'Cea']
 			}, {
 				name: 'Name Origin',
-				info: ['Mistaken as a hazel-ish color in the sky by some sciensits wearing cheap 3d glasses.']
+				info: ['Mistaken as a hazel-ish color in the sky by some astronomers wearing cheap 3d glasses.']
 			}, {
 				name: 'Classification',
 				info: ['Gas Giant']
