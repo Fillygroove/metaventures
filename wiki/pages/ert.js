@@ -58,9 +58,9 @@ let pageData = {
 		name: 'Satellites',
 		info: [
 			'<h3>George</h3>',
-			'<img src="images/george.png" alt="george.png" width="100" height="100" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
+			'<img src="images/george.png" alt="george.png" width="100" height="100" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
 			'George is Ert\'s twin. George and Ert rotate around each other, and are tidally locked with one another. George has more land relative to Ert, and harbors surprisingly more life. It also harbors Ozark, the entity that inspired the Dint Can\'s mascot.',
-			'<img src="images/perpahedron.png" alt="perpahedron.png" width="300" height="300" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
+			'<img src="images/perpahedron.png" alt="perpahedron.png" width="300" height="300" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
 			'<h3>Perpahedron</h3>',
 			'The Perpahedron is an artificial satellite, constructed by Daktor and a group of scientists. The purpose of The Perpahedron is unknown, although suggestions for its purpose include being a gigantic multitool, a space mansion, and an overcomplicated mayonnaise jar. The Perpahedron has a large amount of tools, such as thrusters, speakers, and a giant tungsten cube attached by a nylon string.'
 		]

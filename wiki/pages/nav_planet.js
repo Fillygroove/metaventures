@@ -57,16 +57,14 @@ endnavs.push({
 			info: [
 				// Mac
 				`<a href="index.html?p=mac">
-					<img src="images/symbol_mac.png" class="pixel" height="${imageSize.small}">
+					<img src="images/symbol_mac.png" class="pixel" height="${imageSize.norm}">
 					Mac
 				</a>
 				(<small>
 					<a href="index.html?p=wop">
 						<img src="images/symbol_wop.png" class="pixel" height="${imageSize.small}">
 						Ciyg (World of Pain)
-					</a> &bull; 
-					<img src="images/symbol_manc-ave.png" class="pixel" height="${imageSize.small}">
-					Manc Ave
+					</a>
 				</small>)`,
 				// Aeiou
 				`<a href="index.html?p=aeiou">
@@ -130,7 +128,10 @@ endnavs.push({
 				</a>`,
 				`<a href="index.html?p=dwarf#objobj">
 					BCU-3 (Object/Object)
-				</a>`
+				</a>`,
+				` 
+				<img src="images/symbol_manc-ave.png" class="pixel" height="${imageSize.small}">
+				Manc Ave`
 			]
 		}, {
 			name: 'Objects',

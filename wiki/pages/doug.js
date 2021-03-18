@@ -59,7 +59,7 @@ let pageData = {
 	}, {
 		name: 'Satellites',
 		info: [
-			'<img src="images/h.png" alt="h.png" width="100" height="100" class="pixel" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
+			'<img src="images/h.png" alt="h.png" width="100" height="100" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
 			'<h3>H</h3>',
 			'Doug has one confirmed satellite, which has been named H. H is a natural satellite, shaped like a cube. It is the only object in the system with a cuboid shape, along with Pilf. H itself contains a similar makeup to Doug, with the same type of rocks and similar craters, with the only difference being size and shape. It is unknown if the naming of H was to make Doug and H match up with one of <a href="index.html?p=mac">Mac</a>\'s satellites, Dough, so that people could remember Doug.'
 		]

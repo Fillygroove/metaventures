@@ -1,7 +1,8 @@
 let pageData = {
 	warning: 'stub',
-	name: 'World of Pain',
+	name: 'Ciyg',
 	navbox: {
+		name: 'World of Pain',
 		file: ['wop.png', 'pixel'],
 		symbol: true,
 		caption: 'Illustration made by Gramiatar.',

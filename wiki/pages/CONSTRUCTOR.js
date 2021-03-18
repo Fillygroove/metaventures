@@ -29,7 +29,7 @@ if (page.navbox != undefined) {
 		let navsymbol = document.createElement('img');
 		navsymbol.alt = `symbol_${page.navbox}.png`;
 		navsymbol.src = `./images/symbol_${pageName}.png`;
-		navsymbol.style = 'background-color: #333333; padding-left: 7px; height: 20px;';
+		navsymbol.style = 'background-color: #333333; padding-left: 7px; height: 27px;';
 		navsymbol.className = 'pixel';
 		caption.append(navsymbol);
 	}
