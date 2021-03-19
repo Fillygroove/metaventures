@@ -30,7 +30,6 @@ if (page.navbox != undefined) {
 		navsymbol.alt = `symbol_${page.navbox}.png`;
 		navsymbol.src = `./images/symbol_${pageName}.png`;
 		navsymbol.style = 'background-color: #333333; padding-left: 7px; height: 27px;';
-		navsymbol.className = 'pixel';
 		caption.append(navsymbol);
 	}
 	
@@ -124,7 +123,8 @@ if (page.navbox != undefined) {
 				navrightembed.frameborder = "no";
 				navrightembed.allow = "autoplay";
 				navrightembed.display = "block";
-				navrightembed.src = page.navbox.info[k].info[i].embed;
+				navrightembed.src = `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${page.navbox.info[k].info[i].embed}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`;
+				navrightembed.style = "vertical-align: middle; margin: 6px; width: 280px; height: 280px;"
 				
 				navboxth.append(navrightembed);
 			} else {				
