@@ -26,7 +26,10 @@ let pageData = {
 		}, {
 			heading: 'Theme',
 			info: [{
-				embed: '1005219457'
+				embed: {
+					track: '1005219457',
+					color: '7f7f7f'
+				}
  			}]
 		}]
 	},
