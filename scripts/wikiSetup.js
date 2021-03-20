@@ -9,7 +9,7 @@ let endnavs = [];
 
 function addScript(script) {
 	let pageScript = document.createElement('script');
-	pageScript.async = false; // Holy shit this is a lifesaver
+	pageScript.async = false;
 	pageScript.src = script;
 	avThin.append(pageScript);
 }
