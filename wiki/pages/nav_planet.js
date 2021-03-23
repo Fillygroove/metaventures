@@ -30,7 +30,7 @@ endnavs.push({
 				</a>`,
 				// Ert
 				`<a href="index.html?p=ert">
-					<img src="images/symbol_ert.png" height="${imageSize.norm}">
+					<img src="images/symbol_ert.png" height="${imageSize.small}">
 					Ert
 				</a>
 				(<small>
@@ -40,7 +40,7 @@ endnavs.push({
 				</small>)`,
 				// George
 				`<a href="index.html?p=george">
-					<img src="images/symbol_george.png" height="${imageSize.norm}">
+					<img src="images/symbol_george.png" height="${imageSize.small}">
 					Georg</a><a href="images/george_real.png" class="y">e</a>
 				(<small>
 					<img src="images/symbol_damocles.png" height="${imageSize.small}">
@@ -48,7 +48,7 @@ endnavs.push({
 				</small>)`,
 				// Baeg
 				`<a href="index.html?p=baeg">
-					<img src="images/symbol_baeg.png" height="${imageSize.norm}">
+					<img src="images/symbol_baeg.png" height="${imageSize.small}">
 					Baeg
 				</a>`
 			]
@@ -57,7 +57,7 @@ endnavs.push({
 			info: [
 				// Mac
 				`<a href="index.html?p=mac">
-					<img src="images/symbol_mac.png" height="${imageSize.norm}">
+					<img src="images/symbol_mac.png" height="${imageSize.smol}">
 					Mac
 				</a>
 				(<small>
@@ -68,7 +68,7 @@ endnavs.push({
 				</small>)`,
 				// Aeiou
 				`<a href="index.html?p=aeiou">
-					<img src="images/symbol_aeiou.png" height="${imageSize.norm}">
+					<img src="images/symbol_aeiou.png" height="${imageSize.small}">
 					Aeiou
 				</a>
 				(<small>

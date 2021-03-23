@@ -1,7 +1,8 @@
 let imageSize = {
 	large: 30,
 	norm: 25,
-	small: 20
+	small: 20,
+	smol: 15
 };
 
 let page = pageData;
