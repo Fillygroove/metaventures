@@ -20,8 +20,8 @@ endnavs.push({
 					Doug
 				</a>
 				(<small>
-					<img src="images/h.png" height="${imageSize.small}">
-					H
+					<img src="images/symbol_aech.png" height="${imageSize.small}">
+					Aech
 				</small>)`,
 				// Pilf
 				`<a href="index.html?p=pilf">

@@ -18,12 +18,10 @@ for (let i = 0; i < comicInfo.panels.length; i++) {
 	number.innerHTML = `${comicInfo.panels[i].number ? comicInfo.panels[i].number : i + 1} / ${comicInfo.howLong ? comicInfo.howLong : comicInfo.panels.length}`;
 	
 	let panels = document.createElement('img');
-	
-	let extension = typeof comicInfo.extension == 'object' ? comicInfo.extension[i] : comicInfo.extension;
-			
+				
 	panels.src = `./panels/${directory}/${comicInfo.panels[i].panel}`;
 	panels.style = 'max-height: 21.5em; height: 21.5em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0);';
-	if (comic == 'old-planets') panels.className = 'pixel';
+	if (comicInfo.panels[i].classTitle !== undefined) panels.className = comicInfo.panels[i].classTitle;
 	
 	slides.append(number);
 			

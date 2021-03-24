@@ -4,69 +4,98 @@ let comicInfo = {
 	folder: 'old/old-planets/',
 	panels: [{
 		panel: '1.png',
-		caption: 'The original Grene, before the larger remake...'
+		caption: 'The original Grene, before the larger remake...',
+		classTitle: 'pixel'
 	}, {
 		panel: '2.png',
-		caption: '...Now with a blown off atmosphere.'
+		caption: '...Now with a blown off atmosphere.',
+		classTitle: 'pixel'
 	}, {
 		panel: '3.png',
-		caption: 'The original version of Doug.'
+		caption: 'The original version of Doug.',
+		classTitle: 'pixel'
 	}, {
 		panel: '4.png',
-		caption: 'That looks better.'
+		caption: 'That looks better.',
+		classTitle: 'pixel'
 	}, {
 		panel: '5.png',
-		caption: 'A REALLY old version of Ert.'
+		caption: 'A REALLY old version of Ert.',
+		classTitle: 'pixel'
 	}, {
 		panel: '6.png',
-		caption: 'A newer version of Ert.'
+		caption: 'A newer version of Ert.',
+		classTitle: 'pixel'
 	}, {
 		panel: '7.png',
-		caption: 'The original art for George, with Damocles on the side.'
+		caption: 'The original art for George, with Damocles on the side.',
+		classTitle: 'pixel'
 	}, {
 		panel: '8.png',
-		caption: 'The original art for Pii, now called Pilf.'
+		caption: 'The original art for Pii, now called Pilf.',
+		classTitle: 'pixel'
 	}, {
 		panel: '9.png',
-		caption: 'A newer version of Pilf...'
+		caption: 'A newer version of Pilf...',
+		classTitle: 'pixel'
 	}, {
 		panel: '10.png',
-		caption: '...With rings!'
+		caption: '...With rings!',
+		classTitle: 'pixel'
 	}, {
 		panel: '11.png',
-		caption: 'An even newer version of Pilf, with an older ring placement.'
+		caption: 'An even newer version of Pilf, with an older ring placement.',
+		classTitle: 'pixel'
 	}, {
 		panel: '12.png',
-		caption: 'Baeg, now named Dough, when it was a planet.'
+		caption: 'Baeg, now named Dough, when it was a planet.',
+		classTitle: 'pixel'
 	}, {
 		panel: '13.png',
-		caption: 'The original art for Mac. Has its pole visible.'
+		caption: 'The original art for Mac. Has its pole visible.',
+		classTitle: 'pixel'
 	}, {
 		panel: '14.png',
-		caption: 'The original art for Aeiou.'
+		caption: 'The original art for Aeiou.',
+		classTitle: 'pixel'
 	}, {
 		panel: '15.png',
-		caption: 'A sketch of Aeiou, made by Text Wall.'
+		caption: 'A sketch of Aeiou, made by Text Wall.',
+		classTitle: 'pixel'
 	}, {
 		panel: '16.png',
-		caption: 'A newer version of Aeiou, before its rework.'
+		caption: 'A newer version of Aeiou, before its rework.',
+		classTitle: 'pixel'
 	}, {
 		panel: '17.png',
-		caption: 'The original art for Berry, then named Xystload, then Purpl.'
+		caption: 'The original art for Berry, then named Xystload, then Purpl.',
+		classTitle: 'pixel'
 	}, {
 		panel: '18.png',
-		caption: 'The.'
+		caption: 'The.',
+		classTitle: 'pixel'
 	}, {
 		panel: '19.png',
-		caption: 'The very first version of Cea.'
+		caption: 'The very first version of Cea.',
+		classTitle: 'pixel'
 	}, {
 		panel: '20.png',
-		caption: 'The first remake for Cea.'
+		caption: 'The first remake for Cea.',
+		classTitle: 'pixel'
 	}, {
 		panel: '21.png',
-		caption: 'Another remake, now more cloudy.'
+		caption: 'Another remake, now more cloudy.',
+		classTitle: 'pixel'
 	}, {
 		panel: '22.png',
-		caption: 'Now covered in clouds, before becoming the Cold Sun\'s old form.'
+		caption: 'Now covered in clouds, before becoming the Cold Sun\'s old form.',
+		classTitle: 'pixel'
+	}, {
+		panel: 'symbol_aech.png',
+		caption: 'The original symbol for Aech (formerly known as H).'
+	}, {
+		panel: 'hazel_old.png',
+		caption: 'Hazel\'s original placeholder image.',
+		classTitle: 'pixel'
 	}]
 };

@@ -6,7 +6,6 @@ let comicInfo = {
 
 panelSetup(106, 'jpg');
 
-comicInfo.panels[43].link = 'index.html?c=brooo';
 comicInfo.panels[7].execute = (input) => {
 	let panelLink = document.createElement('a');
 	panelLink.style = 'cursor: pointer;';
@@ -16,4 +15,6 @@ comicInfo.panels[7].execute = (input) => {
 	
 	panelLink.append(input.panels);
 	input.slides.append(panelLink);
-}
+};
+comicInfo.panels[43].link = 'index.html?c=brooo';
+

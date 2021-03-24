@@ -12,7 +12,7 @@ let pageData = {
 				info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
 			}, {
 				name: 'Satellites',
-				info: ['H']
+				info: ['Aech']
 			}, {
 				name: 'Name Origin',
 				info: ['Unknown']
@@ -60,14 +60,14 @@ let pageData = {
 		name: 'Satellites',
 		info: [
 			'<img src="images/h.png" alt="h.png" width="100" height="100" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
-			'<h3>H</h3>',
-			'Doug has one confirmed satellite, which has been named H. H is a natural satellite, shaped like a cube. It is the only object in the system with a cuboid shape, along with Pilf. H itself contains a similar makeup to Doug, with the same type of rocks and similar craters, with the only difference being size and shape. It is unknown if the naming of H was to make Doug and H match up with one of <a href="index.html?p=mac">Mac</a>\'s satellites, Dough, so that people could remember Doug.'
+			'<h3>Aech</h3>',
+			'Doug has one confirmed satellite, which has been named Aech. Aech is a natural satellite, shaped like a cube. It is the only object in the system with a cuboid shape, along with Pilf. Aech itself contains a similar makeup to Doug, with the same type of rocks and similar craters, with the only difference being size and shape.'
 		]
 	}, {
 		name: 'Life',
 		info: [
 			'<h3>Worms</h3>',
-			'Theoretically, Doug could have life on it. While unconfirmed as of now, Doug could have gigantic lengthy creatures on it that seem to be a larger variant of George\'s worms. Said worms could have created the holes on Doug as a place to call home. This theory also applies to H.'
+			'Theoretically, Doug could have life on it. While unconfirmed as of now, Doug could have gigantic lengthy creatures on it that seem to be a larger variant of George\'s worms. Said worms could have created the holes on Doug as a place to call home. This theory also applies to Aech.'
 		]
 	}, {
 		name: 'Culture',
