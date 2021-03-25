@@ -35,6 +35,7 @@ endnavs.push({
 				</a>
 				(<small>
 					<a href="index.html?p=perpahedron">
+						<img src="images/symbol_perpahedron.png" height="${imageSize.small}">
 						Perpahedron
 					</a>
 				</small>)`,
@@ -128,10 +129,7 @@ endnavs.push({
 				</a>`,
 				`<a href="index.html?p=dwarf#objobj">
 					BCU-3 (Object/Object)
-				</a>`,
-				` 
-				<img src="images/symbol_manc-ave.png" height="${imageSize.small}">
-				Manc Ave`
+				</a>`
 			]
 		}, {
 			name: 'Objects',
@@ -139,6 +137,8 @@ endnavs.push({
 				'BPM-4 (Macaroni Belt)',
 				'BOT-2 (Gram\'s Comet)',
 				'BBT-1 (Kol\'s Mini Nebula)', // Ball of Christmas Lights
+				`<img src="images/symbol_manc-ave.png" height="${imageSize.small}">
+				Manc Ave`
 			]
 		}]
 	}]
