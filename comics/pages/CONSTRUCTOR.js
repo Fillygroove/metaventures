@@ -6,7 +6,6 @@ slideshow.className = 'slideshow-container';
 let slideTitle = document.createElement('div');
 slideTitle.className = 'comic-title';
 slideTitle.innerHTML = comicInfo.title;
-avThin.append(slideTitle);
 
 for (let i = 0; i < comicInfo.panels.length; i++) {
 	let slides = document.createElement('div');
@@ -17,27 +16,20 @@ for (let i = 0; i < comicInfo.panels.length; i++) {
 	number.className = 'numbertext';
 	number.innerHTML = `${comicInfo.panels[i].number ? comicInfo.panels[i].number : i + 1} / ${comicInfo.howLong ? comicInfo.howLong : comicInfo.panels.length}`;
 	
-	let panels = document.createElement('img');
+	let panel = document.createElement('img');
 				
-	panels.src = `./panels/${directory}/${comicInfo.panels[i].panel}`;
-	panels.style = 'max-height: 21.5em; height: 21.5em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0);';
+	panel.src = `./panels/${directory}/${comicInfo.panels[i].panel}`;
+	panel.style = 'max-height: 21.5em; height: 21.5em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0);';
 	if (comicInfo.panels[i].classTitle !== undefined) panels.className = comicInfo.panels[i].classTitle;
 	
 	slides.append(number);
-			
-	function appendPanel(link) {
-		let panelLink = document.createElement('a');
-		panelLink.href = link;
-		
-		panelLink.append(panels);
-		slides.append(panelLink);
-	}
-	
-	console.log(comicInfo.panels[i]);
-	
+
 	if (comicInfo.panels[i].link !== undefined) {
-		appendPanel(comicInfo.panels[i].link);
-	} else slides.append(panels);
+		let panelLink = document.createElement('a');
+		panelLink.href = comicInfo.panels[i].link;
+		panelLink.append(panel);
+		slides.append(panelLink);
+	} else slides.append(panel);
 	
 	if (comicInfo.panels[i].caption !== undefined) {
 		let caption = document.createElement('div');
@@ -47,7 +39,7 @@ for (let i = 0; i < comicInfo.panels.length; i++) {
 	}
 
 	if (comicInfo.panels[i].execute !== undefined) {
-		comicInfo.panels[i].execute({panels, slides});
+		comicInfo.panels[i].execute({panel, slides});
 	}
 
 	slideshow.append(slides);
@@ -96,7 +88,7 @@ let desc = document.createElement('h4');
 desc.className = 'description';
 desc.innerHTML = comicInfo.desc;
 
-avThin.append(slideshow, desc);
+avThin.append(slideTitle, slideshow, desc);
 
 
 let slideIndex = 1;
