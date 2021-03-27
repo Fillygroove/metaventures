@@ -64,7 +64,7 @@ endnavs.push({
 				(<small>
 					<a href="index.html?p=wop">
 						<img src="images/symbol_wop.png" height="${imageSize.small}">
-						Ciyg (World of Pain)
+						Wop (World of Pain)
 					</a>
 				</small>)`,
 				// Aeiou
