@@ -22,6 +22,14 @@ let pageData = { // First!
 				name: 'Life',
 				info: ['Cheese Flies', 'Cheese Moss']
 			}]
+		}, {
+			heading: 'Theme',
+			info: [{
+				embed: {
+					track: '1017471580',
+					color: '7f7f7f'
+				}
+ 			}]
 		}]
 	},
 	introText: [
