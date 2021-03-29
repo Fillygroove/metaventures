@@ -97,5 +97,8 @@ let comicInfo = {
 		panel: 'hazel_old.png',
 		caption: 'Hazel\'s original placeholder image.',
 		classTitle: 'pixel'
+	}, {
+		panel: 'wop_old.png',
+		caption: 'Wop\'s original art.',
 	}]
 };

@@ -20,7 +20,7 @@ for (let i = 0; i < comicInfo.panels.length; i++) {
 				
 	panel.src = `./panels/${directory}/${comicInfo.panels[i].panel}`;
 	panel.style = 'max-height: 21.5em; height: 21.5em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0);';
-	if (comicInfo.panels[i].classTitle !== undefined) panels.className = comicInfo.panels[i].classTitle;
+	if (comicInfo.panels[i].classTitle !== undefined) panel.className = comicInfo.panels[i].classTitle;
 	
 	slides.append(number);
 
