@@ -8,41 +8,41 @@ slideTitle.className = 'comic-title';
 slideTitle.innerHTML = comicInfo.title;
 
 for (let i = 0; i < comicInfo.panels.length; i++) {
-	let slides = document.createElement('div');
-	slides.style = 'background-color: rgba(0, 0, 0, 0);';
-	slides.className = 'slides';
+	let slide = document.createElement('div');
+	slide.style = 'background-color: rgba(0, 0, 0, 0);';
+	slide.className = 'slides';
 	
 	let number = document.createElement('div');
 	number.className = 'numbertext';
 	number.innerHTML = `${comicInfo.panels[i].number ? comicInfo.panels[i].number : i + 1} / ${comicInfo.howLong ? comicInfo.howLong : comicInfo.panels.length}`;
 	
 	let panel = document.createElement('img');
-				
+	
 	panel.src = `./panels/${directory}/${comicInfo.panels[i].panel}`;
 	panel.style = 'max-height: 21.5em; height: 21.5em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0);';
 	if (comicInfo.panels[i].classTitle !== undefined) panel.className = comicInfo.panels[i].classTitle;
 	
-	slides.append(number);
+	slide.append(number);
 
 	if (comicInfo.panels[i].link !== undefined) {
 		let panelLink = document.createElement('a');
 		panelLink.href = comicInfo.panels[i].link;
 		panelLink.append(panel);
-		slides.append(panelLink);
-	} else slides.append(panel);
+		slide.append(panelLink);
+	} else slide.append(panel);
 	
 	if (comicInfo.panels[i].caption !== undefined) {
 		let caption = document.createElement('div');
 		caption.style = 'text-align: center; background-color: rgba(0, 0, 0, 0);';
 		caption.innerHTML = comicInfo.panels[i].caption;
-		slides.append(caption);
+		slide.append(caption);
 	}
 
 	if (comicInfo.panels[i].execute !== undefined) {
-		comicInfo.panels[i].execute({panel, slides});
+		comicInfo.panels[i].execute({panel, slide});
 	}
 
-	slideshow.append(slides);
+	slideshow.append(slide);
 }
 
 let line = document.createElement('hr');
