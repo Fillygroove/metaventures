@@ -23,6 +23,14 @@ let pageData = {
 				name: 'Life',
 				info: ['Worms (Unconfirmed)']
 			}]
+		}, {
+			heading: 'Theme',
+			info: [{
+				embed: {
+					track: '1021137457',
+					color: '7f7f7f'
+				}
+ 			}]
 		}]
 	},
 	introText: [
