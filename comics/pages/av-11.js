@@ -14,7 +14,7 @@ comicInfo.panels[7].execute = (input) => {
 	};
 	
 	panelLink.append(input.panels);
-	input.slides.append(panelLink);
+	input.slide.append(panelLink);
 };
 comicInfo.panels[43].link = 'index.html?c=brooo';
 
