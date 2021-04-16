@@ -81,6 +81,11 @@ endnavs.push({
 					<img src="images/symbol_hazel.png" height="${imageSize.norm}">
 					Hazel
 				</a>`,
+				// Cea
+				`<a href="index.html?p=cea">
+					<img src="images/cea.png" height="${imageSize.norm}">
+					Cea
+				</a>`,
 				// The
 				`<a href="index.html?p=the">
 					<img src="images/symbol_the.png" height="${imageSize.norm}">

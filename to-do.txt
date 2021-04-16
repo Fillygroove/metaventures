@@ -1,0 +1,2 @@
+ - Planet information (from Gram)
+ - Back arrow for comics (from Zathsu)

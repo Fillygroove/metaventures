@@ -1,4 +1,5 @@
 let pageList = ['ert', 'the', 'doug', 'pilf', 'greme', 'mac', 'grene', 'credits', 'dwarf', 'hotsun', 'tackpenguin', 'aero', 'george', 'aeiou', 'taiberaque', 'coldsun', 'wop', 'shrine', 'halloween', 'main', 'dino', 'directions', 'm', 'nine', 'debug', 'pilfception', 'hazel', 'baeg', 'rodney'];
+let avThin = document.createElement('div');
 
 function correctLinks() {
 	let pageLinks = document.getElementsByTagName('a');
@@ -11,6 +12,13 @@ function correctLinks() {
 			else pageLinks[i].className = 'n';
 		}
 	}
+}
+
+function addScript(script) {
+	let pageScript = document.createElement('script');
+	pageScript.async = false;
+	pageScript.src = script;
+	avThin.append(pageScript);
 }
 
 function makePage(page) {
@@ -50,8 +58,7 @@ function makePage(page) {
 	
 	document.head.append(metaTitle, metaFavicon, metaCss);
 		
-	let mainAVThin = document.createElement('div');
-	mainAVThin.className = 'av-thin';
+	avThin.className = 'av-thin';
 
 	let mainAVTitle = document.createElement('div');
 	mainAVTitle.className = 'aeroventures-title';
@@ -78,11 +85,11 @@ function makePage(page) {
 	makeButton('The Wiki', 'pon-pink', `${wikiDir}index.html?p=main`);
 	makeButton('The Discord', 'nyork-green', 'https://discord.gg/xxRvYERs48');
 
-	mainAVThin.append(dropdownDiv);
+	avThin.append(dropdownDiv);
 	
 	scriptLoader = document.createElement('script');
 	scriptLoader.src = `${titleDir}scripts/${page}Setup.js`;
-	mainAVThin.append(scriptLoader);
+	avThin.append(scriptLoader);
 	
-	document.getElementsByTagName('body')[0].append(mainAVThin);
+	document.getElementsByTagName('body')[0].append(avThin);
 }

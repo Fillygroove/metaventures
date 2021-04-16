@@ -1,7 +1,7 @@
 function addText(text) {
 	let paragraph = document.createElement('p');
 	paragraph.innerHTML = text;
-	mainAVThin.append(paragraph);
+	avThin.append(paragraph);
 }
 
 function addHead(text) {
@@ -9,10 +9,8 @@ function addHead(text) {
 	let headerLine = document.createElement('hr');
 	header.innerHTML = text;
 
-	mainAVThin.append(header, headerLine);
+	avThin.append(header, headerLine);
 }
-
-let mainAVThin = document.getElementsByClassName('av-thin')[0];
 
 let mainH1 = document.createElement('h1');
 mainH1.style = 'font-family: Ubuntu;';
@@ -20,11 +18,15 @@ mainH1.innerHTML = 'Metaventures!';
 
 let lineBreak = document.createElement('hr');
 
-mainAVThin.append(mainH1, lineBreak);
+avThin.append(mainH1, lineBreak);
 
 addText('WARNING - A lot of things are being reworked so most information (and even the comics) isn\'t accurate anymore.');
 
 addText('Welcome to the Metaventures website! Read below for more information!');
+
+addHead('The newest change!');
+
+addText('CEA! <small style="background-color: #555555">its back</small>');
 
 addHead('The Comics!');
 

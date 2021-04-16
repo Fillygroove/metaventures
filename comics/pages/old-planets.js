@@ -87,10 +87,6 @@ let comicInfo = {
 		caption: 'Another remake, now more cloudy.',
 		classTitle: 'pixel'
 	}, {
-		panel: '22.png',
-		caption: 'Now covered in clouds, before becoming the Cold Sun\'s old form.',
-		classTitle: 'pixel'
-	}, {
 		panel: 'symbol_aech.png',
 		caption: 'The original symbol for Aech (formerly known as H).'
 	}, {
