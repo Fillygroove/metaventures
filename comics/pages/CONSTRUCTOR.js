@@ -33,7 +33,7 @@ for (let i = 0; i < comicInfo.panels.length; i++) {
 	
 	if (comicInfo.panels[i].caption !== undefined) {
 		let caption = document.createElement('div');
-		caption.style = 'text-align: center; background-color: rgba(0, 0, 0, 0);';
+		caption.style = 'text-align: center; background-color: rgba(0, 0, 0, 0); font-weight: bold;';
 		caption.innerHTML = comicInfo.panels[i].caption;
 		slide.append(caption);
 	}
@@ -67,6 +67,7 @@ slideText.style = 'text-align: center; background-color: rgba(0, 0, 0, 0); heigh
 slideLabel = document.createElement('label');
 slideLabel.style = 'background-color: rgba(0, 0, 0, 0); line-height: 2.55em;';
 slideLabel.innerHTML = 'Panel Number: ';
+slideLabel.htmlFor = "panel";
 	
 slideInput = document.createElement('input');
 slideInput.type = 'text';
