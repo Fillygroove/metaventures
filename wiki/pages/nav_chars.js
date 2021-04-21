@@ -6,8 +6,11 @@ endnavs.push({
 			name: 'Protagonists',
 			info: [
 				`<a href="index.html?p=aero">
+				<span class="aerospin">
 					<img src="images/aero_pixel.png" height="${imageSize.small}"></img>
-					Aero
+					<img src="images/aEROspin.gif" class="aerospin-top" height="${imageSize.small}"></img>
+				</span>
+				Aero
 				</a>`,
 				`<a href="index.html?p=rodney">
 					<img src="images/rodney_pixel.png" height="${imageSize.norm}"></img>

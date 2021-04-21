@@ -289,6 +289,23 @@ ul {
 	image-rendering: crisp-edges;
 }
 
+.aerospin {
+	position: relative;
+	display: inline-block;
+}
+
+.aerospin .aerospin-top {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 99;
+}
+.aerospin:hover .aerospin-top {
+	display: inline;
+}
+
+
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html {
 	box-sizing: border-box
