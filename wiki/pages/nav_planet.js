@@ -67,6 +67,11 @@ endnavs.push({
 						Wop (World of Pain)
 					</a>
 				</small>)`,
+				// Hazel
+				`<a href="index.html?p=hazel">
+					<img src="images/symbol_hazel.png" height="${imageSize.norm}">
+					Hazel
+				</a>`,
 				// Aeiou
 				`<a href="index.html?p=aeiou">
 					<img src="images/symbol_aeiou.png" height="${imageSize.small}">
@@ -76,14 +81,9 @@ endnavs.push({
 					<img src="images/symbol_cdfqrszt.png" height="${imageSize.small}">
 					Cdfqrszt &bull; Heideph
 				</small>)`,
-				// Hazel
-				`<a href="index.html?p=hazel">
-					<img src="images/symbol_hazel.png" height="${imageSize.norm}">
-					Hazel
-				</a>`,
 				// Cea
 				`<a href="index.html?p=cea">
-					<img src="images/cea.png" height="${imageSize.norm}">
+					<img src="images/symbol_cea.png" height="${imageSize.norm}">
 					Cea
 				</a>`,
 				// The
