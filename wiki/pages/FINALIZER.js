@@ -4,31 +4,40 @@ for (let i = warnings.length - 1; i >= 0; i--) {
 	let warningTable = document.createElement('table');
 	
 	warningTable.className = "navbox";
-	warningTable.style = "width: 50%;";
+	warningTable.style = "width: 50%; background-color: #444444;";
 	
 	let warningCaption = document.createElement('caption');
 	warningCaption.innerHTML = warning.caption;
 	
 	let warningBody = document.createElement('tbody');
 	
-	let warningData = document.createElement('td');
-	let warningDiv = document.createElement('div');
+	let warningTableRow = document.createElement('tr');
+	warningTableRow.rows = "3";
+
+	let warningIMGData = document.createElement('td');
+	warningIMGData.rowSpan = "1";
+	warningIMGData.style = "background-color: #444444;"
+
 	let warningIMG = document.createElement('img');
-	
+
 	warningIMG.alt = warning.image.file;
 	warningIMG.src = `./images/${warning.image.file}`;
 	warningIMG.width = warning.image.dims[0];
 	warningIMG.height = warning.image.dims[1];
-	warningIMG.style = "float: left;"
-	
-	warningP = document.createElement('p');
-	warningP.innerHTML = warning.wormbs;
-	
-	warningDiv.append(warningIMG, warningP);
-	
-	warningData.append(warningDiv);
-	
-	warningBody.append(warningData);
+
+	warningIMGData.append(warningIMG);
+
+	let warningWords = document.createElement('td');
+	warningWords.rowSpan = "2";
+	warningWords.style = "background-color: #444444;"
+
+	let warningWordsPassage = document.createElement('p');
+	warningWordsPassage.innerHTML = warnings[i].wormbs;
+	warningWords.append(warningWordsPassage);
+
+	warningTableRow.append(warningIMGData, warningWords);
+
+	warningBody.append(warningTableRow);
 	
 	warningTable.append(warningCaption, warningBody);
 	
