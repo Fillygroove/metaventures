@@ -35,3 +35,10 @@ const pageData = {
 	}],
 	endnav: 'chars'
 };
+
+makeButton({
+	html: 'Rodney Rewind', 
+	color: 'rodney-violet',
+	link: './index.html?p=main', 
+	style: 'float: right;'
+});

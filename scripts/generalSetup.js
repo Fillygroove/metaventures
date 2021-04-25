@@ -1,5 +1,7 @@
 let pageList = ['ert', 'the', 'doug', 'pilf', 'greme', 'mac', 'grene', 'credits', 'dwarf', 'hotsun', 'tackpenguin', 'aero', 'george', 'aeiou', 'taiberaque', 'coldsun', 'wop', 'shrine', 'halloween', 'main', 'dino', 'directions', 'm', 'nine', 'debug', 'pilfception', 'hazel', 'baeg', 'rodney'];
 let avThin = document.createElement('div');
+let dropdownDiv = document.createElement('div');
+dropdownDiv.className = 'w3-bar aero-dblue';
 
 function correctLinks() {
 	let pageLinks = document.getElementsByTagName('a');
@@ -12,6 +14,15 @@ function correctLinks() {
 			else pageLinks[i].className = 'n';
 		}
 	}
+}
+	
+function makeButton(input) {
+	let dropdown = document.createElement('a');
+	dropdown.className = `w3-bar-item w3-button w3-mobile ${input.color}`;
+	dropdown.innerHTML = input.html;
+	if (input.style != undefined) dropdown.style = input.style;
+	if (input.link != undefined) dropdown.href = input.link;
+	dropdownDiv.append(dropdown);
 }
 
 function addScript(script) {
@@ -69,21 +80,22 @@ function makePage(page) {
 	}
 	
 	document.body.append(mainAVTitle);
-	
-	let dropdownDiv = document.createElement('div');
-	dropdownDiv.className = 'w3-bar aero-dblue';
-	
-	function makeButton(html, color, link) {
-		let dropdown = document.createElement('a');
-		dropdown.className = `w3-bar-item w3-button w3-mobile ${color}`;
-		dropdown.href = link;
-		dropdown.innerHTML = html;
-		dropdownDiv.append(dropdown);
-	}
 
-	makeButton('The Comics', 'aero-blue', `${comicDir}index.html?c=choose`);
-	makeButton('The Wiki', 'pon-pink', `${wikiDir}index.html?p=main`);
-	makeButton('The Discord', 'nyork-green', 'https://discord.gg/xxRvYERs48');
+	makeButton({
+		html: 'The Comics', 
+		color: 'aero-blue', 
+		link: `${comicDir}index.html?c=choose`
+	});
+	makeButton({
+		html: 'The Wiki', 
+		color: 'pon-pink', 
+		link: `${wikiDir}index.html?p=main`
+	});
+	makeButton({
+		html: 'The Discord', 
+		color: 'nyork-green', 
+		link: 'https://discord.gg/xxRvYERs48'
+	});
 
 	avThin.append(dropdownDiv);
 	
