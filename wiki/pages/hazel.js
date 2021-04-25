@@ -27,7 +27,7 @@ let pageData = {
 		}]
 	},
 	introText: [
-		'Hazel is the eighth planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=aeiou">Aeiou</a> and before <a href="index.html?p=the">The</a>.',
+		'Hazel is the seventh planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=mac">Mac</a> and before <a href="index.html?p=aeiou">Aeiou</a>.',
 		'The term for referring to something related to Hazel is Hazelian.'
 	],
 	endnav: 'planet'

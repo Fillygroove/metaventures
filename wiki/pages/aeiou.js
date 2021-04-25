@@ -35,7 +35,7 @@ let pageData = {
 		}]
 	},
 	introText: [
-		'Aeiou is the seventh planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=mac">Mac</a> and before <a href="index.html?p=hazel">Hazel</a>.',
+		'Aeiou is the eighth planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=hazel">Hazel</a> and before <a href="index.html?p=cea">Cea</a>.',
 		'The term for referring to something related to Aeiou is Aeiouian.'
 	],
 	endnav: 'planet'
