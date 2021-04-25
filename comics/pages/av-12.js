@@ -8,6 +8,6 @@ let comicInfo = {
 		caption: 'Aeroventures 12: Part 1'
 	}, {
 		panel: '2.png',
-		caption: 'Aeroventures 12: Part 2'
+		caption: 'Aeroventures 12: Part 2 (Coming soon?)'
 	}]
 };
