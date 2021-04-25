@@ -1,6 +1,5 @@
 let directory = `${comicInfo.folder}`;
 let dirTrunc = directory.slice(directory.indexOf('/') + 1, directory.length - 1);
-console.log(directory, ' or ', dirTrunc);
 
 let rewindDir = '';
 
