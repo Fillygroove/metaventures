@@ -24,6 +24,7 @@ for (let i = warnings.length - 1; i >= 0; i--) {
 	warningIMG.src = `./images/${warning.image.file}`;
 	warningIMG.width = warning.image.dims[0];
 	warningIMG.height = warning.image.dims[1];
+	warningIMG.style = 'background-color: transparent;';
 
 	warningIMGData.append(warningIMG);
 
