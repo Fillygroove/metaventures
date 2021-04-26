@@ -13,10 +13,10 @@ let pageData = {
 				info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
 			}, {
 				name: 'Satellites',
-				info: ['Curfew', 'Purpul', 'Cea']
+				info: ['Curfew', 'Purpul']
 			}, {
 				name: 'Name Origin',
-				info: ['Mistaken as a hazel-ish color in the sky by some astronomers wearing cheap 3d glasses.']
+				info: ['Mistaken as a hazel-ish color in the sky by early astronomers.']
 			}, {
 				name: 'Classification',
 				info: ['Gas Giant']

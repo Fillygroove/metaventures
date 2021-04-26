@@ -71,15 +71,17 @@ endnavs.push({
 				`<a href="index.html?p=hazel">
 					<img src="images/symbol_hazel.png" height="${imageSize.norm}">
 					Hazel
-				</a>`,
+				</a>
+				(<small>
+					Curfew &bull; Purpul
+				</small>)`,
 				// Aeiou
 				`<a href="index.html?p=aeiou">
 					<img src="images/symbol_aeiou.png" height="${imageSize.small}">
 					Aeiou
 				</a>
 				(<small>
-					<img src="images/symbol_cdfqrszt.png" height="${imageSize.small}">
-					Cdfqrszt &bull; Heideph
+					Heideph
 				</small>)`,
 				// Cea
 				`<a href="index.html?p=cea">
