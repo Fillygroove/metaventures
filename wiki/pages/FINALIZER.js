@@ -4,7 +4,7 @@ for (let i = warnings.length - 1; i >= 0; i--) {
 	let warningTable = document.createElement('table');
 	
 	warningTable.className = "navbox";
-	warningTable.style = "width: 50%; background-color: #444444; float: right; margin: 6.5px;";
+	warningTable.style = "width: 50%; background-color: #444444; float: right; margin: 0.4em 1em;";
 	
 	let warningCaption = document.createElement('caption');
 	warningCaption.innerHTML = warning.caption;

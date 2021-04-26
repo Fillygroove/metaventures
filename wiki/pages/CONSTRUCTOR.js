@@ -9,10 +9,11 @@ let page = pageData;
 
 let article = document.getElementsByClassName('av-thin')[0];
 
-let pageHeader = document.createElement('span');
+let pageHeader = document.createElement('div');
+pageHeader.style = 'overflow: auto; position: relative; background-color: #555555;';
 
 let wikiPageName = document.createElement('h1');
-wikiPageName.style = "font-family: Ubuntu; display: inline-table; padding-top: 31px;";
+wikiPageName.style = "font-family: Ubuntu; display: inline-table; padding-top: 31px; bottom: 0; position: absolute; margin: 0;";
 wikiPageName.innerHTML = page.name;
 
 let topLineBreak = document.createElement('hr');
