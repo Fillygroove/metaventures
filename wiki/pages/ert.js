@@ -4,12 +4,12 @@ let pageData = {
 	navbox: {
 		file: ['ert.png', 'pixel'],
 		symbol: true,
-		caption: 'Illustration made by Gramiatar.',
+		caption: 'Illustration made by Gramiatar.</br>Northland and Southland are visible',
 		info: [{
 			heading: 'Designations',
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="index.html?p=hotsun">Hot Sun</a>', '<a href="index.html?p=george">George (Binary System)</a>']
+				info: ['<a href="index.html?p=hotsun">Ommadawn</a>', '<a href="index.html?p=george">George (Binary System)</a>']
 			}, {
 				name: 'Satellites',
 				info: ['<a href="index.html?p=george">George (Binary System)</a>', '<a href="index.html?p=perpahedron">Perpahedron (Artificial)</a>']
@@ -20,11 +20,11 @@ let pageData = {
 				name: 'Classification',
 				info: ['Terrestrial']
 			}, {
-				name: 'Life',
-				info: ['Reegs', 'Polygons', 'And More']
+				name: 'Inhabitants',
+				info: ['Reegs', 'Polygons', 'Spirons','Florodites','SOPs']
 			}]
 		}, {
-			heading: 'Theme',
+			heading: 'Music',
 			info: [{
 				embed: {
 					track: '994171495',
@@ -34,51 +34,50 @@ let pageData = {
 		}]
 	},
 	introText: [
-		'Ert is the fourth planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, sharing this position with <a href="index.html?p=george">George</a>, after <a href="index.html?p=pilf">Pilf</a> and before <a href="index.html?p=baeg">Baeg</a>. Ert is notable, being one of the only two planets in a binary system, sharing this feature with George. Ert is also the planet with the second most diversity of life, behind George, and also has some of the most "intelligent" inhabitants. Ert\'s sentient life boasts technology such as televisions, giant tungsten cubes, and the Perpahedron, but it is by no means able to take advantage of the planets around it, despite lifeforms being able to live on other planets. Ert is about one seventieth of the size of the Hot Sun.',
-		'The term for describing something related to Ert is Ertian.'
+		'Ert is the fourth planet in the <a href="index.html?p=hotsun">Ommadawn</a> system, sharing this position with <a href="index.html?p=george">George</a>, after <a href="index.html?p=pilf">Pilf</a> and before <a href="index.html?p=baeg">Baeg</a>. Ert is the homeworld of Metaventures, with the majority of its settings being located on two of its four continents. It is an Earth-like analog, featuring striking similarities to it - as if we didn’t have time to come up with an alien world. If a person were to be on Ert, they’ll feel almost the same as they would feel on Earth, apart from the slightly increased gravity and risk of being mugged by a couple of delinquent Reegs - or Polygons depending on where they are.',
+		'<h3>Interesting Facts</h3>',
+			'&bull; Ert always faces George, and vice versa.</br> &bull; Ert has aurora on the equator instead of its poles.</br> &bull; Ert has a high concentration of Yolktonium in its core.</br> &bull; Ert is more ocean than land (just like Earth).</br> &bull; Ert’s four land masses are named: Northland, Southland, Eastland, and Weastland.',
+			'The term for describing something related to Ert is Ertian.',
 	],
 	categories: [{
-		name: 'Characteristics',
+		name: 'Coverage',
 		info: [
-			'Ert is a Terrestrial planet that is made up of a silicon-based material, covered in oceans of water. A day on Ert lasts exactly 1 Ert day, and a year on Ert lasts exactly Ert 1 year. How useful is that? Very useful, according to scientists, probably smoking bread. Yes, smoking bread is possible on Ert.',
-			'<h3>Appearance</h3>',
-			'Ert is a terrestrial planet covered in vast oceans of water. It features several continents and a bluish atmosphere. It is roughly spherical in shape. Colors consist of various blues and greens, a signature look akin to its smaller twin George. Some whites and browns are present as well. Ert also has an atmosphere visible as a bluish glow tightly wrapped around its body visible when illuminated. Ert\'s tilt is around 0.5451523 radians (31.234928 degrees). Despite MANY claims that Ert\'s shape should be a torus, it is in fact a sphere (but a slightly squashed).',
+			'<h3>Aeroventures</h3>',
+			'From Archive:</br> In Nutty Business Part 1, Nut sets his plan to drill to the core of Ert to extract Yolktonium.',
+			'<h3>Polyventures</h3>',
+			'Not much here at the moment.',
+			'<h3>Janet Odyssey</h3>',
+			'In the game concept, Ert would be an early level.',
+			'In the album, Ert will be getting a unique theme. Currently it is using what would become a separate song of its own disconnected from it.',
+			'<h3>ATG</h3>',
+			'Not much here at the moment.'
+		]
+	}, {
+		name: 'Planet Info',
+		info: [
+			'Ert is a terrestrial planet, therefore it is rocky in composition and has a surface you can stand on. Its surface is covered in large oceans and land masses. A day on Ert lasts exactly 1 Ert day, and a year on Ert lasts exactly Ert 1 year. How useful is that? Very useful, according to scientists, probably smoking bread. Yes, smoking bread is possible on Ert.',
+			'<h3>Size and Mass</h3>',
+			'Ert is the second largest terrestrial planet, being surpassed by Grene. By mass and size it is the seventh largest planet. By density, Ert is in third place, being surpassed by its companion George. By comparison to Earth it is noticeably larger. Compared to the inner planets, it is the second largest.',
+			'Due to the lack of first-placements for this category, Ert is widely considered as an unremarkable planet by some analysts out there, but they’re missing the point.',
 			'<h3>Geography</h3>',
-			'Ert has distinct land masses suspended by large oceans. About 76% of its surface is covered in oceans with varying depths on average of 1.5 kilometers deep. The remaining 24% land depicts a diverse landscape of mountains, plains, and deserts to name a few. There are four major continents on Ert: Northland, Southland, Eastland, and Weastland. Only the first two listed are depicted in the comics of Aeroventures and Polyventures, and little is mentioned of the others.',
+			'Of the four major continents, only Northland and Southland are depicted in the comics of Aeroventures and Polyventures, and little is mentioned of the others. Who knows what lives on those. On land, there are a multitude of biomes ranging from tall mountains to sprawling plains. Various climates exist on Ert. There are a few islands pockmarking the ocean, the most notable one is the Island of No Escape.',
 			'<h3>Atmosphere and Climate</h3>',
-			'Ert\'s temperature is cooler than George by a few degrees. Its tilt causes seasonal shifts throughout its orbit around the Hot Sun. The highest recorded temperature on Ert 316.15 degrees kelvin, and the coldest is 177.15 degrees kelvin. Some claims were made of temperatures capable of melting rock, but that was debunked after careful reevaluation of the study being made on a volcano.',
-			'Ert has a breathable atmosphere consisting of nitrogen and oxygen. There are trace amounts of carbon dioxide and a variable amount of water vapor. There\'s also a miniscule amount of Nagic in the form of aerosols.',
-			'Ert\'s atmosphere is capable of a water cycle, which involves water evaporating, having a disco party in the clouds, and then falling asleep, heading back towards the ground. Obviously that isn\'t exactly how it goes but it\'s close enough.',
-			'<h3>Internal Structure</h3>',
-			'Ert has volcanism on its surface, suggesting an active interior and a molten core. Its surface is differentiated by many large land masses, which is likely an indicator of plate tectonics. Ert is the fourth densest planet in the Hot Sun system, preceding George, <a href="index.html?p=grene">Grene</a>, and <a href="index.html?p=the">The</a>.',
-			'Ert\'s interior is differentiated by density - lighter material on its surface and denser metallic materials towards its core. The heat inside is generated by high pressures and decay of radioactive elements.',
-			'The core of Ert is said to be rich in Yolktonium, a sought after metal for forging some of the strongest materials in the world. In <a href="../comics/index.html?c=12-1" class="c">Aeroventures 12, Part 1</a>, <a href="index.html?p=nutstradamnus">Nutstradamnus</a> attempts to drill towards the core in order to obtain it.',
+			'Ert’s temperature is cooler than George by a few degrees. Some claims were made of temperatures capable of melting rock, but that was debunked after careful reevaluation of the study being made on a volcano.',
+			'Ert’s atmosphere is capable of a water cycle, which involves water evaporating, having a disco party in the clouds, and then falling asleep, heading back towards the ground. Obviously that isn’t exactly how it goes but it’s close enough.',
+			'By Metaventures standards, Ert’s air would be breathable by its inhabitants and hypothetically, humans.',
 			'<h3>Magnetic Field</h3>',
-			'Ert has a robust magnetic field strengthened by interactions with George. It is strong enough to deflect solar radiation and thus protecting the two worlds. Despite its strength it is nowhere near as strong as the fields on <a href="index.html?p=mac">Mac</a>, The, and <a href="index.html?p=aeiou">Aeiou</a>. Strangely, its “north” magnetic pole lays exactly on the same path as the Island of No Escape.',
-			'Ert\'s interaction with solar radiation allows the formation of auras, which is seen as a ring on the north and south magnetic poles, which to clarify is on the equator.'
-		]
-	}, {
-		name: 'Satellites',
-		info: [
-			'<h3>George</h3>',
-			'<img src="images/george.png" alt="george.png" width="100" height="100" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
-			'George is Ert\'s twin. George and Ert rotate around each other, and are tidally locked with one another. George has more land relative to Ert, and harbors surprisingly more life. It also harbors Ozark, the entity that inspired the Dint Can\'s mascot.',
-			'<img src="images/perpahedron.png" alt="perpahedron.png" width="300" height="300" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',
-			'<h3>Perpahedron</h3>',
-			'The Perpahedron is an artificial satellite, constructed by Daktor and a group of scientists. The purpose of The Perpahedron is unknown, although suggestions for its purpose include being a gigantic multitool, a space mansion, and an overcomplicated mayonnaise jar. The Perpahedron has a large amount of tools, such as thrusters, speakers, and a giant tungsten cube attached by a nylon string.'
-		]
-	}, {
-		name: 'Life',
-		info: [
-			'Ert consists of an uncountable variety of life in many different phylums, but we counted those that only matter. Of course there are much more than listed below, but we just don\'t feel like explaining what\'s already obvious to most visitors. Do it yourself if you\'re so worried about the state of every single mushroom. To summarize - plants, animals, fungi, and giant protists are present all over. ',
-			'<h3>Reegs</h3>',
-			'Reegs are creatures that are most commonly blue. They feature two legs, two eyes, and sometimes a nose which can be used for attack, defense, as utilities, and more. Examples of notable reegs are <a href="index.html?p=aero">Aero</a>, <a href="index.html?p=lakys">Lakys</a>, <a href="index.html?p=archie">Archie</a>, <a href="index.html?p=aposteel">Aposteel</a>, and <a href="index.html?p=the">Royale</a>. Reegs are a prominent sentient species capable of many (and not so bright) things. They share their dominance to the Polygons.',
-			'<h3>Polygons</h3>',
-			'Polygons are simple geometric creatures infused with Nagic. They feature stick legs and large eyes. They come in many colors, shapes, and sizes. Their society is built on the type of regular polygon, such as a square or octagon. Examples of notable polygons are <a href="index.html?p=pon">Pon</a>, <a href="index.html?p=larry-pv">Larry</a>, <a href="index.html?p=beth">Beth</a> and <a href="index.html?p=vinny">Vinny</a> (although in technicality Pon, Vinny, and Beth are artificial creations). Like reegs, Polygons are prominent and capable of doing many (and much more brighter) things.',
-			'<h3>Spirons</h3>',
-			'Spirons are subterranean spider-like inhabitants featuring coiled appendages and four eyes. They inhabit most of the interior of Ert\'s crust, appearing only very recently in history. Examples of notable spirons are <a href="index.html?p=coylstone">Coyl Stone</a>, Boomerang, The Great Helix, and Wallflower.',
-			'<h3>Florodites</h3>',
-			'Florodites are plant-like hybrids that live in small detached islands living together in tribes. They have the unique property of photosynthesising. Other than that they are unfortunately shoved aside by bigger factions.'
+			'Ert has a robust magnetic field strengthened by interactions with George. It is strong enough to deflect solar radiation and thus protecting the two worlds. Despite its strength it is nowhere near as strong as the fields around the giant planets like Mac, Hazel, or Aeiou. Strangely, its “north” magnetic pole lays exactly on the same path as the Island of No Escape.',
+			'Ert’s interaction with solar radiation allows the formation of auroras, which is seen as a ring on the north and south magnetic poles, which to clarify is on the equator.',
+			'<h3>Orbit and Rotation</h3>',
+			'Ert and George are paired together at a comfortable distance from Ommadawn. Their orbit has little variation in closeness and has almost no quirky-ness at least for eccentricity and inclination. Compared to Earth once more, the two worlds would be 90% of the distance to its star.',
+			'Through the interaction with Geroge, both worlds are in a perpetual tidal lock, taking as long to rotate as it is for either to orbit each other. The day on Ert would last for a while, followed by long dark nights. Interestingly, George will be visible in the same part of the sky all-year due to this behavior. Consequently this means that George will never be visible for the opposing side. Ert has a slight tilt, therefore some parts of its year it will have a winter and a summer.',
+			'<h3>Satellites</h3>',
+			'George is predominantly the second body to Ert, making most potential orbits for smaller bodies to be nearly impossible unless there is a freak stroke of luck. To the dismay of many, Damocles is that object, and it has been observed switching back and forth - from Ert and George - from time to time. That being said, there are no natural satellites that solely orbit Ert or George.',
+			'Plenty of artificial satellites have been launched, such as the Perpahedron. There is a special kind of stationary orbit around the barycenter of the Ert-George binary, which is where neither planet could dominate their pull of gravity, offering a very stable place for objects to remain there.',
+			'<h3>Life</h3>',
+			'Ert consists of an uncountable variety of life in many forms. Obvious from looks alone. Despite that, its overall diversity is curiously less than of George, however Ert has more to its oceanic life. Ert harbors many native groups such as Reegs, Polygons, Spirons, and Florodites. Some creatures of extraterrestrial origin do inhabit such as the SOPs or the Space Clowns. There is also a “ruler” of sorts of Ert.',
+			'<h3>Symbol</h3>',
+			'Ert’s symbol represents a vessel of water, which is the counter to George’s spire.'
 		]
 	}],
 	endnav: 'planet'
