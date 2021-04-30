@@ -38,5 +38,6 @@ let comicInfo = {
 	}, {
 		panel: '12.jpg',
 		caption: 'As Lakys looks on to what Aero\'s ignoring, Lacus questions everyone\'s safety...'
-	}]
+	}],
+	background: 'bg-av.png'
 };
