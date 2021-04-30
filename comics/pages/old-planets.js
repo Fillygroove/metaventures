@@ -96,5 +96,6 @@ let comicInfo = {
 	}, {
 		panel: 'wop_old.png',
 		caption: 'Wop\'s original art.',
-	}]
+	}],
+	rewindTo: 'old-choose'
 };

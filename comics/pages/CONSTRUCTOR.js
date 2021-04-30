@@ -1,16 +1,15 @@
 let directory = `${comicInfo.folder}`;
-let rewindDir = '';
 
-if (['av-choose', 'old-choose'].includes(comic)) rewindDir = 'choose';
-if (['av-1', 'av-2', 'av-3', 'av-4', 'av-5', 'av-6', 'av-7', 'av-8', 'av-9', 'av-10', 'av-10.5', 'av-h', 'av-11', 'av-12'].includes(comic)) rewindDir = 'av-choose';
-if (['av-12-1'].includes(comic)) rewindDir = 'av-12';
-if (['old-av-11', 'old-misc', 'old-planets', 'old-pv-1'].includes(comic)) rewindDir = 'old-choose';
-if (rewindDir != '') makeButton({
+if (comicInfo.rewindTo != undefined) makeButton({
 	html: 'Rodney Rewind', 
 	color: 'rodney-violet', 
-	link: `./index.html?c=${rewindDir}`,
+	link: `./index.html?c=${comicInfo.rewindTo}`,
 	style: 'float: right;'
 });
+
+if (comicInfo.background != undefined) {
+	document.body.style.backgroundImage = `url(../${comicInfo.background})`;
+}
 
 let slideshow = document.createElement('div');
 slideshow.className = 'slideshow-container';

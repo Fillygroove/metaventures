@@ -59,5 +59,6 @@ let comicInfo = {
 	}, {
 		panel: '19.png',
 		caption: 'The Stock Market Crashed & Generic Juice'
-	}]
+	}],
+	rewindTo: 'old-choose'
 };

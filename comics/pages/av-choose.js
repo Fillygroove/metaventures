@@ -63,5 +63,7 @@ let comicInfo = {
 		link: 'index.html?c=av-12',
 		number: '12',
 		caption: 'Aeroventures 12: Nutty Business'
-	}]
+	}],
+	background: 'bg-av.png',
+	rewindTo: 'choose'
 };

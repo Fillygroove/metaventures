@@ -9,5 +9,7 @@ let comicInfo = {
 	}, {
 		panel: '2.png',
 		caption: 'Aeroventures 12: Part 2 (Coming soon?)'
-	}]
+	}],
+	background: 'bg-av.png',
+	rewindTo: 'av-choose'
 };

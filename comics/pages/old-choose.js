@@ -18,5 +18,6 @@ let comicInfo = {
 		panel: '4.png',
 		link: 'index.html?c=old-misc',
 		caption: 'Miscellanea'
-	}]
+	}],
+	rewindTo: 'choose'
 };
