@@ -1,2 +1,3 @@
 - Update wiki
 - Aeroventures comic reworks
+- Add a way to access the DK Rap easter egg
