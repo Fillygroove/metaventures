@@ -112,7 +112,7 @@ for (let i = 0; i < endnavs.length; i++) {
 	
 	if (endnavs[i].hideable == true) {
 		let hidetext = document.createElement('a');
-		hidetext.style = 'float: right; color: #6EC7E7; cursor: pointer; font-size: 75%; padding-right: 3px;';
+		hidetext.style = 'float: right; color: #6EC7E7; cursor: pointer; font-size: 75%; padding-right: 3px; user-select: none;';
 		hidetext.className = 'no_style'
 		hidetext.innerHTML = '<u>Show</u>';
 
