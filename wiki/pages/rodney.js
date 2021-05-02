@@ -39,6 +39,5 @@ const pageData = {
 makeButton({
 	html: 'Rodney Rewind', 
 	color: 'rodney-violet',
-	link: './index.html?p=main', 
-	style: 'float: right;'
+	link: './index.html?p=main'
 });

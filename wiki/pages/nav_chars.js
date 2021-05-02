@@ -143,7 +143,26 @@ endnavs.push({
 			name: 'AV-11',
 			info: [
 				`Lakys Clones`,
-				`Larry`
+				`Larry`,
+				`Rodnette`,
+				`Barry`,
+				`Ean`,
+				`Panzer`
+			]
+		}, {
+			name: 'AV-12',
+			info: [
+				`Squee`,
+				`Joel (Skullbasher)`,
+				`Joel's Mom (Skullbasher)`,
+				`Vera (Farmer)`,
+				`Cy (Farmer)`,
+				`Jumpkickers`,
+				`Corgal`,
+				`Nutstradamnus`,
+				`Felix Stone`,
+				`Diepic`,
+				`The Keeper`
 			]
 		}]
 	}]

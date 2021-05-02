@@ -3,12 +3,11 @@ let directory = `${comicInfo.folder}`;
 if (comicInfo.rewindTo != undefined) makeButton({
 	html: 'Rodney Rewind', 
 	color: 'rodney-violet', 
-	link: `./index.html?c=${comicInfo.rewindTo}`,
-	style: 'float: right;'
+	link: `./index.html?c=${comicInfo.rewindTo}`
 });
 
 if (comicInfo.background != undefined) {
-	document.body.style.backgroundImage = `url(../${comicInfo.background})`;
+	document.getElementsByTagName('html')[0].style.backgroundImage = `url(../${comicInfo.background})`;
 }
 
 let slideshow = document.createElement('div');
@@ -22,18 +21,12 @@ for (let i = 0; i < comicInfo.panels.length; i++) {
 	let slide = document.createElement('div');
 	slide.style = 'background-color: rgba(0, 0, 0, 0);';
 	slide.className = 'slides';
-	
-	let number = document.createElement('div');
-	number.className = 'numbertext';
-	number.innerHTML = `${comicInfo.panels[i].number ? comicInfo.panels[i].number : i + 1} / ${comicInfo.howLong ? comicInfo.howLong : comicInfo.panels.length}`;
-	
+
 	let panel = document.createElement('img');
 	
 	panel.src = `./panels/${directory}/${comicInfo.panels[i].panel}`;
 	panel.style = 'max-height: 21.5em; height: 21.5em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0);';
 	if (comicInfo.panels[i].classTitle !== undefined) panel.className = comicInfo.panels[i].classTitle;
-	
-	slide.append(number);
 
 	if (comicInfo.panels[i].link !== undefined) {
 		let panelLink = document.createElement('a');
@@ -100,7 +93,10 @@ let desc = document.createElement('h4');
 desc.className = 'description';
 desc.innerHTML = comicInfo.desc;
 
-avThin.append(slideTitle, slideshow, desc);
+let numbertext = document.createElement('p');
+numbertext.style = 'top: -50px; left: -60px; position: relative;';
+
+avThin.append(numbertext, slideTitle, slideshow, desc);
 
 
 let slideIndex = 1;
@@ -126,6 +122,8 @@ function showSlides(n) {
 	}
 
 	slides[slideIndex - 1].style.display = 'block';
+
+	numbertext.innerHTML = `${comicInfo.panels[slideIndex - 1].number ? comicInfo.panels[slideIndex - 1].number : slideIndex} / ${comicInfo.panels.length}`;
 }
 
 function verify(slide) {

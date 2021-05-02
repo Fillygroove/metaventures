@@ -13,7 +13,7 @@ function addHead(text) {
 }
 
 let mainH1 = document.createElement('h1');
-mainH1.style = 'font-family: Ubuntu;';
+mainH1.style = 'font-family: Ubuntu; margin-top: -40px;';
 mainH1.innerHTML = 'Metaventures!';
 
 let lineBreak = document.createElement('hr');
@@ -26,7 +26,7 @@ addText('Welcome to the Metaventures website! Read below for more information!')
 
 addHead('The newest change!');
 
-addText('CEA! <small style="background-color: #555555">its back</small>');
+addText('Redesigned the site a bit! More improvements are to come!');
 
 addHead('The Comics!');
 
@@ -37,7 +37,7 @@ addText('All comic images and icons have been lovingly provided by Text Wall, th
 addHead('The Wiki!');
 
 addText('The Wiki section of the website contains a collection of pages that explains the world of the Aeroventures universe. As of now, there isn\'t much, but it\'s getting there.');
-addText('Never make promises.(\'>\')');
+addText('Never make promises. (\'>\')');
 
 addHead('The Discord!');
 
