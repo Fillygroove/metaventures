@@ -1,9 +1,9 @@
 endnavs.push({
-	heading: 'Characters',
+	heading: 'The Aeroventures Crew',
 	categories: [{
-		category: 'Aeroventures',
+		category: 'The Crew',
 		info: [{
-			name: 'Protagonists',
+			name: 'Here They Are',
 			info: [
 				`<a href="index.html?p=aero">
 				<span class="aerospin">
@@ -25,66 +25,23 @@ endnavs.push({
 					Aposteel
 				</a>`
 			]
-		}, {
-			name: 'Antagonists',
-			info: [
-				`<a href="index.html?p=felix">
-					Felix
-				</a>`,
-				`<a href="index.html?p=keeper">
-					The Keeper
-				</a>`,
-				`<a href="index.html?p=larry-av">
-					Larry
-				</a>`,
-				`<a href="index.html?p=nutstradamnus">
-					Nutstradamnus
-				</a>`,
-				`<a href="index.html?p=oldaero">
-					Old Aero
-				</a>`,
-				`<a href="index.html?p=ozark">
-					Ozark
-				</a>`,
-				`<a href="index.html?p=krieg">
-					Krieg
-				</a>`,
-				`<a href="index.html?p=clowns">
-					The Space Clowns
-				</a>`,
-				`<a href="index.html?p=warmaccine">
-					War Maccine
-				</a>`
-			]
-		}, {
-			name: 'Minor Characters',
-			info: [
-				`<a href="index.html?p=darpynpals">
-					Darpy & Pals
-				</a>
-				(<small>Darpy &bull; Occols &bull; Trivy</small>)`,
-				`<a href="index.html?p=diepic">
-					Diepic
-				</a>`,
-				`<a href="index.html?p=fender">
-					Fender
-				</a>`,
-				`<a href="index.html?p=shockpose">
-					Shockpose
-				</a>`
-			]
 		}]
-	}, {
-		category: 'Polyventures',
+	}]
+});
+
+endnavs.push({
+	heading: 'The Polyventures Crew',
+	categories: [{
+		category: 'The Crew',
 		info: [{
-			name: 'Protagonists',
+			name: 'Here They Are',
 			info: [
 				`<a href="index.html?p=pon">
 					Pon
-				</a>`, 
+				</a>`,
 				`<a href="index.html?p=larry-pv">
 					Larry
-				</a>`, 
+				</a>`,
 				`<a href="index.html?p=beth">
 					Beth
 				</a>`,
@@ -92,23 +49,101 @@ endnavs.push({
 					Vinny
 				</a>`
 			]
-		}, {
-			name: 'Antagonists',
+		}]
+	}]
+});
+
+endnavs.push({
+	heading: 'AV Characters',
+	hideable: true,
+	categories: [{
+		category: 'Characters',
+		info: [{
+			name: 'AV-3',
 			info: [
-				'To Be Revealed'
+				`Nutstradamnus`
 			]
 		}, {
-			name: 'Minor Characters',
+			name: 'AV-5',
 			info: [
-				`<a href="index.html?p=gordon">
-					Gordon
-				</a>`,
-				`<a href="index.html?p=larrymom">
-					Larry's Mom
-				</a>`,
-				`<a href="index.html?p=spencer">
-					Spencer
-				</a>`
+				`Krieg`,
+				`Cestuses`
+			]
+		}, {
+			name: 'AV-6',
+			info: [
+				`Ambrose Shockpose`,
+				`Fender`,
+				`Mario`, // Remember to replace
+				`Peanut Griffin`
+			]
+		}, {
+			name: 'AV-7',
+			info: [
+				`Lakys Clones`,
+				`Daktor`,
+				`Perpahedron`,
+				`Diepic`
+			]
+		}, {
+			name: 'AV-8',
+			info: [
+				`S5-RA`
+			]
+		}, {
+			name: 'AV-9',
+			info: [
+				`Arbie`,
+				`Klare`,
+				`Old Van Wiggle`,
+				`Older Van Wiggle`
+			]
+		}, {
+			name: 'AV-10',
+			info: [
+				`Ambrose Shockpose`,
+				`Rose Shockpose`,
+				`Shockpose T. Child`,
+				`Snips`,
+				`Noi`,
+				`Ozark`,
+				`Fender`,
+				`Krieg`,
+				`Cestuses`,
+				`Old Aero`,
+				`Perpahedron`,
+				`S5-RA`
+			]
+		}, {
+			name: 'AV-10.5',
+			info: [
+				`Darpy Marsh Mella`,
+				`Oggles Ted Bear`,
+				`Twiggy Rain Beau`,
+				`Klare`,
+				`Old Van Wiggle`,
+				`Older Van Wiggle`,
+				`Ean`,
+				`Ozark`,
+				`Big Bomb`
+			]
+		}, {
+			name: 'AV-H',
+			info: [
+				`Lord Buckethead`,
+				`Ambrose Shockpose`,
+				`BITS KRIEG`,
+				`Space Clowns`,
+				`Krieg`,
+				`Dandy Lion`,
+				`Perpahedron`,
+				`Daktor`
+			]
+		}, {
+			name: 'AV-11',
+			info: [
+				`Lakys Clones`,
+				`Larry`
 			]
 		}]
 	}]

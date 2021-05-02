@@ -57,7 +57,8 @@ for (let i = 0; i < endnavs.length; i++) {
 	caption.innerHTML = table.heading;
 	
 	let tableBody = document.createElement('tbody');
-	
+	tableBody.style.visibility = endnavs[i].hideable ? 'collapse' : 'visible';
+
 	for (let i = 0; i < table.categories.length; i++) {
 		let tableRow = document.createElement('tr');
 		
@@ -109,6 +110,25 @@ for (let i = 0; i < endnavs.length; i++) {
 		tableBody.append(tableRow);
 	}
 	
+	if (endnavs[i].hideable == true) {
+		let hidetext = document.createElement('a');
+		hidetext.style = 'float: right; color: #6EC7E7; cursor: pointer; font-size: 75%; padding-right: 3px;';
+		hidetext.className = 'no_style'
+		hidetext.innerHTML = '<u>Show</u>';
+
+		hidetext.onclick = () => {
+			if (tableBody.style.visibility == 'visible') {
+				tableBody.style.visibility = 'collapse';
+				hidetext.innerHTML = '<u>Show</u>';
+			} else {
+				tableBody.style.visibility = 'visible';
+				hidetext.innerHTML = '<u>Hide</u>';
+			}
+		}
+
+		caption.append(hidetext);
+	}
+
 	endTable.append(caption, tableBody);
 	
 	article.append(endTable);
