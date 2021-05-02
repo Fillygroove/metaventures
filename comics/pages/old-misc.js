@@ -1,6 +1,6 @@
 let comicInfo = {
 	title: 'ARCHIVED - Gallery of the planets',
-	desc: 'The planets have had some old designs; Here they are!',
+	desc: 'Some weird things that don\'t belong anywhere else.',
 	folder: 'old/old-misc/',
 	panels: [{
 		panel: '1.png',
@@ -59,6 +59,9 @@ let comicInfo = {
 	}, {
 		panel: '19.png',
 		caption: 'The Stock Market Crashed & Generic Juice'
+	}, {
+		panel: 'aposteel_eyes.jpg',
+		caption: 'Aposteel has eyes? Since when?'
 	}],
 	rewindTo: 'old-choose'
 };
