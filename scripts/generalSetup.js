@@ -1,6 +1,9 @@
 let pageList = ['ert', 'the', 'doug', 'pilf', 'greme', 'mac', 'grene', 'credits', 'dwarf', 'hotsun', 'tackpenguin', 'aero', 'george', 'aeiou', 'taiberaque', 'coldsun', 'wop', 'shrine', 'halloween', 'main', 'dino', 'directions', 'm', 'nine', 'debug', 'pilfception', 'hazel', 'baeg', 'rodney', 'cea'];
+
 let avThin = document.createElement('div');
+
 let dropdownDiv = document.createElement('div');
+dropdownDiv.style = 'position: fixed; z-index: 3; white-space: nowrap; height: 40px; margin-top: -40px !important;';
 dropdownDiv.className = 'w3-bar aero-dblue';
 
 function correctLinks() {
@@ -15,7 +18,7 @@ function correctLinks() {
 		}
 	}
 }
-	
+
 function makeButton(input) {
 	let dropdown = document.createElement('a');
 	dropdown.className = `w3-bar-item w3-button w3-mobile ${input.color}`;
@@ -71,15 +74,17 @@ function makePage(page) {
 		
 	avThin.className = 'av-thin';
 
-	let mainAVTitle = document.createElement('div');
-	mainAVTitle.className = 'aeroventures-title';
-	if (page == 'wiki') {
-		mainAVTitle.innerHTML = `<a href='${titleDir}index.html' id='aeroventures-title'>Metaventu</a><a href='../comics/index.html?c=dk' id='aeroventures-title'>r</a><a href='${titleDir}index.html' id='aeroventures-title'>es!</a>`;
-	} else {
-		mainAVTitle.innerHTML = `<a href='${titleDir}index.html' id='aeroventures-title'>Metaventures!</a>`;
-	}
-	
-	document.body.append(mainAVTitle);
+	let mainAVIMGLink = document.createElement('a');
+	let mainAVIMG = document.createElement('img');
+	mainAVIMG.src = `${titleDir}favicon.png`;
+	mainAVIMG.style.background = 'transparent';
+	mainAVIMG.style.height = '100%';
+	mainAVIMGLink.class = 'no-style';
+	mainAVIMGLink.style.paddingLeft = '35px';
+	mainAVIMGLink.style.paddingRight = '10px';
+	mainAVIMGLink.href = `${titleDir}index.html`;
+	mainAVIMGLink.append(mainAVIMG);
+	dropdownDiv.append(mainAVIMGLink);
 
 	makeButton({
 		html: 'The Comics', 
@@ -97,7 +102,7 @@ function makePage(page) {
 		link: 'https://discord.gg/xxRvYERs48'
 	});
 
-	avThin.append(dropdownDiv);
+	document.body.append(dropdownDiv);
 	
 	addScript(`${titleDir}scripts/${page}Setup.js`);
 	

@@ -111,6 +111,8 @@
 	border-radius: 0 0 1em 1em;
 	padding-bottom: 4px;
 	overflow: hidden;
+	padding-top: 40px;
+	margin-top: 40px !important;
 }
 
 p,
@@ -195,7 +197,7 @@ a {
 
 .aero-dblue {
 	color: #fff !important;
-	background-color: #3e456d !important;
+	background-color: #666690 !important;
 }
 
 .pon-pink {
@@ -304,7 +306,7 @@ ul {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	z-index: 99;
+	z-index: 2;
 }
 .aerospin:hover .aerospin-top {
 	display: inline;
@@ -902,7 +904,10 @@ a {
 }
 
 .w3-bar .w3-button {
-	white-space: normal
+	white-space: normal;
+	display: inline-block;
+	float: none;
+	height: 100%;
 }
 
 .w3-bar-block .w3-bar-item {
