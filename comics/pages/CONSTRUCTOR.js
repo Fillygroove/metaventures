@@ -69,7 +69,7 @@ let slideText = document.createElement('div');
 slideText.style = 'text-align: center; background-color: rgba(0, 0, 0, 0); height: 1.4em;';
 
 slideLabel = document.createElement('label');
-slideLabel.style = 'background-color: rgba(0, 0, 0, 0); line-height: 2.55em;';
+slideLabel.style = 'background-color: rgba(0, 0, 0, 0); line-height: 2.55em; user-select: none;';
 slideLabel.innerHTML = 'Panel Number: ';
 slideLabel.htmlFor = "panel";
 	
