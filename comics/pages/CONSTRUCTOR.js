@@ -123,7 +123,7 @@ function showSlides(n) {
 
 	slides[slideIndex - 1].style.display = 'block';
 
-	numbertext.innerHTML = `${comicInfo.panels[slideIndex - 1].number ? comicInfo.panels[slideIndex - 1].number : slideIndex} / ${comicInfo.panels.length}`;
+	numbertext.innerHTML = `${comicInfo.panels[slideIndex - 1].number ? comicInfo.panels[slideIndex - 1].number : slideIndex} / ${comicInfo.howLong ? comicInfo.howLong : comicInfo.panels.length}`;
 }
 
 function verify(slide) {
