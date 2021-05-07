@@ -3,15 +3,7 @@ let pageList = ['ert', 'the', 'doug', 'pilf', 'greme', 'mac', 'grene', 'credits'
 let avThin = document.createElement('div');
 
 let dropdownDiv = document.createElement('div');
-dropdownDiv.style.position = 'fixed';
-dropdownDiv.style.zIndex = '3';
-dropdownDiv.style.whiteSpace = 'nowrap';
-dropdownDiv.style.height = 'var(--hotbar)';
-dropdownDiv.style.marginTop = 'calc(var(--hotbar) * -1)';
-dropdownDiv.style.borderColor = 'transparent transparent white';
-dropdownDiv.style.borderWidth = '1px';
-dropdownDiv.style.borderStyle = 'solid';
-dropdownDiv.className = 'w3-bar aero-dblue';
+dropdownDiv.className = 'topbar';
 
 function correctLinks() {
 	let pageLinks = document.getElementsByTagName('a');
@@ -28,7 +20,7 @@ function correctLinks() {
 
 function makeButton(input) {
 	let dropdown = document.createElement('a');
-	dropdown.className = `w3-bar-item w3-button w3-mobile ${input.color}`;
+	dropdown.className = `topbar-button ${input.color}`;
 	dropdown.innerHTML = input.html;
 	if (input.style != undefined) dropdown.style = input.style;
 	if (input.link != undefined) dropdown.href = input.link;

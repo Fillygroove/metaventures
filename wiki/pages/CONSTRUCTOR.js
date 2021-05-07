@@ -9,17 +9,13 @@ let page = pageData;
 
 let article = document.getElementsByClassName('av-thin')[0];
 
-let pageHeader = document.createElement('div');
-pageHeader.style = 'line-height: 0px; position: relative; background-color: #555555;';
-
 let wikiPageName = document.createElement('h1');
-wikiPageName.style = "font-family: Ubuntu; display: inline-table; margin: 0px -10px 0px 0px;";
 wikiPageName.innerHTML = page.name;
+wikiPageName.className = 'page-header';
 
 let topLineBreak = document.createElement('hr');
 
-pageHeader.append(wikiPageName);
-article.append(pageHeader, topLineBreak);
+article.append(wikiPageName, topLineBreak);
 
 if (page.navbox != undefined) {
 	let navbox = document.createElement('table');

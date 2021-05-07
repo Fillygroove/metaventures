@@ -13,9 +13,8 @@ function addHead(text) {
 }
 
 let mainH1 = document.createElement('h1');
-mainH1.style.fontFamily = 'Ubuntu';
-mainH1.style.marginTop = '-40px';
 mainH1.innerHTML = 'Metaventures!';
+mainH1.className = 'page-header';
 
 let lineBreak = document.createElement('hr');
 

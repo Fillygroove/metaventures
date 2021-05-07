@@ -19,14 +19,12 @@ slideTitle.innerHTML = comicInfo.title;
 
 for (let i = 0; i < comicInfo.panels.length; i++) {
 	let slide = document.createElement('div');
-	slide.style = 'background-color: rgba(0, 0, 0, 0);';
 	slide.className = 'slides';
 
 	let panel = document.createElement('img');
 	
 	panel.src = `./panels/${directory}/${comicInfo.panels[i].panel}`;
-	panel.style = 'max-height: 21.5em; height: 21.5em; text-align: center; display: flex; margin: 0 auto 0 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0);';
-	if (comicInfo.panels[i].classTitle !== undefined) panel.className = comicInfo.panels[i].classTitle;
+	panel.className = `comic-panel${comicInfo.panels[i].classTitle ? ' ' + comicInfo.panels[i].classTitle : ''}`;
 
 	if (comicInfo.panels[i].link !== undefined) {
 		let panelLink = document.createElement('a');
@@ -37,7 +35,7 @@ for (let i = 0; i < comicInfo.panels.length; i++) {
 	
 	if (comicInfo.panels[i].caption !== undefined) {
 		let caption = document.createElement('div');
-		caption.style = 'text-align: center; background-color: rgba(0, 0, 0, 0); font-weight: bold;';
+		caption.className = 'comic-caption';
 		caption.innerHTML = comicInfo.panels[i].caption;
 		slide.append(caption);
 	}
@@ -66,18 +64,16 @@ nextButton.onclick = () => {
 };
 
 let slideText = document.createElement('div');
-slideText.style = 'text-align: center; background-color: rgba(0, 0, 0, 0); height: 1.4em;';
+slideText.className = 'comic-slidetext';
 
 slideLabel = document.createElement('label');
-slideLabel.style = 'background-color: rgba(0, 0, 0, 0); line-height: 2.55em; user-select: none;';
+slideLabel.className = 'comic-slidelabel';
 slideLabel.innerHTML = 'Panel Number: ';
-slideLabel.htmlFor = "panel";
+slideLabel.htmlFor = 'slide-input';
 	
 slideInput = document.createElement('input');
 slideInput.type = 'text';
-slideInput.id = 'panel';
-slideInput.name = 'panel';
-slideInput.style = 'color: white; width: 9em; text-align: center;';
+slideInput.id = 'slide-input';
 slideInput.addEventListener('keyup', function(event) {
 	if (event.key === 'Enter') {
 		verify(slideInput.value);
@@ -94,7 +90,7 @@ desc.className = 'description';
 desc.innerHTML = comicInfo.desc;
 
 let numbertext = document.createElement('p');
-numbertext.style = 'top: -50px; left: -60px; position: relative;';
+numbertext.className = 'comic-numbertext';
 
 avThin.append(numbertext, slideTitle, slideshow, desc);
 

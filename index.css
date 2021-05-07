@@ -1,3 +1,4 @@
+/* Variables */
 :root {
 	--transparency: 1;
 	--hotbar: 56px;
@@ -13,43 +14,43 @@
 }
 
 @keyframes rainbow{
-	0%{
+	0% {
 		color: orange;
 	}	
 	
-	10%{
+	10% {
 		color: purple;
 	}	
 	
-	20%{
+	20% {
 		color: red;
 	}
 	
-	30%{
+	30% {
 		color: CadetBlue;
 	}
 	
-	40%{
+	40% {
 		color: yellow;
 	}
 	
-	50%{
+	50% {
 		color: coral;
 	}
 	
-	60%{
+	60% {
 		color: green;
 	}
-	
-	70%{
+	 
+	70% {
 		color: cyan;
 	}
 	
-	80%{
+	80% {
 		color: DeepPink;
 	}
 	
-	90%{
+	90% {
 		color: DodgerBlue;
 	}
 	
@@ -64,6 +65,7 @@
 	background-color: #333333;
 }
 
+/* The Comics */
 .slideshow-container {
 	max-width: 500px;
 	position: relative;
@@ -72,8 +74,30 @@
 }
 
 .slides {
-	display: none;
+	background-color: rgba(0, 0, 0, 0);
 	margin-top: 30px;
+}
+
+.comic-caption {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0);
+	font-weight: bold;
+}
+
+.comic-panel {
+	max-height: 21.5em;
+	height: 21.5em;
+	text-align: center;
+	display: flex;
+	margin: 0 auto 0 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#slide-input {
+	color: white;
+	width: 9em;
+	text-align: center;
 }
 
 .prev,
@@ -104,6 +128,32 @@
 	float: right;
 }
 
+.comic-slidetext {
+	text-align: center; 
+	background-color: transparent;
+	height: 1.4em;
+}
+
+.comic-slidelabel {
+	background-color: transparent;
+	line-height: 2.55em;
+	user-select: none;
+}
+.comic-title {
+	text-align: center;
+	font-size: 30px;
+	background-color: rgba(0, 0, 0, 0);
+	line-height: 0;
+	margin-top: -77px;
+}
+
+.comic-numbertext {
+	top: -50px;
+	left: -60px;
+	position: relative;
+}
+
+ /* General */
 .av-thin {
 	width: 90%;
 	color: #ffffff;
@@ -170,37 +220,37 @@ a {
 	height: 1.6em;
 	text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
-
-
-.comic-title {
-	text-align: center;
-	font-size: 30px;
-	background-color: rgba(0, 0, 0, 0);
-	line-height: 0;
-	margin-top: -77px;
-}
-
-.numbertext {
-	color: #f2f2f2;
-	font-size: 12px;
-	padding: 8px 12px;
-	position: absolute;
-	background-color: rgba(0, 0, 0, 0.4);
-	margin-top: -4em;
-	border-radius: 1em;
-	border-color: #000000;
-	border-width: 2px;
-	border-style: solid;
-}
-
 .aero-blue {
 	color: #fff !important;
 	background-color: #46BCE3 !important;
 }
 
-.aero-dblue {
+.topbar {
 	color: #fff !important;
 	background-color: #444 !important;
+	position: fixed;
+	z-index: 99;
+	white-space: nowrap;
+	height: var(--hotbar);
+	margin-top: calc(var(--hotbar) * -1);
+	border-color: transparent transparent white;
+	border-width: 1px;
+	border-style: solid;
+	width: 100%;
+	overflow: hidden;
+}
+
+.topbar-button {
+	user-select: none;
+	border: none;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
 }
 
 .pon-pink {
@@ -315,6 +365,10 @@ ul {
 	display: inline;
 }
 
+.page-header {
+	font-family: 'Ubuntu';
+	margin-top: -40px;
+}
 
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html {
