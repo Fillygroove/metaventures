@@ -13,7 +13,7 @@ let pageHeader = document.createElement('div');
 pageHeader.style = 'line-height: 0px; position: relative; background-color: #555555;';
 
 let wikiPageName = document.createElement('h1');
-wikiPageName.style = "font-family: Ubuntu; display: inline-table; margin: 0;";
+wikiPageName.style = "font-family: Ubuntu; display: inline-table; margin: 0px -10px 0px 0px;";
 wikiPageName.innerHTML = page.name;
 
 let topLineBreak = document.createElement('hr');
