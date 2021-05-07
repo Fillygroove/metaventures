@@ -13,7 +13,8 @@ function addHead(text) {
 }
 
 let mainH1 = document.createElement('h1');
-mainH1.style = 'font-family: Ubuntu; margin-top: -40px;';
+mainH1.style.fontFamily = 'Ubuntu';
+mainH1.style.marginTop = '-40px';
 mainH1.innerHTML = 'Metaventures!';
 
 let lineBreak = document.createElement('hr');
