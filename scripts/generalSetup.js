@@ -3,7 +3,7 @@ let pageList = ['ert', 'the', 'doug', 'pilf', 'greme', 'mac', 'grene', 'credits'
 let avThin = document.createElement('div');
 
 let dropdownDiv = document.createElement('div');
-dropdownDiv.style = 'position: fixed; z-index: 3; white-space: nowrap; height: var(--hotbar); margin-top: calc(var(--hotbar) * -1) !important;';
+dropdownDiv.style = 'position: fixed; z-index: 3; white-space: nowrap; height: var(--hotbar); margin-top: calc(var(--hotbar) * -1) !important; border-color: transparent transparent white; border-width: 1px; border-style: solid;';
 dropdownDiv.className = 'w3-bar aero-dblue';
 
 function correctLinks() {
