@@ -65,6 +65,13 @@
 	background-color: #333333;
 }
 
+.flip-page {
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
  /* General */
  .av-thin {
 	width: 90%;

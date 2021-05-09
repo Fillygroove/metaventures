@@ -48,8 +48,8 @@ let pageData = {
 	}],
 	endnav: 'plamet',
 	execute: function() {
+		document.getElementsByTagName('html')[0].className = 'flip-page';
 		window.scrollTo(0, document.documentElement.scrollHeight);
 	}
 };
 
-document.getElementsByTagName('html')[0].style = '-moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg);';
