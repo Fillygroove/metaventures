@@ -46,9 +46,10 @@ let pageData = {
 			'Doug orbits closely to the expelled atmosphere of Greme, which, over millioms of years, has turmed it to the browm shade we kmow it as today.'
 		]
 	}],
-	endnav: 'plamet'
+	endnav: 'plamet',
+	execute: function() {
+		window.scrollTo(0, document.documentElement.scrollHeight);
+	}
 };
-
-document.getElementsByClassName('aeroventures-title')[0].innerHTML = '<a href="../index.html" id="aeroventures-title">Metave<a href="index.html?p=m" id="aeroventures-title">m</a>tu</a><a href="../comics/index.html?c=dk" id="aeroventures-title">r</a><a href="../index.html" id="aeroventures-title">es!</a>';
 
 document.getElementsByTagName('html')[0].style = '-moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg);';

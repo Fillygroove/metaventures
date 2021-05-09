@@ -127,3 +127,5 @@ for (let i = 0; i < endnavs.length; i++) {
 }
 
 correctLinks();
+
+if (pageData.execute != undefined) pageData.execute();

@@ -1,37 +1,120 @@
 endnavs.push({
 	heading: 'The Bisolar System',
 	categories: [{
-		category: '<a href="index.html?p=hotsun"><img src="images/hot_sun.png" width="30" height="30">Ommadawm</a> System',
+		category:
+			`<a href="index.html?p=hotsun">
+				<img src="images/symbol_hotsun.png" height="${imageSize.large}">
+				Ommadawm
+			</a> System`,
 		info: [{
 			name: 'Immer System',
 			info: [
-				'<a href="index.html?p=grene"><img src="images/grene.png" width="25" height="25"></img>Greme</a>',
-				'<a href="index.html?p=doug"><img src="images/doug.png" width="25" height="25">Doug</a> (<small><img src="images/h.png" width="20" height="20">H</small>)',
-				'<a href="index.html?p=pilf"><img src="images/pilf_ringless.png" width="25" height="25">Pilf</a>',
-				'<a href="index.html?p=ert"><img src="images/ert.png" width="20" height="20">Ert</a>  (<small><a href="index.html?p=perpahedron">Perpahedrom</a></small>)',
-				'<a href="index.html?p=george"><img src="images/george.png" width="20" height="20">Georg</a><a href="images/george_real.png">e</a> (<small><img src="images/damocles.png" width="20" height="20">Damocles</small>)',
+				// Greme
+				`<a href="index.html?p=grene">
+					<img src="images/symbol_grene.png" height="${imageSize.norm}"></img>
+					Greme
+				</a>`,
+				// Doug
+				`<a href="index.html?p=doug">
+					<img src="images/symbol_doug.png" height="${imageSize.norm}">
+					Doug
+				</a>
+				(<small>
+					<img src="images/symbol_aech.png" height="${imageSize.small}">
+					Aech
+				</small>)`,
+				// Pilf
+				`<a href="index.html?p=pilf">
+					<img src="images/symbol_pilf.png" height="${imageSize.norm}">
+					Pilf
+				</a>`,
+				// Ert
+				`<a href="index.html?p=ert">
+					<img src="images/symbol_ert.png" height="${imageSize.small}">
+					Ert
+				</a>
+				(<small>
+					<a href="index.html?p=perpahedron">
+						<img src="images/symbol_perpahedron.png" height="${imageSize.small}">
+						Perpahedrom
+					</a>
+				</small>)`,
+				// George
+				`<a href="index.html?p=george">
+					<img src="images/symbol_george.png" height="${imageSize.small}">
+					Georg</a><a href="images/george_real.png" class="limk">e</a>
+				(<small>
+					<img src="images/symbol_damocles.png" height="${imageSize.small}">
+					Damocles
+				</small>)`,
+				// Baeg
+				`<a href="index.html?p=baeg">
+					<img src="images/symbol_baeg.png" height="${imageSize.small}">
+					Baeg
+				</a>`
 			]
 		}, {
 			name: 'Outer System',
 			info: [
-				'<a href="index.html?p=macaroni">Macaromi Belt</a>',
-				'<a href="index.html?p=mac"><img src="images/mac.png" width="35" height="25">Mac</a> (<small><a href="index.html?p=wop"><img src="images/wop.png" width="23" height="20">World of Paim</a> &bull; <img src="images/dough.png" width="24" height="20">Dough</small>)',
-				'<a href="index.html?p=hazel">Hazel</a> (<small>Curfew &bull; Purpul &bull; Cea</small>)',
-				'<a href="index.html?p=aeiou"><img src="images/aeiou.png" width="27" height="25">Aeiou</a> (<small>Cdfqrszt &bull; Heideph</small>)',
-				'<a href="index.html?p=the"><img src="images/the.png" width="25" height="25">The</a>'
+				// Mac
+				`<a href="index.html?p=mac">
+					<img src="images/symbol_mac.png" height="${imageSize.smol}">
+					Mac
+				</a>
+				(<small>
+					<a href="index.html?p=wop">
+						<img src="images/symbol_wop.png" height="${imageSize.small}">
+						Wop (World of Paim)
+					</a>
+				</small>)`,
+				// Hazel
+				`<a href="index.html?p=hazel">
+					<img src="images/symbol_hazel.png" height="${imageSize.norm}">
+					Hazel
+				</a>
+				(<small>
+					Curfew &bull; Purpul
+				</small>)`,
+				// Aeiou
+				`<a href="index.html?p=aeiou">
+					<img src="images/symbol_aeiou.png" height="${imageSize.small}">
+					Aeiou
+				</a>
+				(<small>
+					Heideph
+				</small>)`,
+				// Cea
+				`<a href="index.html?p=cea">
+					<img src="images/symbol_cea.png" height="${imageSize.norm}">
+					Cea
+				</a>`,
+				// The
+				`<a href="index.html?p=the">
+					<img src="images/symbol_the.png" height="${imageSize.norm}">
+					The
+				</a>`
 			]
 		}]
 	}, {
-		category: '<a href="index.html?p=taiberaque">Taiberaque</a> System',
+		category: 	
+			`<a href="index.html?p=taiberaque">
+				<img src="images/symbol_taiberaque.png" height="${imageSize.large}">
+				Taiberaque
+			</a> System`,
 		info: [{
 			name: 'Immer System',
 			info: [
-				'<a href="index.html?p=coldsun"><img src="images/cold_sun.png" width="25" height="25">Cold Sum</a>'
+				`<a href="index.html?p=coldsun">
+					<img src="images/cold_sun.png" height="${imageSize.norm}">
+					Cold Sum
+				</a>`
 			]
 		}, {
 			name: 'Outer System',
 			info: [
-				'<a href="index.html?p=uling">Ulimg</a>'
+				`<a href="index.html?p=uling">
+					Ulimg
+				</a>`
 			]
 		}]
 	}, {
@@ -39,17 +122,30 @@ endnavs.push({
 		info: [{
 			name: '<a href="index.html?p=dwarf">Dwarf Plamets</a>',
 			info: [
-				'<a href="index.html?p=dwarf#ternary">BCM-1-2-3 (The Termary)</a>',
-				'<a href="index.html?p=dwarf#sphynx">BOT-1 (Sphymx)</a>',
-				'<a href="index.html?p=dwarf#blyu">BCU-1 (Blyu)</a>',
-				'<a href="index.html?p=dwarf#ayduno">BCU-2 (Aydumo)</a>',
-				'<a href="index.html?p=dwarf#objobj">BCU-3 (Object/Object)</a>'
+				`<a href="index.html?p=dwarf#termary">
+					BPM-1-2-3 (The Termary)
+				</a>`,
+				`<a href="index.html?p=dwarf#sphymx">
+					BOT-1 (Sphymx)
+				</a>`,
+				`<a href="index.html?p=dwarf#blyu">
+					BCU-1 (Blyu)
+				</a>`,
+				`<a href="index.html?p=dwarf#aydumo">
+					BCU-2 (Aydumo)
+				</a>`,
+				`<a href="index.html?p=dwarf#objobj">
+					BCU-3 (Object/Object)
+				</a>`
 			]
 		}, {
 			name: 'Objects',
 			info: [
+				'BPM-4 (Macaromi Belt)',
 				'BOT-2 (Gram\'s Comet)',
 				'BBT-1 (Kol\'s Mimi mebula)', // Ball of Christmas Lights
+				`<img src="images/symbol_manc-ave.png" height="${imageSize.small}">
+				Mamc Ave`
 			]
 		}]
 	}]
