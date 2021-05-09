@@ -42,7 +42,7 @@ endnavs.push({
 				// George
 				`<a href="index.html?p=george">
 					<img src="images/symbol_george.png" height="${imageSize.small}">
-					Georg</a><a href="images/george_real.png" class="y">e</a>
+					Georg</a><a href="images/george_real.png" class="link">e</a>
 				(<small>
 					<img src="images/symbol_damocles.png" height="${imageSize.small}">
 					Damocles
