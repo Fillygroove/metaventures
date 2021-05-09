@@ -7,7 +7,7 @@ if (comicInfo.rewindTo != undefined) makeButton({
 });
 
 if (comicInfo.background != undefined) {
-	document.getElementsByTagName('html')[0].style.backgroundImage = `url(../${comicInfo.background})`;
+	document.getElementsByTagName('html')[0].style.backgroundImage = `url(../images/${comicInfo.background})`;
 }
 
 let slideshow = document.createElement('div');

@@ -63,7 +63,7 @@ function makePage(page) {
 	let metaFavicon = document.createElement('link');
 	metaFavicon.rel = 'icon';
 	metaFavicon.type = 'image/png';
-	metaFavicon.href = `${titleDir}favicon.png`;
+	metaFavicon.href = `${titleDir}/images/favicon.png`;
 	
 	let metaCss = document.createElement('link');
 	metaCss.rel = 'stylesheet';
@@ -77,7 +77,7 @@ function makePage(page) {
 	mainAVIMGLink.href = `${titleDir}index.html`;
 
 	let mainAVIMG = document.createElement('img');
-	mainAVIMG.src = `${titleDir}bar-icon.png`;
+	mainAVIMG.src = `${titleDir}/images/top-bar.png`;
 	mainAVIMG.className = 'bar-image';
 	mainAVIMGLink.append(mainAVIMG);
 	dropdownDiv.append(mainAVIMGLink);
