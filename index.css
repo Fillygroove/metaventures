@@ -128,7 +128,7 @@ a {
 
 .topbar {
 	color: #fff !important;
-	background-color: #444 !important;
+	background-color: rgba(68, 68, 68, 1);
 	position: fixed;
 	z-index: 99;
 	white-space: nowrap;

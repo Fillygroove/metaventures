@@ -104,3 +104,10 @@ function makePage(page) {
 	
 	document.getElementsByTagName('body')[0].append(avThin);
 }
+
+window.onscroll = () => {
+	if (document.body.getBoundingClientRect().top / 56 < 1 && document.body.getBoundingClientRect().top / 56 > -3) {
+		console.log(document.body.getBoundingClientRect().top / 56);
+		dropdownDiv.style.backgroundColor = `rgba(68, 68, 68, ${1 + document.body.getBoundingClientRect().top / 1792}`;
+	}
+}
