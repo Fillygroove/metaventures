@@ -4,7 +4,7 @@ let comicInfo = {
 	folder: 'old/old-choose/',
 	panels: [{
 		panel: '1.png',
-		link: 'index.html?c=old-av-11',
+		link: 'index.html?c=older-av-11',
 		caption: 'Aeroventures 11: Code Red'
 	}, {
 		panel: '2.png',
