@@ -20,7 +20,7 @@ let pageData = {
 			'Helped out with storyboarding, along with Text Wall, in the creation of the comics.'
 		]
 	}, {
-		name: 'Pixel Origin',
+		name: 'Fristo',
 		info: [
 			'Helped out with the comics and OST!',
 			'Added art to the Aeroventures and Archive sections in the comics tab.',

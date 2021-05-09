@@ -13,7 +13,7 @@ switch (quoteNumber) {
 	case 3:
 		quote = 'Maybe <a href="index.html?p=aero">Aero</a> stole its intestines...';
 		break;
-	case 4: // Made by Pixel Origin
+	case 4: // Made by Fristo
 		quote = 'Likely left to attend <a href="index.html?p=aero">Aero</a>\'s funeral...';
 		break;
 	case 5: // Made by PS3_33
