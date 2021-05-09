@@ -11,7 +11,7 @@ if (comicInfo.background != undefined) {
 }
 
 let slideshow = document.createElement('div');
-slideshow.className = 'slideshow-container';
+slideshow.className = 'comic-slideshow-container';
 
 let slideTitle = document.createElement('div');
 slideTitle.className = 'comic-title';
@@ -19,7 +19,7 @@ slideTitle.innerHTML = comicInfo.title;
 
 for (let i = 0; i < comicInfo.panels.length; i++) {
 	let slide = document.createElement('div');
-	slide.className = 'slides';
+	slide.className = 'comic-slides';
 
 	let panel = document.createElement('img');
 	
@@ -50,8 +50,8 @@ for (let i = 0; i < comicInfo.panels.length; i++) {
 let line = document.createElement('hr');
 let prevButton = document.createElement('a');
 let nextButton = document.createElement('a');
-prevButton.className = 'prev';
-nextButton.className = 'next';
+prevButton.className = 'comic-prev';
+nextButton.className = 'comic-next';
 prevButton.innerHTML = '&#9664;';
 nextButton.innerHTML = '&#9654;';
 prevButton.type = 'button';
@@ -69,11 +69,11 @@ slideText.className = 'comic-slidetext';
 slideLabel = document.createElement('label');
 slideLabel.className = 'comic-slidelabel';
 slideLabel.innerHTML = 'Panel Number: ';
-slideLabel.htmlFor = 'slide-input';
+slideLabel.htmlFor = 'comic-slide-input';
 	
 slideInput = document.createElement('input');
 slideInput.type = 'text';
-slideInput.id = 'slide-input';
+slideInput.id = 'comic-slide-input';
 slideInput.addEventListener('keyup', function(event) {
 	if (event.key === 'Enter') {
 		verify(slideInput.value);
@@ -86,7 +86,7 @@ slideshow.append(slideText, line);
 
 let desc = document.createElement('h4');
 
-desc.className = 'description';
+desc.className = 'comic-description';
 desc.innerHTML = comicInfo.desc;
 
 let numbertext = document.createElement('p');
@@ -103,7 +103,7 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-	let slides = document.getElementsByClassName('slides');
+	let slides = document.getElementsByClassName('comic-slides');
 
 	if (n > slides.length) {
 		slideIndex = 1;
@@ -123,7 +123,7 @@ function showSlides(n) {
 }
 
 function verify(slide) {
-	let slides = document.getElementsByClassName('slides');
+	let slides = document.getElementsByClassName('comic-slides');
 
 	if (comic == 'av-9' && slide == '999') { // Nineventures Easter Egg
 		window.location.href = 'index.html?c=nine';
@@ -133,18 +133,18 @@ function verify(slide) {
 		window.location.href = 'index.html?c=pn';
 	} else if (!isNaN(slide) && Math.floor(slide) != slide) { // Panel Corruption Easter Egg
 		if (comic == 'av-10.5' || comic == 'trigger' || comic == 'av-choose') {
-			document.getElementsByClassName('description')[0].innerHTML = 'Failed the corruption, please try again later.';
+			document.getElementsByClassName('comic-description')[0].innerHTML = 'Failed the corruption, please try again later.';
 			return;
 		}
 		if (comic == 'pn') {
-			document.getElementsByClassName('description')[0].innerHTML = 'Come back another time for another secret.';
+			document.getElementsByClassName('comic-description')[0].innerHTML = 'Come back another time for another secret.';
 			return;
 		}
-		document.getElementsByClassName('description')[0].innerHTML = 'Well... What did you think was going to happen when you put in a decimal value?';
-		document.getElementsByClassName('slides')[slideIndex - 1].childNodes[0].src = `./panels/secrets/corrupt/${comic}.jpg`;
-		document.getElementsByClassName('slides')[slideIndex - 1].childNodes[0].visibility = 'visible';
+		document.getElementsByClassName('comic-description')[0].innerHTML = 'Well... What did you think was going to happen when you put in a decimal value?';
+		document.getElementsByClassName('comic-slides')[slideIndex - 1].childNodes[0].src = `./panels/secrets/corrupt/${comic}.jpg`;
+		document.getElementsByClassName('comic-slides')[slideIndex - 1].childNodes[0].visibility = 'visible';
 		if (comic == 'nine') {
-			document.getElementsByClassName('slides')[slideIndex - 1].childNodes[1].innerHTML = 'Aero is gone.';
+			document.getElementsByClassName('comic-slides')[slideIndex - 1].childNodes[1].innerHTML = 'Aero is gone.';
 		}
 	}
 	

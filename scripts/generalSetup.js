@@ -12,8 +12,8 @@ function correctLinks() {
 		let pageLinkName = pageLinks[i].href.substring(pageLinks[i].href.indexOf('=') + 1, pageLinks[i].href.length);
 		if (pageLinkName.includes('#')) pageLinkName = pageLinkName.substring(0, pageLinkName.indexOf('#'));
 		if (pageLinks[i].id == '' && pageLinks[i].className == '') {
-			if (pageList.includes(pageLinkName)) pageLinks[i].className = 'y';
-			else pageLinks[i].className = 'n';
+			if (pageList.includes(pageLinkName)) pageLinks[i].className = 'link';
+			else pageLinks[i].className = 'no-link';
 		}
 	}
 }
@@ -74,14 +74,11 @@ function makePage(page) {
 	avThin.className = 'av-thin';
 
 	let mainAVIMGLink = document.createElement('a');
-	let mainAVIMG = document.createElement('img');
-	mainAVIMG.src = `${titleDir}favicon.png`;
-	mainAVIMG.style.background = 'transparent';
-	mainAVIMG.style.height = '100%';
-	mainAVIMGLink.class = 'no-style';
-	mainAVIMGLink.style.paddingLeft = '35px';
-	mainAVIMGLink.style.paddingRight = '10px';
 	mainAVIMGLink.href = `${titleDir}index.html`;
+
+	let mainAVIMG = document.createElement('img');
+	mainAVIMG.src = `${titleDir}bar-icon.png`;
+	mainAVIMG.className = 'bar-image';
 	mainAVIMGLink.append(mainAVIMG);
 	dropdownDiv.append(mainAVIMGLink);
 
@@ -92,12 +89,12 @@ function makePage(page) {
 	});
 	makeButton({
 		html: 'The Wiki', 
-		color: 'pon-pink', 
+		color: 'nyork-green', 
 		link: `${wikiDir}index.html?p=main`
 	});
 	makeButton({
 		html: 'The Discord', 
-		color: 'nyork-green', 
+		color: 'pon-pink', 
 		link: 'https://discord.gg/xxRvYERs48'
 	});
 

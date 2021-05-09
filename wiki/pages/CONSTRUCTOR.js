@@ -9,18 +9,20 @@ let page = pageData;
 
 let article = document.getElementsByClassName('av-thin')[0];
 
+let pageHeader = document.createElement('span');
+
 let wikiPageName = document.createElement('h1');
 wikiPageName.innerHTML = page.name;
 wikiPageName.className = 'page-header';
 
 let topLineBreak = document.createElement('hr');
 
-article.append(wikiPageName, topLineBreak);
+pageHeader.append(wikiPageName, topLineBreak);
+article.append(pageHeader);
 
 if (page.navbox != undefined) {
 	let navbox = document.createElement('table');
-	navbox.className = "infobox";
-	navbox.style = "width: 22em";
+	navbox.className = 'wiki-infobox';
 	
 	let caption = document.createElement('caption');
 	
@@ -30,7 +32,7 @@ if (page.navbox != undefined) {
 		let navsymbol = document.createElement('img');
 		navsymbol.alt = `symbol_${page.navbox}.png`;
 		navsymbol.src = `./images/symbol_${pageName}.png`;
-		navsymbol.style = 'background-color: #333333; padding-left: 7px; height: 27px;';
+		navsymbol.className = 'wiki-navbox-symbol';
 		caption.append(navsymbol);
 	}
 	
@@ -42,14 +44,13 @@ if (page.navbox != undefined) {
 	let capdiv = document.createElement('div');
 	let capa = document.createElement('span');
 	
-	imagetd.colSpan = "2";
-	imagetd.style = "text-align: center";
+	imagetd.className = 'wiki-infobox-image-td';
+	imagetd.colSpan = 2;
 
 	if (page.navbox.file) {
-		imgnav.className = page.navbox.file[1];
-		imgnav.alt = page.navbox.file[0];
+		imgnav.className = `wiki-navbox-image${page.navbox.file[1] ? ' ' + page.navbox.file[1] : ''}`;
 		imgnav.src = `./images/${page.navbox.file[0]}`;
-		imgnav.style = 'max-width: 300px; width: 300px; vertical-align: unset;';
+		imgnav.alt = page.navbox.file[0];
 		
 		imagetd.append(imgnav);
 	}
@@ -80,12 +81,10 @@ if (page.navbox != undefined) {
 			let navboxtr = document.createElement('tr');
 			
 			let navboxth = document.createElement('th');
-			navboxth.scope = "row";
-			navboxth.style = "max-width: 11em;";
+			navboxth.scope = 'row';
 				
 			if (page.navbox.info[k].info[i].name != undefined) {
 				let navleftdiv = document.createElement('div');
-				navleftdiv.style = "display: inline-block; padding: 0.1em 0; line-height: 1.2em;";
 				navleftdiv.innerHTML = page.navbox.info[k].info[i].name;
 
 				navboxth.append(navleftdiv);
@@ -94,7 +93,6 @@ if (page.navbox != undefined) {
 			let navboxtd = document.createElement('td');
 
 			let navrightdiv = document.createElement('div');
-			navrightdiv.className = "plainlist";
 
 			let navrightul = document.createElement('ul');
 			let navrightli = document.createElement('li');
@@ -121,12 +119,10 @@ if (page.navbox != undefined) {
 				
 				navrightembed.width = 275;
 				navrightembed.height = 200;
-				navrightembed.scrolling = "no";
 				navrightembed.frameborder = "no";
 				navrightembed.allow = "autoplay";
 				navrightembed.display = "block";
 				navrightembed.src = `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${embedInfo.track}&color=%23${embedInfo.color}&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true`;
-				navrightembed.style = "vertical-align: middle; margin: 6px; width: 280px; height: 280px;"
 				
 				navboxth.append(navrightembed);
 			} else {				
