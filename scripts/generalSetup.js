@@ -3,6 +3,7 @@ let pageList = ['ert', 'the', 'doug', 'pilf', 'greme', 'mac', 'grene', 'credits'
 let avThin = document.createElement('div');
 
 let lineGuideDiv = document.createElement('div');
+lineGuideDiv.className = 'lineguide';
 
 let dropdownDiv = document.createElement('div');
 dropdownDiv.className = 'topbar';
@@ -10,7 +11,9 @@ dropdownDiv.className = 'topbar';
 window.onscroll = () => {
 	if (document.body.getBoundingClientRect().top / 56 < 1 && document.body.getBoundingClientRect().top / 56 > -3) {
 		dropdownDiv.style.backgroundColor = `rgba(68, 68, 68, ${1 + document.body.getBoundingClientRect().top / 1792}`;
-	}
+	} else if (document.body.getBoundingClientRect().top / 56 < -3) {
+		dropdownDiv.style.backgroundColor = `rgba(68, 68, 68, 0.91)`;
+	} else dropdownDiv.style.backgroundColor = `rgba(68, 68, 68, 1)`;
 }
 
 function correctLinks() {
@@ -89,7 +92,7 @@ function makePage(page) {
 	let preferenceMenuLine = document.createElement('hr');
 
 	let preferenceMenuHeader = document.createElement('h2')
-	preferenceMenuHeader.innerHTML = 'Preferences';
+	preferenceMenuHeader.innerHTML = `Prefe<a class="preference-secret" href="${comicDir}index.html?c=dk">r</a>ences`;
 	
 	let lineGuideCheckDiv = document.createElement('div');
 	lineGuideCheckDiv.title = 'Adds a line guide for people who have a hard time reading.';
@@ -177,9 +180,7 @@ function makePage(page) {
 	});
 	
 	addScript(`${titleDir}scripts/${page}Setup.js`);
-	
-	lineGuideDiv.className = 'lineguide';
-		
+			
 	document.body.append(preferenceMenuDiv, dropdownDiv, avThin, lineGuideDiv);
 }
 

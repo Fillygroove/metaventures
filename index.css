@@ -90,8 +90,6 @@
 .bar-image {
 	background: transparent;
 	height: 100%;
-	padding-left: 10px;
-	padding-right: 10px;
 	user-select: none;
 }
 
@@ -130,6 +128,7 @@ a {
 
 .av-thin p {
 	line-height: var(--lineheight);
+	transition: 1.25s; 
 }
 
 .topbar {
@@ -235,6 +234,7 @@ ul {
 	vertical-align: middle;
 	margin-left: 18px;
 	cursor: pointer;
+	padding: 0 10px 0 10px;
 }
 
 .preference-menu {
@@ -264,6 +264,10 @@ ul {
 	white-space: nowrap;
 }
 
+.preference-secret {
+	padding: 0;
+}
+
 .lineguide {
 	background-color: rgb(255, 0, 0);
 	height: 2.5px;
@@ -272,6 +276,7 @@ ul {
 	width: 100%;
 	top: 100%;
 	pointer-events: none;
+	transition: 0.2s;
 }
 
 /* The Comics */
@@ -777,7 +782,6 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Segoe UI", Arial, sans-serif;
 	font-weight: 400;
 	margin: 10px 0
 }

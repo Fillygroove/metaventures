@@ -20,8 +20,9 @@ const pageData = {
 					'<a href="index.html?p=george">George</a>',
 					'<a href="index.html?p=baeg">Baeg</a>',
 					'<a href="index.html?p=mac">Mac</a>',
-					'<a href="index.html?p=aeiou">Aeiou</a>',
 					'<a href="index.html?p=hazel">Hazel</a>',
+					'<a href="index.html?p=aeiou">Aeiou</a>',
+					'<a href="index.html?p=cea">Cea</a>',
 					'<a href="index.html?p=the">The</a>',
 					'<a href="index.html?p=taiberaque">Taiberaque (Binary System)</a>'
 				]

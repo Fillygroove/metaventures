@@ -4,5 +4,5 @@ warnings.push({
 		file: 'stub.png',
 		dims: [60, 60]
 	},
-	wormbs: 'Please be patient as Lakys finishes the War Maccine.'
+	wormbs: 'Please be patient as Lakys finishes building S5-RA.' // the War Maccine
 });
