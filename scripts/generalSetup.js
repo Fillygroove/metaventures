@@ -147,6 +147,8 @@ function makePage(page) {
 		}
 	};
 
+	if (window.localStorage.lineHeight == 'true') document.documentElement.style.setProperty('--lineheight', 3);
+
 	dropdownDiv.append(preferenceMenuButton);
 
 	let mainAVIMGLink = document.createElement('a');
