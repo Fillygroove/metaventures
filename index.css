@@ -2,6 +2,7 @@
 :root {
 	--transparency: 1;
 	--hotbar: 56px;
+	--lineheight: 1.5;
 }
 
 @font-face {
@@ -72,6 +73,7 @@
 	-o-transform: rotate(180deg);
 	transform: rotate(180deg);
 }
+
  /* General */
  .av-thin {
 	width: 90%;
@@ -88,7 +90,7 @@
 .bar-image {
 	background: transparent;
 	height: 100%;
-	padding-left: 35px;
+	padding-left: 10px;
 	padding-right: 10px;
 	user-select: none;
 }
@@ -124,6 +126,10 @@ span {
 
 a {
 	text-decoration: none;
+}
+
+.av-thin p {
+	line-height: var(--lineheight);
 }
 
 .topbar {
@@ -221,6 +227,50 @@ ul {
 
 .pixel {
 	image-rendering: crisp-edges;
+}
+
+.preference-button {
+	user-select: none;
+	font-size: 26px;
+	vertical-align: middle;
+	margin-left: 18px;
+}
+
+.preference-menu {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #444444;
+	overflow-x: hidden;
+	transition: 0.5s;
+	margin-top: var(--hotbar);
+	border-right: white;
+	border-right-style: solid;
+	border-right-width: 0px;
+}
+
+.preference-menu * {
+	padding: 0 0 0 5px;
+	inline-size: 250px;
+	color: #ffffff;
+	background-color: #444444;
+}
+
+.preference-menu div {
+	white-space: nowrap;
+}
+
+.lineguide {
+	background-color: rgb(255, 0, 0);
+	height: 2.5px;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	top: 100%;
+	pointer-events: none;
 }
 
 /* The Comics */

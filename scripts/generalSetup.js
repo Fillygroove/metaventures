@@ -2,8 +2,16 @@ let pageList = ['ert', 'the', 'doug', 'pilf', 'greme', 'mac', 'grene', 'credits'
 
 let avThin = document.createElement('div');
 
+let lineGuideDiv = document.createElement('div');
+
 let dropdownDiv = document.createElement('div');
 dropdownDiv.className = 'topbar';
+
+window.onscroll = () => {
+	if (document.body.getBoundingClientRect().top / 56 < 1 && document.body.getBoundingClientRect().top / 56 > -3) {
+		dropdownDiv.style.backgroundColor = `rgba(68, 68, 68, ${1 + document.body.getBoundingClientRect().top / 1792}`;
+	}
+}
 
 function correctLinks() {
 	let pageLinks = document.getElementsByTagName('a');
@@ -73,6 +81,74 @@ function makePage(page) {
 		
 	avThin.className = 'av-thin';
 
+	let preferenceMenuDiv = document.createElement('div');
+	preferenceMenuDiv.className = 'preference-menu';
+
+	let preferenceMenuIsOpen = false;
+
+	let preferenceMenuLine = document.createElement('hr');
+
+	let preferenceMenuHeader = document.createElement('h2')
+	preferenceMenuHeader.innerHTML = 'Preferences';
+	
+	let lineGuideCheckDiv = document.createElement('div');
+	lineGuideCheckDiv.title = 'Adds a line guide for people who have a hard time reading.';
+	lineGuideCheckDiv.onclick = () => {
+		window.localStorage.lineGuide = lineGuideCheck.checked;
+		if (window.localStorage.lineGuide == 'false') lineGuideDiv.style.top = '100%';
+	}
+
+	let lineGuideCheckLabel = document.createElement('label');
+	lineGuideCheckLabel.innerHTML = 'Line Guide';
+	lineGuideCheckLabel.htmlFor = 'lineGuide';
+
+	let lineGuideCheck = document.createElement('input');
+	if (window.localStorage.lineGuide == 'true') lineGuideCheck.checked = true;
+	lineGuideCheck.type = 'checkbox';
+	lineGuideCheck.id = 'lineGuide';
+	lineGuideCheck.name = 'lineGuide';
+
+	lineGuideCheckDiv.append(lineGuideCheckLabel, lineGuideCheck);
+
+	let lineHeightCheckDiv = document.createElement('div');
+	lineHeightCheckDiv.title = 'Adds extra space between lines for people who have a hard time reading.';
+	lineHeightCheckDiv.onclick = () => {
+		window.localStorage.lineHeight = lineHeightCheck.checked;
+		if (window.localStorage.lineHeight == 'false') document.documentElement.style.setProperty('--lineheight', 1.5);
+		if (window.localStorage.lineHeight == 'true') document.documentElement.style.setProperty('--lineheight', 3);
+	}
+
+	let lineHeightCheckLabel = document.createElement('label');
+	lineHeightCheckLabel.innerHTML = 'Line Height';
+	lineHeightCheckLabel.htmlFor = 'lineHeight';
+
+	let lineHeightCheck = document.createElement('input');
+	if (window.localStorage.lineHeight == 'true') lineHeightCheck.checked = true;
+	lineHeightCheck.type = 'checkbox';
+	lineHeightCheck.id = 'lineHeight';
+	lineHeightCheck.name = 'lineHeight';
+
+	lineHeightCheckDiv.append(lineHeightCheckLabel, lineHeightCheck);
+
+	preferenceMenuDiv.append(preferenceMenuHeader, preferenceMenuLine, lineGuideCheckDiv, lineHeightCheckDiv);
+
+	let preferenceMenuButton = document.createElement('a');
+	preferenceMenuButton.innerHTML = '&#9776;';
+	preferenceMenuButton.className = 'preference-button';
+	preferenceMenuButton.onclick = () => {
+		if (preferenceMenuIsOpen) {
+			preferenceMenuDiv.style.width = 0;
+			preferenceMenuDiv.style.borderRightWidth = '0px';
+			preferenceMenuIsOpen = false;
+		} else {
+			preferenceMenuDiv.style.width = '250px';
+			preferenceMenuDiv.style.borderRightWidth = '1px';
+			preferenceMenuIsOpen = true;
+		}
+	};
+
+	dropdownDiv.append(preferenceMenuButton);
+
 	let mainAVIMGLink = document.createElement('a');
 	mainAVIMGLink.href = `${titleDir}index.html`;
 
@@ -97,16 +173,17 @@ function makePage(page) {
 		color: 'pon-pink', 
 		link: 'https://discord.gg/xxRvYERs48'
 	});
-
-	document.body.append(dropdownDiv);
 	
 	addScript(`${titleDir}scripts/${page}Setup.js`);
 	
-	document.getElementsByTagName('body')[0].append(avThin);
+	lineGuideDiv.className = 'lineguide';
+		
+	document.body.append(preferenceMenuDiv, dropdownDiv, avThin, lineGuideDiv);
 }
 
-window.onscroll = () => {
-	if (document.body.getBoundingClientRect().top / 56 < 1 && document.body.getBoundingClientRect().top / 56 > -3) {
-		dropdownDiv.style.backgroundColor = `rgba(68, 68, 68, ${1 + document.body.getBoundingClientRect().top / 1792}`;
+window.addEventListener('mousedown', e => {	
+	if (window.localStorage.lineGuide == 'true') {		
+		lineGuideDiv.style.top = `${e.clientY}px`;
+		lineGuideShown = true;
 	}
-}
+});
