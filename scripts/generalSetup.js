@@ -183,9 +183,9 @@ function makePage(page) {
 	document.body.append(preferenceMenuDiv, dropdownDiv, avThin, lineGuideDiv);
 }
 
-window.addEventListener('mousedown', e => {	
+window.addEventListener('mousedown', mouseInfo => {	
 	if (window.localStorage.lineGuide == 'true') {		
-		lineGuideDiv.style.top = `${e.clientY}px`;
+		lineGuideDiv.style.top = `${mouseInfo.clientY}px`;
 		lineGuideShown = true;
 	}
 });
