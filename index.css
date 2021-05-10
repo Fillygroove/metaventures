@@ -500,6 +500,10 @@ ul {
 	vertical-align: unset;
 }
 
+.wiki-info {
+	background-color: #444444;
+}
+
 .aerospin {
 	position: relative;
 	display: inline-block;

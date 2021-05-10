@@ -28,7 +28,8 @@ for (let i = warnings.length - 1; i >= 0; i--) {
 	let warningWords = document.createElement('td');
 	warningWords.rowSpan = "2";
 
-	let warningWordsPassage = document.createElement('p');
+	let warningWordsPassage = document.createElement('info');
+	warningWordsPassage.className = 'wiki-info';
 	warningWordsPassage.innerHTML = warnings[i].wormbs;
 	warningWords.append(warningWordsPassage);
 
