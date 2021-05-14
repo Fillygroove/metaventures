@@ -7,8 +7,6 @@ let imageSize = {
 
 let page = pageData;
 
-let article = document.getElementsByClassName('av-thin')[0];
-
 let pageHeader = document.createElement('span');
 
 let wikiPageName = document.createElement('h1');
@@ -18,7 +16,7 @@ wikiPageName.className = 'page-header';
 let topLineBreak = document.createElement('hr');
 
 pageHeader.append(wikiPageName, topLineBreak);
-article.append(pageHeader);
+avThin.append(pageHeader);
 
 if (page.navbox != undefined) {
 	let navbox = document.createElement('table');
@@ -138,7 +136,7 @@ if (page.navbox != undefined) {
 		navbox.append(caption, navbody);
 	}
 	
-	article.append(navbox);
+	avThin.append(navbox);
 }
 
 if (page.introText != undefined) {
@@ -146,7 +144,7 @@ if (page.introText != undefined) {
 		let introText = document.createElement('p');
 		introText.innerHTML = page.introText[i];
 		
-		article.append(introText);
+		avThin.append(introText);
 	}
 }
 
@@ -157,12 +155,12 @@ if (page.categories != undefined) {
 		
 		category.innerHTML = page.categories[i].name;
 		
-		article.append(category, lineBreak);
+		avThin.append(category, lineBreak);
 		for (let j = 0; j < page.categories[i].info.length; j++) {
 			let info = document.createElement('p');
 			info.innerHTML = page.categories[i].info[j];
 			
-			article.append(info);
+			avThin.append(info);
 		}
 	}
 }

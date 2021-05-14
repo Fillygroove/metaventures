@@ -124,7 +124,7 @@ for (let i = 0; i < endnavs.length; i++) {
 
 	endTable.append(caption, tableBody);
 	
-	article.append(endTable);
+	avThin.append(endTable);
 }
 
 correctLinks();
