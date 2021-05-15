@@ -90,6 +90,7 @@ function makePage(page) {
 	let preferenceMenuIsOpen = false;
 
 	let preferenceMenuLine = document.createElement('hr');
+	preferenceMenuLine.style.margin = 0;
 
 	let preferenceMenuHeader = document.createElement('h2')
 	preferenceMenuHeader.innerHTML = `Prefe<a class="preference-secret" href="${comicDir}index.html?c=dk">r</a>ences`;
@@ -105,7 +106,8 @@ function makePage(page) {
 		checkLabel.htmlFor = input.id;
 	
 		let check = document.createElement('input');
-		if (window.localStorage.lineGuide == 'true') check.checked = true;
+		console.log(input.internalValue)
+		if (input.internalValue == 'true') check.checked = true;
 		check.type = 'checkbox';
 		check.id = input.id;
 		check.name = input.id;
@@ -122,6 +124,7 @@ function makePage(page) {
 		title: 'Line Guide',
 		id: 'lineGuide',
 		description: 'Adds a line guide for people who have a hard time reading.',
+		internalValue: window.localStorage.lineGuide,
 		onclick: function(input) {
 			window.localStorage.lineGuide = input.check.checked;
 			if (window.localStorage.lineGuide == 'false') lineGuideDiv.style.top = '100%';
@@ -132,6 +135,7 @@ function makePage(page) {
 		title: 'Line Height',
 		id: 'lineHeight',
 		description: 'Adds extra space between lines for people who have a hard time reading.',
+		internalValue: window.localStorage.lineHeight,
 		onclick: function(input) {
 			window.localStorage.lineHeight = input.check.checked;
 			
