@@ -160,10 +160,11 @@ function makePage(page) {
 			onclick: function(input) {
 				window.localStorage.speedrun = input.check.checked;
 				if (page == 'comic') {
+					nextButton.className = window.localStorage.speedrun == 'true' ? (speedrunFinished ? 'comic-fast-next' : 'comic-next') : 'comic-next';
 					prevButton.className = window.localStorage.speedrun == 'true' ? 'comic-fast-prev' : 'comic-prev';
-					nextButton.className = 'comic-next';
 					slideText.style.visibility = window.localStorage.speedrun == 'true' ? 'hidden' : 'visible';
 					slideSpeedText.style.visibility = window.localStorage.speedrun == 'true' ? 'visible' : 'hidden';
+					if (speedrunFinished) currentSlide(slides.length);
 				}
 			}
 		}]

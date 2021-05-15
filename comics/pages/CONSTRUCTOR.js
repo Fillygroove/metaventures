@@ -1,5 +1,6 @@
 let directory = `${comicInfo.folder}`;
 let speedrunTime = 0;
+let speedrunFinished = false;
 let slides = document.getElementsByClassName('comic-slides');
 
 if (comicInfo.rewindTo != undefined) makeButton({
@@ -74,6 +75,7 @@ nextButton.onclick = () => {
 			if (slideIndex == slides.length) {
 				clearInterval(timerInterval);
 				nextButton.className = 'comic-fast-next';
+				speedrunFinished = true;
 			}
 		}, 1);
 	}
