@@ -46,4 +46,4 @@ addText('The Discord is a little invite to a server that allows you to chat with
 
 addHead('The Credits!');
 
-addText('If you would like to see who helped out with the Metaventures world, go <a href="./wiki/index.html?p=credits" class="y">here</a>!');
+addText('If you would like to see who helped out with the Metaventures world, go <a href="./wiki/index.html?p=credits" class="link">here</a>!');
