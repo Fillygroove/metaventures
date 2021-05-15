@@ -1,5 +1,5 @@
 let comicInfo = {
-	title: 'ARCHIVED - Gallery of the planets',
+	title: 'ARCHIVED - Miscellaneous',
 	desc: 'Some weird things that don\'t belong anywhere else.',
 	folder: 'old/old-misc/',
 	panels: [{
