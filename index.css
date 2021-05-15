@@ -261,15 +261,39 @@ ul {
 	inline-size: 250px;
 	color: #ffffff;
 	background-color: #444444;
+	user-select: none;
+}
+
+.preference-menu a {
+	user-select:text;
 }
 
 .preference-menu div {
 	white-space: nowrap;
 }
 
-.preference-menu label, 
-.preference-menu h2 {
-	user-select: none;
+.preference-collapse-div {
+	border-color: transparent transparent white;
+	border-width: 1px;
+	border-style: solid;
+	overflow: hidden;
+}
+
+.preference-collapse-closed::after {
+	content: '+';
+	float: right;
+	padding-right: 18px;
+}
+
+.preference-collapse-opened::after {
+	content: '-';
+	float: right;
+	padding-right: 18px;
+}
+
+.preference-inner {
+	height: 0px;
+	transition: 0.25s;
 }
 
 .preference-secret {

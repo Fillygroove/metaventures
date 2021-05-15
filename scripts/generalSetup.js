@@ -97,58 +97,89 @@ function makePage(page) {
 
 	preferenceMenuDiv.append(preferenceMenuHeader, preferenceMenuLine);
 
-	function addPreference(input) {
-		let checkDiv = document.createElement('div');
-		checkDiv.title = input.description;
+	function addPreferenceCategory(input) {
+		let preferenceAccess = document.createElement('div');
+		preferenceAccess.className = 'preference-collapse-div';
 	
-		let checkLabel = document.createElement('label');
-		checkLabel.innerHTML = input.title;
-		checkLabel.htmlFor = input.id;
-	
-		let check = document.createElement('input');
-		console.log(input.internalValue)
-		if (input.internalValue == 'true') check.checked = true;
-		check.type = 'checkbox';
-		check.id = input.id;
-		check.name = input.id;
+		preferenceAccessHeader = document.createElement('h3');
+		preferenceAccessHeader.innerHTML = input.name;
+		preferenceAccessHeader.className = 'preference-collapse-closed';
 
-		checkDiv.onclick = () => {
-			input.onclick({check});
+		let preferenceAccessInner = document.createElement('div');
+		preferenceAccessInner.className = 'preference-inner';
+		preferenceAccessInner.style.height = '0px';
+
+		function addPreference(input) {
+			let checkDiv = document.createElement('div');
+			checkDiv.title = input.description;
+		
+			let checkLabel = document.createElement('label');
+			checkLabel.innerHTML = input.title;
+			checkLabel.htmlFor = input.id;
+		
+			let check = document.createElement('input');
+
+			if (input.internalValue == 'true') check.checked = true;
+			check.type = 'checkbox';
+			check.id = input.id;
+			check.name = input.id;
+
+			checkDiv.onclick = () => {
+				input.onclick({check});
+			}
+		
+			checkDiv.append(checkLabel, check);
+			preferenceAccessInner.append(checkDiv);
 		}
-	
-		checkDiv.append(checkLabel, check);
-		preferenceMenuDiv.append(checkDiv);
+
+		if (input.options != undefined) {
+			for (let i = 0; i < input.options.length; i++) addPreference(input.options[i]);
+		}
+
+		preferenceAccessHeader.onclick = () => {
+			if (preferenceAccessInner.style.height != '0px') {
+				preferenceAccessHeader.className = 'preference-collapse-closed';
+				preferenceAccessInner.style.height = '0px';
+			} else {
+				preferenceAccessInner.style.height = `${27 * input.options.length}px`;
+				preferenceAccessHeader.className = 'preference-collapse-opened';
+			}
+		};
+
+		preferenceAccess.append(preferenceAccessHeader, preferenceAccessInner);	
+		preferenceMenuDiv.append(preferenceAccess);	
 	}
 
-	addPreference({
-		title: 'Line Guide',
-		id: 'lineGuide',
-		description: 'Adds a line guide for people who have a hard time reading.',
-		internalValue: window.localStorage.lineGuide,
-		onclick: function(input) {
-			window.localStorage.lineGuide = input.check.checked;
-			if (window.localStorage.lineGuide == 'false') lineGuideDiv.style.top = '100%';
-		}
-	});
-
-	addPreference({
-		title: 'Line Height',
-		id: 'lineHeight',
-		description: 'Adds extra space between lines for people who have a hard time reading.',
-		internalValue: window.localStorage.lineHeight,
-		onclick: function(input) {
-			window.localStorage.lineHeight = input.check.checked;
-			
-			document.body.className = 'transition';
-
-			if (window.localStorage.lineHeight == 'false') {
-				document.documentElement.style.setProperty('--lineheight', 1.5);
+	addPreferenceCategory({
+		name: 'Accessibility',
+		options: [{
+			title: 'Line Guide',
+			id: 'lineGuide',
+			description: 'Adds a line guide for people who have a hard time reading.',
+			internalValue: window.localStorage.lineGuide,
+			onclick: function(input) {
+				window.localStorage.lineGuide = input.check.checked;
+				if (window.localStorage.lineGuide == 'false') lineGuideDiv.style.top = '100%';
 			}
-
-			if (window.localStorage.lineHeight == 'true') {
-				document.documentElement.style.setProperty('--lineheight', 3);
+		}, {
+			title: 'Line Height',
+			id: 'lineHeight',
+			description: 'Adds extra space between lines for people who have a hard time reading.',
+			internalValue: window.localStorage.lineHeight,
+			onclick: function(input) {
+				window.localStorage.lineHeight = input.check.checked;
+				
+				document.body.className = 'transition';
+	
+				if (window.localStorage.lineHeight == 'false') {
+					document.documentElement.style.setProperty('--lineheight', 1.5);
+				}
+	
+				if (window.localStorage.lineHeight == 'true') {
+					document.documentElement.style.setProperty('--lineheight', 3);
+				}
 			}
-		}
+		}]
 	});
 
 	let preferenceMenuButton = document.createElement('a');
