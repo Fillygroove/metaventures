@@ -1,4 +1,6 @@
 let directory = `${comicInfo.folder}`;
+let speedrunTime = 0;
+let slides = document.getElementsByClassName('comic-slides');
 
 if (comicInfo.rewindTo != undefined) makeButton({
 	html: 'Rodney Rewind', 
@@ -50,27 +52,49 @@ for (let i = 0; i < comicInfo.panels.length; i++) {
 let line = document.createElement('hr');
 let prevButton = document.createElement('a');
 let nextButton = document.createElement('a');
-prevButton.className = 'comic-prev';
+prevButton.className = window.localStorage.speedrun == 'true' ? 'comic-fast-prev' : 'comic-prev';
+
 nextButton.className = 'comic-next';
 prevButton.innerHTML = '&#9664;';
 nextButton.innerHTML = '&#9654;';
 prevButton.type = 'button';
 nextButton.type = 'button';
 prevButton.onclick = () => {
-	showSlides(slideIndex -= 1);
+	if (window.localStorage.speedrun == 'false') showSlides(slideIndex -= 1);
 };
 nextButton.onclick = () => {
-	showSlides(slideIndex += 1);
+	let timerInterval;
+
+	if (nextButton.className != 'comic-fast-next') showSlides(slideIndex += 1);
+
+	if (slideIndex == 2 && speedrunTime == 0 && window.localStorage.speedrun == 'true') {
+		timerInterval = setInterval(function() {
+			speedrunTime++;
+			slideTimer.innerHTML = `Timer: ${String(Math.floor((speedrunTime) / 100) % 60).padStart(2, '0')}.${String(speedrunTime % 100).padStart(2, '0')}`;
+			if (slideIndex == slides.length) {
+				clearInterval(timerInterval);
+				nextButton.className = 'comic-fast-next';
+			}
+		}, 1);
+	}
 };
+
+let slideDiv = document.createElement('div');
+slideDiv.className = 'comic-slidetext';
 
 let slideText = document.createElement('div');
 slideText.className = 'comic-slidetext';
+slideText.style = 'position: absolute';
+
+let slideSpeedText = document.createElement('div');
+slideSpeedText.className = 'comic-slidetext';
+slideSpeedText.style = 'position: absolute';
 
 slideLabel = document.createElement('label');
 slideLabel.className = 'comic-slidelabel';
 slideLabel.innerHTML = 'Panel Number: ';
 slideLabel.htmlFor = 'comic-slide-input';
-	
+
 slideInput = document.createElement('input');
 slideInput.type = 'text';
 slideInput.id = 'comic-slide-input';
@@ -80,9 +104,18 @@ slideInput.addEventListener('keyup', function(event) {
 	}
 });
 
-slideText.append(prevButton, nextButton, slideLabel, slideInput);
+slideTimer = document.createElement('p');
+slideTimer.innerHTML = 'Timer: 00.00';
 
-slideshow.append(slideText, line);
+slideText.style.visibility = window.localStorage.speedrun == 'true' ? 'hidden' : 'visible';
+slideSpeedText.style.visibility = window.localStorage.speedrun == 'true' ? 'visible' : 'hidden';
+
+slideText.append(slideLabel, slideInput)
+slideSpeedText.append(slideTimer)
+
+slideDiv.append(prevButton, nextButton, slideText, slideSpeedText);
+
+slideshow.append(slideDiv, line);
 
 let desc = document.createElement('h4');
 
@@ -103,8 +136,6 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-	let slides = document.getElementsByClassName('comic-slides');
-
 	if (n > slides.length) {
 		slideIndex = 1;
 	}
@@ -123,8 +154,6 @@ function showSlides(n) {
 }
 
 function verify(slide) {
-	let slides = document.getElementsByClassName('comic-slides');
-
 	if (comic == 'av-9' && slide == '999') { // Nineventures Easter Egg
 		window.location.href = 'index.html?c=nine';
 	} else if (comic == 'nine' && slideIndex == 9 && (slide == '9' || slide == 'nine')) { // Metanineventures Easter Egg
@@ -158,8 +187,10 @@ function verify(slide) {
 }
 
 window.addEventListener('keydown', function(event) {
-	if (event.key == 'ArrowLeft') showSlides(slideIndex -= 1);
-	if (event.key == 'ArrowRight') showSlides(slideIndex += 1);
+	if (window.localStorage.speedrun == 'false') {
+		if (event.key == 'ArrowLeft') showSlides(slideIndex -= 1);
+		if (event.key == 'ArrowRight') showSlides(slideIndex += 1);
+	}
 });
 
 correctLinks();

@@ -272,6 +272,11 @@ ul {
 	white-space: nowrap;
 }
 
+.preference-menu input {
+	inline-size: 0px;
+	padding-left: 5px;
+}
+
 .preference-collapse-div {
 	border-color: transparent transparent white;
 	border-width: 1px;
@@ -294,6 +299,10 @@ ul {
 .preference-inner {
 	height: 0px;
 	transition: 0.25s;
+}
+
+.preference-inner div {
+	line-height: 28px;	
 }
 
 .preference-secret {
@@ -347,7 +356,9 @@ ul {
 }
 
 .comic-prev,
-.comic-next {
+.comic-next,
+.comic-fast-prev,
+.comic-fast-next {
 	left: 0;
 	cursor: pointer;
 	position: absolute;
@@ -367,11 +378,19 @@ ul {
 	bottom: 3.5px;
 }
 
-.comic-next {
+.comic-next,
+.comic-fast-next {
 	left: auto;
 	right: 0;
 	border-radius: 0.6em;
 	float: right;
+}
+
+.comic-fast-prev,
+.comic-fast-next {
+	background-color: rgba(255, 0, 0, 0.4);
+	border-color: #ff0000;
+	cursor: not-allowed;
 }
 
 .comic-prev:hover,
@@ -383,6 +402,11 @@ ul {
 	text-align: center; 
 	background-color: transparent;
 	height: 1.4em;
+	margin: auto;
+}
+
+.comic-slidetext div {
+	margin-left: 25%;
 }
 
 .comic-slidelabel {

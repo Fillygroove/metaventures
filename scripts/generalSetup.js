@@ -141,7 +141,7 @@ function makePage(page) {
 				preferenceAccessHeader.className = 'preference-collapse-closed';
 				preferenceAccessInner.style.height = '0px';
 			} else {
-				preferenceAccessInner.style.height = `${27 * input.options.length}px`;
+				preferenceAccessInner.style.height = `${28 * input.options.length}px`;
 				preferenceAccessHeader.className = 'preference-collapse-opened';
 			}
 		};
@@ -149,6 +149,25 @@ function makePage(page) {
 		preferenceAccess.append(preferenceAccessHeader, preferenceAccessInner);	
 		preferenceMenuDiv.append(preferenceAccess);	
 	}
+
+	addPreferenceCategory({
+		name: 'The Comics',
+		options: [{
+			title: 'Speedrun Mode',
+			id: 'speedrun',
+			description: 'For when your cousins\' MV-related birthday is tomorrow.',
+			internalValue: window.localStorage.speedrun,
+			onclick: function(input) {
+				window.localStorage.speedrun = input.check.checked;
+				if (page == 'comic') {
+					prevButton.className = window.localStorage.speedrun == 'true' ? 'comic-fast-prev' : 'comic-prev';
+					nextButton.className = 'comic-next';
+					slideText.style.visibility = window.localStorage.speedrun == 'true' ? 'hidden' : 'visible';
+					slideSpeedText.style.visibility = window.localStorage.speedrun == 'true' ? 'visible' : 'hidden';
+				}
+			}
+		}]
+	});
 
 	addPreferenceCategory({
 		name: 'Accessibility',
