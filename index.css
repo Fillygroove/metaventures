@@ -128,7 +128,6 @@ a {
 
 .av-thin p {
 	line-height: var(--lineheight);
-/*	transition: 1.25s; */
 }
 
 .transition p {
@@ -266,6 +265,11 @@ ul {
 
 .preference-menu div {
 	white-space: nowrap;
+}
+
+.preference-menu label, 
+.preference-menu h2 {
+	user-select: none;
 }
 
 .preference-secret {
