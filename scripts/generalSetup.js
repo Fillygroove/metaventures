@@ -117,8 +117,13 @@ function makePage(page) {
 	lineHeightCheckDiv.title = 'Adds extra space between lines for people who have a hard time reading.';
 	lineHeightCheckDiv.onclick = () => {
 		window.localStorage.lineHeight = lineHeightCheck.checked;
-		if (window.localStorage.lineHeight == 'false') document.documentElement.style.setProperty('--lineheight', 1.5);
-		if (window.localStorage.lineHeight == 'true') document.documentElement.style.setProperty('--lineheight', 3);
+		document.body.className = 'transition';
+		if (window.localStorage.lineHeight == 'false') {
+			document.documentElement.style.setProperty('--lineheight', 1.5);
+		}
+		if (window.localStorage.lineHeight == 'true') {
+			document.documentElement.style.setProperty('--lineheight', 3);
+		}
 	}
 
 	let lineHeightCheckLabel = document.createElement('label');

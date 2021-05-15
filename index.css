@@ -128,7 +128,11 @@ a {
 
 .av-thin p {
 	line-height: var(--lineheight);
-	transition: 1.25s; 
+/*	transition: 1.25s; */
+}
+
+.transition p {
+	transition: 1.2s;
 }
 
 .topbar {
