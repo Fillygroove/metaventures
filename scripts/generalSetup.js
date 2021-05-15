@@ -93,52 +93,59 @@ function makePage(page) {
 
 	let preferenceMenuHeader = document.createElement('h2')
 	preferenceMenuHeader.innerHTML = `Prefe<a class="preference-secret" href="${comicDir}index.html?c=dk">r</a>ences`;
+
+	preferenceMenuDiv.append(preferenceMenuHeader, preferenceMenuLine);
+
+	function addPreference(input) {
+		let checkDiv = document.createElement('div');
+		checkDiv.title = input.description;
 	
-	let lineGuideCheckDiv = document.createElement('div');
-	lineGuideCheckDiv.title = 'Adds a line guide for people who have a hard time reading.';
-	lineGuideCheckDiv.onclick = () => {
-		window.localStorage.lineGuide = lineGuideCheck.checked;
-		if (window.localStorage.lineGuide == 'false') lineGuideDiv.style.top = '100%';
+		let checkLabel = document.createElement('label');
+		checkLabel.innerHTML = input.title;
+		checkLabel.htmlFor = input.id;
+	
+		let check = document.createElement('input');
+		if (window.localStorage.lineGuide == 'true') check.checked = true;
+		check.type = 'checkbox';
+		check.id = input.id;
+		check.name = input.id;
+
+		checkDiv.onclick = () => {
+			input.onclick({check});
+		}
+	
+		checkDiv.append(checkLabel, check);
+		preferenceMenuDiv.append(checkDiv);
 	}
 
-	let lineGuideCheckLabel = document.createElement('label');
-	lineGuideCheckLabel.innerHTML = 'Line Guide';
-	lineGuideCheckLabel.htmlFor = 'lineGuide';
-
-	let lineGuideCheck = document.createElement('input');
-	if (window.localStorage.lineGuide == 'true') lineGuideCheck.checked = true;
-	lineGuideCheck.type = 'checkbox';
-	lineGuideCheck.id = 'lineGuide';
-	lineGuideCheck.name = 'lineGuide';
-
-	lineGuideCheckDiv.append(lineGuideCheckLabel, lineGuideCheck);
-
-	let lineHeightCheckDiv = document.createElement('div');
-	lineHeightCheckDiv.title = 'Adds extra space between lines for people who have a hard time reading.';
-	lineHeightCheckDiv.onclick = () => {
-		window.localStorage.lineHeight = lineHeightCheck.checked;
-		document.body.className = 'transition';
-		if (window.localStorage.lineHeight == 'false') {
-			document.documentElement.style.setProperty('--lineheight', 1.5);
+	addPreference({
+		title: 'Line Guide',
+		id: 'lineGuide',
+		description: 'Adds a line guide for people who have a hard time reading.',
+		onclick: function(input) {
+			window.localStorage.lineGuide = input.check.checked;
+			if (window.localStorage.lineGuide == 'false') lineGuideDiv.style.top = '100%';
 		}
-		if (window.localStorage.lineHeight == 'true') {
-			document.documentElement.style.setProperty('--lineheight', 3);
+	});
+
+	addPreference({
+		title: 'Line Height',
+		id: 'lineHeight',
+		description: 'Adds extra space between lines for people who have a hard time reading.',
+		onclick: function(input) {
+			window.localStorage.lineHeight = input.check.checked;
+			
+			document.body.className = 'transition';
+
+			if (window.localStorage.lineHeight == 'false') {
+				document.documentElement.style.setProperty('--lineheight', 1.5);
+			}
+
+			if (window.localStorage.lineHeight == 'true') {
+				document.documentElement.style.setProperty('--lineheight', 3);
+			}
 		}
-	}
-
-	let lineHeightCheckLabel = document.createElement('label');
-	lineHeightCheckLabel.innerHTML = 'Line Height';
-	lineHeightCheckLabel.htmlFor = 'lineHeight';
-
-	let lineHeightCheck = document.createElement('input');
-	if (window.localStorage.lineHeight == 'true') lineHeightCheck.checked = true;
-	lineHeightCheck.type = 'checkbox';
-	lineHeightCheck.id = 'lineHeight';
-	lineHeightCheck.name = 'lineHeight';
-
-	lineHeightCheckDiv.append(lineHeightCheckLabel, lineHeightCheck);
-
-	preferenceMenuDiv.append(preferenceMenuHeader, preferenceMenuLine, lineGuideCheckDiv, lineHeightCheckDiv);
+	});
 
 	let preferenceMenuButton = document.createElement('a');
 	preferenceMenuButton.innerHTML = '&#9776;';
