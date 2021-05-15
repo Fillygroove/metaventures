@@ -98,16 +98,16 @@ function makePage(page) {
 	preferenceMenuDiv.append(preferenceMenuHeader, preferenceMenuLine);
 
 	function addPreferenceCategory(input) {
-		let preferenceAccess = document.createElement('div');
-		preferenceAccess.className = 'preference-collapse-div';
+		let preference = document.createElement('div');
+		preference.className = 'preference-collapse-div';
 	
-		preferenceAccessHeader = document.createElement('h3');
-		preferenceAccessHeader.innerHTML = input.name;
-		preferenceAccessHeader.className = 'preference-collapse-closed';
+		preferenceHeader = document.createElement('h3');
+		preferenceHeader.innerHTML = input.name;
+		preferenceHeader.className = 'preference-collapse-closed';
 
-		let preferenceAccessInner = document.createElement('div');
-		preferenceAccessInner.className = 'preference-inner';
-		preferenceAccessInner.style.height = '0px';
+		let preferenceInner = document.createElement('div');
+		preferenceInner.className = 'preference-inner';
+		preferenceInner.style.height = '0px';
 
 		function addPreference(input) {
 			let checkDiv = document.createElement('div');
@@ -129,25 +129,25 @@ function makePage(page) {
 			}
 		
 			checkDiv.append(checkLabel, check);
-			preferenceAccessInner.append(checkDiv);
+			preferenceInner.append(checkDiv);
 		}
 
 		if (input.options != undefined) {
 			for (let i = 0; i < input.options.length; i++) addPreference(input.options[i]);
 		}
 
-		preferenceAccessHeader.onclick = () => {
-			if (preferenceAccessInner.style.height != '0px') {
-				preferenceAccessHeader.className = 'preference-collapse-closed';
-				preferenceAccessInner.style.height = '0px';
+		preferenceHeader.onclick = () => {
+			if (preferenceInner.style.height != '0px') {
+				preferenceHeader.className = 'preference-collapse-closed';
+				preferenceInner.style.height = '0px';
 			} else {
-				preferenceAccessInner.style.height = `${28 * input.options.length}px`;
-				preferenceAccessHeader.className = 'preference-collapse-opened';
+				preferenceInner.style.height = `${28 * input.options.length}px`;
+				preferenceHeader.className = 'preference-collapse-opened';
 			}
 		};
 
-		preferenceAccess.append(preferenceAccessHeader, preferenceAccessInner);	
-		preferenceMenuDiv.append(preferenceAccess);	
+		preference.append(preferenceHeader, preferenceInner);	
+		preferenceMenuDiv.append(preference);	
 	}
 
 	addPreferenceCategory({

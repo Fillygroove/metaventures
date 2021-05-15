@@ -282,6 +282,7 @@ ul {
 	border-width: 1px;
 	border-style: solid;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 .preference-collapse-closed::after {
