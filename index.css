@@ -68,7 +68,7 @@
 
 * {
 	box-sizing: border-box;
-	font-family: Ubuntu;
+	font-family: 'Ubuntu', sans-serif;
 	background-color: var(--background);
 }
 
@@ -106,20 +106,20 @@ h2 {
 	background-color: rgba(0, 0, 0, 0);
 	padding-left: 80px;
 	padding-right: 80px;
-	font-family: Ubuntu;
+	font-family: 'Ubuntu', sans-serif;
 	overflow-wrap: anywhere;
 }
 
 h3 {
 	background-color: rgba(0, 0, 0, 0);
-	font-family: Ubuntu !important;
+	font-family: 'Ubuntu', sans-serif !important;
 	line-height: 1em;
 	margin: 0;
 }
 
 h4 {
 	background-color: rgba(0, 0, 0, 0);
-	font-family: Ubuntu !important;
+	font-family: 'Ubuntu', sans-serif !important;
 	line-height: 0.9em;
 	margin: 0;
 }
@@ -225,7 +225,7 @@ a {
 }
 
 .page-header {
-	font-family: 'Ubuntu';
+	font-family: 'Ubuntu', sans-serif;
 	margin-top: -40px;
 }
 
@@ -437,7 +437,7 @@ ul {
 
 .comic-description {
 	text-align: center;
-	font-family: Ubuntu;
+	font-family: 'Ubuntu', sans-serif;
 	background-color: rgba(0, 0, 0, 0);
 	color: #ffffff;
 	font-size: 17px;
@@ -704,7 +704,7 @@ code,
 kbd,
 pre,
 samp {
-	font-family: Ubuntu;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 1em
 }
 
@@ -804,7 +804,7 @@ textarea {
 /* End extract */
 html,
 body {
-	font-family: Ubuntu;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
 	background-size: 10em;
