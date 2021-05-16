@@ -250,6 +250,12 @@ function makePage(page) {
 	addScript(`${titleDir}scripts/${page}Setup.js`);
 			
 	document.body.append(preferenceMenuDiv, dropdownDiv, avThin, lineGuideDiv);
+/*
+	document.documentElement.style.setProperty('--background', '#522F2F');
+	document.documentElement.style.setProperty('--topcolor', 'rgba(232, 160, 160, 1)');
+	document.documentElement.style.setProperty('--avthin', 'rgba(216, 111, 111, var(--transparency)');
+	document.documentElement.style.setProperty('--infobox', '#D68383');
+	document.documentElement.style.setProperty('--menus', '#C45454');*/
 }
 
 window.addEventListener('mousedown', mouseInfo => {	

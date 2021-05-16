@@ -3,6 +3,12 @@
 	--transparency: 1;
 	--hotbar: 56px;
 	--lineheight: 1.5;
+
+	--background: #333333;
+	--topcolor: rgba(68, 68, 68, 1);
+	--avthin: rgba(85, 85, 85, var(--transparency));
+	--infobox: #555555;
+	--menus: #444444;
 }
 
 @font-face {
@@ -63,7 +69,7 @@
 * {
 	box-sizing: border-box;
 	font-family: Ubuntu;
-	background-color: #333333;
+	background-color: var(--background);
 }
 
 .flip-page {
@@ -78,7 +84,7 @@
  .av-thin {
 	width: 90%;
 	color: #ffffff;
-	background-color: rgba(85, 85, 85, var(--transparency));
+	background-color: var(--avthin);
 	margin: 0 auto 0 auto !important;
 	border-radius: 0 0 1em 1em;
 	padding-bottom: 4px;
@@ -136,7 +142,7 @@ a {
 
 .topbar {
 	color: #fff !important;
-	background-color: rgba(68, 68, 68, 1);
+	background-color: var(--topcolor);
 	position: fixed;
 	z-index: 99;
 	white-space: nowrap;
@@ -247,7 +253,7 @@ ul {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #444444;
+	background-color: var(--menus);
 	overflow-x: hidden;
 	transition: 0.5s;
 	margin-top: var(--hotbar);
@@ -260,12 +266,12 @@ ul {
 	padding: 0 0 0 5px;
 	inline-size: 250px;
 	color: #ffffff;
-	background-color: #444444;
+	background-color: var(--menus);
 	user-select: none;
 }
 
 .preference-menu a {
-	user-select:text;
+	user-select: text;
 }
 
 .preference-menu div {
@@ -449,7 +455,7 @@ ul {
 .wiki-infobox {
 	border: 1px solid #ffffff;
 	border-spacing: 3px;
-	background-color: #555555;
+	background-color: var(--infobox);
 	color: white;
 	margin: 0.5em 1em 0.5em 1em;
 	padding: 0.2em;
@@ -478,12 +484,12 @@ ul {
 }
 
 .wiki-infobox-image-td {
-	background-color: #555555;
+	background-color: var(--infobox);
 	text-align: center;
 }
 
 .wiki-navbox td {
-	background-color: #555555;
+	background-color: var(--infobox);
 }
 
 .wiki-navbox,
@@ -491,7 +497,7 @@ ul {
 	border: 1px solid #ffffff;
 	border-spacing: 3px;
 	box-sizing: border-box;
-	background-color: #555555;
+	background-color: var(--infobox);
 	color: white;
 	margin: 1em auto 1em;
 	padding: 1px;
@@ -540,30 +546,30 @@ ul {
 
 .wiki-warning {
 	width: 50%;
-	background-color: #444444;
+	background-color: var(--menus);
 	float: right;
 	margin: 0.4em 1em;
 }
 
 .wiki-warning td {
-	background-color: #444444;
+	background-color: var(--menus);
 }
 
 .wiki-navbox-symbol {
-	background-color: #333333;
+	background-color: var(--background);
 	padding-left: 7px;
 	height: 27px;
 }
 
 .wiki-navbox-image {
-	background-color: #555555;
+	background-color: var(--infobox);
 	max-width: 300px;
 	width: 300px;
 	vertical-align: unset;
 }
 
 .wiki-info {
-	background-color: #444444;
+	background-color: var(--menus);
 }
 
 .aerospin {
