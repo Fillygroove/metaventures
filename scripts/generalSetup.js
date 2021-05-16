@@ -165,6 +165,7 @@ function makePage(page) {
 					slideText.style.visibility = window.localStorage.speedrun == 'true' ? 'hidden' : 'visible';
 					slideSpeedText.style.visibility = window.localStorage.speedrun == 'true' ? 'visible' : 'hidden';
 					if (speedrunFinished) currentSlide(slides.length);
+					else currentSlide(1);
 				}
 			}
 		}]
