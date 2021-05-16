@@ -104,6 +104,7 @@ function makePage(page) {
 		preferenceHeader = document.createElement('h3');
 		preferenceHeader.innerHTML = input.name;
 		preferenceHeader.className = 'preference-collapse-closed';
+		preferenceHeader.id = input.id;
 
 		let preferenceInner = document.createElement('div');
 		preferenceInner.className = 'preference-inner';
@@ -138,11 +139,11 @@ function makePage(page) {
 
 		preferenceHeader.onclick = () => {
 			if (preferenceInner.style.height != '0px') {
-				preferenceHeader.className = 'preference-collapse-closed';
+				document.getElementById(input.id).className = 'preference-collapse-closed';
 				preferenceInner.style.height = '0px';
 			} else {
 				preferenceInner.style.height = `${28 * input.options.length}px`;
-				preferenceHeader.className = 'preference-collapse-opened';
+				document.getElementById(input.id).className = 'preference-collapse-opened';
 			}
 		};
 
@@ -152,6 +153,7 @@ function makePage(page) {
 
 	addPreferenceCategory({
 		name: 'The Comics',
+		id: 'comics',
 		options: [{
 			title: 'Speedrun Mode',
 			id: 'speedrun',
@@ -173,6 +175,7 @@ function makePage(page) {
 
 	addPreferenceCategory({
 		name: 'Accessibility',
+		id: 'access',
 		options: [{
 			title: 'Line Guide',
 			id: 'lineGuide',
