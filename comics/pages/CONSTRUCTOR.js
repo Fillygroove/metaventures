@@ -26,7 +26,7 @@ for (let i = 0; i < comicInfo.panels.length; i++) {
 
 	let panel = document.createElement('img');
 	
-	panel.src = `./panels/${directory}/${comicInfo.panels[i].panel}`;
+	panel.src = `./panels/${directory}${comicInfo.panels[i].panel}`;
 	panel.className = `comic-panel${comicInfo.panels[i].classTitle ? ' ' + comicInfo.panels[i].classTitle : ''}`;
 
 	if (comicInfo.panels[i].link !== undefined) {
