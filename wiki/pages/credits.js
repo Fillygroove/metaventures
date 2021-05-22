@@ -48,7 +48,8 @@ let pageData = {
 		name: 'PS3_33',
 		info: [
 			'Created BCU-1 (Blyu) and BCU-3 (Object/Object).',
-			'Added randomized quotes to the 404 pages.'
+			'Added randomized quotes to the 404 pages.',
+			'Suggested the Abyss theme.'
 		]
 	}, {
 		name: 'KoleOBlack',

@@ -20,7 +20,7 @@ let themes = {
 		infobox: '#3A1634',
 		menus: '#3261B2'
 	},
-	abyss:{
+	abyss: { // By PS3_33
 		avThin: [48, 48, 48],
 		topColor: [89, 74, 108],
 		background: '#26113F',
