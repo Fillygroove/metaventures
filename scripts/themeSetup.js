@@ -24,7 +24,7 @@ let themes = {
 		avThin: [48, 48, 48],
 		topColor: [89, 74, 108],
 		background: '#26113F',
-		infobox: '#7e57ad',
+		infobox: '#7E57AD',
 		menus: '#8d65BE'
 	}
 };
