@@ -3,5 +3,5 @@ let theme = {
     topColor: [52, 49, 72],
     background: '#842066',
     infobox: '#3A1634',
-    menus: '#8e5124'
+    menus: '#8E5124'
 };
