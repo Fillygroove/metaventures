@@ -180,7 +180,8 @@ function makePage(page) {
 			dropdownValues: {
 				default: 'Default',
 				cherryBlossom: 'Cherry Blossom',
-				the: 'The'
+				the: 'The',
+				abyss: 'Abyss'
 			},
 			onclick: function(input) {
 				window.localStorage.theme = input.checkSelect.value;

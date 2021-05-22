@@ -18,7 +18,14 @@ let themes = {
 		topColor: [52, 49, 72],
 		background: '#842066',
 		infobox: '#3A1634',
-		menus: '#3261b2'
+		menus: '#3261B2'
+	},
+	abyss:{
+		avThin: [48, 48, 48],
+		topColor: [89, 74, 108],
+		background: '#26113F',
+		infobox: '#7e57ad',
+		menus: '#8d65BE'
 	}
 };
 
