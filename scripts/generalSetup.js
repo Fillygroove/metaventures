@@ -165,6 +165,8 @@ function makePage(page) {
 			}
 		};
 
+		if (input.internalValue == undefined) input.internalValue = input.default;
+
 		preference.append(preferenceHeader, preferenceInner);	
 		preferenceMenuDiv.append(preference);	
 	}
@@ -177,6 +179,7 @@ function makePage(page) {
 			id: 'theme',
 			description: 'Wearing tinted glasses for cheap.',
 			internalValue: window.localStorage.theme,
+			default: 'default',
 			dropdownValues: {
 				default: 'Default',
 				cherryBlossom: 'Cherry Blossom',
@@ -198,6 +201,7 @@ function makePage(page) {
 			id: 'speedrun',
 			description: 'For when your cousins\' MV-related birthday is tomorrow.',
 			internalValue: window.localStorage.speedrun,
+			default: false,
 			onclick: function(input) {
 				window.localStorage.speedrun = input.check.checked;
 				if (page == 'comic') {
@@ -220,6 +224,7 @@ function makePage(page) {
 			id: 'lineGuide',
 			description: 'Adds a line guide for people who have a hard time reading.',
 			internalValue: window.localStorage.lineGuide,
+			default: false,
 			onclick: function(input) {
 				window.localStorage.lineGuide = input.check.checked;
 				if (window.localStorage.lineGuide == 'false') lineGuideDiv.style.top = '100%';
@@ -229,6 +234,7 @@ function makePage(page) {
 			id: 'lineHeight',
 			description: 'Adds extra space between lines for people who have a hard time reading.',
 			internalValue: window.localStorage.lineHeight,
+			default: false,
 			onclick: function(input) {
 				window.localStorage.lineHeight = input.check.checked;
 				
@@ -290,7 +296,7 @@ function makePage(page) {
 	});
 	
 	addScript(`${titleDir}scripts/${page}Setup.js`);
-			
+	
 	document.body.append(preferenceMenuDiv, dropdownDiv, avThin, lineGuideDiv);
 }
 

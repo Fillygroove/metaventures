@@ -53,5 +53,4 @@ function updateTheme(themeName) {
 	window.onscroll = () => correctHotbar();
 }
 
-if (window.localStorage.theme == undefined) window.localStorage.theme = 'default';
 updateTheme(window.localStorage.theme);
