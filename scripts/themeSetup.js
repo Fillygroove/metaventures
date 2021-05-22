@@ -18,12 +18,14 @@ let themes = {
 		topColor: [52, 49, 72],
 		background: '#842066',
 		infobox: '#3A1634',
-		menus: '#8E5124'
+		menus: '#3261b2'
 	}
 };
-let themeName = 'default';
 
-function updateTheme(theme) {
+function updateTheme(themeName) {
+	console.log(themes, themeName, themes[themeName])
+	let theme = themes[themeName];
+
 	let colorArray = theme.topColor.toString();
 	
 	document.documentElement.style.setProperty('--avthin', `rgba(${theme.avThin}, var(--transparency)`);
@@ -45,4 +47,5 @@ function updateTheme(theme) {
 	window.onscroll = () => correctHotbar();
 }
 
-updateTheme(themes[themeName]);
+if (window.localStorage.theme == undefined) window.localStorage.theme = 'default';
+updateTheme(window.localStorage.theme);

@@ -316,6 +316,12 @@ ul {
 	padding: 0;
 }
 
+.preference-inner select {
+	width: 10em;
+	padding-left: 0;
+	margin-left: 5px;
+}
+
 .lineguide {
 	background-color: rgb(255, 0, 0);
 	height: 2.5px;

@@ -60,6 +60,8 @@ function makePage(page) {
 			break;
 	}
 	
+	addScript(`${titleDir}scripts/themeSetup.js`);
+
 	let metaTitle = document.createElement('title');
 	metaTitle.innerHTML = `${pageName} - Metaventures`;
 	
@@ -110,18 +112,42 @@ function makePage(page) {
 			checkLabel.innerHTML = input.title;
 			checkLabel.htmlFor = input.id;
 		
-			let check = document.createElement('input');
+			checkDiv.append(checkLabel);
 
-			if (input.internalValue == 'true') check.checked = true;
-			check.type = 'checkbox';
-			check.id = input.id;
-			check.name = input.id;
+			if (input.dropdownValues != undefined) {
+				let checkSelect = document.createElement('select');
+				checkSelect.name = input.id;
+				checkSelect.id = input.id;
+				
+				for (let i = 0; i < Object.keys(input.dropdownValues).length; i++) {
+					let checkSelectOption = document.createElement('option');
+					checkSelectOption.innerHTML = Object.values(input.dropdownValues)[i];
+					checkSelectOption.value = Object.keys(input.dropdownValues)[i];
+					checkSelect.append(checkSelectOption);
+				}
 
-			checkDiv.onclick = () => {
-				input.onclick({check});
+				checkSelect.onchange = () => {
+					input.onclick({checkSelect: document.getElementById(input.id)});
+				}
+
+				checkSelect.value = window.localStorage.theme;
+
+				checkDiv.append(checkSelect);
+			} else {
+				let check = document.createElement('input');
+
+				if (input.internalValue == 'true') check.checked = true;
+				check.type = 'checkbox';
+				check.id = input.id;
+				check.name = input.id;
+
+				checkDiv.onclick = () => {
+					input.onclick({check});
+				}
+
+				checkDiv.append(check);
 			}
-		
-			checkDiv.append(checkLabel, check);
+
 			preferenceInner.append(checkDiv);
 		}
 
@@ -142,6 +168,26 @@ function makePage(page) {
 		preference.append(preferenceHeader, preferenceInner);	
 		preferenceMenuDiv.append(preference);	
 	}
+
+	addPreferenceCategory({
+		name: 'General',
+		id: 'general',
+		options: [{
+			title: 'Theme',
+			id: 'theme',
+			description: 'Wearing tinted glasses for cheap.',
+			internalValue: window.localStorage.theme,
+			dropdownValues: {
+				default: 'Default',
+				cherryBlossom: 'Cherry Blossom',
+				the: 'The'
+			},
+			onclick: function(input) {
+				window.localStorage.theme = input.checkSelect.value;
+				updateTheme(window.localStorage.theme);
+			}
+		}]
+	});
 
 	addPreferenceCategory({
 		name: 'The Comics',
@@ -243,7 +289,6 @@ function makePage(page) {
 	});
 	
 	addScript(`${titleDir}scripts/${page}Setup.js`);
-	addScript(`${titleDir}scripts/themeSetup.js`);
 			
 	document.body.append(preferenceMenuDiv, dropdownDiv, avThin, lineGuideDiv);
 }
