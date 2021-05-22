@@ -30,7 +30,6 @@ let themes = {
 };
 
 function updateTheme(themeName) {
-	console.log(themes, themeName, themes[themeName])
 	let theme = themes[themeName];
 
 	let colorArray = theme.topColor.toString();

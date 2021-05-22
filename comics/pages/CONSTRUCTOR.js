@@ -50,6 +50,23 @@ for (let i = 0; i < comicInfo.panels.length; i++) {
 	slideshow.append(slide);
 }
 
+if (comicInfo.protected == true) {
+	let passwordPage = document.createElement('div');
+	passwordPage.className = 'comic-password';
+
+	passwordP = document.createElement('p');
+	passwordP.style = 'padding: 20px';
+	passwordP.innerHTML = 'Put the password in the panel number box.';
+
+	passwordHidden = document.createElement('p');
+	passwordHidden.style = 'color: rgba(0, 0, 0, 0); padding: 20px';
+	passwordHidden.innerHTML = 'Ask about AV-12 Part 1';
+
+	passwordPage.append(passwordP, passwordHidden);
+
+	slideshow.append(passwordPage);
+}
+
 let line = document.createElement('hr');
 let prevButton = document.createElement('a');
 let nextButton = document.createElement('a');
@@ -102,7 +119,15 @@ slideInput.type = 'text';
 slideInput.id = 'comic-slide-input';
 slideInput.addEventListener('keyup', function(event) {
 	if (event.key === 'Enter') {
-		verify(slideInput.value);
+		let slideValue = slideInput.value;
+		if (comicInfo.protected == true && slideInput.value == '4NAX') {
+			document.getElementsByClassName('comic-password')[0].remove();
+//			slideInput.value = 'Be careful.';
+			comicInfo.protected = false;
+			slideValue = 1;
+			slideInput.blur();
+		}
+		verify(slideValue);
 	}
 });
 
@@ -112,8 +137,8 @@ slideTimer.innerHTML = 'Timer: 00.00';
 slideText.style.visibility = window.localStorage.speedrun == 'true' ? 'hidden' : 'visible';
 slideSpeedText.style.visibility = window.localStorage.speedrun == 'true' ? 'visible' : 'hidden';
 
-slideText.append(slideLabel, slideInput)
-slideSpeedText.append(slideTimer)
+slideText.append(slideLabel, slideInput);
+slideSpeedText.append(slideTimer);
 
 slideDiv.append(prevButton, nextButton, slideText, slideSpeedText);
 
@@ -150,7 +175,7 @@ function showSlides(n) {
 		slides[i].style.display = 'none';
 	}
 
-	slides[slideIndex - 1].style.display = 'block';
+	if (comicInfo.protected != true) slides[slideIndex - 1].style.display = 'block';
 
 	numbertext.innerHTML = `${comicInfo.panels[slideIndex - 1].number ? comicInfo.panels[slideIndex - 1].number : slideIndex} / ${comicInfo.howLong ? comicInfo.howLong : comicInfo.panels.length}`;
 }

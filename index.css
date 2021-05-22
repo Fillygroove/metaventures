@@ -352,7 +352,8 @@ ul {
 	font-weight: bold;
 }
 
-.comic-panel {
+.comic-panel,
+.comic-password {
 	max-height: 21.5em;
 	height: 21.5em;
 	text-align: center;
@@ -360,6 +361,14 @@ ul {
 	margin: 0 auto 0 50%;
 	transform: translateX(-50%);
 	background-color: rgba(0, 0, 0, 0);
+}
+
+.comic-password {
+	margin-top: 30px;
+	background-color: rgba(0, 0, 0, 1);
+	display: block;
+	max-height: none;
+	height: auto;
 }
 
 #comic-slide-input {

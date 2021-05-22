@@ -2,6 +2,7 @@ let comicInfo = {
 	title: 'ARCHIVED CONTENT',
 	desc: 'Go out and things! See what isn\'t real!',
 	folder: 'old/old-choose/',
+	protected: true,
 	panels: [{
 		panel: '1.png',
 		link: 'index.html?c=older-av-11',
