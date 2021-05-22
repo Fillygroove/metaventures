@@ -134,8 +134,8 @@ function makePage(page) {
 				document.getElementById(input.id).className = 'preference-collapse-closed';
 				preferenceInner.style.height = '0px';
 			} else {
-				preferenceInner.style.height = `${28 * input.options.length}px`;
 				document.getElementById(input.id).className = 'preference-collapse-opened';
+				preferenceInner.style.height = `${28 * input.options.length}px`;
 			}
 		};
 
