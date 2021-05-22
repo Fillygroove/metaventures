@@ -243,13 +243,9 @@ function makePage(page) {
 	});
 	
 	addScript(`${titleDir}scripts/${page}Setup.js`);
+	addScript(`${titleDir}scripts/themeSetup.js`);
 			
 	document.body.append(preferenceMenuDiv, dropdownDiv, avThin, lineGuideDiv);
-
-	let themeName = 'default';
-
-	addScript(`${titleDir}scripts/themes/${themeName}.js`);
-	addScript(`${titleDir}scripts/themes/CONSTRUCTOR.js`);
 }
 
 window.addEventListener('mousedown', mouseInfo => {	
