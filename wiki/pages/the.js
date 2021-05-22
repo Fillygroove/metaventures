@@ -25,8 +25,11 @@ let pageData = {
 			}]
 		}]
 	},
+	quote: {
+		quote: 'The what?',
+		author: 'Everyone'
+	},
 	introText: [
-		'<i style = "background-color: rgba(0, 0, 0, 0); padding-left: 2em;">"The what?"</i></br><i style = "background-color: rgba(0, 0, 0, 0); padding-left: 2.5em;"> - Everyone</i>',
 		'The is the tenth and last planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=cea">Cea</a>. The is a mysterious planet, which has been at the center of many scientific theories and general intrigue. As such, there are few things we know about The, but the information we do have is interesting, and, as such, warrants an article; Not to be confused with Article, These original name. The is exactly one fourty-second of the size of the Hot Sun.',
 		'The name for describing something similar to The is... The... The.'
 	],

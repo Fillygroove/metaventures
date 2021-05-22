@@ -8,14 +8,6 @@ lineGuideDiv.className = 'lineguide';
 let dropdownDiv = document.createElement('div');
 dropdownDiv.className = 'topbar';
 
-window.onscroll = () => {
-	if (document.body.getBoundingClientRect().top / 56 < 1 && document.body.getBoundingClientRect().top / 56 > -3) {
-		dropdownDiv.style.backgroundColor = `rgba(68, 68, 68, ${1 + document.body.getBoundingClientRect().top / 1792}`;
-	} else if (document.body.getBoundingClientRect().top / 56 < -3) {
-		dropdownDiv.style.backgroundColor = `rgba(68, 68, 68, 0.91)`;
-	} else dropdownDiv.style.backgroundColor = `rgba(68, 68, 68, 1)`;
-}
-
 function correctLinks() {
 	let pageLinks = document.getElementsByTagName('a');
 	
@@ -253,12 +245,11 @@ function makePage(page) {
 	addScript(`${titleDir}scripts/${page}Setup.js`);
 			
 	document.body.append(preferenceMenuDiv, dropdownDiv, avThin, lineGuideDiv);
-/*
-	document.documentElement.style.setProperty('--background', '#522F2F');
-	document.documentElement.style.setProperty('--topcolor', 'rgba(232, 160, 160, 1)');
-	document.documentElement.style.setProperty('--avthin', 'rgba(216, 111, 111, var(--transparency)');
-	document.documentElement.style.setProperty('--infobox', '#D68383');
-	document.documentElement.style.setProperty('--menus', '#C45454');*/
+
+	let themeName = 'default';
+
+	addScript(`${titleDir}scripts/themes/${themeName}.js`);
+	addScript(`${titleDir}scripts/themes/CONSTRUCTOR.js`);
 }
 
 window.addEventListener('mousedown', mouseInfo => {	

@@ -405,6 +405,11 @@ ul {
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
+.comic-fast-prev:hover,
+.comic-fast-next:hover {
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
 .comic-slidetext {
 	text-align: center; 
 	background-color: transparent;
