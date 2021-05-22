@@ -25,7 +25,7 @@ let themes = {
 		topColor: [89, 74, 108],
 		background: '#26113F',
 		infobox: '#7E57AD',
-		menus: '#8d65BE'
+		menus: '#8D65BE'
 	}
 };
 
