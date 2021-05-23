@@ -13,7 +13,7 @@ const pageData = {
 			}, {
 				name: 'Satellites',
 				info: [
-					'<a href="index.html?p=grene">Grene</a>',
+					'<a href="index.html?p=grene">Grēne</a>',
 					'<a href="index.html?p=doug">Doug</a>',
 					'<a href="index.html?p=pilf">Pilf</a>',
 					'<a href="index.html?p=ert">Ert</a>',

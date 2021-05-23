@@ -5,7 +5,8 @@ let themes = {
 		background: '#333333',
 		infobox: '#555555',
 		menus: '#444444',
-		lineguide: '#FF0000'
+		lineguide: '#FF0000',
+		border: '#FFFFFF'
 	},
 	cherryBlossom: {
 		avThin: [216, 111, 111],
@@ -13,15 +14,17 @@ let themes = {
 		background: '#522F2F',
 		infobox: '#D68383',
 		menus: '#C45454',
-		lineguide: '#00F3FF'
+		lineguide: '#00F3FF',
+		border: '#FFFFFF'
 	},
 	the: {
-		avThin: [143, 105, 165],
+		avThin: [85, 73, 109],
 		topColor: [52, 49, 72],
 		background: '#842066',
 		infobox: '#3A1634',
 		menus: '#3261B2',
-		lineguide: '#FF0000'
+		lineguide: '#FF0000',
+		border: '#FFEB79'
 	},
 	abyss: { // By PS3_33
 		avThin: [48, 48, 48],
@@ -29,7 +32,8 @@ let themes = {
 		background: '#26113F',
 		infobox: '#7E57AD',
 		menus: '#8D65BE',
-		lineguide: '#FF0000'
+		lineguide: '#FF0000',
+		border: '#FFFFFF'
 	}
 };
 
@@ -44,6 +48,7 @@ function updateTheme(themeName) {
 	document.documentElement.style.setProperty('--infobox', theme.infobox);
 	document.documentElement.style.setProperty('--menus', theme.menus);
 	document.documentElement.style.setProperty('--lineguide', theme.lineguide);
+	document.documentElement.style.setProperty('--border', theme.border);
 
 	function correctHotbar() {
 		if (document.body.getBoundingClientRect().top / 56 < 1 && document.body.getBoundingClientRect().top / 56 > -3) {

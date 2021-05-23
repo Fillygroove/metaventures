@@ -9,7 +9,8 @@
 	--avthin: rgba(85, 85, 85, var(--transparency));
 	--infobox: #555555;
 	--menus: #444444;
-	--lineguide: #FF0000
+	--lineguide: #FF0000;
+	--border: #FFFFFF;
 }
 
 @font-face {
@@ -69,7 +70,7 @@
 
 * {
 	box-sizing: border-box;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: sans-serif;
 	background-color: var(--background);
 }
 
@@ -104,29 +105,26 @@ p,
 h1,
 h2 {
 	color: #ffffff;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: transparent;
 	padding-left: 80px;
 	padding-right: 80px;
-	font-family: 'Ubuntu', sans-serif;
 	overflow-wrap: anywhere;
 }
 
 h3 {
-	background-color: rgba(0, 0, 0, 0);
-	font-family: 'Ubuntu', sans-serif !important;
+	background-color: transparent;
 	line-height: 1em;
 	margin: 0;
 }
 
 h4 {
-	background-color: rgba(0, 0, 0, 0);
-	font-family: 'Ubuntu', sans-serif !important;
+	background-color: transparent;
 	line-height: 0.9em;
 	margin: 0;
 }
 
 span {
-	background-color: rgba(0, 0, 0, 0);
+	background-color: transparent;
 }
 
 a {
@@ -149,7 +147,7 @@ a {
 	white-space: nowrap;
 	height: var(--hotbar);
 	margin-top: calc(var(--hotbar) * -1);
-	border-color: transparent transparent white;
+	border-color: transparent transparent var(--border);
 	border-width: 1px;
 	border-style: solid;
 	width: 100%;
@@ -167,6 +165,7 @@ a {
 	text-align: center;
 	cursor: pointer;
 	white-space: nowrap;
+	font-weight: bold;
 }
 
 .aero-blue {
@@ -226,7 +225,6 @@ a {
 }
 
 .page-header {
-	font-family: 'Ubuntu', sans-serif;
 	margin-top: -40px;
 }
 
@@ -258,7 +256,7 @@ ul {
 	overflow-x: hidden;
 	transition: 0.5s;
 	margin-top: var(--hotbar);
-	border-right: white;
+	border-right: var(--border);
 	border-right-style: solid;
 	border-right-width: 0px;
 }
@@ -266,7 +264,7 @@ ul {
 .preference-menu * {
 	padding: 0 0 0 5px;
 	inline-size: 250px;
-	color: #ffffff;
+	color: white;
 	background-color: var(--menus);
 	user-select: none;
 }
@@ -285,7 +283,7 @@ ul {
 }
 
 .preference-collapse-div {
-	border-color: transparent transparent white;
+	border-color: transparent transparent var(--border);
 	border-width: 1px;
 	border-style: solid;
 	overflow: hidden;
@@ -321,6 +319,10 @@ ul {
 	width: 10em;
 	padding-left: 0;
 	margin-left: 5px;
+	border-color: var(--border);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
 }
 
 .lineguide {
@@ -339,17 +341,17 @@ ul {
 	max-width: 500px;
 	position: relative;
 	margin: auto;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: transparent;
 }
 
 .comic-slides {
-	background-color: rgba(0, 0, 0, 0);
+	background-color: transparent;
 	margin-top: 30px;
 }
 
 .comic-caption {
 	text-align: center;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: transparent;
 	font-weight: bold;
 }
 
@@ -361,12 +363,12 @@ ul {
 	display: flex;
 	margin: 0 auto 0 50%;
 	transform: translateX(-50%);
-	background-color: rgba(0, 0, 0, 0);
+	background-color: transparent;
 }
 
 .comic-password {
 	margin-top: 30px;
-	background-color: rgba(0, 0, 0, 1);
+	background-color: black;
 	display: block;
 	max-height: none;
 	height: auto;
@@ -445,7 +447,7 @@ ul {
 .comic-title {
 	text-align: center;
 	font-size: 30px;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: transparent;
 	line-height: 0;
 	margin-top: -77px;
 }
@@ -458,8 +460,7 @@ ul {
 
 .comic-description {
 	text-align: center;
-	font-family: 'Ubuntu', sans-serif;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: transparent;
 	color: #ffffff;
 	font-size: 17px;
 }
@@ -474,7 +475,7 @@ ul {
 }
 
 .wiki-infobox {
-	border: 1px solid #ffffff;
+	border: 1px solid var(--border);
 	border-spacing: 3px;
 	background-color: var(--infobox);
 	color: white;
@@ -489,7 +490,7 @@ ul {
 }
 
 .wiki-infobox caption {
-	border: 1px solid #ffffff;
+	border: 1px solid var(--border);
 	border-spacing: 3px;
 	font-size: 125%;
 	font-weight: bold;
@@ -515,7 +516,7 @@ ul {
 
 .wiki-navbox,
 .wiki-warning {
-	border: 1px solid #ffffff;
+	border: 1px solid var(--border);
 	border-spacing: 3px;
 	box-sizing: border-box;
 	background-color: var(--infobox);
@@ -531,7 +532,7 @@ ul {
 
 .wiki-navbox caption,
 .wiki-warning caption {
-	border: 1px solid #ffffff;
+	border: 1px solid var(--border);
 	border-spacing: 3px;
 	font-size: 125%;
 	font-weight: bold;
@@ -725,7 +726,6 @@ code,
 kbd,
 pre,
 samp {
-	font-family: 'Ubuntu', sans-serif;
 	font-size: 1em
 }
 
@@ -825,7 +825,6 @@ textarea {
 /* End extract */
 html,
 body {
-	font-family: 'Ubuntu', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
 	background-size: 10em;
@@ -872,7 +871,7 @@ h6 {
 
 hr {
 	border: 0;
-	border-top: 1px solid #eee;
+	border-top: 1px solid var(--border);
 	margin: 20px 0
 }
 

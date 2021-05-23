@@ -57,7 +57,7 @@ let pageData = {
 		info: [
 			'Ert is a terrestrial planet, therefore it is rocky in composition and has a surface you can stand on. Its surface is covered in large oceans and land masses. A day on Ert lasts exactly 1 Ert day, and a year on Ert lasts exactly Ert 1 year. How useful is that? Very useful, according to scientists, probably smoking bread. Yes, smoking bread is possible on Ert.',
 			'<h3>Size and Mass</h3>',
-			'Ert is the second largest terrestrial planet, being surpassed by Grene. By mass and size it is the seventh largest planet. By density, Ert is in third place, being surpassed by its companion George. By comparison to Earth it is noticeably larger. Compared to the inner planets, it is the second largest.',
+			'Ert is the second largest terrestrial planet, being surpassed by Grēne. By mass and size it is the seventh largest planet. By density, Ert is in third place, being surpassed by its companion George. By comparison to Earth it is noticeably larger. Compared to the inner planets, it is the second largest.',
 			'Due to the lack of first-placements for this category, Ert is widely considered as an unremarkable planet by some analysts out there, but they’re missing the point.',
 			'<h3>Geography</h3>',
 			'Of the four major continents, only Northland and Southland are depicted in the comics of Aeroventures and Polyventures, and little is mentioned of the others. Who knows what lives on those. On land, there are a multitude of biomes ranging from tall mountains to sprawling plains. Various climates exist on Ert. There are a few islands pockmarking the ocean, the most notable one is the Island of No Escape.',

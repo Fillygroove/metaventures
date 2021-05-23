@@ -14,7 +14,7 @@ let pageData = {
 	}, {
 		name: 'Gramiatar',
 		info: [
-			'Created Grene, Doug, Ert, George, Pilf, Mac, The, the Macaroni Belt, and provided all of the pixel art on the Wiki.',
+			'Created Grēne, Doug, Ert, George, Pilf, Mac, The, the Macaroni Belt, and provided all of the pixel art on the Wiki.',
 			'Helped out with the worldbuilding inside and beyond this world.',
 			'Helped out with the comics a lot, along with the creation of most of the OST!',
 			'Helped out with storyboarding, along with Text Wall, in the creation of the comics.'
