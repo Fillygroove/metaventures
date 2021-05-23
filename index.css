@@ -594,6 +594,11 @@ ul {
 	background-color: var(--menus);
 }
 
+.wiki-quote {
+	background-color: transparent;
+	padding-left: 2em;
+}
+
 .aerospin {
 	position: relative;
 	display: inline-block;

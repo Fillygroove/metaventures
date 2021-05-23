@@ -38,11 +38,20 @@ let themes = {
 	sunset: { // By Astro
 		avThin: [145, 132, 217],
 		topColor: [255, 162, 233],
-		background: '#ff8f4f',
-		infobox: '#862d9f',
-		menus: '#ff8f4f',
+		background: '#FF8F4F',
+		infobox: '#862D9F',
+		menus: '#FF8F4F',
 		lineguide: '#00FF28',
-		border: '#fde868'
+		border: '#FDE868'
+	},
+	nyork: { // By Text Wall
+		avThin: [24, 0, 64],
+		topColor: [194, 0, 255],
+		background: '#009748',
+		infobox: '#08C708',
+		menus: '#C200FF',
+		lineguide: '#00FF28',
+		border: '#FFFFFF'
 	}
 };
 

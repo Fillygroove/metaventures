@@ -143,13 +143,14 @@ if (page.quote != undefined) {
 	let quoteText = document.createElement('p');
 	
 	let quoteItalics = document.createElement('i');
-	quoteItalics.style = "background-color: transparent; padding-left: 2em;";
+	quoteItalics.className = 'wiki-quote';
 	quoteItalics.innerHTML = `"${page.quote.quote}"`;
 
 	let lineBreak = document.createElement('br');
 
 	let quoteAuthor = document.createElement('i');
-	quoteAuthor.style = "background-color: transparent; padding-left: 2.5em;";
+	quoteAuthor.className = 'wiki-quote';
+	quoteAuthor.style.paddingLeft = '2.5em';
 	quoteAuthor.innerHTML = ` - ${page.quote.author}`;
 
 	quoteText.append(quoteItalics, lineBreak, quoteAuthor);

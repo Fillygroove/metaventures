@@ -9,7 +9,8 @@ let pageData = {
 			'Original creator of all things Aeroventures.',
 			'Created all of the comics, with some help in the newer comics.',
 			'Created the icons in the comics section.',
-			'Created the image of Aero used on the wiki.'
+			'Created the image of Aero used on the wiki.',
+			'Suggested the Nyork theme.'
 		]
 	}, {
 		name: 'Gramiatar',
