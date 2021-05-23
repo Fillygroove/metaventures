@@ -184,7 +184,8 @@ function makePage(page) {
 				default: 'Default',
 				cherryBlossom: 'Cherry Blossom',
 				the: 'The',
-				abyss: 'Abyss'
+				abyss: 'Abyss',
+				sunset: 'Sunset (Bright)'
 			},
 			onclick: function(input) {
 				window.localStorage.theme = input.checkSelect.value;

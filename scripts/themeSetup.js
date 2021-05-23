@@ -34,6 +34,15 @@ let themes = {
 		menus: '#8D65BE',
 		lineguide: '#FF0000',
 		border: '#FFFFFF'
+	},
+	sunset: { // By Astro
+		avThin: [145, 132, 217],
+		topColor: [255, 162, 233],
+		background: '#ff8f4f',
+		infobox: '#862d9f',
+		menus: '#ff8f4f',
+		lineguide: '#00FF28',
+		border: '#fde868'
 	}
 };
 
