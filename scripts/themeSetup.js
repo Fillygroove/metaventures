@@ -45,10 +45,10 @@ let themes = {
 		border: '#FDE868'
 	},
 	nyork: { // By Text Wall
-		avThin: [24, 0, 64],
+		avThin: [0, 24, 11],
 		topColor: [194, 0, 255],
 		background: '#009748',
-		infobox: '#08C708',
+		infobox: '#5700B7',
 		menus: '#C200FF',
 		lineguide: '#00FF28',
 		border: '#FFFFFF'
