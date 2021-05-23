@@ -9,6 +9,7 @@
 	--avthin: rgba(85, 85, 85, var(--transparency));
 	--infobox: #555555;
 	--menus: #444444;
+	--lineguide: #FF0000
 }
 
 @font-face {
@@ -323,7 +324,7 @@ ul {
 }
 
 .lineguide {
-	background-color: rgb(255, 0, 0);
+	background-color: var(--lineguide);
 	height: 2.5px;
 	position: fixed;
 	z-index: 100;

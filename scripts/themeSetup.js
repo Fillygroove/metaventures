@@ -4,28 +4,32 @@ let themes = {
 		topColor: [68, 68, 68],
 		background: '#333333',
 		infobox: '#555555',
-		menus: '#444444'
+		menus: '#444444',
+		lineguide: '#FF0000'
 	},
 	cherryBlossom: {
 		avThin: [216, 111, 111],
 		topColor: [232, 160, 160],
 		background: '#522F2F',
 		infobox: '#D68383',
-		menus: '#C45454'
+		menus: '#C45454',
+		lineguide: '#00F3FF'
 	},
 	the: {
 		avThin: [143, 105, 165],
 		topColor: [52, 49, 72],
 		background: '#842066',
 		infobox: '#3A1634',
-		menus: '#3261B2'
+		menus: '#3261B2',
+		lineguide: '#FF0000'
 	},
 	abyss: { // By PS3_33
 		avThin: [48, 48, 48],
 		topColor: [89, 74, 108],
 		background: '#26113F',
 		infobox: '#7E57AD',
-		menus: '#8D65BE'
+		menus: '#8D65BE',
+		lineguide: '#FF0000'
 	}
 };
 
@@ -39,7 +43,8 @@ function updateTheme(themeName) {
 	document.documentElement.style.setProperty('--background', theme.background);
 	document.documentElement.style.setProperty('--infobox', theme.infobox);
 	document.documentElement.style.setProperty('--menus', theme.menus);
-	
+	document.documentElement.style.setProperty('--lineguide', theme.lineguide);
+
 	function correctHotbar() {
 		if (document.body.getBoundingClientRect().top / 56 < 1 && document.body.getBoundingClientRect().top / 56 > -3) {
 			dropdownDiv.style.backgroundColor = `rgba(${colorArray}, ${1 + document.body.getBoundingClientRect().top / 1792}`;
