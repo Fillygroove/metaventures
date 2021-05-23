@@ -57,6 +57,11 @@ let pageData = {
 			'Created BCU-2 (Ayduno) and BBT-1 (Kol\'s Mini Nebula).'
 		]
 	}, {
+		name: 'Astro',
+		info: [
+			'Created the Sunset theme.'
+		]
+	}, {
 		name: 'And You!',
 		info: [
 			'It\'s cliche, I know, but you being here, reading the comics, and exploring the world... It means a lot to the whole crew, so thank you.',
