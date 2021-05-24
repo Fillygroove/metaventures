@@ -8,6 +8,15 @@ let themes = {
 		lineguide: '#FF0000',
 		border: '#FFFFFF'
 	},
+	superdark: { // By CloakWithHoodedBoi
+		avThin: [10, 10, 10],
+		topColor: [25, 25, 25],
+		background: '#080808',
+		infobox: '#2B2B2B',
+		menus: '#242424',
+		lineguide: '#97F764',
+		border: '#9C64F7'
+	},
 	cherryBlossom: {
 		avThin: [216, 111, 111],
 		topColor: [232, 160, 160],
@@ -67,6 +76,8 @@ function updateTheme(themeName) {
 	document.documentElement.style.setProperty('--menus', theme.menus);
 	document.documentElement.style.setProperty('--lineguide', theme.lineguide);
 	document.documentElement.style.setProperty('--border', theme.border);
+
+	lineGuideDiv.style.top = '100%';
 
 	function correctHotbar() {
 		if (document.body.getBoundingClientRect().top / 56 < 1 && document.body.getBoundingClientRect().top / 56 > -3) {

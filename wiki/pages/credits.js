@@ -63,6 +63,11 @@ let pageData = {
 			'Created the Sunset theme.'
 		]
 	}, {
+		name: 'CloakWithHoodedBoi',
+		info: [
+			'Created the Super Dark theme.'
+		]
+	}, {
 		name: 'And You!',
 		info: [
 			'It\'s cliche, I know, but you being here, reading the comics, and exploring the world... It means a lot to the whole crew, so thank you.',

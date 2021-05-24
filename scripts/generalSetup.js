@@ -1,5 +1,3 @@
-let pageList = ['ert', 'the', 'doug', 'pilf', 'greme', 'mac', 'grene', 'credits', 'dwarf', 'hotsun', 'tackpenguin', 'aero', 'george', 'aeiou', 'taiberaque', 'coldsun', 'wop', 'shrine', 'halloween', 'main', 'dino', 'directions', 'm', 'nine', 'debug', 'pilfception', 'hazel', 'baeg', 'rodney', 'cea'];
-
 let avThin = document.createElement('div');
 
 let lineGuideDiv = document.createElement('div');
@@ -60,8 +58,6 @@ function makePage(page) {
 			break;
 	}
 	
-	addScript(`${titleDir}scripts/themeSetup.js`);
-
 	let metaTitle = document.createElement('title');
 	metaTitle.innerHTML = `${pageName} - Metaventures`;
 	
@@ -182,6 +178,7 @@ function makePage(page) {
 			default: 'default',
 			dropdownValues: {
 				default: 'Default',
+				superdark: 'Super Dark',
 				cherryBlossom: 'Cherry Blossom',
 				the: 'The',
 				abyss: 'Abyss',
@@ -296,10 +293,12 @@ function makePage(page) {
 		color: 'pon-pink', 
 		link: 'https://discord.gg/xxRvYERs48'
 	});
-	
-	addScript(`${titleDir}scripts/${page}Setup.js`);
-	
+		
 	document.body.append(preferenceMenuDiv, dropdownDiv, avThin, lineGuideDiv);
+	
+	addScript(`${titleDir}scripts/pageList.js`);
+	addScript(`${titleDir}scripts/themeSetup.js`);
+	addScript(`${titleDir}scripts/${page}Setup.js`);
 }
 
 window.addEventListener('mousedown', mouseInfo => {	
