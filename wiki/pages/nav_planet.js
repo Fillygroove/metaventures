@@ -18,11 +18,11 @@ endnavs.push({
 				`<a href="index.html?p=doug">
 					<img src="images/symbol_doug.png" height="${imageSize.norm}">
 					Doug
-				</a>
-				(<small>
+				</a>`,
+/*				(<small>
 					<img src="images/symbol_aech.png" height="${imageSize.small}">
 					Aech
-				</small>)`,
+				</small>)`,*/
 				// Pilf
 				`<a href="index.html?p=pilf">
 					<img src="images/symbol_pilf.png" height="${imageSize.norm}">

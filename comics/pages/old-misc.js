@@ -62,6 +62,18 @@ let comicInfo = {
 	}, {
 		panel: 'aposteel_eyes.jpg',
 		caption: 'Aposteel has eyes? Since when?'
+	}, {
+		panel: 'old_lakys.png',
+		caption: 'An older design for Lakys, before the square rework.'
+	}, {
+		panel: 'old_rodney.png',
+		caption: 'An older variant of Rodney.'
+	}, {
+		panel: 'old_aposteel.png',
+		caption: 'An older variant of Aposteel.'
+	}, {
+		panel: 'old_favicon.png',
+		caption: 'An older variant of the logo.'
 	}],
 	rewindTo: 'old-choose'
 };
