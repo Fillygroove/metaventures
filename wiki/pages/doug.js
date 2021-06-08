@@ -115,11 +115,8 @@ let pageData = {
 			'A professional baker once said that Doug would be the worst dessert to serve to children.',
 			'A quote which has been highly debated by critics yet accepted by scientists may be read below.',
 			'<i class="wiki-quote">"Doug, are you KIDDING ME? Why can\'t this damn planet make VOLCANOES already! I want to see some action, not a dead dirtball of a planet! I don\'t even want to call it a planet, it\'s just a rock. It has absolutely NO value to my research."</i>',
-			'<i class="wiki-quote-author">- <a href="index.html?p=lakys">Dr. R. Lakys</a></i>'
-		]
-	}, {
-		name: 'The DeeCee',
-		info: [
+			'<i class="wiki-quote-author">- <a href="index.html?p=lakys">Dr. R. Lakys</a></i>',
+			'<h3>The DeeCee</h3>',
 			'The routinely teased "Doug" generations formed a collective called the "Doug Club" or DeeCee to prove the notion of Doug\'s hate to be unjust. This group comprises many Doug enthusiasts willing to learn much of everything there is to be discovered from the planet. The DeeCee has managed to earn enough support from the vastly criticised Nyork Administration and Alphabet\'s Business Concern to send a probed mission to Doug.',
 			'The term "Forgettable" was an agreed replacement to the term "Dougian" in order to sway away the general public opinion to not be reminded of the word "Doug" in describing things related to Doug\'s parameters. Strangely for the DeeCee, saying "Forgettable" often is seen as a compliment and the speaker would receive praise in doing so.'
 		]
