@@ -149,8 +149,7 @@ if (page.quote != undefined) {
 	let lineBreak = document.createElement('br');
 
 	let quoteAuthor = document.createElement('i');
-	quoteAuthor.className = 'wiki-quote';
-	quoteAuthor.style.paddingLeft = '2.5em';
+	quoteAuthor.className = 'wiki-quote-author';
 	quoteAuthor.innerHTML = ` - ${page.quote.author}`;
 
 	quoteText.append(quoteItalics, lineBreak, quoteAuthor);
@@ -175,11 +174,33 @@ if (page.categories != undefined) {
 		category.innerHTML = page.categories[i].name;
 		
 		avThin.append(category, lineBreak);
-		for (let j = 0; j < page.categories[i].info.length; j++) {
-			let info = document.createElement('p');
-			info.innerHTML = page.categories[i].info[j];
-			
-			avThin.append(info);
+		
+		if (page.categories[i].info != undefined) {
+			for (let j = 0; j < page.categories[i].info.length; j++) {
+				let info = document.createElement('p');
+				info.innerHTML = page.categories[i].info[j];
+				
+				avThin.append(info);
+			}	
+		}
+
+		if (page.categories[i].gallery != undefined) {
+			console.log(page.categories[i].gallery);
+			let gallerySlideshow = document.createElement('div');
+			gallerySlideshow.className = 'wiki-gallery';
+
+			/*make into loop*/
+			let gallerySlide = document.createElement('img');
+			gallerySlide.src = `./images/${page.categories[i].gallery[0].image}`;
+			gallerySlide.className = 'wiki-slide';
+
+			let slideDescription = document.createElement('p');
+			slideDescription.innerHTML = page.categories[i].gallery[0].text;
+
+			gallerySlideshow.append(gallerySlide, slideDescription);
+			/**/
+
+			avThin.append(gallerySlideshow);
 		}
 	}
 }

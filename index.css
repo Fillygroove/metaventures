@@ -135,8 +135,12 @@ a {
 	line-height: var(--lineheight);
 }
 
+
 .transition p {
 	transition: 1.2s;
+}
+.av-thin i {
+	background-color: var(--avthin);
 }
 
 .topbar {
@@ -597,6 +601,24 @@ ul {
 .wiki-quote {
 	background-color: transparent;
 	padding-left: 2em;
+}
+
+.wiki-quote-author {
+	background-color: transparent;
+	padding-left: 2.5em;
+}
+
+.wiki-gallery {
+	width: 80%;
+	height: 160px;
+	margin: 0 auto;
+}
+
+.wiki-slide {
+	height: 150px;
+	margin: 5px auto 0 50%;
+	transform: translateX(-50%);
+	background-color: transparent;
 }
 
 .aerospin {
