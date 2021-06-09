@@ -651,7 +651,7 @@ ul {
 
 .wiki-image {
 	height: 175px;
-	margin: 0px auto 0 50%;
+	margin: 5px auto 5px 50%;
 	transform: translateX(-50%);
 	background-color: transparent;
 }
