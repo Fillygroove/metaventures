@@ -284,6 +284,8 @@ ul {
 .preference-menu input {
 	inline-size: 0px;
 	padding-left: 5px;
+	height: 13.33px;
+	width: 13.33px;
 }
 
 .preference-collapse-div {

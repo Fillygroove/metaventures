@@ -64,7 +64,10 @@ let themes = {
 	}
 };
 
+
 function updateTheme(themeName) {
+
+	if (window.localStorage.theme == undefined) window.localStorage.theme = 'default';
 	let theme = themes[themeName];
 
 	let colorArray = theme.topColor.toString();
