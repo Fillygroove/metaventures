@@ -635,6 +635,7 @@ ul {
 	display: inline-block;
 	border: var(--border) solid 1px;
 	word-wrap: break-word;
+	overflow: auto;
 }
 
 .wiki-slide-text * {
@@ -670,7 +671,7 @@ ul {
 	user-select: none;
 	transition: 0.6s ease;
 	height: 100%;
-	margin: -228px 0 0 0;
+	margin: -241px 0 0 0;
 	vertical-align: middle;
 	padding: 117px 0 0 0;
 }
