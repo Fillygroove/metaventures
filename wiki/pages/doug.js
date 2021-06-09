@@ -128,7 +128,7 @@ let pageData = {
 			'The Forgotten Explorer was a successful mission by the DeeCee, imaging and mapping most of Doug\'s surface. It was eventually damaged by a DIE Burst and all communication to it was lost.',
 			'There is little known about Janet and the mission to Doug.'
 		]
-	}/*, {
+	}, {
 		name: 'Gallery',
 		gallery: [{
 			image: 'doug.png',
@@ -140,6 +140,6 @@ let pageData = {
 			image: 'doug_faceman.png',
 			text: 'Who\'s that? What\'re they doing?'
 		}]
-	}*/],
+	}],
 	endnav: 'planet'
 };

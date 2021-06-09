@@ -4,6 +4,7 @@ let imageSize = {
 	small: 20,
 	smol: 15
 };
+let slideIndex = 0;
 
 let page = pageData;
 
@@ -185,20 +186,72 @@ if (page.categories != undefined) {
 		}
 
 		if (page.categories[i].gallery != undefined) {
-			console.log(page.categories[i].gallery);
 			let gallerySlideshow = document.createElement('div');
-			gallerySlideshow.className = 'wiki-gallery';
+			gallerySlideshow.className = 'wiki-gallery-parent';
 
-			/*make into loop*/
-			let gallerySlide = document.createElement('img');
-			gallerySlide.src = `./images/${page.categories[i].gallery[0].image}`;
-			gallerySlide.className = 'wiki-slide';
+			for (let j = 0; j < page.categories[i].gallery.length; j++) {
+				let slideshowDiv = document.createElement('div');
+				slideshowDiv.className = 'wiki-gallery';
 
-			let slideDescription = document.createElement('p');
-			slideDescription.innerHTML = page.categories[i].gallery[0].text;
+				let slideshowDivChild = document.createElement('div');
+				slideshowDivChild.className = 'wiki-slide-parent';
 
-			gallerySlideshow.append(gallerySlide, slideDescription);
-			/**/
+				let slideDiv = document.createElement('div');
+				slideDiv.className = 'wiki-slide';
+
+				let slideDivImage = document.createElement('img');
+				slideDivImage.className = 'wiki-image';
+				slideDivImage.src = `./images/${page.categories[i].gallery[j].image}`;
+
+				slideDiv.append(slideDivImage);
+
+				let slideTextDiv = document.createElement('div');
+				slideTextDiv.className = 'wiki-slide-text';
+
+				let slideText = document.createElement('p');
+				slideText.innerHTML = `${page.categories[i].gallery[j].text}`;
+
+				slideTextDiv.append(slideText);
+
+				slideshowDivChild.append(slideDiv, slideTextDiv);
+
+				console.log(slideshowDivChild.clientHeight)
+
+				let slideshowPrev = document.createElement('a');
+				let slideshowNext = document.createElement('a');
+				slideshowPrev.className = 'wiki-gallery-prev';
+				slideshowNext.className = 'wiki-gallery-next';
+
+				slideshowPrev.innerHTML = '&#9664;';
+				slideshowNext.innerHTML = '&#9654;';
+
+				function updateGallery(addSlideIndex) {
+					let slides = document.getElementsByClassName('wiki-gallery');
+
+					slides[slideIndex].style.display = 'none';
+
+					slideIndex += addSlideIndex;
+					if (slideIndex < 0) slideIndex = page.categories[i].gallery.length - 1;
+					if (slideIndex > page.categories[i].gallery.length - 1) slideIndex = 0;
+
+					slides[slideIndex].style.display = 'block';
+				}
+
+				slideshowPrev.onclick = () =>{
+					updateGallery(-1);
+				}
+
+				slideshowNext.onclick = () =>{
+					updateGallery(1);
+				}
+
+				slideshowDiv.append(slideshowPrev, slideshowDivChild, slideshowNext);
+
+				if (j > 0) slideshowDiv.style.display = 'none';
+				else slideshowDiv.style.display = 'block';
+
+				gallerySlideshow.append(slideshowDiv);
+			}
 
 			avThin.append(gallerySlideshow);
 		}
