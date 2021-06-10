@@ -118,9 +118,9 @@ if (page.navbox != undefined) {
 				
 				navrightembed.width = 275;
 				navrightembed.height = 200;
-				navrightembed.frameborder = "no";
-				navrightembed.allow = "autoplay";
-				navrightembed.display = "block";
+				navrightembed.frameborder = 'no';
+				navrightembed.allow = 'autoplay';
+				navrightembed.display = 'block';
 				navrightembed.src = `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${embedInfo.track}&color=%23${embedInfo.color}&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true`;
 				
 				navboxth.append(navrightembed);
@@ -158,12 +158,32 @@ if (page.quote != undefined) {
 	avThin.append(quoteText);
 }
 
+function makeList(list) {
+	let listContainer = document.createElement('ul');
+	listContainer.className = 'wiki-unordered-list';
+
+	for (let listIndex = 0; listIndex < list.length; listIndex++) {
+		let listItem = document.createElement('li');
+		listItem.innerHTML = list[listIndex];
+		listItem.className = 'wiki-list-item';
+		listContainer.append(listItem);
+	}
+
+	avThin.append(listContainer);
+}
+
 if (page.introText != undefined) {
-	for (let i = 0; i < page.introText.length; i++) {
-		let introText = document.createElement('p');
-		introText.innerHTML = page.introText[i];
-		
-		avThin.append(introText);
+	for (let i = 0; i < page.introText.length; i++) {		
+		switch (typeof page.introText[i]) {
+			case 'string':
+				let introText = document.createElement('p');
+				introText.innerHTML = page.introText[i];
+				avThin.append(introText);	 
+				break;
+			case 'object':
+				makeList(page.introText[i]);
+				break;
+		}
 	}
 }
 
@@ -178,11 +198,17 @@ if (page.categories != undefined) {
 		
 		if (page.categories[i].info != undefined) {
 			for (let j = 0; j < page.categories[i].info.length; j++) {
-				let info = document.createElement('p');
-				info.innerHTML = page.categories[i].info[j];
-				
-				avThin.append(info);
-			}	
+				switch (typeof page.categories[i].info[j]) {
+					case 'string':
+						let info = document.createElement('p');
+						info.innerHTML = page.categories[i].info[j];
+						avThin.append(info);
+						break;
+					case 'object': 
+						makeList(page.categories[i].info[j]);
+						break;
+				}
+			}
 		}
 
 		if (page.categories[i].gallery != undefined) {
@@ -214,8 +240,6 @@ if (page.categories != undefined) {
 				slideTextDiv.append(slideText);
 
 				slideshowDivChild.append(slideDiv, slideTextDiv);
-
-				console.log(slideshowDivChild.clientHeight)
 
 				let slideshowPrev = document.createElement('a');
 				let slideshowNext = document.createElement('a');

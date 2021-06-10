@@ -232,10 +232,6 @@ a {
 	margin-top: -40px;
 }
 
-ul {
-	list-style-type: none;
-}
-
 .pixel {
 	image-rendering: crisp-edges;
 }
@@ -516,6 +512,10 @@ ul {
 	text-align: center;
 }
 
+.wiki-infobox ul {
+	list-style: none;
+}
+
 .wiki-navbox td {
 	background-color: var(--infobox);
 }
@@ -686,6 +686,15 @@ ul {
 
 .wiki-gallery-next {
 	border-radius: 0 8px 8px 0;
+}
+
+.wiki-unordered-list {
+	background-color: var(--avthin);
+	padding: 0 80px 0 110px;
+}
+
+.wiki-list-item {
+	background-color: var(--avthin);
 }
 
 .aerospin {

@@ -34,10 +34,16 @@ let pageData = {
 		}]
 	},
 	introText: [
-		'Ert is the fourth planet in the <a href="index.html?p=hotsun">Ommadawn</a> system, sharing this position with <a href="index.html?p=george">George</a>, after <a href="index.html?p=pilf">Pilf</a> and before <a href="index.html?p=baeg">Baeg</a>. Ert is the homeworld of Metaventures, with the majority of its settings being located on two of its four continents. It is an Earth-like analog, featuring striking similarities to it - as if we didn’t have time to come up with an alien world. If a person were to be on Ert, they’ll feel almost the same as they would feel on Earth, apart from the slightly increased gravity and risk of being mugged by a couple of delinquent Reegs - or Polygons depending on where they are.',
+		'Ert is the fourth planet in the <a href="index.html?p=hotsun">Ommadawn</a> system, sharing this position with <a href="index.html?p=george">George</a>, after <a href="index.html?p=pilf">Pilf</a> and before <a href="index.html?p=baeg">Baeg</a>. Ert is the homeworld of Metaventures, with the majority of its settings being located on two of its four continents. It is an Earth-like analog, featuring striking similarities to it - as if we didn\'t have time to come up with an alien world. If a person were to be on Ert, they\'ll feel almost the same as they would feel on Earth, apart from the slightly increased gravity and risk of being mugged by a couple of delinquent Reegs - or Polygons depending on where they are.',
 		'<h3>Interesting Facts</h3>',
-			'&bull; Ert always faces George, and vice versa.</br> &bull; Ert has aurora on the equator instead of its poles.</br> &bull; Ert has a high concentration of Yolktonium in its core.</br> &bull; Ert is more ocean than land (just like Earth).</br> &bull; Ert’s four land masses are named: Northland, Southland, Eastland, and Weastland.',
-			'The term for describing something related to Ert is Ertian.',
+		[
+			'Ert always faces George, and vice versa.',
+			'Ert has aurora on the equator instead of its poles.',
+			'Ert has a high concentration of Yolktonium in its core.',
+			'Ert is more ocean than land (just like Earth).',
+			'Ert\'s four land masses are named: Northland, Southland, Eastland, and Weastland.',
+			'The term for describing something related to Ert is Ertian.'
+		]
 	],
 	categories: [{
 		name: 'Coverage',
@@ -58,16 +64,16 @@ let pageData = {
 			'Ert is a terrestrial planet, therefore it is rocky in composition and has a surface you can stand on. Its surface is covered in large oceans and land masses. A day on Ert lasts exactly 1 Ert day, and a year on Ert lasts exactly Ert 1 year. How useful is that? Very useful, according to scientists, probably smoking bread. Yes, smoking bread is possible on Ert.',
 			'<h3>Size and Mass</h3>',
 			'Ert is the second largest terrestrial planet, being surpassed by Grēne. By mass and size it is the seventh largest planet. By density, Ert is in third place, being surpassed by its companion George. By comparison to Earth it is noticeably larger. Compared to the inner planets, it is the second largest.',
-			'Due to the lack of first-placements for this category, Ert is widely considered as an unremarkable planet by some analysts out there, but they’re missing the point.',
+			'Due to the lack of first-placements for this category, Ert is widely considered as an unremarkable planet by some analysts out there, but they\'re missing the point.',
 			'<h3>Geography</h3>',
 			'Of the four major continents, only Northland and Southland are depicted in the comics of Aeroventures and Polyventures, and little is mentioned of the others. Who knows what lives on those. On land, there are a multitude of biomes ranging from tall mountains to sprawling plains. Various climates exist on Ert. There are a few islands pockmarking the ocean, the most notable one is the Island of No Escape.',
 			'<h3>Atmosphere and Climate</h3>',
-			'Ert’s temperature is cooler than George by a few degrees. Some claims were made of temperatures capable of melting rock, but that was debunked after careful reevaluation of the study being made on a volcano.',
-			'Ert’s atmosphere is capable of a water cycle, which involves water evaporating, having a disco party in the clouds, and then falling asleep, heading back towards the ground. Obviously that isn’t exactly how it goes but it’s close enough.',
-			'By Metaventures standards, Ert’s air would be breathable by its inhabitants and hypothetically, humans.',
+			'Ert\'s temperature is cooler than George by a few degrees. Some claims were made of temperatures capable of melting rock, but that was debunked after careful reevaluation of the study being made on a volcano.',
+			'Ert\'s atmosphere is capable of a water cycle, which involves water evaporating, having a disco party in the clouds, and then falling asleep, heading back towards the ground. Obviously that isn\'t exactly how it goes but it\'s close enough.',
+			'By Metaventures standards, Ert\'s air would be breathable by its inhabitants and hypothetically, humans.',
 			'<h3>Magnetic Field</h3>',
 			'Ert has a robust magnetic field strengthened by interactions with George. It is strong enough to deflect solar radiation and thus protecting the two worlds. Despite its strength it is nowhere near as strong as the fields around the giant planets like Mac, Hazel, or Aeiou. Strangely, its “north” magnetic pole lays exactly on the same path as the Island of No Escape.',
-			'Ert’s interaction with solar radiation allows the formation of auroras, which is seen as a ring on the north and south magnetic poles, which to clarify is on the equator.',
+			'Ert\'s interaction with solar radiation allows the formation of auroras, which is seen as a ring on the north and south magnetic poles, which to clarify is on the equator.',
 			'<h3>Orbit and Rotation</h3>',
 			'Ert and George are paired together at a comfortable distance from Ommadawn. Their orbit has little variation in closeness and has almost no quirky-ness at least for eccentricity and inclination. Compared to Earth once more, the two worlds would be 90% of the distance to its star.',
 			'Through the interaction with Geroge, both worlds are in a perpetual tidal lock, taking as long to rotate as it is for either to orbit each other. The day on Ert would last for a while, followed by long dark nights. Interestingly, George will be visible in the same part of the sky all-year due to this behavior. Consequently this means that George will never be visible for the opposing side. Ert has a slight tilt, therefore some parts of its year it will have a winter and a summer.',
@@ -77,7 +83,7 @@ let pageData = {
 			'<h3>Life</h3>',
 			'Ert consists of an uncountable variety of life in many forms. Obvious from looks alone. Despite that, its overall diversity is curiously less than of George, however Ert has more to its oceanic life. Ert harbors many native groups such as Reegs, Polygons, Spirons, and Florodites. Some creatures of extraterrestrial origin do inhabit such as the SOPs or the Space Clowns. There is also a “ruler” of sorts of Ert.',
 			'<h3>Symbol</h3>',
-			'Ert’s symbol represents a vessel of water, which is the counter to George’s spire.'
+			'Ert\'s symbol represents a vessel of water, which is the counter to George\'s spire.'
 		]
 	}],
 	endnav: 'planet'

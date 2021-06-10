@@ -40,11 +40,13 @@ let pageData = {
 	introText: [
 		'Doug is the second planet in the Ommadawn system, after Grēne and before Pilf. Doug has been referred to as the most disliked planet. Reasons include the periodic DIE bursts that cut off satellite communication or that it serves no purpose in figuring out new physics. Doug resembles a brown-yellow ball of dirt, or to some degree, a burnt chocolate chip cookie.',
 		'<h3>Interesting Facts</h3>',
-		`&bull; Once a year, Doug emits a burst of energy known as a DIE Burst.</br>
-		&bull; Doug has a moon that somewhat resembles itself and Pilf.</br>
-		&bull; Doug may have worms inside.</br>
-		&bull; The term for describing something related to Doug is Forgettable.</br>
-		&bull; That's it. That's all you need to know.`
+		[
+			'Once a year, Doug emits a burst of energy known as a DIE Burst.',
+			'Doug has a moon that somewhat resembles itself and Pilf.',
+			'Doug may have worms inside.',
+			'The term for describing something related to Doug is Forgettable.',
+			'That\'s it. That\'s all you need to know.'
+		]
 	],
 	categories: [{
 		name: 'Coverage',
@@ -66,14 +68,16 @@ let pageData = {
 			'<i class="wiki-quote">Warning, you\'re reading info about Doug.</i>',
 			'Doug is a terrestrial planet, meaning that it is possible to not stand on its surface.',
 			'<h3>Compared to Other Planets...</h3>',
-			`&bull; Doug is the third smallest terrestrial planet.</br>
-			&bull; By size and mass it is the eighth largest planet.</br>
-			&bull; By density, Doug is in fifth place.</br>
-			&bull; By distance to Ommadawn, Doug is second.</br>
-			&bull; By difficulty to visit, Doug is third.</br>
-			&bull; By habitability, Doug is the second worst excluding the giant planets.</br>
-			&bull; By difficulty to remember, Doug is first.</br>
-			&bull; By how ugly it is, Doug is also first.</br>`,
+			[
+				'Doug is the third smallest terrestrial planet.',
+				'By size and mass it is the eighth largest planet.',
+				'By density, Doug is in fifth place.',
+				'By distance to Ommadawn, Doug is second.',
+				'By difficulty to visit, Doug is third.',
+				'By habitability, Doug is the second worst excluding the giant planets.',
+				'By difficulty to remember, Doug is first.',
+				'By how ugly it is, Doug is also first.'
+			],
 			'Unsurprisingly, Doug\'s placement is average and unremarkable. Being the best at being forgotten!',
 			'<h3>Orbit And Rotation</h3>',
 			'Doug resides in a balmy distance from Ommadawn, just far enough to not be melted by the heat, <i>unfortunately</i>. It is closer to the sun compared to Mercury.',
