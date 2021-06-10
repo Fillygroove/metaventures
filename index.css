@@ -174,34 +174,34 @@ a {
 
 .aero-blue {
 	color: #fff !important;
-	background-color: #46BCE3 !important;
+	background-color: #0BB3E6 !important;
 }
 
 .aero-blue:hover {
 	color: #fff !important;
-	background-color: #337a92 !important;
-	transition: 0.3s;
-}
-
-.pon-pink {
-	color: #fff !important;
-	background-color: #ED7CB1 !important;
-}
-
-.pon-pink:hover {
-	color: #fff !important;
-	background-color: #a75d7f !important;
+	background-color: #0A7899 !important;
 	transition: 0.3s;
 }
 
 .nyork-green {
 	color: #fff !important;
-	background-color: #7bec37 !important;
+	background-color: #7ffa11 !important;
 }
 
 .nyork-green:hover {
 	color: #fff !important;
-	background-color: #519924 !important;
+	background-color: #44840A !important;
+	transition: 0.3s;
+}
+
+.pon-pink {
+	color: #fff !important;
+	background-color: #F284EA !important;
+}
+
+.pon-pink:hover {
+	color: #fff !important;
+	background-color: #BD2DB3 !important;
 	transition: 0.3s;
 }
 

@@ -140,23 +140,25 @@ if (page.navbox != undefined) {
 	avThin.append(navbox);
 }
 
-if (page.quote != undefined) {
+function makeQuote(quote, author) {
 	let quoteText = document.createElement('p');
 	
 	let quoteItalics = document.createElement('i');
 	quoteItalics.className = 'wiki-quote';
-	quoteItalics.innerHTML = `"${page.quote.quote}"`;
+	quoteItalics.innerHTML = `"${quote}"`;
 
 	let lineBreak = document.createElement('br');
 
 	let quoteAuthor = document.createElement('i');
 	quoteAuthor.className = 'wiki-quote-author';
-	quoteAuthor.innerHTML = ` - ${page.quote.author}`;
+	quoteAuthor.innerHTML = ` - ${author}`;
 
 	quoteText.append(quoteItalics, lineBreak, quoteAuthor);
 
 	avThin.append(quoteText);
 }
+
+if (page.quote != undefined) makeQuote(page.quote.quote, page.quote.author);
 
 function makeList(list) {
 	let listContainer = document.createElement('ul');
@@ -181,7 +183,8 @@ if (page.introText != undefined) {
 				avThin.append(introText);	 
 				break;
 			case 'object':
-				makeList(page.introText[i]);
+				if (Array.isArray(page.introText[i])) makeList(page.introText[i]);
+				else makeQuote(page.introText[i].quote, page.introText[i].author);
 				break;
 		}
 	}
@@ -204,8 +207,9 @@ if (page.categories != undefined) {
 						info.innerHTML = page.categories[i].info[j];
 						avThin.append(info);
 						break;
-					case 'object': 
-						makeList(page.categories[i].info[j]);
+					case 'object':
+						if (Array.isArray(page.categories[i].info[j])) makeList(page.categories[i].info[j]);
+						else makeQuote(page.categories[i].info[j].quote, page.categories[i].info[j].author);
 						break;
 				}
 			}
