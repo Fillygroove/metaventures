@@ -158,8 +158,6 @@ function makeQuote(quote, author) {
 	avThin.append(quoteText);
 }
 
-if (page.quote != undefined) makeQuote(page.quote.quote, page.quote.author);
-
 function makeList(list) {
 	let listContainer = document.createElement('ul');
 	listContainer.className = 'wiki-unordered-list';
