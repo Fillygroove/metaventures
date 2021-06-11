@@ -36,7 +36,7 @@ let pageData = {
 	introText: [
 		{
 			quote: 'Oort good :)',
-			author: 'Piian fly, "Translated"'
+			author: '<a href="./index.html?p=pilf">Piian</a> fly, "Translated"'
 		},
 		'Ert is the fourth planet in the <a href="index.html?p=hotsun">Ommadawn</a> system, sharing this position with <a href="index.html?p=george">George</a>, after <a href="index.html?p=pilf">Pilf</a> and before <a href="index.html?p=baeg">Baeg</a>. Ert is the homeworld of Metaventures, with the majority of its settings being located on two of its four continents. It is an Earth-like analog, featuring striking similarities to it - as if we didn\'t have time to come up with an alien world. If a person were to be on Ert, they\'ll feel almost the same as they would feel on Earth, apart from the slightly increased gravity and risk of being mugged by a couple of delinquent Reegs - or Polygons depending on where they are.',
 		'<h3>Interesting Facts</h3>',
