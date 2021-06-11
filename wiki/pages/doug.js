@@ -73,8 +73,9 @@ let pageData = {
 			'Doug is a terrestrial planet, meaning that it is possible to not stand on its surface.',
 			'<h3>Compared to Other Planets...</h3>',
 			[
-				'Doug is the third smallest terrestrial planet.',
-				'By size and mass it is the eighth largest planet.',
+				'Doug is the second smallest terrestrial planet.',
+				'By size it is the tenth largest planet.',
+				'By mass it is the ninth largest planet.',
 				'By density, Doug is in fifth place.',
 				'By distance to Ommadawn, Doug is second.',
 				'By difficulty to visit, Doug is third.',
