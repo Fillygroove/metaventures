@@ -107,6 +107,9 @@ let pageData = {
 			image: 'ert.png',
 			text: 'An image of Ert, made by Gramiatar in reality and provided by Alphabet in-universe.'
 		}, {
+			image: 'ert_southland.png',
+			text: 'An image Southland, made by Gramiatar.'
+		}, {
 			image: 'george.png',
 			text: 'An image of Ert\'s sibling planet, George, made by Gramiatar in reality and provided by Alphabet in-universe.'
 		}]
