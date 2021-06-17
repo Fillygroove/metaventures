@@ -135,11 +135,12 @@ a {
 	line-height: var(--lineheight);
 }
 
-
 .transition p {
 	transition: 1.2s;
 }
-.av-thin i {
+
+.av-thin i,
+.av-thin b {
 	background-color: var(--avthin);
 }
 
