@@ -1,8 +1,8 @@
 let pageData = {
-	name: 'Debug',
+	name: 'Debugvgfv',
 	warning: 'stub',
 	navbox: {
-		name: 'Aeiou',
+		name: 'Aeiou, but why',
 		file: ['aeiou.png', 'pixel'],
 		caption: 'Illustration made by Gramiatar.',
 		info: [{
@@ -22,11 +22,14 @@ let pageData = {
 	introText: [
 		'<span class="rainbow">WAAAAAAAAAAAAAAA</span>',
 		() => {
-			makeList(
+			makeList([
 				'lewjnsdx',
 				'esdjnj',
 				'edefd'
-			);
+			]);
+		},
+		() => {
+			console.log('helloooooooo');
 		}
 	],
 	endnav: 'planet'

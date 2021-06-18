@@ -1,8 +1,22 @@
 let pageData = {
 	name: 'Secret: PILFCEPTION!!!!',
 	introText: [
-		'<img src="images/pilfception.png" alt="pilfception.png" width="657" height="344" style="float: right; background-color: #555555;"></img>',
-		'<img src="images/oldpilf.png" alt="oldpilf.png" width="64" height="145" style="float: left; background-color: #555555;"></img>',
+		() => {
+			addImage({
+				src: 'images/pilf_pilfception.png',
+				alt: 'pilf_pilfception.png',
+				width: '657',
+				float: 'right'
+			});
+		},
+		() => {
+			addImage({
+				src: 'images/pilf_old.png',
+				alt: 'pilf_old.png',
+				width: '64',
+				float: 'left'
+			});
+		},
 		'Hidden Pii :O'
 	]
 };

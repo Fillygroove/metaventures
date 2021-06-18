@@ -158,7 +158,14 @@ function makeGallery(input) {
 		slideDivImage.className = 'wiki-image';
 		slideDivImage.src = `./images/${input[galleryIndex].image}`;
 
-		slideDiv.append(slideDivImage);
+		console.log(input[galleryIndex].link);
+
+		if (input[galleryIndex].link != undefined) {
+			let slideLink = document.createElement('a');
+			slideLink.href = input[galleryIndex].link;
+			slideLink.append(slideDivImage);
+			slideDiv.append(slideLink);
+		} else slideDiv.append(slideDivImage);
 
 		let slideTextDiv = document.createElement('div');
 		slideTextDiv.className = 'wiki-slide-text';
@@ -239,6 +246,19 @@ function makeList(list) {
 	}
 
 	avThin.append(listContainer);
+}
+
+function addImage(input) {
+	let image = document.createElement('img');
+
+	if (input.height != undefined) image.height = input.height;
+	if (input.width != undefined) image.width = input.width;
+	image.style.backgroundColor = '#555555';
+	image.style.float = input.float;
+	image.src = input.src;
+	image.alt = input.alt;
+
+	avThin.append(image);
 }
 
 function handleText(input) {

@@ -210,7 +210,8 @@ let pageData = { // First!
 					text: 'An alternate view of Pilf, made by Gramiatar in reality and provided by Alphabet in-universe. The faces shown are TOMFOOLERY, MICROWAVES, and PIZZA PIE.'
 				}, {
 					image: 'pilf_atmosphere.png',
-					text: 'A diagram of Pilf\'s atmosphere, provided by NA. The purple part is the planet itself and the green part is the atmosphere.'
+					text: 'A diagram of Pilf\'s atmosphere, provided by NA. The purple part is the planet itself and the green part is the atmosphere.',
+					link: 'index.html?p=pilfception'
 				}, {
 					image: 'pilf_ringless.png',
 					text: 'Pilf, isolated.'
