@@ -165,16 +165,20 @@ let pageData = {
 		]
 	}, {
 		name: 'Gallery',
-		gallery: [{
-			image: 'doug.png',
-			text: 'An image of Doug, made by Gramiatar in reality and provided by The DeeCee in universe. This image was taken by The Forgotten Explorer, and is the only true color image of Doug that is available.'
-		}, {
-			image: 'doug_smooth.png',
-			text: 'Artwork based off of Doug, made by Text Wall in reality and provided by The DeeCee in universe.'
-		}, {
-			image: 'doug_faceman.png',
-			text: 'Who\'s that? What\'re they doing? Made by Text Wall.'
-		}]
+		info: [
+			() => {
+				makeGallery([{
+					image: 'doug.png',
+					text: 'An image of Doug, made by Gramiatar in reality and provided by The DeeCee in universe. This image was taken by The Forgotten Explorer, and is the only true color image of Doug that is available.'
+				}, {
+					image: 'doug_smooth.png',
+					text: 'Artwork based off of Doug, made by Text Wall in reality and provided by The DeeCee in universe.'
+				}, {
+					image: 'doug_faceman.png',
+					text: 'Who\'s that? What\'re they doing? Made by Text Wall.'
+				}])
+			}
+		]
 	}],
 	endnav: 'planet'
 };

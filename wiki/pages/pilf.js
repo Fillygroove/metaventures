@@ -200,37 +200,41 @@ let pageData = { // First!
 		]
 	}, {
 		name: 'Gallery',
-		gallery: [{
-			image: 'pilf.png',
-			text: 'An image of Pilf, made by Gramiatar in reality and provided by Alphabet in-universe. The faces shown are POWER, EXPLODIUM, and PUNGENCE.'
-		}, {
-			image: 'pilf_alt_view.png',
-			text: 'An alternate view of Pilf, made by Gramiatar in reality and provided by Alphabet in-universe. The faces shown are TOMFOOLERY, MICROWAVES, and PIZZA PIE.'
-		}, {
-			image: 'pilf_atmosphere.png',
-			text: 'A diagram of Pilf\'s atmosphere, provided by NA. The purple part is the planet itself and the green part is the atmosphere.'
-		}, {
-			image: 'pilf_ringless.png',
-			text: 'Pilf, isolated.'
-		}, {
-			image: 'pilf_piffol_rings.png',
-			text: 'The Piffol Rings, isolated.'
-		}, {
-			image: 'pilf_flip.png',
-			text: 'An image of Flip. Flip is a fictional planet invented by Alphabet\'s Business Concern and NAS-A as an April Fools joke. The amount of Reegs who believed it is embarassing.'
-		}, {
-			image: 'pilf_old.png',
-			text: 'Concept art for what would become Pilf.'
-		}, {
-			image: 'pilf_old_2.png',
-			text: 'Concept art for what would become Pilf.'
-		}, {
-			image: 'pilf_pilfception.png',
-			text: 'Irae, get out of the damn lab.'
-		}, {
-			image: 'pilf_weird.png',
-			text: 'Literally who is this'
-		}]
+		info: [
+			() => {
+				makeGallery([{
+					image: 'pilf.png',
+					text: 'An image of Pilf, made by Gramiatar in reality and provided by Alphabet in-universe. The faces shown are POWER, EXPLODIUM, and PUNGENCE.'
+				}, {
+					image: 'pilf_alt_view.png',
+					text: 'An alternate view of Pilf, made by Gramiatar in reality and provided by Alphabet in-universe. The faces shown are TOMFOOLERY, MICROWAVES, and PIZZA PIE.'
+				}, {
+					image: 'pilf_atmosphere.png',
+					text: 'A diagram of Pilf\'s atmosphere, provided by NA. The purple part is the planet itself and the green part is the atmosphere.'
+				}, {
+					image: 'pilf_ringless.png',
+					text: 'Pilf, isolated.'
+				}, {
+					image: 'pilf_piffol_rings.png',
+					text: 'The Piffol Rings, isolated.'
+				}, {
+					image: 'pilf_flip.png',
+					text: 'An image of Flip. Flip is a fictional planet invented by Alphabet\'s Business Concern and NAS-A as an April Fools joke. The amount of Reegs who believed it is embarassing.'
+				}, {
+					image: 'pilf_old.png',
+					text: 'Concept art for what would become Pilf.'
+				}, {
+					image: 'pilf_old_2.png',
+					text: 'Concept art for what would become Pilf.'
+				}, {
+					image: 'pilf_pilfception.png',
+					text: 'Irae, get out of the damn lab.'
+				}, {
+					image: 'pilf_weird.png',
+					text: 'Literally who is this'
+				}]);
+			}
+		]
 	}],
 	endnav: 'planet'
 };

@@ -140,6 +140,75 @@ if (page.navbox != undefined) {
 	avThin.append(navbox);
 }
 
+function makeGallery(input) {
+	let gallerySlideshow = document.createElement('div');
+	gallerySlideshow.className = 'wiki-gallery-parent';
+
+	for (let galleryIndex = 0; galleryIndex < input.length; galleryIndex++) {
+		let slideshowDiv = document.createElement('div');
+		slideshowDiv.className = 'wiki-gallery';
+
+		let slideshowDivChild = document.createElement('div');
+		slideshowDivChild.className = 'wiki-slide-parent';
+
+		let slideDiv = document.createElement('div');
+		slideDiv.className = 'wiki-slide';
+
+		let slideDivImage = document.createElement('img');
+		slideDivImage.className = 'wiki-image';
+		slideDivImage.src = `./images/${input[galleryIndex].image}`;
+
+		slideDiv.append(slideDivImage);
+
+		let slideTextDiv = document.createElement('div');
+		slideTextDiv.className = 'wiki-slide-text';
+
+		let slideText = document.createElement('p');
+		slideText.innerHTML = `${input[galleryIndex].text}`;
+
+		slideTextDiv.append(slideText);
+
+		slideshowDivChild.append(slideDiv, slideTextDiv);
+
+		let slideshowPrev = document.createElement('a');
+		let slideshowNext = document.createElement('a');
+		slideshowPrev.className = 'wiki-gallery-prev';
+		slideshowNext.className = 'wiki-gallery-next';
+
+		slideshowPrev.innerHTML = '&#9664;';
+		slideshowNext.innerHTML = '&#9654;';
+
+		function updateGallery(addSlideIndex) {
+			let slides = document.getElementsByClassName('wiki-gallery');
+
+			slides[slideIndex].style.display = 'none';
+
+			slideIndex += addSlideIndex;
+			if (slideIndex < 0) slideIndex = input.length - 1;
+			if (slideIndex > input.length - 1) slideIndex = 0;
+
+			slides[slideIndex].style.display = 'block';
+		}
+
+		slideshowPrev.onclick = () =>{
+			updateGallery(-1);
+		}
+
+		slideshowNext.onclick = () =>{
+			updateGallery(1);
+		}
+
+		slideshowDiv.append(slideshowPrev, slideshowDivChild, slideshowNext);
+
+		if (galleryIndex > 0) slideshowDiv.style.display = 'none';
+		else slideshowDiv.style.display = 'block';
+
+		gallerySlideshow.append(slideshowDiv);
+	}
+
+	avThin.append(gallerySlideshow);
+}
+
 function makeQuote(input) {
 	let quoteText = document.createElement('p');
 	
@@ -203,75 +272,6 @@ if (page.categories != undefined) {
 		
 		if (page.categories[i].info != undefined) {
 			for (let j = 0; j < page.categories[i].info.length; j++) handleText(page.categories[i].info[j]);
-		}
-
-		if (page.categories[i].gallery != undefined) {
-			let gallerySlideshow = document.createElement('div');
-			gallerySlideshow.className = 'wiki-gallery-parent';
-
-			for (let j = 0; j < page.categories[i].gallery.length; j++) {
-				let slideshowDiv = document.createElement('div');
-				slideshowDiv.className = 'wiki-gallery';
-
-				let slideshowDivChild = document.createElement('div');
-				slideshowDivChild.className = 'wiki-slide-parent';
-
-				let slideDiv = document.createElement('div');
-				slideDiv.className = 'wiki-slide';
-
-				let slideDivImage = document.createElement('img');
-				slideDivImage.className = 'wiki-image';
-				slideDivImage.src = `./images/${page.categories[i].gallery[j].image}`;
-
-				slideDiv.append(slideDivImage);
-
-				let slideTextDiv = document.createElement('div');
-				slideTextDiv.className = 'wiki-slide-text';
-
-				let slideText = document.createElement('p');
-				slideText.innerHTML = `${page.categories[i].gallery[j].text}`;
-
-				slideTextDiv.append(slideText);
-
-				slideshowDivChild.append(slideDiv, slideTextDiv);
-
-				let slideshowPrev = document.createElement('a');
-				let slideshowNext = document.createElement('a');
-				slideshowPrev.className = 'wiki-gallery-prev';
-				slideshowNext.className = 'wiki-gallery-next';
-
-				slideshowPrev.innerHTML = '&#9664;';
-				slideshowNext.innerHTML = '&#9654;';
-
-				function updateGallery(addSlideIndex) {
-					let slides = document.getElementsByClassName('wiki-gallery');
-
-					slides[slideIndex].style.display = 'none';
-
-					slideIndex += addSlideIndex;
-					if (slideIndex < 0) slideIndex = page.categories[i].gallery.length - 1;
-					if (slideIndex > page.categories[i].gallery.length - 1) slideIndex = 0;
-
-					slides[slideIndex].style.display = 'block';
-				}
-
-				slideshowPrev.onclick = () =>{
-					updateGallery(-1);
-				}
-
-				slideshowNext.onclick = () =>{
-					updateGallery(1);
-				}
-
-				slideshowDiv.append(slideshowPrev, slideshowDivChild, slideshowNext);
-
-				if (j > 0) slideshowDiv.style.display = 'none';
-				else slideshowDiv.style.display = 'block';
-
-				gallerySlideshow.append(slideshowDiv);
-			}
-
-			avThin.append(gallerySlideshow);
 		}
 	}
 }
