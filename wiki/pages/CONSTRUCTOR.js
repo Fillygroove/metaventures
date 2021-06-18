@@ -158,8 +158,6 @@ function makeGallery(input) {
 		slideDivImage.className = 'wiki-image';
 		slideDivImage.src = `./images/${input[galleryIndex].image}`;
 
-		console.log(input[galleryIndex].link);
-
 		if (input[galleryIndex].link != undefined) {
 			let slideLink = document.createElement('a');
 			slideLink.href = input[galleryIndex].link;
