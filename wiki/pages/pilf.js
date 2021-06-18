@@ -33,24 +33,28 @@ let pageData = { // First!
 		}]
 	},
 	introText: [
-		{
-			quote: 'NO, NO, NO! It won’t be the same with regular cheese, you dolt! It’s supposed to be specifically Piian!',
-			author: 'King Arnolth'
+		() => {
+			makeQuote({
+				quote: 'NO, NO, NO! It won’t be the same with regular cheese, you dolt! It’s supposed to be specifically Piian!',
+				author: 'King Arnolth'
+			});
 		},
 		'Pilf is the third planet in the <a href="index.html?p=hotsun">Ommadawn</a> system, after <a href="index.html?p=doug">Doug</a> and before <a href="index.html?p=ert">Ert</a> and <a href="index.html?p=george">George</a>. Pilf is a ringed cuboid planet, standing out from all other planets for its striking purple and blue-green hue. Pilf is scenically equivalent to a filthy purple kitchen sponge - lightweight, moldy, and has flies. Its unusual properties makes it a widely appealing planet for testing theories in science, fun tourist vacations, and the highly expensive bone-cheese delicacy.',
 		
 		'<h3>Interesting Fact</h3>',
-		[
-			'Pilf is the only planet shaped like a cube.',
-			'Pilf’s gravity remains spherical, despite its appearence.',
-			'Pilf’s rings are made of a reflective "custard-like" substance.',
-			'Pilf is one of four planets with confirmed life, the other ones being Doug, Ert, and George.',
-			'Before being officially named by Alphabet, Pilf was originally referred to as Pii by The Nyork  Administration.',
-			'Pilf is the only planet with an ever changing axis of rotation.',
-			'The plural of Pilf is Pilves.',
-			'The term for Pilf’s inclination is a mood, similar to how types of quarks are referred to as flavors.',
-			'The term for describing something related to Pilf is Piian.'
-		]
+		() => {
+			makeList([
+				'Pilf is the only planet shaped like a cube.',
+				'Pilf’s gravity remains spherical, despite its appearence.',
+				'Pilf’s rings are made of a reflective "custard-like" substance.',
+				'Pilf is one of four planets with confirmed life, the other ones being Doug, Ert, and George.',
+				'Before being officially named by Alphabet, Pilf was originally referred to as Pii by The Nyork  Administration.',
+				'Pilf is the only planet with an ever changing axis of rotation.',
+				'The plural of Pilf is Pilves.',
+				'The term for Pilf’s inclination is a mood, similar to how types of quarks are referred to as flavors.',
+				'The term for describing something related to Pilf is Piian.'
+			]);
+		}
 	],
 	categories: [{
 		name: 'Coverage',
@@ -76,16 +80,18 @@ let pageData = { // First!
 			'Pilf is a cuboid terrestrial planet and is the only planet with that specific and unique status.',
 			
 			'<h3>Compared to Other Planets...</h3>',
-			[
-				'Pilf is the fourth biggest/smallest terrestrial planet, being the median.',
-				'By size it is the eighth largest planet.',
-				'By mass it is the tenth largest planet',
-				'By density, Pilf is in eighth place. It is the least dense of the terrestrial worlds.',
-				'By distance to Ommadawn, Pilf is third.',
-				'By axial tilt, Pilf is both first and last.',
-				'By habitability, Pilf is the third best.',
-				'By rings, Pilf is in second behind Aeiou.'
-			],
+			() => {
+				makeList([
+					'Pilf is the fourth biggest/smallest terrestrial planet, being the median.',
+					'By size it is the eighth largest planet.',
+					'By mass it is the tenth largest planet',
+					'By density, Pilf is in eighth place. It is the least dense of the terrestrial worlds.',
+					'By distance to Ommadawn, Pilf is third.',
+					'By axial tilt, Pilf is both first and last.',
+					'By habitability, Pilf is the third best.',
+					'By rings, Pilf is in second behind Aeiou.'
+				]);
+			},
 			'Pilf reigns supreme in the weird-planet category.',
 			
 			'<h3>Gravity</h3>',
@@ -100,15 +106,16 @@ let pageData = { // First!
 			'<h3>Geography</h3>',
 			'Pilf’s most interesting features include its purple color and its blue-green lakes on each side. Towards the center of each face, the lakes appear to bulge out due to the spherical pull of gravity. Around the lakes, there are flat plains marked with small craters and ridges. Approaching the edges, the land begins to appear more crumpled and uneven, with ever-increasing slopes until reaching a beveled plateau. Depressions on Pilf appear more stretched as they approach to the sides.',
 			'Each of the six faces on Pilf have names.',
-			[
-				'Face of POWER',
-				'Face of TOMFOOLERY',
-				'Face of MICROWAVES',
-				'Face of PUNGENCE',
-				'Face of PIZZA PIE',
-				'Face of EXPLODIUM'
-			],
-			
+			() => {
+				makeList([
+					'Face of POWER',
+					'Face of TOMFOOLERY',
+					'Face of MICROWAVES',
+					'Face of PUNGENCE',
+					'Face of PIZZA PIE',
+					'Face of EXPLODIUM'
+				]);
+			},
 			'<h4>Lakes</h4>',
 			'In the center of each face on Pilf are pools of blue-green fluid, the composition of which is what one could only describe as a concoction of dissolved organic material, fuming with a pungent smell which would burn off the flesh of anything nearby. They may be formed from the internal processes inside Pilf. These lakes are vast, covering the majority of the faces’ centers with depths akin to a kiddie pool. The surface of these lakes are smothered by matts of microbial colonies.',
 			
@@ -166,21 +173,29 @@ let pageData = { // First!
 			
 			'<h3>Scientists\' Opinion</h3>',
 			'Many scientists find Pilf as the easiest excuse to send as many missions to it as possible, which gained it the reputation of being the planet that gets all of the attention. Regulations have made the N.A more open to other planets, including Doug, which had mellowed out most opinions after their decline of royal offerings for the prevention of Pilf’s lifeforms.',
-			{
-				quote: 'Farley stole my cheese.',
-				author: 'Otto Bottlines (Assistant)'
+			() => {
+				makeQuote({
+					quote: 'Farley stole my cheese.',
+					author: 'Otto Bottlines (Assistant)'
+				});
 			},
-			{
-				quote: 'I tasted the cheese, ONCE! It didn’t taste like cheese at all, but it did taste GREAT!',
-				author: 'Farley Pounzer (Daughter of Pascale, taken for "Bring-your-kid-to-work-day".)'
+			() => {
+				makeQuote({
+					quote: 'I tasted the cheese, ONCE! It didn’t taste like cheese at all, but it did taste GREAT!',
+					author: 'Farley Pounzer (Daughter of Pascale, taken for "Bring-your-kid-to-work-day".)'
+				});
 			},
-			{
-				quote: 'Pilf is more than cheese, Pilf is a wonder for everything astro-sciences. Everyone here wants to know more about its secrets - and the rewarding sensation of knowing more about what it can do for us!',
-				author: 'Pascale D. Fontaine (Lead)'
+			() => {
+				makeQuote({
+					quote: 'Pilf is more than cheese, Pilf is a wonder for everything astro-sciences. Everyone here wants to know more about its secrets - and the rewarding sensation of knowing more about what it can do for us!',
+					author: 'Pascale D. Fontaine (Lead)'
+				});
 			},
-			{
-				quote: 'A decent 9/10.',
-				author: 'Douglass Irae'
+			() => {
+				makeQuote({
+					quote: 'A decent 9/10.',
+					author: 'Douglass Irae'
+				});
 			}
 		]
 	}, {

@@ -34,22 +34,26 @@ let pageData = {
 		}]
 	},
 	introText: [
-		{
-			quote: 'Oort good :)',
-			author: 'Anonymous <a href="index.html?p=pilf">Sawnfly</a>, translated from Brainwave Analytics'
+		() => {
+			makeQuote({
+				quote: 'Oort good :)',
+				author: 'Anonymous <a href="index.html?p=pilf">Sawnfly</a>, translated from Brainwave Analytics'
+			});
 		},
 		'Ert is the fourth planet in the <a href="index.html?p=hotsun">Ommadawn</a> system, sharing this position with <a href="index.html?p=george">George</a>, after <a href="index.html?p=pilf">Pilf</a> and before <a href="index.html?p=baeg">Baeg</a>. Ert is the homeworld of Metaventures, with the majority of its settings being located on two of its four continents. It is an Earth-like analog, featuring striking similarities to it - as if we didn\'t have time to come up with an alien world. If a person were to be on Ert, they\'ll feel almost the same as they would feel on Earth, apart from the slightly increased gravity and risk of being mugged or teacupped by a couple of delinquent Reegs - or Polygons or whatever fantastical beings.',
 	
 		'<h3>Interesting Facts</h3>',
-		[
-			'Ert always faces George, and vice versa.',
-			'Ert has an aurora on the equator instead of its poles.',
-			'Ert has a high concentration of Yolktonium in its core.',
-			'Ert is more ocean than land (just like Earth).',
-			'Ert\'s four land masses are named: Northland, Southland, Weastland, and Elseland.',
-			'Ert compasses have north and south, an arrow pointing upwards since east and west cancel out, and an arrow on the side of the compass to point to "else."',
-			'The term for describing something related to Ert is Ertian.'
-		]
+		() => {
+			makeList([
+				'Ert always faces George, and vice versa.',
+				'Ert has an aurora on the equator instead of its poles.',
+				'Ert has a high concentration of Yolktonium in its core.',
+				'Ert is more ocean than land (just like Earth).',
+				'Ert\'s four land masses are named: Northland, Southland, Weastland, and Elseland.',
+				'Ert compasses have north and south, an arrow pointing upwards since east and west cancel out, and an arrow on the side of the compass to point to "else."',
+				'The term for describing something related to Ert is Ertian.'
+			]);
+		}
 	],
 	categories: [{
 		name: 'Coverage',
@@ -77,16 +81,18 @@ let pageData = {
 			'Ert is a terrestrial planet, therefore it is rocky in composition and has a surface you can stand on. Its surface is covered in large oceans and land masses. A day on Ert lasts exactly 1 Ert day, and a year on Ert lasts exactly Ert 1 year. How useful is that? Very useful, according to scientists, probably smoking bread...',
 			
 			'<h3>Compared to Other Planets...</h3>',
-			[
-				'Ert is the third largest terrestrial planet.',
-				'By size, it is the sixth largest planet.',
-				'By mass, it is the seventh largest planet.',
-				'By density, Ert is in third place, being surpassed by its companion George, followed by The.',
-				'By distance to Ommadawn, Ert is fourth, tied with George.',
-				'By difficulty to visit, Ert is the last place.',
-				'By habitability, Ert is second place.',
-				'By fictional planets invented, Ert is first as no other planets have made up fictional planets.',
-			],
+			() => {
+				makeList([
+					'Ert is the third largest terrestrial planet.',
+					'By size, it is the sixth largest planet.',
+					'By mass, it is the seventh largest planet.',
+					'By density, Ert is in third place, being surpassed by its companion George, followed by The.',
+					'By distance to Ommadawn, Ert is fourth, tied with George.',
+					'By difficulty to visit, Ert is the last place.',
+					'By habitability, Ert is second place.',
+					'By fictional planets invented, Ert is first as no other planets have made up fictional planets.',
+				]);
+			},
 			'Due to the lack of first-placements, Ert is widely considered as a disappointment by some (and by some we mean most) planet-ranking analysts out there.',
 			
 			'<h3>Geography</h3>',
@@ -131,13 +137,17 @@ let pageData = {
 
 			'<h3>Scientists\' Opinion</h3>',
 			'Most scientists are pretty biased towards their homeworld, so they often confidently remark on how little they have to say about it - until someone brings up how Doug would be a better place to live on.',
-			{
-				quote: 'Ert is great, goodbye!',
-				author: 'Captain Nyork\'s opinion.'
+			() => {
+				makeQuote({
+					quote: 'Ert is great, goodbye!',
+					author: 'Captain Nyork\'s opinion.'
+				});
 			},
-			{
-				quote: 'Ehh, 6/10.',
-				author: 'Douglass Irae'
+			() => {
+				makeQuote({
+					quote: 'Ehh, 6/10.',
+					author: 'Douglass Irae'
+				});
 			}
 		]
 	}, {

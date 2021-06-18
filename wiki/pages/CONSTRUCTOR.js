@@ -119,7 +119,7 @@ if (page.navbox != undefined) {
 				navrightembed.width = 275;
 				navrightembed.height = 200;
 				navrightembed.frameborder = 'no';
-				navrightembed.allow = 'autoplay';
+			//	navrightembed.allow = 'autoplay';
 				navrightembed.display = 'block';
 				navrightembed.src = `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${embedInfo.track}&color=%23${embedInfo.color}&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true`;
 				
@@ -140,18 +140,18 @@ if (page.navbox != undefined) {
 	avThin.append(navbox);
 }
 
-function makeQuote(quote, author) {
+function makeQuote(input) {
 	let quoteText = document.createElement('p');
 	
 	let quoteItalics = document.createElement('i');
 	quoteItalics.className = 'wiki-quote';
-	quoteItalics.innerHTML = `"${quote}"`;
+	quoteItalics.innerHTML = `"${input.quote}"`;
 
 	let lineBreak = document.createElement('br');
 
 	let quoteAuthor = document.createElement('i');
 	quoteAuthor.className = 'wiki-quote-author';
-	quoteAuthor.innerHTML = ` - ${author}`;
+	quoteAuthor.innerHTML = ` - ${input.author}`;
 
 	quoteText.append(quoteItalics, lineBreak, quoteAuthor);
 
@@ -172,20 +172,24 @@ function makeList(list) {
 	avThin.append(listContainer);
 }
 
-if (page.introText != undefined) {
-	for (let i = 0; i < page.introText.length; i++) {		
-		switch (typeof page.introText[i]) {
-			case 'string':
-				let introText = document.createElement('p');
-				introText.innerHTML = page.introText[i];
-				avThin.append(introText);	 
-				break;
-			case 'object':
-				if (Array.isArray(page.introText[i])) makeList(page.introText[i]);
-				else makeQuote(page.introText[i].quote, page.introText[i].author);
-				break;
-		}
+function handleText(input) {
+	switch (typeof input) {
+		case 'string':
+			let introText = document.createElement('p');
+			introText.innerHTML = input;
+			avThin.append(introText);	 
+			break;
+		case 'function':
+			input();
+			break;
+		default:
+			console.log('Unknown input type!', input);
+			break;
 	}
+}
+
+if (page.introText != undefined) {
+	for (let i = 0; i < page.introText.length; i++) handleText(page.introText[i]);
 }
 
 if (page.categories != undefined) {
@@ -198,19 +202,7 @@ if (page.categories != undefined) {
 		avThin.append(category, lineBreak);
 		
 		if (page.categories[i].info != undefined) {
-			for (let j = 0; j < page.categories[i].info.length; j++) {
-				switch (typeof page.categories[i].info[j]) {
-					case 'string':
-						let info = document.createElement('p');
-						info.innerHTML = page.categories[i].info[j];
-						avThin.append(info);
-						break;
-					case 'object':
-						if (Array.isArray(page.categories[i].info[j])) makeList(page.categories[i].info[j]);
-						else makeQuote(page.categories[i].info[j].quote, page.categories[i].info[j].author);
-						break;
-				}
-			}
+			for (let j = 0; j < page.categories[i].info.length; j++) handleText(page.categories[i].info[j]);
 		}
 
 		if (page.categories[i].gallery != undefined) {

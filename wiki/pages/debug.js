@@ -20,7 +20,14 @@ let pageData = {
 		}]
 	},
 	introText: [
-		'<span class="rainbow">WAAAAAAAAAAAAAAA</span>'
+		'<span class="rainbow">WAAAAAAAAAAAAAAA</span>',
+		() => {
+			makeList(
+				'lewjnsdx',
+				'esdjnj',
+				'edefd'
+			);
+		}
 	],
 	endnav: 'planet'
 };

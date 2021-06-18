@@ -34,21 +34,25 @@ let pageData = {
 		}]
 	},
 	introText: [
-		{
-			quote: 'I\'m shocked that nobody really looked at this planet before, it\'s been left out of discussions for a long time. I haven\'t really found anything, and it\'s NOT because I HAVEN\'T been looking.',
-			author: '<a href="index.html?p=lakys">Dr. R. Lakys</a>'
+		() => {
+			makeQuote({
+				quote: 'I\'m shocked that nobody really looked at this planet before, it\'s been left out of discussions for a long time. I haven\'t really found anything, and it\'s NOT because I HAVEN\'T been looking.',
+				author: '<a href="index.html?p=lakys">Dr. R. Lakys</a>'
+			});
 		},
 		'Doug is the second planet in the Ommadawn system, after <a href="index.html?p=grene">Grēne</a> and before <a href="index.html?p=pilf">Pilf</a>. Doug has been referred to as the most disliked planet among scientists. Reasons include the barren planet’s landscapes or that it serves no purpose in figuring out new physics. Doug resembles a brown-yellow ball of dirt, or to some degree, a burnt chocolate chip cookie.',
 
 		'<h3>Interesting Facts</h3>',
-		[
-			'Doug has a moon that somewhat resembles itself and Pilf.',
-			'Doug has a near-perfect circular orbit.',
-			'Doug has worms inside.',
-			'Doug is the culprit of a strange burst of energy known as a DIE Burst.',
-			'The term for describing something related to Doug is Dougian, or Forgettable.',
-			'That\'s it. That\'s all you need to know.'
-		],
+		() => {
+			makeList([
+				'Doug has a moon that somewhat resembles itself and Pilf.',
+				'Doug has a near-perfect circular orbit.',
+				'Doug has worms inside.',
+				'Doug is the culprit of a strange burst of energy known as a DIE Burst.',
+				'The term for describing something related to Doug is Dougian, or Forgettable.',
+				'That\'s it. That\'s all you need to know.'
+			]);
+		}
 	],
 	categories: [{
 		name: 'Coverage',
@@ -71,24 +75,28 @@ let pageData = {
 	}, {
 		name: 'Planet Info',
 		info: [
-			{
-				quote: 'When a planet becomes so boring that all other worlds feel so different, you get Doug',
-				author: 'Kudos Palinski (Director of Doug Sciences or "Dee Scee")'
+			() => {
+				makeQuote({
+					quote: 'When a planet becomes so boring that all other worlds feel so different, you get Doug',
+					author: 'Kudos Palinski (Director of Doug Sciences or "Dee Scee")'
+				})
 			},
 			'Doug is a terrestrial planet, meaning that it is possible to not stand on its surface.',
 			
 			'<h3>Compared to Other Planets...</h3>',
-			[
-				'Doug is the second smallest terrestrial planet.',
-				'By size it is the tenth largest planet.',
-				'By mass it is the ninth largest planet.',
-				'By density, Doug is in fifth place.',
-				'By distance to <a href="index.html?p=hotsun">Ommadawn</a>, Doug is second.',
-				'By difficulty to visit, Doug is third.',
-				'By habitability, Doug is the second worst excluding the giant planets.',
-				'By difficulty to remember, Doug is first.',
-				'By how rugged it is, Doug is also first.'
-			],
+			() => {
+				makeList([
+					'Doug is the second smallest terrestrial planet.',
+					'By size it is the tenth largest planet.',
+					'By mass it is the ninth largest planet.',
+					'By density, Doug is in fifth place.',
+					'By distance to <a href="index.html?p=hotsun">Ommadawn</a>, Doug is second.',
+					'By difficulty to visit, Doug is third.',
+					'By habitability, Doug is the second worst excluding the giant planets.',
+					'By difficulty to remember, Doug is first.',
+					'By how rugged it is, Doug is also first.'
+				]);
+			},
 			'Unsurprisingly, Doug\'s placement is average and unremarkable.',
 			
 			'<h3>Orbit and Rotation</h3>',
@@ -148,9 +156,11 @@ let pageData = {
 			'Ground astronomers have a general distaste for Doug due to its dull non-reflective surface, which renders it mostly invisible when viewed in the evening skies of Ert.',
 			'The Dee Scee has an overwhelming positive opinion on Doug deeming it to be just as interesting as any other planet in the Bisolar System.',
 			'A quote which has been highly debated by critics yet accepted by scientists may be read below.',
-			{
-				quote: 'Doug, are you KIDDING ME? Why can\'t this damn planet make VOLCANOES already! I want to see some action, not a dead dirtball of a planet! I don\'t even want to call it a planet, it\'s just a rock. It has absolutely NO value to my research.',
-				author: 'Dr. R. Lakys'
+			() => {
+				makeQuote({
+					quote: 'Doug, are you KIDDING ME? Why can\'t this damn planet make VOLCANOES already! I want to see some action, not a dead dirtball of a planet! I don\'t even want to call it a planet, it\'s just a rock. It has absolutely NO value to my research.',
+					author: 'Dr. R. Lakys'
+				});
 			}
 		]
 	}, {
