@@ -700,6 +700,7 @@ a {
 
 .wiki-list-item {
 	background-color: var(--avthin);
+	line-height: var(--lineheight);
 }
 
 .aerospin {
