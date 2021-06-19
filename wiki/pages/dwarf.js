@@ -1,6 +1,6 @@
 let pageData = {
-	warning: 'stub',
 	name: 'Dwarf Planets',
+	warning: 'stub',
 	introText: [
 		'A Dwarf Planet is an object in space that does not fit the criteria of a planet, and, as such, is not important enough '
 	],

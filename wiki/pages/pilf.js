@@ -1,5 +1,6 @@
 let pageData = { // First!
 	name: 'Pilf',
+	warning: 'quality',
 	navbox: {
 		file: ['pilf.png', 'pixel'],
 		symbol: true,

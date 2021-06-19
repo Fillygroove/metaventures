@@ -1,6 +1,6 @@
 let pageData = {
-	warning: 'quality',
 	name: 'Ert',
+	warning: 'quality',
 	navbox: {
 		file: ['ert.png', 'pixel'],
 		symbol: true,

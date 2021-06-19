@@ -1,6 +1,6 @@
 const pageData = {
-	warning: 'stub',
 	name: 'Ommadawn',
+	warning: 'stub',
 	navbox: {
 		file: ['hot_sun.png', 'pixel'],
 		symbol: true,

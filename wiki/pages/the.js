@@ -1,6 +1,6 @@
 let pageData = {
-	warning: 'stub',
 	name: 'The',
+	warning: 'stub',
 	navbox: {
 		file: ['the.png', 'pixel'],
 		symbol: true,
