@@ -40,8 +40,11 @@ let pageData = {
 				author: '<a href="index.html?p=lakys">Dr. R. Lakys</a>'
 			});
 		},
-		'Doug is the second planet in the Ommadawn system, after <a href="index.html?p=grene">Grēne</a> and before <a href="index.html?p=pilf">Pilf</a>. Doug has been referred to as the most disliked planet among scientists. Reasons include the barren planet’s landscapes or that it serves no purpose in figuring out new physics. Doug resembles a brown-yellow ball of dirt, or to some degree, a burnt chocolate chip cookie.',
-
+		() => {
+			greneAddMacron([
+				'Doug is the second planet in the Ommadawn system, after <a href="index.html?p=grene">Grene</a> and before <a href="index.html?p=pilf">Pilf</a>. Doug has been referred to as the most disliked planet among scientists. Reasons include the barren planet’s landscapes or that it serves no purpose in figuring out new physics. Doug resembles a brown-yellow ball of dirt, or to some degree, a burnt chocolate chip cookie.',
+			]);
+		},
 		'<h3>Interesting Facts</h3>',
 		() => {
 			makeList([
@@ -101,7 +104,11 @@ let pageData = {
 			
 			'<h3>Orbit and Rotation</h3>',
 			'Doug resides in a balmy distance from Ommadawn, just far enough to not be melted by the heat, unfortunately. It is closer to the sun compared to real-life Mercury.',
-			'Doug\'s orbit is nearly a perfect circle, which is surprising considering that it would be dragged around by the other nearby planets, most noteworthy is Grēne and the Ert and George binary. The overall stability of its placement may be a lucky coincidence.',			
+			() => {
+				greneAddMacron([
+					'Doug\'s orbit is nearly a perfect circle, which is surprising considering that it would be dragged around by the other nearby planets, most noteworthy is Grene and the Ert and George binary. The overall stability of its placement may be a lucky coincidence.'
+				]);
+			},
 			'Doug\'s rotation is rather slow, possibly due to the way the planet was created, likely from a "cataclysmic" event. The rotation is so slow that only around one fifth of a day passes when compared to a year on Doug. If you were born on Doug, your first birthday will happen before the day ends.',
 			'Doug\'s axial tilt is perpendicular to its orbit, resting at a nice 0 degrees. This means that Doug experiences no seasons.',
 			'One of the few interesting side-effects of Doug\'s slow rotation is that if you avoid all warnings and stand on its surface, Ommadawn will appear to freeze in the sky at certain points of the day.',
@@ -119,8 +126,12 @@ let pageData = {
 			'The cause of these bursts are largely understudied. They appear to be strongest within the large craters, and the trajectory of these bursts usually face towards the Ert and George binary, sometimes even when Doug is at opposition.',
 			
 			'<h3>Atmosphere and Climate</h3>',
-			'Doug has an exosphere, which does nothing and practically does not exist. Scientists theorize that the exosphere comes from Doug capturing bits of Grēne\'s ejected atmosphere. This may be the explanation of Doug\'s brown surface, being the result of gradual interactions from the trail.',			
-			'Surface temperatures of Doug would be blistering hot or freezing cold. Since there is no medium to have heat transfer, it would be equivalent to being in a vacuum. Climates vary little, only determined by how much light a certain part of the planet may receive. Doug\'s slow rotation would result in long days and nights, fluctuating between both extremes. Doug is considered the second-hottest planet overall, although it is still far behind Grēne by a longshot.',
+			() => {
+				greneAddMacron([
+					'Doug has an exosphere, which does nothing and practically does not exist. Scientists theorize that the exosphere comes from Doug capturing bits of Grene\'s ejected atmosphere. This may be the explanation of Doug\'s brown surface, being the result of gradual interactions from the trail.',
+					'Surface temperatures of Doug would be blistering hot or freezing cold. Since there is no medium to have heat transfer, it would be equivalent to being in a vacuum. Climates vary little, only determined by how much light a certain part of the planet may receive. Doug\'s slow rotation would result in long days and nights, fluctuating between both extremes. Doug is considered the second-hottest planet overall, although it is still far behind Grene by a longshot.',
+				]);
+			},
 			
 			'<h3>Satellites</h3>',
 			'The only confirmed moon is <a href="./index.html?p=aech">Aech</a>, which resembles Doug but also happens to be in the shape of a cube, similar to that of Pilf. Aech is tiny and orbits barely a Doug radius away from the surface.',

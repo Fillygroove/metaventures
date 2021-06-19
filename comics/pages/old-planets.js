@@ -4,7 +4,7 @@ let comicInfo = {
 	folder: 'old/old-planets/',
 	panels: [{
 		panel: '1.png',
-		caption: 'The original Grēne, before the larger remake...',
+		caption: 'The original Gr\u0113ne, before the larger remake...',
 		classTitle: 'pixel'
 	}, {
 		panel: '2.png',

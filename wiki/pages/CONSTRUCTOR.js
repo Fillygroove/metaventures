@@ -33,7 +33,7 @@ if (page.navbox != undefined) {
 		navsymbol.src = `./images/symbol_${pageName}.png`;
 		navsymbol.className = 'wiki-navbox-symbol';
 		caption.append(navsymbol);
-	}
+	};
 	
 	let navbody = document.createElement('tbody');
 	
@@ -52,7 +52,7 @@ if (page.navbox != undefined) {
 		imgnav.alt = page.navbox.file[0];
 		
 		imagetd.append(imgnav);
-	}
+	};
 	
 	capa.innerHTML = page.navbox.caption;
 	
@@ -138,7 +138,7 @@ if (page.navbox != undefined) {
 	}
 	
 	avThin.append(navbox);
-}
+};
 
 function makeGallery(input) {
 	let gallerySlideshow = document.createElement('div');
@@ -212,7 +212,7 @@ function makeGallery(input) {
 	}
 
 	avThin.append(gallerySlideshow);
-}
+};
 
 function makeQuote(input) {
 	let quoteText = document.createElement('p');
@@ -230,7 +230,7 @@ function makeQuote(input) {
 	quoteText.append(quoteItalics, lineBreak, quoteAuthor);
 
 	avThin.append(quoteText);
-}
+};
 
 function makeList(list) {
 	let listContainer = document.createElement('ul');
@@ -241,10 +241,10 @@ function makeList(list) {
 		listItem.innerHTML = list[listIndex];
 		listItem.className = 'wiki-list-item';
 		listContainer.append(listItem);
-	}
+	};
 
 	avThin.append(listContainer);
-}
+};
 
 function addImage(input) {
 	let image = document.createElement('img');
@@ -257,14 +257,27 @@ function addImage(input) {
 	image.alt = input.alt;
 
 	avThin.append(image);
-}
+};
+
+function addText(input) {
+	let newText = document.createElement('p');
+	newText.innerHTML = input;
+	avThin.append(newText);
+};
+
+function greneAddMacron(input) {
+	for (let textIndex = 0; textIndex < input.length; textIndex++) {
+		addText(input[textIndex]
+			.replaceAll('Grene', 'Gr\u0113ne')
+			.replaceAll('Grenian', 'Gr\u0113nian')
+		);
+	}
+};
 
 function handleText(input) {
 	switch (typeof input) {
 		case 'string':
-			let introText = document.createElement('p');
-			introText.innerHTML = input;
-			avThin.append(introText);	 
+			addText(input);
 			break;
 		case 'function':
 			input();
@@ -272,8 +285,8 @@ function handleText(input) {
 		default:
 			console.log('Unknown input type!', input);
 			break;
-	}
-}
+	};
+};
 
 if (page.introText != undefined) {
 	for (let i = 0; i < page.introText.length; i++) handleText(page.introText[i]);

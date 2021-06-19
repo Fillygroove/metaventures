@@ -9,10 +9,10 @@ endnavs.push({
 		info: [{
 			name: 'Inner System',
 			info: [
-				// Grēne
+				// Grene
 				`<a href="index.html?p=grene">
 					<img src="images/symbol_grene.png" height="${imageSize.norm}"></img>
-					Grēne
+					Gr\u0113ne
 				</a>`,
 				// Doug
 				`<a href="index.html?p=doug">
