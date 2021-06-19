@@ -225,6 +225,10 @@ a {
 	color: #6EC7E7;
 }
 
+.link:visited {
+	color: #AE81E9;
+}
+
 .comic-link {
 	color: #FCDB6D;
 }
