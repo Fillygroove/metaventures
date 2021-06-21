@@ -44,6 +44,8 @@ addHead('The Discord!');
 
 addText('The Discord is a little invite to a server that allows you to chat with the creators of the content on this very website! The discord allows you to view changelogs, talk with other people, and more!');
 
+addText('If you would like to take a visit, go <a href="https://discord.gg/xxRvYERs48" class="link">here</a>!')
+
 addHead('The Credits!');
 
 addText('If you would like to see who helped out with the Metaventures world, go <a href="./wiki/index.html?p=credits" class="link">here</a>!');
