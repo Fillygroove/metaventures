@@ -9,22 +9,22 @@ const pageData = {
 			heading: 'Designations',
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="index.html?p=taiberaque">Taiberaque (Binary System)</a>']
+				info: ['<a href="?p=taiberaque">Taiberaque (Binary System)</a>']
 			}, {
 				name: 'Satellites',
 				info: [
-					'<a href="index.html?p=grene">Gr\u0113ne</a>',
-					'<a href="index.html?p=doug">Doug</a>',
-					'<a href="index.html?p=pilf">Pilf</a>',
-					'<a href="index.html?p=ert">Ert</a>',
-					'<a href="index.html?p=george">George</a>',
-					'<a href="index.html?p=baeg">Baeg</a>',
-					'<a href="index.html?p=mac">Mac</a>',
-					'<a href="index.html?p=hazel">Hazel</a>',
-					'<a href="index.html?p=aeiou">Aeiou</a>',
-					'<a href="index.html?p=cea">Cea</a>',
-					'<a href="index.html?p=the">The</a>',
-					'<a href="index.html?p=taiberaque">Taiberaque (Binary System)</a>'
+					'<a href="?p=grene">Gr\u0113ne</a>',
+					'<a href="?p=doug">Doug</a>',
+					'<a href="?p=pilf">Pilf</a>',
+					'<a href="?p=ert">Ert</a>',
+					'<a href="?p=george">George</a>',
+					'<a href="?p=baeg">Baeg</a>',
+					'<a href="?p=mac">Mac</a>',
+					'<a href="?p=hazel">Hazel</a>',
+					'<a href="?p=aeiou">Aeiou</a>',
+					'<a href="?p=cea">Cea</a>',
+					'<a href="?p=the">The</a>',
+					'<a href="?p=taiberaque">Taiberaque (Binary System)</a>'
 				]
 			}, {
 				name: 'Name Origin',

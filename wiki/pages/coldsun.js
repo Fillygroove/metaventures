@@ -8,7 +8,7 @@ let pageData = {
 			heading: 'Designations',
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="index.html?p=taiberaque">Taiberaque</a>']
+				info: ['<a href="?p=taiberaque">Taiberaque</a>']
 			}, {
 				name: 'Satellites',
 				info: [
@@ -23,9 +23,9 @@ let pageData = {
 			}, {
 				name: 'Life',
 				info: [
-					'<a href="index.html?p=nyork">Nyork</a>\'s Species',
-					'<a href="index.html?p=royale">Royale</a>',
-					'<a href="index.html?p=larry">Larry</a>'
+					'<a href="?p=nyork">Nyork</a>\'s Species',
+					'<a href="?p=royale">Royale</a>',
+					'<a href="?p=larry">Larry</a>'
 				]
 			}]
 		}]

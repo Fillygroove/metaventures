@@ -19,7 +19,7 @@ for (let i = warnings.length - 1; i >= 0; i--) {
 	let warningIMG = document.createElement('img');
 
 	warningIMG.alt = warning.image.file;
-	warningIMG.src = `./images/${warning.image.file}`;
+	warningIMG.src = `wiki/images/${warning.image.file}`;
 	warningIMG.width = warning.image.dims[0];
 	warningIMG.height = warning.image.dims[1];
 
@@ -128,5 +128,5 @@ for (let i = 0; i < endnavs.length; i++) {
 }
 
 correctLinks();
-
+// Why would you need an execute function lmfao
 if (pageData.execute != undefined) pageData.execute();

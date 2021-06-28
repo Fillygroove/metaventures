@@ -6,7 +6,7 @@ let slides = document.getElementsByClassName('comic-slides');
 if (comicInfo.rewindTo != undefined) makeButton({
 	html: 'Rodney Rewind', 
 	color: 'rodney-violet', 
-	link: `./index.html?c=${comicInfo.rewindTo}`
+	link: `?c=${comicInfo.rewindTo}`
 });
 
 if (comicInfo.background != undefined) {
@@ -26,7 +26,7 @@ for (let i = 0; i < comicInfo.panels.length; i++) {
 
 	let panel = document.createElement('img');
 	
-	panel.src = `./panels/${directory}${comicInfo.panels[i].panel}`;
+	panel.src = `./comics/panels/${directory}${comicInfo.panels[i].panel}`;
 	panel.className = `comic-panel${comicInfo.panels[i].classTitle ? ' ' + comicInfo.panels[i].classTitle : ''}`;
 
 	if (comicInfo.panels[i].link !== undefined) {
@@ -182,11 +182,11 @@ function showSlides(n) {
 
 function verify(slide) {
 	if (comic == 'av-9' && slide == '999') { // Nineventures Easter Egg
-		window.location.href = 'index.html?c=nine';
+		window.location.href = '?c=nine';
 	} else if (comic == 'nine' && slideIndex == 9 && (slide == '9' || slide == 'nine')) { // Metanineventures Easter Egg
-		window.location.href = '../wiki/index.html?p=nine';
+		window.location.href = '../wiki?p=nine';
 	} else if (slide == 'Panel Number') {  // Panel Number Easter Egg
-		window.location.href = 'index.html?c=pn';
+		window.location.href = '?c=pn';
 	} else if (!isNaN(slide) && Math.floor(slide) != slide) { // Panel Corruption Easter Egg
 		if (comic == 'av-10.5' || comic == 'trigger' || comic == 'av-choose') {
 			document.getElementsByClassName('comic-description')[0].innerHTML = 'Failed the corruption, please try again later.';

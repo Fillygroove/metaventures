@@ -9,7 +9,7 @@ let pageData = {
 			heading: 'Designations',
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
+				info: ['<a href="?p=hotsun">Hot Sun</a>']
 			}]
 		}, {
 			heading: 'TEST',

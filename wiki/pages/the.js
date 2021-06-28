@@ -9,7 +9,7 @@ let pageData = {
 			heading: 'Designations',		
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
+				info: ['<a href="?p=hotsun">Hot Sun</a>']
 			}, {
 				name: 'Satellites',
 				info: ['Unknown']
@@ -32,7 +32,7 @@ let pageData = {
 				author: 'Everyone'
 			});
 		},
-		'The is the tenth and last planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=cea">Cea</a>. The is a mysterious planet, which has been at the center of many scientific theories and general intrigue. As such, there are few things we know about The, but the information we do have is interesting, and, as such, warrants an article; Not to be confused with Article, These original name. The is exactly one fourty-second of the size of the Hot Sun.',
+		'The is the tenth and last planet in the <a href="?p=hotsun">Hot Sun</a> system, after <a href="?p=cea">Cea</a>. The is a mysterious planet, which has been at the center of many scientific theories and general intrigue. As such, there are few things we know about The, but the information we do have is interesting, and, as such, warrants an article; Not to be confused with Article, These original name. The is exactly one fourty-second of the size of the Hot Sun.',
 		'The name for describing something similar to The is... The... The.'
 	],
 	categories: [{
@@ -50,7 +50,7 @@ let pageData = {
 			'<h3>Atmosphere</h3>',
 			'These atmosphere is theorized to be nitrogen. This is due to none of the metallic sections of The rusting. Said atmosphere is very thin, however. Said atmosphere is most likely unbreathable.',
 			'<h3>Internal Structure</h3>',
-			'The doesn\'t have a lot of areas where you can\'t see the inside, but the areas we can see inside tell us a lot. First is the cut down the equator, which splits the northern and southern hemispheres to reveal a glowing area, split up into 12 distinct slices on the southern hemisphere, although the number of slices on the northern hemisphere is still unknown, due to the planet moving in a downwards direction from <a href="index.html?p=ert">Ert</a>\'s perspective. Said slices glow a deep red-ish purple color, with the borders of each piece glowing in a brighter shade of the aforementioned color. It is theorized that the borders are meant to represent piping, although this is unconfirmed.',
+			'The doesn\'t have a lot of areas where you can\'t see the inside, but the areas we can see inside tell us a lot. First is the cut down the equator, which splits the northern and southern hemispheres to reveal a glowing area, split up into 12 distinct slices on the southern hemisphere, although the number of slices on the northern hemisphere is still unknown, due to the planet moving in a downwards direction from <a href="?p=ert">Ert</a>\'s perspective. Said slices glow a deep red-ish purple color, with the borders of each piece glowing in a brighter shade of the aforementioned color. It is theorized that the borders are meant to represent piping, although this is unconfirmed.',
 			'The chevron on the top left of the northern hemisphere seems to indicate the existence of a similar material at the flat bases of the hemispheres, if not the same material. The section that lines up with the top row of lights seems to glow with the same intensity as the lights, which suggests that the lights go deeper into The than previously thought.',
 			'Both of These hemispheres have blue sections, which scientists initially thought was a sort of liquid, but then was proven to be in a solid state, due to there appearing to be lines on both sections. The current accepted theory is that the blue surface could be tinted glass. The lines on the surface, however, are still theorized about. Current theories include heavy scratching on the glass, piping under the glass, the tiling pattern of the glass, and a recipe on how to make forbidden juice.',
 			'<img src="images/the_first.png" alt="the_first.png" width="100" height="100" style="float: right; background-color: rgba(0, 0, 0, 0);"></img>',

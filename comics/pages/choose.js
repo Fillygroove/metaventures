@@ -7,11 +7,11 @@ let comicInfo = {
 		caption: 'Aeroventures (Coming Soon!)'
 	}, {
 		panel: '1.png',
-		link: 'index.html?c=old-av-choose',
+		link: '?c=old-av-choose',
 		caption: 'Legacy Aeroventures'
 	}, {
 		panel: '2.png',
-		link: 'index.html?c=old-choose',
+		link: '?c=old-choose',
 		caption: 'The Archie-ve'
 	}]
 };

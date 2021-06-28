@@ -9,10 +9,10 @@ let pageData = {
 			heading: 'Designations',
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="index.html?p=hotsun">Ommadawn</a>', '<a href="index.html?p=george">George (Binary System)</a>']
+				info: ['<a href="?p=hotsun">Ommadawn</a>', '<a href="?p=george">George (Binary System)</a>']
 			}, {
 				name: 'Satellites',
-				info: ['<a href="index.html?p=george">George (Binary System)</a>', '<a href="index.html?p=perpahedron">Perpahedron (Artificial)</a>']
+				info: ['<a href="?p=george">George (Binary System)</a>', '<a href="?p=perpahedron">Perpahedron (Artificial)</a>']
 			}, {
 				name: 'Name Origin',
 				info: ['Unknown']
@@ -37,10 +37,10 @@ let pageData = {
 		() => {
 			makeQuote({
 				quote: 'Oort good :)',
-				author: 'Anonymous <a href="index.html?p=pilf">Sawnfly</a>, translated from Brainwave Analytics'
+				author: 'Anonymous <a href="?p=pilf">Sawnfly</a>, translated from Brainwave Analytics'
 			});
 		},
-		'Ert is the fourth planet in the <a href="index.html?p=hotsun">Ommadawn</a> system, sharing this position with <a href="index.html?p=george">George</a>, after <a href="index.html?p=pilf">Pilf</a> and before <a href="index.html?p=baeg">Baeg</a>. Ert is the homeworld of Metaventures, with the majority of its settings being located on two of its four continents. It is an Earth-like analog, featuring striking similarities to it - as if we didn\'t have time to come up with an alien world. If a person were to be on Ert, they\'ll feel almost the same as they would feel on Earth, apart from the slightly increased gravity and risk of being mugged or teacupped by a couple of delinquent Reegs - or Polygons or whatever fantastical beings.',
+		'Ert is the fourth planet in the <a href="?p=hotsun">Ommadawn</a> system, sharing this position with <a href="?p=george">George</a>, after <a href="?p=pilf">Pilf</a> and before <a href="?p=baeg">Baeg</a>. Ert is the homeworld of Metaventures, with the majority of its settings being located on two of its four continents. It is an Earth-like analog, featuring striking similarities to it - as if we didn\'t have time to come up with an alien world. If a person were to be on Ert, they\'ll feel almost the same as they would feel on Earth, apart from the slightly increased gravity and risk of being mugged or teacupped by a couple of delinquent Reegs - or Polygons or whatever fantastical beings.',
 	
 		'<h3>Interesting Facts</h3>',
 		() => {

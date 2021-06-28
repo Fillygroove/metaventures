@@ -9,7 +9,7 @@ let pageData = {
 			heading: 'Designations',
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
+				info: ['<a href="?p=hotsun">Hot Sun</a>']
 			}, {
 				name: 'Satellites',
 				info: ['Aech']
@@ -37,12 +37,12 @@ let pageData = {
 		() => {
 			makeQuote({
 				quote: 'I\'m shocked that nobody really looked at this planet before, it\'s been left out of discussions for a long time. I haven\'t really found anything, and it\'s NOT because I HAVEN\'T been looking.',
-				author: '<a href="index.html?p=lakys">Dr. R. Lakys</a>'
+				author: '<a href="?p=lakys">Dr. R. Lakys</a>'
 			});
 		},
 		() => {
 			greneAddMacron([
-				'Doug is the second planet in the Ommadawn system, after <a href="index.html?p=grene">Grene</a> and before <a href="index.html?p=pilf">Pilf</a>. Doug has been referred to as the most disliked planet among scientists. Reasons include the barren planet’s landscapes or that it serves no purpose in figuring out new physics. Doug resembles a brown-yellow ball of dirt, or to some degree, a burnt chocolate chip cookie.',
+				'Doug is the second planet in the Ommadawn system, after <a href="?p=grene">Grene</a> and before <a href="?p=pilf">Pilf</a>. Doug has been referred to as the most disliked planet among scientists. Reasons include the barren planet’s landscapes or that it serves no purpose in figuring out new physics. Doug resembles a brown-yellow ball of dirt, or to some degree, a burnt chocolate chip cookie.',
 			]);
 		},
 		'<h3>Interesting Facts</h3>',
@@ -93,7 +93,7 @@ let pageData = {
 					'By size it is the tenth largest planet.',
 					'By mass it is the ninth largest planet.',
 					'By density, Doug is in fifth place.',
-					'By distance to <a href="index.html?p=hotsun">Ommadawn</a>, Doug is second.',
+					'By distance to <a href="?p=hotsun">Ommadawn</a>, Doug is second.',
 					'By difficulty to visit, Doug is third.',
 					'By habitability, Doug is the second worst excluding the giant planets.',
 					'By difficulty to remember, Doug is first.',
@@ -134,7 +134,7 @@ let pageData = {
 			},
 			
 			'<h3>Satellites</h3>',
-			'The only confirmed moon is <a href="./index.html?p=aech">Aech</a>, which resembles Doug but also happens to be in the shape of a cube, similar to that of Pilf. Aech is tiny and orbits barely a Doug radius away from the surface.',
+			'The only confirmed moon is <a href="./?p=aech">Aech</a>, which resembles Doug but also happens to be in the shape of a cube, similar to that of Pilf. Aech is tiny and orbits barely a Doug radius away from the surface.',
 			'Surrounding Doug is a dispersed asteroid field, ranging from a few meters to almost a kilometer in size. These rocks are believed to be fragments from the moon Aech as it approaches Doug and gets ripped apart by its gravity. This may form a ring around Doug.',
 			
 			'As Doug hasn\'t been investigated much by modern day scientists, it is unknown if more than one moon existed in the past.',

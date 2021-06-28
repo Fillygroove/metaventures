@@ -39,20 +39,20 @@ function makePage(page) {
 	let comicDir, wikiDir, titleDir, pageName;
 	switch (page) {
 		case 'main':
-			comicDir = './comics/';
-			wikiDir = './wiki/';
-			titleDir = './';
+			comicDir = './comics';
+			wikiDir = './wiki';
+			titleDir = '';
 			pageName = 'Main';
 			break;
 		case 'comic':
-			comicDir = './';
-			wikiDir = '../wiki/';
+			comicDir = '';
+			wikiDir = '../wiki';
 			titleDir = '../';
 			pageName = 'Comics';
 			break;
 		case 'wiki':
-			comicDir = '../comics/';
-			wikiDir = './';
+			comicDir = '../comics';
+			wikiDir = '';
 			titleDir = '../';
 			pageName = 'Wiki';
 			break;
@@ -83,7 +83,7 @@ function makePage(page) {
 	preferenceMenuLine.style.margin = 0;
 
 	let preferenceMenuHeader = document.createElement('h2')
-	preferenceMenuHeader.innerHTML = `Prefe<a class="preference-secret" href="${comicDir}index.html?c=dk">r</a>ences`;
+	preferenceMenuHeader.innerHTML = `Prefe<a class="preference-secret" href="${comicDir}?c=dk">r</a>ences`;
 
 	preferenceMenuDiv.append(preferenceMenuHeader, preferenceMenuLine);
 
@@ -266,11 +266,12 @@ function makePage(page) {
 	};
 
 	if (window.localStorage.lineHeight == 'true') document.documentElement.style.setProperty('--lineheight', 3);
+	if (window.localStorage.speedrun == undefined) window.localStorage.speedrun = 'false';
 
 	dropdownDiv.append(preferenceMenuButton);
 
 	let mainAVIMGLink = document.createElement('a');
-	mainAVIMGLink.href = `${titleDir}index.html`;
+	mainAVIMGLink.href = titleDir;
 
 	let mainAVIMG = document.createElement('img');
 	mainAVIMG.src = `${titleDir}/images/top-bar.png`;
@@ -278,15 +279,16 @@ function makePage(page) {
 	mainAVIMGLink.append(mainAVIMG);
 	dropdownDiv.append(mainAVIMGLink);
 
+
 	makeButton({
 		html: 'The Comics', 
 		color: 'aero-blue', 
-		link: `${comicDir}index.html?c=choose`
+		link: `${comicDir}?c=choose`
 	});
 	makeButton({
 		html: 'The Wiki', 
 		color: 'nyork-green', 
-		link: `${wikiDir}index.html?p=main`
+		link: `${wikiDir}?p=main`
 	});
 	makeButton({
 		html: 'The Discord', 

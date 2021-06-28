@@ -11,7 +11,7 @@ const pageData = {
 				info: ['Reeg']
 			}, {
 				name: 'Lives in',
-				info: ['<a href="index.html?p=ert">Ert</a>, in Yolktown.']
+				info: ['<a href="?p=ert">Ert</a>, in Yolktown.']
 			}, {
 				name: 'Character Status',
 				info: ['Alive']
@@ -25,7 +25,7 @@ const pageData = {
 		}]
 	},
 	introText: [
-		'Rodney is a supporting character of the Aeroventures comic series. In Aeroventures, Rodney is one of the four main protagonists, along with <a href="index.html?p=aero">Aero</a>, <a href="index.html?p=lakys">Lakys</a>, and <a href="index.html?p=aposteel">Aposteel</a>.'
+		'Rodney is a supporting character of the Aeroventures comic series. In Aeroventures, Rodney is one of the four main protagonists, along with <a href="?p=aero">Aero</a>, <a href="?p=lakys">Lakys</a>, and <a href="?p=aposteel">Aposteel</a>.'
 	],
 	categories: [{
 		name: 'Out of universe history',
@@ -39,5 +39,5 @@ const pageData = {
 makeButton({
 	html: 'Rodney Rewind', 
 	color: 'rodney-violet',
-	link: './index.html?p=main'
+	link: './?p=main'
 });

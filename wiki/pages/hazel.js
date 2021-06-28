@@ -10,7 +10,7 @@ let pageData = {
 			heading: 'Designations',
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
+				info: ['<a href="?p=hotsun">Hot Sun</a>']
 			}, {
 				name: 'Satellites',
 				info: ['Curfew', 'Purpul']
@@ -27,7 +27,7 @@ let pageData = {
 		}]
 	},
 	introText: [
-		'Hazel is the seventh planet in the <a href="index.html?p=hotsun">Hot Sun</a> system, after <a href="index.html?p=mac">Mac</a> and before <a href="index.html?p=aeiou">Aeiou</a>.',
+		'Hazel is the seventh planet in the <a href="?p=hotsun">Hot Sun</a> system, after <a href="?p=mac">Mac</a> and before <a href="?p=aeiou">Aeiou</a>.',
 		'The term for referring to something related to Hazel is Hazelian.'
 	],
 	endnav: 'planet'

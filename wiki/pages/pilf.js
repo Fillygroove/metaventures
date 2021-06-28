@@ -9,7 +9,7 @@ let pageData = { // First!
 			heading: 'Designations',
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="index.html?p=hotsun">Hot Sun</a>']
+				info: ['<a href="?p=hotsun">Hot Sun</a>']
 			}, {
 				name: 'Satellites',
 				info: ['Piffol Rings']
@@ -40,7 +40,7 @@ let pageData = { // First!
 				author: 'King Arnolth'
 			});
 		},
-		'Pilf is the third planet in the <a href="index.html?p=hotsun">Ommadawn</a> system, after <a href="index.html?p=doug">Doug</a> and before <a href="index.html?p=ert">Ert</a> and <a href="index.html?p=george">George</a>. Pilf is a ringed cuboid planet, standing out from all other planets for its striking purple and blue-green hue. Pilf is scenically equivalent to a filthy purple kitchen sponge - lightweight, moldy, and has flies. Its unusual properties makes it a widely appealing planet for testing theories in science, fun tourist vacations, and the highly expensive bone-cheese delicacy.',
+		'Pilf is the third planet in the <a href="?p=hotsun">Ommadawn</a> system, after <a href="?p=doug">Doug</a> and before <a href="?p=ert">Ert</a> and <a href="?p=george">George</a>. Pilf is a ringed cuboid planet, standing out from all other planets for its striking purple and blue-green hue. Pilf is scenically equivalent to a filthy purple kitchen sponge - lightweight, moldy, and has flies. Its unusual properties makes it a widely appealing planet for testing theories in science, fun tourist vacations, and the highly expensive bone-cheese delicacy.',
 		
 		'<h3>Interesting Facts</h3>',
 		() => {
@@ -212,7 +212,7 @@ let pageData = { // First!
 				}, {
 					image: 'pilf_atmosphere.png',
 					text: 'A diagram of Pilf\'s atmosphere, provided by NA. The purple part is the planet itself and the green part is the atmosphere.',
-					link: 'index.html?p=pilfception'
+					link: '?p=pilfception'
 				}, {
 					image: 'pilf_ringless.png',
 					text: 'Pilf, isolated.'

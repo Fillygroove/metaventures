@@ -9,13 +9,13 @@ let pageData = {
 			heading: 'Designations',
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="index.html?p=hotsun">Hot Sun (Binary System)</a>']
+				info: ['<a href="?p=hotsun">Hot Sun (Binary System)</a>']
 			}, {
 				name: 'Satellites',
 				info: [
-					'<a href="index.html?p=coldsun">Cold Sun</a>',
-					'<a href="index.html?p=uling">Uling</a>',
-					'<a href="index.html?p=hotsun">Hot Sun (Binary System)</a>'
+					'<a href="?p=coldsun">Cold Sun</a>',
+					'<a href="?p=uling">Uling</a>',
+					'<a href="?p=hotsun">Hot Sun (Binary System)</a>'
 				]
 			}, {
 				name: 'Name Origin',

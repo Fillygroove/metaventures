@@ -1,6 +1,6 @@
 let comicInfo = {
 	title: 'AV-11: Code Red',
-	desc: 'Something terribly wrong has happened in Dr. <a href="../wiki/index.html?p=lakys">Lakys</a>\'s lab. Can the Aeroventures Crew stop this new menace?',
+	desc: 'Something terribly wrong has happened in Dr. <a href="../wiki?p=lakys">Lakys</a>\'s lab. Can the Aeroventures Crew stop this new menace?',
 	folder: 'old-av/av-11/',
 	background: 'bg-av.png',
 	rewindTo: 'old-av-choose'
@@ -18,4 +18,4 @@ comicInfo.panels[7].execute = (input) => {
 	panelLink.append(input.panel);
 	input.slide.append(panelLink);
 };
-comicInfo.panels[43].link = 'index.html?c=brooo';
+comicInfo.panels[43].link = '?c=brooo';
