@@ -31,7 +31,7 @@ addText('Redesigned the site a bit! More improvements are to come!');
 addHead('The Comics!');
 
 addText('The comics section of the website contains a collection of different comics. Currently, we only have Aeroventures, although another series, Polyventures, will be coming in a long bit.');
-addText('Aeroventures is a comic series that follows the adventures of Aero, Archie, Lakys, and Aposteel, as they cause chaos around the land. The newest Aeroventure, as of now, is <a href="./comics?c=old-av-12-1" class="comic-link">Nutty Business, Part 1</a>. A new Aeroventure, which will be Part 2 of Nutty Business, will be coming soon!</p>');
+addText('Aeroventures is a comic series that follows the adventures of Aero, Archie, Lakys, and Aposteel, as they cause chaos around the land. The newest Aeroventure, as of now, is <a href="./comics/?c=old-av-12-1" class="comic-link">Nutty Business, Part 1</a>. A new Aeroventure, which will be Part 2 of Nutty Business, will be coming soon!</p>');
 addText('Aeroventures, as of now, is being re-made, so don\'t expect 12 part 2 just yet!')
 addText('All comic images and icons have been lovingly provided by Text Wall, the original creator of the Aeroventures universe.');
 
@@ -48,4 +48,4 @@ addText('If you would like to take a visit, go <a href="https://discord.gg/xxRvY
 
 addHead('The Credits!');
 
-addText('If you would like to see who helped out with the Metaventures world, go <a href="./wiki?p=credits" class="link">here</a>!');
+addText('If you would like to see who helped out with the Metaventures world, go <a href="./wiki/?p=credits" class="link">here</a>!');
