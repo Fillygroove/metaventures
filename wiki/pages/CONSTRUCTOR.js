@@ -30,7 +30,7 @@ if (page.navbox != undefined) {
 	if (page.navbox.symbol != undefined) {
 		let navsymbol = document.createElement('img');
 		navsymbol.alt = `symbol_${page.navbox}.png`;
-		navsymbol.src = `wiki/images/symbol_${pageName}.png`;
+		navsymbol.src = `images/symbol_${pageName}.png`;
 		navsymbol.className = 'wiki-navbox-symbol';
 		caption.append(navsymbol);
 	};
@@ -48,7 +48,7 @@ if (page.navbox != undefined) {
 
 	if (page.navbox.file) {
 		imgnav.className = `wiki-navbox-image${page.navbox.file[1] ? ' ' + page.navbox.file[1] : ''}`;
-		imgnav.src = `wiki/images/${page.navbox.file[0]}`;
+		imgnav.src = `images/${page.navbox.file[0]}`;
 		imgnav.alt = page.navbox.file[0];
 		
 		imagetd.append(imgnav);
@@ -156,7 +156,7 @@ function makeGallery(input) {
 
 		let slideDivImage = document.createElement('img');
 		slideDivImage.className = 'wiki-image';
-		slideDivImage.src = `wiki/images/${input[galleryIndex].image}`;
+		slideDivImage.src = `images/${input[galleryIndex].image}`;
 
 		if (input[galleryIndex].link != undefined) {
 			let slideLink = document.createElement('a');
@@ -309,14 +309,14 @@ if (page.categories != undefined) {
 
 if (page.warning != undefined) {
 	for (let i = 0; i < page.warning.split(' ').length; i++) {
-		addScript(`./wiki/pages/warn_${page.warning.split(' ')[i]}.js`);
+		addScript(`./pages/warn_${page.warning.split(' ')[i]}.js`);
 	}
 }
 
 if (page.endnav != undefined) {
 	for (let i = 0; i < page.endnav.split(' ').length; i++) {
-		addScript(`./wiki/pages/nav_${page.endnav.split(' ')[i]}.js`);
+		addScript(`./pages/nav_${page.endnav.split(' ')[i]}.js`);
 	}
 }
 
-addScript('./wiki/pages/FINALIZER.js');
+addScript('./pages/FINALIZER.js');

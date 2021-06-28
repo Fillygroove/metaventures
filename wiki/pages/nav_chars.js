@@ -7,21 +7,21 @@ endnavs.push({
 			info: [
 				`<a href="?p=aero">
 				<span class="aerospin">
-					<img src="wiki/images/aero_pixel.png" height="${imageSize.small}"></img>
-					<img src="wiki/images/aEROspin.gif" class="aerospin-top" height="${imageSize.small}"></img>
+					<img src="images/aero_pixel.png" height="${imageSize.small}"></img>
+					<img src="images/aEROspin.gif" class="aerospin-top" height="${imageSize.small}"></img>
 				</span>
 				Aero
 				</a>`,
 				`<a href="?p=rodney">
-					<img src="wiki/images/rodney_pixel.png" height="${imageSize.norm}"></img>
+					<img src="images/rodney_pixel.png" height="${imageSize.norm}"></img>
 					Rodney
 				</a>`,
 				`<a href="?p=lakys">
-					<img src="wiki/images/lakys_pixel.png" height="${imageSize.norm}"></img>
+					<img src="images/lakys_pixel.png" height="${imageSize.norm}"></img>
 					Lakys
 				</a>`,
 				`<a href="?p=aposteel">
-					<img src="wiki/images/aposteel_pixel.png" height="${imageSize.norm}"></img>
+					<img src="images/aposteel_pixel.png" height="${imageSize.norm}"></img>
 					Aposteel
 				</a>`
 			]

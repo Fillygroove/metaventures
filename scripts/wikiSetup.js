@@ -8,5 +8,5 @@ let warnings = [];
 let endnavs = [];
 	
 if (!pageList.includes(pageName)) pageName = '404'; 
-addScript(`./wiki/pages/${pageName}.js`);
-addScript('./wiki/pages/CONSTRUCTOR.js');
+addScript(`./pages/${pageName}.js`);
+addScript('./pages/CONSTRUCTOR.js');

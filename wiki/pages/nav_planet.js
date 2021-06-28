@@ -3,7 +3,7 @@ endnavs.push({
 	categories: [{
 		category:
 			`<a href="?p=hotsun">
-				<img src="wiki/images/symbol_hotsun.png" height="${imageSize.large}">
+				<img src="images/symbol_hotsun.png" height="${imageSize.large}">
 				Ommadawn
 			</a> System`,
 		info: [{
@@ -11,45 +11,45 @@ endnavs.push({
 			info: [
 				// Grene
 				`<a href="?p=grene">
-					<img src="wiki/images/symbol_grene.png" height="${imageSize.norm}"></img>
+					<img src="images/symbol_grene.png" height="${imageSize.norm}"></img>
 					Gr\u0113ne
 				</a>`,
 				// Doug
 				`<a href="?p=doug">
-					<img src="wiki/images/symbol_doug.png" height="${imageSize.norm}">
+					<img src="images/symbol_doug.png" height="${imageSize.norm}">
 					Doug
 				</a>`,
 /*				(<small>
-					<img src="wiki/images/symbol_aech.png" height="${imageSize.small}">
+					<img src="images/symbol_aech.png" height="${imageSize.small}">
 					Aech
 				</small>)`,*/
 				// Pilf
 				`<a href="?p=pilf">
-					<img src="wiki/images/symbol_pilf.png" height="${imageSize.norm}">
+					<img src="images/symbol_pilf.png" height="${imageSize.norm}">
 					Pilf
 				</a>`,
 				// Ert
 				`<a href="?p=ert">
-					<img src="wiki/images/symbol_ert.png" height="${imageSize.small}">
+					<img src="images/symbol_ert.png" height="${imageSize.small}">
 					Ert
 				</a>
 				(<small>
 					<a href="?p=perpahedron">
-						<img src="wiki/images/symbol_perpahedron.png" height="${imageSize.small}">
+						<img src="images/symbol_perpahedron.png" height="${imageSize.small}">
 						Perpahedron
 					</a>
 				</small>)`,
 				// George
 				`<a href="?p=george">
-					<img src="wiki/images/symbol_george.png" height="${imageSize.small}">
-					Georg</a><a href="wiki/images/george_real.png" class="link">e</a>
+					<img src="images/symbol_george.png" height="${imageSize.small}">
+					Georg</a><a href="images/george_real.png" class="link">e</a>
 				(<small>
-					<img src="wiki/images/symbol_damocles.png" height="${imageSize.small}">
+					<img src="images/symbol_damocles.png" height="${imageSize.small}">
 					Damocles
 				</small>)`,
 				// Baeg
 				`<a href="?p=baeg">
-					<img src="wiki/images/symbol_baeg.png" height="${imageSize.small}">
+					<img src="images/symbol_baeg.png" height="${imageSize.small}">
 					Baeg
 				</a>`
 			]
@@ -58,18 +58,18 @@ endnavs.push({
 			info: [
 				// Mac
 				`<a href="?p=mac">
-					<img src="wiki/images/symbol_mac.png" height="${imageSize.smol}">
+					<img src="images/symbol_mac.png" height="${imageSize.smol}">
 					Mac
 				</a>
 				(<small>
 					<a href="?p=wop">
-						<img src="wiki/images/symbol_wop.png" height="${imageSize.small}">
+						<img src="images/symbol_wop.png" height="${imageSize.small}">
 						Wop (World of Pain)
 					</a>
 				</small>)`,
 				// Hazel
 				`<a href="?p=hazel">
-					<img src="wiki/images/symbol_hazel.png" height="${imageSize.norm}">
+					<img src="images/symbol_hazel.png" height="${imageSize.norm}">
 					Hazel
 				</a>
 				(<small>
@@ -77,7 +77,7 @@ endnavs.push({
 				</small>)`,
 				// Aeiou
 				`<a href="?p=aeiou">
-					<img src="wiki/images/symbol_aeiou.png" height="${imageSize.small}">
+					<img src="images/symbol_aeiou.png" height="${imageSize.small}">
 					Aeiou
 				</a>
 				(<small>
@@ -85,12 +85,12 @@ endnavs.push({
 				</small>)`,
 				// Cea
 				`<a href="?p=cea">
-					<img src="wiki/images/symbol_cea.png" height="${imageSize.norm}">
+					<img src="images/symbol_cea.png" height="${imageSize.norm}">
 					Cea
 				</a>`,
 				// The
 				`<a href="?p=the">
-					<img src="wiki/images/symbol_the.png" height="${imageSize.norm}">
+					<img src="images/symbol_the.png" height="${imageSize.norm}">
 					The
 				</a>`
 			]
@@ -98,14 +98,14 @@ endnavs.push({
 	}, {
 		category: 	
 			`<a href="?p=taiberaque">
-				<img src="wiki/images/symbol_taiberaque.png" height="${imageSize.large}">
+				<img src="images/symbol_taiberaque.png" height="${imageSize.large}">
 				Taiberaque
 			</a> System`,
 		info: [{
 			name: 'Inner System',
 			info: [
 				`<a href="?p=coldsun">
-					<img src="wiki/images/cold_sun.png" height="${imageSize.norm}">
+					<img src="images/cold_sun.png" height="${imageSize.norm}">
 					Cold Sun
 				</a>`
 			]
@@ -144,7 +144,7 @@ endnavs.push({
 				'BPM-4 (Macaroni Belt)',
 				'BOT-2 (Gram\'s Comet)',
 				'BBT-1 (Kol\'s Mini Nebula)', // Ball of Christmas Lights
-				`<img src="wiki/images/symbol_manc-ave.png" height="${imageSize.small}">
+				`<img src="images/symbol_manc-ave.png" height="${imageSize.small}">
 				Manc Ave`
 			]
 		}]

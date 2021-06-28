@@ -39,20 +39,20 @@ function makePage(page) {
 	let comicDir, wikiDir, titleDir, pageName;
 	switch (page) {
 		case 'main':
-			comicDir = './comics';
-			wikiDir = './wiki';
-			titleDir = '';
+			comicDir = './';
+			wikiDir = './';
+			titleDir = './';
 			pageName = 'Main';
 			break;
 		case 'comic':
-			comicDir = '';
-			wikiDir = '../wiki';
+			comicDir = '../';
+			wikiDir = '../';
 			titleDir = '../';
 			pageName = 'Comics';
 			break;
 		case 'wiki':
-			comicDir = '../comics';
-			wikiDir = '';
+			comicDir = '../';
+			wikiDir = '../';
 			titleDir = '../';
 			pageName = 'Wiki';
 			break;
@@ -283,12 +283,12 @@ function makePage(page) {
 	makeButton({
 		html: 'The Comics', 
 		color: 'aero-blue', 
-		link: `${comicDir}?c=choose`
+		link: `${comicDir}comics/?c=choose`
 	});
 	makeButton({
 		html: 'The Wiki', 
 		color: 'nyork-green', 
-		link: `${wikiDir}?p=main`
+		link: `${wikiDir}wiki/?p=main`
 	});
 	makeButton({
 		html: 'The Discord', 

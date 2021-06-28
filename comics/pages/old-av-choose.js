@@ -18,7 +18,7 @@ let comicInfo = {
 	}, {
 		panel: 'av4_icon.png',
 		link: '?c=old-av-4',
-		caption: 'Aeroventures 4: <a href="../wiki?p=shrine" class="no_style">ARCHIE STRYKSE BAK!1!</a>'
+		caption: 'Aeroventures 4: <a href="../wiki/?p=shrine" class="no_style">ARCHIE STRYKSE BAK!1!</a>'
 	}, {
 		panel: 'av5_icon.png',
 		link: '?c=old-av-5',
@@ -51,7 +51,7 @@ let comicInfo = {
 	}, {
 		panel: 'av_halloween_edition.png',
 		link: '?c=old-av-h',
-		number: '<a href="../wiki?p=halloween" class="no_style">Halloween</a>',
+		number: '<a href="../wiki/?p=halloween" class="no_style">Halloween</a>',
 		caption: 'Aeroventures: Halloween Edition'
 	}, {
 		panel: 'av11_icon.png',

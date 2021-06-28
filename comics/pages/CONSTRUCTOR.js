@@ -26,7 +26,7 @@ for (let i = 0; i < comicInfo.panels.length; i++) {
 
 	let panel = document.createElement('img');
 	
-	panel.src = `./comics/panels/${directory}${comicInfo.panels[i].panel}`;
+	panel.src = `./panels/${directory}${comicInfo.panels[i].panel}`;
 	panel.className = `comic-panel${comicInfo.panels[i].classTitle ? ' ' + comicInfo.panels[i].classTitle : ''}`;
 
 	if (comicInfo.panels[i].link !== undefined) {
@@ -181,10 +181,10 @@ function showSlides(n) {
 }
 
 function verify(slide) {
-	if (comic == 'av-9' && slide == '999') { // Nineventures Easter Egg
+	if (comic == 'old-av-9' && slide == '999') { // Nineventures Easter Egg
 		window.location.href = '?c=nine';
 	} else if (comic == 'nine' && slideIndex == 9 && (slide == '9' || slide == 'nine')) { // Metanineventures Easter Egg
-		window.location.href = '../wiki?p=nine';
+		window.location.href = '../wiki/?p=nine';
 	} else if (slide == 'Panel Number') {  // Panel Number Easter Egg
 		window.location.href = '?c=pn';
 	} else if (!isNaN(slide) && Math.floor(slide) != slide) { // Panel Corruption Easter Egg

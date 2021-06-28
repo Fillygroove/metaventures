@@ -10,5 +10,5 @@ function panelSetup(howLong, extension) {
 	}
 }
 
-addScript(`./comics/pages/${comic}.js`);
-addScript('./comics/pages/CONSTRUCTOR.js');
+addScript(`./pages/${comic}.js`);
+addScript('./pages/CONSTRUCTOR.js');

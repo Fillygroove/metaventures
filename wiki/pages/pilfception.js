@@ -3,7 +3,7 @@ let pageData = {
 	introText: [
 		() => {
 			addImage({
-				src: 'wiki/images/pilf_pilfception.png',
+				src: 'images/pilf_pilfception.png',
 				alt: 'pilf_pilfception.png',
 				width: '657',
 				float: 'right'
@@ -11,7 +11,7 @@ let pageData = {
 		},
 		() => {
 			addImage({
-				src: 'wiki/images/pilf_old.png',
+				src: 'images/pilf_old.png',
 				alt: 'pilf_old.png',
 				width: '64',
 				float: 'left'
