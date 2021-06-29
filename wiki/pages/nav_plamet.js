@@ -12,7 +12,7 @@ endnavs.push({
 				// Greme
 				`<a href="?p=grene">
 					<img src="images/symbol_grene.png" height="${imageSize.norm}"></img>
-					Greme
+					Gr\u0113me
 				</a>`,
 				// Doug
 				`<a href="?p=doug">

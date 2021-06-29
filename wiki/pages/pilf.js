@@ -101,7 +101,11 @@ let pageData = { // First!
 			
 			'<h3>Orbit and Rotation</h3>',
 			'Pilf unfortunately resides after Doug and thankfully resides before George and Ert. Its relative closeness and bright coloration makes it one of the most visible objects in the evening skies of Ert and George thanks to its bright rings. It is slightly closer to its star compared to real-life Venus.',
-			'Pilf’s orbit is somewhat eccentric and inclined compared to other planets near it. This is possibly to its lower mass, being tugged often by the Ert-George binary, Grene, and Doug.',
+			() => {
+				greneAddMacron([
+					'Pilf’s orbit is somewhat eccentric and inclined compared to other planets near it. This is possibly to its lower mass, being tugged often by the Ert-George binary, Grene, and Doug.'
+				]);
+			},
 			'Pilf’s rotation is erratic, most likely due to Ert’s and George’s binary orbit causing its axis of rotation to look like a die rolled by a drunk mathematician calculating how many feet are in a mile. The variation in Pilf’s axis of rotation is referred to as its Mood, and is calculated by the change in the axis of rotation over time. A day can range from an hour to six Ert days depending on what Mood Pilf has.',
 			
 			'<h3>Geography</h3>',
