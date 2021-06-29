@@ -19,7 +19,7 @@
 }
 
 .rainbow {
-	animation: rainbow 1s linear infinite;
+	animation: rainbow 5s linear infinite;
 }
 
 @keyframes rainbow{

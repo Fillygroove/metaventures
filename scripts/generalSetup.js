@@ -274,7 +274,7 @@ function makePage(page) {
 	mainAVIMGLink.href = titleDir;
 
 	let mainAVIMG = document.createElement('img');
-	mainAVIMG.src = `${titleDir}/images/top-bar.png`;
+	mainAVIMG.src = `${titleDir}images/top-bar.png`;
 	mainAVIMG.className = 'bar-image';
 	mainAVIMGLink.append(mainAVIMG);
 	dropdownDiv.append(mainAVIMGLink);

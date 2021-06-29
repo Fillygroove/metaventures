@@ -21,7 +21,7 @@ let pageData = {
 	},
 	introText: [
 		() => {
-			rainbowText('WAAAAAAAAAAAAAAA');
+			rainbow('WAAAAAAAAAAAAAAA');
 		},
 		() => {
 			makeList([
