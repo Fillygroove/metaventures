@@ -137,6 +137,8 @@
 
         // Next/previous controls
         function plusSlides(n) {
+            let vineBoom = new Audio('vine_boom_sound_effect.mp3');
+            vineBoom.play();
             showSlides(slideIndex += n);
         }
 
