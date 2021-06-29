@@ -83,7 +83,7 @@ function makePage(page) {
 	preferenceMenuLine.style.margin = 0;
 
 	let preferenceMenuHeader = document.createElement('h2')
-	preferenceMenuHeader.innerHTML = `Prefe<a class="preference-secret" href="${comicDir}?c=dk">r</a>ences`;
+	preferenceMenuHeader.innerHTML = `Prefe<a class="preference-secret" href="${comicDir}comics/?c=dk">r</a>ences`;
 
 	preferenceMenuDiv.append(preferenceMenuHeader, preferenceMenuLine);
 
