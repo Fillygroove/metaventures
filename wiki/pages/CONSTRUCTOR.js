@@ -274,6 +274,14 @@ function greneAddMacron(input) {
 	}
 };
 
+function rainbowText(input) {
+	let rainbowSpan = document.createElement('span');
+	rainbowSpan.className = 'rainbow';
+	rainbowSpan.innerHTML = input;
+
+	addText(rainbowSpan.outerHTML);	
+}
+
 function handleText(input) {
 	switch (typeof input) {
 		case 'string':

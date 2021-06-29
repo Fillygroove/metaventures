@@ -20,7 +20,9 @@ let pageData = {
 		}]
 	},
 	introText: [
-		'<span class="rainbow">WAAAAAAAAAAAAAAA</span>',
+		() => {
+			rainbowText('WAAAAAAAAAAAAAAA');
+		},
 		() => {
 			makeList([
 				'lewjnsdx',
