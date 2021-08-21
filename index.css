@@ -99,6 +99,7 @@
 	background: transparent;
 	height: 100%;
 	user-select: none;
+	padding-right: 10px;
 }
 
 p,
@@ -202,7 +203,7 @@ a {
 
 .pon-pink:hover {
 	color: #fff !important;
-	background-color: #BD2DB3 !important;
+	background-color: #b361ae !important;
 	transition: 0.3s;
 }
 
@@ -213,7 +214,7 @@ a {
 
 .rodney-violet:hover {
 	color: #fff !important;
-	background-color: #481A63 !important;
+	background-color: #803d84 !important;
 	transition: 0.3s;
 }
 

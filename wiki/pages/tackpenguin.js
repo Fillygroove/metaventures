@@ -35,7 +35,7 @@ let pageData = {
 	}, {
 		name: 'gonna    ?',
 		info: [
-			'bbrn loading ass cannon'
+			'bbrn loading cannon'
 		]
 	}, {
 		name: 'stop',
@@ -55,7 +55,7 @@ let pageData = {
 	}, {
 		name: 'bird rant',
 		info: [
-			'i don trust birds. the have hollow bones. what secrets do they keep???'
+			'i don trust birds. they have hollow bones. what secrets do they keep???'
 		]
 	}, {
 		name: 'smwc',
