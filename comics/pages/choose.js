@@ -3,6 +3,10 @@ let comicInfo = {
 	desc: 'Select what you want to see!',
 	folder: `choose/`,
 	panels: [{
+		panel: 'heavell.png',
+		link: '?c=heavell',
+		caption: 'Towers of Heavell (Happy Halloween)!'
+	}, {
 		panel: 'aEROspin.gif',
 		caption: 'Aeroventures (Coming Soon!)'
 	}, {

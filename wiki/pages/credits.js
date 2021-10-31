@@ -27,6 +27,7 @@ let pageData = {
 	}, {
 		name: 'Fristo',
 		info: [
+			'Created the entirety of the Towers of Heavell comic!',
 			'Helped out with the comics and OST!',
 			'Added art to the Aeroventures and Archive sections in the comics tab.',
 			'Added randomized quotes to the 404 pages.'

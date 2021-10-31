@@ -1,6 +1,7 @@
-function addText(text) {
+function addText(text, style = '') {
 	let paragraph = document.createElement('p');
 	paragraph.innerHTML = text;
+	paragraph.style = style;
 	avThin.append(paragraph);
 }
 
@@ -20,6 +21,8 @@ let lineBreak = document.createElement('hr');
 
 avThin.append(mainH1, lineBreak);
 
+addText('As a celebration, we have added a new comic made by Fristo, titled Heavell!', 'font-size: 25px;');
+addText('<a href="./comics/?c=heavell" class="comic-link">You may read it here!</a>');
 addText('WARNING - A lot of things are being reworked so most information (and even the comics) isn\'t accurate anymore.');
 
 addText('Welcome to the Metaventures website! Read below for more information!');
