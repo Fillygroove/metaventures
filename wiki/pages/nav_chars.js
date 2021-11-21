@@ -164,6 +164,11 @@ endnavs.push({
 				`Diepic`,
 				`The Keeper`
 			]
+		}, {
+			name: 'Towers of Heavell',
+			info: [
+				`Ookerise`
+			]
 		}]
 	}]
 });

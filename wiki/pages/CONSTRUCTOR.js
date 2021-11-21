@@ -4,7 +4,7 @@ let imageSize = {
 	small: 20,
 	smol: 15
 };
-let slideIndex = 0;
+let slideIndex = [];
 
 let page = pageData;
 
@@ -143,6 +143,8 @@ if (page.navbox != undefined) {
 function makeGallery(input) {
 	let gallerySlideshow = document.createElement('div');
 	gallerySlideshow.className = 'wiki-gallery-parent';
+	gallerySlideshow.id = `wiki-gallery-parent-${slideIndex.length}`;
+	slideIndex.push(0);
 
 	for (let galleryIndex = 0; galleryIndex < input.length; galleryIndex++) {
 		let slideshowDiv = document.createElement('div');
@@ -184,22 +186,23 @@ function makeGallery(input) {
 		slideshowNext.innerHTML = '&#9654;';
 
 		function updateGallery(addSlideIndex) {
-			let slides = document.getElementsByClassName('wiki-gallery');
+			let indexParent = gallerySlideshow.id.split('-')[3];
+			let slides = document.getElementById(`wiki-gallery-parent-${indexParent}`).childNodes;
 
-			slides[slideIndex].style.display = 'none';
+			slides[slideIndex[indexParent]].style.display = 'none';
 
-			slideIndex += addSlideIndex;
-			if (slideIndex < 0) slideIndex = input.length - 1;
-			if (slideIndex > input.length - 1) slideIndex = 0;
+			slideIndex[indexParent] += addSlideIndex;
+			if (slideIndex[indexParent] < 0) slideIndex[indexParent] = slides.length - 1;
+			if (slideIndex[indexParent] > slides.length - 1) slideIndex[indexParent] = 0;
 
-			slides[slideIndex].style.display = 'block';
+			slides[slideIndex[indexParent]].style.display = 'block';
 		}
 
-		slideshowPrev.onclick = () =>{
+		slideshowPrev.onclick = () => {
 			updateGallery(-1);
 		}
 
-		slideshowNext.onclick = () =>{
+		slideshowNext.onclick = () => {
 			updateGallery(1);
 		}
 

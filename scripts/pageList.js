@@ -29,5 +29,6 @@ let pageList = [
     'baeg',
     'rodney',
     'cea',
-    'snoop'
+    'snoop',
+    'announce-1'
 ];

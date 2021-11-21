@@ -3,7 +3,7 @@ let comicInfo = {
 	desc: 'A non-canonical halloween special, made by Fristo!',
 	folder: 'non-canon/heavell/',
 	background: 'bg-av.png',
-	rewindTo: 'choose'
+	rewindTo: 'spinoff-choose'
 };
 
 panelSetup(120, 'jpg');
