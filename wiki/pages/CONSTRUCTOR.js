@@ -19,6 +19,12 @@ let topLineBreak = document.createElement('hr');
 pageHeader.append(wikiPageName, topLineBreak);
 avThin.append(pageHeader);
 
+console.log(page);
+
+if (page.redirect != undefined) {
+	window.location.href = page.redirect;
+}
+
 if (page.navbox != undefined) {
 	let navbox = document.createElement('table');
 	navbox.className = 'wiki-infobox';
@@ -41,7 +47,6 @@ if (page.navbox != undefined) {
 	let imagetd = document.createElement('td');
 	let imgnav = document.createElement('img');
 	let capdiv = document.createElement('div');
-	let capa = document.createElement('span');
 	
 	imagetd.className = 'wiki-infobox-image-td';
 	imagetd.colSpan = 2;
@@ -53,11 +58,13 @@ if (page.navbox != undefined) {
 		
 		imagetd.append(imgnav);
 	};
-	
-	capa.innerHTML = page.navbox.caption;
-	
-	capdiv.append(capa);
-	
+
+	if (page.navbox.caption != undefined) {
+		let capa = document.createElement('span');
+		capa.innerHTML = page.navbox.caption;
+		capdiv.append(capa);
+	}
+		
 	imagetd.append(capdiv);
 	
 	imagetr.append(imagetd);

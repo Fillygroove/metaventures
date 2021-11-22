@@ -6,10 +6,6 @@ let comicInfo = {
 		panel: 'aEROspin.gif',
 		caption: 'Aeroventures (Coming Soon!)'
 	}, {
-		panel: '1.png',
-		link: '?c=old-av-choose',
-		caption: 'Legacy Aeroventures'
-	}, {
 		panel: '../send_art.png',
 		link: '?c=spinoff-choose',
 		caption: 'The Spinoffs'

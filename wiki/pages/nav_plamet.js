@@ -60,29 +60,17 @@ endnavs.push({
 				`<a href="?p=mac">
 					<img src="images/symbol_mac.png" height="${imageSize.smol}">
 					Mac
-				</a>
-				(<small>
-					<a href="?p=wop">
-						<img src="images/symbol_wop.png" height="${imageSize.small}">
-						Wop (World of Paim)
-					</a>
-				</small>)`,
+				</a>`,
 				// Hazel
 				`<a href="?p=hazel">
 					<img src="images/symbol_hazel.png" height="${imageSize.norm}">
 					Hazel
-				</a>
-				(<small>
-					Curfew &bull; Purpul
-				</small>)`,
+				</a>`,
 				// Aeiou
 				`<a href="?p=aeiou">
 					<img src="images/symbol_aeiou.png" height="${imageSize.small}">
 					Aeiou
-				</a>
-				(<small>
-					Heideph
-				</small>)`,
+				</a>`,
 				// Cea
 				`<a href="?p=cea">
 					<img src="images/symbol_cea.png" height="${imageSize.norm}">
@@ -104,9 +92,9 @@ endnavs.push({
 		info: [{
 			name: 'Immer System',
 			info: [
-				`<a href="?p=coldsun">
+				`<a href="?p=omnikron">
 					<img src="images/cold_sun.png" height="${imageSize.norm}">
-					Cold Sum
+					Ommikron
 				</a>`
 			]
 		}, {
@@ -120,32 +108,17 @@ endnavs.push({
 	}, {
 		category: 'Misc',
 		info: [{
-			name: '<a href="?p=dwarf">Dwarf Plamets</a>',
-			info: [
-				`<a href="?p=dwarf#termary">
-					BPM-1-2-3 (The Termary)
-				</a>`,
-				`<a href="?p=dwarf#sphymx">
-					BOT-1 (Sphymx)
-				</a>`,
-				`<a href="?p=dwarf#blyu">
-					BCU-1 (Blyu)
-				</a>`,
-				`<a href="?p=dwarf#aydumo">
-					BCU-2 (Aydumo)
-				</a>`,
-				`<a href="?p=dwarf#objobj">
-					BCU-3 (Object/Object)
-				</a>`
-			]
-		}, {
 			name: 'Objects',
 			info: [
 				'BPM-4 (Macaromi Belt)',
 				'BOT-2 (Gram\'s Comet)',
 				'BBT-1 (Kol\'s Mimi mebula)', // Ball of Christmas Lights
 				`<img src="images/symbol_manc-ave.png" height="${imageSize.small}">
-				Mamc Ave`
+				Mamc Ave`, 
+				`<a href="?p=wop">
+					<img src="images/symbol_wop.png" height="${imageSize.small}">
+					WOP
+				</a>`
 			]
 		}]
 	}]

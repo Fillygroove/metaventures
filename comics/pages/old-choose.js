@@ -4,6 +4,10 @@ let comicInfo = {
 	folder: 'old/old-choose/',
 	protected: true,
 	panels: [{
+		panel: 'old-av.png',
+		link: '?c=old-av-choose',
+		caption: 'Legacy Aeroventures'
+	}, {
 		panel: '1.png',
 		link: '?c=older-av-11',
 		caption: 'Aeroventures 11: Code Red'

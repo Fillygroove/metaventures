@@ -183,7 +183,7 @@ function makePage(page) {
 				the: 'The',
 				abyss: 'Abyss',
 				sunset: 'Sunset (Bright)',
-				nyork: 'Nyork'
+				nyork: 'Omnikron'
 			},
 			onclick: function(input) {
 				window.localStorage.theme = input.checkSelect.value;

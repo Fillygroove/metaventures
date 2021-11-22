@@ -32,13 +32,7 @@ endnavs.push({
 				`<a href="?p=ert">
 					<img src="images/symbol_ert.png" height="${imageSize.small}">
 					Ert
-				</a>
-				(<small>
-					<a href="?p=perpahedron">
-						<img src="images/symbol_perpahedron.png" height="${imageSize.small}">
-						Perpahedron
-					</a>
-				</small>)`,
+				</a>`,
 				// George
 				`<a href="?p=george">
 					<img src="images/symbol_george.png" height="${imageSize.small}">
@@ -60,29 +54,17 @@ endnavs.push({
 				`<a href="?p=mac">
 					<img src="images/symbol_mac.png" height="${imageSize.smol}">
 					Mac
-				</a>
-				(<small>
-					<a href="?p=wop">
-						<img src="images/symbol_wop.png" height="${imageSize.small}">
-						Wop (World of Pain)
-					</a>
-				</small>)`,
+				</a>`,
 				// Hazel
 				`<a href="?p=hazel">
 					<img src="images/symbol_hazel.png" height="${imageSize.norm}">
 					Hazel
-				</a>
-				(<small>
-					Curfew &bull; Purpul
-				</small>)`,
+				</a>`,
 				// Aeiou
 				`<a href="?p=aeiou">
 					<img src="images/symbol_aeiou.png" height="${imageSize.small}">
 					Aeiou
-				</a>
-				(<small>
-					Heideph
-				</small>)`,
+				</a>`,
 				// Cea
 				`<a href="?p=cea">
 					<img src="images/symbol_cea.png" height="${imageSize.norm}">
@@ -106,7 +88,7 @@ endnavs.push({
 			info: [
 				`<a href="?p=coldsun">
 					<img src="images/cold_sun.png" height="${imageSize.norm}">
-					Cold Sun
+					Omnikron
 				</a>`
 			]
 		}, {
@@ -119,7 +101,7 @@ endnavs.push({
 		}]
 	}, {
 		category: 'Misc',
-		info: [{
+		info: [/*{
 			name: '<a href="?p=dwarf">Dwarf Planets</a>',
 			info: [
 				`<a href="?p=dwarf#ternary">
@@ -138,14 +120,22 @@ endnavs.push({
 					BCU-3 (Object/Object)
 				</a>`
 			]
-		}, {
+		}, */{
 			name: 'Objects',
 			info: [
 				'BPM-4 (Macaroni Belt)',
 				'BOT-2 (Gram\'s Comet)',
 				'BBT-1 (Kol\'s Mini Nebula)', // Ball of Christmas Lights
 				`<img src="images/symbol_manc-ave.png" height="${imageSize.small}">
-				Manc Ave`
+				Manc Ave`, 
+				`<a href="?p=wop">
+					<img src="images/symbol_wop.png" height="${imageSize.small}">
+					WOP
+				</a>`,
+				`<a href="?p=perpahedron">
+					<img src="images/symbol_perpahedron.png" height="${imageSize.small}">
+					Perpahedron
+				</a>`
 			]
 		}]
 	}]

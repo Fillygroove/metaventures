@@ -2,7 +2,7 @@ let pageData = {
 	name: 'Taiberaque',
 	warning: 'stub',
 	navbox: {
-		file: ['taiberaque.png', 'pixel'],
+		file: ['cold_sun.png', 'pixel'],
 		symbol: true,
 		caption: 'Illustration made by Gramiatar.',
 		info: [{
@@ -13,7 +13,7 @@ let pageData = {
 			}, {
 				name: 'Satellites',
 				info: [
-					'<a href="?p=coldsun">Cold Sun</a>',
+					'<a href="?p=omnikron">Omnikron</a>',
 					'<a href="?p=uling">Uling</a>',
 					'<a href="?p=hotsun">Hot Sun (Binary System)</a>'
 				]

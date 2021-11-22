@@ -4,7 +4,7 @@ let pageData = {
 	navbox: {
 		file: ['ert.png', 'pixel'],
 		symbol: true,
-		caption: 'Illustration made by Gramiatar.</br>Northland and Southland are visible',
+		caption: 'Illustration made by Gramiatar.</br>Northland and Southland are visible.',
 		info: [{
 			heading: 'Designations',
 			info: [{

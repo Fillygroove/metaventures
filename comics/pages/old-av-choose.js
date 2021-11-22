@@ -65,5 +65,5 @@ let comicInfo = {
 		caption: 'Aeroventures 12: Nutty Business'
 	}],
 	background: 'bg-av.png',
-	rewindTo: 'choose'
+	rewindTo: 'old-choose'
 };

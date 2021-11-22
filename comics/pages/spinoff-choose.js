@@ -1,7 +1,7 @@
 let comicInfo = {
 	title: 'Choose your comic series!',
 	desc: 'Select what you want to see!',
-	folder: `choose/`,
+	folder: `non-canon/choose/`,
 	rewindTo: 'choose',
 	panels: [{
 		panel: 'heavell.png',

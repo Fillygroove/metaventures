@@ -29,7 +29,7 @@ addText('Welcome to the Metaventures website! Read below for more information!')
 
 addHead('The newest change!');
 
-addText('Added <a href="./comics/?c=heavell" class="comic-link">Towers of Heavell</a> and transcribed the <a href="./wiki/?p=announce-1" class="comic-link">Discord announcememnt wrote by Text Wall</a>.');
+addText('Cleaned up the Wiki in preperation for Aeroventures 1!');
 
 addHead('The Comics!');
 

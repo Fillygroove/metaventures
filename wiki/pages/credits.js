@@ -6,7 +6,7 @@ let pageData = {
 	categories: [{
 		name: 'Text Wall',
 		info: [
-			'Original creator of all things Aeroventures.',
+			'Original creator of all things Metaventures.',
 			'Created all of the comics, with some help in the newer comics.',
 			'Created the icons in the comics section.',
 			'Created the image of Aero used on the wiki.',
@@ -46,21 +46,10 @@ let pageData = {
 			'Helped out with the OST.'
 		]
 	}, {
-		name: 'EpicBattler3',
-		info: [
-			'Created the original version of Purpul, along with original concept art.'
-		]
-	}, {
 		name: 'PS3_33',
 		info: [
-			'Created BCU-1 (Blyu) and BCU-3 (Object/Object).',
 			'Added randomized quotes to the 404 pages.',
 			'Suggested the Abyss theme.'
-		]
-	}, {
-		name: 'KoleOBlack',
-		info: [
-			'Created BCU-2 (Ayduno) and BBT-1 (Kol\'s Mini Nebula).'
 		]
 	}, {
 		name: 'Astro',

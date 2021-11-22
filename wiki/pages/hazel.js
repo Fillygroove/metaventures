@@ -13,7 +13,7 @@ let pageData = {
 				info: ['<a href="?p=hotsun">Hot Sun</a>']
 			}, {
 				name: 'Satellites',
-				info: ['Curfew', 'Purpul']
+				info: ['Unknown']
 			}, {
 				name: 'Name Origin',
 				info: ['Mistaken as a hazel-ish color in the sky by early astronomers.']
