@@ -123,9 +123,6 @@ endnavs.push({
 		}, */{
 			name: 'Objects',
 			info: [
-				'BPM-4 (Macaroni Belt)',
-				'BOT-2 (Gram\'s Comet)',
-				'BBT-1 (Kol\'s Mini Nebula)', // Ball of Christmas Lights
 				`<img src="images/symbol_manc-ave.png" height="${imageSize.small}">
 				Manc Ave`, 
 				`<a href="?p=wop">

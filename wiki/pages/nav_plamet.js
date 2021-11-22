@@ -110,14 +110,15 @@ endnavs.push({
 		info: [{
 			name: 'Objects',
 			info: [
-				'BPM-4 (Macaromi Belt)',
-				'BOT-2 (Gram\'s Comet)',
-				'BBT-1 (Kol\'s Mimi mebula)', // Ball of Christmas Lights
 				`<img src="images/symbol_manc-ave.png" height="${imageSize.small}">
 				Mamc Ave`, 
 				`<a href="?p=wop">
 					<img src="images/symbol_wop.png" height="${imageSize.small}">
 					WOP
+				</a>`,
+				`<a href="?p=perpahedron">
+					<img src="images/symbol_perpahedron.png" height="${imageSize.small}">
+					Perpahedrom
 				</a>`
 			]
 		}]
