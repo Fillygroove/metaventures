@@ -2,7 +2,7 @@ const pageData = {
 	warning: 'stub',
 	name: 'Aero D. Venture',
 	navbox: {
-		file: ['aero.png', ''],
+		file: true,
 		caption: 'Picture taken by Aero by accident, illustration made by Text Wall.',
 		info: [{
 			heading: 'Designations',

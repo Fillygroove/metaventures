@@ -2,7 +2,7 @@ let pageData = {
 	name: 'Baeg',
 	warning: 'stub',
 	navbox: {		
-		file: ['baeg.png', 'pixel'],
+		file: true,
 		symbol: true,
 		caption: 'Illustration made by Gramiatar.',
 		info: [{

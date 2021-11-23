@@ -19,7 +19,7 @@ for (let i = warnings.length - 1; i >= 0; i--) {
 	let warningIMG = document.createElement('img');
 
 	warningIMG.alt = warning.image.file;
-	warningIMG.src = `images/${warning.image.file}`;
+	warningIMG.src = `images/warn/${warning.image.file}`;
 	warningIMG.width = warning.image.dims[0];
 	warningIMG.height = warning.image.dims[1];
 
@@ -59,7 +59,25 @@ for (let i = 0; i < endnavs.length; i++) {
 		
 		let tableHeader = document.createElement('th');
 		tableHeader.className = 'wiki-outer-table-header'
-		tableHeader.innerHTML = table.categories[i].category;
+
+		let tableInfo = table.categories[i].category;
+	
+		if (tableInfo.link != undefined) {
+			let tableHeaderLink = document.createElement('a');
+			tableHeaderLink.href = tableInfo.link;
+
+			let tableHeaderImg = document.createElement('img');
+			tableHeaderImg.src = `images/nav/${table.type}/${tableInfo.img[0]}`;
+			tableHeaderImg.height = tableInfo.img[1];
+			
+			tableHeaderLink.append(tableHeaderImg);
+			tableHeaderLink.innerHTML += tableInfo.name;
+
+			tableHeader.append(tableHeaderLink);
+		} else {
+			tableHeader.innerHTML += tableInfo.name;
+		}
+
 		tableHeader.scope = 'row';
 		
 		let tableData = document.createElement('td');
@@ -82,9 +100,51 @@ for (let i = 0; i < endnavs.length; i++) {
 			let innerTableDiv = document.createElement('div');
 			
 			for (let k = 0; k < table.categories[i].info[j].info.length; k++) {
+				let innerTableInfo = table.categories[i].info[j].info[k];
+
 				let innerTableSpan = document.createElement('span');
-				innerTableSpan.innerHTML = table.categories[i].info[j].info[k];
 				
+				if (innerTableInfo.link != undefined) {
+					let innerTableLink = document.createElement('a');
+					innerTableLink.href = innerTableInfo.link;
+
+					if (innerTableInfo.img != undefined) {
+						let innerTableImg = document.createElement('img');
+						innerTableImg.src = `images/nav/${table.type}/${innerTableInfo.img[0]}`;
+						innerTableImg.height = innerTableInfo.img[1];
+
+						innerTableLink.append(innerTableImg);
+
+						if (innerTableInfo.hover != undefined) {
+							let innerTableHover = document.createElement('img');
+							innerTableHover.src = `images/nav/${table.type}/${innerTableInfo.hover[0]}`;
+							innerTableHover.height = innerTableInfo.hover[1];
+							innerTableHover.className = 'aerospin-top';
+	
+							let imgSpan = document.createElement('span');
+							imgSpan.className = 'aerospin';
+
+							imgSpan.append(innerTableImg, innerTableHover);
+							innerTableLink.append(imgSpan);
+						} else innerTableLink.append(innerTableImg);
+					}
+
+					if (innerTableInfo.isGeorge) {
+						innerTableLink.innerHTML += 'Georg';
+						
+						let innerGeorge = document.createElement('a');
+						innerGeorge.href = 'images/george_real.png';
+						innerGeorge.className = 'link';
+						innerGeorge.innerHTML = 'e';
+						innerTableSpan.append(innerTableLink, innerGeorge);
+					} else {
+						innerTableLink.innerHTML += innerTableInfo.name;
+						innerTableSpan.append(innerTableLink);
+					}
+				} else {
+					innerTableSpan.innerHTML += innerTableInfo.name;
+				}
+
 				if (k != table.categories[i].info[j].info.length - 1) innerTableSpan.innerHTML += ' &bull; ';
 				
 				innerTableDiv.append(innerTableSpan);

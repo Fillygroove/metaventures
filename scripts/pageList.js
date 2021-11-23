@@ -15,14 +15,14 @@ let pageList = [
     'cea',
     'the',
     'wop',
-    'omnikron',
     'taiberaque',
+    'omnikron',
     'dwarf',
 // Characters
     'aero',
-    'main',
     'rodney',
 // Misc
+    'main',
     'announce-1',
     'credits',
 // Easter Eggs

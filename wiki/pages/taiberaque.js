@@ -2,7 +2,7 @@ let pageData = {
 	name: 'Taiberaque',
 	warning: 'stub',
 	navbox: {
-		file: ['cold_sun.png', 'pixel'],
+		file: true,
 		symbol: true,
 		caption: 'Illustration made by Gramiatar.',
 		info: [{

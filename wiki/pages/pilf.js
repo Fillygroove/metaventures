@@ -2,7 +2,7 @@ let pageData = { // First!
 	name: 'Pilf',
 	warning: 'quality',
 	navbox: {
-		file: ['pilf.png', 'pixel'],
+		file: true,
 		symbol: true,
 		caption: 'Illustration made by Gramiatar.',
 		info: [{
@@ -208,7 +208,7 @@ let pageData = { // First!
 		info: [
 			() => {
 				makeGallery([{
-					image: 'pilf.png',
+					image: 'main.png',
 					text: 'An image of Pilf, made by Gramiatar in reality and provided by Alphabet in-universe. The faces shown are POWER, EXPLODIUM, and PUNGENCE.'
 				}, {
 					image: 'pilf_alt_view.png',

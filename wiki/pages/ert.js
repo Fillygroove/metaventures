@@ -2,7 +2,7 @@ let pageData = {
 	name: 'Ert',
 	warning: 'quality',
 	navbox: {
-		file: ['ert.png', 'pixel'],
+		file: true,
 		symbol: true,
 		caption: 'Illustration made by Gramiatar.</br>Northland and Southland are visible.',
 		info: [{
@@ -155,7 +155,7 @@ let pageData = {
 		info: [
 			() => {
 				makeGallery([{
-					image: 'ert.png',
+					image: 'main.png',
 					text: 'An image of Ert, made by Gramiatar in reality and provided by Alphabet in-universe.'
 				}, {
 					image: 'ert_southland.png',

@@ -1,7 +1,7 @@
 let pageData = {
 	name: '<a href="?p=greme" class="no_style">Gr\u0113ne</a>',
 	navbox: {		
-		file: ['grene.png', 'pixel'],
+		file: true,
 		symbol: true,
 		caption: 'Illustration made by Gramiatar.',
 		info: [{

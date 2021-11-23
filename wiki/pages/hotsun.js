@@ -2,7 +2,7 @@ const pageData = {
 	name: 'Ommadawn',
 	warning: 'stub',
 	navbox: {
-		file: ['hot_sun.png', 'pixel'],
+		file: true,
 		symbol: true,
 		caption: 'Illustration made by Gramiatar.',
 		info: [{

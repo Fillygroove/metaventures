@@ -2,7 +2,7 @@ let pageData = {
 	name: 'Doug',
 	warning: 'crap',
 	navbox: {
-		file: ['doug.png', 'pixel'],
+		file: true,
 		symbol: true,
 		caption: 'Image provided by The DeeCee, made by Gram in reality.',
 		info: [{
@@ -179,7 +179,7 @@ let pageData = {
 		info: [
 			() => {
 				makeGallery([{
-					image: 'doug.png',
+					image: 'main.png',
 					text: 'An image of Doug, made by Gramiatar in reality and provided by The DeeCee in universe. This image was taken by The Forgotten Explorer, and is the only true color image of Doug that is available.'
 				}, {
 					image: 'doug_smooth.png',

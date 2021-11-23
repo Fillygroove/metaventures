@@ -32,7 +32,7 @@ let pageData = {
 		info: [
 			() => {
 				addImage({
-					src: 'images/sup_logo_1.jpg',
+					src: 'sup_logo_1.jpg',
 					alt: 'sup_logo_1.png',
 					width: '300',
 					float: 'right'

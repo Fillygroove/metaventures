@@ -1,8 +1,8 @@
 let pageData = {
-	name: 'Cold Sun',
+	name: 'Omnikron',
 	warning: 'stub',
 	navbox: {
-		file: ['send_art.png', 'pixel'],
+		file: true,
 		info: [{
 			heading: 'Designations',
 			info: [{

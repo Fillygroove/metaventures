@@ -1,7 +1,7 @@
 let pageData = {
 	name: 'Mac',
 	navbox: {
-		file: ['mac.png', 'pixel'],
+		file: true,
 		symbol: true,
 		caption: 'Illustration made by Gramiatar.',
 		info: [{

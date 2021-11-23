@@ -8,6 +8,10 @@ let slideIndex = [];
 
 let page = pageData;
 
+if (page.redirect != undefined) {
+	window.location.href = page.redirect;
+}
+
 let pageHeader = document.createElement('span');
 
 let wikiPageName = document.createElement('h1');
@@ -18,12 +22,6 @@ let topLineBreak = document.createElement('hr');
 
 pageHeader.append(wikiPageName, topLineBreak);
 avThin.append(pageHeader);
-
-console.log(page);
-
-if (page.redirect != undefined) {
-	window.location.href = page.redirect;
-}
 
 if (page.navbox != undefined) {
 	let navbox = document.createElement('table');
@@ -36,7 +34,7 @@ if (page.navbox != undefined) {
 	if (page.navbox.symbol != undefined) {
 		let navsymbol = document.createElement('img');
 		navsymbol.alt = `symbol_${page.navbox}.png`;
-		navsymbol.src = `images/symbol_${pageName}.png`;
+		navsymbol.src = `images/${pageName}/symbol.png`;
 		navsymbol.className = 'wiki-navbox-symbol';
 		caption.append(navsymbol);
 	};
@@ -52,9 +50,9 @@ if (page.navbox != undefined) {
 	imagetd.colSpan = 2;
 
 	if (page.navbox.file) {
-		imgnav.className = `wiki-navbox-image${page.navbox.file[1] ? ' ' + page.navbox.file[1] : ''}`;
-		imgnav.src = `images/${page.navbox.file[0]}`;
-		imgnav.alt = page.navbox.file[0];
+		imgnav.className = `wiki-navbox-image`;
+		imgnav.src = `images/${pageName}/main.png`;
+		imgnav.alt = pageName;
 		
 		imagetd.append(imgnav);
 	};
@@ -165,7 +163,7 @@ function makeGallery(input) {
 
 		let slideDivImage = document.createElement('img');
 		slideDivImage.className = 'wiki-image';
-		slideDivImage.src = `images/${input[galleryIndex].image}`;
+		slideDivImage.src = `images/${pageName}/${input[galleryIndex].image}`;
 
 		if (input[galleryIndex].link != undefined) {
 			let slideLink = document.createElement('a');
@@ -263,7 +261,7 @@ function addImage(input) {
 	if (input.width != undefined) image.width = input.width;
 	image.style.backgroundColor = '#555555';
 	image.style.float = input.float;
-	image.src = input.src;
+	image.src = `images/${pageName}/${input.src}`;
 	image.alt = input.alt;
 
 	avThin.append(image);

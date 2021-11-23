@@ -1,7 +1,8 @@
 let pageData = {
 	name: 'Secret: <a href="?p=grene" class="no_style">Greme</a>',
 	navbox: {		
-		file: ['greme.png', 'pixel'],
+		file: true,
+		symbol: true,
 		caption: 'Illustratiom made by Gramiatar.',
 		info: [{
 			heading: 'Desigmatioms',

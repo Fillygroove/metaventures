@@ -60,7 +60,7 @@ if (comicInfo.protected == true) {
 
 	passwordHidden = document.createElement('p');
 	passwordHidden.style = 'color: rgba(0, 0, 0, 0); padding: 20px';
-	passwordHidden.innerHTML = 'Ask about AV-12 Part 1';
+	passwordHidden.innerHTML = 'Ask the wiki images directory.';
 
 	passwordPage.append(passwordP, passwordHidden);
 

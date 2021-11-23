@@ -131,13 +131,34 @@
             event.preventDefault();
             let slideValue = document.getElementById("panel").value;
             if (event.key === "Enter") {
+                switch (slideValue) {
+                    case "1":
+                        console.log(`Archie, who is to the left, speaks to Aero. He says his famous line, 'tis i he who laughs at the towel.' Aero, heroically, replies with 'skrub', sending fear into Archie.`);
+                        break;
+                    case "2": 
+                        console.log(`Aero follows up on his request to make Archie a so-called 'skrub'. He acomplishes this by pulling out a comically normal sized brick, managing to shoot a bullet at Archie. Since it is time for Archie's defeat, Archie follows this up by saying 'nows the time for my epic death scene'. Aero follows this up by saying 'NOscop', implying that he does not care that Archie is dying and is only proud of the shot that he fired at him.`);
+                        break;
+                    case "3": 
+                        console.log(`This panel by itself has so much lore that a quote aty the borttom is needed to help us dissect it. First, lets examine the pose that Archie makes. The pose is one of contortion, that of pain, that of the rawest essence of fear itself. This is likely due to Archie, after all of his years of life, has finally reached the end of said life. At this point, he is likely seeing what we only know of as Panzer. This plot point is further emphasized on AV-11, subtitled as "Code Red".`);
+                        console.log(`Accessing these older Aeroventures is as easy as going to the Archie-ve and using "4NAX" as the password.`);
+                        console.log(`Within AV-11, specifically slide 99, Aposteel summons Panzer for the only time in the series. Panzer is used as a way to finally destroy what we know as the character of Larry. In this same comic, on slide 106, Archie makes the familiar pose in slide 3 of this Aeroventure. Why is this important, you may ask? This is because I believe that in this moment, Archie is in the shoes of Larry. "But Archie comes back!", you might say. Yes. That is exactly what I am sa-`);                        
+                        break;
+                        case "4": 
+                            console.log(`[REDACTED.]`);
+                            break;
+                        case "9": 
+                            console.log(`See ?p=directions for more details on where to find me next!`);
+                            break;
+                        default: 
+                            console.log(`These case files were written by The Keeper, and are now in the possession of the Alphabet Business Concern.`);
+                        break;
+                };
                 currentSlide(slideValue);
             }
         });
 
-        // Next/previous controls
         function plusSlides(n) {
-            console.log(n);
+            console.log(n == -1 ? "MOOB" : "BOOM");
             let vineBoom;
             if (n == -1) vineBoom = new Audio('vine_boom_sound_effect_rev.mp3');
             else vineBoom =  new Audio('vine_boom_sound_effect.mp3');
