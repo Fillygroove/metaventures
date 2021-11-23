@@ -48,7 +48,7 @@ let comicInfo = {
 		classTitle: 'pixel'
 	}, {
 		panel: '12.png',
-		caption: 'Baeg, now named Dough, when it was a planet.',
+		caption: 'Baeg, then named Dough, now renamed to Baeg.',
 		classTitle: 'pixel'
 	}, {
 		panel: '13.png',
@@ -68,7 +68,7 @@ let comicInfo = {
 		classTitle: 'pixel'
 	}, {
 		panel: '17.png',
-		caption: 'The original art for Berry, then named Xystload, then Purpl.',
+		caption: 'The original art for Berry, then named Xystload, then Purpl. This planet doesn\'t exist anymore.',
 		classTitle: 'pixel'
 	}, {
 		panel: '18.png',

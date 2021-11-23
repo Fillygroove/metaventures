@@ -13,6 +13,7 @@ let pageData = {
 			}, {
 				name: 'Satellites',
 				info: [
+					'Gigantrax',
 					'<a href="?p=omnikron">Omnikron</a>',
 					'<a href="?p=uling">Uling</a>',
 					'<a href="?p=hotsun">Hot Sun (Binary System)</a>'

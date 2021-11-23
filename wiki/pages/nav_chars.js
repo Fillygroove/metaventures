@@ -31,10 +31,8 @@ endnavs.push({
 		info: [{
 			name: 'Here They Are',
 			info: [{
-				link: '?p=pon',
 				name: 'Pon'
 			}, {
-				link: '?p=larry-pv',
 				name: 'Larry'
 			}]
 		}]

@@ -1,6 +1,7 @@
 endnavs.push({
 	heading: 'The Bisolar System',
 	type: 'planet',
+	hideable: true,
 	categories: [{
 		category: {
 			img: ['ommadawn.png', imageSize.large],
@@ -68,13 +69,14 @@ endnavs.push({
 		info: [{
 			name: 'Inner System',
 			info: [{
+				name: 'Gigantrax'
+			}, {
 				link: '?p=omnikron',
 				name: 'Omnikron'
 			}]
 		}, {
 			name: 'Outer System',
 			info: [{
-				link: '?p=uling',
 				name: 'Uling'
 			}]
 		}]
@@ -93,7 +95,6 @@ endnavs.push({
 				name: 'WOP'
 			}, {
 				img: ['perpahedron.png', imageSize.small],
-				link: '?p=perpahedron',
 				name: 'Perpahedron'
 			}]
 		}]
