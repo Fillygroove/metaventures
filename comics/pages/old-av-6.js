@@ -3,7 +3,8 @@ let comicInfo = {
 	desc: '<a href="../wiki/?p=aero">Aero</a> comes back from the dead in the future and tries to get revenge on <a href="../wiki/?p=archie">Archie</a>.',
 	folder: 'old-av/av-6/',
 	background: 'bg-av.png',
-	rewindTo: 'old-av-choose'
+	rewindTo: 'old-av-choose',
+	corruptable: true
 };
 
 panelSetup(22, 'jpg');

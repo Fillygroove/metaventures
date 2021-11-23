@@ -3,7 +3,8 @@ let comicInfo = {
 	desc: 'In this rather short eposode: <a href="../wiki/?p=aero">Aero</a>, <a href="../wiki/?p=lakys">Lakys</a>, and <a href="../wiki/?p=archie">Archie</a> get stuck on an island after their plane blows up. watch as they struggle to survive. hah. idiots.',
 	folder: 'old-av/av-8/',
 	background: 'bg-av.png',
-	rewindTo: 'old-av-choose'
+	rewindTo: 'old-av-choose',
+	corruptable: true
 };
 
 panelSetup(36, 'jpg');

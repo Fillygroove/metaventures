@@ -2,6 +2,7 @@ let comicInfo = {
 	title: 'Secret: Broventures',
 	desc: 'We are proud to present the comic that we put all of our passion into. For years we toil on this masterpiece and now it\'s finally out: BROVENTURES!',
 	folder: 'secrets/brooo/',
+	corruptable: true,
 	panels: [{
 		panel: '1.jpg',
 	}, {

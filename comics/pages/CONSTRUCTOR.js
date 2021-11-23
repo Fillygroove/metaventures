@@ -181,17 +181,11 @@ function showSlides(n) {
 }
 
 function verify(slide) {
-	if (comic == 'old-av-9' && slide == '999') { // Nineventures Easter Egg
-		window.location.href = '?c=nine';
-	} else if (comic == 'nine' && slideIndex == 9 && (slide == '9' || slide == 'nine')) { // Metanineventures Easter Egg
-		window.location.href = '../wiki/?p=nine';
-	} else if (slide == 'Panel Number') {  // Panel Number Easter Egg
+	if (comicInfo.verify != undefined) {
+		comicInfo.verify({slide, slideIndex});
+	} else if (slide == 'Panel Number') {
 		window.location.href = '?c=pn';
-	} else if (!isNaN(slide) && Math.floor(slide) != slide) { // Panel Corruption Easter Egg
-		if (comic == 'av-10.5' || comic == 'trigger' || comic == 'av-choose' || comic == 'pn') {
-			document.getElementsByClassName('comic-description')[0].innerHTML = 'Failed the corruption, please try again later.';
-			return;
-		}
+	} else if (!isNaN(slide) && Math.floor(slide) != slide && comicInfo.corruptable == true) { // Panel Corruption Easter Egg
 		document.getElementsByClassName('comic-description')[0].innerHTML = 'Well... What did you think was going to happen when you put in a decimal value?';
 		document.getElementsByClassName('comic-slides')[slideIndex - 1].childNodes[0].src = `./panels/secrets/corrupt/${comic}.jpg`;
 		document.getElementsByClassName('comic-slides')[slideIndex - 1].childNodes[0].visibility = 'visible';

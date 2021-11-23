@@ -2,6 +2,7 @@ let comicInfo = {
 	title: 'Secret: Nineventures',
 	desc: '"Nineventures" contains every ninth panel from every aeroventure to make some.. tangible kind of story. More panels are sure to be added after more comics are made.',
 	folder: 'secrets/nine/',
+	corruptable: true,
 	panels: [{
 		panel: '1.jpg',
 		caption: 'Aero looks upon a memory of a deceased Archie, someone who\'s been rumored to be coming back in recent times...'
@@ -39,5 +40,10 @@ let comicInfo = {
 		panel: '12.jpg',
 		caption: 'As Lakys looks on to what Aero\'s ignoring, Lacus questions everyone\'s safety...'
 	}],
+	verify: (input) => {
+		if (input.slideIndex == 9 && (input.slide == '9' || input.slide == 'nine')) {
+			window.location.href = '../wiki/?p=nine';
+		};
+	},
 	background: 'bg-av.png'
 };
