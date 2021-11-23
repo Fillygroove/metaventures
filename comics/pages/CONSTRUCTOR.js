@@ -188,12 +188,8 @@ function verify(slide) {
 	} else if (slide == 'Panel Number') {  // Panel Number Easter Egg
 		window.location.href = '?c=pn';
 	} else if (!isNaN(slide) && Math.floor(slide) != slide) { // Panel Corruption Easter Egg
-		if (comic == 'av-10.5' || comic == 'trigger' || comic == 'av-choose') {
+		if (comic == 'av-10.5' || comic == 'trigger' || comic == 'av-choose' || comic == 'pn') {
 			document.getElementsByClassName('comic-description')[0].innerHTML = 'Failed the corruption, please try again later.';
-			return;
-		}
-		if (comic == 'pn') {
-			document.getElementsByClassName('comic-description')[0].innerHTML = 'Come back another time for another secret.';
 			return;
 		}
 		document.getElementsByClassName('comic-description')[0].innerHTML = 'Well... What did you think was going to happen when you put in a decimal value?';

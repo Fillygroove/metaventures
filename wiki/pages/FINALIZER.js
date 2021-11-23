@@ -142,6 +142,12 @@ for (let i = 0; i < endnavs.length; i++) {
 						innerTableSpan.append(innerTableLink);
 					}
 				} else {
+					if (innerTableInfo.img != undefined) {
+						let innerTableImg = document.createElement('img');
+						innerTableImg.src = `images/nav/${table.type}/${innerTableInfo.img[0]}`;
+						innerTableImg.height = innerTableInfo.img[1];
+						innerTableSpan.append(innerTableImg);
+					}
 					innerTableSpan.innerHTML += innerTableInfo.name;
 				}
 
