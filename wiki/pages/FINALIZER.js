@@ -133,7 +133,7 @@ for (let i = 0; i < endnavs.length; i++) {
 						innerTableLink.innerHTML += 'Georg';
 						
 						let innerGeorge = document.createElement('a');
-						innerGeorge.href = 'images/george_real.png';
+						innerGeorge.href = 'images/nav/planet/george_real.png';
 						innerGeorge.className = 'link';
 						innerGeorge.innerHTML = 'e';
 						innerTableSpan.append(innerTableLink, innerGeorge);
