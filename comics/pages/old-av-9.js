@@ -6,7 +6,6 @@ let comicInfo = {
 	rewindTo: 'old-av-choose',
 	corruptable: true,
 	verify: (input) => {
-		console.log(input);
 		if (input.slide == '999') {
 			window.location.href = '?c=nine';
 		};
