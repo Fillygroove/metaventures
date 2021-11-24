@@ -9,7 +9,9 @@ endnavs.push({
 			name: 'Ommadawn'
 		},
 		info: [{
-			name: 'Inner System',
+			name: {
+				name: 'Inner System'
+			},
 			info: [{
 				img: ['grene.png', imageSize.norm],
 				link: '?p=grene',
@@ -37,7 +39,9 @@ endnavs.push({
 				name: 'Baeg'
 			}]
 		}, {
-			name: 'Outer System',
+			name: {
+				name: 'Outer System'
+			},
 			info: [{
 				img: ['mac.png', imageSize.smol],
 				link: '?p=mac',
@@ -67,7 +71,9 @@ endnavs.push({
 			name: 'Taiberaque'
 		},
 		info: [{
-			name: 'Inner System',
+			name: {
+				name: 'Inner System'
+			},
 			info: [{
 				name: 'Gigantrax'
 			}, {
@@ -75,7 +81,9 @@ endnavs.push({
 				name: 'Omnikron'
 			}]
 		}, {
-			name: 'Outer System',
+			name: {
+				name: 'Outer System'
+			},
 			info: [{
 				name: 'Uling'
 			}]
@@ -85,7 +93,9 @@ endnavs.push({
 			name: 'Misc'
 		},
 		info: [{
-			name: 'Objects',
+			name: {
+				name: 'Objects'
+			},
 			info: [{
 				img: ['manc-ave.png', imageSize.small],
 				name: 'Manc-Ave'

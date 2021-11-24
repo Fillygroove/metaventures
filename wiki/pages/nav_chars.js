@@ -1,12 +1,15 @@
 endnavs.push({
 	heading: 'The Aeroventures Crew',
 	type: 'chars',
+	hideable: true,
 	categories: [{
 		category: {
-			name: 'The Crew'
+			name: 'Main Characters'
 		},
 		info: [{
-			name: 'Here They Are',
+			name: {
+				name: 'Aeroventures',
+			},
 			info: [{
 				img: ['aero.png', imageSize.small],
 				hover: ['aEROspin.gif', imageSize.small],
@@ -17,39 +20,39 @@ endnavs.push({
 				link: '?p=rodney',
 				name: 'Rodney'
 			}]
-		}]
-	}]
-});
-
-endnavs.push({
-	heading: 'The Polyventures Crew',
-	type: 'chars',
-	categories: [{
-		category: {
-			name: 'The Crew'
-		},
-		info: [{
-			name: 'Here They Are',
+		}, {
+			name: {
+				name: 'Polyventures'
+			},
 			info: [{
 				name: 'Pon'
 			}, {
 				name: 'Larry'
 			}]
 		}]
-	}]
-});
-
-endnavs.push({
-	heading: 'AV Characters',
-	type: 'chars',
-	categories: [{
+	}, {
 		category: {
-			name: 'Characters'
+			name: 'Aeroventures Characters'
 		},
 		info: [{
-			name: 'Towers of Heavell',
+			name: {
+				link: '../comics/?c=heavell',
+				name: 'Towers of Heavell'
+			},
 			info: [{
 				name: 'Ookerise'
+			}]
+		}]
+	}, {
+		category: {
+			name: 'Polyventures Characters'
+		},
+		info: [{
+			name: {
+				name: 'Misc.',
+			},
+			info: [{
+				name: 'Pemdas'
 			}]
 		}]
 	}]

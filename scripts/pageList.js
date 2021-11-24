@@ -35,6 +35,7 @@ let pageList = [
     'nine',
     'pilfception',
     'script',
+    'send-art',
     'shrine',
     'snoop',
     'tackpenguin'

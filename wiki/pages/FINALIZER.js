@@ -93,7 +93,14 @@ for (let i = 0; i < endnavs.length; i++) {
 			let innerTableHeader = document.createElement('th');
 			innerTableHeader.scope = "row";
 			innerTableHeader.className = 'wiki-inner-table-header';
-			innerTableHeader.innerHTML = table.categories[i].info[j].name;
+
+			if (table.categories[i].info[j].name.link != undefined) {
+				let innerHeaderLink = document.createElement('a');
+				innerHeaderLink.href = table.categories[i].info[j].name.link;
+				innerHeaderLink.innerHTML = table.categories[i].info[j].name.name;
+				innerHeaderLink.className = 'comic-link';
+				innerTableHeader.append(innerHeaderLink);
+			} else innerTableHeader.innerHTML += table.categories[i].info[j].name.name;
 			
 			let innerTableData = document.createElement('td');
 			
