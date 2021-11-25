@@ -143,7 +143,7 @@ let pageData = {
 					text: 'Captain Nyork and Zedd, the player 1 and player 2 of Omnikron!'
 				}, {
 					image: 'sup_omni_2.jpg',
-					text: 'Bosses for Omnikrom!'
+					text: 'Enemies for Omnikron!'
 				}]);
 			}
 		]
