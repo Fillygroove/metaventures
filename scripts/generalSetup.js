@@ -291,7 +291,6 @@ function makePage(page) {
 	mainAVIMGLink.append(mainAVIMG);
 	dropdownDiv.append(mainAVIMGLink);
 
-
 	makeButton({
 		html: 'The Comics', 
 		color: 'aero-blue', 
