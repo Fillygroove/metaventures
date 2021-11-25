@@ -133,7 +133,6 @@ function makePage(page) {
 					input.onclick({checkSelect: document.getElementById(input.id)});
 				}
 
-				console.log(window.localStorage[input.id]);
 				checkSelect.value = window.localStorage[input.id] == undefined ? input.default : window.localStorage[input.id];
 
 				checkDiv.append(checkSelect);
