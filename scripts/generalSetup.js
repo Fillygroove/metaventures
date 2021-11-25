@@ -35,6 +35,11 @@ function addScript(script) {
 	avThin.append(pageScript);
 }
 
+function fixBG(url, check) {
+	let custom = document.getElementsByTagName('html')[0].style.backgroundImage;
+	document.getElementsByTagName('html')[0].style.backgroundImage = `url(${url}images/${check ? 'old-' : ''}bg${custom.includes('av') ? '-av' : ''}${custom.includes('pv') ? '-pv' : ''}.png)`;
+}
+
 function makePage(page) {
 	let comicDir, wikiDir, titleDir, pageName;
 	switch (page) {
@@ -57,7 +62,9 @@ function makePage(page) {
 			pageName = 'Wiki';
 			break;
 	}
-	
+
+	fixBG(titleDir, window.localStorage.oldBG == 'true');
+
 	let metaTitle = document.createElement('title');
 	metaTitle.innerHTML = `${pageName} - Metaventures`;
 	
@@ -126,13 +133,14 @@ function makePage(page) {
 					input.onclick({checkSelect: document.getElementById(input.id)});
 				}
 
-				checkSelect.value = window.localStorage.theme;
+				console.log(window.localStorage[input.id]);
+				checkSelect.value = window.localStorage[input.id] == undefined ? input.default : window.localStorage[input.id];
 
 				checkDiv.append(checkSelect);
 			} else {
 				let check = document.createElement('input');
 
-				if (input.internalValue == 'true') check.checked = true;
+				if (window.localStorage[input.id] == 'true') check.checked = true;
 				check.type = 'checkbox';
 				check.id = input.id;
 				check.name = input.id;
@@ -143,6 +151,8 @@ function makePage(page) {
 
 				checkDiv.append(check);
 			}
+
+			if (window.localStorage[input.id] == undefined) window.localStorage[input.id] = input.default;
 
 			preferenceInner.append(checkDiv);
 		}
@@ -161,8 +171,6 @@ function makePage(page) {
 			}
 		};
 
-		if (input.internalValue == undefined) input.internalValue = input.default;
-
 		preference.append(preferenceHeader, preferenceInner);	
 		preferenceMenuDiv.append(preference);	
 	}
@@ -174,7 +182,6 @@ function makePage(page) {
 			title: 'Theme',
 			id: 'theme',
 			description: 'Wearing tinted glasses for cheap.',
-			internalValue: window.localStorage.theme,
 			default: 'default',
 			dropdownValues: {
 				default: 'Default',
@@ -189,6 +196,15 @@ function makePage(page) {
 				window.localStorage.theme = input.checkSelect.value;
 				updateTheme(window.localStorage.theme);
 			}
+		}, {
+			title: 'Old Backgrounds',
+			id: 'oldBG',
+			description: 'For old timey people.',
+			default: false,
+			onclick: function(input) {
+				window.localStorage.oldBG = input.check.checked;
+				fixBG(titleDir, input.check.checked);
+			}
 		}]
 	});
 
@@ -199,7 +215,6 @@ function makePage(page) {
 			title: 'Speedrun Mode',
 			id: 'speedrun',
 			description: 'For when your cousins\' MV-related birthday is tomorrow.',
-			internalValue: window.localStorage.speedrun,
 			default: false,
 			onclick: function(input) {
 				window.localStorage.speedrun = input.check.checked;
@@ -222,7 +237,6 @@ function makePage(page) {
 			title: 'Line Guide',
 			id: 'lineGuide',
 			description: 'Adds a line guide for people who have a hard time reading.',
-			internalValue: window.localStorage.lineGuide,
 			default: false,
 			onclick: function(input) {
 				window.localStorage.lineGuide = input.check.checked;
@@ -232,7 +246,6 @@ function makePage(page) {
 			title: 'Line Height',
 			id: 'lineHeight',
 			description: 'Adds extra space between lines for people who have a hard time reading.',
-			internalValue: window.localStorage.lineHeight,
 			default: false,
 			onclick: function(input) {
 				window.localStorage.lineHeight = input.check.checked;

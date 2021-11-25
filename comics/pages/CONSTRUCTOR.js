@@ -9,8 +9,10 @@ if (comicInfo.rewindTo != undefined) makeButton({
 	link: `?c=${comicInfo.rewindTo}`
 });
 
+console.log(window.localStorage.oldBG);
+
 if (comicInfo.background != undefined) {
-	document.getElementsByTagName('html')[0].style.backgroundImage = `url(../images/${comicInfo.background})`;
+	document.getElementsByTagName('html')[0].style.backgroundImage = `url(../images/${window.localStorage.oldBG == 'true' ? 'old-' : ''}${comicInfo.background})`;
 }
 
 let slideshow = document.createElement('div');
