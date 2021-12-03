@@ -29,7 +29,7 @@ addText('Welcome to the Metaventures website! Read below for more information!')
 
 addHead('The newest change!');
 
-addText('Renamed Ert to <a href="./wiki/?p=vemma" class="link">Vemma</a>! This is done because Ert is not Earth.');
+addText('Renamed Mac to <a href="./wiki/?p=macromeda" class="link">Macromeda</a>! The <a href="./wiki/?p=taiberaque" class="link">Taiberaque</a> system will be worked on soon!');
 
 addHead('The Comics!');
 
