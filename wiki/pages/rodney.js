@@ -11,7 +11,7 @@ const pageData = {
 				info: ['Reeg']
 			}, {
 				name: 'Lives in',
-				info: ['<a href="?p=ert">Ert</a>, in Yolktown.']
+				info: ['<a href="?p=vemma">Vemma</a>, in Yolktown.']
 			}, {
 				name: 'Character Status',
 				info: ['Alive']

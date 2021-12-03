@@ -21,15 +21,15 @@ let lineBreak = document.createElement('hr');
 
 avThin.append(mainH1, lineBreak);
 
-addText('We\'ve (and by that I mean Clarise) have trascribed the Discord announcement onto its own page!', 'font-size: 20px;');
-addText('<a href="./wiki/?p=announce-1" class="comic-link">You may read it here!</a>');
+addText('It\'s December 2nd, the first anniversary of the website! We made a post about it..', 'font-size: 20px;');
+addText('<a href="./wiki/?p=announce-2" class="comic-link">You may read it here!</a>');
 addText('WARNING - A lot of things are being reworked so most information (and even the comics) isn\'t accurate anymore.');
 
 addText('Welcome to the Metaventures website! Read below for more information!');
 
 addHead('The newest change!');
 
-addText('Cleaned up the Wiki in preperation for Aeroventures 1!');
+addText('Renamed Ert to <a href="./wiki/?p=vemma" class="link">Vemma</a>! This is done because Ert is not Earth.');
 
 addHead('The Comics!');
 

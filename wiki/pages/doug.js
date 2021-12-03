@@ -106,7 +106,7 @@ let pageData = {
 			'Doug resides in a balmy distance from Ommadawn, just far enough to not be melted by the heat, unfortunately. It is closer to the sun compared to real-life Mercury.',
 			() => {
 				greneAddMacron([
-					'Doug\'s orbit is nearly a perfect circle, which is surprising considering that it would be dragged around by the other nearby planets, most noteworthy is Grene and the Ert and George binary. The overall stability of its placement may be a lucky coincidence.'
+					'Doug\'s orbit is nearly a perfect circle, which is surprising considering that it would be dragged around by the other nearby planets, most noteworthy is Grene and the Vemma and George binary. The overall stability of its placement may be a lucky coincidence.'
 				]);
 			},
 			'Doug\'s rotation is rather slow, possibly due to the way the planet was created, likely from a "cataclysmic" event. The rotation is so slow that only around one fifth of a day passes when compared to a year on Doug. If you were born on Doug, your first birthday will happen before the day ends.',
@@ -123,7 +123,7 @@ let pageData = {
 			
 			'<h3>Magnetic Field</h3>',
 			'Doug normally has a weak magnetic field, almost capable of deflecting charged particles from Ommadawn. On rare occasions, Doug emits a burst of ionizing radiation of various strengths, referred to as "DIE Bursts" (Doug Internet EMP Burst). This burst is capable of temporarily disrupting satellite communication, which gets on the nerves of NA telecommunicators.',
-			'The cause of these bursts are largely understudied. They appear to be strongest within the large craters, and the trajectory of these bursts usually face towards the Ert and George binary, sometimes even when Doug is at opposition.',
+			'The cause of these bursts are largely understudied. They appear to be strongest within the large craters, and the trajectory of these bursts usually face towards the Vemma and George binary, sometimes even when Doug is at opposition.',
 			
 			'<h3>Atmosphere and Climate</h3>',
 			() => {
@@ -140,18 +140,18 @@ let pageData = {
 			'As Doug hasn\'t been investigated much by modern day scientists, it is unknown if more than one moon existed in the past.',
 			'<h3>Life</h3>',
 			'Doug\'s surface conditions are hazardous to most forms of life. Surface temperatures would burn or freeze anything that dares to traverse on its surface. Without a sufficient atmosphere or a proper form of radiation protection, most life would die.',
-			'Despite the inhospitality on its surface, there are signs of worm-like creatures borrowing beneath the surface. While unconfirmed as of now, these "worms" would be the reason why there are deep holes in Doug. This theory is also applicable to Aech. This has caused many Ertlings to reference Doug in any worm related content.',
+			'Despite the inhospitality on its surface, there are signs of worm-like creatures borrowing beneath the surface. While unconfirmed as of now, these "worms" would be the reason why there are deep holes in Doug. This theory is also applicable to Aech. This has caused many Vemlings to reference Doug in any worm related content.',
 			'Most scientists would confidently say that there\'s nothing interesting to see here, and would promptly tell you to defenestrate yourself, as you are making the room hot with your breath.',
 
 			'<h3>Symbol</h3>',
-			'Doug\'s symbol represents a humbling caricature of a face, to represent Doug\'s strong stature despite the many difficulties it goes through even in research. Many Ertlings look up to Doug and refer to Doug as "The Humble" as a representation of strength during times of hardship.'
+			'Doug\'s symbol represents a humbling caricature of a face, to represent Doug\'s strong stature despite the many difficulties it goes through even in research. Many Vemlings look up to Doug and refer to Doug as "The Humble" as a representation of strength during times of hardship.'
 		]
 	}, {
 		name: 'Culture',
 		info: [
-			'Doug is regarded to be a moderately favored planet according to the general demographics of Ert cultures. It is widely hated to the opinion of scientists however, claiming there is little incentive for any form of science other than protection from the notorious DIE bursts. This opinion also stems from the researchers of Doug, who were unceremoniously given the most "average" planet out of the fantastical bunch. The researchers had a notably small attention span and started the trend of despising Doug for taking their summer away.',
+			'Doug is regarded to be a moderately favored planet according to the general demographics of Vemma cultures. It is widely hated to the opinion of scientists however, claiming there is little incentive for any form of science other than protection from the notorious DIE bursts. This opinion also stems from the researchers of Doug, who were unceremoniously given the most "average" planet out of the fantastical bunch. The researchers had a notably small attention span and started the trend of despising Doug for taking their summer away.',
 			'In the Reegublic Zodiacal Calendar, the second month of the year is Doug. It has been tradition for scientists to throw a "Doug Party" where they all attempt to humiliate the planet Doug for fun, whoever has the most complicated reasoning for Doug\'s inadequacy, will get boxes of chocolate chip cookies or "Doug" Cookies, referred to below.',
-			'Doug has had an impact on the public outlook on worms due to the signs of similar creatures in Doug\'s caverns. Doug is a common name for a pet worm, and a species of giant Ertworm is a "Douggian" Worm, referencing the massive size of Doug\'s anticipated worms. Doug Cookies are chocolate chip cookies with gummy worms poking out the sides.',
+			'Doug has had an impact on the public outlook on worms due to the signs of similar creatures in Doug\'s caverns. Doug is a common name for a pet worm, and a species of giant VVorms is a "Douggian" Worm, referencing the massive size of Doug\'s anticipated worms. Doug Cookies are chocolate chip cookies with gummy worms poking out the sides.',
 
 			'<h3>Exploration</h3>',
 			'Doug is the least visited planet in the Hot Sun system. Exploring Doug is costly and difficult, requiring a lot of maneuvers to even approach it. There is danger of potential collisions with Doug\'s asteroid field and the DIE bursts, which at this distance would be lethal for any unprepared mission.',
@@ -164,7 +164,7 @@ let pageData = {
 
 			'<h3>Scientists\' Opinion</h3>',
 			'Stern Physicists attribute Doug to being a useless asset in their quest of discovering and proving general relativity due to its circular orbit.',
-			'Ground astronomers have a general distaste for Doug due to its dull non-reflective surface, which renders it mostly invisible when viewed in the evening skies of Ert.',
+			'Ground astronomers have a general distaste for Doug due to its dull non-reflective surface, which renders it mostly invisible when viewed in the evening skies of Vemma.',
 			'The Dee Scee has an overwhelming positive opinion on Doug deeming it to be just as interesting as any other planet in the Bisolar System.',
 			'A quote which has been highly debated by critics yet accepted by scientists may be read below.',
 			() => {

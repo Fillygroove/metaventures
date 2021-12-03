@@ -34,7 +34,7 @@ let pageData = {
 		}]
 	},
 	introText: [
-		'Baeg is the fifth planet in the <a href="?p=hotsun">Hot Sun</a> system, after <a href="?p=ert">Ert</a> and <a href="?p=george">George</a> and before <a href="?p=mac">Mac</a>.'
+		'Baeg is the fifth planet in the <a href="?p=hotsun">Hot Sun</a> system, after <a href="?p=vemma">Vemma</a> and <a href="?p=george">George</a> and before <a href="?p=mac">Mac</a>.'
 	],
 	endnav: 'planet'
 };

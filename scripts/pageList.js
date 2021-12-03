@@ -1,12 +1,13 @@
 let pageList = [
 // Redirects
-    'coldsun', // To ?p=omnikrons
+    'coldsun', // To ?p=omnikron
+    'ert', // To ?=vemma
 // Planets
     'hotsun',
     'grene',
     'doug',
     'pilf',
-    'ert',
+    'vemma',
     'george',
     'baeg',
     'mac',
@@ -21,9 +22,11 @@ let pageList = [
 // Characters
     'aero',
     'rodney',
+// Announcements
+    'announce-1',
+    'announce-2',
 // Misc
     'main',
-    'announce-1',
     'credits',
 // Easter Eggs
     'debug',

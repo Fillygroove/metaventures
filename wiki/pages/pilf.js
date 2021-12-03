@@ -40,7 +40,7 @@ let pageData = { // First!
 				author: 'King Arnolth'
 			});
 		},
-		'Pilf is the third planet in the <a href="?p=hotsun">Ommadawn</a> system, after <a href="?p=doug">Doug</a> and before <a href="?p=ert">Ert</a> and <a href="?p=george">George</a>. Pilf is a ringed cuboid planet, standing out from all other planets for its striking purple and blue-green hue. Pilf is scenically equivalent to a filthy purple kitchen sponge - lightweight, moldy, and has flies. Its unusual properties makes it a widely appealing planet for testing theories in science, fun tourist vacations, and the highly expensive bone-cheese delicacy.',
+		'Pilf is the third planet in the <a href="?p=hotsun">Ommadawn</a> system, after <a href="?p=doug">Doug</a> and before <a href="?p=vemma">Vemma</a> and <a href="?p=george">George</a>. Pilf is a ringed cuboid planet, standing out from all other planets for its striking purple and blue-green hue. Pilf is scenically equivalent to a filthy purple kitchen sponge - lightweight, moldy, and has flies. Its unusual properties makes it a widely appealing planet for testing theories in science, fun tourist vacations, and the highly expensive bone-cheese delicacy.',
 		
 		'<h3>Interesting Facts</h3>',
 		() => {
@@ -48,7 +48,7 @@ let pageData = { // First!
 				'Pilf is the only planet shaped like a cube.',
 				'Pilf’s gravity remains spherical, despite its appearence.',
 				'Pilf’s rings are made of a reflective "custard-like" substance.',
-				'Pilf is one of four planets with confirmed life, the other ones being Doug, Ert, and George.',
+				'Pilf is one of four planets with confirmed life, the other ones being Doug, Vemma, and George.',
 				'Before being officially named by Alphabet, Pilf was originally referred to as Pii by The Nyork  Administration.',
 				'Pilf is the only planet with an ever changing axis of rotation.',
 				'The plural of Pilf is Pilves.',
@@ -100,13 +100,13 @@ let pageData = { // First!
 			'Falling from a side would be long and frankly not advised, but they would crash into the ground as gravity begins to pull them downward again. Hypothetically if Pilf had no air, theoretically one could safely fall from one side to another if they jump far enough from any standing obstacle to grab the ledge of the other side.',
 			
 			'<h3>Orbit and Rotation</h3>',
-			'Pilf unfortunately resides after Doug and thankfully resides before George and Ert. Its relative closeness and bright coloration makes it one of the most visible objects in the evening skies of Ert and George thanks to its bright rings. It is slightly closer to its star compared to real-life Venus.',
+			'Pilf unfortunately resides after Doug and thankfully resides before George and Vemma. Its relative closeness and bright coloration makes it one of the most visible objects in the evening skies of Vemma and George thanks to its bright rings. It is slightly closer to its star compared to real-life Venus.',
 			() => {
 				greneAddMacron([
-					'Pilf’s orbit is somewhat eccentric and inclined compared to other planets near it. This is possibly to its lower mass, being tugged often by the Ert-George binary, Grene, and Doug.'
+					'Pilf’s orbit is somewhat eccentric and inclined compared to other planets near it. This is possibly to its lower mass, being tugged often by the Vemma-George binary, Grene, and Doug.'
 				]);
 			},
-			'Pilf’s rotation is erratic, most likely due to Ert’s and George’s binary orbit causing its axis of rotation to look like a die rolled by a drunk mathematician calculating how many feet are in a mile. The variation in Pilf’s axis of rotation is referred to as its Mood, and is calculated by the change in the axis of rotation over time. A day can range from an hour to six Ert days depending on what Mood Pilf has.',
+			'Pilf’s rotation is erratic, most likely due to Vemma’s and George’s binary orbit causing its axis of rotation to look like a die rolled by a drunk mathematician calculating how many feet are in a mile. The variation in Pilf’s axis of rotation is referred to as its Mood, and is calculated by the change in the axis of rotation over time. A day can range from an hour to six Vemma days depending on what Mood Pilf has.',
 			
 			'<h3>Geography</h3>',
 			'Pilf’s most interesting features include its purple color and its blue-green lakes on each side. Towards the center of each face, the lakes appear to bulge out due to the spherical pull of gravity. Around the lakes, there are flat plains marked with small craters and ridges. Approaching the edges, the land begins to appear more crumpled and uneven, with ever-increasing slopes until reaching a beveled plateau. Depressions on Pilf appear more stretched as they approach to the sides.',
@@ -134,7 +134,7 @@ let pageData = { // First!
 			'Pilf lacks any signs of a magnetosphere, therefore being fully susceptible to cosmic rays and the solar wind from Ommadawn. Whether it may contribute to the bizarre evolution of life on Pilf is unclear.',
 			
 			'<h3>Atmosphere and Climate</h3>',
-			'The atmosphere of Pilf envelops a dome of sorts on each side thanks again to its gravity, giving rise to a diverse environment of changing pressures from near-vacuum to a dense, soupy haze. It appears yellow-green, composed of noxious gasses and other volatiles that may explode if ignited in Ert’s environment. In some locations, its density exceeds that of Ert at sea level, making it possible for even heavier creatures to attempt flight with varying degrees of success.',
+			'The atmosphere of Pilf envelops a dome of sorts on each side thanks again to its gravity, giving rise to a diverse environment of changing pressures from near-vacuum to a dense, soupy haze. It appears yellow-green, composed of noxious gasses and other volatiles that may explode if ignited in Vemma’s environment. In some locations, its density exceeds that of Vemma at sea level, making it possible for even heavier creatures to attempt flight with varying degrees of success.',
 			'Weather on Pilf consists of humid days followed by a smelly fog coming from its lakes during night. There is no true precepitation around Pilf, however its air is so thick in moisture that any form of rain wouldn’t matter.',
 			'Combined with the closeness of Ommadawn and the thickness of its atmosphere, Pilf’s climate is described as balmy and variable on location. Temperatures can reach freezing towards the edges while the interior would remain humid and uncomfortable. Pilf’s tumbling axis cancels most forms of seasonal shifts throughout its year aside from the eccentric orbit.',
 			
@@ -144,7 +144,7 @@ let pageData = { // First!
 			'Scientists have confirmed that there are no natural satellites beyond the Piffol Rings. Moons could exist between Pilf and the Piffol Rings, but there likely aren’t moons there.',
 			
 			'<h3>Life</h3>',
-			'Pilf shows clear signs of life adapted to its environment. Although most life on Ert or George would die in minutes thanks to the comparably alien composition. While radiation would be more dangerous than on Ert, its thick atmosphere acts as a barrier to most of it. Due to its geography, the diversity of life on Pilf is contained on each of its faces, leading to a variety of creatures unique to one face.',
+			'Pilf shows clear signs of life adapted to its environment. Although most life on Vemma or George would die in minutes thanks to the comparably alien composition. While radiation would be more dangerous than on Vemma, its thick atmosphere acts as a barrier to most of it. Due to its geography, the diversity of life on Pilf is contained on each of its faces, leading to a variety of creatures unique to one face.',
 			
 			'<h4>Bonestocks</h4>',
 			'A Bonestock is a type of conical "tree" that grows on Pilf. They produce a fruit containing the widely sought-after Bonecheese, Ostronuts. Ostronuts are deemed so only due to their resemblance to almonds, but are texture-wise similar to a crunchy apple. Groves of Bonestocks grow in mattes around the lakes of Pilf, becoming more dispersed the farther it is from the center. Depending on how close the groves are to the center of each face, the "trees" will slant to the direction of the gravity. Groves are not found growing on the edges of the planet.',
@@ -159,20 +159,20 @@ let pageData = { // First!
 			'Cheesemoss is a widespread low-growing form of vegetation on Pilf, playing the role of retaining moisture on the drier, colder parts of Pilf. Cheesemoss is a vital food resource for the Sawnflies and a great recycler of nutrients to the Piian grotto. Together with the Bonestocks, they make up the bulk of habitats for many varieties of Piian creatures.',
 
 			'<h3>Symbol</h3>',
-			'Pilf’s symbol represents the jeweled nazar of the skies, held by the morning and evening god of foresight. Pilf has also been labeled as "The Trickster" For its biological and orbital oddities compared against its close sibling planet, Ert. The top line of the symbol represents an angler associated with Pilf’s entrancing properties.'
+			'Pilf’s symbol represents the jeweled nazar of the skies, held by the morning and evening god of foresight. Pilf has also been labeled as "The Trickster" For its biological and orbital oddities compared against its close sibling planet, Vemma. The top line of the symbol represents an angler associated with Pilf’s entrancing properties.'
 		]
 	}, {
 		name: 'Culture',
 		info: [
-			'Pilf is usually seen by residents of Ert as an odd, simple refraction of what life on an alien planet would look like. Most Ertlings are extremely curious of Pilf’s simple and terrifying ecosystem, as PIlf is usually subject to being taught in ecobiology classes on the subject of a stable ecosystem. Pilf had been seen as a way to navigate through the ocean using its bright shape in the sky, but this is now deemed idiotic as Pilf has a rambunctiously complicated orbit and can go wherever it likes. Some accidental discoveries have been made due to going the wrong (right?) way. Woops! The stable alternative has always been Taiberaque.',
+			'Pilf is usually seen by residents of Vemma as an odd, simple refraction of what life on an alien planet would look like. Most Vemmalings are extremely curious of Pilf’s simple and terrifying ecosystem, as PIlf is usually subject to being taught in ecobiology classes on the subject of a stable ecosystem. Pilf had been seen as a way to navigate through the ocean using its bright shape in the sky, but this is now deemed idiotic as Pilf has a rambunctiously complicated orbit and can go wherever it likes. Some accidental discoveries have been made due to going the wrong (right?) way. Woops! The stable alternative has always been Taiberaque.',
 			'However, the first thing most people think about when talking about Pilf is the delectable cheese it produces. It is an extravagant and expensive dinner that everyone wants to have, but must either be royalty or rich to have one. Royalty usually has Pilf Bone Cheese as a delicacy, however servants might just spray paint regular cheese to avoid the overwhelming cost of having one of the Nyork Administration’s Bone Cheese. ',
 			'Personality-wise, Pilf has been seen as a comfort for the odd, a confirmation that being different from everyone else doesn’t make someone alone in the world. The acknowledgement of the uncanny is widely appreciated by entrepreneurs as a reminder to not harmfully distort their true views due to the pressure to conform to whatever environment they happen to be in. This way of thought has led to many abstract and innovative ideas.',
-			'In the Reegublic Zodiacal Calendar, Pilf is the third month of the year. Cheese businesses across Ert put up a sale for all of their wares. The prices will vary from a controversial 0% to an amazing 90% off - the exact values based around Pilf’s mood. On those fateful days where there is absolutely no change in value for the month, cheese-lovers out there would attempt to make their own cheese. All cheese-related products including those meant to assist making cheese also follow an exact opposite exchange of prices off as a strategic way to encourage more purchases of cheese-clothes during an "Angry Pilf."',
+			'In the Reegublic Zodiacal Calendar, Pilf is the third month of the year. Cheese businesses across Vemma put up a sale for all of their wares. The prices will vary from a controversial 0% to an amazing 90% off - the exact values based around Pilf’s mood. On those fateful days where there is absolutely no change in value for the month, cheese-lovers out there would attempt to make their own cheese. All cheese-related products including those meant to assist making cheese also follow an exact opposite exchange of prices off as a strategic way to encourage more purchases of cheese-clothes during an "Angry Pilf."',
 			'Parties on Pilf Month often showcase platters of cubed cheeses and custard desserts.',
 			
 			'<h3>Exploration</h3>',
-			'Pilf is by far the most visited object beyond the Ert and George binary for its relative closeness and overall easy access to its science.',
-			'Several sample-return missions brought bonecheese to Ert, which caused an insatiable appetite for such bizarre delicacies. Wealthy members of the royal families fund more missions to Pilf to extract and possibly incentivise a business around this interplanetary food, however this caused tensions for other space programs to compete to be the most ideal company for bonecheese sample-return. For the case of the Nyork Administration, they backed down these offers in fear of cross-contamination between Ertian and Piian life, and the rampant meddling of these delicate ecosystems.',
+			'Pilf is by far the most visited object beyond the Vemma and George binary for its relative closeness and overall easy access to its science.',
+			'Several sample-return missions brought bonecheese to Vemma, which caused an insatiable appetite for such bizarre delicacies. Wealthy members of the royal families fund more missions to Pilf to extract and possibly incentivise a business around this interplanetary food, however this caused tensions for other space programs to compete to be the most ideal company for bonecheese sample-return. For the case of the Nyork Administration, they backed down these offers in fear of cross-contamination between Vemmaian and Piian life, and the rampant meddling of these delicate ecosystems.',
 			'Many return missions had also given a taste of the Piffol rings, however it caused those who tried it to become ill. Even if they tried to, any form of eating of these precious ring samples is banned across most scientific institutions due to data leading to the custard being a limited resource.',
 			'There is little known about Janet and the mission to Pilf. However, in general to Janet’s "Odyssey" mission, it has provided the NA with the current images and data on numerous planets.',
 			

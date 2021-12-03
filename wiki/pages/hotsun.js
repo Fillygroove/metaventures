@@ -16,7 +16,7 @@ const pageData = {
 					'<a href="?p=grene">Gr\u0113ne</a>',
 					'<a href="?p=doug">Doug</a>',
 					'<a href="?p=pilf">Pilf</a>',
-					'<a href="?p=ert">Ert</a>',
+					'<a href="?p=vemma">Vemma</a>',
 					'<a href="?p=george">George</a>',
 					'<a href="?p=baeg">Baeg</a>',
 					'<a href="?p=mac">Mac</a>',

@@ -28,10 +28,10 @@ endnavs.push({
 					<img src="images/symbol_pilf.png" height="${imageSize.norm}">
 					Pilf
 				</a>`,
-				// Ert
-				`<a href="?p=ert">
+				// Vemma
+				`<a href="?p=vemma">
 					<img src="images/symbol_ert.png" height="${imageSize.small}">
-					Ert
+					Vemma
 				</a>
 				(<small>
 					<a href="?p=perpahedron">

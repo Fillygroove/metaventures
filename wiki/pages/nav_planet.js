@@ -26,8 +26,8 @@ endnavs.push({
 				name: 'Pilf'
 			}, {
 				img: ['ert.png', imageSize.small],
-				link: '?p=ert',
-				name: 'Ert'
+				link: '?p=vemma',
+				name: 'Vemma'
 			}, {
 				img: ['george.png', imageSize.small],
 				link: '?p=george',

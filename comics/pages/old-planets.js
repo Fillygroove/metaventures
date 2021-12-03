@@ -20,11 +20,11 @@ let comicInfo = {
 		classTitle: 'pixel'
 	}, {
 		panel: '5.png',
-		caption: 'A REALLY old version of Ert.',
+		caption: 'A REALLY old version of Vemma.',
 		classTitle: 'pixel'
 	}, {
 		panel: '6.png',
-		caption: 'A newer version of Ert.',
+		caption: 'A newer version of Vemma.',
 		classTitle: 'pixel'
 	}, {
 		panel: '7.png',

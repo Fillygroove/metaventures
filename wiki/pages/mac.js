@@ -33,7 +33,7 @@ let pageData = {
 		}]
 	},
 	introText: [
-		'Mac is the sixth planet from the <a href="?p=hotsun">Hot Sun</a>, after <a href="?p=baeg">Baeg</a> and before <a href="?p=hazel">Hazel</a>. It is the largest planet in the system. It is a gas giant, with a diameter that is a sixth and a half of the size of the Hot Sun, and has a prime vertical that is a sixth and three fourths of the size of the Hot Sun. Due to its size, it is visible from <a href="?p=ert">Ert</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
+		'Mac is the sixth planet from the <a href="?p=hotsun">Hot Sun</a>, after <a href="?p=baeg">Baeg</a> and before <a href="?p=hazel">Hazel</a>. It is the largest planet in the system. It is a gas giant, with a diameter that is a sixth and a half of the size of the Hot Sun, and has a prime vertical that is a sixth and three fourths of the size of the Hot Sun. Due to its size, it is visible from <a href="?p=vemma">Vemma</a>, and is even large enough to cast shadows on most of the Terrestrial planets, despite being visibly squashed on the vertical axis.',
 		'Mac is mostly composed of Hydrogen, being in the form of gas and plasma, and Helium, with a good amount of Iodine and Neon, along with a small amount of other materials and elements. Due to Mac\'s rotation, the planet has a huge bulge on the horizon, experiencing a day once every 3.5 hours. Mac orbit lies inside of an asteroid belt.',
 		'The term for describing something related to Mac is Donian.'
 	],
