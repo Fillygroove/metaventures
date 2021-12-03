@@ -44,3 +44,26 @@ let pageList = [
     'snoop',
     'tackpenguin'
 ];
+
+let randList = [
+// Planets
+    'hotsun',
+    'grene',
+    'doug',
+    'pilf',
+    'vemma',
+    'george',
+    'baeg',
+    'macromeda',
+    'hazel',
+    'aeiou',
+    'cea',
+    'the',
+    'wop',
+    'taiberaque',
+    'omnikron',
+// Characters
+    'aero',
+    'rodney'
+];
+    

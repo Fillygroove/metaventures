@@ -219,6 +219,17 @@ a {
 	transition: 0.3s;
 }
 
+.rand-black {
+	color: #fff !important;
+	background-color: #1f1f1f !important;
+}
+
+.rand-black:hover {
+	color: #fff !important;
+	background-color: #0c0c0c !important;
+	transition: 0.3s;
+}
+
 .no-link {
 	color: #ff0000;
 }

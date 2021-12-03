@@ -25,6 +25,7 @@ function makeButton(input) {
 	dropdown.innerHTML = input.html;
 	if (input.style != undefined) dropdown.style = input.style;
 	if (input.link != undefined) dropdown.href = input.link;
+	if (input.onclick != undefined) dropdown.onclick = input.onclick;
 	dropdownDiv.append(dropdown);
 }
 
