@@ -51,7 +51,7 @@ let pageData = {
 				'Vemma is more ocean than land (just like Earth).',
 				'Vemma\'s four land masses are named: Northland, Southland, Weastland, and Elseland.',
 				'Vemma compasses have north and south, an arrow pointing upwards since east and west cancel out, and an arrow on the side of the compass to point to "else."',
-				'The term for describing something related to Vemma is Vemmaian.'
+				'The term for describing something related to Vemma is Vemmian.'
 			]);
 		}
 	],
@@ -108,7 +108,7 @@ let pageData = {
 			'By Metaventures standards, Vemma\'s air would be breathable by its inhabitants and hypothetically, humans.',
 			
 			'<h3>Magnetic Field</h3>',
-			'Vemma has a robust magnetic field strengthened by interactions with George. It is strong enough to deflect solar radiation and thus protect the two worlds. Despite its strength it is nowhere near as strong as the fields around its sibling planets, Mac, Hazel, or Aeiou. Strangely, its "north" magnetic pole lays exactly on the same path as the Island of No Escape.',
+			'Vemma has a robust magnetic field strengthened by interactions with George. It is strong enough to deflect solar radiation and thus protect the two worlds. Despite its strength it is nowhere near as strong as the fields around its sibling planets, Macromeda, Hazel, or Aeiou. Strangely, its "north" magnetic pole lays exactly on the same path as the Island of No Escape.',
 			'Vemma\'s interaction with solar radiation allows the formation of auroras, which is seen as a ring on the north and south magnetic poles, which to clarify is on the equator. When Vemma receives a DIE Burst, its poles will glow a bit more due to the ionizing radiation.',
 			
 			'<h3>Orbit and Rotation</h3>',

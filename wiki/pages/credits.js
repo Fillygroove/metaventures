@@ -17,7 +17,7 @@ let pageData = {
 		info: [
 			() => {
 				greneAddMacron([
-					'Created Grene, Doug, Vemma, George, Pilf, Mac, The, the Macaroni Belt, and provided all of the pixel art on the Wiki.'
+					'Created Grene, Doug, Vemma, George, Pilf, Macromeda, The, the Macaroni Belt, and provided all of the pixel art on the Wiki.'
 				]);
 			},
 			'Helped out with the worldbuilding inside and beyond this world.',

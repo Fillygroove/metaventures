@@ -1,7 +1,8 @@
 let pageList = [
 // Redirects
     'coldsun', // To ?p=omnikron
-    'ert', // To ?=vemma
+    'ert', // To ?p=vemma
+    'mac', // To ?p=macromeda
 // Planets
     'hotsun',
     'grene',
@@ -10,7 +11,7 @@ let pageList = [
     'vemma',
     'george',
     'baeg',
-    'mac',
+    'macromeda',
     'hazel',
     'aeiou',
     'cea',

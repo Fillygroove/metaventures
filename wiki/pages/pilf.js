@@ -1,6 +1,6 @@
 let pageData = { // First!
 	name: 'Pilf',
-	warning: 'quality',
+	warning: 'outdated',
 	navbox: {
 		file: true,
 		symbol: true,
@@ -172,7 +172,7 @@ let pageData = { // First!
 			
 			'<h3>Exploration</h3>',
 			'Pilf is by far the most visited object beyond the Vemma and George binary for its relative closeness and overall easy access to its science.',
-			'Several sample-return missions brought bonecheese to Vemma, which caused an insatiable appetite for such bizarre delicacies. Wealthy members of the royal families fund more missions to Pilf to extract and possibly incentivise a business around this interplanetary food, however this caused tensions for other space programs to compete to be the most ideal company for bonecheese sample-return. For the case of the Nyork Administration, they backed down these offers in fear of cross-contamination between Vemmaian and Piian life, and the rampant meddling of these delicate ecosystems.',
+			'Several sample-return missions brought bonecheese to Vemma, which caused an insatiable appetite for such bizarre delicacies. Wealthy members of the royal families fund more missions to Pilf to extract and possibly incentivise a business around this interplanetary food, however this caused tensions for other space programs to compete to be the most ideal company for bonecheese sample-return. For the case of the Nyork Administration, they backed down these offers in fear of cross-contamination between Vemmian and Piian life, and the rampant meddling of these delicate ecosystems.',
 			'Many return missions had also given a taste of the Piffol rings, however it caused those who tried it to become ill. Even if they tried to, any form of eating of these precious ring samples is banned across most scientific institutions due to data leading to the custard being a limited resource.',
 			'There is little known about Janet and the mission to Pilf. However, in general to Janet’s "Odyssey" mission, it has provided the NA with the current images and data on numerous planets.',
 			

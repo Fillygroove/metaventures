@@ -56,10 +56,10 @@ endnavs.push({
 		}, {
 			name: 'Outer System',
 			info: [
-				// Mac
-				`<a href="?p=mac">
+				// Macromeda
+				`<a href="?p=macromeda">
 					<img src="images/symbol_mac.png" height="${imageSize.smol}">
-					Mac
+					Macromeda
 				</a>`,
 				// Hazel
 				`<a href="?p=hazel">

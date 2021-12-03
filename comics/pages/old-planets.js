@@ -47,12 +47,16 @@ let comicInfo = {
 		caption: 'An even newer version of Pilf, with an older ring placement.',
 		classTitle: 'pixel'
 	}, {
+		panel: 'pilf_old_3.png',
+		caption: 'The previous version of Pilf, before its rework.',
+		classTitle: 'pixel'
+	}, {
 		panel: '12.png',
 		caption: 'Baeg, then named Dough, now renamed to Baeg.',
 		classTitle: 'pixel'
 	}, {
 		panel: '13.png',
-		caption: 'The original art for Mac. Has its pole visible.',
+		caption: 'The original art for Macromeda. Has its pole visible.',
 		classTitle: 'pixel'
 	}, {
 		panel: '14.png',

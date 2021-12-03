@@ -9,6 +9,7 @@ let slideIndex = [];
 let page = pageData;
 
 if (page.redirect != undefined) {
+	page.name = 'Redirecting...';
 	window.location.href = page.redirect;
 }
 

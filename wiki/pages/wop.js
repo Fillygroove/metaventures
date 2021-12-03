@@ -10,7 +10,7 @@ let pageData = {
 			heading: 'Designations',
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="?p=mac">Mac</a>']
+				info: ['<a href="?p=macromeda">Macromeda</a>']
 			}, {
 				name: 'Satellites',
 				info: ['None']

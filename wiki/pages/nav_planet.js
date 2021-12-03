@@ -44,8 +44,8 @@ endnavs.push({
 			},
 			info: [{
 				img: ['mac.png', imageSize.smol],
-				link: '?p=mac',
-				name: 'Mac'
+				link: '?p=macromeda',
+				name: 'Macromeda'
 			}, {
 				img: ['hazel.png', imageSize.norm],
 				link: '?p=hazel',

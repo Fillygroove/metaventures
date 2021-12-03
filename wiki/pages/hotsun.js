@@ -19,7 +19,7 @@ const pageData = {
 					'<a href="?p=vemma">Vemma</a>',
 					'<a href="?p=george">George</a>',
 					'<a href="?p=baeg">Baeg</a>',
-					'<a href="?p=mac">Mac</a>',
+					'<a href="?p=macromeda">Macromeda</a>',
 					'<a href="?p=hazel">Hazel</a>',
 					'<a href="?p=aeiou">Aeiou</a>',
 					'<a href="?p=cea">Cea</a>',
