@@ -1,6 +1,10 @@
 let comicList = {
     norm: [
     // Redirects
+    // AV
+    // PV
+    // Spinoffs
+        'heavell',
     // Old AV
         'old-av-1',
         'old-av-2',
@@ -18,8 +22,6 @@ let comicList = {
         'old-av-12-1',
     // Old PV
         'old-pv-1',
-    // Spinoffs
-        'heavell',
     // Extras
         'old-misc',
         'old-planets',
@@ -52,6 +54,9 @@ let wikiList = {
         'ert', // To ?p=vemma
         'mac', // To ?p=macromeda
         'hotsun', // To ?p=ommadawn
+    // Characters
+        'aero',
+        'rodney',
     // Planets
         'ommadawn',
         'grene',
@@ -70,9 +75,6 @@ let wikiList = {
         'omnikron',
         'gigantrax',
         'dwarf',
-    // Characters
-        'aero',
-        'rodney',
     // Announcements
         'announce-1',
         'announce-2',
