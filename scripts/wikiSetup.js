@@ -3,10 +3,10 @@ pageName = pageName.get('p');
 if (pageName == null) pageName = "main";
 
 makeButton({
-	html: 'Random Page', 
+	html: rng(50) == 0 ? 'RANSOM PAGE' : 'Random Page', 
 	color: 'rand-black',
 	onclick: () => {
-        window.location.href = `?p=${randList[Math.floor(Math.random() * randList.length)]}`;
+        window.location.href = `?p=${randList[rng(randList.length)]}`;
     }
 });
 

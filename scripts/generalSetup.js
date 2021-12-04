@@ -41,6 +41,10 @@ function fixBG(url, check) {
 	document.getElementsByTagName('html')[0].style.backgroundImage = `url(${url}images/${check ? 'old-' : ''}bg${custom.includes('av') ? '-av' : ''}${custom.includes('pv') ? '-pv' : ''}.png)`;
 }
 
+function rng(max) {
+    return Math.floor(Math.random() * max);
+}
+
 function makePage(page) {
 	let comicDir, wikiDir, titleDir, pageName;
 	switch (page) {

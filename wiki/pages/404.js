@@ -11,6 +11,6 @@ let quote = [
 
 const pageData = {
 	name: 'Oops, a tasty 404!',
-	introText: ['This page doesn\'t seem to exist, sadly... ' + quote[Math.floor(Math.random() * quote.length)]],
+	introText: ['This page doesn\'t seem to exist, sadly... ' + quote[rng(quote.length)]],
 	endnav: 'chars planet'
 };
