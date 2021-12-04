@@ -177,7 +177,7 @@ for (let i = 0; i < endnavs.length; i++) {
 		tableBody.append(tableRow);
 	}
 	
-	if (endnavs[i].hideable == true) {
+	if (endnavs[i].hideable) {
 		let hidetext = document.createElement('a');
 		hidetext.className = 'wiki-navbox-hide-text';
 		hidetext.innerHTML = '<u>Show</u>';

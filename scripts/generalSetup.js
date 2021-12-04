@@ -13,7 +13,7 @@ function correctLinks() {
 		let pageLinkName = pageLinks[i].href.substring(pageLinks[i].href.indexOf('=') + 1, pageLinks[i].href.length);
 		if (pageLinkName.includes('#')) pageLinkName = pageLinkName.substring(0, pageLinkName.indexOf('#'));
 		if (pageLinks[i].id == '' && pageLinks[i].className == '') {
-			if (pageList.includes(pageLinkName)) pageLinks[i].className = 'link';
+			if (wikiList.norm.includes(pageLinkName)) pageLinks[i].className = 'link';
 			else pageLinks[i].className = 'no-link';
 		}
 	}

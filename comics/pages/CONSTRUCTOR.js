@@ -50,7 +50,7 @@ for (let i = 0; i < comicInfo.panels.length; i++) {
 	slideshow.append(slide);
 }
 
-if (comicInfo.protected == true) {
+if (comicInfo.protected) {
 	let passwordPage = document.createElement('div');
 	passwordPage.className = 'comic-password';
 
@@ -120,11 +120,11 @@ slideInput.id = 'comic-slide-input';
 slideInput.addEventListener('keyup', function(event) {
 	if (event.key === 'Enter') {
 		let slideValue = slideInput.value;
-		if (comicInfo.protected == true && slideInput.value == '4NAX') {
+		if (comicInfo.protected && slideInput.value == '4NAX') {
 			document.getElementsByClassName('comic-password')[0].remove();
 //			slideInput.value = 'Be careful.';
 			comicInfo.protected = false;
-			slideValue = 1;
+			slideValue = '1';
 			slideInput.blur();
 		}
 		verify(slideValue);
@@ -181,16 +181,21 @@ function showSlides(n) {
 }
 
 function verify(slide) {
+	console.log(slide);
 	if (comicInfo.verify != undefined) {
 		comicInfo.verify({slide, slideIndex});
-	} else if (slide == 'Panel Number') {
+	} else if (slide.toLowerCase() == 'panel number') {
 		window.location.href = '?c=pn';
-	} else if (!isNaN(slide) && Math.floor(slide) != slide && comicInfo.corruptable == true) { // Panel Corruption Easter Egg
+	} else if (!isNaN(slide) && Math.floor(slide) != slide && comicInfo.corruptable) { // Panel Corruption Easter Egg
+		let slideTag = document.getElementsByClassName('comic-slides')[slideIndex - 1];
+
+		if (slideTag.childNodes[0].tagName == 'A') slideTag = slideTag.childNodes[0];
+
 		document.getElementsByClassName('comic-description')[0].innerHTML = 'Well... What did you think was going to happen when you put in a decimal value?';
-		document.getElementsByClassName('comic-slides')[slideIndex - 1].childNodes[0].src = `./panels/secrets/corrupt/${comic}.jpg`;
-		document.getElementsByClassName('comic-slides')[slideIndex - 1].childNodes[0].visibility = 'visible';
+		slideTag.childNodes[0].src = `./panels/secrets/corrupt/${comic}.jpg`;
+		slideTag.childNodes[0].visibility = 'visible';
 		if (comic == 'nine') {
-			document.getElementsByClassName('comic-slides')[slideIndex - 1].childNodes[1].innerHTML = 'Aero is gone.';
+			slideTag.childNodes[1].innerHTML = 'Aero is gone.';
 		}
 	}
 	

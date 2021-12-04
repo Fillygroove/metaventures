@@ -10,5 +10,10 @@ function panelSetup(howLong, extension) {
 	}
 }
 
+if (!comicList.norm.includes(comic)) {
+	comic = 'choose';
+	window.location.href = '?c=choose';
+}
+
 addScript(`./pages/${comic}.js`);
 addScript('./pages/CONSTRUCTOR.js');
