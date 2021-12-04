@@ -4,7 +4,7 @@ endnavs.push({
 	hideable: true,
 	categories: [{
 		category: {
-			img: ['ommadawn.png', imageSize.large],
+			img: ['ommadawn.svg', imageSize.large],
 			link: '?p=ommadawn',
 			name: 'Ommadawn'
 		},
@@ -13,7 +13,7 @@ endnavs.push({
 				name: 'Inner System'
 			},
 			info: [{
-				img: ['grene.png', imageSize.norm],
+				img: ['grene.svg', imageSize.norm],
 				link: '?p=grene',
 				name: 'Gr\u0113ne'
 			}, {
@@ -25,16 +25,16 @@ endnavs.push({
 				link: '?p=pilf',
 				name: 'Pilf'
 			}, {
-				img: ['ert.png', imageSize.small],
+				img: ['vemma.svg', imageSize.small],
 				link: '?p=vemma',
 				name: 'Vemma'
 			}, {
-				img: ['george.png', imageSize.small],
+				img: ['george.svg', imageSize.small],
 				link: '?p=george',
 				isGeorge: true,
 				name: 'George'
 			}, {
-				img: ['baeg.png', imageSize.small],
+				img: ['baeg.svg', imageSize.small],
 				link: '?p=baeg',
 				name: 'Baeg'
 			}]
@@ -43,15 +43,15 @@ endnavs.push({
 				name: 'Outer System'
 			},
 			info: [{
-				img: ['mac.png', imageSize.smol],
+				img: ['macromeda.svg', imageSize.smol],
 				link: '?p=macromeda',
 				name: 'Macromeda'
 			}, {
-				img: ['hazel.png', imageSize.norm],
+				img: ['hazel.svg', imageSize.norm],
 				link: '?p=hazel',
 				name: 'Hazel'
 			}, {
-				img: ['aeiou.png', imageSize.small],
+				img: ['aeiou.svg', imageSize.small],
 				link: '?p=aeiou',
 				name: 'Aeiou'
 			}, {
@@ -59,7 +59,7 @@ endnavs.push({
 				link: '?p=cea',
 				name: 'Cea'
 			}, {
-				img: ['the.png', imageSize.norm],
+				img: ['the.svg', imageSize.norm],
 				link: '?p=the',
 				name: 'The'
 			}]
@@ -75,7 +75,7 @@ endnavs.push({
 				name: 'Inner System'
 			},
 			info: [{
-				img: ['gigantrax.png', imageSize.norm],
+				img: ['gigantrax.svg', imageSize.norm],
 				name: 'Gigantrax'
 			}, {
 				link: '?p=omnikron',
@@ -98,14 +98,14 @@ endnavs.push({
 				name: 'Objects'
 			},
 			info: [{
-				img: ['manc-ave.png', imageSize.small],
+				img: ['manc-ave.svg', imageSize.small],
 				name: 'Manc-Ave'
 			}, {
-				img: ['wop.png', imageSize.small],
+				img: ['wop.svg', imageSize.small],
 				link: '?p=wop',
 				name: 'WOP'
 			}, {
-				img: ['perpahedron.png', imageSize.small],
+				img: ['perpahedron.svg', imageSize.small],
 				name: 'Perpahedron'
 			}]
 		}]

@@ -134,7 +134,7 @@ let pageData = {
 			},
 			
 			'<h3>Satellites</h3>',
-			'The only confirmed moon is <a href="./?p=aech">Aech</a>, which resembles Doug but also happens to be in the shape of a cube, similar to that of Pilf. Aech is tiny and orbits barely a Doug radius away from the surface.',
+			'The only confirmed moon is Aech, which resembles Doug but also happens to be in the shape of a cube, similar to that of Pilf. Aech is tiny and orbits barely a Doug radius away from the surface.',
 			'Surrounding Doug is a dispersed asteroid field, ranging from a few meters to almost a kilometer in size. These rocks are believed to be fragments from the moon Aech as it approaches Doug and gets ripped apart by its gravity. This may form a ring around Doug.',
 			
 			'As Doug hasn\'t been investigated much by modern day scientists, it is unknown if more than one moon existed in the past.',

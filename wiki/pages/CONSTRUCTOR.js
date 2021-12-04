@@ -35,7 +35,11 @@ if (page.navbox != undefined) {
 	if (page.navbox.symbol != undefined) {
 		let navsymbol = document.createElement('img');
 		navsymbol.alt = `symbol_${page.navbox}.png`;
-		navsymbol.src = `images/${pageName}/symbol.png`;
+		navsymbol.src = `images/${pageName}/symbol.svg`;
+		navsymbol.onerror = () => {
+			navsymbol.onerror = null;
+			navsymbol.src = `images/${pageName}/symbol.png`;
+		};
 		navsymbol.className = 'wiki-navbox-symbol';
 		caption.append(navsymbol);
 	};

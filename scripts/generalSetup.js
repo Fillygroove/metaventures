@@ -29,10 +29,11 @@ function makeButton(input) {
 	dropdownDiv.append(dropdown);
 }
 
-function addScript(script) {
+function addScript(script, secondary) {
 	let pageScript = document.createElement('script');
 	pageScript.async = false;
 	pageScript.src = script;
+	if (secondary != undefined) secondary();
 	avThin.append(pageScript);
 }
 
