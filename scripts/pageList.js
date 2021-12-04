@@ -3,8 +3,9 @@ let pageList = [
     'coldsun', // To ?p=omnikron
     'ert', // To ?p=vemma
     'mac', // To ?p=macromeda
+    'hotsun', // To ?p=ommadawn
 // Planets
-    'hotsun',
+    'ommadawn',
     'grene',
     'doug',
     'pilf',
@@ -19,6 +20,7 @@ let pageList = [
     'wop',
     'taiberaque',
     'omnikron',
+    'gigantrax',
     'dwarf',
 // Characters
     'aero',
@@ -47,7 +49,7 @@ let pageList = [
 
 let randList = [
 // Planets
-    'hotsun',
+    'ommadawn',
     'grene',
     'doug',
     'pilf',

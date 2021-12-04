@@ -9,7 +9,7 @@ let pageData = {
 			heading: 'Designations',
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="?p=hotsun">Hot Sun</a>']
+				info: ['<a href="?p=ommadawn">Ommadawn</a>']
 			}, {
 				name: 'Satellites',
 				info: ['Aech']
@@ -93,7 +93,7 @@ let pageData = {
 					'By size it is the tenth largest planet.',
 					'By mass it is the ninth largest planet.',
 					'By density, Doug is in fifth place.',
-					'By distance to <a href="?p=hotsun">Ommadawn</a>, Doug is second.',
+					'By distance to <a href="?p=ommadawn">Ommadawn</a>, Doug is second.',
 					'By difficulty to visit, Doug is third.',
 					'By habitability, Doug is the second worst excluding the giant planets.',
 					'By difficulty to remember, Doug is first.',
@@ -154,7 +154,7 @@ let pageData = {
 			'Doug has had an impact on the public outlook on worms due to the signs of similar creatures in Doug\'s caverns. Doug is a common name for a pet worm, and a species of giant VVorms is a "Douggian" Worm, referencing the massive size of Doug\'s anticipated worms. Doug Cookies are chocolate chip cookies with gummy worms poking out the sides.',
 
 			'<h3>Exploration</h3>',
-			'Doug is the least visited planet in the Hot Sun system. Exploring Doug is costly and difficult, requiring a lot of maneuvers to even approach it. There is danger of potential collisions with Doug\'s asteroid field and the DIE bursts, which at this distance would be lethal for any unprepared mission.',
+			'Doug is the least visited planet in Ommadawn system. Exploring Doug is costly and difficult, requiring a lot of maneuvers to even approach it. There is danger of potential collisions with Doug\'s asteroid field and the DIE bursts, which at this distance would be lethal for any unprepared mission.',
 			'In spite of the challenging parameters, Doug has received two missions: The Forgotten Explorer, and Odyssey.',
 			'The Forgotten Explorer was the first successful mission. It provided a wealth of data from all over the planet, with its biggest discoveries being the DIE bursts and the presence of worms. While it survived longer than its planned lifetime, It was eventually damaged by an unexpected DIE Burst and all communication to it was lost.',
 			'There is little known about Janet and the mission to Doug. However, in general to Janet\'s "Odyssey" mission, it has provided the NA with the current images and data on numerous planets.',

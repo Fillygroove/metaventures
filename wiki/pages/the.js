@@ -9,7 +9,7 @@ let pageData = {
 			heading: 'Designations',		
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="?p=hotsun">Hot Sun</a>']
+				info: ['<a href="?p=ommadawn">Ommadawn</a>']
 			}, {
 				name: 'Satellites',
 				info: ['Unknown']
@@ -32,7 +32,7 @@ let pageData = {
 				author: 'Everyone'
 			});
 		},
-		'The is the tenth and last planet in the <a href="?p=hotsun">Hot Sun</a> system, after <a href="?p=cea">Cea</a>. The is a mysterious planet, which has been at the center of many scientific theories and general intrigue. As such, there are few things we know about The, but the information we do have is interesting, and, as such, warrants an article; Not to be confused with Article, These original name. The is exactly one fourty-second of the size of the Hot Sun.',
+		'The is the tenth and last planet in the <a href="?p=ommadawn">Ommadawn</a> system, after <a href="?p=cea">Cea</a>. The is a mysterious planet, which has been at the center of many scientific theories and general intrigue. As such, there are few things we know about The, but the information we do have is interesting, and, as such, warrants an article; Not to be confused with Article, These original name. The is exactly one fourty-second of the size of Ommadawn.',
 		'The name for describing something similar to The is... The... The.'
 	],
 	categories: [{

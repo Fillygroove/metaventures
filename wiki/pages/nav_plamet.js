@@ -2,7 +2,7 @@ endnavs.push({
 	heading: 'The Bisolar System',
 	categories: [{
 		category:
-			`<a href="?p=hotsun">
+			`<a href="?p=ommadawn">
 				<img src="images/symbol_hotsun.png" height="${imageSize.large}">
 				Ommadawm
 			</a> System`,

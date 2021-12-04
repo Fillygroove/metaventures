@@ -9,7 +9,7 @@ let pageData = { // First!
 			heading: 'Designations',
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="?p=hotsun">Hot Sun</a>']
+				info: ['<a href="?p=ommadawn">Ommadawn</a>']
 			}, {
 				name: 'Satellites',
 				info: ['Piffol Rings']
@@ -40,7 +40,7 @@ let pageData = { // First!
 				author: 'King Arnolth'
 			});
 		},
-		'Pilf is the third planet in the <a href="?p=hotsun">Ommadawn</a> system, after <a href="?p=doug">Doug</a> and before <a href="?p=vemma">Vemma</a> and <a href="?p=george">George</a>. Pilf is a ringed cuboid planet, standing out from all other planets for its striking purple and blue-green hue. Pilf is scenically equivalent to a filthy purple kitchen sponge - lightweight, moldy, and has flies. Its unusual properties makes it a widely appealing planet for testing theories in science, fun tourist vacations, and the highly expensive bone-cheese delicacy.',
+		'Pilf is the third planet in the <a href="?p=ommadawn">Ommadawn</a> system, after <a href="?p=doug">Doug</a> and before <a href="?p=vemma">Vemma</a> and <a href="?p=george">George</a>. Pilf is a ringed cuboid planet, standing out from all other planets for its striking purple and blue-green hue. Pilf is scenically equivalent to a filthy purple kitchen sponge - lightweight, moldy, and has flies. Its unusual properties makes it a widely appealing planet for testing theories in science, fun tourist vacations, and the highly expensive bone-cheese delicacy.',
 		
 		'<h3>Interesting Facts</h3>',
 		() => {

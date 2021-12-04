@@ -5,7 +5,7 @@ endnavs.push({
 	categories: [{
 		category: {
 			img: ['ommadawn.png', imageSize.large],
-			link: '?p=hotsun',
+			link: '?p=ommadawn',
 			name: 'Ommadawn'
 		},
 		info: [{
@@ -75,6 +75,7 @@ endnavs.push({
 				name: 'Inner System'
 			},
 			info: [{
+				img: ['gigantrax.png', imageSize.norm],
 				name: 'Gigantrax'
 			}, {
 				link: '?p=omnikron',

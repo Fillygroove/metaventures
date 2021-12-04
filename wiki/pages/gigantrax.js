@@ -1,5 +1,5 @@
 let pageData = {
-	name: 'Baeg',
+	name: 'Gigantrax',
 	warning: 'stub',
 	navbox: {		
 		file: true,
@@ -9,7 +9,7 @@ let pageData = {
 			heading: 'Designations',
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="?p=ommadawn">Ommadawn</a>']
+				info: ['<a href="?p=taiberaque">Taiberaque</a>']
 			}, {
 				name: 'Satellites',
 				info: ['Unknown']
@@ -18,23 +18,15 @@ let pageData = {
 				info: ['Unknown']
 			}, {
 				name: 'Classification',
-				info: ['Terrestrial']
+				info: ['Unknown']
 			}, {
 				name: 'Life',
-				info: ['None']
+				info: ['Unkown']
 			}]
-		}, {
-			heading: 'Theme',
-			info: [{
-				embed: {
-					track: '992974678',
-					color: '7f7f7f'
-				}
- 			}]
 		}]
 	},
 	introText: [
-		'Baeg is the fifth planet in the <a href="?p=ommadawn">Ommadawn</a> system, after <a href="?p=vemma">Vemma</a> and <a href="?p=george">George</a> and before <a href="?p=macromeda">Macromeda</a>.'
+		'Gigantrax.'
 	],
 	endnav: 'planet'
 };

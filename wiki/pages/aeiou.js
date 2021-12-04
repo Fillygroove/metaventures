@@ -9,7 +9,7 @@ let pageData = {
 			heading: 'Designations',
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="?p=hotsun">Hot Sun</a>']
+				info: ['<a href="?p=ommadawn">Ommadawn</a>']
 			}, {
 				name: 'Satellites',
 				info: ['Heideph']
@@ -34,7 +34,7 @@ let pageData = {
 		}]
 	},
 	introText: [
-		'Aeiou is the eighth planet in the <a href="?p=hotsun">Hot Sun</a> system, after <a href="?p=hazel">Hazel</a> and before <a href="?p=cea">Cea</a>.',
+		'Aeiou is the eighth planet in the <a href="?p=ommadawn">Ommadawn</a> system, after <a href="?p=hazel">Hazel</a> and before <a href="?p=cea">Cea</a>.',
 		'The term for referring to something related to Aeiou is Aeiouian.'
 	],
 	endnav: 'planet'

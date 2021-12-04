@@ -9,7 +9,7 @@ let pageData = {
 			heading: 'Designations',
 			info: [{
 				name: 'Orbits',
-				info: ['<a href="?p=hotsun">Hot Sun</a>']
+				info: ['<a href="?p=ommadawn">Ommadawn</a>']
 			}, {
 				name: 'Satellites',
 				info: ['Unknown']
@@ -26,7 +26,7 @@ let pageData = {
 		}]
 	},
 	introText: [
-		'Hazel is the seventh planet in the <a href="?p=hotsun">Hot Sun</a> system, after <a href="?p=macromeda">Macromeda</a> and before <a href="?p=aeiou">Aeiou</a>.',
+		'Hazel is the seventh planet in the <a href="?p=ommadawn">Ommadawn</a> system, after <a href="?p=macromeda">Macromeda</a> and before <a href="?p=aeiou">Aeiou</a>.',
 		'The term for referring to something related to Hazel is Hazelian.'
 	],
 	endnav: 'planet'
