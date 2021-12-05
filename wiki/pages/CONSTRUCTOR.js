@@ -36,10 +36,10 @@ if (page.navbox != undefined) {
 		let navsymbol = document.createElement('img');
 		navsymbol.alt = `symbol_${page.navbox}.png`;
 		navsymbol.src = `images/${pageName}/symbol.svg`;
-		navsymbol.onerror = () => {
+	/*	navsymbol.onerror = () => { // Depricated error correction code
 			navsymbol.onerror = null;
 			navsymbol.src = `images/${pageName}/symbol.png`;
-		};
+		};*/
 		navsymbol.className = 'wiki-navbox-symbol';
 		if (page.navbox.symbolStyle !== undefined) {
 			navsymbol.style = page.navbox.symbolStyle;

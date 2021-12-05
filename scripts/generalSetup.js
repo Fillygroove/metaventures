@@ -46,6 +46,12 @@ function rng(max) {
     return Math.floor(Math.random() * max);
 }
 
+let isGreme = window.location.search == '?p=greme';
+
+function gremeReplace(input) {
+	return isGreme ? input.replaceAll('n', 'm') : input;
+}
+
 function makePage(page) {
 	let comicDir, wikiDir, titleDir, pageName;
 	switch (page) {
@@ -96,16 +102,17 @@ function makePage(page) {
 	preferenceMenuLine.style.margin = 0;
 
 	let preferenceMenuHeader = document.createElement('h2')
-	preferenceMenuHeader.innerHTML = `Prefe<a class="preference-secret" href="${comicDir}comics/?c=dk">r</a>ences`;
+	preferenceMenuHeader.innerHTML = `Prefe<a class="preference-secret" href="${comicDir}comics/?c=dk">r</a>e${isGreme ? 'm' : 'n'}ces`;
 
 	preferenceMenuDiv.append(preferenceMenuHeader, preferenceMenuLine);
+
 
 	function addPreferenceCategory(input) {
 		let preference = document.createElement('div');
 		preference.className = 'preference-collapse-div';
 	
 		preferenceHeader = document.createElement('h3');
-		preferenceHeader.innerHTML = input.name;
+		preferenceHeader.innerHTML = gremeReplace(input.name);
 		preferenceHeader.className = 'preference-collapse-closed';
 		preferenceHeader.id = input.id;
 
@@ -115,10 +122,10 @@ function makePage(page) {
 
 		function addPreference(input) {
 			let checkDiv = document.createElement('div');
-			checkDiv.title = input.description;
+			checkDiv.title = gremeReplace(input.description);
 		
 			let checkLabel = document.createElement('label');
-			checkLabel.innerHTML = input.title;
+			checkLabel.innerHTML = gremeReplace(input.title);
 			checkLabel.htmlFor = input.id;
 		
 			checkDiv.append(checkLabel);
@@ -130,7 +137,7 @@ function makePage(page) {
 				
 				for (let i = 0; i < Object.keys(input.dropdownValues).length; i++) {
 					let checkSelectOption = document.createElement('option');
-					checkSelectOption.innerHTML = Object.values(input.dropdownValues)[i];
+					checkSelectOption.innerHTML = gremeReplace(Object.values(input.dropdownValues)[i]);
 					checkSelectOption.value = Object.keys(input.dropdownValues)[i];
 					checkSelect.append(checkSelectOption);
 				}

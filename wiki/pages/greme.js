@@ -1,5 +1,5 @@
 let pageData = {
-	name: 'Secret: <a href="?p=grene" class="no_style">Greme</a>',
+	name: '<a href="?p=grene" class="no_style">Greme</a>',
 	navbox: {		
 		file: true,
 		symbol: true,
@@ -52,5 +52,7 @@ let pageData = {
 	execute: function() {
 		document.getElementsByTagName('html')[0].className = 'flip-page';
 		window.scrollTo(0, document.documentElement.scrollHeight);
+		randButton = document.getElementsByClassName('rand-black')[0];
+		randButton.innerHTML = randButton.innerHTML.replaceAll('n', 'm');
 	}
 };

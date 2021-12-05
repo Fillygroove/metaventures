@@ -17,11 +17,11 @@ endnavs.push({
 				link: '?p=grene',
 				name: 'Gr\u0113ne'
 			}, {
-				img: ['doug.png', imageSize.norm],
+				img: ['doug.svg', imageSize.norm],
 				link: '?p=doug',
 				name: 'Doug'
 			}, {
-				img: ['pilf.png', imageSize.norm],
+				img: ['pilf.svg', imageSize.norm],
 				link: '?p=pilf',
 				name: 'Pilf'
 			}, {
@@ -55,7 +55,7 @@ endnavs.push({
 				link: '?p=aeiou',
 				name: 'Aeiou'
 			}, {
-				img: ['cea.png', imageSize.norm],
+				img: ['cea.svg', imageSize.norm],
 				link: '?p=cea',
 				name: 'Cea'
 			}, {
@@ -66,7 +66,7 @@ endnavs.push({
 		}]
 	}, {
 		category: {
-			img: ['taiberaque.png', imageSize.large],
+			img: ['taiberaque.svg', imageSize.large],
 			link: '?p=taiberaque',
 			name: 'Taiberaque'
 		},
