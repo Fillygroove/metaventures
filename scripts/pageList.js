@@ -74,6 +74,7 @@ let wikiList = {
         'taiberaque',
         'omnikron',
         'gigantrax',
+        'uling',
         'dwarf',
     // Announcements
         'announce-1',

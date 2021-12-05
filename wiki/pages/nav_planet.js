@@ -4,7 +4,7 @@ endnavs.push({
 	hideable: true,
 	categories: [{
 		category: {
-			img: ['ommadawn.svg', imageSize.large],
+			img: ['ommadawn.svg', imageSize.norm],
 			link: '?p=ommadawn',
 			name: 'Ommadawn'
 		},
@@ -86,6 +86,7 @@ endnavs.push({
 				name: 'Outer System'
 			},
 			info: [{
+				img: ['uling.svg', imageSize.small],
 				name: 'Uling'
 			}]
 		}]
