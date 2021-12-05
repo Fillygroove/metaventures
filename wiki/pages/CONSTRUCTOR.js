@@ -41,6 +41,9 @@ if (page.navbox != undefined) {
 			navsymbol.src = `images/${pageName}/symbol.png`;
 		};
 		navsymbol.className = 'wiki-navbox-symbol';
+		if (page.navbox.symbolStyle !== undefined) {
+			navsymbol.style = page.navbox.symbolStyle;
+		}
 		caption.append(navsymbol);
 	};
 	

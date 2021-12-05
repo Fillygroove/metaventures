@@ -603,7 +603,7 @@ a {
 
 .wiki-navbox-symbol {
 	background-color: var(--background);
-	padding-left: 7px;
+	padding: 0 7px;
 	height: 27px;
 }
 
