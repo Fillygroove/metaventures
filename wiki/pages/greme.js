@@ -51,6 +51,6 @@ let pageData = {
 	endnav: 'plamet',
 	execute: function() {
 		document.getElementsByTagName('html')[0].className = 'flip-page';
-//		window.scrollTo(0, document.documentElement.scrollHeight);
+		window.scrollTo(0, document.documentElement.scrollHeight);
 	}
 };
