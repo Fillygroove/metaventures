@@ -50,10 +50,10 @@ let comicList = {
 let wikiList = {
     norm: [
     // Redirects
-        'coldsun', // To ?p=omnikron
-        'ert', // To ?p=vemma
-        'mac', // To ?p=macromeda
-        'hotsun', // To ?p=ommadawn
+        'coldsun',  // To ?p=omnikron
+        'ert',      // To ?p=vemma
+        'mac',      // To ?p=macromeda
+        'hotsun',   // To ?p=ommadawn
     // Characters
         'aero',
         'rodney',
