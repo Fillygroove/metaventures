@@ -152,7 +152,7 @@ if (comicInfo.fullscreen) {
 	fullscreenButton.title = 'Fullscreen';
 	
 	let fullscreenIn = document.createElement('p');
-	fullscreenIn.innerHTML = '&#x26F6;'; // Four corner square symbol
+	fullscreenIn.innerHTML = '&#x26F6;';
 	fullscreenIn.className = 'comic-fs-button-text';
 	fullscreenButton.append(fullscreenIn);
 
@@ -166,7 +166,7 @@ if (comicInfo.fullscreen) {
 	unfullscreenButton.type = 'button';
 	
 	let unfullscreenIn = document.createElement('p');
-	unfullscreenIn.innerHTML = '&#x26F6;'; // Four corner square symbol
+	unfullscreenIn.innerHTML = '&#x26F6;';
 	unfullscreenIn.className = 'comic-fs-button-text';
 	unfullscreenButton.append(unfullscreenIn);
 	fullscreenOverlay.append(unfullscreenButton);
@@ -174,12 +174,8 @@ if (comicInfo.fullscreen) {
 	for (let i = 0; i < comicInfo.panels.length; i++) {
 		let fsSlideDiv = document.createElement('div');
 		fsSlideDiv.className = 'comic-fs-slide';
-		let fsSlidePanel = document.createElement('img');
-		fsSlidePanel.className = 'comic-fs-panel';
 
-		fsSlidePanel.src = `./panels/${directory}${comicInfo.panels[i].panel}`;
-		fsSlideDiv.append(fsSlidePanel);
-
+		fsSlideDiv.style = `background-image: url('./panels/${directory}${comicInfo.panels[i].panel}');`;
 		fsSlideDiv.style.display = 'none';
 
 		fullscreenOverlay.append(fsSlideDiv);
@@ -191,7 +187,6 @@ if (comicInfo.fullscreen) {
 		fullscreenOverlay.style.visibility = 'visible';
 		fullscreenSlides[slideIndex].style.display = 'block';
 
-		console.log(slideIndex, fullscreenSlides[slideIndex]);
 	};
 
 	unfullscreenButton.onclick = () => {
@@ -199,7 +194,6 @@ if (comicInfo.fullscreen) {
 		fullscreenSlides[slideIndex].style.display = 'none';
 	};
 
-	
 	let fsPrevButton = document.createElement('a');
 	let fsNextButton = document.createElement('a');
 	fsPrevButton.className = 'comic-fs-prev';
@@ -212,6 +206,7 @@ if (comicInfo.fullscreen) {
 	fsPrevButton.onclick = () => {
 		showSlides(slideIndex -= 1);
 	};
+
 	fsNextButton.onclick = () => {
 		showSlides(slideIndex += 1);
 	};
@@ -264,7 +259,6 @@ function showSlides(n) {
 }
 
 function verify(slide) {
-	console.log(slide);
 	if (comicInfo.verify != undefined) {
 		comicInfo.verify({slide, slideIndex});
 	} else if (slide.toLowerCase() == 'panel number') {
