@@ -403,7 +403,9 @@ a {
 .comic-prev,
 .comic-next,
 .comic-fast-prev,
-.comic-fast-next {
+.comic-fast-next,
+.comic-fs-prev,
+.comic-fs-next {
 	left: 0;
 	cursor: pointer;
 	position: absolute;
@@ -424,7 +426,8 @@ a {
 }
 
 .comic-next,
-.comic-fast-next {
+.comic-fast-next,
+.comic-fs-next {
 	left: auto;
 	right: 0;
 	border-radius: 0.6em;
@@ -483,6 +486,83 @@ a {
 	background-color: transparent;
 	color: #ffffff;
 	font-size: 17px;
+}
+
+.comic-fs-button {
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 23px;
+	font-size: 22px;
+	user-select: none;
+	cursor: pointer;
+	float: right;
+	border-color: #000;
+	border-width: 2px;
+	border-style: solid;
+	text-align: center;
+	border-radius: 6px;
+	transition: 0.6s ease;
+
+	margin-top: 11px;
+	margin-right: 62px;
+}
+
+.comic-fs-button:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.comic-fs-button-text {
+	line-height: 0 !important;
+	margin-top: 9.5px;
+	padding: 0;
+}
+
+.comic-fs-overlay {
+	background-color: rgba(0, 0, 0, 0.8);
+	visibility: hidden;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+.comic-fs-undo {
+	background-color: rgba(155, 0, 0, 0.4);
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	border-color: #000;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 6px;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 57px;
+	margin-right: 2px;
+	padding-top: 4px;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+
+.comic-fs-undo:hover {
+	background-color: rgba(155, 0, 0, 0.6);
+}
+
+.comic-fs-slide {
+	background-color: transparent;
+	overflow-x: hidden;
+}
+
+.comic-fs-panel {
+	background-color: transparent;
+	width: auto;
+	height: auto;
+	margin: 56px auto 0 50%;
+	transform: translateX(-50%);
+	max-width: 140vh;
+	max-height: 90vh;
 }
 
 /* The Wiki */

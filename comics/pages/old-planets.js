@@ -104,5 +104,6 @@ let comicInfo = {
 		panel: 'ommadawn_old.png',
 		caption: 'Ommadawn\'s original art.',
 	}],
-	rewindTo: 'old-choose'
+	rewindTo: 'old-choose',
+	fullscreen: true
 };

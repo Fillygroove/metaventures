@@ -9,7 +9,8 @@ let comicInfo = {
 		if (input.slide == '999') {
 			window.location.href = '?c=nine';
 		};
-	}
+	},
+	fullscreen: true
 };
 
 panelSetup(34, 'jpg');

@@ -4,7 +4,8 @@ let comicInfo = {
 	folder: 'non-canon/heavell/',
 	background: 'bg-av.png',
 	rewindTo: 'spinoff-choose',
-	corruptable: true
+	corruptable: true,
+	fullscreen: true
 };
 
 panelSetup(120, 'jpg');

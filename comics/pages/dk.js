@@ -3,7 +3,8 @@ let comicInfo = {
 	desc: 'You asked for this.',
 	folder: 'secrets/dk/',
 	background: 'bg-av.png',
-	corruptable: true
+	corruptable: true,
+	fullscreen: true
 };
 
 panelSetup(24, 'jpg');

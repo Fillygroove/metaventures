@@ -4,7 +4,8 @@ let comicInfo = {
 	folder: 'old-av/av-2/',
 	background: 'bg-av.png',
 	rewindTo: 'old-av-choose',
-	corruptable: true
+	corruptable: true,
+	fullscreen: true
 };
 
 panelSetup(4, 'jpg');

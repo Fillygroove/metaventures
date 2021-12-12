@@ -142,6 +142,85 @@ slideSpeedText.append(slideTimer);
 
 slideDiv.append(prevButton, nextButton, slideText, slideSpeedText);
 
+let fullscreenOverlay = document.createElement('div');
+fullscreenOverlay.className = 'comic-fs-overlay';
+
+if (comicInfo.fullscreen) {
+	let fullscreenButton = document.createElement('a');
+	fullscreenButton.className = 'comic-fs-button';
+	fullscreenButton.type = 'button';
+	fullscreenButton.title = 'Fullscreen';
+	
+	let fullscreenIn = document.createElement('p');
+	fullscreenIn.innerHTML = '&#x26F6;'; // Four corner square symbol
+	fullscreenIn.className = 'comic-fs-button-text';
+	fullscreenButton.append(fullscreenIn);
+
+	slideDiv.append(fullscreenButton);
+	fullscreenButton.onclick = () => {
+		fullscreenOverlay.style.visibility = 'visible';
+	};
+
+	let unfullscreenButton = document.createElement('a');
+	unfullscreenButton.className = 'comic-fs-undo';
+	unfullscreenButton.type = 'button';
+	
+	let unfullscreenIn = document.createElement('p');
+	unfullscreenIn.innerHTML = '&#x26F6;'; // Four corner square symbol
+	unfullscreenIn.className = 'comic-fs-button-text';
+	unfullscreenButton.append(unfullscreenIn);
+	fullscreenOverlay.append(unfullscreenButton);
+
+	for (let i = 0; i < comicInfo.panels.length; i++) {
+		let fsSlideDiv = document.createElement('div');
+		fsSlideDiv.className = 'comic-fs-slide';
+		let fsSlidePanel = document.createElement('img');
+		fsSlidePanel.className = 'comic-fs-panel';
+
+		fsSlidePanel.src = `./panels/${directory}${comicInfo.panels[i].panel}`;
+		fsSlideDiv.append(fsSlidePanel);
+
+		fsSlideDiv.style.display = 'none';
+
+		fullscreenOverlay.append(fsSlideDiv);
+	}
+
+	let fullscreenSlides = fullscreenOverlay.childNodes;
+
+	fullscreenButton.onclick = () => {
+		fullscreenOverlay.style.visibility = 'visible';
+		fullscreenSlides[slideIndex].style.display = 'block';
+
+		console.log(slideIndex, fullscreenSlides[slideIndex]);
+	};
+
+	unfullscreenButton.onclick = () => {
+		fullscreenOverlay.style.visibility = 'hidden';
+		fullscreenSlides[slideIndex].style.display = 'none';
+	};
+
+	
+	let fsPrevButton = document.createElement('a');
+	let fsNextButton = document.createElement('a');
+	fsPrevButton.className = 'comic-fs-prev';
+	fsNextButton.className = 'comic-fs-next';
+	fsPrevButton.innerHTML = '&#9664;';
+	fsNextButton.innerHTML = '&#9654;';
+	fsPrevButton.type = 'button';
+	fsNextButton.type = 'button';
+
+	fsPrevButton.onclick = () => {
+		showSlides(slideIndex -= 1);
+	};
+	fsNextButton.onclick = () => {
+		showSlides(slideIndex += 1);
+	};
+
+	fullscreenOverlay.append(fsPrevButton, fsNextButton);
+
+	avThin.append(fullscreenOverlay);
+}
+
 slideshow.append(slideDiv, line);
 
 let desc = document.createElement('h4');
@@ -173,9 +252,13 @@ function showSlides(n) {
 
 	for (let i = 0; i < slides.length; i++) {
 		slides[i].style.display = 'none';
+		if (comicInfo.fullscreen == true) fullscreenOverlay.childNodes[i + 1].style.display = 'none';
 	}
 
-	if (comicInfo.protected != true) slides[slideIndex - 1].style.display = 'block';
+	if (comicInfo.protected != true) {
+		slides[slideIndex - 1].style.display = 'block';
+		if (comicInfo.fullscreen == true) fullscreenOverlay.childNodes[slideIndex].style.display = 'block';
+	}
 
 	numbertext.innerHTML = `${comicInfo.panels[slideIndex - 1].number ? comicInfo.panels[slideIndex - 1].number : slideIndex} / ${comicInfo.howLong ? comicInfo.howLong : comicInfo.panels.length}`;
 }

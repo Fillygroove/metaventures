@@ -45,5 +45,6 @@ let comicInfo = {
 			window.location.href = '../wiki/?p=nine';
 		};
 	},
-	background: 'bg-av.png'
+	background: 'bg-av.png',
+	fullscreen: true
 };

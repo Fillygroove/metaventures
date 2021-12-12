@@ -12,5 +12,6 @@ let comicInfo = {
 		if (input.slide.toLowerCase() == 'send art') {
 			window.location.href = '../../wiki/?p=send-art';
 		}
-	}
+	},
+	fullscreen: true
 };

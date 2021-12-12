@@ -75,5 +75,6 @@ let comicInfo = {
 		panel: 'old_favicon.png',
 		caption: 'An older variant of the logo.'
 	}],
-	rewindTo: 'old-choose'
+	rewindTo: 'old-choose',
+	fullscreen: true
 };

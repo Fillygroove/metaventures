@@ -3,7 +3,8 @@ let comicInfo = {
 	desc: 'We tune in to our favorite cartoon characters in tough pickle.',
 	folder: 'old-av/av-10.5/',
 	background: 'bg-av.png',
-	rewindTo: 'old-av-choose'
+	rewindTo: 'old-av-choose',
+	fullscreen: true
 };
 
 panelSetup(53, 'jpg');
