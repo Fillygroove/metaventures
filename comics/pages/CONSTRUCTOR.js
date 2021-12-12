@@ -13,6 +13,10 @@ if (comicInfo.background != undefined) {
 	document.getElementsByTagName('html')[0].style.backgroundImage = `url(../images/${window.localStorage.oldBG == 'true' ? 'old-' : ''}${comicInfo.background})`;
 }
 
+if (window.localStorage.pass == 'true' && comicInfo.protected) {
+	comicInfo.protected = false;
+}
+
 let slideshow = document.createElement('div');
 slideshow.className = 'comic-slideshow-container';
 
@@ -126,6 +130,7 @@ slideInput.addEventListener('keyup', function(event) {
 			comicInfo.protected = false;
 			slideValue = '1';
 			slideInput.blur();
+			window.localStorage.pass = 'true';
 		}
 		verify(slideValue);
 	}
@@ -177,7 +182,7 @@ if (comicInfo.fullscreen) {
 
 		fsSlideDiv.style = `background-image: url('./panels/${directory}${comicInfo.panels[i].panel}');`;
 		fsSlideDiv.style.display = 'none';
-
+  
 		fullscreenOverlay.append(fsSlideDiv);
 	}
 
@@ -186,7 +191,6 @@ if (comicInfo.fullscreen) {
 	fullscreenButton.onclick = () => {
 		fullscreenOverlay.style.visibility = 'visible';
 		fullscreenSlides[slideIndex].style.display = 'block';
-
 	};
 
 	unfullscreenButton.onclick = () => {

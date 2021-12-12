@@ -15,5 +15,7 @@ if (!comicList.norm.includes(comic)) {
 	window.location.href = '?c=choose';
 }
 
+if (window.localStorage.pass == undefined) window.localStorage.pass = 'false'; 
+
 addScript(`./pages/${comic}.js`);
 addScript('./pages/CONSTRUCTOR.js');
