@@ -501,7 +501,6 @@ a {
 	text-align: center;
 	border-radius: 6px;
 	transition: 0.6s ease;
-
 	margin-top: 11px;
 	margin-right: 62px;
 }
@@ -529,11 +528,11 @@ a {
 }
 
 .comic-fs-undo {
-	background-color: rgba(155, 0, 0, 0.4);
+	background-color: rgba(204, 80, 80, 0.4);
+	border-color: #500404;
 	cursor: pointer;
 	width: 30px;
 	height: 30px;
-	border-color: #000;
 	border-width: 2px;
 	border-style: solid;
 	border-radius: 6px;
@@ -544,10 +543,11 @@ a {
 	position: absolute;
 	right: 0;
 	z-index: 1;
+	user-select: none;
 }
 
 .comic-fs-undo:hover {
-	background-color: rgba(155, 0, 0, 0.6);
+	background-color: rgba(243, 145, 145, 0.4);
 }
 
 .comic-fs-slide {
@@ -574,6 +574,20 @@ a {
 .comic-fs-prev,
 .comic-fs-next {
 	transition: none;
+}
+
+.comic-fs-numbertext {
+	height: 28px;
+	width: auto;
+	top: 0;
+	position: absolute;
+	background-color: rgba(204, 80, 80, 0.4);
+	border-color: #500404;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	text-align: center;
+	user-select: none;
 }
 
 /* The Wiki */

@@ -215,7 +215,10 @@ if (comicInfo.fullscreen) {
 		showSlides(slideIndex += 1);
 	};
 
-	fullscreenOverlay.append(fsPrevButton, fsNextButton);
+	let fsNumberText = document.createElement('div');
+	fsNumberText.className = 'comic-fs-numbertext';
+
+	fullscreenOverlay.append(fsPrevButton, fsNextButton, fsNumberText);
 
 	avThin.append(fullscreenOverlay);
 }
@@ -259,7 +262,9 @@ function showSlides(n) {
 		if (comicInfo.fullscreen == true) fullscreenOverlay.childNodes[slideIndex].style.display = 'block';
 	}
 
-	numbertext.innerHTML = `${comicInfo.panels[slideIndex - 1].number ? comicInfo.panels[slideIndex - 1].number : slideIndex} / ${comicInfo.howLong ? comicInfo.howLong : comicInfo.panels.length}`;
+	let numbertextInner = `${comicInfo.panels[slideIndex - 1].number ? comicInfo.panels[slideIndex - 1].number : slideIndex} / ${comicInfo.howLong ? comicInfo.howLong : comicInfo.panels.length}`;
+	numbertext.innerHTML = numbertextInner;
+	if (comicInfo.fullscreen) document.getElementsByClassName('comic-fs-numbertext')[0].innerHTML = numbertextInner;
 }
 
 function verify(slide) {
