@@ -64,7 +64,7 @@ if (comicInfo.protected) {
 
 	passwordHidden = document.createElement('p');
 	passwordHidden.style = 'color: rgba(0, 0, 0, 0); padding: 20px';
-	passwordHidden.innerHTML = 'Ask the wiki images directory.';
+	passwordHidden.innerHTML = 'Ask the journal images directory.';
 
 	passwordPage.append(passwordP, passwordHidden);
 

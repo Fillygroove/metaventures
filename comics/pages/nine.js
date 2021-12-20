@@ -42,7 +42,7 @@ let comicInfo = {
 	}],
 	verify: (input) => {
 		if (input.slideIndex == 9 && (input.slide == '9' || input.slide == 'nine')) {
-			window.location.href = '../wiki/?p=nine';
+			window.location.href = '../journal/?p=nine';
 		};
 	},
 	background: 'bg-av.png',

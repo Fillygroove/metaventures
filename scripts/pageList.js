@@ -5,6 +5,7 @@ let comicList = {
     // PV
     // Spinoffs
         'heavell',
+        'planets-book',
     // Old AV
         'old-av-1',
         'old-av-2',
@@ -46,36 +47,11 @@ let comicList = {
     ]
 };
 
-
-let wikiList = {
+let journalList = {
     norm: [
     // Redirects
-        'coldsun',  // To ?p=omnikron
-        'ert',      // To ?p=vemma
-        'mac',      // To ?p=macromeda
-        'hotsun',   // To ?p=ommadawn
     // Characters
-        'aero',
-        'rodney',
     // Planets
-        'ommadawn',
-        'grene',
-        'doug',
-        'pilf',
-        'vemma',
-        'george',
-        'baeg',
-        'macromeda',
-        'hazel',
-        'aeiou',
-        'cea',
-        'the',
-        'wop',
-        'taiberaque',
-        'omnikron',
-        'gigantrax',
-        'uling',
-        'dwarf',
     // Announcements
         'announce-1',
         'announce-2',
@@ -86,7 +62,6 @@ let wikiList = {
         'debug',
         'dino',
         'directions',
-        'greme',
         'halloween',
         'm',
         'nine',
@@ -98,24 +73,6 @@ let wikiList = {
         'tackpenguin'
     ], 
     rand: [
-    // Planets
-        'ommadawn',
-        'grene',
-        'doug',
-        'pilf',
-        'vemma',
-        'george',
-        'baeg',
-        'macromeda',
-        'hazel',
-        'aeiou',
-        'cea',
-        'the',
-        'wop',
-        'taiberaque',
-        'omnikron',
-    // Characters
-        'aero',
-        'rodney'
+        'main'
     ]
 };

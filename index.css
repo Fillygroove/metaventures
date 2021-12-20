@@ -590,7 +590,7 @@ a {
 	user-select: none;
 }
 
-/* The Wiki */
+/* The Journal */
 #menu {
 	position: fixed;
 	right: 0;
@@ -599,7 +599,7 @@ a {
 	margin-top: -2.5em;
 }
 
-.wiki-infobox {
+.journal-infobox {
 	border: 1px solid var(--border);
 	border-spacing: 3px;
 	background-color: var(--infobox);
@@ -614,7 +614,7 @@ a {
 	width: 22em;
 }
 
-.wiki-infobox caption {
+.journal-infobox caption {
 	border: 1px solid var(--border);
 	border-spacing: 3px;
 	font-size: 125%;
@@ -623,28 +623,28 @@ a {
 	text-align: center;
 }
 
-.wiki-infobox iframe {
+.journal-infobox iframe {
 	vertical-align: middle;
 	margin: 6px;
 	width: 280px;
 	height: 280px;
 }
 
-.wiki-infobox-image-td {
+.journal-infobox-image-td {
 	background-color: var(--infobox);
 	text-align: center;
 }
 
-.wiki-infobox ul {
+.journal-infobox ul {
 	list-style: none;
 }
 
-.wiki-navbox td {
+.journal-navbox td {
 	background-color: var(--infobox);
 }
 
-.wiki-navbox,
-.wiki-warning {
+.journal-navbox,
+.journal-warning {
 	border: 1px solid var(--border);
 	border-spacing: 3px;
 	box-sizing: border-box;
@@ -659,8 +659,8 @@ a {
 	text-align: center;
 }
 
-.wiki-navbox caption,
-.wiki-warning caption {
+.journal-navbox caption,
+.journal-warning caption {
 	border: 1px solid var(--border);
 	border-spacing: 3px;
 	font-size: 125%;
@@ -669,15 +669,15 @@ a {
 	text-align: center;
 }
 
-.wiki-outer-table-header,
-.wiki-inner-table-header {
+.journal-outer-table-header,
+.journal-inner-table-header {
 	padding: 0.25em 1em;
 	line-height:1.5em;
 	text-align: center;
 	width: 1%;
 }
 
-.wiki-navbox-hide-text {
+.journal-navbox-hide-text {
 	float: right;
 	color: #6EC7E7;
 	cursor: pointer;
@@ -686,74 +686,74 @@ a {
 	user-select: none;
 }
 
-.wiki-inner-table-header {
+.journal-inner-table-header {
 	white-space: nowrap;
 }
 
-.wiki-navbox div {
+.journal-navbox div {
 	text-align: left;
 	padding-left: 8px;
 }
 
-.wiki-warning {
+.journal-warning {
 	width: 50%;
 	background-color: var(--menus);
 	float: right;
 	margin: 0.4em 1em;
 }
 
-.wiki-warning td {
+.journal-warning td {
 	background-color: var(--menus);
 }
 
-.wiki-navbox-symbol {
+.journal-navbox-symbol {
 	background-color: var(--background);
 	padding: 0 7px;
 	height: 27px;
 }
 
-.wiki-navbox-image {
+.journal-navbox-image {
 	background-color: var(--infobox);
 	max-width: 300px;
 	width: 300px;
 	vertical-align: unset;
 }
 
-.wiki-info {
+.journal-info {
 	background-color: var(--menus);
 }
 
-.wiki-quote {
+.journal-quote {
 	background-color: transparent;
 	padding-left: 2em;
 }
 
-.wiki-quote-author {
+.journal-quote-author {
 	background-color: transparent;
 	padding-left: 2.5em;
 }
 
-.wiki-gallery-parent {
+.journal-gallery-parent {
 	width: 60%;
 	margin: 0 auto;
 	height: 250px;
 }
 
-.wiki-gallery {
+.journal-gallery {
 	width: 100%;
 	height: 100%;
 	background-color: var(--avthin);
 	white-space: nowrap;
 }
 
-.wiki-slide {
+.journal-slide {
 	background-color: var(--background);
 	width: 100%;
 	height: 80%;
 	border: var(--border) solid 1px;
 }
 
-.wiki-slide-text {
+.journal-slide-text {
 	background-color: var(--background);
 	width: 100%;
 	height: 20%;
@@ -763,7 +763,7 @@ a {
 	overflow: auto scroll;
 }
 
-.wiki-slide-text * {
+.journal-slide-text * {
 	text-align: center;
 	margin: 0;
 	background-color: transparent;
@@ -772,21 +772,21 @@ a {
 	font-size: 13px;
 }
 
-.wiki-slide-parent {
+.journal-slide-parent {
 	display: inline-block;
 	width: 90%;
 	height: 100%;
 }
 
-.wiki-image {
+.journal-image {
 	height: 95%;
 	margin: 5px auto 5px 50%;
 	transform: translateX(-50%);
 	background-color: transparent;
 }
 
-.wiki-gallery-prev,
-.wiki-gallery-next {
+.journal-gallery-prev,
+.journal-gallery-next {
 	background-color: rgba(0, 0, 0, 0.4);
 	display: inline-block;
 	cursor: pointer;
@@ -802,23 +802,27 @@ a {
 	padding: 117px 0 0 0;
 }
 
-.wiki-gallery-prev:hover,
-.wiki-gallery-next:hover {
+.journal-gallery-prev:hover,
+.journal-gallery-next:hover {
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.wiki-gallery-next {
+.journal-gallery-next {
 	border-radius: 0 8px 8px 0;
 }
 
-.wiki-unordered-list {
+.journal-unordered-list {
 	background-color: var(--avthin);
 	padding: 0 80px 0 110px;
 }
 
-.wiki-list-item {
+.journal-list-item {
 	background-color: var(--avthin);
 	line-height: var(--lineheight);
+}
+
+.journal-snips {
+	width: auto;
 }
 
 .aerospin {
@@ -946,7 +950,9 @@ figure {
 }
 
 img {
-	border-style: none
+	border-style: none;
+	vertical-align: middle;
+	background-color: transparent;
 }
 
 code,
@@ -1099,11 +1105,6 @@ hr {
 	border: 0;
 	border-top: 1px solid var(--border);
 	margin: 20px 0
-}
-
-
-img {
-	vertical-align: middle
 }
 
 a {

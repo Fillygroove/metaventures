@@ -13,7 +13,7 @@ function correctLinks() {
 		let pageLinkName = pageLinks[i].href.substring(pageLinks[i].href.indexOf('=') + 1, pageLinks[i].href.length);
 		if (pageLinkName.includes('#')) pageLinkName = pageLinkName.substring(0, pageLinkName.indexOf('#'));
 		if (pageLinks[i].id == '' && pageLinks[i].className == '') {
-			if (wikiList.norm.includes(pageLinkName)) pageLinks[i].className = 'link';
+			if (journalList.norm.includes(pageLinkName)) pageLinks[i].className = 'link';
 			else pageLinks[i].className = 'no-link';
 		}
 	}
@@ -53,25 +53,25 @@ function gremeReplace(input) {
 }
 
 function makePage(page) {
-	let comicDir, wikiDir, titleDir, pageName;
+	let comicDir, journalDir, titleDir, pageName;
 	switch (page) {
 		case 'main':
 			comicDir = './';
-			wikiDir = './';
+			journalDir = './';
 			titleDir = './';
 			pageName = 'Main';
 			break;
 		case 'comic':
 			comicDir = '../';
-			wikiDir = '../';
+			journalDir = '../';
 			titleDir = '../';
 			pageName = 'Comics';
 			break;
-		case 'wiki':
+		case 'journal':
 			comicDir = '../';
-			wikiDir = '../';
+			journalDir = '../';
 			titleDir = '../';
-			pageName = 'Wiki';
+			pageName = 'Journal';
 			break;
 	}
 
@@ -310,9 +310,9 @@ function makePage(page) {
 		link: `${comicDir}comics/?c=choose`
 	});
 	makeButton({
-		html: 'The Wiki', 
+		html: 'The Journal', 
 		color: 'nyork-green', 
-		link: `${wikiDir}wiki/?p=main`
+		link: `${journalDir}journal/?p=main`
 	});
 	makeButton({
 		html: 'The Discord', 

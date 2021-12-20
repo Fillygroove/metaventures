@@ -21,29 +21,24 @@ let lineBreak = document.createElement('hr');
 
 avThin.append(mainH1, lineBreak);
 
-addText('It\'s December 2nd, the first anniversary of the website! We made a post about it..', 'font-size: 20px;');
-addText('<a href="./wiki/?p=announce-2" class="comic-link">You may read it here!</a>');
-addText('WARNING - A lot of things are being reworked so most information (and even the comics) isn\'t accurate anymore.');
+addText('AEROVENTURES 1 SOONR.', 'font-size: 20px;');
 
 addText('Welcome to the Metaventures website! Read below for more information!');
 
 addHead('The newest change!');
 
-addText('Renamed Mac to <a href="./wiki/?p=macromeda" class="link">Macromeda</a>! The <a href="./wiki/?p=taiberaque" class="link">Taiberaque</a> system will be worked on soon!');
+addText('Heavily reworked the old Wiki system into a journal system which will be updated when new comics come out!');
 
 addHead('The Comics!');
 
-addText('The comics section of the website contains a collection of different comics. Currently, we only have Aeroventures, although another series, Polyventures, will be coming in a long bit.');
-addText('Aeroventures is a comic series that follows the adventures of Aero, Archie, Lakys, and Aposteel, as they cause chaos around the land.');
-addText('The newest Aeroventure comic, which is not cannonical and is titled <a href="./comics/?c=heavell" class="comic-link">Towers of Heavell</a>, was made by Fristo and released on Halloween.');
-addText('The newest canonical Aeroventure, as of now, is <a href="./comics/?c=old-av-12-1" class="comic-link">Nutty Business, Part 1</a>. A new Aeroventure, which will be Part 2 of Nutty Business, will be coming soon!</p>');
-addText('Aeroventures, as of now, is being re-made, so don\'t expect 12 part 2 just yet!')
-addText('All comic images and icons have been lovingly provided by Text Wall, the original creator of the Aeroventures universe.');
+addText('The comics section contains a framework that will lead to future comics. There is currently a single spinoff and a password protected archive.');
+addText('The newest Aeroventure comic, which is non-cannonical, is titled <a href="./comics/?c=heavell" class="comic-link">Towers of Heavell</a>, was made by Fristo and released on Halloween.');
+addText('AEROVENTURES 1 IS BEING WORKED ON.');
 
-addHead('The Wiki!');
+addHead('The Journal!');
 
-addText('The Wiki section of the website contains a collection of pages that explains the world of the Aeroventures universe. As of now, there isn\'t much, but it\'s getting there.');
-addText('Never make promises. (\'>\')');
+addText('The Journal is a collection of documents written by an entity known as The Keeper, who logs all of the information found in the comics.');
+addText('Leave all stones turned. (\'>\')');
 
 addHead('The Discord!');
 
@@ -53,4 +48,4 @@ addText('If you would like to take a visit, go <a href="https://discord.gg/xxRvY
 
 addHead('The Credits!');
 
-addText('If you would like to see who helped out with the Metaventures world, go <a href="./wiki/?p=credits" class="link">here</a>!');
+addText('If you would like to see who helped out with the Metaventures world, go <a href="./journal/?p=credits" class="link">here</a>!');
