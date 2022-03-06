@@ -314,11 +314,12 @@ function makePage(page) {
 		color: 'nyork-green', 
 		link: `${journalDir}journal/?p=main`
 	});
+	/* // Add later when more people join
 	makeButton({
 		html: 'The Discord', 
 		color: 'pon-pink', 
-		link: 'https://discord.gg/xxRvYERs48'
-	});
+		link: '' // no >:)
+	});*/
 		
 	document.body.append(preferenceMenuDiv, dropdownDiv, avThin, lineGuideDiv);
 	
