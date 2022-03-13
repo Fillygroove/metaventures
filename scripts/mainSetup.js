@@ -49,3 +49,5 @@ addText('If you would like to take a visit, go <a href="https://discord.gg/xxRvY
 addHead('The Credits!');
 
 addText('If you would like to see who helped out with the Metaventures world, go <a href="./journal/?p=credits" class="link">here</a>!');
+
+addText(`This website was made by Clarise, whos main website may be found <a href="../" class="link">here</a>!`);
