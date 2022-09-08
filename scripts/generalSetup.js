@@ -307,7 +307,7 @@ function makePage(page) {
 	makeButton({
 		html: 'The Comics', 
 		color: 'aero-blue', 
-		link: `${comicDir}comics/?c=choose`
+		link: `${comicDir}comics/?c=`
 	});
 	makeButton({
 		html: 'The Journal', 

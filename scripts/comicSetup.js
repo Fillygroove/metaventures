@@ -1,5 +1,5 @@
 let comic = new URLSearchParams(window.location.search);
-comic = comic.get('c');
+comic = comic.get('c').replaceAll('-', '/');
 
 function panelSetup(howLong, extension) {
 	comicInfo.panels = [];
@@ -10,12 +10,12 @@ function panelSetup(howLong, extension) {
 	}
 }
 
-if (!comicList.norm.includes(comic)) {
-	comic = 'choose';
-	window.location.href = '?c=choose';
+if (!comicList.norm.includes(comic.replaceAll('/', '-'))) {
+	comic = '';
+	window.location.href = '?c=';
 }
 
 if (window.localStorage.pass == undefined) window.localStorage.pass = 'false'; 
 
-addScript(`./pages/${comic}.js`);
-addScript('./pages/CONSTRUCTOR.js');
+addScript(`./${comic}/setup.js`);
+addScript('../scripts/comicConstruct.js');
